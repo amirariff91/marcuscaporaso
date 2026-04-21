@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+:root {
+  --bg: oklch(8% 0.004 160);
+  --bg-raised: oklch(10% 0.004 160);
+  --fg: oklch(98% 0.004 100);
+  --accent: oklch(95% 0.012 80);
+  --muted: oklch(52% 0.008 160);
+  --muted-2: oklch(30% 0.006 160);
+  --cta: oklch(67% 0.18 162);
+  --cta-hover: oklch(58% 0.18 162);
+  --border: oklch(18% 0.006 160);
+  --border-subtle: oklch(14% 0.005 160);
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-bg-raised: var(--bg-raised);
+  --color-fg: var(--fg);
+  --color-accent: var(--accent);
+  --color-muted: var(--muted);
+  --color-muted-2: var(--muted-2);
+  --color-cta: var(--cta);
+  --color-cta-hover: var(--cta-hover);
+  --color-border: var(--border);
+  --color-border-subtle: var(--border-subtle);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-figtree), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-barlow), var(--font-figtree), system-ui, sans-serif;
+}
+
+/* Fluid heading scale */
+.text-display {
+  font-size: clamp(2.75rem, 6vw + 1rem, 5rem);
+  line-height: 1.02;
+  letter-spacing: -0.025em;
+}
+
+.text-section {
+  font-size: clamp(1.875rem, 3.5vw + 0.5rem, 3rem);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+/* Calendly widget z-index fix */
+.calendly-overlay {
+  z-index: 9999 !important;
+}
