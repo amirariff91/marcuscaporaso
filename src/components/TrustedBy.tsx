@@ -17,61 +17,57 @@ const clients: Array<{
   { name: "Peace & Quiet",          url: "https://peaceandquiet.au" },
 ];
 
-function LogoItem({ client, suffix }: { client: typeof clients[0]; suffix: string }) {
+function LogoSet({ ariaHidden }: { ariaHidden?: boolean }) {
   return (
-    <a
-      href={client.url}
-      target="_blank"
-      rel="noopener noreferrer"
-      title={client.name}
-      className="flex-shrink-0 flex items-center opacity-40 grayscale hover:opacity-70 hover:grayscale-0 transition-all duration-300"
+    <div
+      className="flex items-center gap-16 shrink-0 min-w-full justify-around animate-marquee"
+      aria-hidden={ariaHidden}
     >
-      {client.logo ? (
-        <Image
-          src={client.logo}
-          alt={client.name}
-          width={client.w ?? 128}
-          height={client.h ?? 128}
-          className="h-10 w-auto object-contain"
-          key={`${client.name}-${suffix}`}
-        />
-      ) : (
-        <span
-          className="text-base font-semibold text-muted-2 tracking-wide"
-          style={{ fontFamily: "var(--font-barlow)" }}
+      {clients.map((c) => (
+        <a
+          key={c.name}
+          href={c.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          title={c.name}
+          className="flex-shrink-0 flex items-center opacity-40 grayscale hover:opacity-75 hover:grayscale-0 transition-all duration-300"
         >
-          {client.name}
-        </span>
-      )}
-    </a>
+          {c.logo ? (
+            <Image
+              src={c.logo}
+              alt={c.name}
+              width={c.w ?? 128}
+              height={c.h ?? 128}
+              className="h-10 w-auto object-contain"
+            />
+          ) : (
+            <span
+              className="text-base font-semibold text-muted-2 tracking-wide"
+              style={{ fontFamily: "var(--font-barlow)" }}
+            >
+              {c.name}
+            </span>
+          )}
+        </a>
+      ))}
+    </div>
   );
 }
 
 export default function TrustedBy() {
   return (
-    <section className="border-t border-border py-12 overflow-hidden">
+    <section className="border-t border-border py-12">
       <div className="max-w-5xl mx-auto px-6 mb-8">
         <p className="text-xs font-semibold tracking-[0.1em] uppercase text-muted-2 text-center">
           Trusted by
         </p>
       </div>
 
-      {/* Marquee — two identical sets side by side for seamless loop */}
-      <div className="flex w-full">
-        <div
-          className="flex items-center gap-14 animate-marquee"
-          style={{ width: "max-content" }}
-          aria-hidden="false"
-        >
-          {/* Set A */}
-          {clients.map((c) => (
-            <LogoItem key={`a-${c.name}`} client={c} suffix="a" />
-          ))}
-          {/* Set B — exact duplicate, creates the seamless loop */}
-          {clients.map((c) => (
-            <LogoItem key={`b-${c.name}`} client={c} suffix="b" />
-          ))}
-        </div>
+      {/* Two sets side-by-side, each min-w-full, each animating -100% independently.
+          As Set A slides off left, Set B fills in from right — seamless infinite loop. */}
+      <div className="flex overflow-hidden">
+        <LogoSet />
+        <LogoSet ariaHidden />
       </div>
     </section>
   );
