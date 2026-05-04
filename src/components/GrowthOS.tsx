@@ -41,7 +41,6 @@ export default function GrowthOS() {
             </p>
             <h2
               className="text-section font-bold text-fg mb-6"
-              style={{ fontFamily: "var(--font-barlow)" }}
             >
               Diagnose your growth gaps first.
             </h2>

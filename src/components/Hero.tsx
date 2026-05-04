@@ -8,10 +8,10 @@ export default function Hero() {
         <div className="flex flex-col sm:flex-row items-center gap-12 sm:gap-20">
           {/* Text — LEFT on desktop */}
           <div className="flex-1 max-w-xl">
-            <h1 className="text-display font-bold text-fg mb-6" style={{ fontFamily: "var(--font-barlow)" }}>
+            <h1 className="text-display font-bold text-fg mb-6">
               For complex, high-value service businesses scaling seriously.
             </h1>
-            <p className="text-base text-muted leading-relaxed mb-10" style={{ fontFamily: "var(--font-figtree)" }}>
+            <p className="text-base text-muted leading-relaxed mb-10">
               I embed as your fractional CMO and growth architect. We diagnose
               what&apos;s broken, build the system to fix it, and optimise until
               your numbers move.
@@ -32,19 +32,19 @@ export default function Hero() {
               </a>
             </div>
           </div>
-          {/* Photo — RIGHT on desktop */}
+          {/* Photo — RIGHT on desktop, stacks on top mobile */}
           <div className="flex-shrink-0 flex flex-col items-start gap-4 order-first sm:order-last">
             <Image
               src="/marcus-caporaso-color.jpg"
-              alt="Marcus Caporaso"
+              alt="Marcus Caporaso — Fractional CMO & Growth Architect"
               width={260}
               height={390}
-              sizes="(max-width: 640px) 200px, 260px"
+              sizes="(max-width: 640px) 192px, 256px"
               className="w-48 sm:w-64 object-cover object-top rounded-sm"
               priority
             />
             <div>
-              <p className="text-sm font-semibold text-fg" style={{ fontFamily: "var(--font-barlow)" }}>
+              <p className="text-sm font-semibold text-fg">
                 Marcus Caporaso
               </p>
               <p className="text-xs text-muted-2 tracking-wide">

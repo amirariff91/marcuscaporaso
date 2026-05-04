@@ -38,7 +38,6 @@ export default function Methodology() {
         <div className="flex flex-col sm:flex-row sm:items-baseline gap-3 mb-20">
           <h2
             className="text-section font-bold text-fg"
-            style={{ fontFamily: "var(--font-barlow)" }}
           >
             How it works.
           </h2>
@@ -69,7 +68,6 @@ export default function Methodology() {
                 />
                 <h3
                   className="text-lg font-semibold text-fg"
-                  style={{ fontFamily: "var(--font-barlow)" }}
                 >
                   {step.title}
                 </h3>

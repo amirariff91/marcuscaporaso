@@ -53,16 +53,15 @@ h1, h2, h3, h4 {
   letter-spacing: -0.02em;
 }
 
-/* Marquee — each set is min-w-full, animates -100% of itself.
-   As Set A exits left, Set B (starting at 100vw) fills in.
-   No empty space possible regardless of logo count. */
+/* Marquee — one track of width: max-content, 4× logo sets.
+   Animates -50% = exactly 2 logo sets. No gap possible because
+   the track is always wider than 2× viewport. GPU-friendly: no will-change. */
 @keyframes marquee {
   from { transform: translateX(0); }
-  to   { transform: translateX(-100%); }
+  to   { transform: translateX(-50%); }
 }
 .animate-marquee {
-  animation: marquee 35s linear infinite;
-  will-change: transform;
+  animation: marquee 40s linear infinite;
 }
 .animate-marquee:hover {
   animation-play-state: paused;

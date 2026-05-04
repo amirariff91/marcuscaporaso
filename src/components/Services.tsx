@@ -6,7 +6,6 @@ export default function Services() {
       <div className="max-w-5xl mx-auto px-6">
         <h2
           className="text-section font-bold text-fg mb-16"
-          style={{ fontFamily: "var(--font-barlow)" }}
         >
           Three ways to engage.
         </h2>
@@ -22,8 +21,6 @@ export default function Services() {
                 </span>
               </div>
               <h3
-                className="text-2xl sm:text-3xl font-bold text-fg mb-4"
-                style={{ fontFamily: "var(--font-barlow)" }}
               >
                 Fractional Partner
               </h3>
@@ -80,8 +77,6 @@ export default function Services() {
                   </span>
                 </div>
                 <h3
-                  className="text-xl font-semibold text-fg mb-3"
-                  style={{ fontFamily: "var(--font-barlow)" }}
                 >
                   {service.title}
                 </h3>

@@ -8,7 +8,6 @@ export default function Founder() {
           <div className="max-w-xl">
             <h2
               className="text-section font-bold text-fg mb-6"
-              style={{ fontFamily: "var(--font-barlow)" }}
             >
               Marcus Caporaso
             </h2>

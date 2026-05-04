@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useRef, useCallback } from "react";
 import { Calendar } from "lucide-react";
 
 declare global {
@@ -15,46 +15,57 @@ const CALENDLY_URL =
   process.env.NEXT_PUBLIC_CALENDLY_URL ??
   "https://calendly.com/mjc-growth/strategy-call";
 
-let pendingOpen = false;
-
-function loadCalendlyScript() {
-  if (document.getElementById("calendly-script")) return;
-  const script = document.createElement("script");
-  script.id = "calendly-script";
-  script.src = "https://assets.calendly.com/assets/external/widget.js";
-  script.async = true;
-  document.head.appendChild(script);
-
-  const link = document.createElement("link");
-  link.rel = "stylesheet";
-  link.href = "https://assets.calendly.com/assets/external/widget.css";
-  document.head.appendChild(link);
-}
-
-function openCalendly() {
-  if (window.Calendly) {
-    window.Calendly.initPopupWidget({ url: CALENDLY_URL });
-    return;
-  }
-  if (pendingOpen) return;
-  pendingOpen = true;
-  loadCalendlyScript();
-  const check = setInterval(() => {
-    if (window.Calendly) {
-      clearInterval(check);
-      pendingOpen = false;
-      window.Calendly.initPopupWidget({ url: CALENDLY_URL });
+function loadCalendlyScript(): Promise<void> {
+  return new Promise((resolve) => {
+    if (document.getElementById("calendly-script")) {
+      resolve();
+      return;
     }
-  }, 100);
-  setTimeout(() => {
-    clearInterval(check);
-    pendingOpen = false;
-  }, 10_000);
+    const link = document.createElement("link");
+    link.rel = "stylesheet";
+    link.href = "https://assets.calendly.com/assets/external/widget.css";
+    document.head.appendChild(link);
+
+    const script = document.createElement("script");
+    script.id = "calendly-script";
+    script.src = "https://assets.calendly.com/assets/external/widget.js";
+    script.async = true;
+    script.onload = () => resolve();
+    document.head.appendChild(script);
+  });
 }
 
 export default function Booking() {
+  // useRef instead of module-level var — scoped to this component instance
+  const pendingOpenRef = useRef(false);
+
+  // Load script lazily on interaction only — not on page load
+  const handleBookingClick = useCallback(async () => {
+    if (window.Calendly) {
+      window.Calendly.initPopupWidget({ url: CALENDLY_URL });
+      return;
+    }
+    if (pendingOpenRef.current) return;
+    pendingOpenRef.current = true;
+    try {
+      await loadCalendlyScript();
+      const cal = (window as Window & { Calendly?: { initPopupWidget: (opts: { url: string }) => void } }).Calendly;
+      if (cal) {
+        cal.initPopupWidget({ url: CALENDLY_URL });
+      }
+    } finally {
+      pendingOpenRef.current = false;
+    }
+  }, []);
+
+  // Preload script after 3s idle — improves click-to-open latency
+  // but doesn't block page load
   useEffect(() => {
-    const t = setTimeout(loadCalendlyScript, 3000);
+    const t = setTimeout(() => {
+      if (!document.getElementById("calendly-script")) {
+        loadCalendlyScript();
+      }
+    }, 3000);
     return () => clearTimeout(t);
   }, []);
 
@@ -65,7 +76,6 @@ export default function Booking() {
           <div>
             <h2
               className="text-section font-bold text-fg mb-6"
-              style={{ fontFamily: "var(--font-barlow)" }}
             >
               Scale without the chaos.
             </h2>
@@ -91,7 +101,7 @@ export default function Booking() {
               </div>
             </div>
             <button
-              onClick={openCalendly}
+              onClick={handleBookingClick}
               className="inline-flex items-center gap-2.5 bg-cta hover:bg-cta-hover text-white font-semibold px-8 py-4 rounded-sm transition-colors duration-200 text-[0.9375rem] cursor-pointer self-start focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-fg"
             >
               <Calendar size={16} strokeWidth={2} />

@@ -17,40 +17,36 @@ const clients: Array<{
   { name: "Peace & Quiet",          url: "https://peaceandquiet.au" },
 ];
 
-function LogoSet({ ariaHidden }: { ariaHidden?: boolean }) {
+// 4 sets — ensures content is always wider than any viewport
+const track = [...clients, ...clients, ...clients, ...clients];
+
+function LogoItem({ c, tabIndex }: { c: typeof clients[0]; tabIndex?: number }) {
   return (
-    <div
-      className="flex items-center gap-16 shrink-0 min-w-full justify-around animate-marquee"
-      aria-hidden={ariaHidden}
+    <a
+      href={c.url}
+      target="_blank"
+      rel="noopener noreferrer"
+      title={c.name}
+      tabIndex={tabIndex}
+      className="flex-shrink-0 flex items-center opacity-40 grayscale hover:opacity-75 hover:grayscale-0 transition-all duration-300"
     >
-      {clients.map((c) => (
-        <a
-          key={c.name}
-          href={c.url}
-          target="_blank"
-          rel="noopener noreferrer"
-          title={c.name}
-          className="flex-shrink-0 flex items-center opacity-40 grayscale hover:opacity-75 hover:grayscale-0 transition-all duration-300"
+      {c.logo ? (
+        <Image
+          src={c.logo}
+          alt={c.name}
+          width={c.w ?? 128}
+          height={c.h ?? 128}
+          className="h-10 w-auto object-contain"
+        />
+      ) : (
+        <span
+          className="text-base font-semibold text-muted-2 tracking-wide"
+          style={{ fontFamily: "var(--font-barlow)" }}
         >
-          {c.logo ? (
-            <Image
-              src={c.logo}
-              alt={c.name}
-              width={c.w ?? 128}
-              height={c.h ?? 128}
-              className="h-10 w-auto object-contain"
-            />
-          ) : (
-            <span
-              className="text-base font-semibold text-muted-2 tracking-wide"
-              style={{ fontFamily: "var(--font-barlow)" }}
-            >
-              {c.name}
-            </span>
-          )}
-        </a>
-      ))}
-    </div>
+          {c.name}
+        </span>
+      )}
+    </a>
   );
 }
 
@@ -63,11 +59,21 @@ export default function TrustedBy() {
         </p>
       </div>
 
-      {/* Two sets side-by-side, each min-w-full, each animating -100% independently.
-          As Set A slides off left, Set B fills in from right — seamless infinite loop. */}
-      <div className="flex overflow-hidden">
-        <LogoSet />
-        <LogoSet ariaHidden />
+      {/* Marquee: one track of natural width (4× logo set).
+          Animates translateX(-50%) — moves exactly 2 sets left,
+          then snaps back. Logos always fill the viewport with no gaps
+          because 4 sets × ~1000px >> any realistic viewport width. */}
+      <div className="overflow-hidden">
+        <div className="animate-marquee flex gap-16 w-max">
+          {track.map((c, i) => (
+            <LogoItem
+              key={`${c.name}-${i}`}
+              c={c}
+              // Only first 8 (Set A) are interactive; the rest are decorative duplicates
+              tabIndex={i >= clients.length ? -1 : undefined}
+            />
+          ))}
+        </div>
       </div>
     </section>
   );
