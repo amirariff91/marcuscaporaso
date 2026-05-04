@@ -29,12 +29,12 @@ export default function Founder() {
           </div>
           <div>
             <Image
-              src="/marcus-caporaso.png"
+              src="/marcus-caporaso-color.jpg"
               alt="Marcus Caporaso"
               width={160}
-              height={160}
+              height={240}
               sizes="(max-width: 640px) 144px, 160px"
-              className="w-36 h-36 sm:w-40 sm:h-40 object-cover object-top grayscale"
+              className="w-36 sm:w-40 object-cover object-top rounded-sm"
             />
           </div>
         </div>

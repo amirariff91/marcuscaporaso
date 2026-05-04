@@ -35,12 +35,12 @@ export default function Hero() {
           {/* Photo — RIGHT on desktop */}
           <div className="flex-shrink-0 flex flex-col items-start gap-4 order-first sm:order-last">
             <Image
-              src="/marcus-caporaso.png"
+              src="/marcus-caporaso-color.jpg"
               alt="Marcus Caporaso"
               width={260}
-              height={260}
+              height={390}
               sizes="(max-width: 640px) 200px, 260px"
-              className="w-48 h-48 sm:w-64 sm:h-64 object-cover object-top grayscale"
+              className="w-48 sm:w-64 object-cover object-top rounded-sm"
               priority
             />
             <div>
