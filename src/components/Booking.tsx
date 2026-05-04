@@ -46,7 +46,6 @@ function openCalendly() {
       window.Calendly.initPopupWidget({ url: CALENDLY_URL });
     }
   }, 100);
-  // Stop polling if script never loads
   setTimeout(() => {
     clearInterval(check);
     pendingOpen = false;
@@ -68,7 +67,7 @@ export default function Booking() {
               className="text-section font-bold text-fg mb-6"
               style={{ fontFamily: "var(--font-barlow)" }}
             >
-              Ready to scale without chaos?
+              Scale without the chaos.
             </h2>
             <p className="text-muted leading-relaxed">
               A focused 45-minute conversation about your growth goals, current
@@ -93,7 +92,7 @@ export default function Booking() {
             </div>
             <button
               onClick={openCalendly}
-              className="inline-flex items-center gap-2.5 bg-cta hover:bg-cta-hover text-white font-semibold px-8 py-4 rounded-sm transition-colors duration-200 text-[0.9375rem] cursor-pointer self-start"
+              className="inline-flex items-center gap-2.5 bg-cta hover:bg-cta-hover text-white font-semibold px-8 py-4 rounded-sm transition-colors duration-200 text-[0.9375rem] cursor-pointer self-start focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-fg"
             >
               <Calendar size={16} strokeWidth={2} />
               Book a Strategy Call

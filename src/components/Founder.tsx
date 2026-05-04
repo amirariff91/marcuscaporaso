@@ -10,13 +10,18 @@ export default function Founder() {
               className="text-section font-bold text-fg mb-6"
               style={{ fontFamily: "var(--font-barlow)" }}
             >
-              About Marcus
+              Marcus Caporaso
             </h2>
             <p className="text-muted leading-relaxed mb-6">
               Marcus works with founders to fix messy growth through sharper
-              systems, strategy and execution. He has worked across healthcare,
-              startups, and founder-led brands — building revenue growth systems,
-              operational scale, and performance outcomes.
+              systems, strategy and execution. He doesn&apos;t present decks
+              and disappear — he embeds with your team and owns outcomes.
+            </p>
+            <p className="text-muted leading-relaxed mb-6">
+              He has worked across healthcare, professional services, and
+              founder-led brands — delivering 28% CAC reductions, 4× pipeline
+              growth, and fully automated revenue operations for businesses
+              between $2M and $50M.
             </p>
             <p className="text-sm text-muted-2">
               Results can be anonymised on request.

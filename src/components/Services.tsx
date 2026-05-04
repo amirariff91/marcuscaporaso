@@ -37,7 +37,7 @@ export default function Services() {
             <div className="flex-shrink-0">
               <a
                 href="#booking"
-                className="inline-flex items-center gap-2.5 bg-cta hover:bg-cta-hover text-white font-semibold px-7 py-3.5 rounded-sm transition-colors duration-200 text-sm whitespace-nowrap"
+                className="inline-flex items-center gap-2.5 bg-cta hover:bg-cta-hover text-white font-semibold px-7 py-3.5 rounded-sm transition-colors duration-200 text-sm whitespace-nowrap focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-fg"
               >
                 Book a Strategy Call
                 <ArrowRight size={15} strokeWidth={2.5} />
