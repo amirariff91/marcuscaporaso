@@ -5,29 +5,9 @@ export default function Hero() {
   return (
     <section className="min-h-screen flex items-center pt-20">
       <div className="max-w-5xl mx-auto px-6 py-24 w-full">
-        <div className="flex flex-col-reverse sm:flex-row items-center gap-12 sm:gap-20">
-          {/* Photo + identity */}
-          <div className="flex-shrink-0 flex flex-col items-start gap-4">
-            <Image
-              src="/marcus-caporaso.png"
-              alt="Marcus Caporaso"
-              width={260}
-              height={260}
-              sizes="(max-width: 640px) 200px, 260px"
-              className="w-48 h-48 sm:w-64 sm:h-64 object-cover object-top grayscale"
-              priority
-            />
-            <div>
-              <p className="text-sm font-semibold text-fg" style={{ fontFamily: "var(--font-barlow)" }}>
-                Marcus Caporaso
-              </p>
-              <p className="text-xs text-muted-2 tracking-wide">
-                Fractional CMO &amp; Growth Architect
-              </p>
-            </div>
-          </div>
-          {/* Text */}
-          <div className="max-w-xl">
+        <div className="flex flex-col sm:flex-row items-center gap-12 sm:gap-20">
+          {/* Text — LEFT on desktop */}
+          <div className="flex-1 max-w-xl">
             <h1 className="text-display font-bold text-fg mb-6" style={{ fontFamily: "var(--font-barlow)" }}>
               For complex, high-value service businesses scaling seriously.
             </h1>
@@ -50,6 +30,26 @@ export default function Hero() {
               >
                 How It Works
               </a>
+            </div>
+          </div>
+          {/* Photo — RIGHT on desktop */}
+          <div className="flex-shrink-0 flex flex-col items-start gap-4 order-first sm:order-last">
+            <Image
+              src="/marcus-caporaso.png"
+              alt="Marcus Caporaso"
+              width={260}
+              height={260}
+              sizes="(max-width: 640px) 200px, 260px"
+              className="w-48 h-48 sm:w-64 sm:h-64 object-cover object-top grayscale"
+              priority
+            />
+            <div>
+              <p className="text-sm font-semibold text-fg" style={{ fontFamily: "var(--font-barlow)" }}>
+                Marcus Caporaso
+              </p>
+              <p className="text-xs text-muted-2 tracking-wide">
+                Fractional CMO &amp; Growth Architect
+              </p>
             </div>
           </div>
         </div>
