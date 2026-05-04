@@ -13,7 +13,7 @@ declare global {
 
 const CALENDLY_URL =
   process.env.NEXT_PUBLIC_CALENDLY_URL ??
-  "https://calendly.com/mjc-growth/strategy";
+  "https://calendly.com/mjc-growth/strategy-call";
 
 let pendingOpen = false;
 

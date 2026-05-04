@@ -5,16 +5,16 @@ export default function Hero() {
   return (
     <section className="min-h-screen flex items-center pt-20">
       <div className="max-w-5xl mx-auto px-6 py-24 w-full">
-        <div className="flex flex-col-reverse sm:flex-row items-start sm:items-center gap-12 sm:gap-16">
+        <div className="flex flex-col-reverse sm:flex-row items-center gap-12 sm:gap-20">
           {/* Photo + identity */}
-          <div className="flex-shrink-0 flex flex-col items-start gap-3">
+          <div className="flex-shrink-0 flex flex-col items-start gap-4">
             <Image
               src="/marcus-caporaso.png"
               alt="Marcus Caporaso"
-              width={200}
-              height={200}
-              sizes="(max-width: 640px) 160px, 192px"
-              className="w-40 h-40 sm:w-48 sm:h-48 object-cover object-top grayscale"
+              width={260}
+              height={260}
+              sizes="(max-width: 640px) 200px, 260px"
+              className="w-48 h-48 sm:w-64 sm:h-64 object-cover object-top grayscale"
               priority
             />
             <div>
@@ -27,16 +27,16 @@ export default function Hero() {
             </div>
           </div>
           {/* Text */}
-          <div className="max-w-2xl">
-            <h1 className="text-display font-bold text-fg mb-8" style={{ fontFamily: "var(--font-barlow)" }}>
+          <div className="max-w-xl">
+            <h1 className="text-display font-bold text-fg mb-6" style={{ fontFamily: "var(--font-barlow)" }}>
               For complex, high-value service businesses scaling seriously.
             </h1>
-            <p className="text-lg text-muted leading-relaxed mb-12" style={{ fontFamily: "var(--font-figtree)" }}>
+            <p className="text-base text-muted leading-relaxed mb-10" style={{ fontFamily: "var(--font-figtree)" }}>
               I embed as your fractional CMO and growth architect. We diagnose
               what&apos;s broken, build the system to fix it, and optimise until
               your numbers move.
             </p>
-            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6">
+            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-5">
               <a
                 href="#booking"
                 className="inline-flex items-center gap-2.5 bg-cta hover:bg-cta-hover text-white font-semibold px-8 py-4 rounded-sm transition-colors duration-200 text-[0.9375rem] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-fg"

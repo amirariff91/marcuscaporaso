@@ -8,22 +8,7 @@ export default function GrowthOS() {
     <section className="py-24 border-t border-border bg-bg-raised">
       <div className="max-w-5xl mx-auto px-6">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-12 sm:gap-20 items-center">
-          <div>
-            <p className="text-xs font-semibold tracking-[0.1em] uppercase text-cta mb-4">
-              Not ready to talk yet?
-            </p>
-            <h2
-              className="text-section font-bold text-fg mb-6"
-              style={{ fontFamily: "var(--font-barlow)" }}
-            >
-              Diagnose your growth gaps first.
-            </h2>
-            <p className="text-muted leading-relaxed">
-              GrowthOS is a free 8-minute diagnostic that maps your revenue
-              system and surfaces the exact levers to pull first. Honest
-              analysis, no sales call required.
-            </p>
-          </div>
+          {/* Left — bullet list + CTA */}
           <div className="flex flex-col gap-6">
             <div className="space-y-2 text-sm text-muted-2">
               <div className="flex items-center gap-3">
@@ -48,6 +33,23 @@ export default function GrowthOS() {
               Run the free diagnostic
               <ArrowRight size={16} strokeWidth={2.5} />
             </a>
+          </div>
+          {/* Right — copy */}
+          <div>
+            <p className="text-xs font-semibold tracking-[0.1em] uppercase text-cta mb-4">
+              Not ready to talk yet?
+            </p>
+            <h2
+              className="text-section font-bold text-fg mb-6"
+              style={{ fontFamily: "var(--font-barlow)" }}
+            >
+              Diagnose your growth gaps first.
+            </h2>
+            <p className="text-muted leading-relaxed">
+              GrowthOS is a free 8-minute diagnostic that maps your revenue
+              system and surfaces the exact levers to pull first. Honest
+              analysis, no sales call required.
+            </p>
           </div>
         </div>
       </div>

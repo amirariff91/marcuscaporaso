@@ -1,7 +1,8 @@
 import Nav from "@/components/Nav";
 import Hero from "@/components/Hero";
-import Metrics from "@/components/Metrics";
+import TrustedBy from "@/components/TrustedBy";
 import Founder from "@/components/Founder";
+import Metrics from "@/components/Metrics";
 import Methodology from "@/components/Methodology";
 import Services from "@/components/Services";
 import GrowthOS from "@/components/GrowthOS";
@@ -14,8 +15,9 @@ export default function Home() {
       <Nav />
       <main>
         <Hero />
-        <Metrics />
+        <TrustedBy />
         <Founder />
+        <Metrics />
         <Methodology />
         <Services />
         <GrowthOS />
