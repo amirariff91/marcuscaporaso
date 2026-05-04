@@ -1,44 +1,15 @@
-"use client";
+import Image from "next/image";
 
-import { useState } from "react";
-
-const clients = [
-  { name: "IO Energy", domain: "ioenergy.com.au" },
-  { name: "Kiindred", domain: "kiindred.co" },
-  { name: "Peace & Quiet", domain: "peaceandquiet.au" },
-  { name: "Archbold Financial", domain: "archboldfinancial.com.au" },
-  { name: "Creston Health", domain: "crestonhealth.com.au" },
-  { name: "Biosymm", domain: "biosymm.com" },
-  { name: "Kiincreators", domain: "kiincreators.com" },
-  { name: "University of Adelaide", domain: "adelaide.edu.au" },
+const clients: Array<{ name: string; logo?: string; size?: number }> = [
+  { name: "IO Energy", logo: "/logos/ioenergy.png", size: 48 },
+  { name: "Kiindred", logo: "/logos/kiindred.png", size: 38 },
+  { name: "Peace & Quiet" }, // favicon too small — text fallback
+  { name: "Archbold Financial", logo: "/logos/archboldfinancial.png", size: 128 },
+  { name: "Creston Health", logo: "/logos/crestonhealth.png", size: 128 },
+  { name: "Biosymm", logo: "/logos/biosymm.png", size: 67 },
+  { name: "Kiincreators", logo: "/logos/kiincreators.png", size: 128 },
+  { name: "Univ. of Adelaide", logo: "/logos/adelaide.png", size: 128 },
 ];
-
-function ClientLogo({ name, domain }: { name: string; domain: string }) {
-  const [failed, setFailed] = useState(false);
-
-  if (failed) {
-    return (
-      <span
-        className="text-sm font-semibold text-muted-2 tracking-wide whitespace-nowrap"
-        style={{ fontFamily: "var(--font-barlow)" }}
-      >
-        {name}
-      </span>
-    );
-  }
-
-  return (
-    /* eslint-disable-next-line @next/next/no-img-element */
-    <img
-      src={`https://logo.clearbit.com/${domain}`}
-      alt={name}
-      title={name}
-      height={28}
-      className="h-7 w-auto object-contain opacity-50 grayscale hover:opacity-70 transition-opacity duration-200"
-      onError={() => setFailed(true)}
-    />
-  );
-}
 
 export default function TrustedBy() {
   return (
@@ -48,9 +19,27 @@ export default function TrustedBy() {
           Trusted by
         </p>
         <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-6">
-          {clients.map((c) => (
-            <ClientLogo key={c.domain} name={c.name} domain={c.domain} />
-          ))}
+          {clients.map((c) =>
+            c.logo ? (
+              <Image
+                key={c.name}
+                src={c.logo}
+                alt={c.name}
+                width={c.size ?? 128}
+                height={c.size ?? 128}
+                className="h-7 w-auto object-contain opacity-50 grayscale"
+                title={c.name}
+              />
+            ) : (
+              <span
+                key={c.name}
+                className="text-sm font-semibold text-muted-2 tracking-wide whitespace-nowrap"
+                style={{ fontFamily: "var(--font-barlow)" }}
+              >
+                {c.name}
+              </span>
+            )
+          )}
         </div>
       </div>
     </section>
