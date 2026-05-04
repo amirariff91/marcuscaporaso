@@ -18,24 +18,24 @@ const metrics = [
 
 export default function Metrics() {
   return (
-    <section className="border-t border-[oklch(18%_0.006_160)]">
+    <section className="border-t border-border">
       <div className="max-w-5xl mx-auto px-6">
-        <div className="divide-y divide-[oklch(14%_0.005_160)]">
+        <div className="divide-y divide-border-subtle">
           {metrics.map((m) => (
             <div
               key={m.label}
               className="py-6 grid grid-cols-[1fr_auto] items-baseline gap-8"
             >
               <div>
-                <div className="text-sm text-[oklch(60%_0.008_160)]">
+                <div className="text-sm text-muted">
                   {m.label}
                 </div>
-                <div className="text-xs text-[oklch(40%_0.006_160)] mt-0.5">
+                <div className="text-xs text-muted-2 mt-0.5">
                   {m.detail}
                 </div>
               </div>
               <div
-                className="text-2xl font-bold tabular-nums text-[oklch(98%_0.004_100)] tracking-tight"
+                className="text-2xl font-bold tabular-nums text-fg tracking-tight"
                 style={{ fontFamily: "var(--font-barlow)" }}
               >
                 {m.value}

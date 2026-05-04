@@ -20,30 +20,25 @@ export default function Hero() {
           </div>
           {/* Text */}
           <div className="max-w-2xl">
-            <p className="text-[oklch(52%_0.008_160)] text-sm font-medium mb-8 tracking-wide">
-              Marcus Caporaso
-            </p>
-            <h1 className="text-display font-bold text-[oklch(98%_0.004_100)] mb-8" style={{ fontFamily: "var(--font-barlow)" }}>
-              For complex, high-value service businesses scaling seriously.
+            <h1 className="text-display font-bold text-fg mb-8" style={{ fontFamily: "var(--font-barlow)" }}>
+              Growth systems for businesses ready to scale.
             </h1>
-            <p className="text-lg text-[oklch(60%_0.008_160)] leading-relaxed mb-12" style={{ fontFamily: "var(--font-figtree)" }}>
-              I embed as your fractional CMO and growth architect. We diagnose
-              what&apos;s broken, build the system to fix it, and optimise until
-              your numbers move.
+            <p className="text-lg text-muted leading-relaxed mb-12" style={{ fontFamily: "var(--font-figtree)" }}>
+              Revenue, operations and marketing infrastructure for ambitious founders.
             </p>
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6">
               <a
                 href="#booking"
-                className="inline-flex items-center gap-2.5 bg-[oklch(67%_0.18_162)] hover:bg-[oklch(58%_0.18_162)] text-white font-semibold px-8 py-4 rounded-sm transition-colors duration-200 text-[0.9375rem]"
+                className="inline-flex items-center gap-2.5 bg-cta hover:bg-cta-hover text-white font-semibold px-8 py-4 rounded-sm transition-colors duration-200 text-[0.9375rem]"
               >
-                Book a Strategy Call
+                Book Strategy Call
                 <ArrowRight size={16} strokeWidth={2.5} />
               </a>
               <a
                 href="#methodology"
-                className="text-[oklch(60%_0.008_160)] hover:text-[oklch(80%_0.006_160)] text-sm font-medium transition-colors duration-200 flex items-center gap-1.5 underline underline-offset-4 decoration-[oklch(30%_0.006_160)] hover:decoration-[oklch(60%_0.008_160)]"
+                className="text-muted hover:text-fg text-sm font-medium transition-colors duration-200 flex items-center gap-1.5 underline underline-offset-4 decoration-muted-2 hover:decoration-muted"
               >
-                See how it works
+                How It Works
               </a>
             </div>
           </div>

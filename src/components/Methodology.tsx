@@ -33,16 +33,16 @@ const steps = [
 
 export default function Methodology() {
   return (
-    <section id="methodology" className="py-24 border-t border-[oklch(18%_0.006_160)]">
+    <section id="methodology" className="py-24 border-t border-border">
       <div className="max-w-5xl mx-auto px-6">
         <div className="flex flex-col sm:flex-row sm:items-baseline gap-3 mb-20">
           <h2
-            className="text-section font-bold text-[oklch(98%_0.004_100)]"
+            className="text-section font-bold text-fg"
             style={{ fontFamily: "var(--font-barlow)" }}
           >
             How it works.
           </h2>
-          <span className="text-sm text-[oklch(45%_0.006_160)] sm:ml-6">
+          <span className="text-sm text-muted-2 sm:ml-6">
             A four-step growth loop
           </span>
         </div>
@@ -52,11 +52,11 @@ export default function Methodology() {
             <div
               key={step.number}
               className={`grid grid-cols-[3rem_1fr] sm:grid-cols-[4rem_1fr_2fr] gap-6 sm:gap-12 py-10 ${
-                i < steps.length - 1 ? "border-b border-[oklch(14%_0.005_160)]" : ""
+                i < steps.length - 1 ? "border-b border-border-subtle" : ""
               }`}
             >
               <div
-                className="text-sm font-medium text-[oklch(30%_0.006_160)] pt-1 tabular-nums"
+                className="text-sm font-medium text-muted-2 pt-1 tabular-nums"
                 style={{ fontFamily: "var(--font-barlow)" }}
               >
                 {step.number}
@@ -64,17 +64,17 @@ export default function Methodology() {
               <div className="flex items-start gap-3 sm:gap-4">
                 <step.icon
                   size={18}
-                  className="text-[oklch(67%_0.18_162)] mt-0.5 flex-shrink-0"
+                  className="text-cta mt-0.5 flex-shrink-0"
                   strokeWidth={1.75}
                 />
                 <h3
-                  className="text-lg font-semibold text-[oklch(98%_0.004_100)]"
+                  className="text-lg font-semibold text-fg"
                   style={{ fontFamily: "var(--font-barlow)" }}
                 >
                   {step.title}
                 </h3>
               </div>
-              <p className="text-[oklch(52%_0.008_160)] leading-relaxed text-sm col-start-2 sm:col-start-3 mt-0 sm:mt-0">
+              <p className="text-muted leading-relaxed text-sm col-start-2 sm:col-start-3 mt-0 sm:mt-0">
                 {step.description}
               </p>
             </div>

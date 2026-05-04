@@ -60,40 +60,40 @@ export default function Booking() {
   }, []);
 
   return (
-    <section id="booking" className="py-24 border-t border-[oklch(18%_0.006_160)]">
+    <section id="booking" className="py-24 border-t border-border">
       <div className="max-w-5xl mx-auto px-6">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-12 items-start">
           <div>
             <h2
-              className="text-section font-bold text-[oklch(98%_0.004_100)] mb-6"
+              className="text-section font-bold text-fg mb-6"
               style={{ fontFamily: "var(--font-barlow)" }}
             >
-              Book a Strategy Call.
+              Ready to scale without chaos?
             </h2>
-            <p className="text-[oklch(52%_0.008_160)] leading-relaxed">
+            <p className="text-muted leading-relaxed">
               A focused 45-minute conversation about your growth goals, current
               constraints, and what a high-impact engagement could look like.
               No obligation.
             </p>
           </div>
           <div className="flex flex-col gap-8 sm:pt-4">
-            <div className="space-y-3 text-sm text-[oklch(40%_0.006_160)]">
+            <div className="space-y-3 text-sm text-muted-2">
               <div className="flex items-center gap-3">
-                <div className="w-1 h-1 rounded-full bg-[oklch(67%_0.18_162)]" />
+                <div className="w-1 h-1 rounded-full bg-cta" />
                 45 minutes via video call
               </div>
               <div className="flex items-center gap-3">
-                <div className="w-1 h-1 rounded-full bg-[oklch(67%_0.18_162)]" />
+                <div className="w-1 h-1 rounded-full bg-cta" />
                 You pick the time
               </div>
               <div className="flex items-center gap-3">
-                <div className="w-1 h-1 rounded-full bg-[oklch(67%_0.18_162)]" />
+                <div className="w-1 h-1 rounded-full bg-cta" />
                 No pitch deck, no hard sell
               </div>
             </div>
             <button
               onClick={openCalendly}
-              className="inline-flex items-center gap-2.5 bg-[oklch(67%_0.18_162)] hover:bg-[oklch(58%_0.18_162)] text-white font-semibold px-8 py-4 rounded-sm transition-colors duration-200 text-[0.9375rem] cursor-pointer self-start"
+              className="inline-flex items-center gap-2.5 bg-cta hover:bg-cta-hover text-white font-semibold px-8 py-4 rounded-sm transition-colors duration-200 text-[0.9375rem] cursor-pointer self-start"
             >
               <Calendar size={16} strokeWidth={2} />
               Book a Strategy Call
