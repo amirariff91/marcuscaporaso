@@ -2,7 +2,7 @@ import { ArrowRight } from "lucide-react";
 
 export default function GrowthOS() {
   const growthosUrl =
-    process.env.NEXT_PUBLIC_GROWTHOS_URL ?? "https://growthops.cepathosting.com";
+    process.env.NEXT_PUBLIC_GROWTHOS_URL ?? "https://growthops.marcuscaporaso.com";
 
   return (
     <section className="py-24 border-t border-border bg-bg-raised">

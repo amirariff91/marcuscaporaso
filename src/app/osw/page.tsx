@@ -40,6 +40,8 @@ const organicKeywords = [
 
 const topPages = [
   ["Homepage", "371", "$37,256", "gastric bypass surgery perth", "#2"],
+  ["Medication PDF", "79", "$20,633", "duromine cost australia", "#7"],
+  ["Vitamin D PDF", "66", "$3,688", "vitamin d injection", "#6"],
   ["Gastric sleeve", "56", "$7,512", "gastric sleeve perth", "#2"],
   ["Fees", "56", "$4,284", "lap band surgery perth cost", "#3"],
   ["Gastric band", "47", "$4,096", "gastric band surgery perth", "#2"],
@@ -67,6 +69,41 @@ const crawlPages = [
   ["About", "208.2 KB", "2,122", "21", "1"],
   ["Fees", "211.4 KB", "1,163", "7", "0"],
   ["Contact", "185.4 KB", "738", "9", "1"],
+];
+
+const methodologySteps = [
+  {
+    step: "01",
+    title: "Diagnose",
+    focus: "Evidence before opinions",
+    description:
+      "Audit the current site, Ahrefs rankings, backlinks, sitemap, page speed, patient intent, competitors, and migration risk so the rebuild protects what is already working.",
+    proof: "Ahrefs confirms OSW already ranks top 3 for gastric bypass surgery perth, bariatric surgery perth, gastric sleeve perth, and weight loss surgery perth.",
+  },
+  {
+    step: "02",
+    title: "Architect",
+    focus: "Build around patient intent",
+    description:
+      "Design the new SEO architecture, URL map, procedure hubs, cost and finance pages, trust pages, lead capture, CRM handoff, and measurement plan before design starts.",
+    proof: "Ahrefs shows cost and finance intent is the clearest gap: gastric sleeve cost perth, weight loss surgery perth cost, payment plans, super access, and no-gap searches.",
+  },
+  {
+    step: "03",
+    title: "Install",
+    focus: "Launch without ranking damage",
+    description:
+      "Implement the fast rebuild, preserve or redirect every valuable URL and PDF, add schema and tracking, migrate content carefully, and QA the technical SEO before launch.",
+    proof: "The homepage carries 371 estimated AU organic visits/month and 194 referring domains, so URL and internal-link preservation matter more than a normal redesign.",
+  },
+  {
+    step: "04",
+    title: "Optimise",
+    focus: "Turn traffic into consults",
+    description:
+      "After launch, monitor rankings, improve cost pages, test CTAs, retarget high-intent visitors, strengthen E-E-A-T, and report on calls, forms, guide downloads, and consult quality.",
+    proof: "The SERP for gastric sleeve cost perth has AI Overview, People Also Ask, Reddit, and explicit cost pages. OSW needs answer blocks and conversion tracking, not just traffic reports.",
+  },
 ];
 
 const roadmap = [
@@ -230,6 +267,29 @@ export default function OSWAuditPage() {
           <FindingCard title="UX does not match the stakes">
             The current WordPress build feels dated, heavy, and brochure-like. Patients making a high-anxiety medical decision need clearer trust signals, surgeon proof, aftercare process, risk explanations, and next-step confidence.
           </FindingCard>
+        </div>
+      </Section>
+
+      <Section eyebrow="Marcus rebuild methodology" title="How we would run the OSW rebuild: Diagnose, Architect, Install, Optimise.">
+        <p>
+          This is the same four-step growth loop used on Marcus Caporaso, translated into a website rebuild, SEO migration, and patient-acquisition plan for OSW. The point is to give the client a clear delivery method, not just a list of audit findings.
+        </p>
+        <div className="mt-8 grid gap-5 md:grid-cols-2">
+          {methodologySteps.map((step) => (
+            <div key={step.step} className="rounded-3xl border border-white/10 bg-white/[0.03] p-6">
+              <div className="flex items-center justify-between gap-4">
+                <span className="text-sm font-semibold text-emerald-300">{step.step}</span>
+                <span className="rounded-full border border-white/10 px-3 py-1 text-xs uppercase tracking-[0.16em] text-slate-400">
+                  {step.focus}
+                </span>
+              </div>
+              <h3 className="mt-5 text-2xl font-semibold tracking-[-0.03em] text-white">{step.title}</h3>
+              <p className="mt-4 text-sm leading-7 text-slate-300">{step.description}</p>
+              <p className="mt-5 border-l border-emerald-300/40 pl-4 text-sm leading-7 text-emerald-50/90">
+                {step.proof}
+              </p>
+            </div>
+          ))}
         </div>
       </Section>
 
