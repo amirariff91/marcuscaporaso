@@ -4,6 +4,27 @@ export const metadata: Metadata = {
   title: "Obesity Surgery WA Rebuild Audit | SEO, Content & Growth Plan",
   description:
     "A rebuild audit for Obesity Surgery WA covering SEO visibility, technical performance, content architecture, conversion UX, and growth opportunities.",
+  alternates: {
+    canonical: "https://osw.marcuscaporaso.com/",
+  },
+  robots: {
+    index: false,
+    follow: false,
+  },
+  openGraph: {
+    type: "article",
+    url: "https://osw.marcuscaporaso.com/",
+    title: "Obesity Surgery WA Rebuild Audit",
+    description:
+      "SEO, technical, content, UX, and growth audit for the Obesity Surgery WA website rebuild.",
+    siteName: "OSW Rebuild Audit",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Obesity Surgery WA Rebuild Audit",
+    description:
+      "SEO, technical, content, UX, and growth audit for the Obesity Surgery WA website rebuild.",
+  },
 };
 
 const organicKeywords = [
