@@ -4,9 +4,14 @@ import type { NextRequest } from "next/server";
 export function proxy(request: NextRequest) {
   const host = request.headers.get("host")?.split(":")[0].toLowerCase();
 
-  if (host === "osw.marcuscaporaso.com" && request.nextUrl.pathname === "/") {
+  const reportHosts: Record<string, string> = {
+    "osw.marcuscaporaso.com": "/osw",
+    "biosymm.marcuscaporaso.com": "/biosymm",
+  };
+
+  if (host && request.nextUrl.pathname === "/" && reportHosts[host]) {
     const url = request.nextUrl.clone();
-    url.pathname = "/osw";
+    url.pathname = reportHosts[host];
     return NextResponse.rewrite(url);
   }
 
