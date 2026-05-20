@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Biosymm Growth Measurement Audit | Week 2",
   description:
-    "A Week 2 measurement, Google Ads, analytics tracking, paid media, and Ahrefs audit for Biosymm, ErgoEquip, and ErgoConsulting.",
+    "A Week 2 measurement, Google Ads, analytics tracking, paid media, and Ahrefs audit for Biosymm, ErgoEquip, and Ergoworks Consulting.",
   alternates: {
     canonical: "https://biosymm.marcuscaporaso.com/",
   },
@@ -16,14 +16,14 @@ export const metadata: Metadata = {
     url: "https://biosymm.marcuscaporaso.com/",
     title: "Biosymm Growth Measurement Audit",
     description:
-      "Measurement truth map and growth audit across clinics, corporate services, ErgoEquip, and ErgoConsulting.",
+      "Measurement truth map and growth audit across clinics, corporate services, ErgoEquip, and Ergoworks Consulting.",
     siteName: "Biosymm Growth Audit",
   },
   twitter: {
     card: "summary_large_image",
     title: "Biosymm Growth Measurement Audit",
     description:
-      "Week 2 audit covering Ahrefs SEO evidence, Google Ads readiness, tracking gaps, and paid media priorities.",
+      "Week 2 audit covering Ahrefs SEO evidence, Google Ads readiness, tracking governance, and paid media priorities.",
   },
 };
 
@@ -32,7 +32,7 @@ const auditDate = "20 May 2026";
 const evidence = [
   ["Biosymm", "DR 36", "196 live referring domains", "GTM-57WPM3W8 + GTM-PKLBV4L, GA4 G-6HKPBZ34ML", "Mostly branded/local clinic demand"],
   ["ErgoEquip", "DR 14", "201 live referring domains", "GTM-TSDBG52, GA4 G-V6GPG12LB6, AW-781426384", "High category opportunity if stock, margin and feed quality check out"],
-  ["ErgoConsulting", "DR 15", "84 live referring domains", "No public GA/GTM/forms detected in this review", "No AU organic keywords found in Ahrefs data reviewed"],
+  ["Ergoworks Consulting", "DR 15", "84 live referring domains", "Authenticated CMS review confirms active WordPress lead capture and public tracking", "Active lead-gen site; weak AU organic visibility and outcome mapping still need validation"],
 ];
 
 const accessNeeds = [
@@ -91,8 +91,8 @@ const seoExecution = [
   "Rewrite ErgoEquip keyboard, mouse, laptop stand/riser and footrest category pages around buyer intent: above-the-fold category intro, selection criteria, comparison tables, FAQs, stock/margin-led product ordering and links to best-fit products.",
   "Create supporting comparison/editorial pages: best ergonomic mouse Australia, ergonomic keyboard comparison, laptop riser vs laptop stand, desk foot rest guide, standing desk converter guide. Link each back to the matching category.",
   "For Biosymm, prioritise local clinic page refreshes before broad content: Belmont has 200/month at #8; Moranbah 80/month at #5; Roxby Downs is already #2 and should be defended.",
-  "For corporate services, build the workplace physiotherapy cluster because current SERP competitors have low authority. This is the cleanest non-branded B2B organic path for Biosymm/ErgoConsulting.",
-  "Keep ErgoConsulting out of acquisition reporting until the site is rebuilt, redirected into Biosymm corporate services, or instrumented with GA4/GTM and one qualified lead path.",
+  "For corporate services, build the workplace physiotherapy cluster because current SERP competitors have low authority. This is the cleanest non-branded B2B organic path across Biosymm and Ergoworks Consulting.",
+  "Bring Ergoworks Consulting into acquisition reporting only after its form submissions, calls, emails and thank-you states are mapped to lead owners and qualified outcomes.",
 ];
 
 const trackingAudit = [
@@ -115,10 +115,10 @@ const trackingAudit = [
     fix: "Primary: purchase with dynamic value. Secondary: add to cart, checkout start, product enquiry. Segment by SKU margin and stock before June push.",
   },
   {
-    stream: "ErgoConsulting",
-    current: "Public site appears placeholder-like with no visible analytics, forms or AU organic keywords.",
-    risk: "Treating this as an acquisition property will muddy reporting.",
-    fix: "Decide: rebuild, redirect, or retire. If kept active, install one clean GTM/GA4 setup and a single qualified lead path.",
+    stream: "Ergoworks Consulting",
+    current: "Authenticated CMS review shows an active WordPress lead-gen site with live enquiry, booking, newsletter and webinar forms, public tracking tags, phone/email routes and thank-you-page conversion states.",
+    risk: "Tracking exists, but reporting can still be polluted if phone clicks, email clicks, form submits, newsletter signups and thank-you-page hits are treated as equal commercial outcomes.",
+    fix: "Keep clicks and newsletter events secondary. Use enquiry and booking forms as lead events only after attribution fields, deduped thank-you tracking, recipient routing and qualified-lead outcomes are confirmed.",
   },
 ];
 
@@ -129,7 +129,7 @@ const conversionTruthMap = [
   ["Corporate / occupational health", "Opportunity created, proposal sent, won revenue", "CRM or interim pipeline sheet", "Primary at qualified opportunity or won revenue", "opportunity_created, proposal_sent, deal_won"],
   ["ErgoEquip ecommerce", "WooCommerce order with revenue, SKU and margin segment", "WooCommerce + GA4 ecommerce + Ads import", "Primary purchase value", "purchase, refund"],
   ["ErgoEquip product enquiry", "Sales-qualified product or bulk-order enquiry", "Contact Form 7 + inbox outcome", "Secondary until qualified", "product_enquiry_submit, product_lead_qualified"],
-  ["ErgoConsulting", "Decision to rebuild, redirect or retire before paid acquisition", "Site owner decision", "Do not optimise spend yet", "consulting_lead_qualified only if rebuilt"],
+  ["Ergoworks Consulting", "Qualified enquiry, booking request, webinar lead or sales opportunity", "Gravity Forms + routing/outcome sheet", "Secondary until lead quality and outcomes are verified", "ergoworks_form_submit, booking_request, consulting_lead_qualified"],
 ];
 
 const trackingHygiene = [
@@ -138,13 +138,16 @@ const trackingHygiene = [
   ["Meta pixel", "Not visible on Biosymm or ErgoEquip scans", "Retargeting and Meta CPA reporting will be blind unless a pixel/CAPI path is intentionally added with consent controls."],
   ["Cross-domain booking", "Nookal links send users off-site", "Add outbound click events and verify UTMs, gclid, gbraid and wbraid survive into Nookal or are captured before redirect."],
   ["WooCommerce ecommerce", "ErgoEquip has WooCommerce and Ads tag", "Validate GA4 recommended ecommerce events, purchase value/currency, transaction_id de-duping, refunds and enhanced conversions."],
+  ["Ergoworks Consulting tracking", "GTM, GA4, legacy Universal Analytics and Meta Pixel paths are present", "Audit firing rules for duplicate tracking, confirm thank-you-page triggers, and standardise events for phone_click, email_click, enquiry_submit, booking_request and newsletter_signup."],
+  ["Ergoworks Consulting forms", "Active Gravity Forms lead capture exists with substantial historical activity", "Confirm notification owners, spam filtering, hidden attribution fields, thank-you redirects and lead outcome capture before importing forms into Ads."],
+  ["Ergoworks Consulting WordPress ops", "Admin and plugin hygiene affects measurement trust", "Review least-privilege access, restrict unnecessary high-risk admin capabilities, patch maintenance items and tighten public WordPress exposure."],
   ["GA4 event taxonomy", "Mixed businesses in one reporting story", "Use consistent stream, location, service_type, lead_type, source_system and outcome_stage parameters across events."],
 ];
 
 const leadRoutingFields = [
   ["identity", "lead_id, created_at, name, phone, email, consent flag"],
   ["source", "landing_page, referrer, utm_source, utm_medium, utm_campaign, utm_content, utm_term, gclid, gbraid, wbraid, fbclid"],
-  ["route", "brand, stream, clinic/location, service_type, form_name or Nookal URL, recipient inbox/person, SLA owner"],
+  ["route", "brand, stream, clinic/location, service_type, form_name, Nookal URL or Ergoworks lead path, recipient inbox/person, SLA owner"],
   ["quality", "new/existing customer, lead_type, urgency, fit score, qualified yes/no, disqualification reason"],
   ["outcome", "booking_created, attended, opportunity_created, proposal_sent, won/lost, revenue, margin band, close date"],
 ];
@@ -154,7 +157,7 @@ const croActions = [
   ["Contact page", "One form plus many phone, email and Nookal routes", "Reduce ambiguity by grouping routes by location/service and adding expectation-setting copy: response time, booking path, who receives it."],
   ["Nookal booking", "External booking path creates attribution break", "Add pre-click event tracking and a post-booking outcome import; do not optimise campaigns to outbound clicks alone."],
   ["ErgoEquip product/category pages", "Commercial category upside but current organic positions sit around page 2–4", "Build SKU-led landing pages for high-margin/in-stock categories with trust, delivery, returns, bulk-order and enquiry CTAs above the fold."],
-  ["Forms", "ErgoEquip has six forms; Biosymm contact has one", "Standardise thank-you states and hidden attribution fields. Ensure Contact Form 7 submissions are deduped from GA4 form_submit noise."],
+  ["Forms", "ErgoEquip and Biosymm have visible form paths; Ergoworks Consulting has active Gravity Forms lead capture", "Standardise thank-you states, hidden attribution fields and deduping across Contact Form 7 and Gravity Forms. Confirm Ergoworks notification routing before treating submissions as leads."],
 ];
 
 const googleAdsChecks = [
@@ -178,7 +181,7 @@ const merchantCenterChecks = [
 const paidMediaPlan = [
   {
     title: "Do not scale blended CPA yet",
-    body: "The commercial streams are too different. Clinics, corporate, consulting and equipment need separate scorecards before budget decisions are safe.",
+    body: "The commercial streams are too different. Clinics, corporate services, Ergoworks Consulting and equipment need separate scorecards before budget decisions are safe.",
   },
   {
     title: "June ErgoEquip push should be SKU-led",
@@ -196,7 +199,8 @@ const paidMediaPlan = [
 
 const weekTwo = [
   "Export Google Ads conversion actions from the real Marcus/Biosymm ad account.",
-  "Map every form, phone, Nookal link, WooCommerce path and email route to the person/system receiving it.",
+  "Map every Biosymm, ErgoEquip and Ergoworks form, phone, Nookal link, WooCommerce path, thank-you page and email route to the person/system receiving it.",
+  "Confirm Ergoworks Gravity Forms notification owners, hidden attribution fields, thank-you triggers and qualified-lead outcomes for enquiry and booking forms.",
   "Mark true outcomes as primary; demote micro-actions to secondary or diagnostic only.",
   "Build a stream-level scorecard: clinics, corporate, consultancy, equipment.",
   "Confirm Nookal UTM/click-ID preservation and booking/attendance export.",
@@ -268,7 +272,7 @@ export default function BiosymmAuditPage() {
           <p className="text-sm font-semibold uppercase tracking-[0.26em] text-cta">Client audit / Week 2</p>
           <h1 className="mt-6 max-w-5xl text-display font-semibold text-fg">Biosymm needs measurement truth before budget truth.</h1>
           <p className="mt-8 max-w-3xl text-xl leading-9 text-muted">
-            This audit combines Ahrefs, public tracking checks, Google Ads audit criteria, paid media planning and analytics tracking review across Biosymm, ErgoEquip and ErgoConsulting.
+            This audit combines Ahrefs, public tracking checks, Google Ads audit criteria, paid media planning and analytics tracking review across Biosymm, ErgoEquip and Ergoworks Consulting.
           </p>
           <div className="mt-10 flex flex-wrap gap-3 text-sm font-semibold text-fg">
             <span className="rounded-full border border-border bg-white px-4 py-2">Prepared for Marcus</span>
@@ -300,6 +304,9 @@ export default function BiosymmAuditPage() {
       <Section eyebrow="Access blockers" title="The next findings depend on source-of-truth exports.">
         <p>
           This is a pre-access paid media audit. It is safe to validate visible tags, conversion surfaces, SEO demand and paid media readiness. It is not safe to judge spend efficiency, CPA, ROAS, wasted spend, Quality Score, campaign structure or bidding performance until the real ad, analytics, booking and revenue systems are shared.
+        </p>
+        <p className="mt-5">
+          Authenticated CMS review changed the Ergoworks Consulting read: it is not simply an inactive or untracked property. It is an active WordPress acquisition site. The remaining blocker is whether its lead signals are cleanly attributed, routed, deduped and connected to qualified pipeline or revenue outcomes.
         </p>
         <DataTable headers={["System", "Need", "Why it matters"]} rows={accessNeeds} />
       </Section>
