@@ -212,7 +212,7 @@ const weekTwo = [
 function Section({ eyebrow, title, children }: { eyebrow?: string; title: string; children: React.ReactNode }) {
   return (
     <section className="border-t border-border-subtle py-16 md:py-24">
-      <div className="mx-auto max-w-6xl px-5 md:px-8">
+      <div className="relative mx-auto max-w-6xl px-5 md:px-8">
         {eyebrow ? <p className="mb-4 text-sm font-semibold uppercase tracking-[0.22em] text-cta">{eyebrow}</p> : null}
         <h2 className="max-w-4xl text-3xl font-semibold tracking-[-0.03em] text-fg md:text-5xl">{title}</h2>
         <div className="mt-8 text-base leading-8 text-muted md:text-lg">{children}</div>
@@ -225,15 +225,15 @@ function DataTable({ headers, rows }: { headers: string[]; rows: string[][] }) {
   return (
     <div className="mt-8 overflow-hidden rounded-3xl border border-border bg-white shadow-sm">
       <div className="overflow-x-auto">
-        <table className="min-w-full divide-y divide-border-subtle text-left text-sm">
+        <table className="min-w-full divide-y divide-border text-left text-sm">
           <thead className="bg-bg-raised text-xs uppercase tracking-[0.16em] text-muted-2">
-            <tr>{headers.map((header) => <th key={header} className="px-5 py-4 font-semibold">{header}</th>)}</tr>
+            <tr className="border-b-2 border-border">{headers.map((header) => <th key={header} className="px-5 py-4 font-semibold">{header}</th>)}</tr>
           </thead>
           <tbody className="divide-y divide-border-subtle text-muted">
-            {rows.map((row) => (
-              <tr key={row.join("-")}>
+            {rows.map((row, rowIndex) => (
+              <tr key={row.join("-")} style={rowIndex % 2 !== 0 ? { backgroundColor: "oklch(97% 0.004 80)" } : {}}>
                 {row.map((cell, index) => (
-                  <td key={`${cell}-${index}`} className={index === 0 ? "px-5 py-4 font-semibold text-fg" : "px-5 py-4"}>{cell}</td>
+                  <td key={`${cell}-${index}`} className={index === 0 ? "px-5 py-3.5 font-semibold text-fg" : "px-5 py-3.5"}>{cell}</td>
                 ))}
               </tr>
             ))}
@@ -244,9 +244,11 @@ function DataTable({ headers, rows }: { headers: string[]; rows: string[][] }) {
   );
 }
 
-function MetricCard({ label, value, note }: { label: string; value: string; note: string }) {
+function MetricCard({ label, value, note, status }: { label: string; value: string; note: string; status?: "good" | "warning" | "critical" | "neutral" }) {
+  const dot = status === "critical" ? "bg-red-500" : status === "warning" ? "bg-amber-400" : status === "good" ? "bg-cta" : null;
   return (
-    <div className="rounded-3xl border border-border bg-white p-6 shadow-sm">
+    <div className="relative rounded-3xl border border-border bg-white p-6 shadow-sm">
+      {dot && <span className={`absolute right-5 top-5 h-2.5 w-2.5 rounded-full ${dot}`} />}
       <p className="text-sm uppercase tracking-[0.18em] text-muted-2">{label}</p>
       <p className="mt-4 text-4xl font-semibold tracking-[-0.04em] text-fg">{value}</p>
       <p className="mt-4 text-sm leading-6 text-muted">{note}</p>
@@ -257,6 +259,7 @@ function MetricCard({ label, value, note }: { label: string; value: string; note
 function FindingCard({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <div className="rounded-3xl border border-border bg-white p-6 shadow-sm">
+      <div className="mb-4 h-0.5 w-8 rounded-full bg-cta" />
       <h3 className="text-xl font-semibold tracking-[-0.02em] text-fg">{title}</h3>
       <div className="mt-4 text-sm leading-7 text-muted">{children}</div>
     </div>
@@ -277,17 +280,17 @@ export default function BiosymmAuditPage() {
           <div className="mt-10 flex flex-wrap gap-3 text-sm font-semibold text-fg">
             <span className="rounded-full border border-border bg-white px-4 py-2">Prepared for Marcus</span>
             <span className="rounded-full border border-border bg-white px-4 py-2">Audit date: {auditDate}</span>
-            <span className="rounded-full border border-border bg-white px-4 py-2">Noindex client report</span>
+            <span className="rounded-full border border-border bg-white px-4 py-2">Client: Biosymm Group</span>
           </div>
         </div>
       </section>
 
       <section className="py-12">
         <div className="mx-auto grid max-w-6xl gap-5 px-5 md:grid-cols-4 md:px-8">
-          <MetricCard label="Core call" value="Do not scale yet" note="Blended CPA is not decision-grade until true outcomes are separated by stream." />
-          <MetricCard label="Biosymm SEO" value="DR 36" note="Strongest asset, but organic traffic skews branded/local/recruitment." />
-          <MetricCard label="ErgoEquip SEO" value="DR 14" note="Low current traffic, but category keywords have strong AU demand and low difficulty." />
-          <MetricCard label="Tracking risk" value="High" note="Custom booking click events exist per clinic (335 book_now fires in 28d) but none are classified as primary conversions yet." />
+          <MetricCard label="Core call" value="Do not scale yet" note="Blended CPA is not decision-grade until true outcomes are separated by stream." status="critical" />
+          <MetricCard label="Biosymm SEO" value="DR 36" note="Strongest asset, but organic traffic skews branded/local/recruitment." status="good" />
+          <MetricCard label="ErgoEquip SEO" value="DR 14" note="Low current traffic, but category keywords have strong AU demand and low difficulty." status="warning" />
+          <MetricCard label="Tracking risk" value="High" note="Custom booking click events exist per clinic (335 book_now fires in 28d) but none are classified as primary conversions yet." status="critical" />
         </div>
       </section>
 
@@ -306,10 +309,10 @@ export default function BiosymmAuditPage() {
           GA4 data for the last 28 days (23 Apr – 20 May 2026). Sourced directly from the Biosymm GA4 property (G-6HKPBZ34ML) via authenticated account access. This is the first time real traffic data has been available for this audit.
         </p>
         <div className="mt-8 grid gap-5 md:grid-cols-4">
-          <MetricCard label="Active users" value="2,182" note="Last 28 days" />
-          <MetricCard label="Sessions" value="2,798" note="Across all channels" />
-          <MetricCard label="Avg session" value="2m 11s" note="Site is engaging once users land" />
-          <MetricCard label="Bounce rate" value="9.9%" note="Low — users are exploring the site" />
+          <MetricCard label="Active users" value="2,182" note="Last 28 days" status="good" />
+          <MetricCard label="Sessions" value="2,798" note="Across all channels" status="good" />
+          <MetricCard label="Avg session" value="2m 11s" note="Site is engaging once users land" status="good" />
+          <MetricCard label="Bounce rate" value="9.9%" note="Low — users are exploring the site" status="good" />
         </div>
         <DataTable
           headers={["Channel", "Sessions", "Users", "Avg Session", "Bounce Rate"]}
@@ -325,19 +328,19 @@ export default function BiosymmAuditPage() {
         <DataTable
           headers={["Commercial event", "Fires (28d)", "Users"]}
           rows={[
-            ["book_now_button_click_sr", "335", "154"],
-            ["phone_click_sr", "184", "137"],
-            ["book_now_moranbah_sr", "85", "58"],
-            ["form_start", "41", "36"],
-            ["book_now_roxby_downs_sr", "34", "22"],
-            ["form_submit", "31", "21"],
-            ["book_now_emerald_sr", "30", "23"],
-            ["book_now_blackwater_sr", "17", "9"],
-            ["book_now_mackay_nb_sr", "14", "12"],
-            ["contact_us_sr", "13", "12"],
-            ["email_click_sr", "13", "13"],
-            ["book_now_bunbury_sr", "3", "3"],
-            ["book_now_ooralea_sr", "3", "3"],
+            ["Book Now — main CTA", "335", "154"],
+            ["Phone click", "184", "137"],
+            ["Book → Moranbah", "85", "58"],
+            ["Form started", "41", "36"],
+            ["Book → Roxby Downs", "34", "22"],
+            ["Form submitted", "31", "21"],
+            ["Book → Emerald", "30", "23"],
+            ["Book → Blackwater", "17", "9"],
+            ["Book → Mackay", "14", "12"],
+            ["Contact Us click", "13", "12"],
+            ["Email click", "13", "13"],
+            ["Book → Bunbury", "3", "3"],
+            ["Book → Ooralea", "3", "3"],
           ]}
         />
         <div className="mt-8 grid gap-5 md:grid-cols-3">
@@ -386,7 +389,7 @@ export default function BiosymmAuditPage() {
         </div>
         <div className="mt-8 rounded-3xl border border-border bg-white p-6 shadow-sm">
           <ol className="grid gap-4 text-base leading-7 text-muted md:grid-cols-2">
-            {seoExecution.map((item) => <li key={item} className="flex gap-3"><span className="mt-1 h-2 w-2 shrink-0 rounded-full bg-cta" /> <span>{item}</span></li>)}
+            {seoExecution.map((item, idx) => <li key={item} className="flex gap-3 items-start"><span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-cta text-white text-xs font-bold mt-0.5">{idx + 1}</span> <span>{item}</span></li>)}
           </ol>
         </div>
       </Section>
@@ -448,14 +451,14 @@ export default function BiosymmAuditPage() {
       <Section eyebrow="Week 2 execution" title="The practical checklist for Marcus">
         <div className="rounded-3xl border border-border bg-white p-6 shadow-sm">
           <ol className="grid gap-4 text-base leading-7 text-muted md:grid-cols-2">
-            {weekTwo.map((item) => <li key={item} className="flex gap-3"><span className="mt-1 h-2 w-2 shrink-0 rounded-full bg-cta" /> <span>{item}</span></li>)}
+            {weekTwo.map((item, idx) => <li key={item} className="flex gap-3 items-start"><span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-cta text-white text-xs font-bold mt-0.5">{idx + 1}</span><span>{item}</span></li>)}
           </ol>
         </div>
       </Section>
 
       <Section eyebrow="Bottom line" title="One job this week: make CPA commercial, not cosmetic.">
         <div className="rounded-[2rem] bg-fg p-8 text-bg md:p-10">
-          <p className="max-w-4xl text-2xl font-semibold leading-9 tracking-[-0.02em] md:text-4xl md:leading-[1.15]">
+          <p className="max-w-4xl text-3xl font-semibold leading-[1.2] tracking-[-0.02em] md:text-5xl md:leading-[1.1]">
             Build the conversion truth map and lead routing map first. Then demote micro-actions so reported CPA reflects completed bookings, qualified leads, ecommerce purchases, opportunities and revenue — not clicks that merely look busy.
           </p>
         </div>
