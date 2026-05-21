@@ -153,9 +153,10 @@ const leadRoutingFields = [
 ];
 
 const croActions = [
-  ["Homepage", "No forms; conversion depends on Nookal, phone and CTA clicks", "Use one primary CTA per service stream, add location-aware clinic CTA copy, and track CTA location/text as event parameters."],
+  ["Homepage", "17 Nookal external booking links; no clear primary CTA hierarchy; H1 is company-focused not outcome-focused", "Establish one primary CTA per service stream. Add outcome-focused copy above the fold. Wrap Nookal links in tracked click events so booking intent is measurable before the off-site jump."],
   ["Contact page", "One form plus many phone, email and Nookal routes", "Reduce ambiguity by grouping routes by location/service and adding expectation-setting copy: response time, booking path, who receives it."],
-  ["Nookal booking", "External booking path creates attribution break", "Add pre-click event tracking and a post-booking outcome import; do not optimise campaigns to outbound clicks alone."],
+  ["Nookal booking", "External booking path creates attribution break — gclid/utm likely lost at redirect", "Add pre-click event tracking and a post-booking outcome import; do not optimise campaigns to outbound clicks alone."],
+  ["Landing pages for paid", "Agency flagged: keywords must appear on landing pages; QS suffering as a result", "The pages ads land on must contain the target keyword in H1, body, and meta title. For physio clinic ads, each location page needs localised keyword content."],
   ["ErgoEquip product/category pages", "Commercial category upside but current organic positions sit around page 2–4", "Build SKU-led landing pages for high-margin/in-stock categories with trust, delivery, returns, bulk-order and enquiry CTAs above the fold."],
   ["Forms", "ErgoEquip and Biosymm have visible form paths; Ergoworks Consulting has active Gravity Forms lead capture", "Standardise thank-you states, hidden attribution fields and deduping across Contact Form 7 and Gravity Forms. Confirm Ergoworks notification routing before treating submissions as leads."],
 ];
@@ -163,10 +164,19 @@ const croActions = [
 const googleAdsChecks = [
   ["Conversion actions", "Blocked until account export", "Classify every action: purchase, qualified lead, booking, attended patient, call, micro-action."],
   ["Primary vs secondary", "High risk", "Demote booking clicks, contact clicks, page views, form starts and short calls unless proven commercial outcomes."],
-  ["Enhanced conversions", "Need account check", "Enable for lead and purchase actions where privacy-compliant first-party data exists."],
+  ["Enhanced conversions", "Need account check", "Enable for lead and purchase actions where privacy-compliant first-party data exists. Critical for AU healthcare with Consent Mode v2."],
+  ["Consent Mode v2", "Status unknown", "AU healthcare context: verify Consent Mode v2 is implemented. Required for Enhanced Conversions and for retaining modelled data post-consent denial."],
   ["Offline imports", "Missing from public evidence", "Start with weekly CSV/import from Nookal, WooCommerce, CRM or interim sheet."],
   ["Account access", "Real account not visible", "Tools only expose 3246645286 and 4756545876; 4756545876 is the Amir Ariff manager with no client accounts, and 3246645286 cannot be confirmed as Marcus/Biosymm."],
   ["Search term waste", "Needs Google Ads data", "Do not recommend negatives from guesses. Pull last 30 days search terms first."],
+  ["Brand/non-brand split", "Unknown", "Confirm whether brand (biosymm) and non-brand (physio belmont, workplace physio) campaigns are separated. Blended CPA hides true non-brand cost."],
+  ["Quality Score", "Agency flagged — needs improvement", "Agency stated QS needs improvement and keywords must appear on landing pages. Homepage H1 has zero target keywords — direct fix needed."],
+];
+
+const agencyBenchmarks = [
+  ["Biosymm — Search (clinics + consulting)", "$4,305/mo", "$26,069 over 6mo", "310", "$83", "High — agency flagged LP quality + missing SEO as blockers"],
+  ["ErgoEquip — PMax (equipment)", "$690/mo", "$3,947 over 6mo", "135", "$29", "Good — $2.72x ROAS; $10,741 revenue generated"],
+  ["Ergoworks — Search + PMax", "$1,500/mo", "$8,799 over 6mo", "~275", "$32", "Fair — agency recommends consolidating to PMax; 18% impression share lost to budget"],
 ];
 
 const merchantCenterChecks = [
@@ -383,6 +393,20 @@ export default function BiosymmAuditPage() {
         <DataTable headers={["Current ranking", "AU volume", "Position", "Current URL", "Action"]} rows={currentErgoRankings} />
       </Section>
 
+      <Section eyebrow="Technical SEO" title="Three quick wins Marcus can raise in the meeting.">
+        <div className="grid gap-5 md:grid-cols-3">
+          <FindingCard title="H1 has zero target keywords — easy fix">
+            <p>Current homepage H1: &quot;Australia-wide. Technology enabled. Workplace focused.&quot; Not a single keyword Google can use to rank the page for commercial terms. A simple rewrite to something like &quot;Workplace Physiotherapy Across Australia&quot; sends an immediate signal. 15-minute change, direct ranking impact on corporate terms.</p>
+          </FindingCard>
+          <FindingCard title="Location pages are fragmented">
+            <p>Only /belmont-clinic/ and /roxby-downs-clinic/ exist in the sitemap. /roxby-downs/, /moranbah/, /locations/ all return 404. The Ahrefs data shows Moranbah and Roxby Downs ranking #2–5 — these pages are leaving local traffic on the table due to inconsistent URL structure.</p>
+          </FindingCard>
+          <FindingCard title="Schema markup needs verification">
+            <p>No schema detected in static HTML. WordPress with Yoast typically injects JSON-LD via JavaScript — a browser render is needed to confirm. If LocalBusiness and MedicalBusiness schema are missing, Google can&apos;t surface rich results for clinic locations. Quick Yoast config check.</p>
+          </FindingCard>
+        </div>
+      </Section>
+
       <Section eyebrow="SEO battlefields" title="Where the Ahrefs evidence changes the action plan.">
         <div className="grid gap-5 md:grid-cols-3">
           {seoBattlefields.map((item) => <FindingCard key={item.title} title={item.title}><p>{item.body}</p></FindingCard>)}
@@ -432,6 +456,19 @@ export default function BiosymmAuditPage() {
         <p>
           Using the Google Ads audit checklist: conversion tracking, primary/secondary action hygiene, enhanced conversions, offline imports and search term waste are the first checks. Without the actual Marcus/Biosymm account export, a spend optimisation recommendation would be guesswork.
         </p>
+        <p className="mt-5 font-semibold text-fg">Previous agency performance (6-month snapshot from March 2026)</p>
+        <DataTable headers={["Stream", "Monthly budget", "6mo spend", "Conversions", "CPA", "Assessment"]} rows={agencyBenchmarks} />
+        <div className="mt-8 grid gap-5 md:grid-cols-3">
+          <FindingCard title="$83 CPA on Biosymm Search is a red flag">
+            <p>The previous agency flagged landing page quality issues and missing SEO as the blockers — not the campaigns themselves. Ads are landing on pages that don't mention the keywords being bid on. Homepage H1 confirmed: zero target keywords. Fix the page before touching bids.</p>
+          </FindingCard>
+          <FindingCard title="ErgoEquip PMax is the bright spot">
+            <p>$29 CPA and 2.72x ROAS on a $690/mo budget. This is the only stream with confirmed revenue tracking. The agency recommendation to consolidate Ergoworks to PMax is directionally right — but verify conversion action quality first so the algorithm isn't optimising to micro-actions.</p>
+          </FindingCard>
+          <FindingCard title="24–18% impression share lost to budget">
+            <p>Both Biosymm and Ergoworks campaigns are leaving 18–24% of eligible impressions on the table due to budget caps. Before increasing budgets, validate that current conversions are real commercial outcomes — scaling a leaky funnel faster just burns money.</p>
+          </FindingCard>
+        </div>
         <DataTable headers={["Check", "Status", "Recommended action"]} rows={googleAdsChecks} />
       </Section>
 
