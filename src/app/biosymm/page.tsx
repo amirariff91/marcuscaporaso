@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   },
 };
 
-const auditDate = "20 May 2026";
+const auditDate = "21 May 2026";
 
 const evidence = [
   ["Biosymm", "DR 36", "196 live referring domains", "GTM-57WPM3W8 + GTM-PKLBV4L, GA4 G-6HKPBZ34ML", "Mostly branded/local clinic demand"],
@@ -287,7 +287,7 @@ export default function BiosymmAuditPage() {
           <MetricCard label="Core call" value="Do not scale yet" note="Blended CPA is not decision-grade until true outcomes are separated by stream." />
           <MetricCard label="Biosymm SEO" value="DR 36" note="Strongest asset, but organic traffic skews branded/local/recruitment." />
           <MetricCard label="ErgoEquip SEO" value="DR 14" note="Low current traffic, but category keywords have strong AU demand and low difficulty." />
-          <MetricCard label="Tracking risk" value="High" note="Micro-actions can pollute bidding if treated as primary conversions." />
+          <MetricCard label="Tracking risk" value="High" note="Custom booking click events exist per clinic (335 book_now fires in 28d) but none are classified as primary conversions yet." />
         </div>
       </section>
 
@@ -299,6 +299,58 @@ export default function BiosymmAuditPage() {
           Public checks can confirm visible tags, links, forms and indexable SEO data. They cannot confirm backend conversion settings, hidden server-side events, CRM outcomes, booking completion, attribution integrity or revenue quality without account exports.
         </p>
         <DataTable headers={["Property", "Authority", "Backlinks", "Tracking", "Commercial read"]} rows={evidence} />
+      </Section>
+
+      <Section eyebrow="GA4 / Live data" title="Biosymm has tracking — but conversions are not classified.">
+        <p>
+          GA4 data for the last 28 days (23 Apr – 20 May 2026). Sourced directly from the Biosymm GA4 property (G-6HKPBZ34ML) via authenticated account access. This is the first time real traffic data has been available for this audit.
+        </p>
+        <div className="mt-8 grid gap-5 md:grid-cols-4">
+          <MetricCard label="Active users" value="2,182" note="Last 28 days" />
+          <MetricCard label="Sessions" value="2,798" note="Across all channels" />
+          <MetricCard label="Avg session" value="2m 11s" note="Site is engaging once users land" />
+          <MetricCard label="Bounce rate" value="9.9%" note="Low — users are exploring the site" />
+        </div>
+        <DataTable
+          headers={["Channel", "Sessions", "Users", "Avg Session", "Bounce Rate"]}
+          rows={[
+            ["Organic Search", "1,039 (37%)", "747", "3m 32s", "11.8%"],
+            ["Cross-network (Ads)", "730 (26%)", "611", "1m 07s", "4.7%"],
+            ["Direct", "730 (26%)", "658", "55s", "9.2%"],
+            ["Referral", "256 (9%)", "143", "3m 34s", "14.1%"],
+            ["Unassigned", "36 (1%)", "31", "14s", "52.8% ⚠"],
+            ["Organic Social", "14 (<1%)", "13", "42s", "0%"],
+          ]}
+        />
+        <DataTable
+          headers={["Commercial event", "Fires (28d)", "Users"]}
+          rows={[
+            ["book_now_button_click_sr", "335", "154"],
+            ["phone_click_sr", "184", "137"],
+            ["book_now_moranbah_sr", "85", "58"],
+            ["form_start", "41", "36"],
+            ["book_now_roxby_downs_sr", "34", "22"],
+            ["form_submit", "31", "21"],
+            ["book_now_emerald_sr", "30", "23"],
+            ["book_now_blackwater_sr", "17", "9"],
+            ["book_now_mackay_nb_sr", "14", "12"],
+            ["contact_us_sr", "13", "12"],
+            ["email_click_sr", "13", "13"],
+            ["book_now_bunbury_sr", "3", "3"],
+            ["book_now_ooralea_sr", "3", "3"],
+          ]}
+        />
+        <div className="mt-8 grid gap-5 md:grid-cols-3">
+          <FindingCard title="Custom booking events exist — not set as conversions">
+            <p>Biosymm already has 13 location-specific booking click events firing. book_now_button_click_sr alone fired 335 times from 154 users in 28 days. None are set as GA4 key events or Google Ads primary conversion actions. Promoting the top booking events to primary conversions is the single highest-leverage tracking fix before scaling spend.</p>
+          </FindingCard>
+          <FindingCard title="Unassigned channel is a red flag">
+            <p>36 sessions with 52.8% bounce and 14s avg session — the worst quality traffic of any channel. Almost certainly UTM-stripped or mis-tagged links. Investigate GTM tag firing order and ensure all campaign links preserve UTMs before increasing Ads budgets.</p>
+          </FindingCard>
+          <FindingCard title="Google Ads landing quality is strong">
+            <p>Cross-network (Ads) has the lowest bounce rate of any channel at 4.7% and 1m 07s avg session. Ads are reaching relevant audiences and landing pages are working. CPA cannot be calculated until booking events are promoted to primary conversions — but the signals are positive.</p>
+          </FindingCard>
+        </div>
       </Section>
 
       <Section eyebrow="Access blockers" title="The next findings depend on source-of-truth exports.">
