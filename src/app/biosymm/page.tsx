@@ -32,7 +32,7 @@ const auditDate = "26 May 2026";
 const evidence = [
   ["Biosymm", "DR 36", "196 live referring domains", "GA4 and GTM present; container ownership and firing review required", "Mostly branded/local clinic demand"],
   ["ErgoEquip", "DR 14", "201 live referring domains", "GA4, GTM, and Google Ads tagging present; ecommerce tracking validation required", "High category opportunity if stock, margin and feed quality check out"],
-  ["Ergoworks Consulting", "DR 15", "84 live referring domains", "Lead capture and public tracking confirmed; outcome mapping still required", "Active lead-gen site; weak AU organic visibility and outcome mapping still need validation"],
+  ["Ergoworks Consulting", "DR 14", "84 live referring domains", "Lead capture and public tracking confirmed; outcome mapping still required", "Active lead-gen site; weak AU organic visibility and outcome mapping still need validation"],
 ];
 
 const biosymmKeywords = [
@@ -316,6 +316,33 @@ const weekTwo = [
   "Create an interim offline outcome sheet if Nookal, WooCommerce, or CRM exports are not available within 7 days."
 ];
 
+const smartBiddingThresholds = [
+  ["<15 conversions / 30d", "Not Smart Bidding ready", "Use Maximize Clicks with a CPC cap or manual constraint while conversion quality is fixed", "Avoid tCPA/tROAS; the algorithm is still in guessing mode"],
+  ["15–29 conversions / 30d", "Transition stage", "Use Maximize Conversions without a target", "Run for 14 days, establish baseline CPA, then move only when CPA is stable"],
+  ["30+ conversions / 30d", "tCPA viable", "Use Target CPA for lead generation", "Initial tCPA should sit around 1.1x–1.2x historical CPA; adjust by max 10% every 14 days"],
+  ["50+ conversions / 30d", "Stable automation", "Best threshold for tCPA stability or value-based bidding", "Use only with clean primary conversions and enough daily budget to let the model learn"],
+];
+
+const biddingReadinessRows = [
+  ["Biosymm Search", "$26,069", "310", "~52 / mo", "$83", "tCPA volume-ready", "Use tCPA only after primary conversions are cleaned. Start around $91–$100 if $83 is confirmed as the 30-day CPA. Current $4,305/mo budget (~$144/day) is below the 2x CPA comfort zone — avoid aggressive target tightening."],
+  ["ErgoEquip PMax", "$3,947", "135", "~23 / mo", "$29 / 2.72x ROAS", "Transition-ready, not tROAS-stable", "Maximize Conversions or Maximize Conversion Value can continue. Target ROAS is premature until purchase value, margin, stock, feed approvals and brand exclusions are verified."],
+  ["Ergoworks Search + PMax", "$8,799", "~275", "~46 / mo", "$32", "tCPA volume-ready", "Use tCPA for qualified lead outcomes once form submits are separated from newsletter, email, phone and low-quality enquiries. 18–24% Lost IS to budget is a scale signal after outcome quality is proven."],
+];
+
+const killRuleRows = [
+  ["Biosymm Search", "$83", "$249 spend with 0 conversions", "$83 spend with 0 clicks or CTR <0.2%", "Pause or isolate the underperformer. Confirm whether conversions are real bookings or click signals before any changes."],
+  ["ErgoEquip PMax", "$29", "$87 spend with 0 conversions", "$29 spend with 0 clicks or CTR <0.2%", "Check asset groups, disapproved products, out-of-stock SKUs and brand-only demand before spending further."],
+  ["Ergoworks Search + PMax", "$32", "$96 spend with 0 conversions", "$32 spend with 0 clicks or CTR <0.2%", "Pause zero-conversion ad groups or asset groups; protect testing budget for properly routed consulting enquiries."],
+];
+
+const pmaxGovernanceRows = [
+  ["Brand cannibalization", "PMax can inflate ROAS or CPA by harvesting existing brand demand", "Apply brand exclusions where Search is active; review Search Term Insights for brand share; keep brand campaigns separate from non-brand and PMax."],
+  ["Negative keywords", "PMax and broad expansion need guardrails before scale", "Apply account-level negatives: jobs, free/cheap, irrelevant locations, competitor terms where inappropriate, and unrelated product categories."],
+  ["Search term waste", "Irrelevant spend >10% of budget fails the check; zero-conversion waste >20% fails", "Review search terms weekly. Any query with >30 clicks and 0 conversions is a negative-keyword candidate."],
+  ["Asset and feed readiness", "PMax performance is constrained by asset quality, feed accuracy, stock and value tracking", "For ErgoEquip: do not scale PMax until Merchant Center approvals, availability, purchase value, refunds and SKU margin are verified."],
+  ["New vs returning users", "ROAS can be inflated if PMax mainly captures existing or returning demand", "Check New Customer Acquisition settings; compare new-customer vs returning-user revenue before increasing PMax budget."],
+];
+
 function Section({ eyebrow, title, children }: { eyebrow?: string; title: string; children: React.ReactNode }) {
   return (
     <section className="border-t border-border-subtle py-16 md:py-24">
@@ -501,6 +528,50 @@ export default function BiosymmAuditPage() {
           </p>
         </div>
         <DataTable headers={["Check", "Status", "Recommended action"]} rows={googleAdsChecks} />
+      </Section>
+
+      <Section eyebrow="Bidding readiness" title="The accounts have the conversion volume for automation — but only after primary conversions are cleaned up.">
+        <p>
+          Smart Bidding is not a belief system. It is a data-density decision. Under 15 verified conversions in 30 days, avoid Smart Bidding and protect budget with capped clicks or manual constraints. From 15–29 conversions, Maximize Conversions works as a transition. At 30 or more conversions, Target CPA becomes viable — provided the conversion action is a real commercial outcome and the daily budget gives the algorithm room to learn.
+        </p>
+        <p className="mt-4">
+          Biosymm appears to have enough raw volume across streams for automated bidding. The blocker is not volume — it is conversion truth. Booking clicks, phone clicks, form submits and ecommerce purchases cannot be mixed as the bidding signal. The campaigns need cleaned primary conversions first: attended bookings, qualified leads, and purchases with verified value.
+        </p>
+        <DataTable headers={["30-day volume", "Readiness", "Recommended strategy", "Operating rule"]} rows={smartBiddingThresholds} />
+        <DataTable headers={["Stream", "6mo spend", "6mo conversions", "Avg / mo", "Result", "Bidding read", "What this means"]} rows={biddingReadinessRows} />
+        <div className="mt-8 grid gap-5 md:grid-cols-3">
+          <FindingCard title="Biosymm Search: tCPA-volume-ready, not proof-ready">
+            <p>310 conversions over 6 months is roughly 52 per month — that clears the 30/month tCPA threshold. The blocker is conversion truth, not volume. The $83 CPA should not become the Target CPA until primary conversions are separated from booking clicks and lighter contact actions. If $83 is confirmed against attended patients, set the first tCPA at $91–$100, not below historical CPA.</p>
+          </FindingCard>
+          <FindingCard title="ErgoEquip PMax: real traction, but target ROAS is premature">
+            <p>$29 CPA, 2.72x ROAS, $10,741 revenue — a genuine proof point. But at ~23 conversions per month, tROAS is premature. Keep Maximize Conversions or Maximize Conversion Value constrained until purchase value, SKU margin, stock status, feed approvals and brand exclusions are verified. Do not set a hard target ROAS if it would throttle volume before value tracking is trusted.</p>
+          </FindingCard>
+          <FindingCard title="Ergoworks: scale potential locked behind lead quality">
+            <p>~275 conversions over 6 months (~46/mo), $32 CPA, 18–24% impression share lost to budget. Volume qualifies for tCPA. The risk is raw form submissions mixed with newsletters, general contact and low-fit enquiries. Move to Target CPA only after qualified consulting enquiries are separated and imported as the primary bidding signal.</p>
+          </FindingCard>
+        </div>
+        <div className="mt-10">
+          <p className="font-semibold text-fg">3x Kill Rule — protect budget during the conversion cleanup.</p>
+          <p className="mt-3">
+            Apply at campaign, ad group, asset group and search-term level. If a unit spends more than 3x the target CPA with zero conversions, pause it immediately. If it spends more than 1x the target CPA with no clicks or CTR below 0.2%, investigate creative, landing page, tracking, policy status or broken URLs before spending further. Scale only when CPA sits more than 10% below target and Lost IS to Budget is meaningful — then increase daily budget by 20% and wait 72 hours.
+          </p>
+        </div>
+        <DataTable headers={["Stream", "CPA anchor", "3x Kill trigger", "1x technical check", "Action"]} rows={killRuleRows} />
+        <div className="mt-8 grid gap-5 md:grid-cols-2">
+          <FindingCard title="Scale only after the budget test passes">
+            <p>Ergoworks has 18–24% Lost IS to budget — a genuine scale signal, but only after lead quality is verified. Biosymm Search at $4,305/mo (~$144/day) is below 2x the current $83 CPA. That limits the algorithm&apos;s learning room if tCPA is tightened aggressively. Fix conversion quality first, then give the budget room to grow incrementally.</p>
+          </FindingCard>
+          <FindingCard title="PMax needs brand and negative hygiene before any scale">
+            <p>PMax can report strong ROAS while harvesting existing brand demand or expanding into irrelevant queries. Before increasing ErgoEquip PMax budget: review Search Term Insights, add brand exclusions where Search is running, apply account-level negative lists, and confirm URL expansion exclusions. PMax should add incremental revenue — not repackage brand demand as 2.72x ROAS.</p>
+          </FindingCard>
+        </div>
+        <DataTable headers={["PMax check", "Why it matters", "Required action"]} rows={pmaxGovernanceRows} />
+        <div className="mt-10">
+          <p className="font-semibold text-fg">Healthcare and Australian operating note.</p>
+          <p className="mt-3">
+            Keep Biosymm Google Search-led for healthcare demand. The recommended split is Search-primary with Meta remarketing as a secondary channel. Minimum viable budget for meaningful learning is around $4,000/month — Biosymm Search is close to this threshold. Because this is Australian healthcare: keep patient-data handling conservative, do not pass health information into Enhanced Conversions, verify consent and tracking governance, and measure call → booking → attended appointment, not just click → lead.
+          </p>
+        </div>
       </Section>
 
       <Section eyebrow="Stream-level diagnosis" title="Each growth stream needs its own job, metric, and next move.">
