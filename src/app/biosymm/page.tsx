@@ -30,9 +30,9 @@ export const metadata: Metadata = {
 const auditDate = "26 May 2026";
 
 const evidence = [
-  ["Biosymm", "DR 36", "196 live referring domains", "GTM-57WPM3W8 + GTM-PKLBV4L, GA4 G-6HKPBZ34ML", "Mostly branded/local clinic demand"],
-  ["ErgoEquip", "DR 14", "201 live referring domains", "GTM-TSDBG52, GA4 G-V6GPG12LB6, AW-781426384", "High category opportunity if stock, margin and feed quality check out"],
-  ["Ergoworks Consulting", "DR 15", "84 live referring domains", "Authenticated CMS review confirms active WordPress lead capture and public tracking", "Active lead-gen site; weak AU organic visibility and outcome mapping still need validation"],
+  ["Biosymm", "DR 36", "196 live referring domains", "GA4 and GTM present; container ownership and firing review required", "Mostly branded/local clinic demand"],
+  ["ErgoEquip", "DR 14", "201 live referring domains", "GA4, GTM, and Google Ads tagging present; ecommerce tracking validation required", "High category opportunity if stock, margin and feed quality check out"],
+  ["Ergoworks Consulting", "DR 15", "84 live referring domains", "Lead capture and public tracking confirmed; outcome mapping still required", "Active lead-gen site; weak AU organic visibility and outcome mapping still need validation"],
 ];
 
 const biosymmKeywords = [
@@ -120,26 +120,26 @@ const seoExecution = [
 
 const trackingAudit = [
   {
-    "stream": "Clinics / appointments",
+    "stream": "Clinic demand is visible, but patient outcomes are not yet tracked",
     "current": "The Biosymm homepage has no form path, but it does carry many Nookal booking links and 1300 424 679 tel: links. The contact page adds one form, phone links, multiple mailto routes, and more Nookal links.",
     "risk": "Click-based CPA can look healthy while the real patient outcome is still unknown. Booking clicks, phone clicks, and email clicks do not confirm completed bookings, no-shows, or attended appointments.",
     "fix": "Keep booking, call, and email clicks as secondary signals. Use primary conversions only when Nookal or an interim sheet can export completed booking, attended patient, location, source, GCLID/GBRAID/WBRAID, and revenue."
   },
   {
-    "stream": "Corporate / occupational health",
+    "stream": "Corporate leads need pipeline tracking before paid scale",
     "current": "Organic visibility is still light for corporate and commercial terms. Lead value is likely high, but the sales cycle is longer and quality varies by enquiry type.",
     "risk": "Raw enquiries will distort paid-media decisions. Without opportunity quality, spend can appear stronger or weaker than the actual pipeline warrants.",
     "fix": "Track qualified lead, opportunity created, proposal sent, won/lost, and revenue. Import offline conversions once match rate is proven and the pipeline stages are reliable."
   },
   {
-    "stream": "ErgoEquip ecommerce",
-    "current": "GA4, GTM, and Google Ads tag AW-781426384 are visible. WooCommerce, Contact Form 7, six forms, and enquiries@ergoequip.com.au are present.",
+    "stream": "ErgoEquip can scale only where revenue, margin, and stock align",
+    "current": "GA4, GTM, and Google Ads tagging are present. WooCommerce, product enquiry forms, and lead capture paths are confirmed.",
     "risk": "ROAS can mislead if purchase value, stock, margin, feed eligibility, and lead-form activity are blended into one performance view.",
     "fix": "Use purchase with dynamic value as the primary conversion. Keep add to cart, checkout start, and product enquiry secondary. Segment by SKU margin and stock before the June push."
   },
   {
-    "stream": "Ergoworks Consulting",
-    "current": "Authenticated CMS review shows an active WordPress lead-gen site with live enquiry, booking, newsletter, and webinar forms; public tracking tags; phone and email routes; and thank-you-page conversion states.",
+    "stream": "Ergoworks forms are active, but lead quality is not yet visible",
+    "current": "A detailed site review shows an active lead-generation property with live enquiry, booking, newsletter, and webinar forms; public tracking; phone and email routes; and post-submit conversion states.",
     "risk": "Tracking is present, but reporting can still be polluted if phone clicks, email clicks, form submits, newsletter signups, and thank-you-page hits are treated as equal commercial outcomes.",
     "fix": "Keep clicks and newsletter events secondary. Use enquiry and booking forms as lead events once attribution fields, deduped thank-you tracking, recipient routing, and qualified-lead outcomes are confirmed."
   }
@@ -198,14 +198,14 @@ const conversionTruthMap = [
 ];
 
 const trackingHygiene = [
-  ["Biosymm GTM cleanup", "Two containers are present", "Audit ownership and firing overlap for GTM-57WPM3W8 and GTM-PKLBV4L. Consolidate or document why both exist before adding conversion tags."],
+  ["Biosymm GTM cleanup", "Two containers are present", "Audit ownership and firing overlap across both GTM containers. Consolidate or document why both exist before adding conversion tags."],
   ["Google Ads tag", "Not visible on Biosymm public scan", "Do not assume Ads conversion tracking is live. Confirm inside the real Google Ads account and GTM containers."],
   ["Meta pixel", "Not visible on Biosymm or ErgoEquip scans", "Retargeting and Meta CPA reporting will be blind unless a pixel/CAPI path is intentionally added with consent controls."],
   ["Cross-domain booking", "Nookal links send users off-site", "Add outbound click events and verify UTMs, gclid, gbraid and wbraid survive into Nookal or are captured before redirect."],
   ["WooCommerce ecommerce", "ErgoEquip has WooCommerce and Ads tag", "Validate GA4 recommended ecommerce events, purchase value/currency, transaction_id de-duping, refunds and enhanced conversions."],
-  ["Ergoworks Consulting tracking", "GTM, GA4, legacy Universal Analytics and Meta Pixel paths are present", "Audit firing rules for duplicate tracking, confirm thank-you-page triggers, and standardise events for phone_click, email_click, enquiry_submit, booking_request and newsletter_signup."],
-  ["Ergoworks Consulting forms", "Active Gravity Forms lead capture exists with substantial historical activity", "Confirm notification owners, spam filtering, hidden attribution fields, thank-you redirects and lead outcome capture before importing forms into Ads."],
-  ["Ergoworks Consulting WordPress ops", "Admin and plugin hygiene affects measurement trust", "Review least-privilege access, restrict unnecessary high-risk admin capabilities, patch maintenance items and tighten public WordPress exposure."],
+  ["Ergoworks Consulting tracking", "Multiple analytics and advertising tracking paths are present", "Audit firing rules for duplicate tracking, confirm thank-you-page triggers, and standardise event naming for calls, emails, enquiries, bookings, and newsletter signups."],
+  ["Ergoworks Consulting forms", "Active lead capture with significant historical activity", "Confirm routing, attribution capture, post-submit states, and lead outcome tracking before importing form submissions into Ads."],
+  ["Ergoworks Consulting site governance", "Site governance affects measurement reliability", "Review access controls, plugin maintenance, and tracking governance so measurement remains reliable."],
   ["GA4 event taxonomy", "Mixed businesses in one reporting story", "Use consistent stream, location, service_type, lead_type, source_system and outcome_stage parameters across events."],
 ];
 
@@ -235,7 +235,7 @@ const croActions = [
   ],
   [
     "Landing pages for paid",
-    "Agency flagged that keywords must appear on landing pages; Quality Score is suffering",
+    "Landing-page keyword alignment appears to be affecting Quality Score and paid-search relevance",
     "Build or refresh landing pages so each ad group has matching keyword language, proof, CTA, and conversion path"
   ],
   [
@@ -251,15 +251,15 @@ const croActions = [
 ];
 
 const googleAdsChecks = [
-  ["Conversion actions", "Blocked until account export", "Classify every action: purchase, qualified lead, booking, attended patient, call, micro-action."],
+  ["Conversion actions", "Pending account review", "Classify every action: purchase, qualified lead, booking, attended patient, call, micro-action."],
   ["Primary vs secondary", "High risk", "Demote booking clicks, contact clicks, page views, form starts and short calls unless proven commercial outcomes."],
-  ["Enhanced conversions", "Need account check", "Enable for lead and purchase actions where privacy-compliant first-party data exists. Critical for AU healthcare with Consent Mode v2."],
-  ["Consent Mode v2", "Status unknown", "AU healthcare context: verify Consent Mode v2 is implemented. Required for Enhanced Conversions and for retaining modelled data post-consent denial."],
-  ["Offline imports", "Missing from public evidence", "Start with weekly CSV/import from Nookal, WooCommerce, CRM or interim sheet."],
-  ["Account access", "Real account not visible", "Tools only expose 3246645286 and 4756545876; 4756545876 is the Amir Ariff manager with no client accounts, and 3246645286 cannot be confirmed as Marcus/Biosymm."],
-  ["Search term waste", "Needs Google Ads data", "Do not recommend negatives from guesses. Pull last 30 days search terms first."],
+  ["Enhanced conversions", "Pending account review", "Enable for lead and purchase actions where privacy-compliant first-party data exists. Critical for AU healthcare with Consent Mode v2."],
+  ["Consent Mode v2", "Requires verification", "Verify consent implementation and Consent Mode v2 where applicable. It improves modelled reporting alongside Enhanced Conversions, especially where consent controls are active."],
+  ["Offline imports", "Not yet verified", "Start with weekly CSV/import from Nookal, WooCommerce, CRM or interim sheet."],
+  ["Account access", "Pending correct access", "Confirm access to the correct Biosymm Google Ads account to review campaigns, conversion actions, search terms, and optimisation settings."],
+  ["Search term waste", "Needs Google Ads data", "Review the last 30 days of search terms before recommending negative keywords or query exclusions."],
   ["Brand/non-brand split", "Unknown", "Confirm whether brand (biosymm) and non-brand (physio belmont, workplace physio) campaigns are separated. Blended CPA hides true non-brand cost."],
-  ["Quality Score", "Agency flagged — needs improvement", "Agency stated QS needs improvement and keywords must appear on landing pages. Homepage H1 has zero target keywords — direct fix needed."],
+  ["Quality Score", "Landing-page relevance needs review", "Improve alignment between ad-group keywords, landing-page headings, body copy, and conversion paths to lift Quality Score and reduce wasted spend."],
 ];
 
 const merchantCenterChecks = [
@@ -274,7 +274,7 @@ const merchantCenterChecks = [
 const decisionsRequired = [
   [
     "Provide Google Ads account access or an export showing campaigns, spend, conversion actions, and primary/secondary conversion settings.",
-    "Greg / Marcus",
+    "Biosymm / Marcus",
     "This lets us confirm which enquiries and bookings Google is optimising toward, what each stream is actually costing, and whether reported CPA reflects commercial outcomes rather than lighter touchpoints."
   ],
   [
@@ -305,11 +305,11 @@ const decisionsRequired = [
 ];
 
 const weekTwo = [
-  "Access the live Marcus/Biosymm Google Ads account and export all conversion actions, including primary/secondary status.",
+  "Access the correct Biosymm Google Ads account and export all conversion actions, including primary/secondary status.",
   "Map every Biosymm, ErgoEquip, and Ergoworks form, phone number, Nookal link, WooCommerce path, thank-you page, and email destination.",
-  "Promote the strongest Biosymm booking signals — book_now_button_click_sr and phone_click_sr — to GA4 key events and Google Ads primary conversions where appropriate.",
+  "Configure the strongest Biosymm booking and phone-click signals as GA4 key events and Google Ads secondary conversions first. Promote to primary only once matched to completed bookings, qualified calls, or attended appointments.",
   "Test whether Nookal booking links preserve UTMs and click IDs through the redirect and booking flow.",
-  "Verify Ergoworks Gravity Forms routing, hidden attribution fields, thank-you triggers, and qualified-lead outcome capture.",
+  "Verify Ergoworks form routing, attribution capture, post-submit tracking, and qualified-lead outcome capture.",
   "Validate WooCommerce purchase values, product feed status, stock availability, and margin by SKU category.",
   "Build separate scorecards for clinics, corporate services, ErgoEquip, and Ergoworks so CPA is no longer blended across streams.",
   "Recalculate CPA by stream using confirmed commercial outcomes before recommending budget shifts.",
@@ -380,12 +380,12 @@ export default function BiosymmAuditPage() {
         <div className="absolute right-[-10%] top-[-20%] h-[520px] w-[520px] rounded-full bg-cta/10 blur-3xl" />
         <div className="relative mx-auto max-w-6xl px-5 py-20 md:px-8 md:py-28">
           <p className="text-sm font-semibold uppercase tracking-[0.26em] text-cta">Client audit / Week 2</p>
-          <h1 className="mt-6 max-w-5xl text-display font-semibold text-fg">Biosymm needs measurement clarity before it scales spend.</h1>
+          <h1 className="mt-6 max-w-5xl text-display font-semibold text-fg">Biosymm has demand. Now it needs numbers it can trust.</h1>
           <p className="mt-8 max-w-3xl text-xl leading-9 text-muted">
-            This growth operating audit separates the revenue streams, identifies the measurement gaps blocking confident budget decisions, and sets the next actions for each stream.
+            This audit separates Biosymm’s growth streams, shows where measurement is blocking confident budget decisions, and defines the next move for each stream.
           </p>
           <div className="mt-10 flex flex-wrap gap-3 text-sm font-semibold text-fg">
-            <span className="rounded-full border border-border bg-white px-4 py-2">Prepared for Marcus</span>
+            <span className="rounded-full border border-border bg-white px-4 py-2">Prepared for Biosymm Group</span>
             <span className="rounded-full border border-border bg-white px-4 py-2">Audit date: {auditDate}</span>
             <span className="rounded-full border border-border bg-white px-4 py-2">Client: Biosymm Group</span>
           </div>
@@ -394,16 +394,16 @@ export default function BiosymmAuditPage() {
 
       <section className="py-12">
         <div className="mx-auto grid max-w-6xl gap-5 px-5 md:grid-cols-4 md:px-8">
-          <MetricCard label="Core call" value="Separate streams" note="Do not judge growth on blended CPA. Biosymm, ErgoEquip, and Ergoworks Consulting need separate measurement before budget decisions can be trusted." status="critical" />
+          <MetricCard label="Core call" value="Separate streams" note="Do not judge growth on blended CPA. Clinics, corporate services, ErgoEquip, and Ergoworks Consulting need separate measurement before budget decisions can be trusted." status="critical" />
           <MetricCard label="Biosymm SEO" value="DR 36" note="The domain has authority to build from, but performance must be assessed by service line and conversion quality, not aggregate traffic alone." status="good" />
           <MetricCard label="ErgoEquip SEO" value="DR 14" note="ErgoEquip has weaker authority, yet paid data shows commercial traction with $29 CPA, 2.72x ROAS, and $10,741 in revenue." status="good" />
           <MetricCard label="Tracking risk" value="High" note="335 book_now fires and a reported $83 CPA are useful signals, but the conversion path is not yet clean enough to guide scaling decisions." status="critical" />
         </div>
       </section>
 
-      <Section eyebrow="Executive thesis" title="Three streams. One tracking revenue. Two are not.">
+      <Section eyebrow="Executive thesis" title="Four growth streams. Only one is clearly tied to revenue.">
         <p>
-          Biosymm has growth potential across three distinct streams: workplace health services, ErgoEquip ecommerce, and Ergoworks Consulting. The constraint is not demand. It is measurement separation. Until each stream has its own conversion path, performance view, and decision logic, blended CPA will keep obscuring where budget should move.
+          Biosymm has growth potential across four commercial streams: clinics, corporate and occupational health, ErgoEquip ecommerce, and Ergoworks Consulting. The constraint is not demand. It is measurement separation. Until each stream is measured separately, blended CPA will keep hiding where budget is working and where it is not.
         </p>
         <div className="mt-8 grid gap-5 md:grid-cols-3">
           <FindingCard title="ErgoEquip is the verified revenue stream">
@@ -417,13 +417,13 @@ export default function BiosymmAuditPage() {
           </FindingCard>
         </div>
         <p className="mt-8">
-          The audit recommendation is clear: do not scale blended CPA. Separate the streams, prove measurement for each one, then make budget decisions stream by stream.
+          The recommendation is clear: stop using blended CPA as the growth signal. Separate the streams, prove what each one is producing, then move budget based on real outcomes.
         </p>
       </Section>
 
       <Section eyebrow="What the data shows" title="GA4, Ahrefs, and public crawl findings across all three properties.">
         <p>
-          GA4 data covers the last 28 days, 23 Apr – 20 May 2026, and comes directly from the Biosymm GA4 property (G-6HKPBZ34ML) via authenticated access. Ahrefs and public crawl checks add SEO, tag, form, Nookal, WooCommerce and Ergoworks Consulting context.
+          GA4 data covers the last 28 days, 23 Apr – 20 May 2026, sourced from the Biosymm analytics property. Ahrefs and public crawl checks add SEO, tag, form, Nookal, WooCommerce and Ergoworks Consulting context.
         </p>
         <div className="mt-8 grid gap-5 md:grid-cols-4">
           <MetricCard label="Active users" value="2,182" note="Last 28 days" status="good" />
@@ -497,7 +497,7 @@ export default function BiosymmAuditPage() {
         <div className="mt-10">
           <p className="font-semibold text-fg">Google Ads checks — major optimisation decisions should wait for the real conversion export.</p>
           <p className="mt-3">
-            Start with conversion tracking, primary/secondary action hygiene, enhanced conversions, offline imports and search term waste. Without the Marcus/Biosymm Google Ads export, any spend optimisation recommendation would be guesswork. The immediate priority is to separate intent signals from outcomes Google can safely bid toward.
+            Start with conversion tracking, primary/secondary action hygiene, enhanced conversions, offline imports and search term waste. A complete Google Ads account export is required before making spend optimisation recommendations. The immediate priority is to separate intent signals from outcomes Google can safely optimise toward. Note this: platform-reported CPA is almost always inflated. Compare Google Ads data against GA4 and calculate blended cost per acquisition across streams before trusting any single-platform number.
           </p>
         </div>
         <DataTable headers={["Check", "Status", "Recommended action"]} rows={googleAdsChecks} />
@@ -546,7 +546,7 @@ export default function BiosymmAuditPage() {
 
       <Section eyebrow="Decisions required" title="What Greg and Christine need to provide.">
         <p>
-          The audit has reached the limit of what public crawls, Ahrefs, and GA4 can answer. The next layer of analysis — and the ability to make confident budget decisions — depends on inputs from the Biosymm team.
+          To make the next budget call safely, we need to connect marketing activity to real outcomes: attended appointments, qualified enquiries, ecommerce revenue, and corporate pipeline. The following inputs will determine where budget can be scaled with confidence.
         </p>
         <DataTable headers={["Decision / input", "From", "Why it unblocks"]} rows={decisionsRequired} />
       </Section>
@@ -579,7 +579,7 @@ export default function BiosymmAuditPage() {
         </div>
         <div className="mt-10 rounded-[2rem] bg-fg p-8 text-bg md:p-10">
           <p className="max-w-4xl text-3xl font-semibold leading-[1.2] tracking-[-0.02em] md:text-5xl md:leading-[1.1]">
-            Build the conversion truth map and lead routing map first. Then demote micro-actions where needed so reported CPA reflects completed bookings, qualified leads, ecommerce purchases, opportunities, and revenue — not clicks that merely look busy.
+            Biosymm does not need less growth ambition. It needs cleaner proof. Separate the streams, connect spend to real outcomes, and scale only what is genuinely creating revenue.
           </p>
         </div>
       </Section>
