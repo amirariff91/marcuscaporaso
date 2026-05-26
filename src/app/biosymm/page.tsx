@@ -273,11 +273,6 @@ const merchantCenterChecks = [
 
 const decisionsRequired = [
   [
-    "Provide Google Ads account access or an export showing campaigns, spend, conversion actions, and primary/secondary conversion settings.",
-    "Biosymm / Marcus",
-    "This lets us confirm which enquiries and bookings Google is optimising toward, what each stream is actually costing, and whether reported CPA reflects commercial outcomes rather than lighter touchpoints."
-  ],
-  [
     "Provide a Nookal booking export that includes source, campaign, and click ID fields where available.",
     "Greg / Christine",
     "This connects ad activity to real appointments, so we can see whether booking clicks become completed or attended bookings and compare performance by clinic."
@@ -305,7 +300,6 @@ const decisionsRequired = [
 ];
 
 const weekTwo = [
-  "Access the correct Biosymm Google Ads account and export all conversion actions, including primary/secondary status.",
   "Map every Biosymm, ErgoEquip, and Ergoworks form, phone number, Nookal link, WooCommerce path, thank-you page, and email destination.",
   "Configure the strongest Biosymm booking and phone-click signals as GA4 key events and Google Ads secondary conversions first. Promote to primary only once matched to completed bookings, qualified calls, or attended appointments.",
   "Test whether Nookal booking links preserve UTMs and click IDs through the redirect and booking flow.",
