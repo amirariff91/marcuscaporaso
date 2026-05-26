@@ -15,9 +15,15 @@ export function proxy(request: NextRequest) {
     return NextResponse.rewrite(url);
   }
 
+  if (host === "biosymm.marcuscaporaso.com" && request.nextUrl.pathname === "/execute") {
+    const url = request.nextUrl.clone();
+    url.pathname = "/biosymm/execute";
+    return NextResponse.rewrite(url);
+  }
+
   return NextResponse.next();
 }
 
 export const config = {
-  matcher: ["/"],
+  matcher: ["/", "/execute"],
 };
