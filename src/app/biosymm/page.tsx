@@ -271,43 +271,49 @@ const merchantCenterChecks = [
   ["Campaign structure", "Separate Search from Shopping/PMax; split brand, non-brand category, product-brand and remarketing where volume allows. Shopping or PMax should not be scaled further until feed, stock, margin and purchase tracking are proven — some PMax activity is already live."],
 ];
 
-const decisionsRequired = [
+const nextSteps = [
   [
-    "Provide a Nookal booking export that includes source, campaign, and click ID fields where available.",
-    "Greg / Christine",
-    "This connects ad activity to real appointments, so we can see whether booking clicks become completed or attended bookings and compare performance by clinic."
+    "Nookal booking truth",
+    "Greg / Christine: provide a Nookal booking export with source, campaign, location, booking status, and click ID fields where available.",
+    "Test whether UTMs, GCLID, GBRAID, and WBRAID survive the Nookal redirect and booking flow. Keep booking and phone clicks as secondary signals until completed bookings, attended appointments, or qualified calls can be matched back to source.",
+    "Whether Biosymm Search CPA reflects real patient acquisition by clinic, not just booking-click intent."
   ],
   [
-    "Provide WooCommerce SKU-level margin, stock, and revenue data for ErgoEquip.",
-    "Christine",
-    "This shows which product categories can support more paid traffic, so budget can favour in-stock, margin-positive products rather than simply higher-click categories."
+    "ErgoEquip ecommerce readiness",
+    "Christine: provide SKU-level revenue, margin, stock, and product availability data.",
+    "Validate WooCommerce purchase value, currency, transaction_id deduplication, refunds, feed status, product approvals, stock availability, and margin by SKU category.",
+    "Which ErgoEquip products and categories can safely receive more Search, Shopping, or PMax budget."
   ],
   [
-    "Confirm where each Ergoworks Consulting form enquiry is sent and how qualified enquiries are separated from spam, newsletters, and general contact messages.",
-    "Christine / Ergoworks team",
-    "This clarifies who owns each enquiry and whether consulting leads can be measured as real sales opportunities, not just form submissions."
+    "Ergoworks lead quality",
+    "Christine / Ergoworks team: confirm where each form routes, who owns it, and how qualified enquiries are separated from spam, newsletters, general contact, and low-fit requests.",
+    "Verify form routing, hidden attribution fields, post-submit states, thank-you tracking, deduplication, and qualified-lead outcome capture.",
+    "Whether Ergoworks campaigns can optimise toward qualified consulting enquiries rather than raw form submissions."
   ],
   [
-    "Agree the pipeline definitions for corporate services: qualified lead, opportunity, proposal, and won deal.",
-    "Greg",
-    "This gives the team a shared commercial language and allows offline conversion tracking to reflect the stages that matter to revenue."
+    "Corporate pipeline definitions",
+    "Greg: agree the definitions for qualified lead, opportunity created, proposal sent, won/lost, revenue, and close date.",
+    "Build the corporate services scorecard and interim pipeline sheet around those stages, with source, campaign, lead type, owner, status, and outcome fields ready for offline imports.",
+    "Whether corporate and occupational health demand is producing pipeline quality and revenue potential, not just enquiries."
   ],
   [
-    "Confirm whether Consent Mode v2 is correctly implemented for Australian healthcare traffic.",
-    "Marcus / Dev",
-    "This helps protect GA4 and Google Ads measurement quality, including Enhanced Conversions and modelled reporting where consent is limited."
+    "Full path and event map",
+    "Marcus / Dev, with access to the relevant GA4, GTM, Google Ads, form, WooCommerce, and site environments.",
+    "Map every Biosymm, ErgoEquip, and Ergoworks form, phone number, Nookal link, WooCommerce path, thank-you page, email destination, and conversion event. Classify each as primary, secondary, or diagnostic.",
+    "A clean conversion architecture where Google Ads and GA4 optimise toward outcomes instead of mixed micro-actions."
+  ],
+  [
+    "Consent and enhanced measurement",
+    "Marcus / Dev: confirm Consent Mode v2, Enhanced Conversions eligibility, and healthcare-safe handling of first-party data.",
+    "Verify consent implementation, avoid passing sensitive health information, and document which lead and purchase actions can use enhanced measurement safely.",
+    "Whether modelled reporting and enhanced conversion signals can be trusted without creating patient-data risk."
+  ],
+  [
+    "Stream-level reporting and CPA reset",
+    "Marcus, with confirmed exports or an interim outcome sheet if source-system exports are not available within 7 days.",
+    "Build separate scorecards for clinics, corporate services, ErgoEquip, and Ergoworks. Recalculate CPA and ROAS by stream using confirmed commercial outcomes before recommending budget shifts.",
+    "Where to scale, hold, or cut spend based on real outcomes instead of blended CPA."
   ]
-];
-
-const weekTwo = [
-  "Map every Biosymm, ErgoEquip, and Ergoworks form, phone number, Nookal link, WooCommerce path, thank-you page, and email destination.",
-  "Configure the strongest Biosymm booking and phone-click signals as GA4 key events and Google Ads secondary conversions first. Promote to primary only once matched to completed bookings, qualified calls, or attended appointments.",
-  "Test whether Nookal booking links preserve UTMs and click IDs through the redirect and booking flow.",
-  "Verify Ergoworks form routing, attribution capture, post-submit tracking, and qualified-lead outcome capture.",
-  "Validate WooCommerce purchase values, product feed status, stock availability, and margin by SKU category.",
-  "Build separate scorecards for clinics, corporate services, ErgoEquip, and Ergoworks so CPA is no longer blended across streams.",
-  "Recalculate CPA by stream using confirmed commercial outcomes before recommending budget shifts.",
-  "Create an interim offline outcome sheet if Nookal, WooCommerce, or CRM exports are not available within 7 days."
 ];
 
 const smartBiddingThresholds = [
@@ -609,19 +615,14 @@ export default function BiosymmAuditPage() {
         <DataTable headers={["Area", "Required check"]} rows={merchantCenterChecks} />
       </Section>
 
-      <Section eyebrow="Decisions required" title="What Greg and Christine need to provide.">
+      <Section eyebrow="Next steps" title="What needs to happen in the next 7–14 days.">
         <p>
-          To make the next budget call safely, we need to connect marketing activity to real outcomes: attended appointments, qualified enquiries, ecommerce revenue, and corporate pipeline. The following inputs will determine where budget can be scaled with confidence.
+          The next sprint should turn the audit from diagnosis into decision-grade reporting. The priority is not more traffic; it is connecting each growth stream to the commercial outcome that should guide budget: attended appointments, qualified enquiries, ecommerce revenue, and corporate pipeline.
         </p>
-        <DataTable headers={["Decision / input", "From", "Why it unblocks"]} rows={decisionsRequired} />
-      </Section>
-
-      <Section eyebrow="7–14 day plan" title="Priority actions for the next 7–14 days">
-        <div className="rounded-3xl border border-border bg-white p-6 shadow-sm">
-          <ol className="grid gap-4 text-base leading-7 text-muted md:grid-cols-2">
-            {weekTwo.map((item, idx) => <li key={item} className="flex items-start gap-3"><span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-cta text-xs font-bold text-white">{idx + 1}</span><span>{item}</span></li>)}
-          </ol>
-        </div>
+        <DataTable headers={["Priority", "Owner / input needed", "7–14 day action", "Decision it unlocks"]} rows={nextSteps} />
+        <p className="mt-8">
+          If the source-system exports are not available within 7 days, use the interim outcome sheet as the temporary source of truth so budget decisions are not delayed by system access or integration timing.
+        </p>
       </Section>
 
       <Section eyebrow="30-day success" title="What good looks like in 30 days.">
