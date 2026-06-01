@@ -6,6 +6,7 @@ import Metrics from "@/components/Metrics";
 import Methodology from "@/components/Methodology";
 import Services from "@/components/Services";
 import GrowthOS from "@/components/GrowthOS";
+import EmailCapture from "@/components/EmailCapture";
 import Booking from "@/components/Booking";
 import Footer from "@/components/Footer";
 
@@ -21,6 +22,7 @@ export default function Home() {
         <Methodology />
         <Services />
         <GrowthOS />
+        <EmailCapture />
         <Booking />
       </main>
       <Footer />
