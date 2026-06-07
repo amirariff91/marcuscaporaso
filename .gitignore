@@ -33,6 +33,12 @@ yarn-error.log*
 # env files (can opt-in for committing if needed)
 .env*
 
+# sensitive working files — NEVER commit (chat logs, SA keys, audit dumps, client data)
+/docs/
+/audit/
+*.iam.gserviceaccount.com.json
+*-credentials.json
+
 # vercel
 .vercel
 

@@ -20,14 +20,17 @@ const clients: Array<{
 // 4 sets — ensures content is always wider than any viewport
 const track = [...clients, ...clients, ...clients, ...clients];
 
-function LogoItem({ c, tabIndex }: { c: typeof clients[0]; tabIndex?: number }) {
+function LogoItem({ c }: { c: typeof clients[0] }) {
   return (
     <a
       href={c.url}
       target="_blank"
       rel="noopener noreferrer"
       title={c.name}
-      tabIndex={tabIndex}
+      // Decorative, continuously-scrolling social proof — kept out of the tab
+      // order and a11y tree (the section heading is the accessible statement)
+      // so keyboard users don't land on moving off-screen links.
+      tabIndex={-1}
       className="flex-shrink-0 flex items-center opacity-40 grayscale hover:opacity-75 hover:grayscale-0 transition-all duration-300"
     >
       {c.logo ? (
@@ -55,7 +58,7 @@ export default function TrustedBy() {
     <section className="border-t border-border py-12">
       <div className="max-w-5xl mx-auto px-6 mb-8">
         <p className="text-xs font-semibold tracking-[0.1em] uppercase text-muted-2 text-center">
-          Trusted by
+          Trusted by clinics and service businesses
         </p>
       </div>
 
@@ -63,15 +66,10 @@ export default function TrustedBy() {
           Animates translateX(-50%) — moves exactly 2 sets left,
           then snaps back. Logos always fill the viewport with no gaps
           because 4 sets × ~1000px >> any realistic viewport width. */}
-      <div className="overflow-hidden">
+      <div className="overflow-hidden" aria-hidden="true">
         <div className="animate-marquee flex gap-16 w-max">
           {track.map((c, i) => (
-            <LogoItem
-              key={`${c.name}-${i}`}
-              c={c}
-              // Only first 8 (Set A) are interactive; the rest are decorative duplicates
-              tabIndex={i >= clients.length ? -1 : undefined}
-            />
+            <LogoItem key={`${c.name}-${i}`} c={c} />
           ))}
         </div>
       </div>

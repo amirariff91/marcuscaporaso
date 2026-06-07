@@ -71,3 +71,110 @@ h1, h2, h3, h4 {
 .calendly-overlay {
   z-index: 9999 !important;
 }
+
+/* ============================================================
+   Motion system — zero-dependency, GPU-friendly.
+   Scroll reveals are driven by IntersectionObserver (Reveal.tsx),
+   which flips data-reveal="hidden" → "shown". Everything degrades
+   to a no-op under prefers-reduced-motion.
+   ============================================================ */
+
+/* Scroll-reveal: hidden → shown. translate + opacity only (composited).
+   Gated behind html[data-js="on"] so that without JS (or before hydration)
+   the content is always fully visible — never trapped at opacity:0. */
+html[data-js="on"] [data-reveal] {
+  opacity: 0;
+  transform: translateY(1.25rem);
+  transition:
+    opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: var(--reveal-delay, 0ms);
+}
+html[data-js="on"] [data-reveal="shown"] {
+  opacity: 1;
+  transform: none;
+}
+
+/* Aurora — slow ambient glow behind the hero. */
+@keyframes aurora {
+  0%   { transform: translate3d(-6%, -4%, 0) scale(1);    opacity: 0.55; }
+  50%  { transform: translate3d(6%, 4%, 0) scale(1.18);   opacity: 0.85; }
+  100% { transform: translate3d(-6%, -4%, 0) scale(1);    opacity: 0.55; }
+}
+.animate-aurora {
+  animation: aurora 16s ease-in-out infinite;
+}
+
+/* Leak droplets — enquiries slipping through the gap (hero motif). */
+@keyframes leak-fall {
+  0%   { transform: translateY(0) scale(1);    opacity: 0; }
+  10%  { opacity: 0.9; }
+  80%  { opacity: 0.9; }
+  100% { transform: translateY(34px) scale(0.6); opacity: 0; }
+}
+.animate-leak {
+  animation: leak-fall 2.4s ease-in infinite;
+}
+
+/* Flow dash — demand streaming toward the funnel. */
+@keyframes flow-dash {
+  to { stroke-dashoffset: -16; }
+}
+.animate-flow {
+  animation: flow-dash 0.9s linear infinite;
+}
+
+/* Draw — connecting path for the 3-step process. Draws only when its Reveal
+   wrapper scrolls into view ([data-reveal="shown"]); shows a full line when
+   JS or animation is off so it never disappears. */
+.draw-line {
+  stroke-dasharray: 100;
+}
+html[data-js="on"] .draw-line {
+  stroke-dashoffset: 100;
+  transition: stroke-dashoffset 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+}
+html[data-js="on"] [data-reveal="shown"] .draw-line {
+  stroke-dashoffset: 0;
+}
+
+/* Soft float for accent chips. */
+@keyframes float-soft {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-5px); }
+}
+.animate-float {
+  animation: float-soft 5s ease-in-out infinite;
+}
+
+/* Shimmer sweep for the primary CTA on hover. */
+@keyframes shimmer {
+  0%   { transform: translateX(-120%); }
+  100% { transform: translateX(120%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  [data-reveal] {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+  .animate-marquee,
+  .animate-aurora,
+  .animate-leak,
+  .animate-flow,
+  .animate-float {
+    animation: none !important;
+  }
+  .draw-line {
+    stroke-dashoffset: 0 !important;
+    transition: none !important;
+  }
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -38,17 +38,23 @@ export default function EmailCapture() {
       <div className="max-w-5xl mx-auto px-6">
         <div className="max-w-xl">
           <h2 className="text-section font-bold text-fg mb-3">
-            Not ready for a call yet?
+            Not ready for the diagnostic yet?
           </h2>
           <p className="text-muted leading-relaxed mb-8">
-            Get weekly insights on growth, conversion and paid media — no fluff.
+            Get practical insights on growth systems for clinics and service
+            businesses — how to capture, convert and keep more of your demand.
+            No fluff.
           </p>
 
           {status === "success" ? (
             <p className="text-cta font-medium">{message}</p>
           ) : (
             <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3">
+              <label htmlFor="email-capture" className="sr-only">
+                Email address
+              </label>
               <input
+                id="email-capture"
                 type="email"
                 required
                 value={email}
