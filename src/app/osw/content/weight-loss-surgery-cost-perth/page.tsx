@@ -40,7 +40,7 @@ const pageData: OswPageData = {
     "Medicare rebates for bariatric surgery generally apply where surgery is clinically indicated, which usually means a BMI of 35 or above, or 30 and above with an obesity related health condition. Your eligibility for funding is assessed alongside your clinical eligibility.",
   eligibilityNotes: [
     "Private health insurance is the main path most patients use to fund surgery. You generally need gold tier hospital cover, or a top level of cover that explicitly includes the obesity surgery item numbers.",
-    "The relevant Medicare item numbers for bariatric procedures include 30511 and 30514. Check that your hospital policy covers these specific numbers, not just a general weight management category.",
+    "The relevant Medicare item numbers for bariatric procedures include 31575 (sleeve) and 31572 (bypass). Check that your hospital policy covers these specific numbers, not just a general weight management category.",
     "Most funds apply a 12 month waiting period for obesity surgery as a pre existing condition. If you do not yet have cover, planning around this waiting period is often the single most cost effective decision you can make.",
     "Medicare provides a rebate on the surgical and consultation fees for eligible patients, which reduces the surgeon and anaesthetist out of pocket. Medicare does not cover the hospital admission for elective bariatric surgery.",
     "Super may be accessible on compassionate grounds where obesity is causing a serious medical condition, assessed case by case by the regulator.",
@@ -56,7 +56,7 @@ const pageData: OswPageData = {
     {
       title: "We check your private health cover",
       description:
-        "Our team helps you confirm whether your policy covers the relevant item numbers (30511, 30514) and whether you have served the 12 month waiting period. This is where the largest part of the cost question is answered.",
+        "Our team helps you confirm whether your policy covers the relevant item numbers (31575, 31572) and whether you have served the 12 month waiting period. This is where the largest part of the cost question is answered.",
     },
     {
       title: "You receive a written, itemised estimate",
@@ -89,7 +89,7 @@ const pageData: OswPageData = {
   risksParagraph:
     "Most cost surprises in bariatric surgery come from gaps in understanding rather than from the surgery itself. Knowing these in advance helps you avoid them. We raise them openly because the alternative is an unwelcome bill after the fact, and that is not how we operate.",
   risksList: [
-    "Assuming all private health policies cover obesity surgery. Many do not, and some cover the consultation but not the hospital item numbers. Always check 30511 and 30514 specifically.",
+    "Assuming all private health policies cover obesity surgery. Many do not, and some cover the consultation but not the hospital item numbers. Always check 31575 (sleeve) and 31572 (bypass) specifically.",
     "Overlooking the 12 month waiting period. Booking surgery before the waiting period is served can mean the hospital fee falls entirely on you.",
     "Forgetting that Medicare does not cover the hospital admission. The Medicare rebate applies to surgical and consultation fees, not the hospital stay.",
     "Not budgeting for the separate anaesthetist and assistant surgeon fees, which are billed independently of the surgeon's fee.",
@@ -127,7 +127,7 @@ const pageData: OswPageData = {
     {
       question: "What does private health insurance cover, and what waiting period applies?",
       answer:
-        "To have the hospital component of bariatric surgery covered, you generally need gold tier hospital cover or a top level policy that explicitly includes the obesity surgery item numbers, commonly 30511 and 30514. Most funds apply a 12 month waiting period for obesity surgery as a pre existing condition. We strongly recommend checking your policy covers those specific item numbers, not just a general weight management category, and confirming you have served the waiting period before booking.",
+        "To have the hospital component of bariatric surgery covered, you generally need gold tier hospital cover or a top level policy that explicitly includes the obesity surgery item numbers, commonly 31575 (sleeve) and 31572 (bypass). Most funds apply a 12 month waiting period for obesity surgery as a pre existing condition. We strongly recommend checking your policy covers those specific item numbers, not just a general weight management category, and confirming you have served the waiting period before booking.",
     },
     {
       question: "Does Medicare cover weight loss surgery?",

@@ -90,7 +90,7 @@ const pageData: OswPageData = {
     "Long-term vitamin and mineral deficiencies if supplements and blood tests are not kept up.",
   ],
   costParagraph:
-    "Costs depend on your private health cover, your hospital and your individual situation, so we provide a clear written estimate before you commit to anything. Medicare and most private health funds with the relevant level of cover contribute to bariatric surgery, which reduces your out-of-pocket amount. Some patients use early release of superannuation to help fund treatment. Our team will walk you through the figures and the gaps so there are no surprises — ask us for a personalised quote rather than relying on a general number.",
+    "Costs depend on your private health cover, your hospital and your individual situation, so we provide a clear written estimate before you commit to anything. Mini gastric bypass procedures attract a Medicare rebate — your surgeon will confirm the applicable item number from the MBS bariatric surgery family (items 31569-31581) that applies to your specific procedure. Medicare and most private health funds with the relevant level of cover contribute to bariatric surgery, which reduces your out-of-pocket amount. Some patients use early release of superannuation to help fund treatment. Our team will walk you through the figures and the gaps so there are no surprises — ask us for a personalised quote rather than relying on a general number.",
   surgeons: [
     {
       name: "Dr Harsha Chandraratna",

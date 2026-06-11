@@ -27,7 +27,7 @@ const pageData: OswPageData = {
   whatIsTitle: "What exactly is a gastric bypass?",
   whatIsParagraphs: [
     "A Roux-en-Y gastric bypass changes the way your stomach and small intestine handle food. The surgeon creates a small stomach pouch about the size of an egg, then connects it directly to a lower section of the small intestine. Food now travels through a shorter path, so you feel full sooner and your body absorbs fewer kilojoules.",
-    "It works in two ways at once. The smaller pouch limits how much you can comfortably eat, and the rerouting changes the gut hormones that control hunger, fullness and blood sugar. That hormonal shift is a big reason the bypass has such a strong track record with type 2 diabetes — many patients see their blood sugar improve within days, often before they have lost much weight.",
+    "It works in two ways at once. The smaller pouch limits how much you can comfortably eat, and the rerouting changes the gut hormones that control hunger, fullness and blood sugar. That hormonal shift is a big reason the bypass has such a strong evidence base for type 2 diabetes management in appropriate patients — many patients see their blood sugar improve within days, often before they have lost much weight, though the extent and duration of improvement varies between individuals.",
     "The whole operation is done through several small keyhole incisions rather than one large cut. This usually means less pain after surgery, smaller scars and a quicker recovery than open surgery. Your surgeon will confirm during your consultation whether keyhole is suitable for you.",
   ],
   comparisonNote:
@@ -74,7 +74,7 @@ const pageData: OswPageData = {
   benefitsTitle: "What a gastric bypass can do for your health",
   benefits: [
     "Significant, durable weight loss — clinical averages show patients lose around 70–80% of their excess weight, though individual results vary.",
-    "Strong improvement in type 2 diabetes, with many patients reducing or stopping medication after discussing it with their doctor.",
+    "Strong improvement in type 2 diabetes in many patients, with some reducing or stopping medication after discussing it with their doctor (outcomes vary between individuals).",
     "Often relieves acid reflux and heartburn, unlike some other procedures that can worsen it.",
     "Improvement in conditions linked to excess weight, such as high blood pressure, sleep apnoea and joint pain.",
     "Long-term hormonal changes that reduce constant hunger, making healthier eating feel more achievable rather than a daily battle.",

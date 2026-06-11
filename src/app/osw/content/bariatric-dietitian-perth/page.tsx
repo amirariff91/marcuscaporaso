@@ -15,7 +15,7 @@ const pageData: OswPageData = {
   keyword: "bariatric dietitian perth",
   metaDescription:
     "Bariatric dietitians in Perth supporting you before and after weight-loss surgery. Meet our team of five and learn how nutrition keeps your results lasting.",
-  heroHeadline: "Your bariatric dietitian is the difference between losing weight and keeping it off",
+  heroHeadline: "Our Perth bariatric dietitians",
   heroSubheadline:
     "Surgery changes your stomach in a single day, but eating well is a skill you build over months. If the thought of completely relearning how to eat feels daunting, that is exactly why we have five dedicated bariatric dietitians walking beside you — before your operation and for the long road after it.",
   stats: [
@@ -31,7 +31,7 @@ const pageData: OswPageData = {
     "After surgery, they guide you step by step from fluids to soft foods to solids, protect you against nutritional gaps with the right supplements, and troubleshoot the real-world problems that come up — what to do when food gets stuck, how to hit your protein target, and how to handle eating out or a stalled scale without losing heart.",
   ],
   comparisonNote:
-    "Unlike a single one-off nutrition session, bariatric dietetic care is ongoing and matched to each stage of your journey — your relationship with your dietitian continues long after the surgery itself is done.",
+    "Our team of five bariatric dietitians — Clare Renn, Megan Parker, Rhiannon Dick, Sabrina Piccini and Jo-Anne Dembo — each hold Accredited Practising Dietitian (APD) status and specialise in bariatric and metabolic nutrition. Unlike a single one-off nutrition session, their care is ongoing and matched to each stage of your journey, continuing long after the surgery itself is done.",
   eligibilityBmi:
     "Dietitian support is part of bariatric care for patients generally suitable for surgery — typically a BMI of 35+, or BMI 30+ with related health conditions.",
   eligibilityNotes: [
@@ -132,6 +132,11 @@ const pageData: OswPageData = {
       question: "Will I have to take supplements for the rest of my life?",
       answer:
         "Most bariatric patients need ongoing vitamin and mineral supplements, because surgery changes how much your body absorbs. Your dietitian works out exactly what you need, monitors it with regular blood tests through the practice, and adjusts it over time so you stay well nourished.",
+    },
+    {
+      question: "Are your dietitians accredited?",
+      answer:
+        "Yes — all dietitians at Obesity Surgery WA hold Accredited Practising Dietitian (APD) status, which is the professional standard required for clinical practice in Australia. Our team includes Clare Renn, Megan Parker, Rhiannon Dick, Sabrina Piccini and Jo-Anne Dembo, all of whom specialise in bariatric and metabolic nutrition support.",
     },
     {
       question: "How many dietitians does Obesity Surgery WA have?",

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { OswContentPage, type OswPageData } from "../../../../components/osw/ContentPageTemplate";
 
 export const metadata: Metadata = {
-  title: "Book a Consultation at Obesity Surgery WA | Obesity Surgery WA Perth",
+  title: "Book a Bariatric Consultation Perth | Obesity Surgery WA",
   description: "Book your bariatric consultation at Obesity Surgery WA Perth. Phone or online — our team will help you understand your options with no pressure to decide.",
   alternates: { canonical: "https://www.obesitysurgerywa.com.au/book-consultation" },
   robots: { index: false, follow: false },
@@ -10,12 +10,12 @@ export const metadata: Metadata = {
 
 const pageData: OswPageData = {
   slug: "book-consultation",
-  pageTitle: "Book a Consultation at Obesity Surgery WA",
+  pageTitle: "Book a Bariatric Consultation in Perth",
   keyword: "bariatric consultation perth",
   metaDescription:
     "Book your bariatric consultation at Obesity Surgery WA Perth. Phone or online — our team will help you understand your options with no pressure to decide.",
 
-  heroHeadline: "Book a consultation, not a commitment",
+  heroHeadline: "Book a bariatric consultation in Perth",
   heroSubheadline:
     "Thinking about weight loss surgery is a big step, and reaching out can feel like the hardest part. A consultation is simply a conversation: a chance to ask your questions, understand your options, and meet the people who would care for you. You are not agreeing to surgery by booking. You are just getting clear information so you can decide what is right for you, in your own time.",
 

@@ -118,7 +118,7 @@ const pageData: OswPageData = {
   ],
 
   costParagraph:
-    "The total cost of a gastric sleeve in Perth depends on your private health cover, your surgeon's and anaesthetist's fees, hospital charges and any out-of-pocket gap. We believe in being upfront about money, because uncertainty about cost is one of the biggest sources of stress for people considering surgery. Our cost guide breaks down the components and the funding options available, including private health insurance and early access to superannuation in eligible cases.",
+    "The total cost of a gastric sleeve in Perth depends on your private health cover, your surgeon's and anaesthetist's fees, hospital charges and any out-of-pocket gap. We believe in being upfront about money, because uncertainty about cost is one of the biggest sources of stress for people considering surgery. The gastric sleeve is listed under Medicare item number 31575, which attracts a Medicare rebate when you meet the eligibility criteria. Our cost guide breaks down the components and the funding options available, including private health insurance and early access to superannuation in eligible cases.",
 
   surgeons: [
     {
@@ -168,6 +168,11 @@ const pageData: OswPageData = {
       question: "I get heartburn already. Is the sleeve still right for me?",
       answer:
         "It is an important question to raise, because a sleeve can sometimes worsen reflux or heartburn. For some patients this is mild and settles, for others it persists. If you already have significant reflux, your surgeon may discuss whether a bypass would suit you better, since it tends to be gentler on reflux. This is one of the key things we assess before recommending a procedure, so please mention it openly at your consultation.",
+    },
+    {
+      question: "Does Medicare cover gastric sleeve surgery?",
+      answer:
+        "Yes — the gastric sleeve is listed under Medicare item number 31575. Medicare pays a set rebate toward the surgeon's, anaesthetist's and certain physician fees. It does not cover the hospital and theatre component, which is funded through your private health cover. You generally need a gold-tier or equivalent private hospital policy that specifically includes bariatric surgery.",
     },
     {
       question: "Do I need a GP referral to be seen?",

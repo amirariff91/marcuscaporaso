@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { OswContentPage, type OswPageData } from "../../../../components/osw/ContentPageTemplate";
 
 export const metadata: Metadata = {
-  title: "Bariatric Surgeons Perth | Obesity Surgery WA Perth",
+  title: "Bariatric Surgeons Perth | Obesity Surgery WA",
   description:
     "Meet the Perth bariatric surgeons at Obesity Surgery WA — Dr Harsha Chandraratna (FRACS) and Dr Stephen Watson, plus our physicians and dietitians.",
   alternates: { canonical: "https://www.obesitysurgerywa.com.au/surgeons" },
@@ -15,7 +15,7 @@ const pageData: OswPageData = {
   keyword: "best bariatric surgeon perth",
   metaDescription:
     "Meet the Perth bariatric surgeons at Obesity Surgery WA — Dr Harsha Chandraratna (FRACS) and Dr Stephen Watson, plus our physicians and dietitians.",
-  heroHeadline: "Meet the Perth team who will look after you, not just operate on you",
+  heroHeadline: "Meet Our Perth Bariatric Surgeons",
   heroSubheadline:
     "Choosing a bariatric surgeon is one of the biggest decisions you will make for your health, and it is normal to want to know exactly who you are trusting. Our team is led by Dr Harsha Chandraratna, a Fellow of the Royal Australasian College of Surgeons who has personally been through bariatric surgery himself — so the care here comes from real understanding, not just a textbook.",
   stats: [
@@ -112,6 +112,11 @@ const pageData: OswPageData = {
       question: "What makes a good bariatric surgeon in Perth?",
       answer:
         "Look for a surgeon who is a Fellow of the Royal Australasian College of Surgeons (FRACS), holds operating privileges at accredited hospitals, performs bariatric surgery regularly, and is backed by a proper aftercare team of dietitians and physicians. Just as important is how the surgeon treats you — a good one takes time to understand your situation and explains your options honestly rather than rushing you toward a decision.",
+    },
+    {
+      question: "What qualifications should I look for in a bariatric surgeon?",
+      answer:
+        "In Australia, bariatric surgeons should hold Fellowship of the Royal Australasian College of Surgeons (FRACS) with specialist training in upper gastrointestinal or general surgery. The Bariatric Surgery Registry (BSR), run by Monash University, tracks outcomes data from participating surgeons — registry contribution is a positive indicator of commitment to quality assurance. Ask any surgeon you consider whether they contribute to the BSR. Our surgeons hold FRACS and are experienced across the full range of bariatric procedures.",
     },
     {
       question: "Is Dr Chandraratna fully qualified and a member of RACS?",

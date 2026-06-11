@@ -15,7 +15,7 @@ const pageData: OswPageData = {
   keyword: "using super for weight loss surgery perth",
   metaDescription:
     "How to access your super early for weight loss surgery in Perth. The ATO compassionate-release process, what qualifies, timelines and what to budget for.",
-  heroHeadline: "Can you use your super to pay for weight loss surgery?",
+  heroHeadline: "Using your superannuation for weight loss surgery in Perth",
   heroSubheadline:
     "If cost is the main thing standing between you and bariatric surgery, you may be able to apply to release some of your superannuation early on compassionate grounds. Here is a clear, honest explanation of how that process works in Perth.",
   stats: [
@@ -116,12 +116,12 @@ const pageData: OswPageData = {
     {
       question: "How much super can I withdraw for surgery?",
       answer:
-        "The ATO approves an amount that reasonably covers the cost of the treatment and related expenses, such as the surgeon's fee, hospital and anaesthetist costs, and travel where relevant. It is based on the quotes and estimates you provide, not a fixed figure, and it cannot exceed what your fund can release.",
+        "The ATO approves an amount that reasonably covers the cost of the treatment and related expenses, such as the surgeon's fee, hospital and anaesthetist costs, and travel where relevant. It is based on the quotes and estimates you provide, not a fixed figure, and it cannot exceed what your fund can release. As a guide, if your out-of-pocket gap after Medicare and fund rebates is $6,000, the ATO assesses applications for that specific documented amount.",
     },
     {
       question: "Will I be taxed on the super I release?",
       answer:
-        "Yes. Super released early on compassionate grounds is taxed, and the rate depends on your age and the components of your super. This means the cash you receive will be lower than the amount taken from your account, so it is worth confirming the after-tax figure with your fund or a financial adviser.",
+        "Super released early on compassionate grounds is generally taxed, and the rate depends on your age and the components of your super. Under preservation age the tax is typically 17–22%; if you are 60 or over, the released amount is usually tax-free. This means the cash you receive may be lower than the gross amount taken from your account, so it is worth confirming the after-tax figure with your fund or a financial adviser.",
     },
     {
       question: "How long does the ATO take to approve an application?",

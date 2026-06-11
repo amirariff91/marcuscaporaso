@@ -93,7 +93,7 @@ const pageData: OswPageData = {
     "General surgical risks such as bleeding, infection, blood clots or a reaction to anaesthetic.",
   ],
   costParagraph:
-    "Most patients ask about cost early, and it is a fair question. The total depends on your private health cover, your surgeon and anaesthetist fees, your hospital stay and the ongoing adjustment visits the band requires. Medicare and most private health funds with appropriate hospital cover contribute towards bariatric surgery, and some patients access their superannuation through early release to help with out-of-pocket costs. Rather than quote a single figure that may not apply to you, we give every patient a clear, itemised written estimate before any decision is made, so there are no surprises.",
+    "Most patients ask about cost early, and it is a fair question. The total depends on your private health cover, your surgeon and anaesthetist fees, your hospital stay and the ongoing adjustment visits the band requires. Gastric band procedures are listed under Medicare item number 31569. Medicare and most private health funds with appropriate hospital cover contribute towards bariatric surgery, and some patients access their superannuation through early release to help with out-of-pocket costs. Rather than quote a single figure that may not apply to you, we give every patient a clear, itemised written estimate before any decision is made, so there are no surprises.",
   surgeons: [
     {
       name: "Dr Harsha Chandraratna",

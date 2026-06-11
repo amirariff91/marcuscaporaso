@@ -3,7 +3,7 @@ import { OswContentPage, type OswPageData } from "../../../../components/osw/Con
 
 export const metadata: Metadata = {
   title: "Weight Loss Surgery Perth | Obesity Surgery WA Perth",
-  description: "Weight loss surgery in Perth at Obesity Surgery WA. Surgical and non-surgical options for lasting weight management from a specialist Perth team.",
+  description: "Weight loss surgery in Perth at Obesity Surgery WA. Gastric sleeve, bypass, banding and medical management. Understand your eligibility, costs and what to expect from our specialist bariatric team.",
   alternates: { canonical: "https://www.obesitysurgerywa.com.au/weight-loss-surgery-perth" },
   robots: { index: false, follow: false },
 };
@@ -13,7 +13,7 @@ const pageData: OswPageData = {
   pageTitle: "Weight Loss Surgery Perth",
   keyword: "weight loss surgery perth",
   metaDescription:
-    "Weight loss surgery in Perth at Obesity Surgery WA. Surgical and non-surgical options for lasting weight management from a specialist Perth team.",
+    "Weight loss surgery in Perth at Obesity Surgery WA. Gastric sleeve, bypass, banding and medical management. Understand your eligibility, costs and what to expect from our specialist bariatric team.",
 
   heroHeadline: "Weight loss surgery in Perth, and everything that sits before it.",
   heroSubheadline:

@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { OswContentPage, type OswPageData } from "../../../../components/osw/ContentPageTemplate";
 
 export const metadata: Metadata = {
-  title: "Weight Loss Medication Perth | Obesity Surgery WA Perth",
+  title: "Weight Loss Medication Perth | Medically Supervised | Obesity Surgery WA",
   description:
-    "Medically supervised weight loss medication in Perth — GLP-1 (Ozempic/Wegovy type) and Duromine. Specialist-led care at Obesity Surgery WA. Call (08) 9332 0066.",
+    "Medically supervised weight loss medication in Perth. GLP-1 medications and appetite suppressants as part of a specialist-led program at Obesity Surgery WA.",
   alternates: { canonical: "https://www.obesitysurgerywa.com.au/weight-loss-medication" },
   robots: { index: false, follow: false },
 };
@@ -14,7 +14,7 @@ const pageData: OswPageData = {
   pageTitle: "Weight Loss Medication",
   keyword: "weight loss medication perth",
   metaDescription:
-    "Medically supervised weight loss medication in Perth — GLP-1 (Ozempic/Wegovy type) and Duromine. Specialist-led care at Obesity Surgery WA. Call (08) 9332 0066.",
+    "Medically supervised weight loss medication in Perth. GLP-1 medications and appetite suppressants as part of a specialist-led program at Obesity Surgery WA.",
   heroHeadline: "Weight loss medication in Perth, supervised by a specialist team",
   heroSubheadline:
     "If you have tried to lose weight and the scales will not budge, you are not failing — your biology is working against you. Modern weight loss medications can help, and our team helps you use them safely as part of a proper medical plan.",
@@ -26,7 +26,7 @@ const pageData: OswPageData = {
   ],
   whatIsTitle: "What is weight loss medication, and how does it actually work?",
   whatIsParagraphs: [
-    "Weight loss medication is a prescription treatment that helps your body manage hunger and appetite. The most talked-about group right now are the GLP-1 medications — the same family as Ozempic and Wegovy. They copy a natural gut hormone that tells your brain you are full, so you feel satisfied with less food and think about food less often through the day.",
+    "Weight loss medication is a prescription treatment that helps your body manage hunger and appetite. The most talked-about group right now are the GLP-1 medications — including Ozempic (semaglutide, primarily for type 2 diabetes), Wegovy (semaglutide 2.4mg, TGA-approved for chronic weight management and now available in Australia, though supply can vary), and Mounjaro (tirzepatide, TGA-approved and increasingly available). These medications copy a natural gut hormone that tells your brain you are full, so you feel satisfied with less food and think about food less often through the day.",
     "Duromine (phentermine) is an older appetite-suppressant tablet that has been used in Australia for many years. It works differently to GLP-1 medication and is usually prescribed for shorter periods. It can suit some people, but it is not right for everyone, and it needs proper medical supervision.",
     "Medication is not a magic fix on its own. It works best alongside changes to how you eat, move and sleep. That is why our physicians and dietitians review you properly, check the medication is safe for you, and stay involved — rather than simply handing over a script and sending you away.",
   ],
@@ -96,6 +96,11 @@ const pageData: OswPageData = {
       question: "What about Duromine — is it still used?",
       answer:
         "Yes, Duromine (phentermine) is still prescribed in Australia. It is an appetite suppressant usually used for shorter periods. It suits some people but is not safe for everyone, particularly with certain heart conditions, so it needs a proper medical assessment first.",
+    },
+    {
+      question: "Are GLP-1 medications like Wegovy available in Australia?",
+      answer:
+        "Yes — Wegovy (semaglutide 2.4mg) has TGA approval for chronic weight management in Australia and is now available, though access can vary by pharmacy. Ozempic (semaglutide at lower doses, primarily for T2D) is widely available. Mounjaro (tirzepatide) is TGA approved and increasingly accessible. These medications work best as part of a supervised program with dietitian and physician support. Eligibility and scripts require a consultation with a doctor.",
     },
     {
       question: "Will the weight come back if I stop?",

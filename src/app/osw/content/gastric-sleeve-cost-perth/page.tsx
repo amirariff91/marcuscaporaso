@@ -20,7 +20,7 @@ const pageData: OswPageData = {
     "Working out the real cost of a gastric sleeve can feel overwhelming when fees come from several places at once. This page explains how the costs are built up, what Medicare and private health cover, and the questions to ask before you commit.",
   stats: [
     { label: "Separate fee types", value: "4+", note: "Surgeon, hospital, anaesthetist, physician" },
-    { label: "Medicare item", value: "Yes", note: "A rebate applies when you meet eligibility criteria" },
+    { label: "Medicare item", value: "31575", note: "Surgical rebate applies when you meet MBS eligibility criteria (BMI 40+ or 35+ with comorbidities)" },
     { label: "Private cover", value: "Required", note: "Appropriate hospital cover tier needed" },
     { label: "Written estimate", value: "Provided", note: "Before you decide, with no obligation" },
   ],
@@ -90,7 +90,7 @@ const pageData: OswPageData = {
     "Choosing the cheapest quote without the same inclusions can cost more overall if follow-up care is not included.",
   ],
   costParagraph:
-    "We avoid quoting a single dollar figure because the real number depends on your cover, your eligibility and your individual health. What we can promise is transparency. For most privately insured patients, Medicare provides a rebate on the surgeon's and anaesthetist's fees, and private health cover contributes to the hospital admission, leaving a defined out-of-pocket gap that we set out in writing before you decide. Patients without suitable cover, or who are within a waiting period, may be eligible to apply to access part of their superannuation on compassionate or medical grounds, and some choose third-party payment plans. During your orientation consultation we walk through each fee line by line so you know exactly where you stand.",
+    "For patients with appropriate private hospital cover, out-of-pocket costs after Medicare and fund rebates typically range from $2,000 to $8,000, depending on your specific policy, excess and surgeon fees. For patients who are self-funded or have inadequate cover, the total cost is typically $15,000 to $30,000 or more. We provide a written itemised estimate specific to your situation before you make any decisions. Patients without suitable cover, or who are within a waiting period, may be eligible to apply to access part of their superannuation on compassionate or medical grounds, and some choose third-party payment plans. During your orientation consultation we walk through each fee line by line so you know exactly where you stand.",
   surgeons: [
     {
       name: "Dr Harsha Chandraratna",
@@ -110,7 +110,7 @@ const pageData: OswPageData = {
     {
       question: "How much does a gastric sleeve cost in Perth?",
       answer:
-        "There is no single price. The total is made up of separate surgeon, anaesthetist, hospital and physician fees, and it depends on your private health cover and Medicare eligibility. We provide an itemised written estimate at your orientation consultation so you see the full picture before deciding. Call (08) 9332 0066 to start.",
+        "The total cost of a gastric sleeve in Perth depends on whether you have appropriate private hospital cover. For privately insured patients with a gold-tier or equivalent policy that includes bariatric surgery, out-of-pocket costs after Medicare and fund rebates typically range from $2,000 to $8,000. For self-funded patients without adequate cover, the total cost is typically $15,000 to $30,000 or more. We provide a written itemised estimate for your specific situation at no obligation. MBS item 31575 applies to the surgical component.",
     },
     {
       question: "Why are there so many separate fees?",

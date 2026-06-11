@@ -4,7 +4,7 @@ import { OswContentPage, type OswPageData } from "../../../../components/osw/Con
 export const metadata: Metadata = {
   title: "Revision Bariatric Surgery Perth | Obesity Surgery WA Perth",
   description:
-    "Revision bariatric surgery in Perth at Obesity Surgery WA. When previous weight loss surgery has not delivered lasting results or complications arise.",
+    "Revision bariatric surgery Perth — sleeve to bypass, band removal, bypass revision. Expert care at Obesity Surgery WA when your first procedure hasn't lasted.",
   alternates: { canonical: "https://www.obesitysurgerywa.com.au/revision-bariatric-surgery" },
   robots: { index: false, follow: false },
 };
@@ -14,7 +14,7 @@ const pageData: OswPageData = {
   pageTitle: "Revision Bariatric Surgery Perth",
   keyword: "revision bariatric surgery perth",
   metaDescription:
-    "Revision bariatric surgery in Perth at Obesity Surgery WA. When previous weight loss surgery has not delivered lasting results or complications arise.",
+    "Revision bariatric surgery Perth — sleeve to bypass, band removal, bypass revision. Expert care at Obesity Surgery WA when your first procedure hasn't lasted.",
   heroHeadline: "Revision bariatric surgery in Perth, when your first operation has not worked out",
   heroSubheadline:
     "If your weight has crept back, your reflux has become unbearable, or your band has caused problems, you are not back at square one and you are not a failure. Plenty of people need a second operation, and there is often a clear reason why the first one did not deliver. Our job is to understand what happened, and then tell you honestly whether revision surgery can help.",
