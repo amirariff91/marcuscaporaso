@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Rockhampton vs Gladstone — Clinic Expansion Research | Biosymm",
+  title: "Rockhampton vs Gladstone: Clinic Expansion Research | Biosymm",
   description:
     "Search demand and competitive landscape comparison for Biosymm's next clinic location. One data point for the expansion decision.",
   robots: { index: false, follow: false },
@@ -59,10 +59,10 @@ const competitors = [
   ["Health First Group", "Both", "29", "~3,946 site-wide", "Strong", "Only competitor running paid search. Rocky page: 17 refdomains. Gladstone page: 3 refdomains."],
   ["Physio & Fitness Gladstone", "Gladstone", "16", "1,281", "Strong", "183 referring domains. Owns 'massage gladstone' (1,300/mo). No paid search. Hardest single competitor."],
   ["Movement Improvement", "Rockhampton", "15", "251", "Moderate", "Ranks #1 branded, #2 'physio rockhampton'. Only 9 organic keywords. Beatable in 6–12 months."],
-  ["Vector Health", "Rockhampton", "14", "272", "Moderate", "Rocky is actually secondary — top keywords are Yeppoon. 205 refdomains may include low-quality links."],
+  ["Vector Health", "Rockhampton", "14", "272", "Moderate", "Rocky is actually secondary; top keywords are Yeppoon. 205 refdomains may include low-quality links."],
   ["Entirely Health", "Rockhampton", "10", "835", "Moderate", "Traffic is mostly brand-driven (Rocky + Yeppoon). Weak non-branded SEO."],
-  ["Active Physio Health Gladstone", "Gladstone", "13", "156", "Weak", "3,507 backlinks / 281 refdomains at DR 13 — strongly suggests spam links."],
-  ["Live Strong Physiotherapy", "Rockhampton", "9", "133", "Weak", "Ranks #4 despite low DR — GMB/proximity signals doing the work."],
+  ["Active Physio Health Gladstone", "Gladstone", "13", "156", "Weak", "3,507 backlinks / 281 refdomains at DR 13, strongly suggesting spam links."],
+  ["Live Strong Physiotherapy", "Rockhampton", "9", "133", "Weak", "Ranks #4 despite low DR; GMB/proximity signals doing the work."],
   ["Gladstone Hands On Physio", "Gladstone", "4", "146", "Weak", "259 backlinks at DR 4. Ranks #3 on GBP presence alone."],
   ["All Sorted Physiotherapy", "Gladstone", "1", "57", "Weak", "DR essentially zero. Easiest target to displace in either market."],
 ];
@@ -85,12 +85,12 @@ const divergencePoints = [
   {
     tension: "Which city wins on search",
     fable: "Rockhampton. Lower keyword difficulty (KD 0–9), weaker incumbents, zero brand entrenchment. A new entrant competes for nearly 100% of demand from day one.",
-    gpt: "Gladstone. Roughly 4–5x more physio searches per capita than Rockhampton — a structurally more search-active patient market, even accounting for branded volume.",
+    gpt: "Gladstone. Roughly 4–5x more physio searches per capita than Rockhampton: a structurally more search-active patient market, even accounting for branded volume.",
   },
   {
     tension: "Gladstone's branded search volume",
     fable: "A moat. The ~1,100/mo of branded competitor searches is not capturable by a new entrant via SEO. Strip it and capturable demand is near parity with Rockhampton.",
-    gpt: "Evidence of market health. In an underdeveloped market, branded search would be near zero. Gladstone patients actively search for physio — a new entrant can build brand equity in a proven market.",
+    gpt: "Evidence of market health. In an underdeveloped market, branded search would be near zero. Gladstone patients actively search for physio; a new entrant can build brand equity in a proven market.",
   },
   {
     tension: "B2B employer base",
@@ -115,9 +115,9 @@ const divergencePoints = [
 ];
 
 const caveats = [
-  { title: "B2B pipeline is the primary decision driver — and search can't see it", body: "Employer density, active tender calendars, WorkCover QLD claim volumes, and existing Biosymm relationships will determine year-1 and year-2 revenue. None of this is visible in Ahrefs." },
+  { title: "B2B pipeline is the primary decision driver. Search can't see it.", body: "Employer density, active tender calendars, WorkCover QLD claim volumes, and existing Biosymm relationships will determine year-1 and year-2 revenue. None of this is visible in Ahrefs." },
   { title: "Ahrefs underestimates small regional AU markets", body: "The platform's clickstream panel is metro-concentrated. For cities under 100k population, true volumes are likely 2–4x these estimates. Cross-validate against Google Keyword Planner with explicit QLD geo-targeting." },
-  { title: "Gladstone Park contamination", body: "Gladstone Park is a Melbourne suburb. Some Ahrefs results may refer to it rather than Gladstone QLD — the 1,800/mo total has not been verified with strict QLD targeting and may be overstated." },
+  { title: "Gladstone Park contamination", body: "Gladstone Park is a Melbourne suburb. Some Ahrefs results may refer to it rather than Gladstone QLD; the 1,800/mo total has not been verified with strict QLD targeting and may be overstated." },
   { title: "'Near me' queries not captured", body: "Ahrefs doesn't measure 'physio near me' or unmodified mobile queries, which likely dominate local health search. True demand is a floor estimate." },
   { title: "Local pack drives more bookings than organic rank", body: "GBP review counts, proximity signals, and check-in frequency likely outperform organic positions in both markets. Local pack competitiveness was not fully analysed here." },
   { title: "Staffing feasibility not assessed", body: "The binding constraint in regional clinic expansion is often physio recruitment. Graduate availability and retention rates in each city are absent from this analysis." },
@@ -270,7 +270,7 @@ export default function BiosymmExpansionPage() {
           <div className="mt-10 flex flex-wrap gap-3 text-sm font-semibold text-fg">
             <span className="rounded-full border border-border bg-white px-4 py-2">Biosymm</span>
             <span className="rounded-full border border-border bg-white px-4 py-2">June 2026</span>
-            <span className="rounded-full border border-border bg-white px-4 py-2">Ahrefs · 10 agents · Fable 5 + GPT</span>
+            <span className="rounded-full border border-border bg-white px-4 py-2">Ahrefs search data</span>
             <span className="rounded-full border border-amber-200 bg-amber-50 px-4 py-2 text-amber-700">Split verdict</span>
           </div>
         </div>
@@ -281,55 +281,55 @@ export default function BiosymmExpansionPage() {
         <div className="mx-auto grid max-w-6xl gap-5 px-5 md:grid-cols-4 md:px-8">
           <MetricCard label="Capturable B2C search" value="~690/mo each" note="Once Gladstone's branded competitor terms are stripped, non-branded demand is near parity in both cities." highlight />
           <MetricCard label="Rocky SERP difficulty" value="KD 0–9" note="Top incumbents are DR 9–15 with thin organic footprints. Realistic top-3 in 6–12 months." />
-          <MetricCard label="Gladstone SERP difficulty" value="KD 16–31" note="Physio & Fitness Gladstone holds 1,281 traffic/mo with 183 referring domains — a real incumbent." />
+          <MetricCard label="Gladstone SERP difficulty" value="KD 16–31" note="Physio & Fitness Gladstone holds 1,281 traffic/mo with 183 referring domains, a real incumbent." />
           <MetricCard label="B2B search demand" value="Zero" note="Both cities. Employer contracts are procured via tenders and OHS manager relationships, not Google." />
         </div>
       </section>
 
       {/* Split verdict */}
-      <Section eyebrow="The verdict" title="Two independent models. Two different recommendations.">
+      <Section eyebrow="The verdict" title="Two independent analyses. Two different recommendations.">
         <p>
-          Fable 5 ran the primary strategic analysis. An independent GPT red-team stress-tested the findings without seeing the primary view. They disagree — and the disagreement is instructive.
+          Two independent analyses of the same data reached different conclusions on the key strategic question. Both are presented here without mediation.
         </p>
         <div className="mt-8 grid gap-4 md:grid-cols-[1fr_auto_1fr] md:items-center">
           <VerdictCard
             city="Rockhampton"
-            model="Primary analysis — Fable 5"
+            model="Primary analysis"
             recommendation="Faster path to B2C organic visibility"
             confidence="medium"
-            summary="Strip Gladstone's branded competitor volume (~1,100/mo) and capturable non-branded demand is near parity: roughly 690/mo each. Rockhampton wins decisively on demand-to-difficulty ratio — equal pool at KD 0–9 vs KD 16–31, against a field where the top independent drives only 251 visits/mo. Zero brand entrenchment means a new entrant competes for nearly 100% of demand from day one. Top-3 organic within 6–12 months."
+            summary="Strip Gladstone's branded competitor volume (~1,100/mo) and capturable non-branded demand is near parity: roughly 690/mo each. Rockhampton wins decisively on demand-to-difficulty ratio: equal pool at KD 0–9 vs KD 16–31, against a field where the top independent drives only 251 visits/mo. Zero brand entrenchment means a new entrant competes for nearly 100% of demand from day one. Top-3 organic within 6–12 months."
           />
           <div className="hidden md:flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-fg text-bg text-xs font-bold tracking-[0.08em]">VS</div>
           <VerdictCard
             city="Gladstone"
-            model="Independent stress-test — GPT"
+            model="Independent stress-test"
             recommendation="Better structural fit for Biosymm's B2B model"
             confidence="medium"
-            summary="Gladstone generates 4–5x more physio searches per capita than Rockhampton — a structurally more search-active patient market. More importantly: Gladstone Ports Corporation, QAL alumina refinery, Boyne Smelters, and Curtis Island LNG are concentrated high-injury-risk employers. A single contract with QAL or Boyne could exceed 12 months of B2C clinic revenue. Low CPCs ($0.80–$1.80) also make paid search a viable bridge while SEO matures."
+            summary="Gladstone generates 4–5x more physio searches per capita than Rockhampton, a structurally more search-active patient market. More importantly: Gladstone Ports Corporation, QAL alumina refinery, Boyne Smelters, and Curtis Island LNG are concentrated high-injury-risk employers. A single contract with QAL or Boyne could exceed 12 months of B2C clinic revenue. Low CPCs ($0.80–$1.80) also make paid search a viable bridge while SEO matures."
           />
         </div>
         <div className="mt-8 rounded-[2rem] bg-fg p-8 text-bg md:p-10">
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] opacity-50">Where both models agree</p>
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] opacity-50">Where both analyses agree</p>
           <p className="mt-5 max-w-4xl text-2xl font-semibold leading-snug tracking-[-0.02em] md:text-3xl">
-            B2B search volume is zero in both cities. Search data cannot answer Biosymm&apos;s primary question. B2B will be won through direct outreach to OHS managers, LinkedIn, and WorkCover QLD relationships — not SEO.
+            B2B search volume is zero in both cities. Search data cannot answer Biosymm&apos;s primary question. B2B will be won through direct outreach to OHS managers, LinkedIn, and WorkCover QLD relationships, not organic search.
           </p>
         </div>
       </Section>
 
       {/* Search volume */}
-      <Section eyebrow="Search demand" title="Keyword volumes — B2C and B2B, both cities.">
+      <Section title="Keyword volumes: B2C and B2B, both cities.">
         <p>
-          All volumes are Ahrefs AU estimates with city-level location IDs (Rockhampton: 1000404, Gladstone: 1000364). Treat as conservative floor estimates — Ahrefs underestimates small regional AU markets. The relative comparison is more reliable than absolute numbers.
+          All volumes are Ahrefs AU estimates with city-level location IDs (Rockhampton: 1000404, Gladstone: 1000364). Treat as conservative floor estimates; Ahrefs underestimates small regional AU markets. The relative comparison is more reliable than absolute numbers.
         </p>
-        <p className="mt-3 text-sm font-semibold text-fg">B2C — General physiotherapy &amp; allied health</p>
+        <p className="mt-3 text-sm font-semibold text-fg">B2C: General physiotherapy &amp; allied health</p>
         <DataTable
           headers={["Keyword", "Rocky /mo", "Gladstone /mo", "KD (Rocky / Glad)", "Intent"]}
           rows={b2cKeywords}
         />
         <div className="mt-6 rounded-2xl border border-amber-200 bg-amber-50/60 p-5 text-sm leading-7 text-muted">
-          <span className="font-semibold text-fg">Gladstone branded terms (~1,100/mo not shown above):</span> Physio &amp; Fitness (450), Physio and Fitness (200), Active Physio (150), Hands On Physio (60), Hands On Physiotherapy (40). These are existing-clinic navigational searches — not capturable by a new entrant via SEO.
+          <span className="font-semibold text-fg">Gladstone branded terms (~1,100/mo not shown above):</span> Physio &amp; Fitness (450), Physio and Fitness (200), Active Physio (150), Hands On Physio (60), Hands On Physiotherapy (40). These are existing-clinic navigational searches, not capturable by a new entrant via SEO.
         </div>
-        <p className="mt-8 text-sm font-semibold text-fg">B2B / Workplace health — both cities</p>
+        <p className="mt-8 text-sm font-semibold text-fg">B2B / Workplace health: both cities</p>
         <DataTable
           headers={["Keyword", "Rocky /mo", "Gladstone /mo", "KD", "Intent"]}
           rows={b2bKeywords}
@@ -353,37 +353,37 @@ export default function BiosymmExpansionPage() {
           </div>
           <div>
             <p className="text-2xl font-semibold tracking-[-0.03em] text-fg">0/mo</p>
-            <p className="mt-1 text-xs uppercase tracking-[0.16em] text-muted-2">B2B — both cities</p>
+            <p className="mt-1 text-xs uppercase tracking-[0.16em] text-muted-2">B2B: both cities</p>
           </div>
         </div>
       </Section>
 
       {/* SERP landscape */}
-      <Section eyebrow="SERP landscape" title="Who ranks — and how easy are they to displace?">
+      <Section title="Who ranks, and how easy are they to displace?">
         <p>
           Both cities have Google local packs present. Competition is low by national standards in both markets. The difference is the strength of the lead incumbent.
         </p>
         <div className="mt-8 grid gap-8 md:grid-cols-2">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.16em] text-cta">Rockhampton — &quot;physiotherapy rockhampton&quot;</p>
+            <p className="text-sm font-semibold uppercase tracking-[0.16em] text-cta">Rockhampton: &quot;physiotherapy rockhampton&quot;</p>
             <p className="mt-2 text-sm text-muted">Competition: <span className="font-semibold text-fg">Low</span> · Local pack: Present</p>
             <DataTable
               headers={["Pos", "Site", "Type", "DR"]}
               rows={rockySERP}
             />
             <p className="mt-4 text-sm leading-7 text-muted">
-              Top organic results are independent clinics at DR 9–15. Health First Group (DR 29) is the only multi-location competitor, but its Rocky location page has just 17 referring domains. No major health directory (Healthdirect, HotDoc, HealthEngine) appears in the top 10 — an unworked citation channel.
+              Top organic results are independent clinics at DR 9–15. Health First Group (DR 29) is the only multi-location competitor, but its Rocky location page has just 17 referring domains. No major health directory (Healthdirect, HotDoc, HealthEngine) appears in the top 10, an unworked citation channel.
             </p>
           </div>
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.16em] text-amber-600">Gladstone — &quot;physiotherapy gladstone&quot;</p>
+            <p className="text-sm font-semibold uppercase tracking-[0.16em] text-amber-600">Gladstone: &quot;physiotherapy gladstone&quot;</p>
             <p className="mt-2 text-sm text-muted">Competition: <span className="font-semibold text-fg">Low-medium</span> · Local pack: Present</p>
             <DataTable
               headers={["Pos", "Site", "Type", "DR"]}
               rows={gladstoneSERP}
             />
             <p className="mt-4 text-sm leading-7 text-muted">
-              The government (DR 82) and Healthdirect (DR 87) at positions 7–9 are authority hitchhikers with minimal page-level equity. The real constraint is Physio &amp; Fitness Gladstone (DR 16, 1,281 traffic/mo, 183 refdomains) — the strongest independent in either market.
+              The government (DR 82) and Healthdirect (DR 87) at positions 7–9 are authority hitchhikers with minimal page-level equity. The real constraint is Physio &amp; Fitness Gladstone (DR 16, 1,281 traffic/mo, 183 refdomains), the strongest independent in either market.
             </p>
           </div>
         </div>
@@ -398,7 +398,7 @@ export default function BiosymmExpansionPage() {
       </Section>
 
       {/* Competitor profiles */}
-      <Section eyebrow="Competitor profiles" title="Digital maturity of every ranked clinic in both markets.">
+      <Section title="Digital maturity of every ranked clinic in both markets.">
         <p>
           Domain Rating, estimated monthly organic traffic, and digital maturity assessment for all clinics appearing in the top-10 SERPs for both cities.
         </p>
@@ -411,13 +411,13 @@ export default function BiosymmExpansionPage() {
             <p>Physio &amp; Fitness Gladstone has 1,281 traffic/mo, 183 referring domains, and drives volume primarily through &quot;massage gladstone&quot; (1,300/mo). It doesn&apos;t run paid search. To take position 1–2 in Gladstone requires a sustained 12–18 month campaign, not a 3-month burst.</p>
           </FindingCard>
           <FindingCard title="Most competitors are GBP incumbents, not SEO incumbents">
-            <p>Several clinics with DR 1–4 hold top-5 positions — driven entirely by Google Business Profile proximity and review signals, not organic SEO. GBP optimisation is the first move in either city, regardless of domain authority.</p>
+            <p>Several clinics with DR 1–4 hold top-5 positions, driven entirely by Google Business Profile proximity and review signals, not organic SEO. GBP optimisation is the first move in either city, regardless of domain authority.</p>
           </FindingCard>
         </div>
       </Section>
 
       {/* National B2B */}
-      <Section eyebrow="National B2B overlay" title="Mining and FIFO workplace health demand — Australia-wide.">
+      <Section title="Mining and FIFO workplace health demand, Australia-wide.">
         <p>
           Total estimated national pool is ~1,500–2,000/mo across all workplace health terms. Mining and FIFO-specific terms return zero data. This is confirmation of the procurement channel, not a market-size signal.
         </p>
@@ -437,19 +437,19 @@ export default function BiosymmExpansionPage() {
       {/* Divergence — centrepiece, inverted section */}
       <section className="border-t border-white/10 bg-fg py-16 md:py-24">
         <div className="mx-auto max-w-6xl px-5 md:px-8">
-          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.22em] text-cta">Where the models diverge</p>
+          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.22em] text-cta">Where the analyses diverge</p>
           <h2 className="max-w-4xl text-balance text-3xl font-semibold tracking-[-0.03em] text-bg md:text-5xl">
-            These are the tensions Marcus should surface with the Biosymm team.
+            Six questions the expansion decision hinges on.
           </h2>
           <p className="mt-6 max-w-3xl text-base leading-8 text-bg/60 md:text-lg">
-            The most useful output of two independent analytical passes isn&apos;t the recommendation; it&apos;s the points of tension. Each item below represents a question the expansion decision hinges on.
+            The two analyses reached different conclusions on six key questions. Here is where they split, and why each position is defensible.
           </p>
 
           {/* Column headers — desktop only */}
           <div className="mt-12 hidden md:grid md:grid-cols-[1fr_2fr_2fr] md:gap-6">
             <div />
-            <p className="px-4 text-xs font-semibold uppercase tracking-[0.2em] text-cta">Primary analysis — Fable 5</p>
-            <p className="px-4 text-xs font-semibold uppercase tracking-[0.2em] text-amber-400">Stress-test — GPT</p>
+            <p className="px-4 text-xs font-semibold uppercase tracking-[0.2em] text-cta">Primary analysis</p>
+            <p className="px-4 text-xs font-semibold uppercase tracking-[0.2em] text-amber-400">Independent review</p>
           </div>
 
           <div className="mt-4 divide-y divide-bg/10">
@@ -457,11 +457,11 @@ export default function BiosymmExpansionPage() {
               <div key={i} className="grid gap-4 py-6 md:grid-cols-[1fr_2fr_2fr] md:gap-6">
                 <p className="text-sm font-semibold text-bg/70 md:pt-1">{d.tension}</p>
                 <div className="rounded-2xl bg-cta/15 px-4 py-3.5">
-                  <p className="mb-1.5 text-xs font-semibold uppercase tracking-[0.16em] text-cta md:hidden">Fable 5</p>
+                  <p className="mb-1.5 text-xs font-semibold uppercase tracking-[0.16em] text-cta md:hidden">Primary analysis</p>
                   <p className="text-sm leading-7 text-bg/80">{d.fable}</p>
                 </div>
                 <div className="rounded-2xl bg-amber-400/15 px-4 py-3.5">
-                  <p className="mb-1.5 text-xs font-semibold uppercase tracking-[0.16em] text-amber-400 md:hidden">GPT</p>
+                  <p className="mb-1.5 text-xs font-semibold uppercase tracking-[0.16em] text-amber-400 md:hidden">Independent review</p>
                   <p className="text-sm leading-7 text-bg/80">{d.gpt}</p>
                 </div>
               </div>
@@ -485,9 +485,9 @@ export default function BiosymmExpansionPage() {
       </section>
 
       {/* Caveats */}
-      <Section eyebrow="Limitations" title="What this data cannot tell you.">
+      <Section title="What this data cannot tell you.">
         <p>
-          Search demand research is one input. Here is what it leaves unanswered — and what should be weighted alongside it.
+          Search demand research is one input. Here is what it leaves unanswered, and what should be weighted alongside it.
         </p>
         <div className="mt-8 rounded-3xl border border-border bg-white p-6 shadow-sm md:p-8">
           <div className="grid gap-6 md:grid-cols-2">
