@@ -4,6 +4,7 @@ const navLinks = [
   { href: "/osw", label: "Audit" },
   { href: "/osw/sitemap", label: "Sitemap" },
   { href: "/osw/wireframes", label: "Wireframes" },
+  { href: "/osw/content-briefs", label: "Briefs" },
 ];
 
 export default function OswLayout({ children }: { children: React.ReactNode }) {
