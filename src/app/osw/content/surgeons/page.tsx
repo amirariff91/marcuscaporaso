@@ -4,7 +4,7 @@ import { OswContentPage, type OswPageData } from "../../../../components/osw/Con
 export const metadata: Metadata = {
   title: "Bariatric Surgeons Perth | Obesity Surgery WA",
   description:
-    "Meet the Perth bariatric surgeons at Obesity Surgery WA — Dr Harsha Chandraratna (FRACS) and Dr Stephen Watson, plus our physicians and dietitians.",
+    "Meet the Perth bariatric surgeons at Obesity Surgery WA: Dr Harsha Chandraratna (FRACS) and Dr Stephen Watson, plus our physicians and dietitians.",
   alternates: { canonical: "https://www.obesitysurgerywa.com.au/surgeons" },
   robots: { index: false, follow: false },
 };
@@ -14,10 +14,10 @@ const pageData: OswPageData = {
   pageTitle: "Our Bariatric Surgeons",
   keyword: "best bariatric surgeon perth",
   metaDescription:
-    "Meet the Perth bariatric surgeons at Obesity Surgery WA — Dr Harsha Chandraratna (FRACS) and Dr Stephen Watson, plus our physicians and dietitians.",
+    "Meet the Perth bariatric surgeons at Obesity Surgery WA: Dr Harsha Chandraratna (FRACS) and Dr Stephen Watson, plus our physicians and dietitians.",
   heroHeadline: "Meet Our Perth Bariatric Surgeons",
   heroSubheadline:
-    "Choosing a bariatric surgeon is one of the biggest decisions you will make for your health, and it is normal to want to know exactly who you are trusting. Our team is led by Dr Harsha Chandraratna, a Fellow of the Royal Australasian College of Surgeons who has personally been through bariatric surgery himself — so the care here comes from real understanding, not just a textbook.",
+    "Choosing a bariatric surgeon is one of the biggest decisions you will make for your health, and it is normal to want to know exactly who you are trusting. Our team is led by Dr Harsha Chandraratna, a Fellow of the Royal Australasian College of Surgeons who has personally been through bariatric surgery himself, so the care here comes from real understanding, not just a textbook.",
   stats: [
     { label: "Lead surgeon", value: "FRACS", note: "Fellow of the Royal Australasian College of Surgeons" },
     { label: "Hospitals", value: "2", note: "St John of God Murdoch & Subiaco" },
@@ -28,14 +28,14 @@ const pageData: OswPageData = {
   whatIsParagraphs: [
     "Obesity Surgery WA is led by Dr Harsha Chandraratna, a bariatric surgeon and Fellow of the Royal Australasian College of Surgeons (FRACS). He lectures at the University of Notre Dame and operates at St John of God Murdoch and St John of God Subiaco, two of Perth's leading private hospitals. He has also been through bariatric surgery himself, which means he understands the experience from both sides of the consulting room.",
     "Working alongside him is Dr Stephen Watson, an experienced bariatric surgeon who shares the same careful, patient-first approach. Between them they cover gastric sleeve, gastric bypass and revisional surgery, and they take time to match the right procedure to your body and your goals rather than offering a one-size-fits-all answer.",
-    "Surgery is only one part of long-term weight loss, so the surgeons are supported by a team of physicians and dietitians who stay involved before and long after your operation. You are not handed over to a stranger on the day of surgery and forgotten afterwards — the same team walks with you through the whole journey.",
+    "Surgery is only one part of long-term weight loss, so the surgeons are supported by a team of physicians and dietitians who stay involved before and long after your operation. You are not handed over to a stranger on the day of surgery and forgotten afterwards. The same team walks with you through the whole journey.",
   ],
   comparisonNote:
     "When you compare bariatric surgeons in Perth, look beyond a single number. The things that matter most are college fellowship (FRACS), accredited hospital privileges, the strength of the aftercare team, and whether the surgeon takes time to understand your situation.",
   eligibilityBmi:
-    "Generally suitable for patients with a BMI of 35+ or BMI 30+ with related health conditions — your surgeon will confirm what is right for you.",
+    "Generally suitable for patients with a BMI of 35+ or BMI 30+ with related health conditions. Your surgeon will confirm what is right for you.",
   eligibilityNotes: [
-    "You will see a fully qualified, FRACS-credentialled bariatric surgeon — not a trainee — for your assessment and your operation.",
+    "You will see a fully qualified, FRACS-credentialled bariatric surgeon, not a trainee, for your assessment and your operation.",
     "Both surgeons hold operating privileges at St John of God Murdoch and St John of God Subiaco, accredited private hospitals.",
     "Consultations are available at our Booragoon rooms (Garden City Specialist Centre, 537 Marmion Street) and in Mandurah (WA Cardiology Centre, 30 Minilya Pkwy).",
     "A GP referral lets you access Medicare rebates and is the usual first step before meeting the team.",
@@ -82,10 +82,10 @@ const pageData: OswPageData = {
   ],
   risksTitle: "Being honest about what surgery can and cannot do",
   risksParagraph:
-    "No surgeon, however experienced, can promise a particular result — and you should be cautious of anyone who does. Bariatric surgery is a powerful tool, but it works alongside your effort, not instead of it. Our role is to give you the safest possible operation and the support to make the most of it, while being straight with you about the risks any surgery carries.",
+    "No surgeon, however experienced, can promise a particular result. You should be cautious of anyone who does. Bariatric surgery is a powerful tool, but it works alongside your effort, not instead of it. Our role is to give you the safest possible operation and the support to make the most of it, while being straight with you about the risks any surgery carries.",
   risksList: [
     "All surgery carries risks including bleeding, infection, blood clots and reactions to anaesthetic.",
-    "Some patients experience loose skin after significant weight loss — this varies between individuals and can sometimes be addressed later.",
+    "Some patients experience loose skin after significant weight loss. This varies between individuals and can sometimes be addressed later.",
     "Long-term success depends on dietary and lifestyle changes; weight can return if these are not maintained.",
     "Vitamin and nutrient levels need lifelong monitoring after some procedures, which our team helps you manage.",
   ],
@@ -106,17 +106,17 @@ const pageData: OswPageData = {
     },
   ],
   outcomesNote:
-    "Patients of our team have achieved meaningful, lasting weight loss and improvements in conditions such as type 2 diabetes, sleep apnoea and high blood pressure. Published clinical averages for bariatric surgery typically show 60–80% of excess weight lost in the first one to two years, depending on the procedure. These figures are averages only — your own result will depend on your starting health, the procedure chosen, and how closely you follow the dietary and lifestyle plan your team sets out with you. Results vary between individuals and no specific outcome can be promised.",
+    "Patients of our team have achieved meaningful, lasting weight loss and improvements in conditions such as type 2 diabetes, sleep apnoea and high blood pressure. Published clinical averages for bariatric surgery typically show 60-80% of excess weight lost in the first one to two years, depending on the procedure. These figures are averages only. Your own result will depend on your starting health, the procedure chosen, and how closely you follow the dietary and lifestyle plan your team sets out with you. Results vary between individuals and no specific outcome can be promised.",
   faqs: [
     {
       question: "What makes a good bariatric surgeon in Perth?",
       answer:
-        "Look for a surgeon who is a Fellow of the Royal Australasian College of Surgeons (FRACS), holds operating privileges at accredited hospitals, performs bariatric surgery regularly, and is backed by a proper aftercare team of dietitians and physicians. Just as important is how the surgeon treats you — a good one takes time to understand your situation and explains your options honestly rather than rushing you toward a decision.",
+        "Look for a surgeon who is a Fellow of the Royal Australasian College of Surgeons (FRACS), holds operating privileges at accredited hospitals, performs bariatric surgery regularly, and is backed by a proper aftercare team of dietitians and physicians. Just as important is how the surgeon treats you. A good one takes time to understand your situation and explains your options honestly rather than rushing you toward a decision.",
     },
     {
       question: "What qualifications should I look for in a bariatric surgeon?",
       answer:
-        "In Australia, bariatric surgeons should hold Fellowship of the Royal Australasian College of Surgeons (FRACS) with specialist training in upper gastrointestinal or general surgery. The Bariatric Surgery Registry (BSR), run by Monash University, tracks outcomes data from participating surgeons — registry contribution is a positive indicator of commitment to quality assurance. Ask any surgeon you consider whether they contribute to the BSR. Our surgeons hold FRACS and are experienced across the full range of bariatric procedures.",
+        "In Australia, bariatric surgeons should hold Fellowship of the Royal Australasian College of Surgeons (FRACS) with specialist training in upper gastrointestinal or general surgery. The Bariatric Surgery Registry (BSR), run by Monash University, tracks outcomes data from participating surgeons. Registry contribution is a positive indicator of commitment to quality assurance. Ask any surgeon you consider whether they contribute to the BSR. Our surgeons hold FRACS and are experienced across the full range of bariatric procedures.",
     },
     {
       question: "Is Dr Chandraratna fully qualified and a member of RACS?",
@@ -126,7 +126,7 @@ const pageData: OswPageData = {
     {
       question: "Will I see the surgeon, or someone else?",
       answer:
-        "You will meet and be assessed by your FRACS bariatric surgeon, and your surgeon performs your operation — not a trainee. Around that, our physicians and dietitians provide the wider assessment and support, so you have a full team rather than a single point of contact.",
+        "You will meet and be assessed by your FRACS bariatric surgeon, and your surgeon performs your operation, not a trainee. Around that, our physicians and dietitians provide the wider assessment and support, so you have a full team rather than a single point of contact.",
     },
     {
       question: "Which hospitals do the surgeons operate at?",
@@ -141,7 +141,7 @@ const pageData: OswPageData = {
     {
       question: "Can I eat normally again after seeing a bariatric surgeon and having surgery?",
       answer:
-        "After surgery your eating changes, especially in the first weeks while you heal, but most patients return to eating a wide range of foods — just in smaller, more satisfying amounts. Our dietitians guide you step by step from liquids back to solid food, and help you build eating habits you can keep for life. The goal is a healthier relationship with food, not endless restriction.",
+        "After surgery your eating changes, especially in the first weeks while you heal, but most patients return to eating a wide range of foods, just in smaller, more satisfying amounts. Our dietitians guide you step by step from liquids back to solid food, and help you build eating habits you can keep for life. The goal is a healthier relationship with food, not endless restriction.",
     },
     {
       question: "What if the surgery does not work for me?",

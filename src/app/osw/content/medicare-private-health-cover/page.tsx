@@ -4,7 +4,7 @@ import { OswContentPage, type OswPageData } from "../../../../components/osw/Con
 export const metadata: Metadata = {
   title: "Medicare & Private Health for Weight Loss Surgery | Obesity Surgery WA Perth",
   description:
-    "How Medicare and private health insurance work for weight loss surgery in Australia. Item numbers, waiting periods, rebates and the OSW financial navigator.",
+    "How Medicare and private health insurance work for weight loss surgery in Australia. Item numbers, waiting periods, rebates and the OSWA financial navigator.",
   alternates: { canonical: "https://www.obesitysurgerywa.com.au/medicare-private-health-cover" },
   robots: { index: false, follow: false },
 };
@@ -14,7 +14,7 @@ const pageData: OswPageData = {
   pageTitle: "Medicare & Private Health for Weight Loss Surgery",
   keyword: "medicare weight loss surgery australia",
   metaDescription:
-    "How Medicare and private health insurance work for weight loss surgery in Australia. Item numbers, waiting periods, rebates and the OSW financial navigator.",
+    "How Medicare and private health insurance work for weight loss surgery in Australia. Item numbers, waiting periods, rebates and the OSWA financial navigator.",
   heroHeadline: "Medicare and private health cover for weight loss surgery in Australia",
   heroSubheadline:
     "Working out what Medicare pays, what your fund covers, and what is left for you can feel like reading a foreign language while you are already anxious about the surgery itself. This page breaks it down in plain terms, and our financial coordinator can sit with you and check your exact situation.",
@@ -44,7 +44,7 @@ const pageData: OswPageData = {
   ],
   howItWorksSteps: [
     { title: "Check Your Cover", description: "Call your fund and ask specifically about bariatric surgery item numbers including 31575 and 31572, whether bariatric surgery is included, and your waiting period status. Note any excess or copayment." },
-    { title: "GP Referral", description: "Ask your GP for a referral to OSW. A valid referral allows Medicare to contribute toward eligible specialist consultation and surgical fees." },
+    { title: "GP Referral", description: "Ask your GP for a referral to OSWA. A valid referral allows Medicare to contribute toward eligible specialist consultation and surgical fees." },
     { title: "Consultation", description: "We assess your clinical suitability and talk openly about how Medicare, your fund and any gap will apply to your specific situation." },
     { title: "Financial Coordinator Review", description: "Our financial coordinator helps you navigate item numbers, fund requirements, pre-approval and waiting periods, then puts the figures in writing." },
     { title: "Confirm and Schedule", description: "Once your cover is confirmed, any pre-approval is in place and pre-operative checks are complete, we book your surgery at SJOG Murdoch or Subiaco." },
@@ -108,9 +108,9 @@ const pageData: OswPageData = {
         "Ask whether your policy covers bariatric surgery item numbers including 31575 (sleeve gastrectomy) and 31572 (Roux-en-Y bypass), whether bariatric surgery is included on your level of cover, and what your waiting period status is. Also ask about any required pre-approval and the excess or copayment that applies. Writing down their answers, and the date and reference number of the call, is worth doing.",
     },
     {
-      question: "Does OSW help me understand my cover?",
+      question: "Does OSWA help me understand my cover?",
       answer:
-        "Yes. OSW has a financial coordinator whose role is to help patients navigate Medicare item numbers, fund requirements, pre-approval, waiting periods and gaps. They can review your individual situation and put the figures in writing so you know what to expect before you commit.",
+        "Yes. OSWA has a financial coordinator whose role is to help patients navigate Medicare item numbers, fund requirements, pre-approval, waiting periods and gaps. They can review your individual situation and put the figures in writing so you know what to expect before you commit.",
     },
     {
       question: "Does St John of God have agreed rates with my fund?",

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "OSW Rebuild — Final Sitemap & Page Architecture",
+  title: "OSWA Rebuild: Final Sitemap & Page Architecture",
   description: "Final 31-page sitemap for the Obesity Surgery WA website rebuild. Organised by intent: acquisition, cost/finance, trust, and local pages.",
   alternates: { canonical: "https://osw.marcuscaporaso.com/sitemap" },
   robots: { index: false, follow: false },

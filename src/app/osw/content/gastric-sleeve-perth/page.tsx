@@ -4,7 +4,7 @@ import { OswContentPage, type OswPageData } from "../../../../components/osw/Con
 export const metadata: Metadata = {
   title: "Gastric Sleeve Perth | Obesity Surgery WA Perth",
   description:
-    "Gastric sleeve surgery in Perth at Obesity Surgery WA — led by Dr Harsha Chandraratna FRACS. Eligibility, costs, recovery and long-term outcomes explained.",
+    "Gastric sleeve surgery in Perth at Obesity Surgery WA, led by Dr Harsha Chandraratna FRACS. Eligibility, costs, recovery and long-term outcomes explained.",
   alternates: { canonical: "https://www.obesitysurgerywa.com.au/gastric-sleeve-perth" },
   robots: { index: false, follow: false },
 };
@@ -14,7 +14,7 @@ const pageData: OswPageData = {
   pageTitle: "Gastric Sleeve Perth",
   keyword: "gastric sleeve perth",
   metaDescription:
-    "Gastric sleeve surgery in Perth at Obesity Surgery WA — led by Dr Harsha Chandraratna FRACS. Eligibility, costs, recovery and long-term outcomes explained.",
+    "Gastric sleeve surgery in Perth at Obesity Surgery WA, led by Dr Harsha Chandraratna FRACS. Eligibility, costs, recovery and long-term outcomes explained.",
 
   heroHeadline: "Gastric sleeve surgery in Perth",
   heroSubheadline:
@@ -172,7 +172,7 @@ const pageData: OswPageData = {
     {
       question: "Does Medicare cover gastric sleeve surgery?",
       answer:
-        "Yes — the gastric sleeve is listed under Medicare item number 31575. Medicare pays a set rebate toward the surgeon's, anaesthetist's and certain physician fees. It does not cover the hospital and theatre component, which is funded through your private health cover. You generally need a gold-tier or equivalent private hospital policy that specifically includes bariatric surgery.",
+        "Yes, the gastric sleeve is listed under Medicare item number 31575. Medicare pays a set rebate toward the surgeon's, anaesthetist's and certain physician fees. It does not cover the hospital and theatre component, which is funded through your private health cover. You generally need a gold-tier or equivalent private hospital policy that specifically includes bariatric surgery.",
     },
     {
       question: "Do I need a GP referral to be seen?",

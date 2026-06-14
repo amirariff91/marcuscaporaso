@@ -3,7 +3,7 @@ import { OswContentPage, type OswPageData } from "../../../../components/osw/Con
 
 export const metadata: Metadata = {
   title: "Weight Loss Surgery Cost Perth | Obesity Surgery WA Perth",
-  description: "Weight loss surgery costs in Perth explained clearly — surgeon fees, hospital fees, private health insurance, Medicare rebates, super access and payment options.",
+  description: "Weight loss surgery costs in Perth: surgeon fees, hospital fees, private health insurance, Medicare rebates, super access and payment options.",
   alternates: { canonical: "https://www.obesitysurgerywa.com.au/weight-loss-surgery-cost-perth" },
   robots: { index: false, follow: false },
 };
@@ -13,15 +13,15 @@ const pageData: OswPageData = {
   pageTitle: "Weight Loss Surgery Cost Perth",
   keyword: "weight loss surgery perth cost",
   metaDescription:
-    "Weight loss surgery costs in Perth explained clearly — surgeon fees, hospital fees, private health insurance, Medicare rebates, super access and payment options.",
+    "Weight loss surgery costs in Perth: surgeon fees, hospital fees, private health insurance, Medicare rebates, super access and payment options.",
 
   heroHeadline: "What weight loss surgery actually costs in Perth",
   heroSubheadline:
     "Cost is one of the first things people want to know, and it is one of the hardest things to get a straight answer on. This page lays out the real numbers, what shapes them, and how Medicare, private health and super fit in. When you are ready, we will give you a written estimate specific to you, with no surprises.",
 
   stats: [
-    { label: "Gastric sleeve", value: "$12k–$20k", note: "Approximate out of pocket; varies with your insurance cover" },
-    { label: "Gastric bypass", value: "$15k–$25k", note: "Approximate out of pocket; varies with your insurance cover" },
+    { label: "Gastric sleeve", value: "$12k-$20k", note: "Approximate out of pocket; varies with your insurance cover" },
+    { label: "Gastric bypass", value: "$15k-$25k", note: "Approximate out of pocket; varies with your insurance cover" },
     { label: "Insurance wait", value: "12 months", note: "Typical waiting period for obesity surgery cover with most funds" },
     { label: "Your estimate", value: "Written", note: "A personalised quote before you commit to anything" },
   ],

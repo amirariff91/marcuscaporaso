@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     title: "Obesity Surgery WA Rebuild Audit",
     description:
       "SEO, technical, content, UX, and growth audit for the Obesity Surgery WA website rebuild.",
-    siteName: "OSW Rebuild Audit",
+    siteName: "OSWA Rebuild Audit",
   },
   twitter: {
     card: "summary_large_image",
@@ -78,7 +78,7 @@ const methodologySteps = [
     focus: "Evidence before opinions",
     description:
       "Audit the current site, Ahrefs rankings, backlinks, sitemap, page speed, patient intent, competitors, and migration risk so the rebuild protects what is already working.",
-    proof: "Ahrefs confirms OSW already ranks top 3 for gastric bypass surgery perth, bariatric surgery perth, gastric sleeve perth, and weight loss surgery perth.",
+    proof: "Ahrefs confirms OSWA already ranks top 3 for gastric bypass surgery perth, bariatric surgery perth, gastric sleeve perth, and weight loss surgery perth.",
   },
   {
     step: "02",
@@ -102,13 +102,13 @@ const methodologySteps = [
     focus: "Turn traffic into consults",
     description:
       "After launch, monitor rankings, improve cost pages, test CTAs, retarget high-intent visitors, strengthen E-E-A-T, and report on calls, forms, guide downloads, and consult quality.",
-    proof: "The SERP for gastric sleeve cost perth has AI Overview, People Also Ask, Reddit, and explicit cost pages. OSW needs answer blocks and conversion tracking, not just traffic reports.",
+    proof: "The SERP for gastric sleeve cost perth has AI Overview, People Also Ask, Reddit, and explicit cost pages. OSWA needs answer blocks and conversion tracking, not just traffic reports.",
   },
 ];
 
 const roadmap = [
   {
-    phase: "Phase 1 — Preserve and protect current rankings",
+    phase: "Phase 1: Preserve and protect current rankings",
     items: [
       "Map every current URL to a rebuild URL before launch, including PDFs that currently attract traffic.",
       "Keep strong pages indexable: homepage, gastric sleeve, fees, gastric band, weight loss surgery, medication, dietitian, and contact.",
@@ -117,7 +117,7 @@ const roadmap = [
     ],
   },
   {
-    phase: "Phase 2 — Build the commercial landing architecture",
+    phase: "Phase 2: Build the commercial landing architecture",
     items: [
       "Create clean hubs for Weight Loss Surgery Perth, Bariatric Surgery Perth, Gastric Sleeve Perth, Gastric Bypass Perth, Costs & Finance, and Best Bariatric Surgeon Perth.",
       "Split cost intent into a transparent, medically careful cost pathway: fees, Medicare/private health, super access, payment plans, and questions to ask.",
@@ -126,7 +126,7 @@ const roadmap = [
     ],
   },
   {
-    phase: "Phase 3 — Increase conversion trust",
+    phase: "Phase 3: Increase conversion trust",
     items: [
       "Move from brochure copy to decision support: outcomes, process, risks, hospital locations, team credentials, and next-step clarity.",
       "Make phone, referral, and consultation CTAs persistent across mobile and desktop.",
@@ -135,7 +135,7 @@ const roadmap = [
     ],
   },
   {
-    phase: "Phase 4 — Install growth loops",
+    phase: "Phase 4: Install growth loops",
     items: [
       "Capture high-intent visitors with cost guide, eligibility checklist, and consultation prep resources.",
       "Retarget procedure and cost-page visitors with education-led ads rather than hard-sell medical claims.",
@@ -259,7 +259,7 @@ export default function OSWAuditPage() {
       <Section eyebrow="Executive diagnosis" title="The site is winning rankings despite being underbuilt as a conversion system.">
         <div className="grid gap-5 md:grid-cols-3">
           <FindingCard title="SEO base is real">
-            OSW ranks top 3 for valuable Perth bariatric terms including gastric bypass surgery perth, bariatric surgery perth, bariatric surgeons perth, gastric sleeve perth, and weight loss surgery perth. This is worth protecting before any visual rebuild goes live.
+            OSWA ranks top 3 for valuable Perth bariatric terms including gastric bypass surgery perth, bariatric surgery perth, bariatric surgeons perth, gastric sleeve perth, and weight loss surgery perth. This is worth protecting before any visual rebuild goes live.
           </FindingCard>
           <FindingCard title="Commercial gaps are obvious">
             Cost and finance searches are active, but the fees experience is thin and visually weak. Queries like gastric sleeve cost perth, weight loss surgery perth cost, payment plan, super access, and no-gap searches deserve their own structured journey.
@@ -270,9 +270,9 @@ export default function OSWAuditPage() {
         </div>
       </Section>
 
-      <Section eyebrow="Marcus rebuild methodology" title="How we would run the OSW rebuild: Diagnose, Architect, Install, Optimise.">
+      <Section eyebrow="Marcus rebuild methodology" title="How we would run the OSWA rebuild: Diagnose, Architect, Install, Optimise.">
         <p>
-          This is the same four-step growth loop used on Marcus Caporaso, translated into a website rebuild, SEO migration, and patient-acquisition plan for OSW. The point is to give the client a clear delivery method, not just a list of audit findings.
+          This is the same four-step growth loop used on Marcus Caporaso, translated into a website rebuild, SEO migration, and patient-acquisition plan for OSWA. The point is to give the client a clear delivery method, not just a list of audit findings.
         </p>
         <div className="mt-8 grid gap-5 md:grid-cols-2">
           {methodologySteps.map((step) => (
@@ -295,7 +295,7 @@ export default function OSWAuditPage() {
 
       <Section eyebrow="Organic visibility" title="Current rankings are concentrated in a few pages, so migration risk is high.">
         <p>
-          Ahrefs shows the homepage carrying most commercial visibility. That creates risk: if the rebuild changes the homepage semantics, internal links, headings, or URL handling, OSW can lose rankings that are currently doing the acquisition work.
+          Ahrefs shows the homepage carrying most commercial visibility. That creates risk: if the rebuild changes the homepage semantics, internal links, headings, or URL handling, OSWA can lose rankings that are currently doing the acquisition work.
         </p>
         <DataTable
           headers={["Keyword", "Volume", "Position", "Traffic", "CPC"]}
@@ -329,13 +329,13 @@ export default function OSWAuditPage() {
       <Section eyebrow="SERP read" title="Competitors are beatable, but they are clearer on specific intents.">
         <div className="grid gap-5 md:grid-cols-2">
           <FindingCard title="Weight loss surgery Perth">
-            OSW ranks #3 organically behind Perth Weight Loss Surgery. The SERP has a local pack and People Also Ask, so the new page needs local proof, FAQ schema, and explicit answers on cost, BMI, Medicare, vomiting after bypass, and eligibility.
+            OSWA ranks #3 organically behind Perth Weight Loss Surgery. The SERP has a local pack and People Also Ask, so the new page needs local proof, FAQ schema, and explicit answers on cost, BMI, Medicare, vomiting after bypass, and eligibility.
           </FindingCard>
           <FindingCard title="Gastric sleeve cost Perth">
-            OSW ranks #8 via the fees page while competitors have pages explicitly titled around gastric sleeve costs. This is the biggest easy structural win: create a dedicated, medically careful cost page instead of burying the answer in generic fees.
+            OSWA ranks #8 via the fees page while competitors have pages explicitly titled around gastric sleeve costs. This is the biggest easy structural win: create a dedicated, medically careful cost page instead of burying the answer in generic fees.
           </FindingCard>
           <FindingCard title="Best bariatric surgeon Perth">
-            OSW ranks #4. The result includes local pack and discussion results from Reddit/Facebook, which means people are looking for social proof and trust. The rebuild needs stronger practitioner profiles, reviews, hospital affiliations, and referral credibility.
+            OSWA ranks #4. The result includes local pack and discussion results from Reddit/Facebook, which means people are looking for social proof and trust. The rebuild needs stronger practitioner profiles, reviews, hospital affiliations, and referral credibility.
           </FindingCard>
           <FindingCard title="AI overview exposure">
             Cost and medication queries trigger AI Overview features. Content needs concise, source-like answer blocks, definitions, eligibility summaries, and FAQ structures that can be cited by AI search while remaining medically compliant.
@@ -425,9 +425,9 @@ export default function OSWAuditPage() {
         </div>
       </Section>
 
-      <Section eyebrow="Final recommendation" title="Build a fast, medically credible acquisition site — not just a prettier brochure.">
+      <Section eyebrow="Final recommendation" title="Build a fast, medically credible acquisition site, not just a prettier brochure.">
         <p>
-          OSW has enough authority and existing visibility to win more of the Perth bariatric market, but the rebuild must be disciplined. Preserve current organic assets, create clearer pages for the highest-value intents, upgrade trust proof, and instrument every meaningful conversion path. If done properly, the new site can protect existing rankings while expanding into cost, finance, surgeon-choice, medication, and local-intent searches.
+          OSWA has enough authority and existing visibility to win more of the Perth bariatric market, but the rebuild must be disciplined. Preserve current organic assets, create clearer pages for the highest-value intents, upgrade trust proof, and instrument every meaningful conversion path. If done properly, the new site can protect existing rankings while expanding into cost, finance, surgeon-choice, medication, and local-intent searches.
         </p>
         <div className="mt-10 rounded-3xl border border-emerald-300/20 bg-emerald-300/10 p-7">
           <p className="text-xl font-semibold tracking-[-0.02em] text-white">Immediate next action</p>

@@ -114,7 +114,7 @@ function CTABlock({ headline }: { headline: string }) {
             <a href="tel:0893320066" className="font-medium text-white underline underline-offset-2">
               (08) 9332 0066
             </a>{" "}
-            — our team is here to help you understand your options.
+            Our team is here to help you understand your options.
           </p>
         </div>
       </div>
@@ -130,7 +130,7 @@ export function OswContentPage({ data }: { data: OswPageData }) {
         <div className="absolute left-1/2 top-0 h-[600px] w-[900px] -translate-x-1/2 rounded-full bg-emerald-500/10 blur-3xl" />
         <div className="relative mx-auto max-w-4xl px-5 py-20 md:px-8 md:py-28">
           <p className="mb-5 text-xs font-semibold uppercase tracking-[0.26em] text-emerald-300">
-            Obesity Surgery WA — Perth
+            Obesity Surgery WA, Perth
           </p>
           <h1 className="max-w-3xl text-4xl font-semibold leading-[1.08] tracking-[-0.05em] text-white [text-wrap:balance] md:text-6xl">
             {data.heroHeadline}

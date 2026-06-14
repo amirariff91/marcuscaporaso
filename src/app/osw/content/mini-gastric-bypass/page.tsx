@@ -15,18 +15,18 @@ const pageData: OswPageData = {
   keyword: "mini gastric bypass perth",
   metaDescription:
     "Mini gastric bypass in Perth with Obesity Surgery WA. A simpler single-loop bypass for lasting weight loss. Understand how it differs from a standard bypass.",
-  heroHeadline: "Mini gastric bypass in Perth — a simpler bypass for lasting weight loss",
+  heroHeadline: "Mini gastric bypass in Perth: a simpler bypass for lasting weight loss",
   heroSubheadline:
-    "If you have been weighing up weight loss surgery for a long time, you are not alone — most of our patients have tried many things first. The mini gastric bypass is a shorter, more straightforward bypass that can help you lose significant weight and improve your health.",
+    "If you have been weighing up weight loss surgery for a long time, you are not alone. Most of our patients have tried many things first. The mini gastric bypass is a shorter, more straightforward bypass that can help you lose significant weight and improve your health.",
   stats: [
-    { label: "Expected weight loss", value: "60–70%", note: "Of excess weight, clinical average — results vary between individuals" },
-    { label: "Hospital stay", value: "1–2 nights", note: "St John of God Murdoch or Subiaco" },
+    { label: "Expected weight loss", value: "60-70%", note: "Of excess weight, clinical average. Results vary between individuals" },
+    { label: "Hospital stay", value: "1-2 nights", note: "St John of God Murdoch or Subiaco" },
     { label: "Time in surgery", value: "~1 hour", note: "Often shorter than a standard Roux-en-Y bypass" },
     { label: "Surgical joins", value: "1", note: "A single connection, compared with two in a standard bypass" },
   ],
   whatIsTitle: "What is a mini gastric bypass?",
   whatIsParagraphs: [
-    "A mini gastric bypass — also called a single-anastomosis or one-anastomosis gastric bypass — is a keyhole weight loss operation. The surgeon creates a long, narrow stomach pouch and joins it to a loop of small intestine further down. This means you eat less and your body absorbs fewer of the calories from the food you do eat.",
+    "A mini gastric bypass, also called a single-anastomosis or one-anastomosis gastric bypass, is a keyhole weight loss operation. The surgeon creates a long, narrow stomach pouch and joins it to a loop of small intestine further down. This means you eat less and your body absorbs fewer of the calories from the food you do eat.",
     "The word \"mini\" refers to the technique, not the result. It is called mini because the surgery is simpler than a traditional bypass: it uses one surgical join instead of two, which usually makes the operation shorter and a little less complex. The weight loss it produces is substantial and similar to a standard bypass for most people.",
     "The whole operation is done through several small cuts using a laparoscope (a thin camera). There are no large wounds, which generally means less pain and a faster return to normal activity. Most patients are home within one to two days.",
   ],
@@ -38,7 +38,7 @@ const pageData: OswPageData = {
     "You have a BMI of 35 or above, or 30 or above with conditions such as type 2 diabetes, sleep apnoea or high blood pressure.",
     "You have genuinely tried to lose weight through diet, exercise and lifestyle change without lasting success.",
     "You are ready to commit to long-term changes in how you eat and to lifelong vitamin and mineral supplements.",
-    "You do not have a medical reason that makes surgery unsafe — we assess this carefully before recommending any procedure.",
+    "You do not have a medical reason that makes surgery unsafe. We assess this carefully before recommending any procedure.",
   ],
   howItWorksSteps: [
     {
@@ -74,7 +74,7 @@ const pageData: OswPageData = {
   ],
   benefitsTitle: "What a mini gastric bypass can do for your health",
   benefits: [
-    "Significant, lasting weight loss — clinical averages of 60–70% of excess weight, though results vary between individuals.",
+    "Significant, lasting weight loss: clinical averages of 60-70% of excess weight, though results vary between individuals.",
     "Strong improvement in type 2 diabetes for many patients, often reducing the need for medication.",
     "A simpler operation than a standard bypass, with a single join that usually means a shorter time under anaesthetic.",
     "Keyhole surgery with small incisions, which generally means less pain and a quicker return to daily life.",
@@ -86,11 +86,11 @@ const pageData: OswPageData = {
   risksList: [
     "Bleeding, infection or blood clots, as with any major operation.",
     "A leak at the surgical join, which is uncommon but may need further treatment.",
-    "Bile reflux — irritation from bile reaching the stomach pouch — which can occasionally require revision surgery.",
+    "Bile reflux, which is irritation from bile reaching the stomach pouch, can occasionally require revision surgery.",
     "Long-term vitamin and mineral deficiencies if supplements and blood tests are not kept up.",
   ],
   costParagraph:
-    "Costs depend on your private health cover, your hospital and your individual situation, so we provide a clear written estimate before you commit to anything. Mini gastric bypass procedures attract a Medicare rebate — your surgeon will confirm the applicable item number from the MBS bariatric surgery family (items 31569-31581) that applies to your specific procedure. Medicare and most private health funds with the relevant level of cover contribute to bariatric surgery, which reduces your out-of-pocket amount. Some patients use early release of superannuation to help fund treatment. Our team will walk you through the figures and the gaps so there are no surprises — ask us for a personalised quote rather than relying on a general number.",
+    "Costs depend on your private health cover, your hospital and your individual situation, so we provide a clear written estimate before you commit to anything. Mini gastric bypass procedures attract a Medicare rebate. Your surgeon will confirm the applicable item number from the MBS bariatric surgery family (items 31569-31581) that applies to your specific procedure. Medicare and most private health funds with the relevant level of cover contribute to bariatric surgery, which reduces your out-of-pocket amount. Some patients use early release of superannuation to help fund treatment. Our team will walk you through the figures and the gaps so there are no surprises. Ask us for a personalised quote rather than relying on a general number.",
   surgeons: [
     {
       name: "Dr Harsha Chandraratna",
@@ -106,7 +106,7 @@ const pageData: OswPageData = {
     },
   ],
   outcomesNote:
-    "Most patients who follow our program lose a large amount of weight in the first year to eighteen months and see meaningful improvements in conditions such as diabetes, sleep apnoea and high blood pressure. Outcomes are not guaranteed and vary between individuals — your results depend on your starting health, how your body responds and the changes you make to eating and activity. We do not promise a particular figure; we commit to giving you realistic expectations and steady, long-term support to help you reach your goals.",
+    "Most patients who follow our program lose a large amount of weight in the first year to eighteen months and see meaningful improvements in conditions such as diabetes, sleep apnoea and high blood pressure. Outcomes are not guaranteed and vary between individuals. Your results depend on your starting health, how your body responds and the changes you make to eating and activity. We do not promise a particular figure; we commit to giving you realistic expectations and steady, long-term support to help you reach your goals.",
   faqs: [
     {
       question: "How is a mini gastric bypass different from a standard gastric bypass?",

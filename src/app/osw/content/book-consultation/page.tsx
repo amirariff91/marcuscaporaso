@@ -3,7 +3,7 @@ import { OswContentPage, type OswPageData } from "../../../../components/osw/Con
 
 export const metadata: Metadata = {
   title: "Book a Bariatric Consultation Perth | Obesity Surgery WA",
-  description: "Book your bariatric consultation at Obesity Surgery WA Perth. Phone or online — our team will help you understand your options with no pressure to decide.",
+  description: "Book your bariatric consultation at Obesity Surgery WA Perth. Phone or online. Our team will help you understand your options with no pressure to decide.",
   alternates: { canonical: "https://www.obesitysurgerywa.com.au/book-consultation" },
   robots: { index: false, follow: false },
 };
@@ -13,7 +13,7 @@ const pageData: OswPageData = {
   pageTitle: "Book a Bariatric Consultation in Perth",
   keyword: "bariatric consultation perth",
   metaDescription:
-    "Book your bariatric consultation at Obesity Surgery WA Perth. Phone or online — our team will help you understand your options with no pressure to decide.",
+    "Book your bariatric consultation at Obesity Surgery WA Perth. Phone or online. Our team will help you understand your options with no pressure to decide.",
 
   heroHeadline: "Book a bariatric consultation in Perth",
   heroSubheadline:
@@ -94,13 +94,13 @@ const pageData: OswPageData = {
   surgeons: [
     {
       name: "Dr Harsha Chandraratna",
-      credentials: "MBBS, FRACS — Bariatric & Upper GI Surgeon",
+      credentials: "MBBS, FRACS, Bariatric & Upper GI Surgeon",
       specialty:
         "A Perth bariatric surgeon for over two decades, Dr Chandraratna is a Fellow of the Royal Australasian College of Surgeons and a senior lecturer at Notre Dame University. He underwent bariatric surgery himself, which gives him a personal understanding of what patients go through. He operates at St John of God Murdoch and Subiaco.",
     },
     {
       name: "Dr Stephen Watson",
-      credentials: "MBBS, FRACS — Bariatric Surgeon",
+      credentials: "MBBS, FRACS, Bariatric Surgeon",
       specialty:
         "Dr Watson is an accredited bariatric surgeon performing gastric sleeve, bypass, and band procedures at St John of God Murdoch and Subiaco. He is a Fellow of the Royal Australasian College of Surgeons.",
     },

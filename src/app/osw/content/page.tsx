@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "OSW Rebuild — Content Pages",
+  title: "OSWA Rebuild: Content Pages",
   alternates: { canonical: "https://osw.marcuscaporaso.com/content" },
   robots: { index: false, follow: false },
 };
@@ -46,7 +46,7 @@ export default function OswContentIndexPage() {
             Content library
           </p>
           <h1 className="text-4xl font-semibold tracking-[-0.05em] text-white md:text-5xl">
-            OSW rebuild — all content pages
+            OSWA rebuild, all content pages
           </h1>
           <p className="mt-5 max-w-2xl text-base leading-8 text-slate-400">
             21 content pages built on the service page template. Each page targets a specific keyword intent and follows AHPRA medical advertising guidelines.

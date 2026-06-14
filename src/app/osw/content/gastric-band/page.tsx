@@ -4,7 +4,7 @@ import { OswContentPage, type OswPageData } from "../../../../components/osw/Con
 export const metadata: Metadata = {
   title: "Gastric Band Surgery Perth | Obesity Surgery WA Perth",
   description:
-    "Gastric band surgery in Perth at Obesity Surgery WA. Adjustable laparoscopic band — how it works, who it suits, and how it compares to sleeve and bypass.",
+    "Gastric band surgery in Perth at Obesity Surgery WA. Adjustable laparoscopic band: how it works, who it suits, and how it compares to sleeve and bypass.",
   alternates: { canonical: "https://www.obesitysurgerywa.com.au/gastric-band" },
   robots: { index: false, follow: false },
 };
@@ -14,12 +14,12 @@ const pageData: OswPageData = {
   pageTitle: "Gastric Band Surgery Perth",
   keyword: "gastric band surgery perth",
   metaDescription:
-    "Gastric band surgery in Perth at Obesity Surgery WA. Adjustable laparoscopic band — how it works, who it suits, and how it compares to sleeve and bypass.",
+    "Gastric band surgery in Perth at Obesity Surgery WA. Adjustable laparoscopic band: how it works, who it suits, and how it compares to sleeve and bypass.",
   heroHeadline: "Gastric band surgery in Perth, explained openly and honestly",
   heroSubheadline:
     "If reversibility matters to you, the adjustable gastric band may be worth a conversation. It is the gentlest of the weight-loss operations and the only one that can be fully removed. It also gives less weight loss than a sleeve or bypass, and we will be straight with you about that from the start so you can make the choice that is genuinely right for you.",
   stats: [
-    { label: "Expected weight loss", value: "40–50%", note: "Excess weight, clinical average — less than sleeve or bypass, and individual results vary" },
+    { label: "Expected weight loss", value: "40-50%", note: "Excess weight, clinical average, less than sleeve or bypass, and individual results vary" },
     { label: "Reversibility", value: "Fully reversible", note: "The band can be removed and your stomach returns to its normal shape" },
     { label: "Hospital stay", value: "1 night", note: "At St John of God Murdoch or Subiaco" },
     { label: "Adjustments", value: "Ongoing", note: "Regular clinic visits to tighten or loosen the band as you go" },
@@ -31,13 +31,13 @@ const pageData: OswPageData = {
     "Because it does not change your gut hormones or reroute your intestine, the band works more slowly and gives a smaller average weight loss than a sleeve or bypass. The trade-off is that it is the least invasive option, requires no permanent change to your anatomy, and can be fully reversed if your circumstances change. For some patients that flexibility is exactly what they are looking for.",
   ],
   comparisonNote:
-    "Compared to a gastric sleeve or bypass, the band gives less weight loss and slower results, and it relies on regular adjustment visits to work well. What it offers in return is reversibility and the gentlest operation of the three. It is not the best procedure for maximum weight loss, but for the right patient the ability to undo it has real value — your surgeon will help you weigh that up honestly.",
+    "Compared to a gastric sleeve or bypass, the band gives less weight loss and slower results, and it relies on regular adjustment visits to work well. What it offers in return is reversibility and the gentlest operation of the three. It is not the best procedure for maximum weight loss, but for the right patient the ability to undo it has real value. Your surgeon will help you weigh that up honestly.",
   eligibilityBmi: "Often considered for patients with a BMI between 30 and 40, particularly where reversibility is a priority.",
   eligibilityNotes: [
     "It may suit patients who specifically want a reversible option and are comfortable with a more gradual rate of weight loss.",
     "It can be a reasonable choice at a lower BMI, in the 30 to 40 range, where a sleeve or bypass may be more than is needed.",
     "It is generally not recommended if you have significant acid reflux, as the band can make heartburn worse.",
-    "It only works well if you are willing to attend regular adjustment appointments — the band is a partnership that needs ongoing follow-up, not a one-off procedure.",
+    "It only works well if you are willing to attend regular adjustment appointments: the band is a partnership that needs ongoing follow-up, not a one-off procedure.",
     "Eligibility is always a clinical decision made with you. Your overall health, your goals and your readiness to commit to follow-up all matter, not just your BMI.",
   ],
   howItWorksSteps: [
@@ -49,7 +49,7 @@ const pageData: OswPageData = {
     {
       title: "Orientation Consultation",
       description:
-        "You meet your surgeon to discuss your health, goals and whether a band is the right fit. We will be open about its limits as well as its benefits — there is no pressure to decide on the day.",
+        "You meet your surgeon to discuss your health, goals and whether a band is the right fit. We will be open about its limits as well as its benefits. There is no pressure to decide on the day.",
     },
     {
       title: "Pre-operative Assessment",
@@ -74,12 +74,12 @@ const pageData: OswPageData = {
   ],
   benefitsTitle: "What a gastric band can offer",
   benefits: [
-    "Fully reversible — the band can be removed and your stomach returns to its normal shape, which is unique among weight-loss operations.",
+    "Fully reversible: the band can be removed and your stomach returns to its normal shape, which is unique among weight-loss operations.",
     "The least invasive option: nothing is cut, stapled or removed, and there is no rerouting of your intestine.",
     "Adjustable to suit you, so the band can be tightened or loosened over time as your needs change.",
     "A shorter hospital stay and generally quicker initial recovery than a sleeve or bypass.",
     "No long-term need for the vitamin and mineral supplements that a bypass requires, since absorption is not affected.",
-    "Steady, gradual weight loss for patients who are comfortable with a slower pace — clinical averages are around 40 to 50% of excess weight, though individual results vary.",
+    "Steady, gradual weight loss for patients who are comfortable with a slower pace. Clinical averages are around 40 to 50% of excess weight, though individual results vary.",
   ],
   risksTitle: "Being honest about the risks and limitations",
   risksParagraph:
@@ -99,7 +99,7 @@ const pageData: OswPageData = {
       name: "Dr Harsha Chandraratna",
       credentials: "MBBS, FRACS, Bariatric & Upper GI Surgeon",
       specialty:
-        "A Perth bariatric surgeon for over two decades, senior lecturer at the University of Notre Dame, and someone who has been through bariatric surgery himself — so he understands the decision from both sides of the table. He operates at St John of God Murdoch and Subiaco.",
+        "A Perth bariatric surgeon for over two decades, senior lecturer at the University of Notre Dame, and someone who has been through bariatric surgery himself, so he understands the decision from both sides of the table. He operates at St John of God Murdoch and Subiaco.",
     },
     {
       name: "Dr Stephen Watson",
@@ -139,7 +139,7 @@ const pageData: OswPageData = {
     {
       question: "Is a gastric band better than a sleeve or bypass?",
       answer:
-        "For most people aiming for maximum weight loss, a sleeve or bypass gives a stronger result. The band is not about being the most effective — it is about being the gentlest and the only reversible option. If reversibility and a less invasive operation matter more to you than the largest possible weight loss, the band may suit you. Your surgeon will help you weigh this up honestly at your consultation.",
+        "For most people aiming for maximum weight loss, a sleeve or bypass gives a stronger result. The band is not about being the most effective; it is about being the gentlest and the only reversible option. If reversibility and a less invasive operation matter more to you than the largest possible weight loss, the band may suit you. Your surgeon will help you weigh this up honestly at your consultation.",
     },
     {
       question: "Do I need a GP referral?",

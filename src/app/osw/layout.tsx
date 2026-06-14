@@ -12,7 +12,7 @@ export default function OswLayout({ children }: { children: React.ReactNode }) {
       <nav className="sticky top-0 z-50 border-b border-white/10 bg-[#071112]/80 backdrop-blur-xl">
         <div className="mx-auto flex max-w-6xl items-center gap-1 px-5 py-3 md:px-8">
           <span className="mr-4 text-xs font-semibold uppercase tracking-[0.22em] text-emerald-300">
-            OSW
+            OSWA
           </span>
           {navLinks.map((link) => (
             <Link

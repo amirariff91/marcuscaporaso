@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "OSW Rebuild — Wireframes, Templates & UX Flows",
+  title: "OSWA Rebuild: Wireframes, Templates & UX Flows",
   description: "Page templates, homepage wireframe, and contact/booking flow UX for the Obesity Surgery WA rebuild.",
   alternates: { canonical: "https://osw.marcuscaporaso.com/wireframes" },
   robots: { index: false, follow: false },

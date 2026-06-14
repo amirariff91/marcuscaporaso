@@ -4,7 +4,7 @@ import { OswContentPage, type OswPageData } from "../../../../components/osw/Con
 export const metadata: Metadata = {
   title: "Revision Bariatric Surgery Perth | Obesity Surgery WA Perth",
   description:
-    "Revision bariatric surgery Perth — sleeve to bypass, band removal, bypass revision. Expert care at Obesity Surgery WA when your first procedure hasn't lasted.",
+    "Revision bariatric surgery Perth: sleeve to bypass, band removal, bypass revision. Expert care at Obesity Surgery WA when your first procedure hasn't lasted.",
   alternates: { canonical: "https://www.obesitysurgerywa.com.au/revision-bariatric-surgery" },
   robots: { index: false, follow: false },
 };
@@ -14,7 +14,7 @@ const pageData: OswPageData = {
   pageTitle: "Revision Bariatric Surgery Perth",
   keyword: "revision bariatric surgery perth",
   metaDescription:
-    "Revision bariatric surgery Perth — sleeve to bypass, band removal, bypass revision. Expert care at Obesity Surgery WA when your first procedure hasn't lasted.",
+    "Revision bariatric surgery Perth: sleeve to bypass, band removal, bypass revision. Expert care at Obesity Surgery WA when your first procedure hasn't lasted.",
   heroHeadline: "Revision bariatric surgery in Perth, when your first operation has not worked out",
   heroSubheadline:
     "If your weight has crept back, your reflux has become unbearable, or your band has caused problems, you are not back at square one and you are not a failure. Plenty of people need a second operation, and there is often a clear reason why the first one did not deliver. Our job is to understand what happened, and then tell you honestly whether revision surgery can help.",
@@ -31,7 +31,7 @@ const pageData: OswPageData = {
     "It is important to be clear from the start: revision surgery is technically more demanding than a first operation. The previous surgery leaves scar tissue and changes the anatomy, so the surgeon is working in territory that has already been altered. This is one of the reasons careful planning and an experienced surgeon matter so much.",
   ],
   comparisonNote:
-    "Unlike a first-time procedure, revision surgery always begins with the question of why the first operation did not last. Two people with the same regained weight can need completely different revisions, so there is no standard path here — the assessment is the most important part.",
+    "Unlike a first-time procedure, revision surgery always begins with the question of why the first operation did not last. Two people with the same regained weight can need completely different revisions, so there is no standard path here. The assessment is the most important part.",
   eligibilityBmi:
     "There is no single BMI cut-off for revision surgery. Suitability depends far more on what your first operation was, what has gone wrong, and your overall health than on a number alone.",
   eligibilityNotes: [

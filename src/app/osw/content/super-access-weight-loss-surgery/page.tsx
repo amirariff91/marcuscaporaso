@@ -21,23 +21,23 @@ const pageData: OswPageData = {
   stats: [
     { label: "Approval pathway", value: "ATO", note: "Australian Taxation Office assesses early-release applications" },
     { label: "Grounds", value: "Compassionate", note: "Medical treatment is one recognised category" },
-    { label: "Typical decision time", value: "14–28 days", note: "After a complete application is lodged" },
+    { label: "Typical decision time", value: "14-28 days", note: "After a complete application is lodged" },
     { label: "Tax on release", value: "Applies", note: "Released super is taxed; amounts vary by age" },
   ],
   whatIsTitle: "What does it mean to use super for weight loss surgery?",
   whatIsParagraphs: [
     "Superannuation is normally locked away until you retire or reach your preservation age. However, the Australian Taxation Office (ATO) can approve the early release of a portion of your super on compassionate grounds, and one of those grounds is paying for medical treatment that is not readily available through the public system.",
-    "Bariatric surgery — such as a gastric sleeve, gastric bypass or mini gastric bypass — can fall within the medical-treatment category when it is recommended to treat or manage a serious medical condition like severe obesity, type 2 diabetes or sleep apnoea. The ATO does not pre-approve specific procedures; it assesses each application on its own facts.",
+    "Bariatric surgery, such as a gastric sleeve, gastric bypass or mini gastric bypass, can fall within the medical-treatment category when it is recommended to treat or manage a serious medical condition like severe obesity, type 2 diabetes or sleep apnoea. The ATO does not pre-approve specific procedures; it assesses each application on its own facts.",
     "It is important to be clear: this is not a loan and it is not free money. You are bringing forward money that was meant for your retirement, and the released amount is taxed. For many Perth patients it is still the difference between having surgery this year and waiting, but it is a decision worth thinking through carefully and, ideally, with a financial adviser.",
   ],
   comparisonNote:
     "Early super release is one of several ways to fund surgery. Many patients combine it with private health insurance, a payment plan, or simply pay the out-of-pocket gap directly. We are happy to talk you through every option before you commit.",
   eligibilityBmi:
-    "There is no BMI threshold for accessing super itself — eligibility is decided by the ATO based on your medical and financial circumstances, not your weight.",
+    "There is no BMI threshold for accessing super itself. Eligibility is decided by the ATO based on your medical and financial circumstances, not your weight.",
   eligibilityNotes: [
     "Your treating doctors must confirm in writing that the surgery is needed to treat a serious medical condition, such as severe obesity and its complications.",
     "Two registered medical practitioners must support the application, and at least one must be a specialist in the relevant field.",
-    "You generally need to show that you cannot pay for the treatment without accessing your super — for example, you do not have the savings or capacity to fund the gap another way.",
+    "You generally need to show that you cannot pay for the treatment without accessing your super; for example, you do not have the savings or capacity to fund the gap another way.",
     "Not all super funds release money the same way; some have their own rules and processing steps even after the ATO approves your application, so check with your fund early.",
   ],
   howItWorksSteps: [
@@ -75,7 +75,7 @@ const pageData: OswPageData = {
   benefitsTitle: "Why some Perth patients choose to access super",
   benefits: [
     "It can remove the cost barrier and let you have surgery sooner, rather than waiting years to save the gap payment.",
-    "Acting earlier may help address health conditions — like type 2 diabetes, high blood pressure or sleep apnoea — before they progress further.",
+    "Acting earlier may help address health conditions such as type 2 diabetes, high blood pressure or sleep apnoea, before they progress further.",
     "It uses money that already belongs to you, so there is no interest charge as there would be with a loan or credit.",
     "The application is lodged directly with the ATO through myGov, so you stay in control of the process and the information you provide.",
     "It can be combined with private health insurance or a payment plan to cover the full cost of your procedure and hospital stay.",
@@ -86,17 +86,17 @@ const pageData: OswPageData = {
   risksList: [
     "Released super is taxed, so the amount you receive will be less than the amount withdrawn from your account.",
     "Withdrawing now reduces your retirement balance and the compounding growth it would have earned over time.",
-    "Approval is not automatic — the ATO can decline an application that does not meet the compassionate-release criteria.",
+    "Approval is not automatic. The ATO can decline an application that does not meet the compassionate-release criteria.",
     "Processing times vary, so factor in a few weeks between lodging your application and having funds available.",
   ],
   costParagraph:
-    "We do not quote a single figure for surgery, because your out-of-pocket cost depends on the procedure, your private health cover, and your individual circumstances. Once we have assessed you, we provide a written estimate you can use for your ATO application or to compare against your private health rebate, Medicare items and any payment-plan options. The amount of super you may need to release is the gap that remains after those other contributions — our admin team can walk you through the numbers at your consultation.",
+    "We do not quote a single figure for surgery, because your out-of-pocket cost depends on the procedure, your private health cover, and your individual circumstances. Once we have assessed you, we provide a written estimate you can use for your ATO application or to compare against your private health rebate, Medicare items and any payment-plan options. The amount of super you may need to release is the gap that remains after those other contributions. Our admin team can walk you through the numbers at your consultation.",
   surgeons: [
     {
       name: "Dr Harsha Chandraratna",
       credentials: "MBBS, FRACS, Bariatric Surgeon",
       specialty:
-        "Lead bariatric surgeon at Obesity Surgery WA, lecturer at the University of Notre Dame, and someone who has personally been through bariatric surgery — bringing both clinical expertise and lived understanding to every patient.",
+        "Lead bariatric surgeon at Obesity Surgery WA, lecturer at the University of Notre Dame, and someone who has personally been through bariatric surgery, bringing both clinical expertise and lived understanding to every patient.",
     },
     {
       name: "Dr Stephen Watson",
@@ -106,12 +106,12 @@ const pageData: OswPageData = {
     },
   ],
   outcomesNote:
-    "Patients who fund their surgery through early super release go through exactly the same clinical care and aftercare as everyone else — the funding method does not change the surgery or the support you receive. Most people who follow our dietitian-led program and lifestyle guidance see meaningful, sustained weight loss, but results genuinely vary from person to person depending on your starting point, your health, the procedure and how closely you stick to the plan. We focus on realistic expectations and long-term support rather than promises.",
+    "Patients who fund their surgery through early super release go through exactly the same clinical care and aftercare as everyone else. The funding method does not change the surgery or the support you receive. Most people who follow our dietitian-led program and lifestyle guidance see meaningful, sustained weight loss, but results genuinely vary from person to person depending on your starting point, your health, the procedure and how closely you stick to the plan. We focus on realistic expectations and long-term support rather than promises.",
   faqs: [
     {
       question: "Is using super for weight loss surgery actually legal in Australia?",
       answer:
-        "Yes. The early release of super on compassionate grounds for medical treatment is a legitimate process administered by the ATO under Commonwealth regulations. It is not a loophole — it is a recognised pathway, and applications must meet specific criteria to be approved.",
+        "Yes. The early release of super on compassionate grounds for medical treatment is a legitimate process administered by the ATO under Commonwealth regulations. It is not a loophole. It is a recognised pathway, and applications must meet specific criteria to be approved.",
     },
     {
       question: "How much super can I withdraw for surgery?",
@@ -121,12 +121,12 @@ const pageData: OswPageData = {
     {
       question: "Will I be taxed on the super I release?",
       answer:
-        "Super released early on compassionate grounds is generally taxed, and the rate depends on your age and the components of your super. Under preservation age the tax is typically 17–22%; if you are 60 or over, the released amount is usually tax-free. This means the cash you receive may be lower than the gross amount taken from your account, so it is worth confirming the after-tax figure with your fund or a financial adviser.",
+        "Super released early on compassionate grounds is generally taxed, and the rate depends on your age and the components of your super. Under preservation age the tax is typically 17-22%; if you are 60 or over, the released amount is usually tax-free. This means the cash you receive may be lower than the gross amount taken from your account, so it is worth confirming the after-tax figure with your fund or a financial adviser.",
     },
     {
       question: "How long does the ATO take to approve an application?",
       answer:
-        "A complete online application is usually decided within a few weeks — commonly around 14 to 28 days. Missing documents are the most frequent cause of delay, so having your two medical reports and cost estimate ready before you lodge helps a lot.",
+        "A complete online application is usually decided within a few weeks, commonly around 14 to 28 days. Missing documents are the most frequent cause of delay, so having your two medical reports and cost estimate ready before you lodge helps a lot.",
     },
     {
       question: "Do all super funds release money the same way?",

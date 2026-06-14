@@ -17,7 +17,7 @@ const pageData: OswPageData = {
     "Bariatric dietitians in Perth supporting you before and after weight-loss surgery. Meet our team of five and learn how nutrition keeps your results lasting.",
   heroHeadline: "Our Perth bariatric dietitians",
   heroSubheadline:
-    "Surgery changes your stomach in a single day, but eating well is a skill you build over months. If the thought of completely relearning how to eat feels daunting, that is exactly why we have five dedicated bariatric dietitians walking beside you — before your operation and for the long road after it.",
+    "Surgery changes your stomach in a single day, but eating well is a skill you build over months. If the thought of completely relearning how to eat feels daunting, that is exactly why we have five dedicated bariatric dietitians walking beside you, before your operation and for the long road after it.",
   stats: [
     { label: "Bariatric dietitians", value: "5", note: "A dedicated team, not a single rushed appointment" },
     { label: "Support begins", value: "Pre-op", note: "Often weeks before your surgery date" },
@@ -26,18 +26,18 @@ const pageData: OswPageData = {
   ],
   whatIsTitle: "What does a bariatric dietitian actually do?",
   whatIsParagraphs: [
-    "A bariatric dietitian is an accredited nutrition professional who specialises in the very specific needs of people having weight-loss surgery. This is different from general dietetics. Your stomach will hold far less, your body will absorb nutrients differently, and your appetite signals will change — so the eating advice that worked for you in the past no longer applies.",
+    "A bariatric dietitian is an accredited nutrition professional who specialises in the very specific needs of people having weight-loss surgery. This is different from general dietetics. Your stomach will hold far less, your body will absorb nutrients differently, and your appetite signals will change, so the eating advice that worked for you in the past no longer applies.",
     "Before surgery, your dietitian helps prepare your body and your habits. That often includes a structured pre-operative eating plan to shrink the liver and make the operation safer, plus practical coaching on the changes ahead so nothing comes as a shock on the day you wake up.",
-    "After surgery, they guide you step by step from fluids to soft foods to solids, protect you against nutritional gaps with the right supplements, and troubleshoot the real-world problems that come up — what to do when food gets stuck, how to hit your protein target, and how to handle eating out or a stalled scale without losing heart.",
+    "After surgery, they guide you step by step from fluids to soft foods to solids, protect you against nutritional gaps with the right supplements, and troubleshoot the real-world problems that come up: what to do when food gets stuck, how to hit your protein target, and how to handle eating out or a stalled scale without losing heart.",
   ],
   comparisonNote:
-    "Our team of five bariatric dietitians — Clare Renn, Megan Parker, Rhiannon Dick, Sabrina Piccini and Jo-Anne Dembo — each hold Accredited Practising Dietitian (APD) status and specialise in bariatric and metabolic nutrition. Unlike a single one-off nutrition session, their care is ongoing and matched to each stage of your journey, continuing long after the surgery itself is done.",
+    "Our team of five bariatric dietitians, Clare Renn, Megan Parker, Rhiannon Dick, Sabrina Piccini and Jo-Anne Dembo, each hold Accredited Practising Dietitian (APD) status and specialise in bariatric and metabolic nutrition. Unlike a single one-off nutrition session, their care is ongoing and matched to each stage of your journey, continuing long after the surgery itself is done.",
   eligibilityBmi:
-    "Dietitian support is part of bariatric care for patients generally suitable for surgery — typically a BMI of 35+, or BMI 30+ with related health conditions.",
+    "Dietitian support is part of bariatric care for patients generally suitable for surgery, typically a BMI of 35+, or BMI 30+ with related health conditions.",
   eligibilityNotes: [
     "Nutritional support is recommended for every bariatric patient, not just those who feel they struggle with food.",
     "It is especially important if you have diabetes, food intolerances, a history of disordered eating, or are planning a pregnancy after surgery.",
-    "You do not need to have your eating sorted out before you start — that is precisely what your dietitian is here to help with.",
+    "You do not need to have your eating sorted out before you start. That is precisely what your dietitian is here to help with.",
     "Your care is tailored to you and to your procedure, whether you are having a gastric sleeve, gastric bypass or another operation.",
   ],
   howItWorksSteps: [
@@ -74,15 +74,15 @@ const pageData: OswPageData = {
   ],
   benefitsTitle: "How the right nutrition support protects your results",
   benefits: [
-    "Better, more durable weight loss — research consistently shows patients who stay engaged with dietetic follow-up tend to maintain their results more successfully, though individual outcomes vary.",
+    "Better, more durable weight loss: research consistently shows patients who stay engaged with dietetic follow-up tend to maintain their results more successfully, though individual outcomes vary.",
     "Protection against nutritional deficiencies in iron, vitamin B12, calcium and protein that can develop quietly after surgery.",
     "A safer, smoother operation thanks to a well-managed pre-surgery eating plan.",
-    "Confidence at every stage — knowing what to eat, how much, and what to do when something does not go to plan.",
+    "Confidence at every stage: knowing what to eat, how much, and what to do when something does not go to plan.",
     "Practical strategies for real life, from family meals and social events to travel, so healthy eating fits around your world rather than the other way round.",
   ],
   risksTitle: "Why skipping nutritional support is the real risk",
   risksParagraph:
-    "Weight-loss surgery changes how your body takes in food and nutrients, and without proper guidance that can lead to genuine health problems over time. We want you to understand these honestly, because they are exactly what consistent dietitian care is designed to prevent. None of this is meant to frighten you — it is the reason ongoing support is built into your care rather than left as an optional extra.",
+    "Weight-loss surgery changes how your body takes in food and nutrients, and without proper guidance that can lead to genuine health problems over time. We want you to understand these honestly, because they are exactly what consistent dietitian care is designed to prevent. None of this is meant to frighten you; it is the reason ongoing support is built into your care rather than left as an optional extra.",
   risksList: [
     "Nutritional deficiencies, such as low iron, B12, calcium or protein, which can cause tiredness, hair thinning or bone weakening if left unchecked.",
     "Weight regain over the years when old eating patterns gradually return without support to keep them in check.",
@@ -96,7 +96,7 @@ const pageData: OswPageData = {
       name: "Dr Harsha Chandraratna",
       credentials: "MBBS, FRACS, Bariatric Surgeon",
       specialty:
-        "Lead surgeon, lecturer at the University of Notre Dame, and someone who has been through bariatric surgery himself — he built the practice around the support patients genuinely need, with dietetics at its core.",
+        "Lead surgeon, lecturer at the University of Notre Dame, and someone who has been through bariatric surgery himself. He built the practice around the support patients genuinely need, with dietetics at its core.",
     },
     {
       name: "Dr Stephen Watson",
@@ -106,7 +106,7 @@ const pageData: OswPageData = {
     },
   ],
   outcomesNote:
-    "The evidence is clear that bariatric surgery works best as part of a team approach, and nutrition is one of the strongest pillars of that team. Patients who stay connected to their dietitian tend to navigate the early stages more comfortably and hold onto their results over the longer term. That said, surgery and dietetic care are tools, not guarantees — your outcome depends on the changes you make and sustain, and results genuinely vary between individuals. Our role is to give you the knowledge, the plan and the steady support to get the best result that is realistic for you.",
+    "The evidence is clear that bariatric surgery works best as part of a team approach, and nutrition is one of the strongest pillars of that team. Patients who stay connected to their dietitian tend to navigate the early stages more comfortably and hold onto their results over the longer term. That said, surgery and dietetic care are tools, not guarantees. Your outcome depends on the changes you make and sustain, and results genuinely vary between individuals. Our role is to give you the knowledge, the plan and the steady support to get the best result that is realistic for you.",
   faqs: [
     {
       question: "Why do I need a dietitian if the surgery does the work?",
@@ -114,14 +114,14 @@ const pageData: OswPageData = {
         "Surgery makes your stomach smaller, but it cannot teach you what or how to eat. A bariatric dietitian helps you get enough protein and nutrients from much smaller meals, avoid deficiencies, and build habits that keep your weight off for good. Patients who stay engaged with dietetic support tend to do better over the long term, though results vary between individuals.",
     },
     {
-      question: "When do I start seeing the dietitian — before or after surgery?",
+      question: "When do I start seeing the dietitian, before or after surgery?",
       answer:
         "Both. You usually meet your dietitian before surgery to prepare your body and follow a pre-operative eating plan, then continue with regular reviews afterwards as you move through the fluid, soft-food and solid stages and settle into your long-term way of eating.",
     },
     {
       question: "Can I eat normally again after weight-loss surgery?",
       answer:
-        "You will eat differently rather than joylessly. After progressing through the early stages, most patients enjoy a wide variety of foods — just in much smaller portions, with protein first and daily vitamins. Your dietitian helps you find a way of eating that fits your life, including family meals and eating out.",
+        "You will eat differently rather than joylessly. After progressing through the early stages, most patients enjoy a wide variety of foods, just in much smaller portions, with protein first and daily vitamins. Your dietitian helps you find a way of eating that fits your life, including family meals and eating out.",
     },
     {
       question: "What if I struggle to hit my protein target or food gets stuck?",
@@ -136,12 +136,12 @@ const pageData: OswPageData = {
     {
       question: "Are your dietitians accredited?",
       answer:
-        "Yes — all dietitians at Obesity Surgery WA hold Accredited Practising Dietitian (APD) status, which is the professional standard required for clinical practice in Australia. Our team includes Clare Renn, Megan Parker, Rhiannon Dick, Sabrina Piccini and Jo-Anne Dembo, all of whom specialise in bariatric and metabolic nutrition support.",
+        "Yes. All dietitians at Obesity Surgery WA hold Accredited Practising Dietitian (APD) status, which is the professional standard required for clinical practice in Australia. Our team includes Clare Renn, Megan Parker, Rhiannon Dick, Sabrina Piccini and Jo-Anne Dembo, all of whom specialise in bariatric and metabolic nutrition support.",
     },
     {
       question: "How many dietitians does Obesity Surgery WA have?",
       answer:
-        "We have a team of five bariatric dietitians — Clare Renn, Megan Parker, Rhiannon Dick, Sabrina Piccini and Jo-Anne Dembo. Having a dedicated team means you can get timely appointments and consistent, specialised support at every stage of your journey.",
+        "We have a team of five bariatric dietitians: Clare Renn, Megan Parker, Rhiannon Dick, Sabrina Piccini and Jo-Anne Dembo. Having a dedicated team means you can get timely appointments and consistent, specialised support at every stage of your journey.",
     },
     {
       question: "Does Medicare or private health cover dietitian visits?",
@@ -151,7 +151,7 @@ const pageData: OswPageData = {
     {
       question: "Where will I see the dietitian?",
       answer:
-        "Consultations are held at our two clinics — Booragoon at the Garden City Specialist Centre on Marmion Street, and Mandurah at the WA Cardiology Centre on Minilya Parkway. To book or ask a question, call us on (08) 9332 0066.",
+        "Consultations are held at our two clinics: Booragoon at the Garden City Specialist Centre on Marmion Street, and Mandurah at the WA Cardiology Centre on Minilya Parkway. To book or ask a question, call us on (08) 9332 0066.",
     },
   ],
   conversionHeadline:

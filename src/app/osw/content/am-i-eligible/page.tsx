@@ -4,7 +4,7 @@ import { OswContentPage, type OswPageData } from "../../../../components/osw/Con
 export const metadata: Metadata = {
   title: "Am I Eligible for Weight Loss Surgery? | Obesity Surgery WA Perth",
   description:
-    "Find out if you are eligible for weight loss surgery in Perth. BMI guidelines, health conditions, the assessment process and your first OSW appointment.",
+    "Find out if you are eligible for weight loss surgery in Perth. BMI guidelines, health conditions, the assessment process and your first OSWA appointment.",
   alternates: { canonical: "https://www.obesitysurgerywa.com.au/am-i-eligible" },
   robots: { index: false, follow: false },
 };
@@ -14,7 +14,7 @@ const pageData: OswPageData = {
   pageTitle: "Am I Eligible for Weight Loss Surgery?",
   keyword: "am i eligible for weight loss surgery",
   metaDescription:
-    "Find out if you are eligible for weight loss surgery in Perth. BMI guidelines, health conditions, the assessment process and your first OSW appointment.",
+    "Find out if you are eligible for weight loss surgery in Perth. BMI guidelines, health conditions, the assessment process and your first OSWA appointment.",
 
   heroHeadline: "Am I eligible for weight loss surgery?",
   heroSubheadline:
