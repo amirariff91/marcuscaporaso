@@ -2,10 +2,61 @@
 **URL:** /payment-plans-bariatric-surgery
 **Primary keyword:** gastric sleeve payment plan perth
 **Search intent:** Commercial (researching cost and funding before deciding)
-**Target word count:** 1,000–1,300 words
+**Target word count:** 1,000–1,300 words (matches brief; SERP funding/cost pages from competing Perth clinics run 800–1,400w, so this range is competitive without padding)
 
 ## Page purpose
 This page addresses the single most common barrier to surgery: "How do I actually pay for this?" It should convert cost-anxious visitors into consultation bookings by making every funding pathway feel transparent and achievable — not a wall to get past.
+
+---
+
+## Keyword Intelligence
+
+### Primary Keyword
+- Keyword: gastric sleeve payment plan perth
+- AU Monthly Volume: 30
+- Keyword Difficulty: 0/100
+- CPC (AU): ~$1.4
+
+### Secondary Keywords (target naturally in body copy)
+| Keyword | AU Vol/mo | KD |
+|---|---|---|
+| gastric sleeve cost perth | 200 | 0 |
+| gastric sleeve perth cost | 100 | 0 |
+| using super for weight loss surgery perth | 30 | 0 |
+| weight loss surgery payment plan | 30 | 0 |
+| finance options for weight loss surgery in perth | 30 | 0 |
+| bariatric surgery costs | 30 | 0 |
+| weight loss surgery australia cost | 30 | 0 |
+| how much does gastric bypass cost | 40 | 0 |
+
+### Semantic Terms to Include
+These are LSI/semantic terms the writer must naturally weave into the copy. They are not keyword-stuff targets — they are terms that signal topical depth to Google. Use them in context, only where they read naturally and stay compliant (no guaranteed figures or outcomes).
+
+out-of-pocket cost, Medicare rebate, private health insurance, hospital cover, no-gap, reduced-gap, third-party medical finance, superannuation early release, ATO compassionate grounds, itemised written estimate, surgeon and anaesthetist fees, theatre and hospital fees, BMI eligibility, waiting period, GP referral, MBS item number, lump sum, interest and repayment terms
+
+### SERP Landscape (AU)
+The SERP is dominated by Perth bariatric clinic and surgeon-owned "cost / finance / payment options" pages — commercial, conversion-oriented, not blog-style informational. Top results are: Dr Kevin Dolan finance-options page (#1, DR 23), Perth Weight Loss Surgery's "Total Lifestyle Credit" payment-plan page (#3, DR 14), Mercy Bariatrics costs-finance page (#4, DR 31, highest traffic at 57), Obesity Surgery WA's own fees page (#5, DR 11, 47 traffic), and Advance Surgical pricing (#6). Notably OSWA already ranks #5 with its /fees/ page, so this new page can complement rather than cannibalise — interlink the two. Domain Ratings across the SERP are low (mostly DR 3–31), confirming the KD 0 — this is winnable on relevance and depth rather than authority. Google also surfaces People-Also-Ask questions (how much does gastric sleeve cost in Perth, gastric sleeve for free in Australia, Medicare coverage), signalling strong cost/funding question intent — the FAQ block should answer these directly.
+
+Top 5 ranking pages:
+| # | Domain | Page Title |
+|---|---|---|
+| 1 | drkevindolan.com.au | Cost of Weight Loss Surgery & Finance Options Perth |
+| 3 | perthweightlosssurgery.com.au | Payment Plan For Weight Loss Surgery & Bariatric Costs |
+| 4 | mercybariatrics.com.au | Gastric Sleeve Cost Perth \| Public & Private \| Mercy Bariatrics |
+| 5 | obesitysurgerywa.com.au | Fees Obesity Surgery WA \| Weight Loss Centre Murdoch & Subiaco |
+| 6 | advancesurgical.com.au | Cost of bariatric surgery Perth \| Fees Advance Surgical |
+
+### Content Gap Opportunity
+The exact-match term "gastric sleeve payment plan perth" has low volume (30/mo); the real traffic sits in "gastric sleeve cost perth" (200) and "...perth cost" (100), so the page must rank for cost intent, not just payment-plan intent — weave cost language throughout and interlink to OSWA's existing /fees/ page. Clear gaps vs the SERP:
+1. Competitors lean on a single funding angle (Dolan = finance, Perth Weight Loss = one branded credit product) — no top result transparently maps ALL four pathways (health fund+Medicare, third-party finance, superannuation early release, no-gap) side by side, which is this brief's core structure. Own the side-by-side comparison.
+2. Superannuation early release ("using super for weight loss surgery perth", 30/mo; "accessing superannuation", 450/mo) is barely addressed by ranking pages despite real search demand and dedicated PAA-level interest — a strong differentiator.
+3. No top result pairs a plain-language "how it works" 6-step funding journey with an explicit promise of an itemised written estimate before commitment — that transparency plus the empathy/anxiety framing is whitespace.
+4. Competitor pages promote specific finance products/figures; OSWA's compliance stance (no guaranteed figures, third-party/ATO disclaimers) is actually a trust differentiator if framed as honesty, not hedging.
+
+Address Medicare coverage and the "is it free in Australia" question directly to capture PAA real estate.
+
+### Recommended Word Count
+1,000–1,300 words (matches brief; SERP funding/cost pages from competing Perth clinics run 800–1,400w, so this range is competitive without padding).
 
 ---
 

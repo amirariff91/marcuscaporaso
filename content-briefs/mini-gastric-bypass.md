@@ -2,10 +2,57 @@
 **URL:** /mini-gastric-bypass
 **Primary keyword:** mini gastric bypass perth
 **Search intent:** informational / commercial
-**Target word count:** 1,100–1,400 words
+**Target word count:** 1,100–1,400 words (matches brief; aligns with AU clinic/surgeon procedure pages that dominate the SERP, which run ~1,000–1,500w). No need to exceed — thin authority pages rank here, so depth + E-E-A-T and local relevance matter more than length.
 
 ## Page purpose
 This page serves patients who have encountered the term "mini gastric bypass" and want to understand what it is and how it differs from a standard Roux-en-Y bypass. It must demystify the procedure name ("mini" refers to technique complexity, not results), explain the single-anastomosis design in plain terms, and move the reader toward a consultation.
+
+---
+
+## Keyword Intelligence
+
+### Primary Keyword
+- **Keyword:** mini gastric bypass perth
+- **AU Monthly Volume:** 100
+- **Keyword Difficulty:** 0/100
+- **CPC (AU):** ~$0
+
+### Secondary Keywords (target naturally in body copy)
+
+| Keyword | AU Vol/mo | KD |
+|---|---|---|
+| mini gastric bypass | 500 | 0 |
+| mini gastric bypass surgery perth | 20 | 0 |
+| mini gastric bypass vs gastric bypass | 40 | 0 |
+| mini gastric bypass vs sleeve | 40 | 0 |
+| mini gastric bypass vs roux en y | 20 | 0 |
+| mini gastric bypass cost australia | 20 | 0 |
+| mini gastric bypass surgery pros and cons | 20 | 3 |
+| mini gastric bypass side effects | 20 | 7 |
+
+### Semantic Terms to Include
+Weave these LSI/semantic terms naturally into the copy. These are not keyword-stuff targets — they are terms that signal topical depth to Google:
+
+one-anastomosis gastric bypass (OAGB), single-anastomosis bypass, omega loop bypass, Roux-en-Y gastric bypass, laparoscopic / keyhole surgery, gastric pouch, small intestine loop, malabsorption, restriction, bile reflux, anastomosis leak, excess weight loss (EWL), type 2 diabetes remission, vitamin and mineral supplementation, BMI eligibility, MBS item number / Medicare rebate, St John of God Murdoch, bariatric surgeon.
+
+### SERP Landscape (AU)
+The SERP for "mini gastric bypass" (AU) is dominated by individual bariatric-surgeon and clinic procedure pages (Winnett Specialist Group, Mackay McLeod, Queensland Bariatrics, Sydney Upper GI, Dr Scott Whiting, Evolve Bariatrics Perth, Medical Weight Loss). These are informational/commercial "What is the mini gastric bypass / OAGB explained" pages structured around: definition, how it works, candidacy, benefits, risks, recovery, cost, and FAQs. Interspersed are high-authority generic health references (Cleveland Clinic, Healthdirect AU DR 87, Duke Health, Ramsay UK) and a couple of academic/PMC papers — none Perth-specific. Domain ratings of the ranking clinic pages are LOW (mostly DR 0–26), confirming this is a winnable, low-competition niche where on-page relevance and local intent decide rankings. A few comparison-style pages ("difference between gastric bypass and mini", "mini vs traditional") and one YouTube patient-story video also appear. The exact phrase "mini gastric bypass perth" (vol 100, KD null/0) returned no dedicated SERP, meaning Google currently fills it with the generic procedure SERP above — a clear opening for a purpose-built Perth page.
+
+Top 5 ranking pages:
+
+| # | Domain | Page Title |
+|---|---|---|
+| 2 | winnettspecialistgroup.com.au | What is the Mini Gastric Bypass? - Winnett Specialist Group |
+| 3 | theossi.com | The OSSI - Mini Gastric Bypass |
+| 4 | mackaymcleod.com.au | One Anastomosis Gastric Bypass (Mini Bypass) Explained. |
+| 5 | queenslandbariatrics.com.au | Mini Gastric Bypass Surgery |
+| 6 | pmc.ncbi.nlm.nih.gov | MINI-GASTRIC BYPASS: DESCRIPTION OF THE TECHNIQUE - PMC |
+
+### Content Gap Opportunity
+Strong opportunity for a Perth-specific page. Gaps in the current SERP: (1) Almost no result both ranks well AND targets Perth — Evolve Bariatrics and a few others mention Perth but sit at positions 9+ with thin DR; the top organic spots are Brisbane/Sydney/Melbourne or generic US/UK clinics, so a genuinely Perth-anchored page (SJOG Murdoch/Subiaco, Booragoon, Mandurah, named WA surgeons) can outrank them on local intent. (2) Most competitor pages bury or omit the bile-reflux risk that is specific to the single-anastomosis design — honestly naming it (per brief) is both a compliance win and a differentiator. (3) The 'mini' = technique-not-result demystification is rarely done explicitly; competitors assume knowledge. (4) Medicare/MBS specifics for AU patients are vague across the SERP — concrete mention of the bariatric MBS item family (31569–31581), private health fund contribution and super early-release (without quoting a dollar figure) addresses 'mini gastric bypass cost australia' intent better than rivals. (5) AHPRA-compliant framing (no testimonials/before-after, 'results vary') lets this page sidestep the before/after-photo and patient-story angles competitors lean on. (6) Comparison intent (vs Roux-en-Y, vs sleeve) is high relative to volume — weaving a clear, plain-language comparison block captures those secondary terms on a single URL.
+
+### Recommended Word Count
+1,100–1,400 words (matches brief; aligns with AU clinic/surgeon procedure pages that dominate the SERP, which run ~1,000–1,500w). No need to exceed — thin authority pages rank here, so depth + E-E-A-T and local relevance matter more than length.
 
 ---
 

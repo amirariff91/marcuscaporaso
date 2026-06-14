@@ -2,10 +2,60 @@
 **URL:** /gastric-bypass-perth
 **Primary keyword:** gastric bypass surgery perth
 **Search intent:** commercial / informational
-**Target word count:** 1,200–1,500 words
+**Target word count:** 1,200–1,500 words (matches brief; top SERP competitors are clinic procedure pages running ~1,000–1,800w — depth on bypass-vs-sleeve, cost transparency, and diabetes outcomes is the differentiator, not raw length)
 
 ## Page purpose
 This page serves patients researching Roux-en-Y gastric bypass in Perth — often people with type 2 diabetes or significant reflux for whom the bypass has a clinical edge over a sleeve. It must explain the procedure clearly, address "bypass vs sleeve" comparisons honestly, and move the reader toward a consultation without applying pressure.
+
+---
+
+## Keyword Intelligence
+
+### Primary Keyword
+- **Keyword:** gastric bypass surgery perth
+- **AU Monthly Volume:** 200
+- **Keyword Difficulty:** 42/100
+- **CPC (AU):** ~$1
+
+### Secondary Keywords (target naturally in body copy)
+| Keyword | AU Vol/mo | KD |
+|---|---|---|
+| gastric bypass perth | 200 | 42 |
+| mini gastric bypass perth | 100 | 0 |
+| roux en y gastric bypass | 450 | 11 |
+| gastric sleeve vs bypass | 350 | 2 |
+| gastric bypass surgery cost australia | 150 | 0 |
+| gastric bypass surgery recovery time | 100 | 22 |
+| what can you never eat again after gastric bypass | 250 | 1 |
+| weight loss surgery perth | 100 | 2 |
+
+### Semantic Terms to Include
+These are not keyword-stuff targets — they are terms that signal topical depth to Google. Weave them naturally into the copy:
+
+Roux-en-Y gastric bypass, bariatric surgery, laparoscopic / keyhole surgery, stomach pouch, small intestine rerouting, type 2 diabetes remission, gut hormones, ghrelin, blood sugar control, excess weight loss, acid reflux / GORD, dumping syndrome, vitamin and mineral supplements, BMI eligibility, Medicare rebate, private health cover, St John of God Murdoch, anastomotic leak, general anaesthetic, dietitian follow-up.
+
+### SERP Landscape (AU)
+The SERP is dominated by Perth bariatric clinic and surgeon procedure pages (perthweightlosssurgery.com.au, aurorabariatrics, perthsurgicalbariatrics, obesitysurgerywa, evolvebariatrics, drkevindolan) plus one high-authority hospital page (St John of God Murdoch, DR 70). Most ranking domains have low DR (7–26), so the niche is winnable on relevance and depth rather than backlink strength. Intent is mixed commercial/informational: searchers want to understand the procedure AND find a Perth surgeon to book. Google also surfaces a People Also Ask block (cost, the 30-30 rule, Medicare coverage, minimum weight) and dedicated Roux-en-Y bypass pages (evolvebariatrics, drkevindolan) — signalling that procedure-specific RYGB pages, not generic bariatric hubs, are what rank for this exact query.
+
+Top 5 ranking pages:
+| # | Domain | Page Title |
+|---|---|---|
+| 1 | advancesurgical.com.au | Advance Surgical \| Bariatric Surgeon Perth \| Weight Loss |
+| 2 | perthweightlosssurgery.com.au | Bariatric Surgeon Dr Siva Gounder: Weight Loss Surgery Perth |
+| 3 | aurorabariatrics.com.au | Perth Bariatric Surgery \| Dr Ruth Blackham \| Aurora |
+| 4 | sjog.org.au | Bariatric surgery \| St John of God Murdoch Hospital |
+| 5 | perthsurgicalbariatrics.com.au | Perth Surgical & Bariatrics \| Top-Rated Weight Loss Surgeons |
+
+### Content Gap Opportunity
+Clear opportunities for OSWA to own:
+1. **Cost transparency** — PAA shows explicit demand for "How much does gastric bypass cost in Perth?" and "Can gastric bypass be covered by Medicare?" — most competitor pages dodge cost. The brief's transparent itemised-estimate + Medicare/super-release paragraph directly fills this gap.
+2. **Bypass vs sleeve comparison** — "gastric sleeve vs bypass" / "gastric bypass vs sleeve" carry strong AU volume (350+250) at near-zero difficulty, yet competitor bypass pages rarely tackle the comparison honestly. The brief's bypass-vs-sleeve note is a differentiator, especially the diabetes/reflux clinical edge.
+3. **Type 2 diabetes outcomes** — No top result leads with type 2 diabetes outcomes despite this being the bypass's strongest evidence base. Owning the "bypass for type 2 diabetes in Perth" angle is open.
+4. **Plain-language clinical clarity + named surgeons** — AHPRA rules block competitors from using before/after and testimonials, so the page must win on plain-language clinical clarity and named, credentialled surgeons (Dr Chandraratna, Dr Watson) operating at the same DR-70 SJOG Murdoch facility that already ranks.
+5. **Long-tail FAQ capture** — Recovery-time and "what you can never eat again" queries have meaningful volume and low KD — weave into FAQ for long-tail capture.
+
+### Recommended Word Count
+1,200–1,500 words (matches brief; top SERP competitors are clinic procedure pages running ~1,000–1,800w — depth on bypass-vs-sleeve, cost transparency, and diabetes outcomes is the differentiator, not raw length).
 
 ---
 

@@ -2,10 +2,55 @@
 **URL:** /super-access-weight-loss-surgery
 **Primary keyword:** using super for weight loss surgery perth
 **Search intent:** Informational / commercial (researching whether this is a viable and legitimate funding option)
-**Target word count:** 1,100–1,400 words
+**Target word count:** 1,100–1,400 words (matches brief; aligns with SERP — Perth clinic finance/super pages dominating positions 1-7 typically run 800-1,400w, so a thorough 1,400w page out-resources most competitors)
 
 ## Page purpose
 This page answers a specific question many Perth patients arrive with: "Can I actually use my super to pay for this?" It needs to legitimise the pathway, explain the process honestly, and be equally honest about the trade-offs — all without either overselling or scaring the reader off a legitimate option.
+
+---
+
+## Keyword Intelligence
+
+### Primary Keyword
+- Keyword: using super for weight loss surgery perth
+- AU Monthly Volume: 30
+- Keyword Difficulty: 0/100
+- CPC (AU): ~$1.1
+
+### Secondary Keywords (target naturally in body copy)
+| Keyword | AU Vol/mo | KD |
+|---|---|---|
+| accessing super for weight loss surgery | 150 | 0 |
+| using super for weight loss surgery | 40 | 0 |
+| can i use my super for weight loss surgery | 40 | 0 |
+| super for weight loss surgery | 30 | 0 |
+| early release of super for weight loss surgery ato | 20 | 15 |
+| access super for weight loss surgery | 20 | 0 |
+| how to use super for weight loss surgery | 10 | 0 |
+| weight loss surgery payment plan | 30 | 0 |
+
+### Semantic Terms to Include
+These are LSI/semantic terms the writer must naturally weave into the copy. They are not keyword-stuff targets — they are terms that signal topical depth to Google.
+
+early release of superannuation, compassionate grounds, ATO determination letter, myGov application, preservation age, two registered medical practitioners, bariatric surgery, gastric sleeve, gastric bypass, severe obesity, type 2 diabetes, out-of-pocket cost, Medicare rebate, private health insurance, tax withheld on release, licensed financial adviser, retirement balance, SJOG Murdoch
+
+### SERP Landscape (AU)
+The SERP is dominated by Perth/Australian bariatric clinic pages, specifically cost and finance sub-pages (e.g. perthweightlosssurgery.com.au/cost/supercare, drscottwhiting.com.au/pricing/using-your-superannuation, drkevindolan finance-options, mercybariatrics costs-finance, aurorabariatrics superannuation-access). These are informational/commercial clinic pages explaining the super early-release pathway as a payment option. Domain Ratings are low across the board (DR 4-31), so authority is not a barrier. Notably, positions 2 and 8 are filled with People-Also-Ask questions and UGC: official ATO Community forum threads (community.ato.gov.au) and a high-engagement Reddit r/australia thread ("I used my super to pay for weight loss surgery. It changed my life but..."). This signals strong informational intent and that searchers want honest, real-world experience alongside the official process. Difficulty is effectively 0 — this is a winnable, low-competition niche.
+
+Top 5 ranking pages:
+| # | Domain | Page Title |
+|---|---|---|
+| 1 | obesitysurgerywa.com.au | Weight loss surgery \| Bariatric Surgeon Murdoch & Perth |
+| 3 | perthweightlosssurgery.com.au | Weight Loss Surgery Superannuation & Payment Plan |
+| 4 | aurorabariatrics.com.au | Access Super for Surgery Funding |
+| 5 | drkevindolan.com.au | Cost of Weight Loss Surgery & Finance Options Perth |
+| 6 | drscottwhiting.com.au | Using your superannuation |
+
+### Content Gap Opportunity
+Opportunity is high and competition weak (KD 0, all competitors DR <32). Clear gaps: (1) The Reddit thread ranking on page 1 shows demand for honest, balanced treatment of the trade-off ("it changed my life but...") — competitor clinic pages tend to sell the pathway without genuinely addressing the retirement/tax downside. OSWA's brief already plans an honest risks section; lean into this as the differentiator. (2) No competitor clearly answers "what happens if my application is declined" or the ATO review pathway — own that FAQ. (3) Indicative tax rates by age (17-22% under preservation age vs tax-free at 60+) are rarely stated plainly — including them captures the "will I be taxed" PAA. (4) The ATO Community threads ranking organically show searchers crave authoritative process detail (two practitioners, myGov lodgement, determination letter) — a step-by-step that mirrors the official process can outrank thin clinic pages. (5) Perth-specific anchoring (SJOG Murdoch/Subiaco) plus combining super with private health and payment plans addresses a multi-funding angle competitors treat in isolation. Most competitor pages omit a worked dollar example (e.g. $6,000 gap) — including one differentiates and answers "how much super can I withdraw".
+
+### Recommended Word Count
+1,100-1,400 words (matches brief; aligns with SERP — Perth clinic finance/super pages dominating positions 1-7 typically run 800-1,400w, so a thorough 1,400w page out-resources most competitors)
 
 ---
 

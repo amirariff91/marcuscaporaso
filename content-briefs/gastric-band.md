@@ -2,10 +2,55 @@
 **URL:** /gastric-band
 **Primary keyword:** gastric band surgery perth
 **Search intent:** informational / commercial
-**Target word count:** 900–1,200 words
+**Target word count:** 1,000–1,300 words — brief targets 900–1,200; SERP is dominated by low-DR clinic procedure pages of similar length, so 1,000–1,300 with an honest comparison angle is enough to win without padding.
 
 ## Page purpose
 This page helps Perth adults who are specifically curious about the gastric band understand what it is, who it suits, and how it honestly compares to a sleeve or bypass — so they can decide whether to book a consultation. The page needs to be the most candid, non-hyped overview of the band they will find anywhere.
+
+---
+
+## Keyword Intelligence
+
+### Primary Keyword
+- Keyword: gastric band surgery perth
+- AU Monthly Volume: 100
+- Keyword Difficulty: 30/100
+- CPC (AU): ~$0.9
+
+### Secondary Keywords (target naturally in body copy)
+| Keyword | AU Vol/mo | KD |
+|---|---|---|
+| gastric band surgery cost | 300 | 0 |
+| gastric band cost | 150 | 0 |
+| gastric band surgery | 450 | 4 |
+| gastric band perth | 60 | 14 |
+| gastric band surgery cost australia | 60 | 0 |
+| lap band vs gastric bypass | 80 | 6 |
+| gastric band removal | 40 | 0 |
+| what is lap band surgery | 30 | 3 |
+
+### Semantic Terms to Include
+These are not keyword-stuff targets — they are terms that signal topical depth to Google. Weave them in naturally where the copy is already discussing the relevant point:
+
+adjustable gastric band, laparoscopic adjustable gastric banding, lap band, silicone band, gastric pouch, access port, saline adjustment, band slippage, band erosion, keyhole surgery, reversible weight loss surgery, excess weight loss, BMI, Medicare item 31569, bariatric surgeon Perth, St John of God Murdoch, gastric sleeve, gastric bypass
+
+### SERP Landscape (AU)
+The SERP is almost entirely commercial clinic and surgeon procedure pages (Advance Surgical #1, Obesity Surgery WA #2, Dr Kevin Dolan #3, Perth Weight Loss Surgery #4, Evolve Bariatrics #5, Aurora Bariatrics, Veritas, WA Weight Loss, Perth Surgical & Bariatrics). No informational hospital portals, no editorial comparison articles, no government health pages rank on page 1 — this is a transactional, local-intent SERP. Domain Ratings are low (DR 1–26), so the keyword is highly winnable on content quality and topical depth rather than authority. Google surfaces a People Also Ask cluster heavily weighted to cost and Medicare ("How much does bariatric surgery cost in Perth?", "How much does a gastric band cost in Australia?", "Is gastric band surgery covered by Medicare?") plus a procedure-vs-drug comparison ("Mounjaro or gastric sleeve?").
+
+Top 5 ranking pages:
+| # | Domain | Page Title |
+|---|---|---|
+| 1 | advancesurgical.com.au | Advance Surgical \| Bariatric Surgeon Perth \| Weight Loss |
+| 2 | obesitysurgerywa.com.au | Gastric band surgery Perth \| Bariatric Surgeon Murdoch |
+| 3 | drkevindolan.com.au | Adjustable Gastric Band Surgery Perth |
+| 4 | perthweightlosssurgery.com.au | Weight Loss Surgery Perth: Bariatric Surgeon Dr Siva Gounder |
+| 5 | evolvebariatrics.com.au | Laparoscopic Adjustable Gastric Banding Perth |
+
+### Content Gap Opportunity
+Three clear gaps. (1) Honest comparison: every ranking page sells the band as a procedure on its own; none frames it candidly against the sleeve and bypass and admits it delivers less weight loss — the brief's "most candid overview anywhere" angle is genuinely differentiated and matches no current result. (2) Cost + Medicare: the PAA box is dominated by cost and "Is it covered by Medicare?" questions, yet ranking clinic pages bury or omit this; explicitly addressing Medicare item 31569, private health fund contributions, super early release, and the ongoing adjustment-visit cost (unique to the band) captures intent competitors ignore. (3) The conversion/revision pathway — "can I switch from a band to a sleeve later?" — and band-specific device risks (slippage, erosion, port problems) are under-served; covering these directly builds the trust the SERP currently lacks. Secondary opportunity: weave in cost-intent secondary keywords (KD 0) since those terms are near-zero difficulty and high commercial value.
+
+### Recommended Word Count
+1,000–1,300 words — brief targets 900–1,200; SERP is dominated by low-DR clinic procedure pages of similar length, so 1,000–1,300 with an honest comparison angle is enough to win without padding.
 
 ---
 

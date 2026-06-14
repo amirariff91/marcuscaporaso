@@ -2,10 +2,53 @@
 **URL:** /bariatric-surgery-perth
 **Primary keyword:** bariatric surgery perth
 **Search intent:** commercial
-**Target word count:** 1,200–1,500 words
+**Target word count:** 1,200–1,500 words (matches brief and competing Perth clinic landing pages, which run ~1,000–1,500w; depth on procedures + cost + Medicare needed to outrank low-DR rivals)
 
 ## Page purpose
 This is a high-intent landing page for people who already know the term "bariatric surgery" and are comparing providers in Perth. It needs to establish Obesity Surgery WA's credentials and depth of team, explain the procedure range clearly, and move the reader toward a consultation.
+
+## Keyword Intelligence
+
+### Primary Keyword
+- Keyword: bariatric surgery perth
+- AU Monthly Volume: 150
+- Keyword Difficulty: 52/100
+- CPC (AU): ~$1
+
+### Secondary Keywords (target naturally in body copy)
+| Keyword | AU Vol/mo | KD |
+|---|---|---|
+| gastric sleeve surgery | 2,400 | 33 |
+| gastric band | 500 | 8 |
+| weight loss treatment | 350 | 54 |
+| gastric bypass surgery perth | 200 | 42 |
+| gastric bypass perth | 200 | 42 |
+| obesity surgery | 100 | 51 |
+| weight loss clinic perth | 100 | 2 |
+| weight loss doctor perth | 30 | 4 |
+
+### Semantic Terms to Include
+Comma-separated list of LSI/semantic terms the writer must naturally weave into the copy. These are not keyword-stuff targets — they are terms that signal topical depth to Google.
+
+sleeve gastrectomy, Roux-en-Y gastric bypass, one anastomosis (mini) gastric bypass, adjustable gastric band, laparoscopic keyhole surgery, excess weight loss, BMI eligibility, type 2 diabetes remission, ghrelin / hunger hormones, Medicare and private health cover, revision bariatric surgery, GLP-1 medical weight management, dietitian-led aftercare, St John of God Murdoch and Subiaco, FRACS bariatric surgeon
+
+### SERP Landscape (AU)
+SERP is almost entirely commercial Perth bariatric clinic/surgeon homepages and service landing pages — Perth Surgical & Bariatrics (#1/#6), Obesity Surgery WA (#2, the target site, already ranking), Aurora Bariatrics (#3, named-surgeon angle), Perth Weight Loss Surgery / Dr Siva Gounder (#5), Mercy Bariatrics (#7, highest authority at DR 31), Advance Surgical, Evolve, Veritas, WA Weight Loss. Domain authority is low across the board (DR 1–31), so this is a content-quality and relevance battle, not a backlink arms race. Google also surfaces a People Also Ask block (cost, Medicare coverage, disqualifiers, the "30/30 rule") signalling strong informational sub-intent layered under the commercial query. Winning pages combine provider credentials + clear procedure menu + cost/Medicare answers.
+
+Top 5 ranking pages:
+| # | Domain | Page Title |
+|---|---|---|
+| 1 | perthsurgicalbariatrics.com.au | Perth Surgical & Bariatrics |
+| 2 | obesitysurgerywa.com.au | Bariatric surgery Perth \| Weight loss treatment |
+| 3 | aurorabariatrics.com.au | Perth Bariatric Surgery \| Dr Ruth Blackham \| Aurora |
+| 5 | perthweightlosssurgery.com.au | Bariatric Surgeon Dr Siva Gounder: Weight Loss Surgery Perth |
+| 6 | perthsurgicalbariatrics.com.au | Perth Surgical & Bariatrics \| Top-Rated Weight Loss Surgeons |
+
+### Content Gap Opportunity
+Competitors lead with either a single named surgeon or a generic procedure list; the differentiation gap is a team-based, multi-disciplinary positioning (5 dietitians, 20+ yrs, two SJOG hospitals) which the brief already leans into — own this. Biggest on-page SERP gap: the PAA block shows Google wants direct, plain-language answers to (1) bariatric surgery cost in Perth, (2) whether it's covered by Medicare/private health in Australia, (3) what disqualifies a candidate / BMI eligibility, and (4) the gastric sleeve vs bypass difference — most competitor homepages bury or omit these. The FAQ section in the brief already maps to these; ensure those FAQs are marked up with FAQ schema to capture PAA/rich-result real estate. Secondary gap: no competitor clearly integrates medical (GLP-1) weight management alongside surgical options — covering the full pathway (medical + surgical + revision) addresses readers not yet ready for surgery and widens topical coverage. Note AHPRA/TGA limits mean the patient-story/testimonial angle is off-limits, so the win must come from honesty (frank risks section), credentialism, and answering buyer questions better than rivals.
+
+### Recommended Word Count
+1,200–1,500 words (matches brief and competing Perth clinic landing pages, which run ~1,000–1,500w; depth on procedures + cost + Medicare needed to outrank low-DR rivals).
 
 ## Section guidance
 

@@ -3,13 +3,65 @@
 **URL:** /bariatric-dietitian-perth
 **Primary keyword:** bariatric dietitian perth
 **Search intent:** Informational / commercial
-**Target word count:** 1,100–1,400 words
+**Target word count:** 1,100–1,400 words (matches brief; SERP is dominated by thin clinic/team pages of 600–1,200 words, so 1,100–1,400 of genuinely useful, location-specific content comfortably out-depths the field)
 
 ---
 
 ## Page purpose
 
 This page exists to explain what bariatric dietitians do, why their role is indispensable (not optional) in weight-loss surgery, and to introduce OSW's team of five as the specialist resource supporting patients from pre-op through long-term maintenance. It should reassure readers who feel anxious about the dietary changes ahead, and signal to search engines that OSW offers genuine, accredited dietetic expertise — not a single rushed nutrition appointment.
+
+---
+
+## Keyword Intelligence
+
+### Primary Keyword
+
+- **Keyword:** bariatric dietitian perth
+- **AU Monthly Volume:** 20
+- **Keyword Difficulty:** 0/100
+- **CPC (AU):** ~$0
+
+### Secondary Keywords (target naturally in body copy)
+
+| Keyword | AU Vol/mo | KD |
+|---|---|---|
+| bariatric dietitian | 80 | 0 |
+| bariatric dietitian near me | 30 | 11 |
+| what does a bariatric dietitian do | 20 | 0 |
+| do i need a dietitian after bariatric surgery | 20 | 0 |
+| bariatric dietitian telehealth australia | 20 | 0 |
+| post bariatric surgery dietitian | 10 | 0 |
+| bariatric surgery dietitian referral | 10 | 0 |
+| bariatric dietitian online consultation | 10 | 0 |
+
+### Semantic Terms to Include
+
+Comma-separated list of LSI/semantic terms the writer must naturally weave into the copy. These are not keyword-stuff targets — they are terms that signal topical depth to Google.
+
+Accredited Practising Dietitian (APD), pre-operative liver shrinking diet, gastric sleeve, gastric bypass, protein target, nutritional deficiency, vitamin B12, iron and calcium supplements, dumping syndrome, dietary stages (fluids, puree, soft, solids), Medicare rebate, chronic disease management plan, GP referral, portion size after surgery, weight regain, metabolic nutrition, allied health.
+
+### SERP Landscape (AU)
+
+Low-competition, low-volume niche. The exact-match "bariatric dietitian perth" SERP returned no tracked organic results in Ahrefs, confirming almost no Perth-specific competition. The parent term "bariatric dietitian" SERP is dominated by (1) individual dietitian/clinic service pages (Simply Nutrition #1 at DR11, traffic 29; Australian Bariatric Dietitians #2; Weight Loss Surgery Melbourne #3) and (2) clinic "our team" / "role of a bariatric dietitian" explainer pages. Domain ratings are mostly low (DR 0–30), with the only high-authority result being a Dietitians Australia course-store listing (DR73) that is not a true competitor. Google also surfaces a People-Also-Ask cluster ("What does a bariatric dietitian do?", "20-20-20 rule", "Is Ozempic better than gastric sleeve?"), signalling strong informational intent layered over commercial intent. Content type that wins: a warm, authoritative clinic page that both explains the dietitian's role AND showcases a credentialled, named Perth team.
+
+Top 5 ranking pages:
+
+| # | Domain | Page Title |
+|---|---|---|
+| 1 | simplynutritiondietitians.com.au | Bariatric Dietitian \| Pre & Post Surgery |
+| 2 | australianbariatricdietitians.com.au | Australian Bariatric Dietitians: Home |
+| 3 | weightlosssurgerymelbourne.com.au | Bariatric dieticians Melbourne |
+| 4 | dietitiansaustralia.org.au | Clinical Dietetics for Bariatric Surgery |
+| 5 | nutritionhealthandwellbeing.com.au | Services |
+
+### Content Gap Opportunity
+
+Clear opening for OSW. (1) **Geographic gap:** no result specifically owns "Perth" or "WA" for this term — the closest WA competitor (waweightloss.com.au) sits at position 8 with DR1 and a thin single-dietitian page, so a Perth-focused, locally-credible page can rank quickly. (2) **Team-depth gap:** nearly every competitor presents a single dietitian or a generic role description; OSW's five named APDs across Booragoon and Mandurah is a genuine differentiator no top result matches. (3) **Continuity gap:** ranking pages frame the dietitian as a one-off service rather than pre-op-through-long-term care — the brief's "not a single rushed appointment" angle is unclaimed territory. (4) **PAA/cost gap:** top results barely address Medicare rebates, chronic disease management plans, or "do I need a dietitian after surgery" — answering these directly (and via the 9-question FAQ) captures the informational PAA layer. (5) **Reassurance gap:** competitor pages are clinical; the anxious-patient, "can I eat normally again" tone is an underserved emotional angle. Add FAQ schema to capture PAA real estate.
+
+### Recommended Word Count
+
+1,100–1,400 words (matches brief; SERP is dominated by thin clinic/team pages of 600–1,200 words, so 1,100–1,400 of genuinely useful, location-specific content comfortably out-depths the field).
 
 ---
 

@@ -2,10 +2,53 @@
 **URL:** /am-i-eligible
 **Primary keyword:** am i eligible for weight loss surgery
 **Search intent:** informational
-**Target word count:** 1,000–1,300 words
+**Target word count:** 1,000–1,300 words (matches brief target; sufficient to beat thin Australian clinic candidate pages which run 600–1,100w, while staying focused for an informational intent that does not reward long comparison-style depth)
 
 ## Page purpose
 This page answers the single most common question a research-stage patient asks before calling. It removes the fear of being "turned away" before they even pick up the phone, and moves them toward booking an orientation consultation.
+
+## Keyword Intelligence
+
+### Primary Keyword
+- Keyword: am i eligible for weight loss surgery
+- AU Monthly Volume: 10
+- Keyword Difficulty: 0/100
+- CPC (AU): ~$1.4
+
+### Secondary Keywords (target naturally in body copy)
+| Keyword | AU Vol/mo | KD |
+|---|---|---|
+| gastric sleeve surgery eligibility | 20 | 0 |
+| gastric sleeve perth eligibility | 10 | 0 |
+| weight loss surgery requirements | 10 | 0 |
+| do i qualify for weight loss surgery quiz | 10 | 0 |
+| weight loss surgery medicare | 20 | 0 |
+| weight loss surgery perth | 250 | 45 |
+| gastric sleeve perth | 150 | 7 |
+| weight loss surgery cost | 350 | 0 |
+
+### Semantic Terms to Include
+These are LSI/semantic terms the writer must naturally weave into the copy. They are not keyword-stuff targets — they are terms that signal topical depth to Google:
+
+bariatric surgery, gastric sleeve, sleeve gastrectomy, gastric bypass, BMI (body mass index), class 2 obesity, class 3 obesity, comorbidities, type 2 diabetes, obstructive sleep apnoea, high blood pressure, PCOS, fatty liver disease (NAFLD), FRACS surgeon, GP referral, Medicare rebate, private health insurance, superannuation early release, dietitian, psychological assessment, orientation consultation, St John of God Murdoch, Subiaco, metabolic surgery
+
+### SERP Landscape (AU)
+SERP is dominated by two content types. (1) High-authority informational reference pages — Healthdirect (#1, DR 87), Mayo Clinic (#6, DR 92), plus Cleveland Clinic, NIDDK and NHS deeper down — these are generic "is it an option for you / requirements" guides that capture most of the visible traffic. (2) A large long tail of bariatric clinic 'Am I a Candidate / Am I Eligible' pages (obesity.com.au, Keyhole Surgery Centre, O Clinic Sydney, Mercy Bariatrics, Brisbane Obesity Clinic, plus Perth players Perth Surgical Bariatrics, Perth Obesity Solutions, Evolve Bariatrics) — almost all low DR (0–31) and pulling negligible traffic. Google also surfaces a People Also Ask cluster (minimum weight, how to get approved, do I qualify in Australia, who is NOT eligible). Note this is a very low-volume head term (10/mo AU, KD effectively 0), so ranking is achievable but the real value is intent quality and feeding the conversion funnel, not raw volume.
+
+Top 5 ranking pages:
+| # | Domain | Page Title |
+|---|---|---|
+| 1 | healthdirect.gov.au | Guide to bariatric surgery - Healthdirect |
+| 3 | obesity.com.au | Am I a Candidate for Weight Loss Surgery Melbourne VIC |
+| 4 | keyholesurgerycentre.com.au | Am I a Candidate \| Weight Loss Surgery |
+| 5 | oclinic.sydney | Eligibility for Weight Loss Surgery Sydney |
+| 6 | mayoclinic.org | Weight-loss surgery: Is it an option for you? |
+
+### Content Gap Opportunity
+Clear opportunity for a Perth-specific, reassurance-led eligibility page. Gaps: (1) The clinic pages that rank are generic BMI tick-box checklists; almost none address the emotional barrier (shame, fear of being turned away, failed diets) — the brief's empathetic angle is genuinely differentiated. (2) No top result clearly explains Australian Medicare/MBS rebates, private health cover, or superannuation early release in plain language tied to eligibility — own the 'GP referral vs self-referral' and funding angle. (3) PAA shows strong demand for 'who is NOT eligible' and 'minimum weight / BMI around 30' — directly answer the low-BMI (30–34 with comorbidity) and mental-health questions the competitors gloss over. (4) Almost no AU competitor names a specific Perth hospital/surgeon credential (SJOG Murdoch/Subiaco, FRACS) — local trust signals are a fast win. (5) Healthdirect/Mayo win on authority but are non-local and offer no booking path — capture the bottom-funnel 'now what do I do in Perth' intent they cannot serve. Match the PAA questions in FAQ schema to compete for those featured-snippet slots.
+
+### Recommended Word Count
+1,000–1,300 words (matches brief target; sufficient to beat thin Australian clinic candidate pages which run 600–1,100w, while staying focused for an informational intent that does not reward long comparison-style depth)
 
 ## Section guidance
 

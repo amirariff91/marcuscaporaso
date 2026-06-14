@@ -2,10 +2,53 @@
 **URL:** /weight-loss-surgery-perth
 **Primary keyword:** weight loss surgery perth
 **Search intent:** informational / commercial
-**Target word count:** 1,100–1,400 words
+**Target word count:** 1,100–1,400 words (matches brief; SERP is dominated by short-to-mid commercial clinic homepages, so the brief's depth is enough to compete while the spectrum-of-care breadth differentiates)
 
 ## Page purpose
 This is the broadest, highest-traffic page on the site — it captures people who are at the very start of their research and are not yet attached to a specific procedure. Its job is to introduce the full spectrum of care (medical management through to surgery), make the reader feel seen and un-judged, and position OSWA as the team to help them work out what is right for them.
+
+## Keyword Intelligence
+
+### Primary Keyword
+- Keyword: weight loss surgery perth
+- AU Monthly Volume: 250
+- Keyword Difficulty: 45/100
+- CPC (AU): ~$1.3
+
+### Secondary Keywords (target naturally in body copy)
+| Keyword | AU Vol/mo | KD |
+|---|---|---|
+| bariatric surgery perth | 150 | 52 |
+| perth weight loss surgery | 100 | 46 |
+| weight loss surgery perth cost | 90 | 0 |
+| gastric bypass perth | 200 | 42 |
+| gastric band | 500 | 8 |
+| weight loss clinic perth | 100 | 2 |
+| weight loss doctor perth | 30 | 4 |
+| using super for weight loss surgery perth | 30 | 0 |
+
+### Semantic Terms to Include
+Comma-separated list of LSI/semantic terms the writer must naturally weave into the copy. These are not keyword-stuff targets — they are terms that signal topical depth to Google.
+
+bariatric surgery, gastric sleeve, sleeve gastrectomy, gastric bypass, adjustable gastric band, lap band, obesity as a medical condition, BMI, GLP-1 medication, very low calorie diet, dietitian support, type 2 diabetes, Medicare rebate, private health cover, endoscopic option, weight regain, Booragoon, Mandurah
+
+### SERP Landscape (AU)
+The SERP is almost entirely commercial: individual Perth bariatric surgeon and clinic homepages (Dr Siva Gounder / perthweightlosssurgery.com.au, perthbariatricsurgery.com.au / Dr Andrew Kiyingi, Advance Surgical / Jon Armstrong, Aurora Bariatrics / Dr Ruth Blackham, Dr Kevin Dolan, Perth Surgical & Bariatrics, Evolve Bariatrics). Domain ratings are low across the board (DR 1-26), so this is a winnable, weakly-defended SERP. Almost every result is a surgeon-led homepage selling a procedure menu — not informational guides. People Also Ask boxes surface clear informational intent: "How much does weight loss surgery cost in Perth?", "Is weight loss surgery covered by Medicare in Australia?", and "How much do I need to weigh to qualify for weight loss surgery?". Intent is mixed commercial + informational, which fits the brief's positioning of this as the broad top-of-funnel page.
+
+Top 5 ranking pages:
+| # | Domain | Page Title |
+|---|---|---|
+| 1 | perthweightlosssurgery.com.au | Perth Weight Loss Surgery — Dr Siva Gounder |
+| 2 | perthbariatricsurgery.com.au | Perth Bariatric Surgery — Dr Andrew Kiyingi |
+| 3 | advancesurgical.com.au | Weight Loss Surgery Perth — Advance Surgical (Jon Armstrong) |
+| 4 | aurorabariatrics.com.au | Aurora Bariatrics — Dr Ruth Blackham |
+| 5 | obesitysurgerywa.com.au | Weight Loss Surgery Perth — Obesity Surgery WA (OSWA, DR 11) |
+
+### Content Gap Opportunity
+Every top result is a surgeon homepage that funnels straight to surgery — none present medical management (GLP-1 medication, VLCD, dietitian support) as an equal pathway. That is OSWA's biggest differentiation opportunity and aligns exactly with the brief's mandate to frame obesity as a medical condition and not over-index on surgery. Second gap: the PAA boxes show high demand for cost, Medicare coverage, and BMI/eligibility answers, yet competitor homepages bury or omit these — directly addressing "do I qualify (BMI 27+)", "is it covered by Medicare", and "how much does it cost / can I use super" in plain language (the brief already mandates an eligibility section, cost paragraph, and FAQs) will capture featured-snippet and PAA real estate competitors leave open. Third gap: low-DR competitors mean strong topical depth, empathetic non-judgemental framing, and a team-based (5 dietitians, physicians + surgeons, 2 clinics) angle can outrank them without heavy backlinks. Note OSWA (obesitysurgerywa.com.au) currently sits at position 5 with DR 11, so this page is an existing-asset improvement play, not a cold start.
+
+### Recommended Word Count
+1,100-1,400 words (matches brief; SERP is dominated by short-to-mid commercial clinic homepages, so the brief's depth is enough to compete while the spectrum-of-care breadth differentiates).
 
 ## Section guidance
 

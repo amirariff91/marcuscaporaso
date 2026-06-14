@@ -2,10 +2,55 @@
 **URL:** /non-surgical-weight-loss
 **Primary keyword:** non surgical weight loss perth
 **Search intent:** informational / commercial
-**Target word count:** 1,000–1,300 words
+**Target word count:** 1,000–1,300 words (matches brief; aligns with mid-DR clinic competitors Dr Kevin Dolan and Evolve Bariatrics which run ~900–1,400w service pages)
 
 ## Page purpose
 This page serves Perth adults who are not ready for surgery, or whose BMI puts them in the 27–35 range where non-surgical options are often the right first step. It needs to establish that non-surgical weight loss at this practice is a genuine specialist pathway — not a consolation prize before surgery — while giving a clear-eyed view of medications (GLP-1s), VLCD programs, and ESG.
+
+---
+
+## Keyword Intelligence
+
+### Primary Keyword
+- Keyword: non surgical weight loss perth
+- AU Monthly Volume: 30
+- Keyword Difficulty: 14/100
+- CPC (AU): ~$1.2
+
+### Secondary Keywords (target naturally in body copy)
+| Keyword | AU Vol/mo | KD |
+|---|---|---|
+| weight loss treatment | 350 | 54 |
+| weight loss doctors | 150 | 6 |
+| weight loss doctor perth | 30 | 4 |
+| weight loss centres near me | 50 | 43 |
+| best non surgical weight loss procedures | 40 | 9 |
+| non surgical weight loss injections | 10 | 13 |
+| non surgical weight loss options | 10 | 13 |
+| who can prescribe ozempic for weight loss | 10 | 29 |
+
+### Semantic Terms to Include
+The following LSI/semantic terms should be woven naturally into the copy. These are not keyword-stuffing targets — they are terms that signal topical depth to Google and should only appear where they fit the prose:
+
+GLP-1 medication, semaglutide, Ozempic, Wegovy, Saxenda (liraglutide), Mounjaro, appetite suppression, gut hormone, slows stomach emptying, very-low-calorie diet (VLCD), Optifast meal replacement, endoscopic sleeve gastroplasty (ESG), accredited practising dietitian, medical weight management, BMI 27-35, PBS-listed, Medicare rebate, GP referral, type 2 diabetes, blood sugar control, muscle preservation, supervised weight loss program
+
+### SERP Landscape (AU)
+The SERP is dominated almost entirely by Perth/Australian bariatric-practice service pages — Obesity Surgery WA (the target/incumbent at #1), Aurora Bariatrics, Evolve Bariatrics, Dr Kevin Dolan, Perth Weight Loss Surgery, BMI Clinic. These are commercial-informational clinic pages, not blog articles or hospital pages. Domain Rating is low across the board (DR 8-26), so this is a winnable, low-difficulty SERP (KD 14). Google also surfaces a strong People-Also-Ask cluster: 'best non-surgical weight loss treatment', 'best weight loss without surgery', 'Can I lose 10kg in 2 months with Ozempic', and 'Which is cheaper, Mounjaro or Wegovy in Australia' — signalling heavy informational/comparison and cost intent layered on the commercial query. Competing pages lean on naming GLP-1 drugs (Dr Kevin Dolan's title explicitly uses 'Ozempic & Wegovy') and listing non-surgical options.
+
+Top 5 ranking pages:
+| # | Domain | Page Title |
+|---|---|---|
+| 1 | obesitysurgerywa.com.au | Non-surgical weight loss treatment in Perth - Obesity Surgery WA |
+| 2 | aurorabariatrics.com.au | Non-Surgical Weight Loss Options |
+| 3 | evolvebariatrics.com.au | Non-Surgical Treatments Perth \| Obesity Perth |
+| 4 | drkevindolan.com.au | Non-Surgical Weight Loss in Perth \| Ozempic & Wegovy |
+| 5 | perthweightlosssurgery.com.au | Bariatric Surgeon Dr Siva Gounder: Weight Loss Surgery Perth |
+
+### Content Gap Opportunity
+The opportunity is strong and the target page already ranks #1, so this brief should defend and deepen that position. Gaps competitors leave: (1) No competing page directly answers the PAA-level cost questions — 'is it PBS-subsidised vs private script', and the Mounjaro/Wegovy price comparison — so the cost paragraph and PBS FAQ are a genuine differentiator; weave Mounjaro in as a recognised brand even though the practice may not lead with it. (2) Competitors present non-surgical options as a lead-in to surgery; none reframe it as a respected standalone specialist pathway — the brief's anti-'consolation prize' angle is a real positioning gap. (3) ESG/endoscopic sleeve gastroplasty as a 'middle option' is rarely explained clearly on Perth SERP pages — owning that explanation captures the bridge-between-medication-and-surgery searcher. (4) PAA shows users want realistic outcome/timeframe expectations ('10kg in 2 months') — the outcomes note (10-15% clinical average, results vary) directly addresses this while staying AHPRA/TGA-compliant where competitors over-promise. (5) 'weight loss doctor perth' (KD 4) and 'weight loss doctors' (KD 6) are very low-difficulty adjacent terms worth working into copy/H2s to widen capture beyond the head term.
+
+### Recommended Word Count
+1,000–1,300 words (matches brief; aligns with mid-DR clinic competitors Dr Kevin Dolan and Evolve Bariatrics which run ~900–1,400w service pages)
 
 ---
 

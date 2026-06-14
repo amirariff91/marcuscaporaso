@@ -2,10 +2,55 @@
 **URL:** /revision-bariatric-surgery
 **Primary keyword:** revision bariatric surgery perth
 **Search intent:** informational / commercial
-**Target word count:** 1,000–1,300 words
+**Target word count:** 1,100–1,400 words (brief targets 1,000–1,300; AU competitor clinic/surgeon pages that rank — Aurora Bariatrics, Adelaide Bariatric Centre, Dr Govind Krishna, Upper GI West Perth — sit in the 1,000–1,600 range, so aim toward the upper end of the brief to match depth while staying scannable)
 
 ## Page purpose
 This page serves Perth adults whose first weight-loss surgery has not worked out — whether through weight regain, severe reflux, or a failing band. It needs to remove shame, explain why revision is needed and how it differs from a first procedure, and establish that this practice has the experience and honesty to handle a complex second operation.
+
+---
+
+## Keyword Intelligence
+
+### Primary Keyword
+- Keyword: revision bariatric surgery perth
+- AU Monthly Volume: 100
+- Keyword Difficulty: 0/100
+- CPC (AU): ~$1
+
+### Secondary Keywords (target naturally in body copy)
+| Keyword | AU Vol/mo | KD |
+|---|---|---|
+| revision weight loss surgery | 40 | 0 |
+| gastric bypass revision | 30 | 0 |
+| sleeve to bypass revision | 20 | 0 |
+| gastric sleeve to bypass | 20 | 6 |
+| lap band removal | 150 | 0 |
+| gastric sleeve perth | 150 | 7 |
+| weight loss surgery perth | 250 | 45 |
+| bariatric surgery perth | 150 | 52 |
+
+### Semantic Terms to Include
+These are LSI/semantic terms the writer must weave naturally into the copy. They are not keyword-stuff targets — they are signals of topical depth to Google:
+
+sleeve gastrectomy, gastric bypass (Roux-en-Y), laparoscopic / keyhole surgery, weight regain, gastro-oesophageal reflux (GORD), band slippage and erosion, scar tissue and altered anatomy, anastomotic leak, BMI, endoscopy / gastroscopy, operation report and imaging, Medicare rebate and MBS item number, St John of God Murdoch and Subiaco, GP referral, dietitian and post-operative follow-up, type 2 diabetes, hypertension and sleep apnoea
+
+### SERP Landscape (AU)
+The AU SERP is dominated almost entirely by surgeon- and clinic-owned procedure pages (Aurora Bariatrics, Adelaide Bariatric Centre, Sydney Bariatric Clinic, Gold Coast Weight Loss, Dr Govind Krishna, Dr Scott Whiting, Dr Lepage, Hunter Weight Loss, Upper GI West) plus private hospital service pages (Healthscope, Norwest Private). A handful of large US informational/authority pages also appear (Cleveland Clinic, Penn Medicine, Loyola Medicine) competing on the head term for definitional/"who qualifies" intent. There are no dedicated cost calculators and only one YouTube video (Endoscopic Gastric Revision). Intent is mixed commercial + informational: searchers want to know what revision is, whether they qualify, and to find a surgeon who handles complex second operations. Pages are structured around procedure types (sleeve-to-bypass, band conversion, bypass revision), candidacy/eligibility, the assessment process, and risk.
+
+Top 5 ranking pages:
+| # | Domain | Page Title |
+|---|---|---|
+| 1 | melbourneweightloss.com.au | Revision Weight Loss Surgery Melbourne \| Bariatric Surgeons |
+| 2 | aurorabariatrics.com.au | Bariatric Revision Surgery Options |
+| 3 | adelaidebariatriccentre.com.au | Revisional surgery - Adelaide Bariatric Centre |
+| 4 | drgovindkrishna.com.au | Revision Weight Loss Surgery Sydney - Dr Govind Krishna |
+| 5 | my.clevelandclinic.org | Gastric Bypass Revision: Who Qualifies & Surgery Options |
+
+### Content Gap Opportunity
+Clear opportunities for a Perth-specific page: (1) Geographic gap — only Upper GI West (uppergiwest.com.au, position 10) directly targets "Perth/WA"; almost all top-ranked AU pages are Sydney, Melbourne, Adelaide, Gold Coast or Brisbane, so a page naming SJOG Murdoch & Subiaco and Perth has strong local-relevance whitespace. (2) Honesty/emotional gap — competitor pages lead with procedure mechanics and benefits; very few address the shame and "I feel like a failure" emotion or explicitly state "revision is not right for everyone and we'll tell you honestly," which is the brief's core differentiator. (3) "Why your first surgery didn't work" framing — most pages jump to options without foregrounding the diagnostic "work out what went wrong first" step; owning that assessment-led narrative is a gap. (4) Cost/funding transparency — no AU result offers a clear explanation of Medicare contribution, private health fund cover, and super early-release for revision specifically; an itemised-estimate explanation fills this. (5) Risk transparency — strong differentiation available by being unusually direct about higher complication/leak risk and longer recovery, which most commercially-driven competitor pages soft-pedal. Note: AHPRA/TGA compliance means no testimonials, before/after or guaranteed-outcome language — competitors that overclaim leave room for a trust-led, compliant page to win.
+
+### Recommended Word Count
+1,100–1,400 words (brief targets 1,000–1,300; AU competitor clinic/surgeon pages that rank — Aurora Bariatrics, Adelaide Bariatric Centre, Dr Govind Krishna, Upper GI West Perth — sit in the 1,000–1,600 range, so aim toward the upper end of the brief to match depth while staying scannable).
 
 ---
 

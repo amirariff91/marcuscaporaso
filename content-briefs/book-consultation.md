@@ -3,13 +3,69 @@
 **URL:** /book-consultation
 **Primary keyword:** bariatric consultation perth
 **Search intent:** Transactional / navigational
-**Target word count:** 900–1,100 words
+**Target word count:** 900–1,100 words (matches brief; SERP is dominated by short clinic/surgeon homepages of 800–1,200w, so a focused, reassuring booking page in this range is competitive without padding)
 
 ---
 
 ## Page purpose
 
 This is the page a reader lands on when they are close to reaching out but still hesitating. Its job is to remove fear and friction from booking — reassuring the reader that a consultation is just a conversation, carries no obligation, and is the right starting point regardless of how certain or uncertain they feel. It should make calling or booking online feel like the obvious, low-stakes next step.
+
+---
+
+## Keyword Intelligence
+
+### Primary Keyword
+
+- Keyword: bariatric consultation perth
+- AU Monthly Volume: 0
+- Keyword Difficulty: 0/100
+- CPC (AU): ~$1
+
+> Note: The exact phrase "bariatric consultation perth" has no measurable Ahrefs volume. This page is not expected to rank on the head term alone — it should rank by capturing the broader, higher-volume "weight loss surgery perth / gastric sleeve perth / cost" cluster (secondary keywords below) while serving the bottom-funnel booking intent that those searchers ultimately convert on.
+
+### Secondary Keywords (target naturally in body copy)
+
+| Keyword | AU Vol/mo | KD |
+|---|---|---|
+| weight loss surgery perth | 250 | 45 |
+| bariatric surgery perth | 150 | 52 |
+| gastric sleeve perth | 150 | 7 |
+| gastric sleeve cost perth | 200 | 0 |
+| gastric bypass perth | 200 | 42 |
+| bariatric surgeon perth | 70 | 47 |
+| weight loss surgery cost perth | 50 | 0 |
+| weight loss clinic perth | 100 | 2 |
+
+Note the low-KD, high-intent opportunities: "gastric sleeve perth" (KD 7), "gastric sleeve cost perth" (KD 0), "weight loss surgery cost perth" (KD 0), and "weight loss clinic perth" (KD 2) are the most winnable terms and align directly with the cost/Medicare sub-intent this page should answer. Weave them in naturally — especially in the cost paragraph, FAQs, and "who should book" sections — without keyword-stuffing.
+
+### Semantic Terms to Include
+
+Naturally weave these LSI/semantic terms into the copy. These are not keyword-stuff targets — they signal topical depth to Google:
+
+orientation consultation, GP referral, Medicare rebate, private health insurance, no obligation, Booragoon clinic, Mandurah clinic, weight loss surgery options, gastric sleeve, gastric bypass, gastric band, BMI eligibility, recovery and time off work, out-of-pocket cost, bariatric team, first appointment
+
+### SERP Landscape (AU)
+
+The "bariatric surgery perth" SERP is dominated almost entirely by individual Perth bariatric clinic and surgeon homepages (Perth Surgical & Bariatrics, Obesity Surgery WA, Aurora Bariatrics / Dr Ruth Blackham, Perth Weight Loss Surgery / Dr Siva Gounder, Mercy Bariatrics, Advance Surgical, Evolve Bariatrics, Veritas Centre). These are commercial/transactional landing pages, not informational articles. Domain Ratings are low across the board (mostly DR 1–14, with Mercy at 31 and Evolve at 26 the strongest), so the competitive bar is modest. Google injects a People Also Ask block at position 4 with cost, Medicare coverage, disqualification, and "30/30 rule" questions, signalling strong informational sub-intent around cost and Medicare that a booking page should answer via FAQs. No dedicated "consultation booking" page currently ranks — competitors fold booking into generic homepages.
+
+Top 5 ranking pages:
+
+| # | Domain | Page Title |
+|---|---|---|
+| 1 | perthsurgicalbariatrics.com.au | Perth Surgical & Bariatrics |
+| 2 | obesitysurgerywa.com.au | Bariatric surgery Perth \| Weight loss treatment |
+| 3 | aurorabariatrics.com.au | Perth Bariatric Surgery \| Dr Ruth Blackham \| Aurora |
+| 5 | perthweightlosssurgery.com.au | Bariatric Surgeon Dr Siva Gounder: Weight Loss Surgery Perth |
+| 7 | mercybariatrics.com.au | Bariatric Surgery Perth \| Gastric Sleeve \| Weight Loss Surgery |
+
+### Content Gap Opportunity
+
+No competitor ranks a purpose-built "book a consultation" page — they all use generic surgeon/clinic homepages, so there is a clear gap for a dedicated, conversion-focused booking page that owns the "what happens at a consultation / is booking a commitment" intent. The PAA block proves searchers want cost and Medicare answers up front, yet most competing homepages bury or omit pricing; addressing "Medicare rebate via GP referral" and "no minimum BMI to book" directly is a differentiator. Biggest opportunities: (1) explicitly reassure that booking is not committing to surgery and a referral is recommended-but-not-required (no competitor leads with this), (2) Perth-specific dual-location convenience (Booragoon & Mandurah) plus a prominent phone number for high-intent callers, (3) an FAQ section capturing the PAA queries (cost, Medicare, what to bring, pressure on the day). Avoid testimonials/before-after/guaranteed-outcome language per AHPRA/TGA. The exact phrase "bariatric consultation perth" has no measurable Ahrefs volume, so the page should rank by capturing the broader "weight loss surgery perth / gastric sleeve perth / cost" cluster while serving the bottom-funnel booking intent.
+
+### Recommended Word Count
+
+900–1,100 words (matches brief; SERP is dominated by short clinic/surgeon homepages of 800–1,200w, so a focused, reassuring booking page in this range is competitive without padding).
 
 ---
 

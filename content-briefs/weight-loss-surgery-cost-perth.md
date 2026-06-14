@@ -2,10 +2,60 @@
 **URL:** /weight-loss-surgery-cost-perth
 **Primary keyword:** weight loss surgery perth cost
 **Search intent:** informational / commercial (early-stage cost research across procedure types)
-**Target word count:** 1,100–1,500 words
+**Target word count:** 1,100–1,500 words (matches brief; SERP fee/cost pages from Perth clinics run roughly 800–1,500w, but a thorough all-procedure hub page that covers Medicare, super, insurance waiting periods and itemised fee components warrants the upper end of this range to out-cover thin competitor fee pages)
 
 ## Page purpose
 This is the broadest cost page on the site — it covers all bariatric procedures rather than one specific operation. Readers here are at an earlier stage of research, comparing procedures and trying to understand the overall cost landscape before narrowing down. The page's job is to give real, honest numbers, explain what shapes them, and convert curiosity into a consultation enquiry by demonstrating that the practice will give a transparent written estimate. It also serves as a hub that contextualises the procedure-specific cost pages.
+
+---
+
+## Keyword Intelligence
+
+### Primary Keyword
+- **Keyword:** weight loss surgery perth cost
+- **AU Monthly Volume:** 90
+- **Keyword Difficulty:** 0/100
+- **CPC (AU):** ~$0.9
+
+### Secondary Keywords (target naturally in body copy)
+| Keyword | AU Vol/mo | KD |
+|---|---|---|
+| gastric sleeve surgery cost melbourne | 80 | 0 |
+| gastric band surgery cost australia | 60 | 0 |
+| cost of bariatric surgery australia | 40 | 0 |
+| how much does gastric bypass cost | 40 | 0 |
+| cost of gastric sleeve australia | 30 | 0 |
+| weight loss surgery australia cost | 30 | 0 |
+| using super for weight loss surgery perth | 30 | 0 |
+| bariatric surgery costs | 30 | 0 |
+
+### Semantic Terms to Include
+These are LSI/semantic terms the writer must naturally weave into the copy. They are not keyword-stuff targets — they are terms that signal topical depth to Google:
+
+gastric sleeve, gastric bypass, gastric banding, sleeve gastrectomy, bariatric surgery, out-of-pocket cost, MBS item 31575, MBS item 31572, Medicare rebate, private health insurance, 12-month waiting period, gold-tier hospital cover, surgeon's fee, anaesthetist fee, hospital fee, compassionate release of super, BMI 35, payment plan, written estimate
+
+### SERP Landscape (AU)
+The SERP is dominated by Perth bariatric clinic cost/fee pages — commercial transactional intent. Top organic results are dedicated /fees, /cost or /program-costs pages from local surgical practices: Obesity Surgery WA (obesitysurgerywa.com.au/fees), Perth Weight Loss Surgery (/cost), Dr Kevin Dolan (gastric-sleeve-costs), Mercy Bariatrics (costs-finance), and Advance Surgical (/pricing). Domain Rating is low across the board (most DR 2–15, highest is Mercy at DR 31), confirming KD 0 and a very winnable SERP. Google surfaces a People Also Ask block (Medicare coverage, disqualifiers, the "30 rule", 10-years-after questions) plus two Reddit threads ranking on financing/super — signalling that informational cost-mechanics and funding questions sit alongside the commercial fee pages. A national informational guide (Healthy Weight Australia "2025 Guide") also ranks, showing room for an educational angle.
+
+Top 5 ranking pages:
+| # | Domain | Page Title |
+|---|---|---|
+| 1 | obesitysurgerywa.com.au | Weight Loss Centre Murdoch & Perth - Fees Obesity Surgery WA |
+| 2 | drkevindolan.com.au | Gastric Sleeve Costs Perth \| Dr Kevin Dolan |
+| 3 | perthweightlosssurgery.com.au | Weight Loss Surgery Cost \| Gastric Sleeve Cost Perth |
+| 6 | mercybariatrics.com.au | Gastric Sleeve Cost Perth \| Public & Private \| Mercy Bariatrics |
+| 8 | advancesurgical.com.au | Cost of bariatric surgery Perth \| Fees Advance Surgical |
+
+### Content Gap Opportunity
+Competing Perth fee pages tend to be procedure-specific (mostly gastric sleeve) and present a single price band without explaining the moving parts. Clear gaps to exploit:
+1. **Own the comparison layer** — no top result is a true all-procedure cost HUB comparing sleeve vs bypass vs band out-of-pocket ranges side by side.
+2. **Demystify the item numbers** — item numbers 31575/31572 and the distinction between a "weight management" policy category and the specific MBS items are rarely spelled out; addressing this directly captures the insurance-confusion searcher.
+3. **Answer the misunderstandings honestly** — the 12-month waiting period as a cost-saving decision, and Medicare NOT covering the hospital admission, are common misunderstandings surfaced in PAA and Reddit but poorly answered by clinic pages; direct, honest coverage wins featured-snippet and AI-citation potential.
+4. **Cover super on compassionate grounds** — real demand exists (Reddit thread ranks p12, plus the "using super for weight loss surgery perth" keyword) yet no clinic fee page addresses it; a genuine differentiator.
+5. **Lead with a written, itemised estimate** — a trust/transparency angle absent from competitors who lead with a ballpark figure.
+
+### Recommended Word Count
+1,100–1,500 words (matches brief; SERP fee/cost pages from Perth clinics run roughly 800–1,500w, but a thorough all-procedure hub page that covers Medicare, super, insurance waiting periods and itemised fee components warrants the upper end of this range to out-cover thin competitor fee pages).
 
 ---
 

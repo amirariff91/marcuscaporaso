@@ -3,13 +3,72 @@
 **URL:** /weight-loss-medication
 **Primary keyword:** weight loss medication perth
 **Search intent:** Informational / commercial
-**Target word count:** 1,100–1,400 words
+**Target word count:** 1,100–1,400 words (matches the brief; SERP-leading clinic pages such as Dr Kevin Dolan and Perth Weight Loss Surgery sit in the 1,000–1,500w range, and the brief's section depth — 6-step program, 5 benefits, cost paragraph, 9 FAQs — naturally fills this band without padding)
 
 ---
 
 ## Page purpose
 
 This page serves Perth adults who are researching medically supervised weight loss medication — primarily GLP-1 drugs — and need to understand what the treatment involves, whether they qualify, and why a specialist-led program is safer and more effective than a script-only service. It should move a hesitant, biology-aware reader toward booking a consultation.
+
+---
+
+## Keyword Intelligence
+
+### Primary Keyword
+
+- **Keyword:** weight loss medication perth
+- **AU Monthly Volume:** 20
+- **Keyword Difficulty:** 5/100
+- **CPC (AU):** ~$0.8
+
+### Secondary Keywords (target naturally in body copy)
+
+| Keyword | AU Vol/mo | KD |
+|---|---|---|
+| weight loss injections perth | 150 | 0 |
+| ozempic perth | 300 | 21 |
+| mounjaro perth | 150 | 5 |
+| weight loss clinic perth | 100 | 2 |
+| non surgical weight loss perth | 30 | 14 |
+| weight loss medication australia | 2,700 | 24 |
+| best weight loss drug australia | 90 | 22 |
+| mounjaro vs wegovy | 1,900 | 36 |
+
+### Semantic Terms to Include
+
+These are not keyword-stuff targets — they are LSI/semantic terms the writer must naturally weave into the copy to signal topical depth to Google:
+
+GLP-1 medication, semaglutide, tirzepatide, phentermine, appetite suppressant, gut hormone, chronic weight management, TGA-approved, Medicare rebate, GP referral, BMI 30, type 2 diabetes, blood sugar control, muscle mass, out-of-pocket cost, non-surgical weight loss, dietitian support.
+
+### SERP Landscape (AU)
+
+Perth bariatric/weight-loss clinic service pages dominate (informational-commercial hybrid), led by brand-name-heavy "Non-Surgical Weight Loss" and "Weight Loss Injections Perth" landing pages with low domain ratings (DR 0–26). A strong People Also Ask block and two Reddit r/perth GP-access threads show heavy informational/access intent layered on the commercial listings; only one high-authority informational page (mydr.com.au, DR70) ranks, and only at position 12 — so a genuinely educational specialist-led clinic page can win this low-difficulty SERP.
+
+Top 5 ranking pages:
+
+| # | Domain | Page Title |
+|---|---|---|
+| 1 | drkevindolan.com.au | Non-Surgical Weight Loss in Perth \| Ozempic & Wegovy |
+| 2 | aurorabariatrics.com.au | Non-Surgical Weight Loss Options - Aurora Bariatrics |
+| 3 | evolvebariatrics.com.au | Non-Surgical Treatments Perth \| Obesity Perth - Evolve Bariatrics |
+| 4 | perthweightlosssurgery.com.au | Weight Loss Injections Perth \| Includes Ozempic & Mounjaro |
+| 5 | perthweightclinic.com.au | Perth Weight Clinic \| Medical Weight Loss \| Butler WA, Australia |
+
+### Content Gap Opportunity
+
+Clear opportunities OSWA can own that competitors don't:
+
+1. **Specialist-led differentiation** — every ranking clinic page lists the same drug names but the brief's "physicians + dietitians, not a script-and-send service" angle is largely absent from competitors; lean into it.
+2. **Honest cost transparency** — PAA shows users asking "which is cheaper, Mounjaro or Wegovy" and "how much is Wegovy per month" yet no Perth page answers cost/Medicare/PBS clearly; the cost paragraph addressing out-of-pocket reality, Medicare rebates on consults, and no PBS subsidy for weight-loss use directly fills this gap.
+3. **GP access friction** — two Reddit threads beg for a GP who will prescribe; explicitly explaining the GP-referral pathway and that OSW reviews the full health picture addresses a real, unmet need.
+4. **Duromine/phentermine** — no competitor covers the older appetite-suppressant option, so including it captures a differentiated long-tail.
+5. **Honest side-effect and weight-regain discussion** is missing from the marketing-led competitors; the brief's candid risk section will build the E-E-A-T trust signal Google rewards.
+6. **National volume capture** — the national "weight loss medication australia" (2,700) and "mounjaro vs wegovy" (1,900) volumes mean weaving clear, factual drug comparison and Australian availability/TGA-status copy can pull in far more traffic than the tiny local head term alone — without compromising the Perth commercial intent.
+
+### Recommended Word Count
+
+1,100–1,400 words (matches the brief; SERP-leading clinic pages such as Dr Kevin Dolan and Perth Weight Loss Surgery sit in the 1,000–1,500w range, and the brief's section depth — 6-step program, 5 benefits, cost paragraph, 9 FAQs — naturally fills this band without padding).
 
 ---
 

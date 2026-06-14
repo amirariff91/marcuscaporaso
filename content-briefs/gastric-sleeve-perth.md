@@ -2,10 +2,55 @@
 **URL:** /gastric-sleeve-perth
 **Primary keyword:** gastric sleeve perth
 **Search intent:** commercial / informational
-**Target word count:** 1,200–1,500 words
+**Target word count:** 1,200–1,500 words (matches brief; competing clinic procedure pages at positions 1-6 run roughly 1,000-1,800 words. obesitysurgerywa at p2 is a direct procedure page; to outrank it and the cost-focused pages, target the upper end ~1,400-1,500 with strong cost + Medicare + sleeve-vs-bypass coverage)
 
 ## Page purpose
 This is the primary procedure page for the most commonly performed weight loss surgery in Australia. It should serve a Perth adult who is seriously researching the gastric sleeve — they want honest, plain-language information to decide whether to book a consultation.
+
+---
+
+## Keyword Intelligence
+
+### Primary Keyword
+- Keyword: gastric sleeve perth
+- AU Monthly Volume: 150
+- Keyword Difficulty: 7/100
+- CPC (AU): ~$1.4
+
+### Secondary Keywords (target naturally in body copy)
+| Keyword | AU Vol/mo | KD |
+|---|---|---|
+| gastric sleeve cost perth | 200 | 0 |
+| gastric sleeve perth cost | 100 | 0 |
+| weight loss surgery perth | 250 | 45 |
+| bariatric surgery perth | 150 | 52 |
+| gastric sleeve vs bypass | 350 | 2 |
+| gastric sleeve surgery cost australia | 200 | 0 |
+| private health insurance gastric sleeve | 200 | 0 |
+| gastric sleeve diet | 150 | 4 |
+
+### Semantic Terms to Include
+Weave the following LSI/semantic terms naturally into the copy. These are not keyword-stuff targets — they are terms that signal topical depth to Google:
+
+sleeve gastrectomy, laparoscopic surgery, keyhole surgery, ghrelin (hunger hormone), staple line, gastric bypass, excess weight loss, BMI 35, type 2 diabetes, sleep apnoea, Medicare item 31575, vitamin B12 and iron deficiency, staple line leak, St John of God Murdoch, pre-op liver-shrinking diet, dietitian follow-up
+
+### SERP Landscape (AU)
+SERP is dominated by Perth bariatric clinic/surgeon pages — a mix of homepages (perthbariatricsurgery, aurorabariatrics, perthsurgicalbariatrics, advancesurgical) and dedicated gastric-sleeve procedure pages (obesitysurgerywa at p2, completesurgical at p9, aurorabariatrics surgery page at p10). Domain Rating is low across the board (DR 3-26), so this is a winnable, low-authority local SERP — KD 7 confirms. Notably, a People Also Ask block sits at position 3 with four commercial/informational questions: "How much does a gastric sleeve cost in Perth?", "Is a gastric sleeve covered by Medicare?", "Is Ozempic better than gastric sleeve?", and "What is the minimum weight for gastric sleeve surgery?" — signalling strong cost, Medicare, GLP-1 comparison and eligibility intent. Cost-focused pages rank well (drkevindolan "Gastric Sleeve Costs Perth" p5, newme cost blog p11), confirming price is a primary user concern.
+
+Top 5 ranking pages:
+| # | Domain | Page Title |
+|---|---|---|
+| 1 | perthbariatricsurgery.com.au | Perth Bariatric Surgery |
+| 2 | obesitysurgerywa.com.au | Gastric sleeve Perth \| Bariatric surgeon Murdoch |
+| 4 | aurorabariatrics.com.au | Perth Bariatric Surgery \| Dr Ruth Blackham \| Aurora |
+| 5 | drkevindolan.com.au | Gastric Sleeve Costs Perth |
+| 6 | perthsurgicalbariatrics.com.au | Perth Surgical & Bariatrics \| Top-Rated Weight Loss Surgeons |
+
+### Content Gap Opportunity
+The target page is already well-specced for this SERP, but the data surfaces concrete edges: (1) The PAA block shows Google wants the page to directly answer cost-in-Perth, Medicare coverage, Ozempic-vs-sleeve, and minimum-weight/BMI questions — the brief covers all except an Ozempic/GLP-1 comparison. Adding a brief, compliant "how the sleeve differs from medications like Ozempic" angle (without disparaging or guaranteeing) would capture the "Is Ozempic better than gastric sleeve?" intent that no top result owns cleanly. (2) Most ranking competitors are thin clinic homepages, not depth procedure pages — obesitysurgerywa (the OSWA brand itself, p2) is the only true procedure page in the top 3, so a more thorough, plain-language, AHPRA-compliant page can leapfrog the homepages. (3) Cost intent is huge (gastric sleeve cost perth 200/mo, plus a cost PAA), yet AHPRA discourages quoting figures — the gap is owning cost *transparency* (Medicare item 31575, gold-tier private cover, early-access super, components breakdown) without a dollar figure, beating cost pages that just list prices. (4) No competitor leads with the eligibility/minimum-weight question despite a dedicated PAA — the Eligibility section should explicitly answer "minimum weight / BMI 35 (or 30-35 with comorbidities)". (5) Patient-story / before-after intent is high in matching terms but is AHPRA-restricted — do NOT pursue testimonials; instead satisfy the underlying "what will recovery/results really be like" curiosity with the honest week-by-week recovery and qualified clinical-average results sections already in the brief.
+
+### Recommended Word Count
+1,200–1,500 words (matches brief; competing clinic procedure pages at positions 1-6 run roughly 1,000-1,800 words. obesitysurgerywa at p2 is a direct procedure page; to outrank it and the cost-focused pages, target the upper end ~1,400-1,500 with strong cost + Medicare + sleeve-vs-bypass coverage)
 
 ---
 

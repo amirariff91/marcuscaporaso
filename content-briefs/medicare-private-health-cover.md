@@ -2,10 +2,64 @@
 **URL:** /medicare-private-health-cover
 **Primary keyword:** medicare weight loss surgery australia
 **Search intent:** Informational (trying to understand a confusing system before making a financial decision)
-**Target word count:** 1,100–1,400 words
+**Target word count:** 1,100–1,400 words (matches brief target and the top-ranking AU clinic info/FAQ pages, which run roughly 900–1,400 words; this length is competitive without over-padding an informational funding page)
 
 ## Page purpose
 This page demystifies the two-system funding structure (Medicare + private health) for patients who are ready to consider surgery but feel confused or anxious about what they will actually have to pay. It should turn complexity into clarity and direct readers toward OSWA's financial coordinator as the logical next step.
+
+---
+
+## Keyword Intelligence
+
+### Primary Keyword
+- **Keyword:** medicare weight loss surgery australia
+- **AU Monthly Volume:** 0
+- **Keyword Difficulty:** 0/100
+- **CPC (AU):** ~$1.4
+
+> Note: the exact primary phrase has 0 measurable AU volume. Do NOT write to a single exact-match phrase. Target the **cluster** instead — capture the higher-volume cost and funding variants through the cost paragraph and FAQs (see secondary keywords below).
+
+### Secondary Keywords (target naturally in body copy)
+
+| Keyword | AU Vol/mo | KD |
+|---|---|---|
+| weight loss surgery cost | 350 | 0 |
+| bariatric surgery cost | 300 | 0 |
+| private health insurance weight loss surgery | 150 | 0 |
+| gastric sleeve cost australia | 80 | 0 |
+| gastric bypass cost australia | 60 | 0 |
+| how much does weight loss surgery cost | 40 | 0 |
+| does medicare cover weight loss surgery | 30 | 0 |
+| medicare bariatric surgery | 10 | 1 |
+
+### Semantic Terms to Include
+Weave these LSI/semantic terms naturally into the copy. These are not keyword-stuff targets — they are terms that signal topical depth to Google:
+
+MBS item 31575, item 31572, sleeve gastrectomy, Roux-en-Y gastric bypass, gold tier hospital cover, 12-month waiting period, out-of-pocket gap, excess and copayment, Medicare Benefits Schedule, anaesthetist and assistant fees, GP referral, BMI 35, clinically severe obesity, pre-approval / fund approval, St John of God agreed rates, schedule fee rebate.
+
+### SERP Landscape (AU)
+Informational intent dominated by surgeon and bariatric-clinic info/FAQ pages (drphillockie.com.au, sydneybariatricclinic.com, melbournegastrosurgery.com.au, drlepage.com.au, medicalweightloss.com.au) — typically titled as a question ("Does Medicare cover weight loss surgery in Australia?", "Will Medicare cover my gastric sleeve?"). These are mostly low-DR clinic pages (DR 3–21) that win on topical relevance and exact-match question titles rather than authority. Interspersed are high-authority government/reference sources: Queensland Health bariatric surgery service (DR 82), the MBS item 31575 page on health.gov.au (DR 90), and US sources (Healthline, Medicare.gov, Aetna) that leak in because the phrase is generic. No cost calculators rank; the format that wins is a plain-language Q&A explainer that names item numbers and walks through Medicare vs private health.
+
+Top 5 ranking pages:
+
+| # | Domain | Page Title |
+|---|---|---|
+| 3 | medicalweightloss.com.au | Bariatric Surgery Costs & Support |
+| 4 | drphillockie.com.au | Weight Loss Surgery Covered by Medicare and Private Health Insurance |
+| 5 | health.qld.gov.au | Bariatric surgery service \| Queensland Health |
+| 6 | health.gov.au | Medicare Benefits Schedule – Item 31575 |
+| 7 | medicare.gov | Bariatric surgery coverage – Medicare |
+
+### Content Gap Opportunity
+Clear opening for OSWA:
+1. **Geo gap.** No ranking page is Perth/WA-specific — every AU clinic result is Sydney, Melbourne, Adelaide or Brisbane, and none mention St John of God Murdoch/Subiaco or WA-specific agreed-rate arrangements. A Perth-focused page can own this geo.
+2. **Two-system mental model.** Most competitors explain Medicare OR cost in isolation; few cleanly model the two-system interaction (Medicare for doctors, private cover for hospital, patient pays the gap) in one mental model — the brief's core angle.
+3. **Human financial coordinator.** None offer a human "financial coordinator" service that translates item numbers and puts figures in writing — a genuine differentiator and a trust/E-E-A-T signal absent from the SERP.
+4. **Weak AU competition.** US sources (Healthline, Medicare.gov, Aetna) ranking on an Australian query signal weak AU-specific competition — strong Australian grounding (MBS items 31569–31581, AU 12-month waiting period, gold-tier rules) will out-relevance them.
+5. **Cluster, not exact match.** The exact primary phrase has 0 measurable AU volume, so target the cluster — write the page to capture the higher-volume cost/funding variants ("weight loss surgery cost" 350, "private health insurance weight loss surgery" 150, "bariatric surgery cost" 300, "gastric sleeve cost australia" 80) via the cost paragraph and FAQs, not a single exact-match phrase.
+
+### Recommended Word Count
+1,100–1,400 words (matches brief target and the top-ranking AU clinic info/FAQ pages, which run roughly 900–1,400 words; this length is competitive without over-padding an informational funding page).
 
 ---
 

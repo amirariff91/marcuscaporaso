@@ -2,10 +2,55 @@
 **URL:** /gastric-sleeve-cost-perth
 **Primary keyword:** gastric sleeve cost perth
 **Search intent:** informational / commercial (researching cost before booking)
-**Target word count:** 900–1,200 words
+**Target word count:** 900–1,200 words (matches brief; aligns with the clinic/surgeon cost pages that dominate the SERP — Mercy Bariatrics, Dr Kevin Dolan, Obesity Surgery WA all run ~800–1,300w itemised fee pages. Going to the upper 1,100–1,200 range allows full Medicare/private-cover/super coverage without bloat.)
 
 ## Page purpose
 This page answers the most common financial question a prospective sleeve patient asks. Its job is to demystify the fee structure — not to quote a price — and to position the practice as transparent and trustworthy by offering a written estimate. It reduces financial anxiety so that cost does not become the reason someone does not enquire.
+
+---
+
+## Keyword Intelligence
+
+### Primary Keyword
+- Keyword: gastric sleeve cost perth
+- AU Monthly Volume: 200
+- Keyword Difficulty: 0/100
+- CPC (AU): ~$0.8
+
+### Secondary Keywords (target naturally in body copy)
+| Keyword | AU Vol/mo | KD |
+|---|---|---|
+| gastric sleeve perth | 150 | 7 |
+| gastric sleeve perth cost | 100 | 7 |
+| gastric sleeve surgery perth | 70 | 27 |
+| gastric sleeve surgery perth wa | 40 | 5 |
+| gastric sleeve payment plan perth | 30 | 0 |
+| best gastric sleeve surgeon perth | 30 | 30 |
+| gastric sleeve surgery perth cost | 30 | 0 |
+| cost of gastric sleeve australia | 30 | 0 |
+
+### Semantic Terms to Include
+Comma-separated list of LSI/semantic terms the writer must naturally weave into the copy. These are not keyword-stuff targets — they are terms that signal topical depth to Google.
+
+sleeve gastrectomy, laparoscopic surgery, keyhole surgery, bariatric surgery, out-of-pocket gap, Medicare rebate, MBS item 31575, private health insurance, hospital cover tier, 12-month waiting period, anaesthetist fee, surgeon's fee, hospital facility fee, BMI eligibility, comorbidities, super release, St John of God Murdoch, excess weight loss, dietitian follow-up, GP referral
+
+### SERP Landscape (AU)
+The SERP is dominated by Perth/Australian bariatric clinic and surgeon cost pages — commercial-informational fee-breakdown pages rather than blog articles. Top ranked URLs: Dr Kevin Dolan (program-costs/gastric-sleeve-costs), Obesity Surgery WA (/fees and the gastric-sleeve-surgery-murdoch-perth service page), Mercy Bariatrics (costs-finance), plus informational guide content from Healthy Weight Australia ("Your 2025 Guide") and NewMe ("Understanding Gastric Sleeve Surgery Costs in Perth"). Notably weak domains rank (DRs of 7–31, traffic 18–457), so authority bar is low and KD is 0 — this is a winnable SERP on content quality alone. Google is also surfacing a YouTube video on super-release for weight-loss surgery and two Reddit threads (r/gastricsleeve "Experience in costs Australia", r/wls payment guide), signalling real informational intent around how to actually pay/fund the surgery.
+
+Top 5 ranking pages:
+| # | Domain | Page Title |
+|---|---|---|
+| 1 | drkevindolan.com.au | Gastric Sleeve Costs - Dr Kevin Dolan |
+| 2 | obesitysurgerywa.com.au | Weight Loss Centre Murdoch & Perth - Fees Obesity Surgery WA |
+| 3 | mercybariatrics.com.au | Gastric Sleeve Cost Perth \| Public & Private \| Mercy Bariatrics |
+| 4 | healthyweightaustralia.com.au | Gastric Sleeve Surgery Costs Australia \| Your 2025 Guide |
+| 5 | newme.com.au | Understanding Gastric Sleeve Surgery Costs in Perth |
+
+### Content Gap Opportunity
+Strong opportunity. (1) The two ranking Reddit threads and the YouTube super-release video reveal the dominant unmet intent is funding mechanics — how to actually pay (super release, payment plans, gap after rebates) — which most clinic fee pages cover thinly; the brief's dedicated super-release and payment-plan sections directly fill this and should be made prominent. (2) Competitor pages quote headline figures but rarely explain WHY two patients pay different amounts or break down the 4+ separate billing parties clearly — the brief's "no single price tag" + itemised written-estimate angle is a genuine differentiator. (3) Few competitors give honest, explicit out-of-pocket ranges split by insured ($2,000–$8,000) vs self-funded ($15,000–$30,000+); doing so transparently captures the cost-anxious searcher the Reddit threads represent. (4) Gap for like-for-like sleeve-vs-bypass fee/Medicare-item clarity (MBS 31575) — searchers conflate procedures; the comparison callout addresses this. (5) Ranking domains are low-DR (mostly 7–14), so a well-structured, FAQ-rich, schema-eligible page from a credible St John of God-affiliated practice can realistically out-rank them. Weave in the secondary "payment plan perth" (KD 0) and "surgery perth wa" terms which competitors underserve.
+
+### Recommended Word Count
+900–1,200 words (matches brief; aligns with the clinic/surgeon cost pages that dominate the SERP — Mercy Bariatrics, Dr Kevin Dolan, Obesity Surgery WA all run ~800–1,300w itemised fee pages. Going to the upper 1,100–1,200 range allows full Medicare/private-cover/super coverage without bloat.)
 
 ---
 

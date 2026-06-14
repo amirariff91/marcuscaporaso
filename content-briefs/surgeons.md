@@ -2,10 +2,55 @@
 **URL:** /surgeons
 **Primary keyword:** best bariatric surgeon perth
 **Search intent:** commercial (researching who to trust before booking)
-**Target word count:** 1,000–1,300 words
+**Target word count:** 1,000–1,300 words (matches brief target; SERP competitors are single-surgeon homepages with shallow body copy, so depth of credentials and team detail wins over raw length)
 
 ## Page purpose
 This page helps prospective patients evaluate the surgical team before they book. It must build trust and credibility through credentials, personal story and team depth — not through promises about outcomes. The reader is deciding whether this team is worth calling.
+
+---
+
+## Keyword Intelligence
+
+### Primary Keyword
+- Keyword: best bariatric surgeon perth
+- AU Monthly Volume: 150
+- Keyword Difficulty: 40/100
+- CPC (AU): ~$0.9
+
+### Secondary Keywords (target naturally in body copy)
+| Keyword | AU Vol/mo | KD |
+|---|---|---|
+| bariatric surgeon perth | 70 | 47 |
+| gastric bypass surgery perth | 200 | 42 |
+| gastric bypass perth | 200 | 42 |
+| weight loss clinic perth | 100 | 2 |
+| weight loss doctor perth | 30 | 4 |
+| gastric sleeve surgery | 2400 | 33 |
+| gastric band | 500 | 8 |
+| best bariatric surgeon in perth | 0 | 0 |
+
+### Semantic Terms to Include
+Comma-separated list of LSI/semantic terms the writer must naturally weave into the copy. These are not keyword-stuff targets — they are terms that signal topical depth to Google.
+
+FRACS, Royal Australasian College of Surgeons, laparoscopic, keyhole surgery, gastric sleeve, sleeve gastrectomy, gastric bypass, revisional surgery, upper GI surgeon, St John of God, Bariatric Surgery Registry, Medicare item number, BMI, private health cover, GP referral, dietitian, accredited hospital, excess weight loss, MBBS, aftercare
+
+### SERP Landscape (AU)
+The entire top-10 is occupied by individual Perth bariatric surgeon practice/clinic homepages (Dr Kiyingi, Dr Rao, Dr Gounder, Dr Dolan, Dr Ruth Blackham/Aurora, Dr Teo/Evolve, Advance Surgical, Veritas, Complete Surgical). No editorial "best of" listicles or third-party comparison articles rank — this is a navigational/commercial cluster where Google rewards individual practice pages with strong local relevance and credibility signals. Domain ratings are low across the board (DR 2–26), so the field is winnable on relevance and on-page trust signals rather than backlink authority. Google also injects a People Also Ask block covering cost ('How much is bariatric surgery in Perth?'), success rate ('Which bariatric surgery has the best success rate?'), and 'who is best' framing — these should be answered in FAQ schema.
+
+Top 5 ranking pages:
+| # | Domain | Page Title |
+|---|---|---|
+| 1 | perthbariatricsurgery.com.au | Perth Bariatric Surgery - Dr Andrew Kiyingi |
+| 1 | perthsurgicalbariatrics.com.au | Dr. Ravi Rao, Perth Surgical & Bariatrics |
+| 1 | perthweightlosssurgery.com.au | Dr Siva Gounder - Bariatric Surgeon \| Perth Weight Loss & Surgery |
+| 2 | drkevindolan.com.au | Dr Kevin Dolan: Weight Loss Surgery Perth \| Bariatric Surgeon |
+| 4 | aurorabariatrics.com.au | Perth Bariatric Surgery \| Dr Ruth Blackham \| Aurora |
+
+### Content Gap Opportunity
+Opportunity 1: No ranking competitor leads with a surgeon who has personally undergone bariatric surgery — Dr Chandraratna's lived experience is a genuine, AHPRA-compliant differentiator no other Perth result can claim. Opportunity 2: Most competitors are single-surgeon sites; OSWA can own the 'team and procedure-matching' angle (two FRACS surgeons + in-house physicians/dietitians = continuity of care) which the field largely ignores. Opportunity 3: The PAA shows clear demand for cost and 'how to choose' guidance, yet ranking pages are thin on neutral consumer guidance — the comparison-note section (what actually makes a good bariatric surgeon: FRACS, accredited hospital privileges, aftercare quality) fills a real gap and earns the PAA real estate. Opportunity 4: Few competitors address Medicare item numbers, private cover gap payments, or super access factually — covering these honestly without dollar figures builds trust competitors don't. Note: low overall DR across the SERP means strong on-page credibility (named surgeons, FRACS, named hospitals, Bariatric Surgery Registry) plus FAQ schema is likely enough to break into the top half.
+
+### Recommended Word Count
+1,000–1,300 words (matches brief target; SERP competitors are single-surgeon homepages with shallow body copy, so depth of credentials and team detail wins over raw length)
 
 ---
 
