@@ -35,7 +35,7 @@ const groups: { title: string; slugs: string[] }[] = [
   },
   {
     title: "Trust & E-E-A-T",
-    slugs: ["surgeons", "book-consultation"],
+    slugs: ["surgeons", "book-consultation", "hospitals-locations", "gp-referral", "faqs"],
   },
 ];
 
@@ -58,7 +58,7 @@ export default function ContentBriefsIndexPage() {
             Content Briefs
           </h1>
           <p className="mt-3 max-w-2xl text-slate-400">
-            All 18 content briefs, grouped by intent. Each card opens a
+            All 21 content briefs, grouped by intent. Each card opens a
             shareable brief.
           </p>
         </header>

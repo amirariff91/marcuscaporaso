@@ -4,7 +4,7 @@ import { OswContentPage, type OswPageData } from "../../../../components/osw/Con
 export const metadata: Metadata = {
   title: "Bariatric Dietitian Perth | Obesity Surgery WA Perth",
   description:
-    "Bariatric dietitians in Perth supporting you before and after weight-loss surgery. Meet our team of five and learn how nutrition keeps your results lasting.",
+    "Bariatric dietitians in Perth supporting you before and after weight-loss surgery. Meet our dietitian team and learn how nutrition keeps your results lasting.",
   alternates: { canonical: "https://www.obesitysurgerywa.com.au/bariatric-dietitian-perth" },
   robots: { index: false, follow: false },
 };
@@ -14,12 +14,12 @@ const pageData: OswPageData = {
   pageTitle: "Bariatric Dietitian Perth",
   keyword: "bariatric dietitian perth",
   metaDescription:
-    "Bariatric dietitians in Perth supporting you before and after weight-loss surgery. Meet our team of five and learn how nutrition keeps your results lasting.",
+    "Bariatric dietitians in Perth supporting you before and after weight-loss surgery. Meet our dietitian team and learn how nutrition keeps your results lasting.",
   heroHeadline: "Our Perth bariatric dietitians",
   heroSubheadline:
-    "Surgery changes your stomach in a single day, but eating well is a skill you build over months. If the thought of completely relearning how to eat feels daunting, that is exactly why we have five dedicated bariatric dietitians walking beside you, before your operation and for the long road after it.",
+    "Surgery changes your stomach in a single day, but eating well is a skill you build over months. If the thought of completely relearning how to eat feels daunting, that is exactly why we have a dedicated bariatric dietitian team walking beside you, before your operation and for the long road after it.",
   stats: [
-    { label: "Bariatric dietitians", value: "5", note: "A dedicated team, not a single rushed appointment" },
+    { label: "Accreditation", value: "APD", note: "All Accredited Practising Dietitians, not a single rushed appointment" },
     { label: "Support begins", value: "Pre-op", note: "Often weeks before your surgery date" },
     { label: "Follow-up", value: "Long-term", note: "Structured reviews well past your first year" },
     { label: "Clinic locations", value: "2", note: "Booragoon and Mandurah" },
@@ -31,7 +31,7 @@ const pageData: OswPageData = {
     "After surgery, they guide you step by step from fluids to soft foods to solids, protect you against nutritional gaps with the right supplements, and troubleshoot the real-world problems that come up: what to do when food gets stuck, how to hit your protein target, and how to handle eating out or a stalled scale without losing heart.",
   ],
   comparisonNote:
-    "Our team of five bariatric dietitians, Clare Renn, Megan Parker, Rhiannon Dick, Sabrina Piccini and Jo-Anne Dembo, each hold Accredited Practising Dietitian (APD) status and specialise in bariatric and metabolic nutrition. Unlike a single one-off nutrition session, their care is ongoing and matched to each stage of your journey, continuing long after the surgery itself is done.",
+    "Our bariatric dietitians, including Clare Renn, Megan Parker and Rhiannon Dick, each hold Accredited Practising Dietitian (APD) status and specialise in bariatric and metabolic nutrition. Unlike a single one-off nutrition session, their care is ongoing and matched to each stage of your journey, continuing long after the surgery itself is done.",
   eligibilityBmi:
     "Dietitian support is part of bariatric care for patients generally suitable for surgery, typically a BMI of 35+, or BMI 30+ with related health conditions.",
   eligibilityNotes: [
@@ -136,12 +136,12 @@ const pageData: OswPageData = {
     {
       question: "Are your dietitians accredited?",
       answer:
-        "Yes. All dietitians at Obesity Surgery WA hold Accredited Practising Dietitian (APD) status, which is the professional standard required for clinical practice in Australia. Our team includes Clare Renn, Megan Parker, Rhiannon Dick, Sabrina Piccini and Jo-Anne Dembo, all of whom specialise in bariatric and metabolic nutrition support.",
+        "Yes. All dietitians at Obesity Surgery WA hold Accredited Practising Dietitian (APD) status, which is the professional standard required for clinical practice in Australia. Our team includes Clare Renn, Megan Parker and Rhiannon Dick, all of whom specialise in bariatric and metabolic nutrition support.",
     },
     {
       question: "How many dietitians does Obesity Surgery WA have?",
       answer:
-        "We have a team of five bariatric dietitians: Clare Renn, Megan Parker, Rhiannon Dick, Sabrina Piccini and Jo-Anne Dembo. Having a dedicated team means you can get timely appointments and consistent, specialised support at every stage of your journey.",
+        "We have a dedicated team of bariatric dietitians, including Clare Renn, Megan Parker and Rhiannon Dick. Having a dedicated team means you can get timely appointments and consistent, specialised support at every stage of your journey.",
     },
     {
       question: "Does Medicare or private health cover dietitian visits?",

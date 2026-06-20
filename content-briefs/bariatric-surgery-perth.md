@@ -45,7 +45,7 @@ Top 5 ranking pages:
 | 6 | perthsurgicalbariatrics.com.au | Perth Surgical & Bariatrics \| Top-Rated Weight Loss Surgeons |
 
 ### Content Gap Opportunity
-Competitors lead with either a single named surgeon or a generic procedure list; the differentiation gap is a team-based, multi-disciplinary positioning (5 dietitians, 20+ yrs, two SJOG hospitals) which the brief already leans into — own this. Biggest on-page SERP gap: the PAA block shows Google wants direct, plain-language answers to (1) bariatric surgery cost in Perth, (2) whether it's covered by Medicare/private health in Australia, (3) what disqualifies a candidate / BMI eligibility, and (4) the gastric sleeve vs bypass difference — most competitor homepages bury or omit these. The FAQ section in the brief already maps to these; ensure those FAQs are marked up with FAQ schema to capture PAA/rich-result real estate. Secondary gap: no competitor clearly integrates medical (GLP-1) weight management alongside surgical options — covering the full pathway (medical + surgical + revision) addresses readers not yet ready for surgery and widens topical coverage. Note AHPRA/TGA limits mean the patient-story/testimonial angle is off-limits, so the win must come from honesty (frank risks section), credentialism, and answering buyer questions better than rivals.
+Competitors lead with either a single named surgeon or a generic procedure list; the differentiation gap is a team-based, multi-disciplinary positioning (a dedicated APD dietitian team, 20+ yrs, two SJOG hospitals) which the brief already leans into — own this. Biggest on-page SERP gap: the PAA block shows Google wants direct, plain-language answers to (1) bariatric surgery cost in Perth, (2) whether it's covered by Medicare/private health in Australia, (3) what disqualifies a candidate / BMI eligibility, and (4) the gastric sleeve vs bypass difference — most competitor homepages bury or omit these. The FAQ section in the brief already maps to these; ensure those FAQs are marked up with FAQ schema to capture PAA/rich-result real estate. Secondary gap: no competitor clearly integrates medical (GLP-1) weight management alongside surgical options — covering the full pathway (medical + surgical + revision) addresses readers not yet ready for surgery and widens topical coverage. Note AHPRA/TGA limits mean the patient-story/testimonial angle is off-limits, so the win must come from honesty (frank risks section), credentialism, and answering buyer questions better than rivals.
 
 ### Recommended Word Count
 1,200–1,500 words (matches brief and competing Perth clinic landing pages, which run ~1,000–1,500w; depth on procedures + cost + Medicare needed to outrank low-DR rivals).
@@ -63,7 +63,7 @@ Use these verbatim — they are factual anchors the writer must not alter:
 |---|---|---|
 | Surgery | 20+ yrs | Perth bariatric experience across our surgical team |
 | Locations | 2 | SJOG Murdoch and Subiaco |
-| Dietitians | 5 | Supporting your long-term results |
+| Dietitians | APD | Accredited Practising Dietitians supporting your long-term results |
 | Procedures | 4+ | Sleeve, bypass, mini bypass, band and revision |
 
 ### What is bariatric surgery?

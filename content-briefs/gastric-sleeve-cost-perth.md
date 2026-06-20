@@ -95,12 +95,12 @@ Write each step as a clear numbered action covering both the clinical pathway an
 2. **Orientation Consultation** — Patient meets the team, discusses whether a sleeve is appropriate; receives a written, itemised cost estimate covering surgeon, anaesthetist and hospital fees at this stage
 3. **Pre-operative Assessment** — Physicians and dietitians assess health; team confirms private health cover, waiting period status and whether super release may be an option
 4. **Surgery** — Keyhole procedure performed at St John of God Murdoch or Subiaco; surgeon and anaesthetist fees relate to this stage
-5. **Hospital Recovery** — Typically one to two nights; hospital facility fee covers room, theatre and nursing during admission
+5. **Hospital Recovery** — Typically around two nights; hospital facility fee covers room, theatre and nursing during admission
 6. **Ongoing Support** — Dietitian and physician follow-up is part of long-term care; some reviews attract Medicare rebates; the team explains what to expect
 
 ### What you get for the cost (benefits)
 Write as a bulleted list, five points. These should describe the actual value of the care model, not make outcome promises.
-- A coordinated care team — specialist bariatric surgeons, physicians and five dietitians — not surgery as a standalone event
+- A coordinated care team — specialist bariatric surgeons, physicians and specialist dietitians — not surgery as a standalone event
 - Keyhole (laparoscopic) surgery at accredited private hospitals (St John of God Murdoch and Subiaco)
 - A clear, itemised written estimate provided upfront so the patient can plan and compare with confidence
 - Structured pre-operative assessment and long-term follow-up built into the care pathway, not billed as unexpected extras

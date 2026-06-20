@@ -62,7 +62,7 @@ Clear opportunities OSWA can own that competitors don't:
 1. **Specialist-led differentiation** — every ranking clinic page lists the same drug names but the brief's "physicians + dietitians, not a script-and-send service" angle is largely absent from competitors; lean into it.
 2. **Honest cost transparency** — PAA shows users asking "which is cheaper, Mounjaro or Wegovy" and "how much is Wegovy per month" yet no Perth page answers cost/Medicare/PBS clearly; the cost paragraph addressing out-of-pocket reality, Medicare rebates on consults, and no PBS subsidy for weight-loss use directly fills this gap.
 3. **GP access friction** — two Reddit threads beg for a GP who will prescribe; explicitly explaining the GP-referral pathway and that OSW reviews the full health picture addresses a real, unmet need.
-4. **Duromine/phentermine** — no competitor covers the older appetite-suppressant option, so including it captures a differentiated long-tail.
+4. **Phentermine** — no competitor covers the older appetite-suppressant option, so including it captures a differentiated long-tail.
 5. **Honest side-effect and weight-regain discussion** is missing from the marketing-led competitors; the brief's candid risk section will build the E-E-A-T trust signal Google rewards.
 6. **National volume capture** — the national "weight loss medication australia" (2,700) and "mounjaro vs wegovy" (1,900) volumes mean weaving clear, factual drug comparison and Australian availability/TGA-status copy can pull in far more traffic than the tiny local head term alone — without compromising the Perth commercial intent.
 
@@ -97,8 +97,8 @@ Use these values exactly. Do not round, alter, or embellish.
 ### What is weight loss medication, and how does it actually work?
 
 - ~3 paragraphs (200–280 words total for this section)
-- **Para 1:** Explain GLP-1 medications as a class. Name the three main options in Australia: Ozempic (semaglutide, primarily for type 2 diabetes), Wegovy (semaglutide 2.4mg, TGA-approved for chronic weight management, supply can vary), and Mounjaro (tirzepatide, TGA-approved and increasingly available). Explain simply how GLP-1 medications work — they mimic a gut hormone that signals fullness, so the reader feels satisfied sooner and thinks about food less.
-- **Para 2:** Introduce Duromine (phentermine) as an older, different type of appetite suppressant that has been used in Australia for many years. Note it is usually prescribed for shorter periods and is not right for everyone. It needs proper medical assessment.
+- **Para 1:** Explain GLP-1 medications as a class. Refer to them by active ingredient (semaglutide, tirzepatide), NOT by brand name, in published body copy — see the TGA note below. Explain simply how GLP-1 medications work — they mimic a gut hormone that signals fullness, so the reader feels satisfied sooner and thinks about food less.
+- **Para 2:** Introduce phentermine (use the generic name, not the brand) as an older, different type of appetite suppressant that has been used in Australia for many years. Note it is usually prescribed for shorter periods and is not right for everyone. It needs proper medical assessment.
 - **Para 3:** Land the key point: medication alone is not the whole answer. It works best alongside eating, movement, and sleep changes. This is why OSW uses physicians and dietitians working together, not a script-and-send model. The comparison note to weave in here (or as a callout): medication is less invasive and reversible than surgery, but weight loss is typically smaller and may return if the medication is stopped without a long-term plan.
 
 ---
@@ -146,7 +146,7 @@ Write each benefit as a plain, honest statement — not marketing language. Cove
 - **Intro paragraph tone:** Calm and matter-of-fact. Acknowledge that every effective medication carries some risk. Most side effects are manageable and settle with time. The team starts low and goes slow, and they are upfront that medication suits some people better than others.
 - **Risk bullets to address:**
   - GLP-1 medications commonly cause nausea, constipation, or reflux — especially in the first few weeks
-  - Duromine can raise heart rate and blood pressure, and may cause restlessness or trouble sleeping; it is not suitable for some heart conditions
+  - Phentermine can raise heart rate and blood pressure, and may cause restlessness or trouble sleeping; it is not suitable for some heart conditions
   - Weight tends to return if medication is stopped without a long-term eating and activity plan
   - Rapid weight loss can cause some muscle loss and, for some people, looser skin — dietitian support and resistance exercise help manage this
 
@@ -175,10 +175,10 @@ Direction: The headline should feel like a warm, low-pressure invitation — not
 
 The page should answer all of the following. Each answer should be 2–4 sentences, plain-language, factual, and compliance-safe (no guaranteed outcomes, no testimonials):
 
-1. Is weight loss medication the same as Ozempic?
+1. Is weight loss medication the same as the GLP-1 injections people talk about?
 2. How much weight will I lose?
-3. What about Duromine — is it still used?
-4. Are GLP-1 medications like Wegovy available in Australia?
+3. What about phentermine — is it still used?
+4. Are GLP-1 weight management medications available in Australia?
 5. Will the weight come back if I stop?
 6. What are the common side effects?
 7. Can I just eat normally on the medication?
@@ -193,4 +193,4 @@ The page should answer all of the following. Each answer should be 2–4 sentenc
 - **AHPRA/TGA:** No testimonials, no before/after claims, no promised outcomes.
 - **Voice:** Plain-language, empathetic, direct. Avoid hype and jargon. Write like a knowledgeable friend, not a brochure.
 - **Reader:** A Perth adult who has struggled with weight and is doing careful research. Likely anxious, possibly embarrassed about past attempts. Wants to be treated as an intelligent adult. May have seen GLP-1 medications in the news and wants to understand them properly before committing to anything.
-- **Medication names:** Always include the generic name alongside the brand name on first mention (e.g., Wegovy (semaglutide 2.4mg)). Respect TGA approval status — note that Ozempic is primarily indicated for type 2 diabetes.
+- **Medication names:** Prescription-only medicines must not be advertised to the public. In published body copy, refer to medications by active ingredient/class (semaglutide, tirzepatide, phentermine, GLP-1) and AVOID brand names and dose/availability/approval specifics; do not make prescribing claims. (Brand terms in the keyword tables above are for search-demand analysis only — not page copy. Updated 2026-06-21 per TGA review.)

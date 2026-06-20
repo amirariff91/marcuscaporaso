@@ -21,7 +21,7 @@ const pageData: OswPageData = {
   stats: [
     { label: "Expected weight loss", value: "70-80%", note: "Excess weight, clinical average. Results vary between individuals" },
     { label: "Time in surgery", value: "~120 min", note: "Performed under general anaesthetic, keyhole technique" },
-    { label: "Hospital stay", value: "3-4 nights", note: "At St John of God Murdoch or Subiaco" },
+    { label: "Hospital stay", value: "2-3 nights", note: "At St John of God Murdoch or Subiaco" },
     { label: "Return to most activity", value: "3-4 weeks", note: "Light duties often sooner, heavy lifting later" },
   ],
   whatIsTitle: "What exactly is a gastric bypass?",
@@ -63,7 +63,7 @@ const pageData: OswPageData = {
     {
       title: "Hospital Recovery",
       description:
-        "You typically stay three to four nights so our team can manage your comfort, start you on fluids and make sure you are moving and recovering well.",
+        "You typically stay two to three nights so our team can manage your comfort, start you on fluids and make sure you are moving and recovering well.",
     },
     {
       title: "Ongoing Support",
@@ -105,7 +105,7 @@ const pageData: OswPageData = {
     },
   ],
   outcomesNote:
-    "The clinical research on gastric bypass is among the strongest of any weight-loss procedure, with many patients maintaining substantial weight loss for years and seeing real improvements in conditions like type 2 diabetes. That said, surgery is a tool, not a magic switch. Your results depend on the changes you make alongside it: your eating, your activity and your follow-up. We are honest that outcomes vary between individuals, and our role is to give you the surgery, the support and the plan to get the best result that is realistic for you.",
+    "Gastric bypass is one of the most studied and well-established weight-loss procedures, with many patients maintaining substantial weight loss for years and seeing real improvements in conditions like type 2 diabetes. That said, surgery is a tool, not a magic switch. Your results depend on the changes you make alongside it: your eating, your activity and your follow-up. We are honest that outcomes vary between individuals, and our role is to give you the surgery, the support and the plan to get the best result that is realistic for you.",
   faqs: [
     {
       question: "How much weight will I lose after a gastric bypass?",

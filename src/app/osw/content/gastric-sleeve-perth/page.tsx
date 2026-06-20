@@ -33,7 +33,7 @@ const pageData: OswPageData = {
     },
     {
       label: "Hospital stay",
-      value: "1-2 nights",
+      value: "2 nights",
       note: "At SJOG Murdoch or Subiaco.",
     },
     {
@@ -81,7 +81,7 @@ const pageData: OswPageData = {
     {
       title: "Hospital recovery",
       description:
-        "Most patients stay one to two nights at St John of God Murdoch or Subiaco. You start on fluids and progress gradually under guidance from the nursing and dietetic team.",
+        "Most patients stay around two nights at St John of God Murdoch or Subiaco. You start on fluids and progress gradually under guidance from the nursing and dietetic team.",
     },
     {
       title: "Returning to daily life",
@@ -136,7 +136,7 @@ const pageData: OswPageData = {
   ],
 
   outcomesNote:
-    "Across our patients, the gastric sleeve commonly leads to substantial weight loss in the first 12 to 18 months, with many people reporting improvements in energy, mobility, sleep and conditions such as type 2 diabetes. What matters as much as the numbers is what patients tell us afterwards: that everyday things, from playing with their kids to walking up stairs, become possible again. These outcomes reflect the experience of people who stay engaged with their follow-up and nutrition. Results are individual and cannot be guaranteed.",
+    "The gastric sleeve commonly leads to substantial weight loss over the first 12 to 18 months. Published clinical data shows many patients also see improvements in conditions such as type 2 diabetes, sleep apnoea and high blood pressure, alongside everyday gains in energy and mobility. These outcomes are most likely in people who stay engaged with their follow-up and nutrition. Results are individual and cannot be guaranteed.",
 
   faqs: [
     {
@@ -162,7 +162,7 @@ const pageData: OswPageData = {
     {
       question: "What does recovery actually look like week to week?",
       answer:
-        "Most people stay in hospital for one to two nights. You will be on fluids at first, moving to pureed and then soft foods over the following weeks under dietitian guidance. Many return to desk work after about two weeks, while physical or manual jobs usually need four to six weeks. It is normal to feel tired in the early weeks as your body adjusts, and our team checks in with you throughout rather than leaving you to figure it out alone.",
+        "Most people stay in hospital for around two nights. You will be on fluids at first, moving to pureed and then soft foods over the following weeks under dietitian guidance. Many return to desk work after about two weeks, while physical or manual jobs usually need four to six weeks. It is normal to feel tired in the early weeks as your body adjusts, and our team checks in with you throughout rather than leaving you to figure it out alone.",
     },
     {
       question: "I get heartburn already. Is the sleeve still right for me?",

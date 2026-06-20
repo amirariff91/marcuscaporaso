@@ -26,8 +26,8 @@ const pageData: OswPageData = {
     },
     {
       label: "Dietitian team",
-      value: "5",
-      note: "Five accredited dietitians supporting your nutrition throughout, not a one-off appointment",
+      value: "APD",
+      note: "Accredited dietitians supporting your nutrition throughout, not a one-off appointment",
     },
     {
       label: "Treatment style",
@@ -42,8 +42,8 @@ const pageData: OswPageData = {
   ],
   whatIsTitle: "What non-surgical weight loss actually involves",
   whatIsParagraphs: [
-    "Non-surgical weight loss covers the options that help you lose weight without an operation. At Obesity Surgery WA this means medical weight management led by our physicians, prescription medications where they are appropriate, structured very-low-calorie programs, and ongoing support from our five-dietitian team. It is a proper, supervised pathway rather than a list of generic tips.",
-    "The medications getting the most attention right now are the GLP-1 group. These include Ozempic and Wegovy, both forms of semaglutide, and Saxenda, which is liraglutide. They work by mimicking a natural gut hormone your body releases after eating. That hormone reduces appetite and slows how quickly your stomach empties, so you feel full sooner, stay satisfied longer, and tend to think about food less through the day. For many people that makes eating less feel possible for the first time, rather than a constant battle of willpower.",
+    "Non-surgical weight loss covers the options that help you lose weight without an operation. At Obesity Surgery WA this means medical weight management led by our physicians, prescription medications where they are appropriate, structured very-low-calorie programs, and ongoing support from our dietitian team. It is a proper, supervised pathway rather than a list of generic tips.",
+    "The medications getting the most attention right now are the GLP-1 group, with semaglutide and liraglutide the most widely known active ingredients. They work by mimicking a natural gut hormone your body releases after eating. That hormone reduces appetite and slows how quickly your stomach empties, so you feel full sooner, stay satisfied longer, and tend to think about food less through the day. For many people that makes eating less feel possible for the first time, rather than a constant battle of willpower.",
     "Alongside medication, some patients do well on a very-low-calorie diet, or VLCD, such as an Optifast program. These use meal replacements for a defined period under supervision to drive steady weight loss, often as a kick-start or in preparation for a procedure. Whichever path suits you, our dietitians help you eat in a way that protects muscle, avoids nutritional gaps, and builds habits that keep working over time.",
     "We also offer endoscopic sleeve gastroplasty, or ESG, as a middle option for some people. ESG is done through the mouth with no external cuts and no removal of the stomach, using sutures to reduce stomach capacity. For the right patient it can act as a bridge between medication and full bariatric surgery, and we will tell you honestly whether it is worth considering for you.",
   ],
@@ -82,7 +82,7 @@ const pageData: OswPageData = {
     {
       title: "Dietitian Support",
       description:
-        "Our five-dietitian team helps you eat well, protect muscle and build habits that keep working, whether you are on medication, a meal-replacement program, or building toward a procedure.",
+        "Our dietitian team helps you eat well, protect muscle and build habits that keep working, whether you are on medication, a meal-replacement program, or building toward a procedure.",
     },
     {
       title: "Ongoing Review",
@@ -96,7 +96,7 @@ const pageData: OswPageData = {
     "GLP-1 medications can reduce hunger and cravings by mimicking a gut hormone, which makes eating less feel achievable rather than a constant fight.",
     "Improvements in blood sugar control, which can be valuable if you have or are at risk of type 2 diabetes.",
     "Even a modest loss of body weight can ease pressure on your joints, your sleep and conditions like high blood pressure.",
-    "Support from a full specialist team, including five dietitians, rather than a tablet or a meal-replacement shake on its own.",
+    "Support from a full specialist team, including specialist dietitians, rather than a tablet or a meal-replacement shake on its own.",
     "A flexible starting point: if your situation changes, you can move toward ESG or surgery later, with the same team guiding you.",
   ],
   risksTitle: "Being honest about the limits and side effects",
@@ -134,9 +134,9 @@ const pageData: OswPageData = {
         "It is a genuine pathway in its own right. For many people, particularly those with a BMI in the 27 to 35 range, medication, a supervised VLCD program or ESG can deliver meaningful results without an operation. We only suggest surgery when it is the better fit for your situation, and plenty of patients do well without ever needing it.",
     },
     {
-      question: "How do GLP-1 medications like Ozempic, Wegovy and Saxenda actually work?",
+      question: "How do GLP-1 medications such as semaglutide and liraglutide actually work?",
       answer:
-        "They mimic a natural gut hormone your body releases after eating. That hormone reduces appetite and slows how quickly your stomach empties, so you feel full sooner and stay satisfied longer. Ozempic and Wegovy are forms of semaglutide, and Saxenda is liraglutide. At your consultation our physician explains which option, if any, suits your health and goals, because it is not one-size-fits-all.",
+        "They mimic a natural gut hormone your body releases after eating. That hormone reduces appetite and slows how quickly your stomach empties, so you feel full sooner and stay satisfied longer. Semaglutide and liraglutide are the active ingredients most often used in this class. At your consultation our physician explains which option, if any, suits your health and goals, because it is not one-size-fits-all.",
     },
     {
       question: "Who qualifies for GLP-1 medication?",

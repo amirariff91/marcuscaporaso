@@ -82,7 +82,7 @@ const pageData: OswPageData = {
   ],
   risksTitle: "Being honest about what surgery can and cannot do",
   risksParagraph:
-    "No surgeon, however experienced, can promise a particular result. You should be cautious of anyone who does. Bariatric surgery is a powerful tool, but it works alongside your effort, not instead of it. Our role is to give you the safest possible operation and the support to make the most of it, while being straight with you about the risks any surgery carries.",
+    "No surgeon, however experienced, can promise a particular result. You should be cautious of anyone who does. Bariatric surgery is a powerful tool, but it works alongside your effort, not instead of it. Our role is to give you a carefully planned operation and the support to make the most of it, while being straight with you about the risks any surgery carries.",
   risksList: [
     "All surgery carries risks including bleeding, infection, blood clots and reactions to anaesthetic.",
     "Some patients experience loose skin after significant weight loss. This varies between individuals and can sometimes be addressed later.",

@@ -74,7 +74,7 @@ Use these verbatim. Do not round or editorialise.
 |---|---|---|
 | Expected weight loss | 70–80% | Excess weight, clinical average. Results vary between individuals. |
 | Time in surgery | ~120 min | Performed under general anaesthetic, keyhole technique. |
-| Hospital stay | 3–4 nights | At St John of God Murdoch or Subiaco. |
+| Hospital stay | 2–3 nights | At St John of God Murdoch or Subiaco. |
 | Return to most activity | 3–4 weeks | Light duties often sooner, heavy lifting later. |
 
 ---
@@ -106,7 +106,7 @@ Each step gets a short heading and 1–2 sentences of content direction.
 2. **Orientation consultation** — The reader meets their surgeon to discuss health, goals and whether a bypass is the right fit. No pressure to decide on the day. Frame this as an open conversation, not a sales meeting.
 3. **Pre-operative assessment** — The patient sees dietitians and physicians to prepare the body and plan nutrition. Some patients follow a short pre-surgery eating plan to make the operation safer. This is team-led support, not a handout.
 4. **Surgery** — Keyhole procedure, approximately two hours under general anaesthetic, at St John of God Murdoch or Subiaco. Keep language clinical and calm.
-5. **Hospital recovery** — Typically 3–4 nights. The care team manages comfort, starts the patient on fluids, and monitors movement and recovery. Longer stay than sleeve reflects the complexity of the operation.
+5. **Hospital recovery** — Typically 2–3 nights. The care team manages comfort, starts the patient on fluids, and monitors movement and recovery, reflecting the complexity of the operation.
 6. **Ongoing support** — Regular follow-up with surgeon and dietitian well beyond the operation. Position this as a long-term relationship, not a transaction. If weight loss stalls, the team reviews and adjusts rather than leaving the patient on their own.
 
 ---

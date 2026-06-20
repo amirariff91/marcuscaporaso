@@ -64,7 +64,7 @@ const pageData: OswPageData = {
     {
       title: "Hospital Recovery",
       description:
-        "Most patients stay one to two nights. The hospital facility fee covers your room, theatre and nursing care during this admission.",
+        "Most patients stay around two nights. The hospital facility fee covers your room, theatre and nursing care during this admission.",
     },
     {
       title: "Ongoing Support",
@@ -74,7 +74,7 @@ const pageData: OswPageData = {
   ],
   benefitsTitle: "What you get for the cost of a gastric sleeve",
   benefits: [
-    "A coordinated team including specialist bariatric surgeons, physicians and five dietitians, rather than surgery alone.",
+    "A coordinated team including specialist bariatric surgeons, physicians and specialist dietitians, rather than surgery alone.",
     "Keyhole (laparoscopic) surgery at accredited private hospitals, St John of God Murdoch and Subiaco.",
     "A clear, itemised written estimate up front so you can plan and compare with confidence.",
     "Structured pre-operative assessment and long-term follow-up built into your care, not charged as surprise extras.",
