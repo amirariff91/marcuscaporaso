@@ -22,7 +22,7 @@ const pageData: OswPageData = {
     { label: "Surgical hospitals", value: "2", note: "St John of God Murdoch & Subiaco" },
     { label: "Consulting locations", value: "Perth + Mandurah", note: "Booragoon and Mandurah rooms" },
     { label: "Hospital type", value: "Private", note: "Accredited private hospitals" },
-    { label: "Phone", value: "9332 0066", note: "One number for all locations" },
+    { label: "Phone", value: "(08) 9332 0066", note: "One number for all locations" },
   ],
   whatIsTitle: "Where Obesity Surgery WA operates and consults",
   whatIsParagraphs: [
@@ -81,7 +81,7 @@ const pageData: OswPageData = {
   ],
   risksTitle: "Being honest about what surgery involves",
   risksParagraph:
-    "Choosing an accredited private hospital with full theatre and intensive-care backup is part of having surgery done safely, but no hospital or surgeon can remove the risks that surgery carries. We would rather be straight with you about that than imply otherwise. The location is chosen to give you the safest possible setting; it does not change the honest fact that any operation has risks.",
+    "Choosing an accredited private hospital with full theatre and intensive-care backup is part of having surgery done carefully, but no hospital or surgeon can remove the risks that surgery carries. We would rather be straight with you about that than imply otherwise. The location is chosen to give you a well-equipped, accredited setting; it does not change the honest fact that any operation has risks.",
   risksList: [
     "All surgery carries risks including bleeding, infection, blood clots and reactions to anaesthetic.",
     "Some patients experience loose skin after significant weight loss. This varies between individuals and can sometimes be addressed later.",

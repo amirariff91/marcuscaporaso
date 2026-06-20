@@ -19,7 +19,7 @@ const pageData: OswPageData = {
   heroSubheadline:
     "Answers to the most common questions about weight loss surgery in Perth, gathered in one place. If you are still working things out, this is a good place to start. We cover eligibility, the different procedures, cost and Medicare, safety and recovery, and what life is really like after surgery, in plain language and with no pressure to decide anything today.",
   stats: [
-    { label: "Procedures offered", value: "6", note: "Sleeve, bypass, mini bypass, band, revision and medication" },
+    { label: "Treatment options", value: "6", note: "Sleeve, bypass, mini bypass, band, revision and medication" },
     { label: "Hospitals", value: "2", note: "St John of God Murdoch & Subiaco" },
     { label: "Care team", value: "10+", note: "Surgeons, physicians and dietitians" },
     { label: "Clinic locations", value: "Perth + Mandurah", note: "Booragoon and Mandurah rooms" },
@@ -83,7 +83,7 @@ const pageData: OswPageData = {
   ],
   risksTitle: "Being honest about what surgery can and cannot do",
   risksParagraph:
-    "No surgeon, however experienced, can promise a particular result, and you should be cautious of anyone who does. Bariatric surgery is a powerful tool, but it works alongside your effort, not instead of it. Our role is to give you the safest possible operation and the support to make the most of it, while being straight with you about the risks any surgery carries. The honest answer to many of the questions below is that it depends on you, your starting health and the procedure you and your surgeon choose.",
+    "No surgeon, however experienced, can promise a particular result, and you should be cautious of anyone who does. Bariatric surgery is a powerful tool, but it works alongside your effort, not instead of it. Our role is to give you a carefully planned operation in an accredited hospital and the support to make the most of it, while being straight with you about the risks any surgery carries. The honest answer to many of the questions below is that it depends on you, your starting health and the procedure you and your surgeon choose.",
   risksList: [
     "All surgery carries risks including bleeding, infection, blood clots, leaks and reactions to anaesthetic.",
     "Bariatric procedures require lifelong changes to how you eat, and ongoing follow-up to protect your health and your results.",
@@ -118,7 +118,7 @@ const pageData: OswPageData = {
     {
       question: "My BMI is around 30. Am I too low for weight loss surgery?",
       answer:
-        "Not necessarily. A BMI of 30 to 34 may qualify for surgery when a weight-related health condition is present, and type 2 diabetes in particular can change the recommendation. If surgery is not the right starting point for you, our medical team can often help with weight-loss medication and dietitian support instead. No one is turned away without options.",
+        "Not necessarily. A BMI of 30 to 34 may qualify for surgery when a weight-related health condition is present, and type 2 diabetes in particular can change the recommendation. If surgery is not the right starting point for you, our medical team can often help with weight-loss medication and dietitian support instead. Wherever you start, our team can talk you through the options that fit your situation.",
     },
     {
       question: "What weight loss surgery procedures do you offer?",
@@ -163,7 +163,7 @@ const pageData: OswPageData = {
     {
       question: "How long is the recovery, and how soon can I go back to work?",
       answer:
-        "Most patients stay in hospital for usually a few nights after surgery, with nursing and dietitian support before heading home. Time off work is generally around two to four weeks, depending on the procedure and how physical your job is. Office-based work is often possible sooner, while heavy lifting needs longer. Your surgeon gives you advice tailored to your situation and your recovery.",
+        "Most patients stay in hospital for a few nights after surgery, with nursing and dietitian support before heading home. Time off work is generally around two to four weeks, depending on the procedure and how physical your job is. Office-based work is often possible sooner, while heavy lifting needs longer. Your surgeon gives you advice tailored to your situation and your recovery.",
     },
     {
       question: "Can I eat normally again after surgery?",

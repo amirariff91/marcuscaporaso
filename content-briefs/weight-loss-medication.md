@@ -62,7 +62,7 @@ Clear opportunities OSWA can own that competitors don't:
 1. **Specialist-led differentiation** — every ranking clinic page lists the same drug names but the brief's "physicians + dietitians, not a script-and-send service" angle is largely absent from competitors; lean into it.
 2. **Honest cost transparency** — PAA shows users asking "which is cheaper, Mounjaro or Wegovy" and "how much is Wegovy per month" yet no Perth page answers cost/Medicare/PBS clearly; the cost paragraph addressing out-of-pocket reality, Medicare rebates on consults, and no PBS subsidy for weight-loss use directly fills this gap.
 3. **GP access friction** — two Reddit threads beg for a GP who will prescribe; explicitly explaining the GP-referral pathway and that OSW reviews the full health picture addresses a real, unmet need.
-4. **Duromine/phentermine** — no competitor covers the older appetite-suppressant option, so including it captures a differentiated long-tail.
+4. **Phentermine** — no competitor covers the older appetite-suppressant option, so including it captures a differentiated long-tail.
 5. **Honest side-effect and weight-regain discussion** is missing from the marketing-led competitors; the brief's candid risk section will build the E-E-A-T trust signal Google rewards.
 6. **National volume capture** — the national "weight loss medication australia" (2,700) and "mounjaro vs wegovy" (1,900) volumes mean weaving clear, factual drug comparison and Australian availability/TGA-status copy can pull in far more traffic than the tiny local head term alone — without compromising the Perth commercial intent.
 
@@ -146,7 +146,7 @@ Write each benefit as a plain, honest statement — not marketing language. Cove
 - **Intro paragraph tone:** Calm and matter-of-fact. Acknowledge that every effective medication carries some risk. Most side effects are manageable and settle with time. The team starts low and goes slow, and they are upfront that medication suits some people better than others.
 - **Risk bullets to address:**
   - GLP-1 medications commonly cause nausea, constipation, or reflux — especially in the first few weeks
-  - Duromine can raise heart rate and blood pressure, and may cause restlessness or trouble sleeping; it is not suitable for some heart conditions
+  - Phentermine can raise heart rate and blood pressure, and may cause restlessness or trouble sleeping; it is not suitable for some heart conditions
   - Weight tends to return if medication is stopped without a long-term eating and activity plan
   - Rapid weight loss can cause some muscle loss and, for some people, looser skin — dietitian support and resistance exercise help manage this
 
