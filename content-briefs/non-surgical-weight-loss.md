@@ -66,14 +66,14 @@ Use these verbatim — they are factual anchors for the page:
 | Label | Value | Note |
 |---|---|---|
 | Suits BMI from | 27+ | With weight-related health conditions, or 30+ without them; individual suitability is assessed at consultation |
-| Dietitian team | 5 | Five accredited dietitians supporting your nutrition throughout, not a one-off appointment |
+| Dietitian team | APD | Accredited dietitians supporting your nutrition throughout, not a one-off appointment |
 | Treatment style | Non-surgical | Medication, structured diet and regular review, with no operation required |
 | Reviewed by | Specialists | Physicians and dietitians who stay involved, rather than a script-only service |
 
 ### What non-surgical weight loss actually involves
 - ~4 paragraphs (this section is slightly longer because it covers several distinct options)
 - Para 1: Define the non-surgical pathway as the practice delivers it — medical weight management led by physicians, prescription medications where appropriate, structured VLCD programs, and ongoing dietitian support. This is a supervised pathway, not a list of generic tips.
-- Para 2: Focus on GLP-1 medications — the most topical option. Name the main drugs (Ozempic and Wegovy as forms of semaglutide; Saxenda as liraglutide). Explain simply how they work: they mimic a natural gut hormone released after eating, which reduces appetite and slows stomach emptying so the patient feels full sooner and stays satisfied longer. The goal is to help the reader understand the mechanism without medical jargon.
+- Para 2: Focus on GLP-1 medications — the most topical option. Refer to them by active ingredient (semaglutide, liraglutide) and class (GLP-1), NOT by brand name, in published body copy — see the TGA note below. Explain simply how they work: they mimic a natural gut hormone released after eating, which reduces appetite and slows stomach emptying so the patient feels full sooner and stays satisfied longer. The goal is to help the reader understand the mechanism without medical jargon.
 - Para 3: Describe VLCD (very-low-calorie diet) programs — explain that these use meal replacements for a defined period under supervision, often as a kick-start or pre-procedure preparation. Note that dietitians support patients through whichever path they take, protecting muscle and building lasting habits.
 - Para 4: Introduce endoscopic sleeve gastroplasty (ESG) as the middle option. Explain: sutures placed through the mouth using an endoscope to reduce stomach capacity; no external cuts; no removal of stomach. Describe it as a bridge between medication and full bariatric surgery. Be clear the practice will say honestly whether ESG is worth considering for any individual.
 
@@ -96,7 +96,7 @@ Write each step as a heading and 2–3 sentences. Tone is accessible and welcomi
 2. **Initial Consultation** — The team discusses weight history, health and goals, and explains which options may suit: medication, VLCD, ESG, or a combination.
 3. **Medical Assessment** — A physician checks medical history, current medications, and any conditions to confirm the chosen option is safe; baseline blood tests where needed.
 4. **Starting Treatment** — If medication suits, start low and increase slowly to manage side effects like nausea. If VLCD suits, set up the program and explain exactly how to follow it.
-5. **Dietitian Support** — The five-dietitian team helps the patient eat well, protect muscle and build habits that keep working — whether on medication, a meal-replacement program, or building toward a procedure.
+5. **Dietitian Support** — The dietitian team helps the patient eat well, protect muscle and build habits that keep working — whether on medication, a meal-replacement program, or building toward a procedure.
 6. **Ongoing Review** — Progress is reviewed, treatment is adjusted as needed, side effects are managed, and the conversation about whether a surgical option might be worth discussing is held openly.
 
 ### Benefits (6 bullets)
@@ -106,7 +106,7 @@ Each bullet addresses a specific advantage. Keep them grounded in what is realis
 - GLP-1 medications reduce hunger and cravings by mimicking a gut hormone, which makes eating less feel achievable rather than a constant battle of willpower
 - Improvements in blood sugar control — valuable if the patient has or is at risk of type 2 diabetes
 - Even modest weight loss can ease pressure on joints, sleep quality and conditions like high blood pressure
-- Support from a full specialist team including five dietitians, not just a tablet or meal-replacement shake on its own
+- Support from a full specialist team including specialist dietitians, not just a tablet or meal-replacement shake on its own
 - A flexible starting point: if circumstances change, the patient can move toward ESG or surgery later, with the same team guiding them
 
 ### Risks / honest section
@@ -131,7 +131,7 @@ Direction: The headline should feel like an open invitation from a specialist te
 The page should answer each of these:
 
 1. Is non-surgical weight loss a real option, or just a consolation prize before surgery?
-2. How do GLP-1 medications like Ozempic, Wegovy and Saxenda actually work?
+2. How do GLP-1 medications such as semaglutide and liraglutide actually work?
 3. Who qualifies for GLP-1 medication?
 4. Are these medications covered by the PBS, or do I pay privately?
 5. What is a VLCD program like Optifast, and who is it for?
@@ -143,7 +143,7 @@ The page should answer each of these:
 ## Tone and compliance notes
 - Medical advertising: no guarantees, use phrases like "clinical averages", "results vary", "your physician will advise"; the GLP-1 section in particular is attracting heavy media attention and needs to be accurate and measured
 - AHPRA/TGA: no testimonials, no before/after claims, no guaranteed outcomes; the named medications (Ozempic, Wegovy, Saxenda) are TGA-approved for specific indications — do not imply they are universally available or guaranteed to work
-- TGA note on drug names: when naming medications, always include the generic name alongside the brand name (e.g. "Ozempic (semaglutide)") on first mention; do not make prescribing claims
+- TGA note on drug names: prescription-only medicines must not be advertised to the public. In published body copy, refer to medications by active ingredient/class (semaglutide, liraglutide, GLP-1) and AVOID brand names; do not make prescribing claims. (Brand terms in the keyword tables above are retained for search-demand analysis only — not for use as page copy. Updated 2026-06-21 per TGA review.)
 - Voice: plain-language, empathetic, direct; avoid hype; this page is written for people who may feel embarrassed they are not "ready" for surgery — the tone should make them feel that this pathway is respected and worthwhile
 - Reader: a Perth adult, likely BMI 27–35, who has probably already tried diet and exercise on their own; they have heard about Ozempic from media coverage and want to understand what a real specialist pathway looks like versus going to a GP or a weight-loss clinic; they are cautious and information-hungry
 - Key tension to manage: the practice is a bariatric surgery practice, so the reader may assume they will be pushed toward surgery — the writer must actively counter this assumption throughout the page without being defensive about it

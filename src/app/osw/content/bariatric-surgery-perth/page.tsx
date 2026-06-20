@@ -22,7 +22,7 @@ const pageData: OswPageData = {
   stats: [
     { label: "Surgery", value: "20+ yrs", note: "Perth bariatric experience across our surgical team" },
     { label: "Locations", value: "2", note: "SJOG Murdoch and Subiaco" },
-    { label: "Dietitians", value: "5", note: "Supporting your long-term results" },
+    { label: "Dietitians", value: "APD", note: "Accredited Practising Dietitians supporting your long-term results" },
     { label: "Procedures", value: "4+", note: "Sleeve, bypass, mini bypass, band and revision" },
   ],
 
@@ -146,7 +146,7 @@ const pageData: OswPageData = {
     {
       question: "What does aftercare involve, and why does it matter so much?",
       answer:
-        "Aftercare is where lasting results are won or lost, which is why we place so much emphasis on it. After surgery you stay connected to our team, including our five dietitians, with regular reviews over the months and years that follow. This covers your nutrition, vitamin and mineral levels, your eating habits as your stomach adjusts, and support if you hit challenges. Patients who stay engaged with aftercare tend to do better long term. Surgery is the starting point, not the finish line.",
+        "Aftercare is where lasting results are won or lost, which is why we place so much emphasis on it. After surgery you stay connected to our team, including our specialist dietitians, with regular reviews over the months and years that follow. This covers your nutrition, vitamin and mineral levels, your eating habits as your stomach adjusts, and support if you hit challenges. Patients who stay engaged with aftercare tend to do better long term. Surgery is the starting point, not the finish line.",
     },
     {
       question: "Where will my surgery and appointments take place?",

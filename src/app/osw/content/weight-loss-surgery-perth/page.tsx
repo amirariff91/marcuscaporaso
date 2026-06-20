@@ -20,7 +20,7 @@ const pageData: OswPageData = {
     "If you have spent years trying to lose weight and keep it off, you are not the problem, and you are not alone. Obesity Surgery WA is a Perth team of surgeons, physicians and dietitians who help you find the right pathway, whether that starts with medical management or with surgery. We meet you where you are.",
 
   stats: [
-    { label: "Dietitians on the team", value: "5", note: "Ongoing support is part of the plan, not an afterthought" },
+    { label: "Dietitians on the team", value: "APD", note: "Accredited Practising Dietitians; ongoing support is part of the plan, not an afterthought" },
     { label: "Perth clinics", value: "2", note: "Booragoon and Mandurah" },
     { label: "Decades of experience", value: "20+", note: "Bariatric surgery in Perth" },
     { label: "Starting BMI", value: "27+", note: "May be suitable for the medical team" },
@@ -30,7 +30,7 @@ const pageData: OswPageData = {
   whatIsParagraphs: [
     "Weight loss surgery, also called bariatric surgery, is a group of procedures that change the size or function of your stomach and digestive system to help you eat less and feel full sooner. The most common procedures we perform in Perth are the gastric sleeve and the gastric bypass, with the adjustable gastric band still an option for some people. These are well established operations with a long track record in Australia.",
     "But surgery is not the only road, and for many people it is not the first one. Obesity is a medical condition, not a failure of willpower. That framing matters, because it changes what good treatment looks like. The right answer for you might be a medication programme, a structured very low calorie diet, regular work with a dietitian, an endoscopic option, or surgery. Often it is a combination, in a sequence that suits your life and your health.",
-    "This is why Obesity Surgery WA is not just a group of surgeons. Our team includes physicians who manage the medical side of weight, and five dietitians whose support is a key part of why people succeed long term. Whoever you see first, you are stepping into a team that can move you along the spectrum of care as your needs change.",
+    "This is why Obesity Surgery WA is not just a group of surgeons. Our team includes physicians who manage the medical side of weight, and specialist dietitians whose support is a key part of why people succeed long term. Whoever you see first, you are stepping into a team that can move you along the spectrum of care as your needs change.",
     "Our aim on this page is simple. We want to help you understand the full range of options so you can make an informed decision with us, rather than feeling pushed toward any single one.",
   ],
   comparisonNote:
@@ -77,7 +77,7 @@ const pageData: OswPageData = {
   benefitsTitle: "Why a team-based approach tends to work",
   benefits: [
     "You are assessed across the full spectrum of care, so you are not limited to a single treatment because it is the only one on offer.",
-    "Five dietitians mean nutritional support is consistent and central, which is a major factor in lasting change rather than short-term loss.",
+    "Dedicated dietitians mean nutritional support is consistent and central, which is a major factor in lasting change rather than short-term loss.",
     "Physicians on the team can manage related conditions such as type 2 diabetes and high blood pressure alongside your weight.",
     "If you start with medical management and later decide surgery is right, the transition happens within the same team that already knows your history.",
     "Both Perth clinics, Booragoon and Mandurah, keep your appointments and aftercare close to home.",
@@ -131,7 +131,7 @@ const pageData: OswPageData = {
     {
       question: "Do I really need to see a dietitian, or can I just have the procedure?",
       answer:
-        "Dietitian support is one of the strongest predictors of lasting results, which is why we have five dietitians on the team rather than treating it as optional. Whatever pathway you choose, the nutritional side is where short-term loss either becomes a lasting change or quietly slips back. We build this support into your plan from the start.",
+        "Dietitian support is one of the strongest predictors of lasting results, which is why we have dedicated dietitians on the team rather than treating it as optional. Whatever pathway you choose, the nutritional side is where short-term loss either becomes a lasting change or quietly slips back. We build this support into your plan from the start.",
     },
     {
       question: "Where are your Perth clinics, and where is surgery performed?",

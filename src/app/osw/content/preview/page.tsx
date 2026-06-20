@@ -10,14 +10,14 @@ const sampleData: OswPageData = {
   stats: [
     { label: "Expected excess weight loss", value: "60-70%", note: "Clinical average; individual results vary" },
     { label: "Procedure time", value: "45-60 min", note: "Laparoscopic technique" },
-    { label: "Hospital stay", value: "1-2 nights", note: "St John of God Murdoch or Subiaco" },
+    { label: "Hospital stay", value: "2 nights", note: "St John of God Murdoch or Subiaco" },
     { label: "Return to work", value: "2 weeks", note: "Desk work; physical labour 4-6 weeks" },
   ],
   whatIsTitle: "What is a gastric sleeve, and how does it work?",
   whatIsParagraphs: [
     "A sleeve gastrectomy removes approximately 75-80% of the stomach, reshaping what remains into a narrow, sleeve-shaped tube. The new stomach holds considerably less food and produces less ghrelin, the hormone that drives hunger, which is why patients typically feel full sooner and experience reduced appetite after recovery.",
     "Unlike a gastric bypass, the sleeve does not reroute the digestive tract. Food still passes through the stomach and into the small intestine in the normal sequence, which means absorption of nutrients and medications is largely unchanged. This makes sleeve gastrectomy a somewhat simpler procedure with a lower risk of certain nutritional deficiencies compared to bypass.",
-    "The procedure is performed laparoscopically through small incisions using a camera, under general anaesthetic. Most patients spend one to two nights in hospital before returning home to a liquid diet for the first few weeks, then progressing through pureed, soft, and normal foods over several months.",
+    "The procedure is performed laparoscopically through small incisions using a camera, under general anaesthetic. Most patients spend around two nights in hospital before returning home to a liquid diet for the first few weeks, then progressing through pureed, soft, and normal foods over several months.",
   ],
   comparisonNote: "Comparing sleeve to bypass or band? Each procedure has different weight loss patterns, recovery times, and risk profiles. The OSWA team can discuss which option makes the most sense for your specific health history and goals at your orientation consultation.",
   eligibilityBmi: "Generally suitable for patients with a BMI of 35 or above, or BMI 30-35 with weight-related health conditions such as Type 2 diabetes, hypertension, or sleep apnoea.",
@@ -33,8 +33,8 @@ const sampleData: OswPageData = {
     { title: "Orientation Consultation", description: "Your first appointment with an OSWA team member covers your health history, procedure options, costs, and what the journey looks like. This is a chance to ask questions, not a commitment to proceed." },
     { title: "Pre-operative Assessment", description: "If you decide to move forward, you will see the bariatric surgeon, physician, and dietitian for a thorough assessment. Blood tests, sometimes a sleep study or gastroscopy, and an anaesthetic review are common." },
     { title: "Surgery", description: "Laparoscopic sleeve gastrectomy is performed at St John of God Murdoch or St John of God Subiaco under general anaesthetic. The procedure typically takes 45 to 60 minutes." },
-    { title: "Hospital Recovery", description: "Most patients spend one to two nights in hospital. Pain is managed with medication and most patients are mobile within hours of surgery. You will begin sips of clear fluids before leaving hospital." },
-    { title: "Ongoing Support", description: "The OSWA team includes bariatric physicians and a team of five dietitians who support you through the first year and beyond. Regular follow-up appointments track your progress and catch any nutritional concerns early." },
+    { title: "Hospital Recovery", description: "Most patients spend around two nights in hospital. Pain is managed with medication and most patients are mobile within hours of surgery. You will begin sips of clear fluids before leaving hospital." },
+    { title: "Ongoing Support", description: "The OSWA team includes bariatric physicians and a team of dietitians who support you through the first year and beyond. Regular follow-up appointments track your progress and catch any nutritional concerns early." },
   ],
   benefitsTitle: "What patients typically experience after gastric sleeve surgery",
   benefits: [

@@ -26,8 +26,8 @@ const pageData: OswPageData = {
   ],
   whatIsTitle: "What is weight loss medication, and how does it actually work?",
   whatIsParagraphs: [
-    "Weight loss medication is a prescription treatment that helps your body manage hunger and appetite. The most talked-about group right now are the GLP-1 medications, including Ozempic (semaglutide, primarily for type 2 diabetes), Wegovy (semaglutide 2.4mg, TGA-approved for chronic weight management and now available in Australia, though supply can vary), and Mounjaro (tirzepatide, TGA-approved and increasingly available). These medications copy a natural gut hormone that tells your brain you are full, so you feel satisfied with less food and think about food less often through the day.",
-    "Duromine (phentermine) is an older appetite-suppressant tablet that has been used in Australia for many years. It works differently to GLP-1 medication and is usually prescribed for shorter periods. It can suit some people, but it is not right for everyone, and it needs proper medical supervision.",
+    "Weight loss medication is a prescription treatment that helps your body manage hunger and appetite. The most talked-about group right now are the GLP-1 medications, with semaglutide and tirzepatide the active ingredients used for weight management. These medications copy a natural gut hormone that tells your brain you are full, so you feel satisfied with less food and think about food less often through the day.",
+    "Phentermine is an older appetite-suppressant medicine that has been used in Australia for many years. It works differently to GLP-1 medication and is usually prescribed for shorter periods. It can suit some people, but it is not right for everyone, and it needs proper medical supervision.",
     "Medication is not a magic fix on its own. It works best alongside changes to how you eat, move and sleep. That is why our physicians and dietitians review you properly, check the medication is safe for you, and stay involved, rather than simply handing over a script and sending you away.",
   ],
   comparisonNote:
@@ -61,7 +61,7 @@ const pageData: OswPageData = {
     "Every effective medication carries some risk, and weight loss medications are no exception. Most side effects are manageable and settle as your body adjusts, but it is important you know what to expect before you start. We monitor you closely, start low, and go slow, and we are upfront that medication suits some people better than others.",
   risksList: [
     "GLP-1 medications commonly cause nausea, constipation or reflux, especially in the first few weeks.",
-    "Duromine can raise heart rate and blood pressure and may cause restlessness or trouble sleeping. It is not suitable for some heart conditions.",
+    "Phentermine can raise heart rate and blood pressure and may cause restlessness or trouble sleeping. It is not suitable for some heart conditions.",
     "Weight tends to return if medication is stopped without a long-term eating and activity plan in place.",
     "Rapid weight loss can cause some loss of muscle and, for some people, looser skin. Dietitian support and resistance exercise help protect against this.",
   ],
@@ -83,9 +83,9 @@ const pageData: OswPageData = {
     "In clinical trials, people taking GLP-1 medication alongside lifestyle changes lost an average of around 10-15% of their body weight, though some lost more and some lost less. Results vary considerably from person to person, and no one can promise a specific outcome. What we can promise is honest guidance, close monitoring, and a realistic plan for keeping the weight off, because the medication works best when it is part of lasting change, not a stand-alone fix.",
   faqs: [
     {
-      question: "Is weight loss medication the same as Ozempic?",
+      question: "Is weight loss medication the same as the GLP-1 injections people talk about?",
       answer:
-        "Ozempic is one brand in the GLP-1 family of medications. There are several related medications that work in a similar way. At your consultation, our physician will explain which option may suit you best based on your health, your goals and what is available. It is not one-size-fits-all.",
+        "The injectable medications most people have heard about belong to the GLP-1 family. There are several related medications that work in a similar way. At your consultation, our physician will explain which option may suit you best based on your health, your goals and what is available. It is not one-size-fits-all.",
     },
     {
       question: "How much weight will I lose?",
@@ -93,14 +93,14 @@ const pageData: OswPageData = {
         "On GLP-1 medication combined with lifestyle changes, people lose an average of around 10-15% of their body weight in studies. Your result depends on the medication, the dose, and your own body. Some people lose more and some less. We set realistic goals with you rather than promising a number.",
     },
     {
-      question: "What about Duromine, is it still used?",
+      question: "What about phentermine, is it still used?",
       answer:
-        "Yes, Duromine (phentermine) is still prescribed in Australia. It is an appetite suppressant usually used for shorter periods. It suits some people but is not safe for everyone, particularly with certain heart conditions, so it needs a proper medical assessment first.",
+        "Yes, phentermine is still prescribed in Australia. It is an appetite suppressant usually used for shorter periods. It suits some people but is not safe for everyone, particularly with certain heart conditions, so it needs a proper medical assessment first.",
     },
     {
-      question: "Are GLP-1 medications like Wegovy available in Australia?",
+      question: "Are GLP-1 weight management medications available in Australia?",
       answer:
-        "Yes. Wegovy (semaglutide 2.4mg) has TGA approval for chronic weight management in Australia and is now available, though access can vary by pharmacy. Ozempic (semaglutide at lower doses, primarily for T2D) is widely available. Mounjaro (tirzepatide) is TGA approved and increasingly accessible. These medications work best as part of a supervised program with dietitian and physician support. Eligibility and scripts require a consultation with a doctor.",
+        "Yes. Some GLP-1 medications hold TGA approval for chronic weight management in Australia, while others are approved primarily for type 2 diabetes, and availability can vary by pharmacy. These medications work best as part of a supervised program with dietitian and physician support. Eligibility and scripts require a consultation with a doctor.",
     },
     {
       question: "Will the weight come back if I stop?",
@@ -110,7 +110,7 @@ const pageData: OswPageData = {
     {
       question: "What are the common side effects?",
       answer:
-        "With GLP-1 medications, the most common side effects are nausea, constipation and reflux, mostly in the early weeks. Starting on a low dose and increasing slowly reduces these. Duromine can cause a faster heartbeat, restlessness or trouble sleeping. We monitor you and adjust if needed.",
+        "With GLP-1 medications, the most common side effects are nausea, constipation and reflux, mostly in the early weeks. Starting on a low dose and increasing slowly reduces these. Phentermine can cause a faster heartbeat, restlessness or trouble sleeping. We monitor you and adjust if needed.",
     },
     {
       question: "Can I just eat normally on the medication?",

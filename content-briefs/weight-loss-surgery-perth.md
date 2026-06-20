@@ -45,7 +45,7 @@ Top 5 ranking pages:
 | 5 | obesitysurgerywa.com.au | Weight Loss Surgery Perth — Obesity Surgery WA (OSWA, DR 11) |
 
 ### Content Gap Opportunity
-Every top result is a surgeon homepage that funnels straight to surgery — none present medical management (GLP-1 medication, VLCD, dietitian support) as an equal pathway. That is OSWA's biggest differentiation opportunity and aligns exactly with the brief's mandate to frame obesity as a medical condition and not over-index on surgery. Second gap: the PAA boxes show high demand for cost, Medicare coverage, and BMI/eligibility answers, yet competitor homepages bury or omit these — directly addressing "do I qualify (BMI 27+)", "is it covered by Medicare", and "how much does it cost / can I use super" in plain language (the brief already mandates an eligibility section, cost paragraph, and FAQs) will capture featured-snippet and PAA real estate competitors leave open. Third gap: low-DR competitors mean strong topical depth, empathetic non-judgemental framing, and a team-based (5 dietitians, physicians + surgeons, 2 clinics) angle can outrank them without heavy backlinks. Note OSWA (obesitysurgerywa.com.au) currently sits at position 5 with DR 11, so this page is an existing-asset improvement play, not a cold start.
+Every top result is a surgeon homepage that funnels straight to surgery — none present medical management (GLP-1 medication, VLCD, dietitian support) as an equal pathway. That is OSWA's biggest differentiation opportunity and aligns exactly with the brief's mandate to frame obesity as a medical condition and not over-index on surgery. Second gap: the PAA boxes show high demand for cost, Medicare coverage, and BMI/eligibility answers, yet competitor homepages bury or omit these — directly addressing "do I qualify (BMI 27+)", "is it covered by Medicare", and "how much does it cost / can I use super" in plain language (the brief already mandates an eligibility section, cost paragraph, and FAQs) will capture featured-snippet and PAA real estate competitors leave open. Third gap: low-DR competitors mean strong topical depth, empathetic non-judgemental framing, and a team-based (dedicated APD dietitian team, physicians + surgeons, 2 clinics) angle can outrank them without heavy backlinks. Note OSWA (obesitysurgerywa.com.au) currently sits at position 5 with DR 11, so this page is an existing-asset improvement play, not a cold start.
 
 ### Recommended Word Count
 1,100-1,400 words (matches brief; SERP is dominated by short-to-mid commercial clinic homepages, so the brief's depth is enough to compete while the spectrum-of-care breadth differentiates).
@@ -61,7 +61,7 @@ Use these verbatim — they are factual anchors the writer must not alter:
 
 | Label | Value | Note |
 |---|---|---|
-| Dietitians on the team | 5 | Ongoing support is part of the plan, not an afterthought |
+| Dietitians on the team | APD | Accredited Practising Dietitians; ongoing support is part of the plan, not an afterthought |
 | Perth clinics | 2 | Booragoon and Mandurah |
 | Decades of experience | 20+ | Bariatric surgery in Perth |
 | Starting BMI | 27+ | May be suitable for the medical team |
@@ -71,7 +71,7 @@ Use these verbatim — they are factual anchors the writer must not alter:
 - ~4 paragraphs (this page warrants a slightly longer treatment given its breadth)
 - Para 1: Define weight loss surgery / bariatric surgery in plain terms — procedures that change stomach size or function to help the patient eat less and feel full sooner. Name the most common procedures: gastric sleeve, gastric bypass, adjustable gastric band. Establish that these are well-tested operations with a long record in Australia.
 - Para 2: Establish clearly that surgery is not the only road, and not always the first. Explain that obesity is a medical condition, not a willpower failure — this framing matters because it shapes what good treatment looks like. The right answer might be medication, a structured very low calorie diet, dietitian support, an endoscopic option, or surgery — often in combination over time.
-- Para 3: Introduce the team composition — not just surgeons; also physicians who manage the medical side of weight, and five dietitians whose support is central to long-term success. Whoever the patient sees first, they are stepping into a team that can move them along the spectrum of care as their needs change.
+- Para 3: Introduce the team composition — not just surgeons; also physicians who manage the medical side of weight, and specialist dietitians whose support is central to long-term success. Whoever the patient sees first, they are stepping into a team that can move them along the spectrum of care as their needs change.
 - Para 4: State the aim of the page plainly — to help the reader understand the full range of options so they can make an informed decision, rather than feeling pushed toward any single one.
 - Closing comparison note (below paragraphs): Give the reader a quick mental model of the spectrum: medical management (GLP-1 medication, very low calorie diet, dietitian support) at one end, surgical procedures (sleeve, bypass, band) at the other. Acknowledge that many people move between them over time, and there is no single correct starting point.
 
@@ -97,7 +97,7 @@ Keep steps in this order — 1–2 sentences covering the content described:
 - Section title: "Why a team-based approach tends to work"
 - 6 bullets, one idea each:
   1. Assessment across the full spectrum of care means the patient is not limited to a single treatment
-  2. Five dietitians means nutritional support is consistent and central — a major factor in lasting change rather than short-term loss
+  2. Dedicated dietitians mean nutritional support is consistent and central — a major factor in lasting change rather than short-term loss
   3. Physicians can manage related conditions such as type 2 diabetes and high blood pressure alongside weight
   4. If the patient starts with medical management and later decides surgery is right, the transition happens within the same team that already knows their history
   5. Both Perth clinic locations (Booragoon and Mandurah) keep appointments and aftercare close to home

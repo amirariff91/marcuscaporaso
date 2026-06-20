@@ -69,7 +69,7 @@ Use these verbatim. They are factual anchors and must not be paraphrased or infl
 |---|---|---|
 | Excess weight loss | 60–70% | Average over the first 12–18 months. Individual results vary. |
 | Procedure time | 45–60 min | Performed laparoscopically (keyhole). |
-| Hospital stay | 1–2 nights | At SJOG Murdoch or Subiaco. |
+| Hospital stay | 2 nights | At SJOG Murdoch or Subiaco. |
 | Back to desk work | ~2 weeks | 4–6 weeks for physical labour. |
 
 ---
@@ -101,7 +101,7 @@ Each step gets a short heading and 1–2 sentences of content direction.
 1. **Initial consultation and assessment** — The reader meets their surgeon, talks through medical history and goals, and gets an honest view of whether the sleeve suits them. This is also where they can ask the questions that feel awkward to raise.
 2. **Pre-surgery preparation** — The patient may need to follow a specific pre-op diet (typically 2–4 weeks) to shrink the liver and reduce surgical risk. Emphasise that the team supports them through this — not just a handout.
 3. **The procedure** — General anaesthetic, keyhole technique, 45–60 minutes. Surgeon removes ~75–80% of the stomach and seals the new sleeve with a staple line. Keep it clinical but accessible.
-4. **Hospital recovery** — 1–2 nights at St John of God Murdoch or Subiaco. Patient starts on fluids and progresses under guidance from nursing and dietetic staff.
+4. **Hospital recovery** — Around 2 nights at St John of God Murdoch or Subiaco. Patient starts on fluids and progresses under guidance from nursing and dietetic staff.
 5. **Returning to daily life** — Desk work after ~2 weeks; physical or manual labour closer to 4–6 weeks. Surgeon provides advice tailored to the individual's situation.
 6. **Long-term follow-up** — Staged eating progression (fluids → soft → regular textures) with dietitian support. Ongoing reviews and blood tests to protect nutrition and results long-term.
 

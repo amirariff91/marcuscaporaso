@@ -9,7 +9,7 @@
 
 ## Page purpose
 
-This page exists to explain what bariatric dietitians do, why their role is indispensable (not optional) in weight-loss surgery, and to introduce OSW's team of five as the specialist resource supporting patients from pre-op through long-term maintenance. It should reassure readers who feel anxious about the dietary changes ahead, and signal to search engines that OSW offers genuine, accredited dietetic expertise — not a single rushed nutrition appointment.
+This page exists to explain what bariatric dietitians do, why their role is indispensable (not optional) in weight-loss surgery, and to introduce OSW's dietitian team as the specialist resource supporting patients from pre-op through long-term maintenance. It should reassure readers who feel anxious about the dietary changes ahead, and signal to search engines that OSW offers genuine, accredited dietetic expertise — not a single rushed nutrition appointment.
 
 ---
 
@@ -57,7 +57,7 @@ Top 5 ranking pages:
 
 ### Content Gap Opportunity
 
-Clear opening for OSW. (1) **Geographic gap:** no result specifically owns "Perth" or "WA" for this term — the closest WA competitor (waweightloss.com.au) sits at position 8 with DR1 and a thin single-dietitian page, so a Perth-focused, locally-credible page can rank quickly. (2) **Team-depth gap:** nearly every competitor presents a single dietitian or a generic role description; OSW's five named APDs across Booragoon and Mandurah is a genuine differentiator no top result matches. (3) **Continuity gap:** ranking pages frame the dietitian as a one-off service rather than pre-op-through-long-term care — the brief's "not a single rushed appointment" angle is unclaimed territory. (4) **PAA/cost gap:** top results barely address Medicare rebates, chronic disease management plans, or "do I need a dietitian after surgery" — answering these directly (and via the 9-question FAQ) captures the informational PAA layer. (5) **Reassurance gap:** competitor pages are clinical; the anxious-patient, "can I eat normally again" tone is an underserved emotional angle. Add FAQ schema to capture PAA real estate.
+Clear opening for OSW. (1) **Geographic gap:** no result specifically owns "Perth" or "WA" for this term — the closest WA competitor (waweightloss.com.au) sits at position 8 with DR1 and a thin single-dietitian page, so a Perth-focused, locally-credible page can rank quickly. (2) **Team-depth gap:** nearly every competitor presents a single dietitian or a generic role description; OSW's named APDs across Booragoon and Mandurah are a genuine differentiator no top result matches. (3) **Continuity gap:** ranking pages frame the dietitian as a one-off service rather than pre-op-through-long-term care — the brief's "not a single rushed appointment" angle is unclaimed territory. (4) **PAA/cost gap:** top results barely address Medicare rebates, chronic disease management plans, or "do I need a dietitian after surgery" — answering these directly (and via the 9-question FAQ) captures the informational PAA layer. (5) **Reassurance gap:** competitor pages are clinical; the anxious-patient, "can I eat normally again" tone is an underserved emotional angle. Add FAQ schema to capture PAA real estate.
 
 ### Recommended Word Count
 
@@ -69,7 +69,7 @@ Clear opening for OSW. (1) **Geographic gap:** no result specifically owns "Pert
 
 ### Hero
 
-- **Headline direction:** Centre the team — "Our Perth bariatric dietitians." Simple, factual, and immediately differentiating (five specialists, not one).
+- **Headline direction:** Centre the team — "Our Perth bariatric dietitians." Simple, factual, and immediately differentiating (a dedicated team, not one).
 - **Subheadline:** Two to three sentences. Acknowledge that relearning how to eat after surgery can feel daunting — it is a real challenge, not something to minimise. Then introduce the team as the steady guide alongside the patient, starting before the operation and continuing long after it. Use language that conveys partnership and continuity, not a one-off session.
 
 ---
@@ -78,12 +78,12 @@ Clear opening for OSW. (1) **Geographic gap:** no result specifically owns "Pert
 
 | Label | Value | Note |
 |---|---|---|
-| Bariatric dietitians | 5 | A dedicated team, not a single rushed appointment |
+| Accreditation | APD | All Accredited Practising Dietitians, not a single rushed appointment |
 | Support begins | Pre-op | Often weeks before your surgery date |
 | Follow-up | Long-term | Structured reviews well past your first year |
 | Clinic locations | 2 | Booragoon and Mandurah |
 
-Use these values exactly. The "5 dietitians" stat is a genuine differentiator — give it appropriate weight.
+Use these values exactly. The dedicated APD team is a genuine differentiator — give it appropriate weight.
 
 ---
 
@@ -92,7 +92,7 @@ Use these values exactly. The "5 dietitians" stat is a genuine differentiator �
 - ~3 paragraphs (200–280 words for this section)
 - **Para 1:** Define the role clearly. A bariatric dietitian is an accredited nutrition professional who specialises specifically in the needs of weight-loss surgery patients. Emphasise that this is not general dietetics — surgery fundamentally changes how the stomach and body work. Portion capacity drops dramatically, nutrient absorption changes, and hunger signals shift. The eating advice that worked before the operation no longer applies.
 - **Para 2:** Describe the pre-surgery role. The dietitian prepares the patient's body and habits — this typically includes a structured pre-operative eating plan to reduce liver size and make the operation safer, plus practical coaching on the dietary stages ahead so nothing comes as a surprise post-surgery.
-- **Para 3:** Describe the post-surgery role. The dietitian guides the patient through each dietary stage — fluids to soft foods to solids — protects against nutritional gaps with the right supplements, and helps troubleshoot real-world problems: food getting stuck, hitting protein targets, handling social eating, plateaus. Include the team introduction naturally here, or as a follow-on callout: Clare Renn, Megan Parker, Rhiannon Dick, Sabrina Piccini and Jo-Anne Dembo, all holding Accredited Practising Dietitian (APD) status, specialising in bariatric and metabolic nutrition. Unlike a one-off session, their care is ongoing and matched to each stage of the patient's journey.
+- **Para 3:** Describe the post-surgery role. The dietitian guides the patient through each dietary stage — fluids to soft foods to solids — protects against nutritional gaps with the right supplements, and helps troubleshoot real-world problems: food getting stuck, hitting protein targets, handling social eating, plateaus. Include the team introduction naturally here, or as a follow-on callout: Clare Renn, Megan Parker and Rhiannon Dick, all holding Accredited Practising Dietitian (APD) status, specialising in bariatric and metabolic nutrition. Unlike a one-off session, their care is ongoing and matched to each stage of the patient's journey.
 
 ---
 
@@ -182,8 +182,8 @@ Each answer should be 2–4 sentences, plain-language, practical. Cover:
 ## Tone and compliance notes
 
 - **Medical advertising:** No guarantees. Use phrases like "tend to maintain results", "research shows", "individual outcomes vary", "your dietitian will advise based on your situation."
-- **AHPRA/TGA:** No testimonials, no before/after claims, no promised outcomes. The five dietitian names are factual team information and are fine to include.
+- **AHPRA/TGA:** No testimonials, no before/after claims, no promised outcomes. The dietitian names are factual team information and are fine to include.
 - **Voice:** Reassuring, knowledgeable, and practical. The reader is likely anxious about what eating will look like after surgery — speak to that anxiety with competence and warmth, not clinical distance.
 - **Reader:** A Perth adult who is seriously considering bariatric surgery but may be particularly uncertain about the dietary side. They may be worried they will not be able to eat "normally" again, that supplements will be complicated, or that the nutrition support will be a single rushed appointment. This page should make them feel genuinely held.
-- **Team names:** Clare Renn, Megan Parker, Rhiannon Dick, Sabrina Piccini, Jo-Anne Dembo. All hold APD status. Introduce them naturally — do not list them in a standalone bullet; weave them into context (e.g., the "what is a bariatric dietitian" section or a team callout).
+- **Team names (OSWA-verified APDs):** Clare Renn, Megan Parker, Rhiannon Dick. All hold APD status. (Sabrina Piccini and Jo-Anne Dembo were removed 2026-06-19 — web research tied them to other Perth practices, not OSWA; re-add only if the clinic confirms.) Introduce them naturally — do not list them in a standalone bullet; weave them into context (e.g., the "what is a bariatric dietitian" section or a team callout).
 - **Procedure names:** Gastric sleeve, gastric bypass, and other bariatric procedures are fine to name. Avoid making procedure comparisons that could read as a recommendation — your dietitian support is tailored regardless of procedure.
