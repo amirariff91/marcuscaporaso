@@ -18,6 +18,23 @@ const nextConfig: NextConfig = {
     },
   },
 
+  async redirects() {
+    return [
+      // OSWA: payment-plans page retired (practice no longer offers in-house plans).
+      // Folded into the Medicare/finance page; 308 permanent (Google treats as 301-equivalent).
+      {
+        source: "/osw/content/payment-plans-bariatric-surgery",
+        destination: "/osw/content/medicare-private-health-cover",
+        permanent: true,
+      },
+      {
+        source: "/osw/content-briefs/payment-plans-bariatric-surgery",
+        destination: "/osw/content-briefs/medicare-private-health-cover",
+        permanent: true,
+      },
+    ];
+  },
+
   async headers() {
     return [
       {
