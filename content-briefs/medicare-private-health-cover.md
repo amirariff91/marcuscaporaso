@@ -30,6 +30,7 @@ This page demystifies the two-system funding structure (Medicare + private healt
 | gastric bypass cost australia | 60 | 0 |
 | how much does weight loss surgery cost | 40 | 0 |
 | does medicare cover weight loss surgery | 30 | 0 |
+| gastric sleeve payment plan perth | 30 | 0 |
 | medicare bariatric surgery | 10 | 1 |
 
 ### Semantic Terms to Include
@@ -147,6 +148,16 @@ Cover these topics in a single flowing paragraph:
 
 ---
 
+### Financing & payment options
+This section absorbs the retired /payment-plans-bariatric-surgery page (301-redirected here), so it must capture finance/payment intent and the keyword "gastric sleeve payment plan perth". Write ~2–3 paragraphs plus a disclaimer line. Keep finance secondary to the page's core funding message — it must NOT become the dominant theme.
+
+- **Realistic ways to fund the gap:** Explain the practical sources patients use to cover the out-of-pocket portion: private health cover (hospital and theatre), Medicare rebates (the eligible medical items), early release of superannuation on compassionate/medical grounds (cross-reference the superannuation page for detail), and that SOME patients choose to use third-party / external medical finance providers. Frame these as options the patient can consider, not a recommended path.
+- **Be explicit and compliant — no in-house plans:** State plainly that OSWA does NOT offer in-house payment plans and has no involvement in any external loan or finance process. If any third-party finance provider is named, name it ONLY neutrally — no endorsement, no "approved partner" or "preferred" language, no implied approval, and never quote or imply rates, terms or "interest-free" offers.
+- **Standard disclaimer line (include verbatim):** "Finance is provided by third parties on their own terms; consider whether it is right for you and seek independent financial advice."
+- **AHPRA guardrails:** No cost-led urgency and no inducements ("interest-free, book now", "limited time", "apply today"). Finance must not be the dominant message of the page or the section; the framing stays patient-side and informational, helping the reader understand their options rather than nudging them toward a loan.
+
+---
+
 ### Conversion CTA headline
 - **Tone:** Practical offer of a specific service (the financial coordinator), not a generic "book now" prompt.
 - **Direction:** Frame it as the financial coordinator checking the patient's cover with them — a collaborative, low-stakes next step.
@@ -176,3 +187,4 @@ For FAQ 8, explain that the rebate is based on the MBS schedule fee for each ite
 - Voice: plain-language, patient-side, helping the reader feel like someone is translating an intimidating system for them.
 - Reader profile: patient who has decided they want surgery but is stuck on the money question — specifically confused by the Medicare/private health interaction. They are literate but not financially sophisticated.
 - The financial coordinator is a genuine service differentiator — use it as such throughout, especially in steps and benefits.
+- **Page absorbs the retired payment-plans page (301):** The former /payment-plans-bariatric-surgery page has been retired (OSWA no longer offers in-house payment plans) and is now 301-redirected into this page. This page therefore carries the financing/payment intent via the "Financing & payment options" section above. Because the practice offers no in-house plans, finance is covered neutrally and compliantly here rather than on a dedicated payment-plans page — keep finance secondary to the Medicare/private-health funding message and observe the AHPRA guardrails (no cost-led urgency, no inducements, no endorsement of third-party finance).

@@ -18,12 +18,14 @@ const pages = [
   { group: "Core acquisition", slug: "weight-loss-medication", title: "Weight Loss Medication Perth", priority: "P1" },
   { group: "Core acquisition", slug: "non-surgical-weight-loss", title: "Non-Surgical Weight Loss Perth", priority: "P1" },
   { group: "Core acquisition", slug: "bariatric-dietitian-perth", title: "Bariatric Dietitian Perth", priority: "P1" },
+  { group: "Core acquisition", slug: "am-i-eligible", title: "Am I Eligible for Weight Loss Surgery?", priority: "P0" },
+  { group: "Related & post-surgery procedures", slug: "hiatus-hernia-repair", title: "Hiatus Hernia Repair", priority: "P1" },
+  { group: "Related & post-surgery procedures", slug: "gallbladder-removal-perth", title: "Gallbladder Removal (Laparoscopic Cholecystectomy)", priority: "P1" },
+  { group: "Related & post-surgery procedures", slug: "post-weight-loss-skin-removal", title: "Excess Skin Removal After Weight Loss (Panniculectomy)", priority: "P1" },
   { group: "Money pages", slug: "gastric-sleeve-cost-perth", title: "Gastric Sleeve Cost Perth", priority: "P0" },
   { group: "Money pages", slug: "weight-loss-surgery-cost-perth", title: "Weight Loss Surgery Cost Perth", priority: "P0" },
   { group: "Money pages", slug: "medicare-private-health-cover", title: "Medicare & Private Health Cover", priority: "P0" },
   { group: "Money pages", slug: "super-access-weight-loss-surgery", title: "Super Access for Weight Loss Surgery", priority: "P0" },
-  { group: "Money pages", slug: "payment-plans-bariatric-surgery", title: "Weight Loss Surgery Payment Plans", priority: "P1" },
-  { group: "Money pages", slug: "am-i-eligible", title: "Am I Eligible for Weight Loss Surgery?", priority: "P0" },
   { group: "Money pages", slug: "book-consultation", title: "Book a Consultation", priority: "P0" },
   { group: "Trust & E-E-A-T", slug: "surgeons", title: "Our Bariatric Surgeons Perth", priority: "P0" },
   { group: "Trust & E-E-A-T", slug: "hospitals-locations", title: "Hospitals & Clinic Locations", priority: "P0" },
@@ -49,7 +51,7 @@ export default function OswContentIndexPage() {
             OSWA rebuild, all content pages
           </h1>
           <p className="mt-5 max-w-2xl text-base leading-8 text-slate-400">
-            21 content pages built on the service page template. Each page targets a specific keyword intent and follows AHPRA medical advertising guidelines.
+            23 content pages built on the service page template. Each page targets a specific keyword intent and follows AHPRA medical advertising guidelines.
           </p>
         </div>
       </section>

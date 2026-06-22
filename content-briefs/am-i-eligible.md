@@ -4,6 +4,8 @@
 **Search intent:** informational
 **Target word count:** 1,000–1,300 words (matches brief target; sufficient to beat thin Australian clinic candidate pages which run 600–1,100w, while staying focused for an informational intent that does not reward long comparison-style depth)
 
+> **Repositioned per client (June 2026):** medical eligibility, moved out of the finance cluster. "Am I eligible?" is a CLINICAL question (BMI, comorbidities, prior attempts, individual assessment), not a financial/affordability one — frame it medically throughout. Keep internal links cost → eligibility → book-consultation intact.
+
 ## Page purpose
 This page answers the single most common question a research-stage patient asks before calling. It removes the fear of being "turned away" before they even pick up the phone, and moves them toward booking an orientation consultation.
 
@@ -14,6 +16,8 @@ This page answers the single most common question a research-stage patient asks 
 - AU Monthly Volume: 10
 - Keyword Difficulty: 0/100
 - CPC (AU): ~$1.4
+
+> Note: the related phrase "weight loss surgery eligibility" has ~0 measurable AU search volume, and the head term itself is tiny (10/mo). This is primarily an ACTIVATION/CONVERSION page for anxious, research-stage patients who are already on-site — not an organic-traffic play. Optimise for reassurance and funnel progression (toward booking the consultation), not for raw search volume.
 
 ### Secondary Keywords (target naturally in body copy)
 | Keyword | AU Vol/mo | KD |
@@ -74,7 +78,9 @@ Use these verbatim — they are factual anchors the writer must not alter:
 - Closing note (below paragraphs): Reassure the reader they do not need to calculate their BMI precisely before calling — the team can help, and the surgeon will confirm it at the consult.
 
 ### Eligibility section
-- BMI summary line to anchor the section: "As a general guide, people with a BMI of 35 or above are typically eligible for a surgical assessment, and those at 40 or above are almost always eligible. A BMI of 30 to 34 may qualify when weight-related health conditions are present."
+- **Frame this as CLINICAL eligibility, not financial.** The section centres on medical indicators: BMI thresholds (e.g. BMI ≥40, or ≥35 with weight-related comorbidities such as type 2 diabetes, hypertension, obstructive sleep apnoea), previous attempts at non-surgical weight loss, age and general health considerations, and the requirement for an individual clinical assessment by the surgeon. Cost, finance and affordability are NOT eligibility criteria — keep them out of this section (they belong in the Cost paragraph and the Medicare/finance page).
+- **Present criteria as GENERAL INDICATORS, never a self-qualifying test.** Frame every threshold as a guide that is subject to individual surgeon assessment — never "if your BMI is X you qualify". Make clear surgery is one option within a broader pathway that may include non-surgical options and multidisciplinary (MDT) assessment; do not present surgery as the default outcome of being "eligible".
+- BMI summary line to anchor the section: "As a general guide, people with a BMI of 35 or above are typically eligible for a surgical assessment, and those at 40 or above are almost always eligible. A BMI of 30 to 34 may qualify when weight-related health conditions are present. These are general indicators only — your surgeon confirms suitability at an individual assessment."
 - Write each of the following as a short, plain-language paragraph or bullet — do not combine them:
   - BMI 27–29: not usually the first step; medical team can often help with medication and dietitian support
   - BMI 30–34 with a weight-related condition: may qualify for surgery; type 2 diabetes specifically can change the recommendation
@@ -133,6 +139,7 @@ The page must answer each of the following:
 ## Tone and compliance notes
 - Medical advertising: no guarantees, use phrases like "clinical averages", "results vary", "your surgeon will advise"
 - AHPRA/TGA: no testimonials, no before/after claims, no guaranteed outcomes
+- **AHPRA s133 (eligibility-specific):** State all eligibility criteria as GENERAL INDICATORS subject to individual surgeon assessment — never "if your BMI is X you qualify" or any self-qualifying language. Do NOT pair eligibility with guaranteed outcomes or specific weight-loss / comorbidity-resolution figures (e.g. no "resolve your diabetes", no "lose X kg"). Reference non-surgical options and multidisciplinary (MDT) assessment as part of the pathway — do not push surgery as the default. Include a clear "general information, not medical advice — individual assessment required" line on the page.
 - Voice: plain-language, empathetic, direct; avoid hype
 - Reader: a Perth adult considering weight loss surgery; anxious, doing research, probably has tried multiple diets, possibly carrying shame — write to the person, not the condition
 - The page should lower the emotional barrier to calling; every section should reduce fear, not add clinical weight

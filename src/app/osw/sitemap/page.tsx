@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "OSWA Rebuild: Final Sitemap & Page Architecture",
-  description: "Final 31-page sitemap for the Obesity Surgery WA website rebuild. Organised by intent: acquisition, cost/finance, trust, and local pages.",
+  description: "Final 33-page sitemap for the Obesity Surgery WA website rebuild. Organised by intent: acquisition, related procedures, cost/finance, trust, and local pages.",
   alternates: { canonical: "https://osw.marcuscaporaso.com/sitemap" },
   robots: { index: false, follow: false },
 };
@@ -19,16 +19,23 @@ const coreAcquisition = [
   { slug: "/revision-bariatric-surgery", title: "Revision Bariatric Surgery", keyword: "revision bariatric surgery perth", intent: "Procedure", priority: "P1" },
   { slug: "/weight-loss-medication", title: "Weight Loss Medication Perth", keyword: "weight loss medication perth", intent: "Service", priority: "P1" },
   { slug: "/non-surgical-weight-loss", title: "Non-Surgical Weight Loss Perth", keyword: "non surgical weight loss perth", intent: "Service", priority: "P1" },
-  { slug: "/bariatric-dietitian-perth", title: "Bariatric Dietitian Perth", keyword: "bariatric dietitian perth", intent: "Service", priority: "P1" },
+  { slug: "/bariatric-dietitian-perth", title: "Bariatric Dietitian Perth", keyword: "bariatric dietitian perth", intent: "Service", priority: "P1", note: "Allied-health hub — also covers exercise physiology (no standalone search demand, so folded in here rather than a separate page)" },
+  { slug: "/am-i-eligible", title: "Am I Eligible for Weight Loss Surgery?", keyword: "weight loss surgery eligibility", intent: "Qualify", priority: "P0", note: "Medical eligibility (BMI, comorbidities) — moved out of finance per client; activation page, low organic volume" },
+];
+
+// Related & post-surgery procedures bariatric patients commonly need later (client-requested, high importance).
+// SEO is secondary here — these earn topical depth / E-E-A-T; abdominoplasty MUST stay reconstructive, not cosmetic (AHPRA).
+const relatedProcedures = [
+  { slug: "/hiatus-hernia-repair", title: "Hiatus Hernia Repair", keyword: "hiatus hernia surgery cost", intent: "Procedure", priority: "P1", note: "Vol 150, KD 0 — national focus + Perth section (Perth-localised demand ~0)" },
+  { slug: "/gallbladder-removal-perth", title: "Gallbladder Removal (Laparoscopic Cholecystectomy)", keyword: "gallbladder removal perth", intent: "Procedure", priority: "P1", note: "Common after rapid weight loss; thin Perth demand (~30/mo) — E-E-A-T value, not a traffic play" },
+  { slug: "/post-weight-loss-skin-removal", title: "Excess Skin Removal After Weight Loss (Panniculectomy)", keyword: "excess skin removal after weight loss perth", intent: "Procedure", priority: "P1", note: "Reconstructive framing only — NO cosmetic terms (tummy tuck/abdominoplasty) in title/meta/alt/anchors per AHPRA; no before/after, no testimonials" },
 ];
 
 const moneyPages = [
   { slug: "/gastric-sleeve-cost-perth", title: "Gastric Sleeve Cost Perth", keyword: "gastric sleeve cost perth", intent: "Cost", priority: "P0", note: "KD 0, vol 200 — biggest easy win" },
   { slug: "/weight-loss-surgery-cost-perth", title: "Weight Loss Surgery Cost Perth", keyword: "weight loss surgery perth cost", intent: "Cost", priority: "P0", note: "KD 0, vol 90 — currently #1" },
-  { slug: "/medicare-private-health-cover", title: "Medicare & Private Health Cover", keyword: "medicare weight loss surgery australia", intent: "Finance", priority: "P0", note: "High anxiety query for patients" },
+  { slug: "/medicare-private-health-cover", title: "Medicare & Private Health Cover", keyword: "medicare weight loss surgery australia", intent: "Finance", priority: "P0", note: "High anxiety query; now also absorbs payment-plans content + redirect" },
   { slug: "/super-access-weight-loss-surgery", title: "Super Access for Weight Loss Surgery", keyword: "using super for weight loss surgery perth", intent: "Finance", priority: "P0", note: "Currently #1 for this term" },
-  { slug: "/payment-plans-bariatric-surgery", title: "Weight Loss Surgery Payment Plans", keyword: "gastric sleeve payment plan perth", intent: "Finance", priority: "P1", note: "KD 0, vol 30" },
-  { slug: "/am-i-eligible", title: "Am I Eligible for Weight Loss Surgery?", keyword: "weight loss surgery eligibility", intent: "Qualify", priority: "P0", note: "Activation page for anxious patients" },
   { slug: "/book-consultation", title: "Book a Consultation", keyword: "bariatric consultation perth", intent: "Convert", priority: "P0", note: "Primary conversion page" },
 ];
 
@@ -162,7 +169,7 @@ export default function OswSitemapPage() {
             Final page architecture
           </p>
           <h1 className="max-w-4xl text-4xl font-semibold tracking-[-0.05em] text-white md:text-6xl">
-            31 pages built around patient intent.
+            33 pages built around patient intent.
           </h1>
           <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">
             Every URL in this architecture maps to a specific patient intent: procedure research, cost discovery, trust building, or conversion. No page is a placeholder — each one has a clear job.
@@ -180,9 +187,9 @@ export default function OswSitemapPage() {
           </div>
           <div className="mt-6 grid gap-4 sm:grid-cols-4">
             {[
-              { label: "Total pages", value: "31" },
-              { label: "Launch critical (P0)", value: "13" },
-              { label: "Phase 2 (P1)", value: "13" },
+              { label: "Total pages", value: "33" },
+              { label: "Launch critical (P0)", value: "14" },
+              { label: "Phase 2 (P1)", value: "17" },
               { label: "Current site pages", value: "~18" },
             ].map(({ label, value }) => (
               <div key={label} className="rounded-2xl border border-white/10 bg-white/[0.03] p-4">
@@ -195,9 +202,9 @@ export default function OswSitemapPage() {
       </section>
 
       <PageGroup
-        eyebrow="Group 1 of 4"
+        eyebrow="Group 1 of 5"
         title="Core acquisition pages"
-        note="11 pages — procedure hubs and service pages"
+        note="12 pages — procedure hubs, service & qualification pages"
         pages={coreAcquisition}
         contentSlugs={{
           "/gastric-sleeve-perth": "gastric-sleeve-perth",
@@ -210,27 +217,38 @@ export default function OswSitemapPage() {
           "/weight-loss-medication": "weight-loss-medication",
           "/non-surgical-weight-loss": "non-surgical-weight-loss",
           "/bariatric-dietitian-perth": "bariatric-dietitian-perth",
+          "/am-i-eligible": "am-i-eligible",
         }}
       />
 
       <PageGroup
-        eyebrow="Group 2 of 4"
+        eyebrow="Group 2 of 5"
+        title="Related & post-surgery procedures"
+        note="3 pages — procedures bariatric patients commonly need later"
+        pages={relatedProcedures}
+        contentSlugs={{
+          "/hiatus-hernia-repair": "hiatus-hernia-repair",
+          "/gallbladder-removal-perth": "gallbladder-removal-perth",
+          "/post-weight-loss-skin-removal": "post-weight-loss-skin-removal",
+        }}
+      />
+
+      <PageGroup
+        eyebrow="Group 3 of 5"
         title="High-intent money pages"
-        note="7 pages — cost, finance, eligibility, and booking"
+        note="5 pages — cost, finance, and booking"
         pages={moneyPages}
         contentSlugs={{
           "/gastric-sleeve-cost-perth": "gastric-sleeve-cost-perth",
           "/weight-loss-surgery-cost-perth": "weight-loss-surgery-cost-perth",
           "/medicare-private-health-cover": "medicare-private-health-cover",
           "/super-access-weight-loss-surgery": "super-access-weight-loss-surgery",
-          "/payment-plans-bariatric-surgery": "payment-plans-bariatric-surgery",
-          "/am-i-eligible": "am-i-eligible",
           "/book-consultation": "book-consultation",
         }}
       />
 
       <PageGroup
-        eyebrow="Group 3 of 4"
+        eyebrow="Group 4 of 5"
         title="Trust and E-E-A-T pages"
         note="8 pages — surgeon proof, patient journey, referrer pathway"
         pages={trustPages}
@@ -243,7 +261,7 @@ export default function OswSitemapPage() {
       />
 
       <PageGroup
-        eyebrow="Group 4 of 4"
+        eyebrow="Group 5 of 5"
         title="Local area pages"
         note="5 pages — Murdoch, Subiaco, Booragoon, Mandurah, Perth CBD"
         pages={localPages}
@@ -263,6 +281,7 @@ export default function OswSitemapPage() {
                 { old: "/gastric-sleeve", new: "/gastric-sleeve-perth", action: "301 redirect" },
                 { old: "/fees", new: "/gastric-sleeve-cost-perth", action: "301 redirect" },
                 { old: "/medication.pdf", new: "/weight-loss-medication", action: "301 redirect" },
+                { old: "/payment-plans-bariatric-surgery", new: "/medicare-private-health-cover", action: "301 redirect" },
               ].map((row) => (
                 <div key={row.old} className="rounded-2xl bg-black/20 p-3 text-xs">
                   <code className="text-slate-500">{row.old}</code>

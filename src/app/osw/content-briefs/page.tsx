@@ -20,6 +20,15 @@ const groups: { title: string; slugs: string[] }[] = [
       "weight-loss-medication",
       "non-surgical-weight-loss",
       "bariatric-dietitian-perth",
+      "am-i-eligible",
+    ],
+  },
+  {
+    title: "Related & post-surgery procedures",
+    slugs: [
+      "hiatus-hernia-repair",
+      "gallbladder-removal-perth",
+      "post-weight-loss-skin-removal",
     ],
   },
   {
@@ -29,8 +38,6 @@ const groups: { title: string; slugs: string[] }[] = [
       "weight-loss-surgery-cost-perth",
       "medicare-private-health-cover",
       "super-access-weight-loss-surgery",
-      "payment-plans-bariatric-surgery",
-      "am-i-eligible",
     ],
   },
   {
@@ -58,7 +65,7 @@ export default function ContentBriefsIndexPage() {
             Content Briefs
           </h1>
           <p className="mt-3 max-w-2xl text-slate-400">
-            All 21 content briefs, grouped by intent. Each card opens a
+            All 23 content briefs, grouped by intent. Each card opens a
             shareable brief.
           </p>
         </header>
