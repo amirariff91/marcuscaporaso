@@ -170,7 +170,7 @@ export default function BiosymmBookingTrackingPage() {
           <p className="text-sm font-semibold uppercase tracking-[0.26em] text-cta">Biosymm / measurement advisory</p>
           <h1 className="mt-6 max-w-5xl text-balance text-display font-semibold text-fg">Measure booked appointments, not button clicks. Privacy-safe.</h1>
           <p className="mt-8 max-w-3xl text-pretty text-xl leading-9 text-muted">
-            You asked what the booking platform can confirm back to ad reporting without sending personal details, and how to separate clinic bookings from corporate enquiries. The short answer is yes, Nookal can confirm a completed booking, and there is a clean way to do it that keeps patient data out of Google and Meta and stays inside Australian health-data law.
+            The goal is straightforward: know which advertising actually produces booked appointments, tell clinic bookings apart from corporate enquiries, and feed that back into the ad accounts, all without exposing a single patient detail or stepping outside Australian health-privacy rules. The good news is that it can be done. This page walks through how, and where the line sits.
           </p>
           <div className="mt-10 flex flex-wrap gap-3 text-sm font-semibold text-fg">
             <span className="rounded-full border border-border bg-white px-4 py-2">Prepared for Biosymm Group</span>
@@ -191,7 +191,7 @@ export default function BiosymmBookingTrackingPage() {
 
       <Section eyebrow="Executive recommendation" title="Count completed bookings on your own domain, keep the two demand streams apart, and confirm consent before launch.">
         <p>
-          The measurement goal is to optimise advertising toward people who actually book a clinic appointment, not people who click a button, and to do it without handing patient information to ad platforms. That is achievable today. The cleanest first step does not even require patient data to travel through Nookal.
+          The aim is to point advertising at the people who actually book an appointment, not the ones who just click a button, and to do it without handing any patient information to the ad platforms. That is achievable now, and the simplest first step does not even need patient data to pass through Nookal at all.
         </p>
         <div className="mt-8 grid gap-5 md:grid-cols-4">
           <FindingCard title="Confirmed, not clicked"><p>Move the primary clinic signal from the Book button click to a completed booking. Keep the click as a secondary, diagnostic signal only.</p></FindingCard>
@@ -290,7 +290,7 @@ export default function BiosymmBookingTrackingPage() {
 
       <Section eyebrow="Decisions and open items" title="What Biosymm needs to confirm before launch.">
         <p>
-          These items unlock the build and close the open questions in the research. The legal review is the one that should not be skipped, because health information and overseas disclosure are both in play.
+          A short list of things to confirm before building. The legal review is the one not to skip, since both patient health information and overseas data sharing are involved.
         </p>
         <DataTable headers={["Item", "Why it matters"]} rows={decisionRows} />
         <AlertCard title="This advisory is not legal advice.">
