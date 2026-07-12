@@ -87,6 +87,8 @@ const questions = [
   "GO/NO-GO: Is the complete ErgoStart, ErgoScale, ErgoCoach and ErgoControl offer ladder approved, including its eligibility and caveats?",
   "What exact Snapshot fulfilment promise is approved: owner, eligibility, weekly capacity, format, written three-point summary, turnaround, booking flow and response SLA?",
   "What onsite and remote service geography is approved for the Snapshot and each paid offer?",
+  "CRITICAL: What does ErgoWorks actually issue after training—an accredited certificate, a statement of attainment, or participant attendance or training-completion records? This gates the Search test, landing-page copy and publication.",
+  "CRITICAL: Are care-sector, online and refresher services supported, and in what approved onsite or remote geography? This gates landing-page modules, negative reconciliation and publication.",
   "GO/NO-GO: What qualified-call rule is approved, including minimum connected duration, operating-hours treatment, disposition criteria and exclusions?",
   "Is admin access confirmed for the correct Meta Business Manager, ad account and Dataset/Pixel, including domain verification and AEM authority?",
   "What contract value, delivery margin, close rate and payback define an allowable acquisition cost?",
@@ -155,15 +157,15 @@ export default function CampaignPlanPage() {
 
       <section className={styles.stateSection}>
         <div className={styles.stateIntro}>
-          <SectionHeading label="Current state" title="A proven engine, close to its present ceiling." />
-          <p>The account already captures meaningful commercial intent. The next gain is unlikely to come from simply asking Search to do more of the same.</p>
+          <SectionHeading label="Current state" title="A proven engine with gated expansion pockets." />
+          <p>The account already captures meaningful commercial intent. The next gain comes from protecting that foundation while validating gated expansion pockets and improving the inputs that guide optimisation.</p>
         </div>
         <div className={styles.stateList}>
-          <div><strong>Established Search</strong><span>A mature programme with a useful demand baseline and limited room to expand without better inputs.</span></div>
-          <div><strong>Concentrated demand</strong><span>One training service dominates investment, while quality and query evidence still need validation.</span></div>
+          <div><strong>Established Search</strong><span>A mature programme with a useful demand baseline and room to test carefully gated expansion pockets.</span></div>
+          <div><strong>Concentrated demand</strong><span>One training service anchors investment, while mixed-intent and sector opportunities require qualification and client sign-off.</span></div>
           <div><strong>Mixed signals</strong><span>Soft actions currently blur the distinction between engagement and genuine Consulting enquiries.</span></div>
           <div><strong>Missing layer</strong><span>No active paid-social engine or dedicated paid-media conversion journey is creating new demand.</span></div>
-          <div><strong>Underserved segment</strong><span>Demand research confirmed the core training head and surfaced a sizeable, under-served care-sector training segment as the clearest near-term growth pocket.</span></div>
+          <div><strong>Gated opportunity</strong><span>Demand research surfaced potential mixed-intent and care-sector expansion pockets, subject to service-scope, evidence and geography sign-off.</span></div>
         </div>
       </section>
 
@@ -199,7 +201,7 @@ export default function CampaignPlanPage() {
           <SectionHeading label="Landing-page concept" title="A message-matched route from workplace concern to practical next step." />
           <p>One navigation-reduced landing-page system, with baseline variants for manual handling training, workstation assessment, and hybrid or home-office programmes.</p>
           <ul>
-            <li><Check size={17} /> One dominant launch action on every baseline variant: request the free 15-minute Snapshot (preliminary guidance only—not a compliance or medical assessment)</li>
+            <li><Check size={17} /> One dominant launch action on every baseline variant: request the free 15-minute Snapshot (preliminary guidance only—not a compliance assessment, compliance certification, medical assessment or diagnosis)</li>
             <li><Check size={17} /> Service-led primary CTA variants only after the baseline, as tests</li>
             <li><Check size={17} /> A short two-step form using non-sensitive business fields</li>
             <li><Check size={17} /> Required enquiry consent separated from optional marketing consent; Consent Mode v2, default denied, no client- or server-side transmission before consent</li>
