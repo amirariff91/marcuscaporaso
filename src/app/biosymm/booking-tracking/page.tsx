@@ -176,6 +176,7 @@ export default function BiosymmBookingTrackingPage() {
             <span className="rounded-full border border-border bg-white px-4 py-2">Prepared for Biosymm Group</span>
             <span className="rounded-full border border-border bg-white px-4 py-2">Platform: Nookal Online Bookings</span>
             <span className="rounded-full border border-border bg-white px-4 py-2">June 2026</span>
+            <a className="rounded-full border border-cta/30 bg-cta/5 px-4 py-2 text-cta underline-offset-4 hover:underline" href="/tracking">Build-ready implementation handoff →</a>
           </div>
         </div>
       </section>
