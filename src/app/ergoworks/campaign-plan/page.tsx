@@ -183,12 +183,12 @@ export default function CampaignPlanPage() {
         <SectionHeading label="Channel roles" title="A 70 / 20 / 10 operating model—with floors before percentages." copy="The split is a directional steady-state model, not an instruction to force underfunded tests. Proven capture stays protected while each new channel earns its role." />
         <div className={styles.allocation} aria-label="Directional channel allocation: 70 percent Search, 20 percent demand generation, 10 percent experiments">
           <div className={styles.searchBar}><strong>70%</strong><span>Search · capture</span></div>
-          <div className={styles.metaBar}><strong>20%</strong><span>Meta · create</span></div>
+          <div className={styles.metaBar}><strong>20%</strong><span>Meta · pilot to create</span></div>
           <div className={styles.testBar}><strong>10%</strong><span>Test</span></div>
         </div>
         <div className={styles.channelNotes}>
           <article><h3>Search protects intent</h3><p>Clean goals, inspect query quality, restore brand coverage and route each commercial theme to a relevant destination.</p></article>
-          <article><h3>Meta creates the next pool</h3><p>Start with one consolidated prospecting audience and enough delivery to learn. Do not fragment a modest test across multiple ad sets.</p></article>
+          <article><h3>Meta pilots demand generation</h3><p>Run a greenfield TOFU pilot with one consolidated prospecting audience and enough delivery to learn. Meta targets the 20% steady-state share only after it earns it; do not fragment a modest test across multiple ad sets.</p></article>
           <article><h3>Experiments earn activation</h3><p>PMax and paid remarketing stay parked until clean measurement, privacy approval, isolated audiences and viable independent funding are in place.</p></article>
         </div>
       </section>
@@ -198,7 +198,7 @@ export default function CampaignPlanPage() {
           <SectionHeading label="Landing-page concept" title="A message-matched route from workplace concern to practical next step." />
           <p>One navigation-reduced landing-page system, with baseline variants for manual handling training, workstation assessment, and hybrid or home-office programmes.</p>
           <ul>
-            <li><Check size={17} /> One dominant launch action on every baseline variant: request the free 15-minute Snapshot</li>
+            <li><Check size={17} /> One dominant launch action on every baseline variant: request the free 15-minute Snapshot (preliminary guidance only—not a compliance or medical assessment)</li>
             <li><Check size={17} /> Service-led primary CTA variants only after the baseline, as tests</li>
             <li><Check size={17} /> A short two-step form using non-sensitive business fields</li>
             <li><Check size={17} /> Required enquiry consent separated from optional marketing consent; Consent Mode v2, default denied, no client- or server-side transmission before consent</li>
