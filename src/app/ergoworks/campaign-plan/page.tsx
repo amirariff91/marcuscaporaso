@@ -163,6 +163,7 @@ export default function CampaignPlanPage() {
           <div><strong>Concentrated demand</strong><span>One training service dominates investment, while quality and query evidence still need validation.</span></div>
           <div><strong>Mixed signals</strong><span>Soft actions currently blur the distinction between engagement and genuine Consulting enquiries.</span></div>
           <div><strong>Missing layer</strong><span>No active paid-social engine or dedicated paid-media conversion journey is creating new demand.</span></div>
+          <div><strong>Underserved segment</strong><span>Demand research confirmed the core training head and surfaced a sizeable, under-served care-sector training segment as the clearest near-term growth pocket.</span></div>
         </div>
       </section>
 
