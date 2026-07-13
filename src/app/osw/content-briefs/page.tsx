@@ -8,6 +8,10 @@ export const metadata: Metadata = {
 
 const groups: { title: string; slugs: string[] }[] = [
   {
+    title: "Homepage",
+    slugs: ["home"],
+  },
+  {
     title: "Core acquisition",
     slugs: [
       "gastric-sleeve-perth",
@@ -65,7 +69,7 @@ export default function ContentBriefsIndexPage() {
             Content Briefs
           </h1>
           <p className="mt-3 max-w-2xl text-slate-400">
-            All 23 content briefs, grouped by intent. Each card opens a
+            All 24 content briefs, grouped by intent. Each card opens a
             shareable brief.
           </p>
         </header>
