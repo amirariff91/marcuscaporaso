@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 };
 
 const coreAcquisition = [
-  { slug: "/", title: "Home", keyword: "weight loss surgery perth", intent: "Hub", priority: "P0" },
+  { slug: "/", title: "Home", keyword: "obesity surgery wa (brand)", intent: "Hub", priority: "P0", note: "Brand hub — routes to all clusters; does NOT target 'weight loss surgery perth' (that's the hub below)" },
   { slug: "/weight-loss-surgery-perth", title: "Weight Loss Surgery Perth", keyword: "weight loss surgery perth", intent: "Hub", priority: "P0" },
   { slug: "/bariatric-surgery-perth", title: "Bariatric Surgery Perth", keyword: "bariatric surgery perth", intent: "Hub", priority: "P0" },
   { slug: "/gastric-sleeve-perth", title: "Gastric Sleeve Perth", keyword: "gastric sleeve perth", intent: "Procedure", priority: "P0" },
@@ -56,6 +56,96 @@ const localPages = [
   { slug: "/weight-loss-surgery-booragoon", title: "Weight Loss Surgery Booragoon", keyword: "bariatric surgery booragoon", intent: "Local", priority: "P1" },
   { slug: "/weight-loss-surgery-mandurah", title: "Weight Loss Surgery Mandurah", keyword: "bariatric surgery mandurah", intent: "Local", priority: "P2" },
   { slug: "/weight-loss-surgery-perth-cbd", title: "Weight Loss Surgery Perth CBD", keyword: "bariatric surgery perth cbd", intent: "Local", priority: "P2" },
+];
+
+// Canonical site navigation for the dev build — maps the 33-page architecture above
+// into the actual header menus + footer columns. This is the "what goes in the nav bar"
+// view; the groups above are the SEO-intent view. Source of truth mirrored in
+// docs/oswa/oswa-navigation-map.csv (sheet-ready for the dev).
+const headerNav: { menu: string; items: { label: string; slug: string; note?: string }[] }[] = [
+  {
+    menu: "Treatments ▾",
+    items: [
+      { label: "Weight Loss Surgery Perth", slug: "/weight-loss-surgery-perth", note: "Start here — overview" },
+      { label: "Bariatric Surgery (compare all)", slug: "/bariatric-surgery-perth", note: "Surgical hub" },
+      { label: "Gastric Sleeve", slug: "/gastric-sleeve-perth" },
+      { label: "Gastric Bypass", slug: "/gastric-bypass-perth" },
+      { label: "Mini Gastric Bypass", slug: "/mini-gastric-bypass" },
+      { label: "Gastric Band", slug: "/gastric-band" },
+      { label: "Revision Surgery", slug: "/revision-bariatric-surgery" },
+      { label: "Non-Surgical Weight Loss", slug: "/non-surgical-weight-loss", note: "incl. GLP-1 medical weight management" },
+      { label: "Weight Loss Medication", slug: "/weight-loss-medication" },
+      { label: "Bariatric Dietitian", slug: "/bariatric-dietitian-perth" },
+      { label: "Hiatus Hernia Repair", slug: "/hiatus-hernia-repair", note: "Related procedure" },
+      { label: "Gallbladder Removal", slug: "/gallbladder-removal-perth", note: "Related procedure" },
+      { label: "Excess Skin Removal", slug: "/post-weight-loss-skin-removal", note: "Related — reconstructive framing only" },
+    ],
+  },
+  {
+    menu: "Costs & Funding ▾",
+    items: [
+      { label: "Gastric Sleeve Cost", slug: "/gastric-sleeve-cost-perth" },
+      { label: "Weight Loss Surgery Cost", slug: "/weight-loss-surgery-cost-perth" },
+      { label: "Medicare & Private Health", slug: "/medicare-private-health-cover" },
+      { label: "Super Access", slug: "/super-access-weight-loss-surgery" },
+    ],
+  },
+  {
+    menu: "Our Team ▾",
+    items: [
+      { label: "Our Surgeons", slug: "/surgeons" },
+      { label: "Our Dietitians", slug: "/dietitians", note: "Not yet built" },
+      { label: "Your Journey", slug: "/patient-journey", note: "Not yet built" },
+      { label: "Risks & Complications", slug: "/risks-complications", note: "Not yet built" },
+      { label: "Results & Expectations", slug: "/results-expectations", note: "Not yet built" },
+      { label: "FAQs", slug: "/faqs" },
+    ],
+  },
+  {
+    menu: "Locations ▾",
+    items: [
+      { label: "Hospitals & Clinics", slug: "/hospitals-locations", note: "Hospital identity unverified" },
+      { label: "Murdoch", slug: "/weight-loss-surgery-murdoch", note: "Not yet built" },
+      { label: "Subiaco", slug: "/weight-loss-surgery-subiaco", note: "Not yet built" },
+      { label: "Booragoon", slug: "/weight-loss-surgery-booragoon", note: "Not yet built" },
+      { label: "Mandurah", slug: "/weight-loss-surgery-mandurah", note: "Not yet built" },
+      { label: "Perth CBD", slug: "/weight-loss-surgery-perth-cbd", note: "Not yet built" },
+    ],
+  },
+];
+
+// Always-visible top-level items (no dropdown) + the persistent CTA/utility set.
+const headerStandalone = [
+  { label: "Am I Eligible?", slug: "/am-i-eligible", kind: "link" },
+  { label: "For GPs", slug: "/gp-referral", kind: "utility" },
+  { label: "Call (08) 9332 0066", slug: "tel:0893320066", kind: "phone" },
+  { label: "Book a Consultation", slug: "/book-consultation", kind: "cta" },
+];
+
+const footerColumns: { title: string; items: string[] }[] = [
+  {
+    title: "Treatments",
+    items: [
+      "Weight Loss Surgery Perth", "Bariatric Surgery", "Gastric Sleeve", "Gastric Bypass",
+      "Mini Gastric Bypass", "Gastric Band", "Revision Surgery", "Non-Surgical Weight Loss",
+      "Weight Loss Medication", "Bariatric Dietitian",
+    ],
+  },
+  {
+    title: "Related & Costs",
+    items: [
+      "Hiatus Hernia Repair", "Gallbladder Removal", "Excess Skin Removal",
+      "Gastric Sleeve Cost", "Weight Loss Surgery Cost", "Medicare & Private Health", "Super Access",
+    ],
+  },
+  {
+    title: "About",
+    items: ["Our Surgeons", "Our Dietitians", "Your Journey", "Risks & Complications", "Results & Expectations", "FAQs", "Am I Eligible?"],
+  },
+  {
+    title: "Locations & Contact",
+    items: ["Hospitals & Clinics", "Murdoch", "Subiaco", "Booragoon", "Mandurah", "Book a Consultation", "GP Referral", "Phone (08) 9332 0066"],
+  },
 ];
 
 const priorityColors: Record<string, string> = {
@@ -266,6 +356,87 @@ export default function OswSitemapPage() {
         note="5 pages — Murdoch, Subiaco, Booragoon, Mandurah, Perth CBD"
         pages={localPages}
       />
+
+      <section className="border-t border-white/10 py-12 md:py-16">
+        <div className="mx-auto max-w-6xl px-5 md:px-8">
+          <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-emerald-300">
+            For the dev
+          </p>
+          <div className="flex flex-col gap-2 md:flex-row md:items-end md:justify-between">
+            <h2 className="text-2xl font-semibold tracking-[-0.03em] text-white md:text-3xl">
+              Site navigation
+            </h2>
+            <p className="text-sm text-slate-500">
+              How the pages above map to the actual menu bar &amp; footer
+            </p>
+          </div>
+          <p className="mt-4 max-w-3xl text-sm leading-7 text-slate-400">
+            The five groups above organise pages by <span className="text-slate-300">SEO intent</span>. This
+            section is the <span className="text-slate-300">build view</span> — exactly what goes in the header
+            menus and footer columns. Header pattern:{" "}
+            <code className="rounded bg-white/[0.06] px-1.5 py-0.5 text-xs text-emerald-200">
+              Logo · Treatments ▾ · Costs &amp; Funding ▾ · Our Team ▾ · Locations ▾ · Am I Eligible? · For GPs · Phone · [Book a Consultation]
+            </code>
+          </p>
+
+          {/* Header menus */}
+          <div className="mt-8 grid gap-4 md:grid-cols-2">
+            {headerNav.map((menu) => (
+              <div key={menu.menu} className="rounded-3xl border border-white/10 bg-white/[0.02] p-5 md:p-6">
+                <p className="mb-3 text-sm font-semibold text-white">{menu.menu}</p>
+                <ul className="flex flex-col gap-1.5">
+                  {menu.items.map((item) => (
+                    <li key={item.slug} className="flex flex-wrap items-baseline gap-x-2 gap-y-0.5 text-sm">
+                      <span className="text-slate-200">{item.label}</span>
+                      <code className="text-xs text-slate-500">{item.slug}</code>
+                      {item.note && <span className="text-xs italic text-emerald-400/70">— {item.note}</span>}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+
+          {/* Standalone / persistent */}
+          <div className="mt-4 flex flex-wrap gap-3 rounded-3xl border border-white/10 bg-white/[0.02] p-5 md:p-6">
+            <span className="w-full text-sm font-semibold text-white md:w-auto md:pr-2">Always visible:</span>
+            {headerStandalone.map((item) => (
+              <span
+                key={item.slug}
+                className={`inline-flex items-center gap-2 rounded-full border px-3 py-1 text-xs ${
+                  item.kind === "cta"
+                    ? "border-emerald-400/30 bg-emerald-400/10 text-emerald-200 font-medium"
+                    : "border-white/10 text-slate-300"
+                }`}
+              >
+                {item.label}
+                <code className="text-[10px] text-slate-500">{item.slug}</code>
+              </span>
+            ))}
+          </div>
+
+          {/* Footer columns */}
+          <div className="mt-8">
+            <p className="mb-3 text-sm font-semibold text-white">Footer columns</p>
+            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+              {footerColumns.map((col) => (
+                <div key={col.title} className="rounded-3xl border border-white/10 bg-white/[0.02] p-5">
+                  <p className="mb-2 text-xs font-semibold uppercase tracking-[0.18em] text-emerald-300">{col.title}</p>
+                  <ul className="flex flex-col gap-1 text-sm text-slate-300">
+                    {col.items.map((item) => (
+                      <li key={item}>{item}</li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+            <p className="mt-4 text-xs italic text-slate-500">
+              Footer base row: AHPRA registration numbers · RACS / hospital accreditations · legal disclaimer.
+              &ldquo;Not yet built&rdquo; items in the menus above are P1/P2 pages in the architecture that still need briefs/pages.
+            </p>
+          </div>
+        </div>
+      </section>
 
       <section className="border-t border-white/10 py-12 md:py-16">
         <div className="mx-auto max-w-6xl px-5 md:px-8">

@@ -65,7 +65,7 @@ Use these verbatim — they are factual anchors the writer must not alter:
 
 | Label | Value | Note |
 |---|---|---|
-| BMI 35+ | Usually eligible | Most people at BMI 35 or over qualify for a surgical assessment |
+| MBS threshold | Assessed individually | BMI 40 or above, or BMI 35–39.9 with at least one major obesity-related condition — always subject to individual clinical assessment. |
 | First consult | 30–60 min | An honest conversation about your options, with no obligation |
 | Consult to surgery | 3–6 months | A typical timeline, though it varies for each person |
 
@@ -73,38 +73,38 @@ Use these verbatim — they are factual anchors the writer must not alter:
 - Section title: "Eligibility is about more than a single number"
 - ~3 paragraphs
 - Para 1: Explain that while BMI is part of the picture, eligibility is a whole-person assessment — weight, health conditions, history of prior attempts, and goals. Avoid making it sound like a tick-box exercise.
-- Para 2: Give a plain-language explanation of the BMI scale (overweight 27–29, class 1 obesity 30–34, class 2 35–39, class 3 40+). Make clear that where someone sits influences the options, not a final ruling.
+- Para 2: Give a plain-language explanation of the BMI scale (overweight 25–29.9, class 1 obesity 30–34.9, class 2 obesity 35–39.9, class 3 obesity 40+). Make clear that where someone sits influences the options, not a final ruling.
 - Para 3: Give a concrete example of two people with the same BMI getting different recommendations — one with type 2 diabetes and sleep apnoea versus one with no comorbidities. This shows why in-person assessment matters.
 - Closing note (below paragraphs): Reassure the reader they do not need to calculate their BMI precisely before calling — the team can help, and the surgeon will confirm it at the consult.
 
 ### Eligibility section
-- **Frame this as CLINICAL eligibility, not financial.** The section centres on medical indicators: BMI thresholds (e.g. BMI ≥40, or ≥35 with weight-related comorbidities such as type 2 diabetes, hypertension, obstructive sleep apnoea), previous attempts at non-surgical weight loss, age and general health considerations, and the requirement for an individual clinical assessment by the surgeon. Cost, finance and affordability are NOT eligibility criteria — keep them out of this section (they belong in the Cost paragraph and the Medicare/finance page).
+- **Frame this as CLINICAL eligibility, not financial.** The section centres on medical indicators: BMI 40 or above, or BMI 35–39.9 with at least one major obesity-related condition — always subject to individual clinical assessment; previous attempts at non-surgical weight loss, age and general health considerations also form part of assessment. Cost, finance and affordability are NOT eligibility criteria — keep them out of this section (they belong in the Cost paragraph and the Medicare/finance page).
 - **Present criteria as GENERAL INDICATORS, never a self-qualifying test.** Frame every threshold as a guide that is subject to individual surgeon assessment — never "if your BMI is X you qualify". Make clear surgery is one option within a broader pathway that may include non-surgical options and multidisciplinary (MDT) assessment; do not present surgery as the default outcome of being "eligible".
-- BMI summary line to anchor the section: "As a general guide, people with a BMI of 35 or above are typically eligible for a surgical assessment, and those at 40 or above are almost always eligible. A BMI of 30 to 34 may qualify when weight-related health conditions are present. These are general indicators only — your surgeon confirms suitability at an individual assessment."
+- BMI summary line to anchor the section: "BMI 40 or above, or BMI 35–39.9 with at least one major obesity-related condition — always subject to individual clinical assessment. A BMI below 35 does not meet the MBS threshold for these items; your surgeon will assess your full health picture and discuss any other clinical pathways."
 - Write each of the following as a short, plain-language paragraph or bullet — do not combine them:
-  - BMI 27–29: not usually the first step; medical team can often help with medication and dietitian support
-  - BMI 30–34 with a weight-related condition: may qualify for surgery; type 2 diabetes specifically can change the recommendation
-  - BMI 35–39: most people eligible for a surgical assessment, with or without other health conditions
-  - BMI 40+: almost everyone eligible; frequently the most effective long-term option
-  - Comorbidities that strengthen a case: type 2 diabetes, high blood pressure, obstructive sleep apnoea, severe osteoarthritis, PCOS, fatty liver disease (NAFLD/NASH), severe acid reflux
-  - History of failed diets: this is expected, not a mark against you — it actually helps confirm surgery may be appropriate
-  - Mental health: part of the assessment, never a reason to be turned away; psychological review is there to set the patient up for success
+  - BMI 27–29: not usually the first step; the medical team can discuss non-surgical medical weight management and dietitian support
+  - BMI 30–34 with a weight-related condition: does not meet the MBS threshold for these items; the surgeon may discuss other clinical pathways after individual assessment
+  - BMI 40 or above, or BMI 35–39.9 with at least one major obesity-related condition — always subject to individual clinical assessment
+  - BMI 40 or above: MBS eligibility is assessed individually against the applicable item, clinical and referral requirements; BMI alone does not guarantee eligibility
+  - Comorbidities relevant to assessment: a major obesity-related comorbidity matters to MBS assessment at BMI 35–39.9, but a condition does not create eligibility below BMI 35. Whether a particular condition counts as a major obesity-related comorbidity is assessed individually against the current MBS criteria
+  - History of failed diets: this may inform assessment but does not establish eligibility by itself; the surgeon considers the full clinical picture
+  - Mental health: part of the assessment. A mental health history does not automatically rule out surgery, but active or unstable concerns, an eating disorder, substance misuse or difficulty following aftercare may affect timing or suitability
 
 ### How it works (4 steps)
 Keep steps in this order and cover this content — 1–2 sentences each:
 
-1. **Get in touch — self-referral or GP** — both routes work; explain that a GP referral helps with Medicare rebates on consultations but is not required to get started
+1. **Get in touch — self-referral or GP** — both routes work; explain that a GP referral may allow a Medicare rebate for an eligible specialist consultation, subject to current requirements, but is not required to get started
 2. **Orientation consultation** — 30–60 minutes, relaxed and honest; surgeon explains suitable options, walks through procedures, discusses costs openly; no obligation to proceed
-3. **Assessment and preparation** — if the patient decides to move forward: tests, meeting with dietitian and (where helpful) psychologist; this stage confirms surgery is safe and prepares them for what comes next
-4. **Surgery and aftercare** — procedure scheduled once everything is in place; Perth-based aftercare team supports recovery and the months that follow; emphasise that long-term results depend on the support around surgery, not just the operation itself
+3. **Assessment and preparation** — if the patient decides to move forward: tests, meeting with a dietitian and (where helpful) psychologist; this stage helps the surgeon assess whether surgery is appropriate, explain the risks and prepare the patient for what comes next
+4. **Surgery and aftercare** — procedure scheduled once everything is in place; Perth-based aftercare team provides follow-up during recovery and the months that follow; long-term experiences vary between individuals and ongoing follow-up remains part of care
 
 ### Benefits (5 bullets)
 Each bullet should convey one of these ideas — write them as patient-facing outcomes, not clinical claims:
 
 1. A clear, personalised answer about whether surgery is right for them — ends the guessing
-2. Alternative pathways exist if surgery is not the right starting point (medication, dietitian support) — no one leaves without options
+2. Alternative pathways may be discussed if surgery is not the right starting point (non-surgical medical weight management, dietitian support) — do not imply that every reader is suitable for a particular pathway
 3. For many patients, surgery supports meaningful improvement in weight-related conditions like type 2 diabetes and sleep apnoea — but individual results vary, use measured language
-4. Access to FRACS-certified surgeons at SJOG Murdoch and Subiaco
+4. Access to FRACS-certified surgeons at SJOG Murdoch and Subiaco (hospital identity to be verified — open question: drafts name different facilities)
 5. A team that takes prior attempts seriously and builds a plan around the individual — not a one-size-fits-all template
 
 ### Risks — honest section
@@ -113,17 +113,17 @@ Each bullet should convey one of these ideas — write them as patient-facing ou
   - All surgery carries risk: bleeding, infection, blood clots, anaesthetic reactions
   - Bariatric procedures require lifelong changes to eating habits and ongoing follow-up
   - Some procedures require long-term vitamin and mineral supplementation
-  - Results depend heavily on post-surgery dietary and lifestyle adherence; outcomes vary between individuals
-  - Surgery is a tool, not a cure — it works best alongside the support and habits built around it
+  - Outcomes vary between individuals and are influenced by many factors, including post-surgery dietary and lifestyle changes and ongoing follow-up
+  - Surgery is a treatment option, not a cure; the care team will explain its intended role, limits and ongoing requirements
 
 ### Cost paragraph
-Cover: costs depend on procedure, private health cover, and individual circumstances; these are discussed openly at the first consultation; many patients use private health insurance; some access superannuation; the team provides a clear itemised estimate so there are no surprises. Do not quote specific dollar figures — these vary.
+Cover: costs and any Medicare or private-health benefits depend on the procedure, policy and individual circumstances; discuss them at the first consultation and ask Medicare and the insurer to confirm what applies. The team provides a clear itemised estimate. Do not quote specific dollar figures or promise that a particular policy will cover a component.
 
 ### Conversion CTA headline
 Direction: Acknowledge the emotional weight of the first step (making contact feels hard). The line should be warm and direct — it should make the reader feel that picking up the phone is safe, not a commitment.
 Reference tone: "The hardest part is picking up the phone. Let us help you find out where you stand."
 
-### FAQs (7 questions)
+### FAQs (11 questions)
 The page must answer each of the following:
 
 1. My BMI is around 30 — am I too low for weight loss surgery?
@@ -133,13 +133,21 @@ The page must answer each of the following:
 5. What actually happens at the first appointment?
 6. How long does it take to go from first consultation to surgery?
 7. What if I find out surgery is not right for me?
+8. How much does weight loss surgery cost in Perth?
+9. Does Medicare cover weight loss surgery?
+10. What is the 30/30 eating rule after bariatric surgery?
+11. What can happen over 10 years after weight loss surgery?
+
+(Paste-ready answers for Q8–Q11 are in the content review; keep dollar figures out of copy and treat the 30/30 protocol as to-be-confirmed with the practice.)
 
 ---
 
 ## Tone and compliance notes
+- **Hospitals (OPEN):** hospital identity is unverified (drafts name different facilities). Treat every hospital name as [to be verified] pending client confirmation.
 - Medical advertising: no guarantees, use phrases like "clinical averages", "results vary", "your surgeon will advise"
 - AHPRA/TGA: no testimonials, no before/after claims, no guaranteed outcomes
 - **AHPRA s133 (eligibility-specific):** State all eligibility criteria as GENERAL INDICATORS subject to individual surgeon assessment — never "if your BMI is X you qualify" or any self-qualifying language. Do NOT pair eligibility with guaranteed outcomes or specific weight-loss / comorbidity-resolution figures (e.g. no "resolve your diabetes", no "lose X kg"). Reference non-surgical options and multidisciplinary (MDT) assessment as part of the pathway — do not push surgery as the default. Include a clear "general information, not medical advice — individual assessment required" line on the page.
+- **GLP-1 / medical-weight-management policy:** TGA/legal review remains pending. Prefer the neutral phrase "non-surgical medical weight management" in public copy; if an active ingredient or medication class is retained after the decision, use only semaglutide, liraglutide or GLP-1 wording, never brand names, and flag the copy for verification.
 - Voice: plain-language, empathetic, direct; avoid hype
 - Reader: a Perth adult considering weight loss surgery; anxious, doing research, probably has tried multiple diets, possibly carrying shame — write to the person, not the condition
 - The page should lower the emotional barrier to calling; every section should reduce fear, not add clinical weight
