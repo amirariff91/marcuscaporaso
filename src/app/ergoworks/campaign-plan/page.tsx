@@ -100,6 +100,18 @@ const questions = [
   "Which proof assets are substantiated and approved in writing?",
 ] as const;
 
+const sections = [
+  ["idea", "The idea"],
+  ["state", "Current state"],
+  ["offer", "Offer"],
+  ["channels", "Channels"],
+  ["lp", "Landing page"],
+  ["measurement", "Measurement"],
+  ["roadmap", "Roadmap"],
+  ["risks", "Risks"],
+  ["decisions", "Decisions"],
+] as const;
+
 function SectionHeading({ label, title, copy }: { label: string; title: string; copy?: string }) {
   return (
     <div className={styles.sectionHeading}>
@@ -140,6 +152,12 @@ export default function CampaignPlanPage() {
         <a className={styles.scrollCue} href="#idea"><ArrowDown size={17} /> The recommendation</a>
       </header>
 
+      <nav className={styles.sectionNav} aria-label="Sections">
+        {sections.map(([id, label]) => (
+          <a key={id} href={`#${id}`}>{label}</a>
+        ))}
+      </nav>
+
       <section className={styles.idea} id="idea">
         <SectionHeading label="The big idea" title="See the risk. Act on the priorities. Prove implementation." copy="A practical pathway replaces the isolated assessment: capture demand, create demand, convert it deliberately, then feed real outcomes back into the system." />
         <div className={styles.strategyFlow}>
@@ -155,7 +173,7 @@ export default function CampaignPlanPage() {
         </div>
       </section>
 
-      <section className={styles.stateSection}>
+      <section className={styles.stateSection} id="state">
         <div className={styles.stateIntro}>
           <SectionHeading label="Current state" title="A proven engine with gated expansion pockets." />
           <p>The account already captures meaningful commercial intent. The next gain comes from protecting that foundation while validating gated expansion pockets and improving the inputs that guide optimisation.</p>
@@ -169,7 +187,7 @@ export default function CampaignPlanPage() {
         </div>
       </section>
 
-      <section className={styles.offerSection}>
+      <section className={styles.offerSection} id="offer">
         <SectionHeading label="Offer ladder" title="One low-friction entry. A clear path to implementation." copy="The offer system moves the conversation from one defined question to a repeatable workplace programme—without overstating outcomes." />
         <div className={styles.offerLadder}>
           {offers.map(([stage, title, copy], index) => (
@@ -182,7 +200,7 @@ export default function CampaignPlanPage() {
         <div className={styles.caveat}><ShieldCheck size={20} /><p><strong>Snapshot scope:</strong> preliminary guidance only—not a compliance assessment, compliance certification, medical assessment or diagnosis.</p></div>
       </section>
 
-      <section className={styles.channelsSection}>
+      <section className={styles.channelsSection} id="channels">
         <SectionHeading label="Channel roles" title="A 70 / 20 / 10 operating model—with floors before percentages." copy="The split is a directional steady-state model, not an instruction to force underfunded tests. Proven capture stays protected while each new channel earns its role." />
         <div className={styles.allocation} aria-label="Directional channel allocation: 70 percent Search, 20 percent demand generation, 10 percent experiments">
           <div className={styles.searchBar}><strong>70%</strong><span>Search · capture</span></div>
@@ -196,7 +214,7 @@ export default function CampaignPlanPage() {
         </div>
       </section>
 
-      <section className={styles.lpSection}>
+      <section className={styles.lpSection} id="lp">
         <div className={styles.lpCopy}>
           <SectionHeading label="Landing-page concept" title="A message-matched route from workplace concern to practical next step." />
           <p>One navigation-reduced landing-page system, with baseline variants for manual handling training, workstation assessment, and hybrid or home-office programmes.</p>
@@ -222,7 +240,7 @@ export default function CampaignPlanPage() {
         </div>
       </section>
 
-      <section className={styles.measurementSection}>
+      <section className={styles.measurementSection} id="measurement">
         <SectionHeading label="Measurement" title="Move the optimisation signal closer to revenue." copy="Upgrade the existing foundation into a clean, privacy-controlled feedback loop. The primary commercial lens becomes qualified pipeline—not raw platform conversions." />
         <div className={styles.pipeline}>
           {["Snapshot request", "Enquiry", "Qualified lead", "Won"].map((item, index) => <div key={item}><span>{index + 1}</span><strong>{item}</strong></div>)}
@@ -234,7 +252,7 @@ export default function CampaignPlanPage() {
         </div>
       </section>
 
-      <section className={styles.roadmapSection}>
+      <section className={styles.roadmapSection} id="roadmap">
         <SectionHeading label="30 / 60 / 90 roadmap" title="Foundation first. Controlled launch second. Scale decisions last." />
         <div className={styles.roadmap}>
           {roadmap.map((phase, index) => (
@@ -247,7 +265,7 @@ export default function CampaignPlanPage() {
         </div>
       </section>
 
-      <section className={styles.gatesSection}>
+      <section className={styles.gatesSection} id="risks">
         <div className={styles.gatesIntro}>
           <CircleAlert size={25} />
           <SectionHeading label="Risks and compliance" title="These are launch gates, not tidy-up tasks." copy="If a gate is not satisfied, the affected campaign, page, form or measurement layer stays off." />
@@ -257,7 +275,7 @@ export default function CampaignPlanPage() {
         </div>
       </section>
 
-      <section className={styles.questionsSection}>
+      <section className={styles.questionsSection} id="decisions">
         <div className={styles.questionsIntro}>
           <SectionHeading label="Client decisions" title="What we need to resolve before implementation." copy="Answers to these questions turn a directional plan into a defensible launch brief." />
           <p className={styles.planningOnly}>This plan authorises planning only. It does not authorise changes to live advertising, website, CRM or tracking systems.</p>
