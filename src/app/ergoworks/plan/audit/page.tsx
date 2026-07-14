@@ -34,11 +34,11 @@ const baselineRows = [
 ] as const;
 
 const conversionRows = [
-  ["Calls from ads", "10", "Secondary native proxy; the qualified offline import is the only Primary call signal"],
-  ["Make an Enquiry", "10", "Primary, subject to validation and spam/internal exclusions"],
-  ["Newsletter Sign Up", "4", "Secondary"],
-  ["Email Click", "1", "Secondary"],
-  ["Call Forwarding", "1", "Secondary"],
+  ["Calls from ads", "Higher", "Secondary native proxy; the qualified offline import is the only Primary call signal"],
+  ["Make an Enquiry", "Higher", "Primary, subject to validation and spam/internal exclusions"],
+  ["Newsletter Sign Up", "Moderate", "Secondary"],
+  ["Email Click", "Low", "Secondary"],
+  ["Call Forwarding", "Low", "Secondary"],
   ["Other enabled actions, including Physiotherapy actions", "Not attributed in the campaign snapshot", "Remove from Consulting campaign goals or retain only in the correct business scope"],
 ] as const;
 
@@ -216,7 +216,7 @@ export default function AccountAuditPage() {
         <div className={styles.tableScroll}>
           <table>
             <caption>Last-30-day conversion actions</caption>
-            <thead><tr><th scope="col">Conversion action</th><th scope="col">Reported conversions</th><th scope="col">Proposed role</th></tr></thead>
+            <thead><tr><th scope="col">Conversion action</th><th scope="col">Reported volume (directional)</th><th scope="col">Proposed role</th></tr></thead>
             <tbody>
               {conversionRows.map(([action, conversions, role]) => <tr key={action}><th scope="row">{action}</th><td>{conversions}</td><td>{role}</td></tr>)}
             </tbody>
@@ -301,7 +301,7 @@ export default function AccountAuditPage() {
             The prescribed ads-budget rubric says: below 30 conversions/month, use Maximize Clicks with a CPC cap; between 30 and 50 conversions/month, use Maximize Conversions; and use tCPA only after stable CPA and greater conversion volume.
           </p>
           <p>
-            The synthesis nevertheless concludes that Maximize Conversions is the practical ceiling at approximately 20 real conversions/month. The live campaign also has established Search history rather than being a new campaign.
+            The synthesis nevertheless concludes that Maximize Conversions is the practical ceiling at the current modest monthly real-conversion volume (detailed in the private pack). The live campaign also has established Search history rather than being a new campaign.
           </p>
           <p>
             This conflict should not be resolved by automatically switching a mature campaign to Maximize Clicks. Maximize Clicks optimises traffic volume rather than lead quality and could amplify irrelevant demand before the resolved 30-day search-term evidence and existing negative inventory have been fully audited and extended with longer history.
