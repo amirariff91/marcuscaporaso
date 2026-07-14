@@ -34,6 +34,12 @@ bariatric surgery, weight loss surgery, gastric sleeve, gastric bypass, gastric 
 ### SERP Landscape (AU) — brand context, not a ranking battle
 The homepage's competitors are the same Perth surgeon-led clinic homepages (Dr Siva Gounder, Dr Andrew Kiyingi, Advance Surgical, Aurora Bariatrics). Almost all funnel straight to surgery. OSWA's homepage differentiator is the **team + full-spectrum** framing (medical management through to surgery, dedicated APD dietitians, two clinics) and 20+ years of local experience. The homepage should signal that breadth in the first screen, then route deeper.
 
+### Content Gap Opportunity
+Every competing homepage is a single-surgeon shopfront that presents surgery as the only (or default) answer. None frames obesity as a medical condition with a spectrum of care, and none leads with a multidisciplinary team (surgeons + physicians + APD dietitians) across two Perth clinics. The homepage's opportunity is to be the one front door that (a) says surgery is not the only path, (b) makes the team and full pathway obvious above the fold, and (c) routes each visitor to the right cluster in one click rather than making them hunt. This is a positioning/UX differentiator, not a keyword play — the homepage should convert brand and referral traffic, not chase generic rankings (those belong to the hubs).
+
+### Recommended Word Count
+700–1,000 words. A homepage is a router and trust signal, not a long-read; keep sections short and scannable and let the hub/procedure/cost pages it links to carry the depth. Do not pad to hit a length — brevity + fast triage is the goal here.
+
 ## Section guidance
 
 ### Hero
