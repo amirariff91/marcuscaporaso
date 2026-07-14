@@ -291,9 +291,9 @@ const geographyRows = [
   ["manual handling training near me", "350", "Candidate only when location targeting uses Presence and service coverage is truthful."],
   ["manual handling training perth", "200", "Hold from publication pending geography sign-off."],
   ["manual handling training adelaide", "150", "Hold from publication pending geography sign-off."],
-  ["manual handling training canberra", "100", "Hold from publication; do not infer serviceability from the separate assessment signal."],
+  ["manual handling training canberra", "100", "Keep (14 Jul): Canberra/Fyshwick is the only converting geo-specific term in the account (29% CTR); retain at base bid and monitor — do not exclude."],
   ["manual handling training darwin", "80", "Hold from publication pending geography sign-off."],
-  ["manual handling training brisbane", "50", "Hold from publication pending geography sign-off."],
+  ["manual handling training brisbane", "50", "Approved geo (14 Jul): target with bid boost. Confirm ErgoWorks Brisbane delivery capacity before any Brisbane-specific ad or landing-page claim (live site commits to Sydney/Melbourne)."],
 ] as const;
 
 const assessmentRows = [
@@ -479,7 +479,7 @@ const linkedinRows = [
 
 const dataGates = [
   ["Clean conversion baseline", "Current reported conversions mix newsletter and soft actions; allow at least one clean post-remediation baseline before commercial decisions."],
-  ["Service geography", "Confirm location targets, exclusions, presence setting and qualified-lead location data before publishing geo expansions."],
+  ["Service geography", "Resolved (14 Jul): the account runs national today; keep national presence targeting, bid-boost Brisbane/Melbourne/Sydney, and keep Canberra (only converting geo-specific term). Remaining gates: confirm Brisbane delivery capacity before any Brisbane claim, and confirm Canberra stays in scope."],
   ["Search evidence", "Pull the longer-history Search Terms Report, keyword performance, network settings, assets, Quality Score components and change history."],
   ["Commercial economics", "Confirm average contract value, margin, close rate, sales-cycle length, delivery cost and Snapshot fulfilment capacity."],
   ["Privacy and data", "Approve CMP, consent categories, retention, Pixel/Dataset scope, CRM audience use and offline-import design under OAIC APP 3."],
