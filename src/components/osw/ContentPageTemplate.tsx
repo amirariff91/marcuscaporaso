@@ -3,6 +3,7 @@ import Link from "next/link";
 export type FAQ = { question: string; answer: string };
 export type Surgeon = { name: string; credentials: string; specialty: string };
 export type Step = { title: string; description: string };
+export type AlliedHealthMember = { role: string; name?: string; credentials?: string; detail: string };
 
 export interface OswPageData {
   // Meta
@@ -44,6 +45,14 @@ export interface OswPageData {
 
   // Team (Section 09)
   surgeons: Surgeon[];
+
+  // Allied-health team (Section 09b, optional) — e.g. dietitians + exercise physiologists
+  alliedHealth?: {
+    title: string;
+    intro?: string;
+    members: AlliedHealthMember[];
+    note?: string;
+  };
 
   // Patient outcomes (Section 10)
   outcomesNote: string;
@@ -123,8 +132,32 @@ function CTABlock({ headline }: { headline: string }) {
 }
 
 export function OswContentPage({ data }: { data: OswPageData }) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "MedicalWebPage",
+        name: data.pageTitle,
+        description: data.metaDescription,
+        about: { "@type": "MedicalBusiness", name: "Obesity Surgery WA" },
+      },
+      ...(data.faqs.length
+        ? [
+            {
+              "@type": "FAQPage",
+              mainEntity: data.faqs.map((f) => ({
+                "@type": "Question",
+                name: f.question,
+                acceptedAnswer: { "@type": "Answer", text: f.answer },
+              })),
+            },
+          ]
+        : []),
+    ],
+  };
   return (
     <main className="min-h-screen bg-[#071112] text-slate-100">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       {/* Hero */}
       <section className="relative overflow-hidden border-b border-white/10">
         <div className="absolute left-1/2 top-0 h-[600px] w-[900px] -translate-x-1/2 rounded-full bg-emerald-500/10 blur-3xl" />
@@ -253,6 +286,32 @@ export function OswContentPage({ data }: { data: OswPageData }) {
           </div>
         </div>
       </section>
+
+      {/* Allied-health team (optional) */}
+      {data.alliedHealth && (
+        <section className="border-t border-white/10 py-16 md:py-20">
+          <div className="mx-auto max-w-4xl px-5 md:px-8">
+            <SectionTitle title={data.alliedHealth.title} accent="Allied health" />
+            {data.alliedHealth.intro && (
+              <p className="mb-8 max-w-3xl text-base leading-8 text-slate-300">{data.alliedHealth.intro}</p>
+            )}
+            <div className="grid gap-4 sm:grid-cols-2">
+              {data.alliedHealth.members.map((m) => (
+                <div key={`${m.role}-${m.name ?? ""}`} className="rounded-2xl border border-white/10 bg-white/[0.04] p-5 md:p-6">
+                  <p className="text-sm font-semibold text-white">{m.name ?? m.role}</p>
+                  <p className="mt-0.5 text-xs font-medium text-emerald-300">
+                    {[m.name ? m.role : null, m.credentials].filter(Boolean).join(" · ")}
+                  </p>
+                  <p className="mt-3 text-sm leading-7 text-slate-400">{m.detail}</p>
+                </div>
+              ))}
+            </div>
+            {data.alliedHealth.note && (
+              <p className="mt-6 max-w-3xl text-xs leading-6 text-slate-500">{data.alliedHealth.note}</p>
+            )}
+          </div>
+        </section>
+      )}
 
       {/* Benefits */}
       <section className="border-t border-white/10 bg-white/[0.015] py-16 md:py-20">

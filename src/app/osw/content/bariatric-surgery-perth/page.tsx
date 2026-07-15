@@ -60,7 +60,7 @@ const pageData: OswPageData = {
     {
       title: "Assessment with the wider team",
       description:
-        "Bariatric care is a team effort. You may see a physician, a dietitian and other clinicians who help confirm that surgery is safe and appropriate, and who prepare you for the changes ahead.",
+        "Bariatric care is a team effort. You may see a physician, a dietitian and other clinicians who help confirm that surgery is safe and appropriate and prepare you for the changes ahead. Our exercise physiologists can support the movement and physical-activity side of your care.",
     },
     {
       title: "Pre-surgery preparation",
