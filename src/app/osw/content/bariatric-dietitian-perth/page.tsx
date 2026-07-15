@@ -113,7 +113,7 @@ const pageData: OswPageData = {
   alliedHealth: {
     title: "Your allied-health team: bariatric dietitians and exercise physiologists",
     intro:
-      "Bariatric care works best as a team. Alongside our bariatric dietitians, our exercise physiologists support the movement and physical-activity side of your care, before and after surgery.",
+      "Bariatric care is a team effort. Alongside our bariatric dietitians, our exercise physiologists support the movement and physical-activity side of your care.",
     members: [
       {
         role: "Bariatric dietitians",
@@ -124,11 +124,11 @@ const pageData: OswPageData = {
       {
         role: "Exercise physiologists",
         detail:
-          "Our exercise physiologists support the movement and physical-activity side of your care, with guidance suited to your stage of recovery and your health. Their appointments sit alongside your dietitian sessions as part of our structured support.",
+          "Our exercise physiologists support the movement and physical-activity side of your care. Exercise physiology also features in our structured programs — Reflect & Reset, for example, includes exercise physiologist appointments alongside dietitian sessions.",
       },
     ],
     note:
-      "Consultations are available at our Booragoon and Mandurah clinics. Ask your GP whether a referral is right for you; Medicare rebate eligibility depends on the practitioner and your referral, so we confirm what applies before you book.",
+      "Our clinics are in Booragoon and Mandurah. Ask your GP whether a referral is right for you, and we will confirm any fees or rebates that apply before you book.",
   },
   outcomesNote:
     "The evidence is clear that bariatric surgery works best as part of a team approach, and nutrition is one of the strongest pillars of that team. Patients who stay connected to their dietitian tend to navigate the early stages more comfortably and hold onto their results over the longer term. That said, surgery and dietetic care are tools, not guarantees. Your outcome depends on the changes you make and sustain, and results genuinely vary between individuals. Our role is to give you the knowledge, the plan and the steady support to get the best result that is realistic for you.",
