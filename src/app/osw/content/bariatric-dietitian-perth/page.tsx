@@ -105,14 +105,15 @@ const pageData: OswPageData = {
         "Experienced bariatric surgeon who works closely with our dietitians and physicians so your surgical and nutritional care stay joined up at every stage.",
     },
   ],
-  // DRAFT — PENDING MARCUS before publishing EP specifics: confirm (1) AEP/ESSA accreditation,
-  // (2) in-house vs referral arrangement, (3) exact clinics (this page uses Booragoon + Mandurah;
-  // the earlier EP draft said "Greenfields", which is likely wrong — reconcile to Mandurah).
-  // Visible copy below is deliberately generic and claim-free until those are confirmed.
+  // EP verified 2026-07-15 from obesitysurgerywa.com.au: the "Reflect & Reset" program lists
+  // "2 exercise physiologist appointments", so EPs are a real, in-house part of OSWA. Clinics =
+  // Booragoon + Mandurah (the earlier draft's "Greenfields" was wrong). AEP/ESSA accreditation is
+  // not stated publicly, so copy makes NO accreditation claim and names no individual EPs. Copy is
+  // AHPRA-tightened: EP tied to the team + structured support, no implied-outcome claims.
   alliedHealth: {
-    title: "Your allied-health team: dietitians and exercise physiologists",
+    title: "Your allied-health team: bariatric dietitians and exercise physiologists",
     intro:
-      "Nutrition is one pillar of lasting results, and movement is another. Alongside our bariatric dietitians, exercise physiology support helps you build safe, sustainable physical activity around your surgery and your body's changing needs.",
+      "Bariatric care works best as a team. Alongside our bariatric dietitians, our exercise physiologists support the movement and physical-activity side of your care, before and after surgery.",
     members: [
       {
         role: "Bariatric dietitians",
@@ -123,11 +124,11 @@ const pageData: OswPageData = {
       {
         role: "Exercise physiologists",
         detail:
-          "Exercise physiology support helps you rebuild movement and physical activity at a pace that suits your recovery, so being active becomes a sustainable part of holding onto your results. Your plan is matched to your stage and your health.",
+          "Our exercise physiologists support the movement and physical-activity side of your care, with guidance suited to your stage of recovery and your health. Their appointments sit alongside your dietitian sessions as part of our structured support.",
       },
     ],
     note:
-      "Ask your GP for a referral so eligible consultations can attract a Medicare rebate. Where each practitioner sees you, and how they work alongside your surgical team, is set out with you as part of your plan.",
+      "Consultations are available at our Booragoon and Mandurah clinics. Ask your GP whether a referral is right for you; Medicare rebate eligibility depends on the practitioner and your referral, so we confirm what applies before you book.",
   },
   outcomesNote:
     "The evidence is clear that bariatric surgery works best as part of a team approach, and nutrition is one of the strongest pillars of that team. Patients who stay connected to their dietitian tend to navigate the early stages more comfortably and hold onto their results over the longer term. That said, surgery and dietetic care are tools, not guarantees. Your outcome depends on the changes you make and sustain, and results genuinely vary between individuals. Our role is to give you the knowledge, the plan and the steady support to get the best result that is realistic for you.",
