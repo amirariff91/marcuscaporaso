@@ -105,6 +105,30 @@ const pageData: OswPageData = {
         "Experienced bariatric surgeon who works closely with our dietitians and physicians so your surgical and nutritional care stay joined up at every stage.",
     },
   ],
+  // DRAFT — PENDING MARCUS before publishing EP specifics: confirm (1) AEP/ESSA accreditation,
+  // (2) in-house vs referral arrangement, (3) exact clinics (this page uses Booragoon + Mandurah;
+  // the earlier EP draft said "Greenfields", which is likely wrong — reconcile to Mandurah).
+  // Visible copy below is deliberately generic and claim-free until those are confirmed.
+  alliedHealth: {
+    title: "Your allied-health team: dietitians and exercise physiologists",
+    intro:
+      "Nutrition is one pillar of lasting results, and movement is another. Alongside our bariatric dietitians, exercise physiology support helps you build safe, sustainable physical activity around your surgery and your body's changing needs.",
+    members: [
+      {
+        role: "Bariatric dietitians",
+        credentials: "Accredited Practising Dietitians (APD)",
+        detail:
+          "Clare Renn, Megan Parker and Rhiannon Dick each hold APD status and specialise in bariatric and metabolic nutrition, guiding you from your pre-operative plan through every stage afterwards.",
+      },
+      {
+        role: "Exercise physiologists",
+        detail:
+          "Exercise physiology support helps you rebuild movement and physical activity at a pace that suits your recovery, so being active becomes a sustainable part of holding onto your results. Your plan is matched to your stage and your health.",
+      },
+    ],
+    note:
+      "Ask your GP for a referral so eligible consultations can attract a Medicare rebate. Where each practitioner sees you, and how they work alongside your surgical team, is set out with you as part of your plan.",
+  },
   outcomesNote:
     "The evidence is clear that bariatric surgery works best as part of a team approach, and nutrition is one of the strongest pillars of that team. Patients who stay connected to their dietitian tend to navigate the early stages more comfortably and hold onto their results over the longer term. That said, surgery and dietetic care are tools, not guarantees. Your outcome depends on the changes you make and sustain, and results genuinely vary between individuals. Our role is to give you the knowledge, the plan and the steady support to get the best result that is realistic for you.",
   faqs: [

@@ -60,7 +60,7 @@ const pageData: OswPageData = {
     {
       title: "Assessment with the wider team",
       description:
-        "Bariatric care is a team effort. You may see a physician, a dietitian and other clinicians who help confirm that surgery is safe and appropriate, and who prepare you for the changes ahead.",
+        "Bariatric care is a team effort. You may see a physician, a dietitian, an exercise physiologist and other clinicians who help confirm that surgery is safe and appropriate, and who prepare you for the changes ahead.",
     },
     {
       title: "Pre-surgery preparation",
@@ -75,7 +75,7 @@ const pageData: OswPageData = {
     {
       title: "Long-term aftercare",
       description:
-        "This is the part that matters most for lasting results. You stay connected to our dietitians and clinical team over the months and years that follow, with regular reviews, nutritional monitoring and support as your body and habits adjust.",
+        "This is the part that matters most for lasting results. You stay connected to our dietitians, exercise physiologists and clinical team over the months and years that follow, with regular reviews, nutritional monitoring and support as your body and habits adjust.",
     },
   ],
 

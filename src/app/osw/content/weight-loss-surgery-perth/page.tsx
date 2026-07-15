@@ -17,7 +17,7 @@ const pageData: OswPageData = {
 
   heroHeadline: "Weight loss surgery in Perth, and everything that sits before it.",
   heroSubheadline:
-    "If you have spent years trying to lose weight and keep it off, you are not the problem, and you are not alone. Obesity Surgery WA is a Perth team of surgeons, physicians and dietitians who help you find the right pathway, whether that starts with medical management or with surgery. We meet you where you are.",
+    "If you have spent years trying to lose weight and keep it off, you are not the problem, and you are not alone. Obesity Surgery WA is a Perth team of surgeons, physicians, dietitians and exercise physiologists who help you find the right pathway, whether that starts with medical management or with surgery. We meet you where you are.",
 
   stats: [
     { label: "Dietitians on the team", value: "APD", note: "Accredited Practising Dietitians; ongoing support is part of the plan, not an afterthought" },
@@ -30,7 +30,7 @@ const pageData: OswPageData = {
   whatIsParagraphs: [
     "Weight loss surgery, also called bariatric surgery, is a group of procedures that change the size or function of your stomach and digestive system to help you eat less and feel full sooner. The most common procedures we perform in Perth are the gastric sleeve and the gastric bypass, with the adjustable gastric band still an option for some people. These are well established operations with a long track record in Australia.",
     "But surgery is not the only road, and for many people it is not the first one. Obesity is a medical condition, not a failure of willpower. That framing matters, because it changes what good treatment looks like. The right answer for you might be a medication programme, a structured very low calorie diet, regular work with a dietitian, an endoscopic option, or surgery. Often it is a combination, in a sequence that suits your life and your health.",
-    "This is why Obesity Surgery WA is not just a group of surgeons. Our team includes physicians who manage the medical side of weight, and specialist dietitians whose support is a key part of why people succeed long term. Whoever you see first, you are stepping into a team that can move you along the spectrum of care as your needs change.",
+    "This is why Obesity Surgery WA is not just a group of surgeons. Our team includes physicians who manage the medical side of weight, specialist dietitians whose support is a key part of why people succeed long term, and exercise physiologists who help you make movement a sustainable habit. Whoever you see first, you are stepping into a team that can move you along the spectrum of care as your needs change.",
     "Our aim on this page is simple. We want to help you understand the full range of options so you can make an informed decision with us, rather than feeling pushed toward any single one.",
   ],
   comparisonNote:
