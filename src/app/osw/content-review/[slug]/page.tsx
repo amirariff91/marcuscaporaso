@@ -25,7 +25,7 @@ async function readReview(slug: string): Promise<string | null> {
 export async function generateStaticParams() {
   const files = await readdir(REVIEWS_DIR);
   return files
-    .filter((file) => file.endsWith(".md") && file !== "summary.md")
+    .filter((file) => file.endsWith(".md") && !file.startsWith("summary"))
     .map((file) => ({ slug: file.replace(/\.md$/, "") }));
 }
 

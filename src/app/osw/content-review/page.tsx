@@ -7,13 +7,48 @@ import { marked } from "marked";
 const REVIEWS_DIR = path.join(process.cwd(), "content-reviews");
 
 export const metadata: Metadata = {
-  title: "OSWA Content Review — Batch 1 (Core Acquisition)",
+  title: "OSWA Content Review — Batches 1 & 2",
   description:
-    "Editorial and compliance review of the first batch of OSWA content drafts.",
+    "Editorial and compliance review of the OSWA content drafts, by batch.",
   robots: { index: false, follow: false },
 };
 
-const PAGES: { slug: string; title: string; verdict: string; note: string }[] =
+type ReviewPage = { slug: string; title: string; verdict: string; note: string };
+
+const BATCH2_PAGES: ReviewPage[] = [
+  {
+    slug: "gastric-sleeve-cost-perth",
+    title: "Gastric Sleeve Cost Perth",
+    verdict: "Rework",
+    note: "Cost definitions, Medicare + hospital verification, payment-plan drift",
+  },
+  {
+    slug: "weight-loss-surgery-cost-perth",
+    title: "Weight Loss Surgery Cost Perth (hub)",
+    verdict: "Rework",
+    note: "Cost definitions, scope boundary with sleeve-cost page, scaffolding",
+  },
+  {
+    slug: "medicare-private-health-cover",
+    title: "Medicare & Private Health Cover",
+    verdict: "Rework",
+    note: "BMI/MBS eligibility, Medicare-vs-private wording, unsupported figures",
+  },
+  {
+    slug: "super-access-weight-loss-surgery",
+    title: "Super Access for Weight Loss Surgery",
+    verdict: "Rework",
+    note: "Compassionate-release framing, financial boundaries, length cut",
+  },
+  {
+    slug: "book-consultation",
+    title: "Book a Consultation",
+    verdict: "Rework",
+    note: "Location verification, referral/funding wording, padding",
+  },
+];
+
+const PAGES: ReviewPage[] =
   [
     {
       slug: "gastric-sleeve-perth",
@@ -47,46 +82,69 @@ const PAGES: { slug: string; title: string; verdict: string; note: string }[] =
     },
   ];
 
-export default async function ContentReviewIndexPage() {
-  const markdown = await readFile(
-    path.join(REVIEWS_DIR, "summary.md"),
-    "utf8",
+function ReviewGrid({ pages }: { pages: ReviewPage[] }) {
+  return (
+    <div className="mb-10 grid gap-3">
+      {pages.map((page) => (
+        <Link
+          key={page.slug}
+          href={`/osw/content-review/${page.slug}`}
+          className="group rounded-xl border border-white/10 bg-white/[0.03] p-4 transition-colors hover:border-emerald-400/40 hover:bg-white/[0.06]"
+        >
+          <div className="flex items-center justify-between gap-3">
+            <span className="font-semibold text-white group-hover:text-emerald-200">
+              {page.title}
+            </span>
+            <span className="rounded-full bg-amber-400/10 px-2.5 py-0.5 text-xs font-medium text-amber-300">
+              {page.verdict}
+            </span>
+          </div>
+          <p className="mt-1 text-sm text-white/60">{page.note}</p>
+        </Link>
+      ))}
+    </div>
   );
-  const html = await marked.parse(markdown);
+}
+
+export default async function ContentReviewIndexPage() {
+  const [batch1Md, batch2Md] = await Promise.all([
+    readFile(path.join(REVIEWS_DIR, "summary.md"), "utf8"),
+    readFile(path.join(REVIEWS_DIR, "summary-batch-2.md"), "utf8"),
+  ]);
+  const [batch1Html, batch2Html] = await Promise.all([
+    marked.parse(batch1Md),
+    marked.parse(batch2Md),
+  ]);
 
   return (
     <main className="min-h-screen bg-[#071112] text-white">
       <div className="mx-auto max-w-3xl px-5 py-12 md:px-8">
         <p className="mb-2 text-sm text-emerald-300">
-          OSWA · Content review · 10 July 2026
+          OSWA · Content review · Batch 2 · 20 July 2026
         </p>
         <h1 className="mb-6 text-3xl font-bold text-white md:text-4xl">
-          Batch 1 review — Core Acquisition pages
+          Batch 2 review — Costs &amp; Funding pages
         </h1>
 
-        <div className="mb-10 grid gap-3">
-          {PAGES.map((page) => (
-            <Link
-              key={page.slug}
-              href={`/osw/content-review/${page.slug}`}
-              className="group rounded-xl border border-white/10 bg-white/[0.03] p-4 transition-colors hover:border-emerald-400/40 hover:bg-white/[0.06]"
-            >
-              <div className="flex items-center justify-between gap-3">
-                <span className="font-semibold text-white group-hover:text-emerald-200">
-                  {page.title}
-                </span>
-                <span className="rounded-full bg-amber-400/10 px-2.5 py-0.5 text-xs font-medium text-amber-300">
-                  {page.verdict}
-                </span>
-              </div>
-              <p className="mt-1 text-sm text-white/60">{page.note}</p>
-            </Link>
-          ))}
-        </div>
+        <ReviewGrid pages={BATCH2_PAGES} />
+
+        <article
+          className="brief-prose mb-16 max-w-3xl rounded-2xl bg-white p-8 text-slate-900 shadow-2xl md:p-10"
+          dangerouslySetInnerHTML={{ __html: batch2Html }}
+        />
+
+        <p className="mb-2 text-sm text-emerald-300">
+          OSWA · Content review · Batch 1 · 10 July 2026
+        </p>
+        <h2 className="mb-6 text-2xl font-bold text-white md:text-3xl">
+          Batch 1 review — Core Acquisition pages
+        </h2>
+
+        <ReviewGrid pages={PAGES} />
 
         <article
           className="brief-prose max-w-3xl rounded-2xl bg-white p-8 text-slate-900 shadow-2xl md:p-10"
-          dangerouslySetInnerHTML={{ __html: html }}
+          dangerouslySetInnerHTML={{ __html: batch1Html }}
         />
       </div>
 
