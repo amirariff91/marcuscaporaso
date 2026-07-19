@@ -47,7 +47,7 @@ export default async function ContentReviewPage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  if (slug === "summary") {
+  if (slug.startsWith("summary")) {
     notFound();
   }
   const markdown = await readReview(slug);
