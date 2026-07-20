@@ -1,6 +1,6 @@
 # Book a Consultation — content review
 
-**Verdict: Rework** · 7 blocking · 9 should-fix · 1 minor
+**Verdict: Rework** · 6 blocking · 9 should-fix · 1 minor · 1 resolved
 
 **Why:** The reassurance and booking flow are strong, but the page still contains unverified location claims, referral and funding wording that needs tightening, testimonial-style claims, visible editorial scaffolding, and substantial word-count padding.
 
@@ -78,17 +78,15 @@ Why it matters: Unverifiable patient reports and consistent emotional-relief cla
 
 > Consultations are different for everyone. The appointment gives you time to ask questions, discuss options and costs, and consider what you would like to do next. You can take the information home and decide in your own time; there is no single path after a consultation.
 
-6. **Blocking — The Mandurah address uses an unapproved location label**
+6. **Resolved — consultation clinic addresses confirmed (OSWA, 20 July 2026)**
 
 > Our Booragoon clinic is at the Garden City Specialist Centre, 537 Marmion Street, Booragoon WA 6154. Our Mandurah clinic is at the WA Cardiology Centre, 30 Minilya Parkway, Greenfields 6210.
 
-Why it matters: The approved consultation locations are Booragoon and Mandurah; named facilities and addresses remain unverified, and “Greenfields” conflicts with the required location naming.
+Why it matters: These are the two **consultation** clinic addresses (where patients see the surgeon), and they are now confirmed by OSWA — keep the draft's addresses as written. The earlier "Greenfields" concern is cleared: Greenfields is the suburb the Mandurah clinic sits in (WA Cardiology Centre), so "our Mandurah clinic … Greenfields 6210" is correct, not a conflict.
 
-**Writer edit:** Replace the FAQ answer with:
+**Writer edit:** Keep the draft's consultation-location copy as-is — both addresses are verified and safe to publish.
 
-> We have two Perth consultation locations: Booragoon and Mandurah. When you book, the team will confirm the clinic address for your appointment and provide directions.
-
-**Brief-owner note (OSWA, not the writer):** **Marcus: forward Wendy's three hospital locations** — until received and confirmed, keep facility names and full addresses out of the writer's copy (the draft's "Greenfields" address conflicts with the required Mandurah naming).
+**Note:** This confirms the *consultation* clinics only. It does NOT resolve the separate **surgery hospital** question (the drafts name Mount Private / The Park / Waikiki; the briefs name St John of God Murdoch/Subiaco) — that remains held on the cost/procedure pages until OSWA confirms where surgery is performed.
 
 7. **Blocking — Extraction metadata and image placeholders remain in the copy**
 

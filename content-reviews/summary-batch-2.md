@@ -31,10 +31,11 @@ Each page ends with one net word budget (current − cuts + additions = target, 
 
 ## Decisions needed from OSWA
 
-1. **Hospitals (carried from batch 1):** confirm the current operating hospitals and consultation addresses — this now blocks published copy on all 10 reviewed pages.
-2. **Cost framing:** approve the definitions and ranges ("from $X" / range style, insured out-of-pocket vs self-funded total) before any figure is published on the cost pages.
-3. **Super brief corrections:** the super brief's worked dollar example and flat tax-percentage band need replacing with the factor-based wording in the review.
-4. **Booking URL:** supply the approved online-booking link for the Book a Consultation CTA.
+1. **Consultation clinic addresses — CONFIRMED 20 Jul 2026** ✅ Booragoon (Garden City Specialist Centre, 537 Marmion Street) + Mandurah (WA Cardiology Centre, 30 Minilya Parkway, Greenfields 6210). Locked into the booking page.
+2. **Surgery hospitals — STILL OPEN (carried from batch 1):** where operations are performed. Drafts say Mount Private / The Park / Waikiki; briefs say St John of God Murdoch/Subiaco. This still blocks the cost/procedure pages — needs Wendy's confirmed list.
+3. **Cost framing:** approve the definitions and ranges ("from $X" / range style, insured out-of-pocket vs self-funded total) before any figure is published on the cost pages.
+4. **Super brief corrections:** the super brief's worked dollar example and flat tax-percentage band need replacing with the factor-based wording in the review.
+5. **Booking URL:** supply the approved online-booking link for the Book a Consultation CTA.
 
 ## SEO/CRO enhancement pass (2026-07-20)
 
