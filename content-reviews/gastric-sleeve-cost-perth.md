@@ -19,7 +19,7 @@ Why it matters: The draft mixes an insured out-of-pocket range with a self-funde
 
 **For OSWA decision — not page copy**
 
-The source ranges below conflict and are not approved page copy. Block all cost figures from paste-ready copy until the Q3 cost-framing decision resolves the definitions and inclusions.
+The source ranges below conflict and are not approved page copy. Hold the **clinic price ranges** out of paste-ready copy until the Q3 cost-framing decision resolves the definitions and inclusions. (The public **MBS schedule fee** — a government figure, not a clinic price — MAY be published now; see the concrete substitute in "Additional recommendations" below, item A2.)
 
 | Funding definition | Definition | Approved planning range |
 |---|---|---|
@@ -89,7 +89,7 @@ Why it matters: The draft names hospitals that do not match the current brief, a
 
 > Your sleeve gastrectomy is performed via keyhole (laparoscopic) surgery at the private hospital confirmed for your care. Hospital identity, location, admission details and facility fees should be confirmed in the written estimate before you decide.
 
-**Brief-owner note (OSWA, not the writer):** The current brief names St John of God Murdoch and Subiaco, while the draft names Mount Private, The Park and Waikiki. Confirm the current hospital list and update the brief before publication.
+**Brief-owner note (OSWA, not the writer):** The current brief names St John of God Murdoch and Subiaco, while the draft names Mount Private, The Park and Waikiki. **Marcus: forward Wendy's three hospital locations** — until they're received and confirmed, keep all hospital identities and links out of the writer's copy.
 
 5. **Severity: Blocking — Retired payment-plan references remain**
 
@@ -212,7 +212,7 @@ Why it matters: The refreshed primary keyword is “gastric sleeve cost perth”
 
 **Writer edit:** Use:
 
-> # Gastric Sleeve Cost Perth: What the Estimate Includes
+> # Gastric Sleeve Surgery Costs in Perth: What Your Estimate Includes
 
 Replace the opening with:
 
@@ -220,7 +220,9 @@ Replace the opening with:
 
 Rename the broad H2 to:
 
-> ### Gastric sleeve cost in Perth: how the total is built
+> ### How the total is built
+
+Work "gastric sleeve cost in Perth" into the opening sentence and one FAQ naturally — do NOT force the exact keyword into multiple headings (that's the "AI slop" the writer flagged; one natural use in the intro + the title is enough).
 
 3. **Severity: Should-fix — The sleeve-versus-bypass note should identify the correct item numbers**
 
@@ -338,6 +340,8 @@ Why it matters: “MBS item number” is the clearer and more consistent term fo
 - **Billing inclusions — TO BE VERIFIED WITH OSWA:** confirm which assessments, aftercare and follow-up services are included or separately billed.
 
 ## Net word budget
+
+*Note: the "Additional recommendations — SEO/CRO pass" below adds a GLP-1-vs-surgery FAQ (A3) and restores the "why people consider this" context (A6). When those are adopted, re-strike the net target to absorb them — cut a duplicated cost explanation to stay at ~1,150 words.*
 
 **Target:** approximately **1,150 words including FAQs**.
 

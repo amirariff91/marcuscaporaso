@@ -70,7 +70,7 @@ Why it matters: The draft names three hospitals but later refers to four; the cu
 
 Why it matters: These figures are not approved, are ambiguous about whether they mean total self-funded cost or insured out-of-pocket gap, and conflict with the brief’s approach of not publishing a single online figure.
 
-Hold any replacement cost figures until the Q3 cost-framing decision; the Writer edit below contains no figures.
+Hold the unapproved **clinic** cost ranges until the Q3 cost-framing decision. The writer is not left empty-handed: the public **MBS schedule fee** ($1,016.90 / $762.70) and the concrete answer are in "Additional recommendations — SEO/CRO pass" (A1) below — use those. The Writer edit here removes only the unapproved ranges.
 
 **Writer edit:** delete the dollar ranges and use:
 

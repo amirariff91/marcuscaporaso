@@ -27,7 +27,7 @@ Why it matters: “Out-of-pocket” is not defined as insured out-of-pocket afte
 | Insured out-of-pocket | Amount remaining after eligible Medicare and private-health benefits; not the total surgery cost | Range to be approved after the Q3 cost-framing decision |
 | Self-funded total | Total surgery-related cost without applicable private-hospital benefits; not an out-of-pocket gap | Range to be approved after the Q3 cost-framing decision |
 
-**Writer edit:** Remove all committed dollar figures from the current stats, repeated range paragraphs and repeated FAQ figures. Use the approved comparison matrix once both funding definitions and ranges are final. Until then, use:
+**Writer edit:** Remove the unapproved **clinic price ranges** from the stats, range paragraphs and FAQs (the public MBS schedule fee is fine — see the fee model below). You are NOT left with nothing to write: use the concrete fee-component model and definitions in "Additional recommendations — SEO/CRO pass" (A1) as the replacement. Until the clinic ranges are approved, use:
 
 > Costs depend on the procedure, private-health policy, waiting periods, hospital excess and separate clinician fees. A written, itemised estimate specific to your circumstances is the relevant planning document, not a quote.
 
@@ -135,7 +135,11 @@ Why it matters: The extracted header metadata, image placeholders, empty heading
 > ## What a clear cost estimate gives you  
 > ## Get a written cost estimate specific to you, before you decide anything
 
-Keep one finished CTA only:
+Keep one finished CTA. **Current state (until the online-booking URL is supplied):**
+
+> Talk through your estimate with the team.
+
+**Once the booking URL exists,** switch to the stronger promise:
 
 > Get a written cost estimate specific to you, before you decide anything.
 

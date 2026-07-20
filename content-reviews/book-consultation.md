@@ -88,6 +88,8 @@ Why it matters: The approved consultation locations are Booragoon and Mandurah; 
 
 > We have two Perth consultation locations: Booragoon and Mandurah. When you book, the team will confirm the clinic address for your appointment and provide directions.
 
+**Brief-owner note (OSWA, not the writer):** **Marcus: forward Wendy's three hospital locations** — until received and confirmed, keep facility names and full addresses out of the writer's copy (the draft's "Greenfields" address conflicts with the required Mandurah naming).
+
 7. **Blocking — Extraction metadata and image placeholders remain in the copy**
 
 > *[draft image placeholder — remove from final page]*
@@ -282,4 +284,6 @@ Why it matters: The section is specifically about booking, so the heading should
 
 > You do not need a GP referral to book. If you have a valid referral, it may allow a Medicare rebate for an eligible specialist consultation. Booking without one is fine — ask the practice or Medicare what applies to your appointment.
 
-**A5. Journey follow-ups:** Supply the approved online-booking URL so the CTA and every upstream "get a written estimate / book online" promise resolve; QA the page at mobile widths with a persistent "Book online / Call" bar; add conversion tracking (tel_click, book_start, form_submit) so OSWA can tell whether the cost pages assist booking.
+**A5. Route cost questions, don't answer them here.** This is the booking page, not a cost page — a visitor asking "how much?" should be pointed to the cost guides, not given figures here. Add a one-line link: "Wondering about cost? See the [gastric sleeve cost guide](/osw/content/gastric-sleeve-cost-perth) and [weight loss surgery costs](/osw/content/weight-loss-surgery-cost-perth) — then book to get a written estimate for your situation."
+
+**A6. Journey follow-ups:** Supply the approved online-booking URL so the CTA and every upstream "get a written estimate / book online" promise resolve; QA the page at mobile widths with a persistent "Book online / Call" bar; add conversion tracking (tel_click, book_start, form_submit) so OSWA can tell whether the cost pages assist booking.
