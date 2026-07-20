@@ -102,12 +102,12 @@ Why it matters: The old payment-plans page and in-house plans have been retired;
 
 **Writer edit:** In the cost section, replace the financing sentence with:
 
-> OSWA does not offer in-house payment plans. Some people may independently explore third-party finance on the provider’s own terms; the practice does not recommend, arrange or approve external finance. See [Financing & payment options](/medicare-private-health-cover#financing-payment-options) for general information.
+> OSWA does not offer in-house payment plans. Some people may independently explore third-party finance on the provider’s own terms; the practice does not recommend, arrange or approve external finance. See [Financing & payment options](/osw/content/medicare-private-health-cover#financing-payment-options) for general information.
 
 Replace FAQ 6 with:
 
 > **6. Are there gastric sleeve payment plans available?**  
-> OSWA does not offer in-house payment plans; third-party finance is independent of the practice. See [Financing & payment options](/medicare-private-health-cover#financing-payment-options) for general information.
+> OSWA does not offer in-house payment plans; third-party finance is independent of the practice. See [Financing & payment options](/osw/content/medicare-private-health-cover#financing-payment-options) for general information.
 
 **Brief-owner note (OSWA, not the writer):** The brief's payment-plan line names Zip and TLC and should be replaced with the neutral policy above. Remove the provider-naming instruction and align the brief with the Medicare & Private Health Cover financing section.
 
@@ -373,3 +373,46 @@ Do not add new sections or expand the FAQ answers beyond this target.
 6. Are there gastric sleeve payment plans available?
 7. How long will I need off work?
 8. Will I have loose skin, and can I eat normally afterwards?
+
+---
+
+## Additional recommendations — SEO/CRO pass (2026-07-20)
+
+*Layered on top of the review above after a skilled multi-lens debate (SEO, conversion-copy, journey). These make the page more useful and findable within the same compliance guardrails. The cost-figure hold and the hospital hold are unchanged — every clinic dollar range still waits on the cost-framing decision.*
+
+**A1. Answer the cost question concretely without publishing a clinic price.** A cost-searcher who gets only "there is no single price" leaves. Give them a real model instead — the fee components and the two definitions — with the numbers still held:
+
+> A gastric sleeve isn't one price — it's several separate fees. A useful estimate lists them and labels the total correctly:
+>
+> | Fee component | Who charges it | Notes |
+> |---|---|---|
+> | Surgeon | Your surgeon | Confirmed at consultation |
+> | Anaesthetist | Separate provider | Varies — confirm |
+> | Assistant surgeon (if applicable) | Separate provider | Varies — confirm |
+> | Hospital & theatre | Private hospital | Depends on your cover/excess |
+> | Tests & follow-up | Various | Some Medicare-rebatable |
+>
+> Two totals matter, and they're very different: your **insured out-of-pocket** (what you pay after Medicare and private-health benefits) versus a **self-funded total** (no eligible private cover). A written estimate should say which one it's quoting.
+
+**A2. Add the government MBS fact (verified, not clinic pricing).** The Medicare schedule fee is a public government figure, not an AHPRA-sensitive clinic price — it answers "does Medicare cover it / how much" concretely:
+
+> For MBS item 31575 (sleeve gastrectomy), the current listed schedule fee is **$1,016.90** and the 75% Medicare benefit is **$762.70** (MBS Online, effective 1 July 2026). This applies to that surgical item only — anaesthetist, assistant and consultation items are separate. Confirm the items and benefits that apply to you.
+
+**A3. Add the demanded comparison FAQ** (the SERP shows a GLP-1-medication-vs-surgery People-Also-Ask question; a class-level answer is permitted, with no brand or active-ingredient names):
+
+> **Are GLP-1 medicines better than gastric sleeve surgery?**
+> They're different pathways and neither is universally better. GLP-1 medical weight management is non-surgical; gastric sleeve surgery has operative risks and recovery requirements. Which is appropriate depends on your health, BMI, previous treatment and clinical assessment — your team can discuss the options. *(Add to the FAQ list; keep the page's net word budget by trimming a duplicated cost explanation.)*
+
+**A4. Fix the cost-page hierarchy — there are THREE cost URLs, not two.** OSWA's live `/fees/` page already ranks #6 and is cited in Google's AI Overview. The review only distinguished this page from the hub; it must also sit clearly against `/fees/`. Recommended intent map + cross-links:
+- `/fees/` = the current itemised OSWA fee schedule (the "what it costs here" page)
+- this page = sleeve-specific cost explanation, definitions and FAQs
+- `/weight-loss-surgery-cost-perth` = all-procedure comparison
+Cross-link all three with descriptive anchors (e.g. "current OSWA fees", not repeated "gastric sleeve cost perth").
+
+**A5. De-hedge the estimate wording.** The stacked qualifiers ("anticipated… known at that stage… can") read as evasive. Concrete is more trustworthy:
+
+> Before you decide, the practice can give you a written estimate of the fees identified for your care — what each line covers, what's excluded or still to confirm, and which questions to ask your fund. The financial coordinator can walk through it; final benefits are confirmed by your fund and the providers.
+
+**A6. Restore the human reason (no outcome claims).** The outcome section was reduced to a bare disclaimer; add back the "why people consider this" context without the held 60–70% figure:
+
+> People consider gastric sleeve surgery for different reasons, including weight-related health concerns and the effect of weight on daily life. Your surgeon can discuss suitability, possible benefits and limitations, and the role of nutrition, activity and follow-up. Results vary between individuals, and no specific outcome can be guaranteed.

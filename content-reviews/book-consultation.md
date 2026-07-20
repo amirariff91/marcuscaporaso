@@ -262,3 +262,30 @@ Why it matters: The section is specifically about booking, so the heading should
 5. What should I bring to my consultation?
 6. Will I be pressured to book surgery on the day?
 7. What happens after I book?
+
+---
+
+## Additional recommendations — SEO/CRO pass (2026-07-20)
+
+*Layered on the review above after a skilled multi-lens debate. No urgency, no testimonials, no outcome claims — these stay removed.*
+
+**A1. Reassurance belongs in TWO places, not one.** For an anxious, high-consideration decision, one risk-reversal isn't enough — repeating it at the hero and the final CTA each removes a different moment of hesitation (this is regret-aversion used ethically, not urgency). Net word budget still lands because each instance is short:
+
+> **Hero:** Booking a consultation is not a commitment to surgery. It's a 30–60 minute conversation about your questions, options and likely costs — you decide what to do next in your own time.
+>
+> **Final CTA:** Not ready to decide? That's completely fine. Call **(08) 9332 0066** to book a consultation, take the information home, and consider your next step.
+
+**A2. Make the CTA state its value, not just reassurance.** Phone-only is correct until the booking URL is supplied (see follow-ups), but the CTA can be concrete:
+
+> ### Book a bariatric consultation in Perth
+> Have questions about procedure options, recovery or cost? Call **(08) 9332 0066** to book a 30–60 minute consultation. It's a conversation, not a commitment to surgery.
+
+**A3. Add a compliant trust strip near the CTA — using only already-approved elements.** Cost/booking is a high-stakes decision; visitors want to know who they'd see. Use the surgeons' names + FRACS credentials (already approved) and a "Meet the surgeons" link. Do NOT add hospital counts, addresses, testimonials or outcomes (those stay held under the hospital-verification hold):
+
+> Consultations with FRACS-qualified bariatric surgeons — [meet the surgeons](/osw/content/surgeons). Perth consultations in Booragoon and Mandurah.
+
+**A4. De-hedge the referral answer — lead with the simple truth:**
+
+> You do not need a GP referral to book. If you have a valid referral, it may allow a Medicare rebate for an eligible specialist consultation. Booking without one is fine — ask the practice or Medicare what applies to your appointment.
+
+**A5. Journey follow-ups (implementation, not copy):** supply the approved online-booking URL so the CTA and every upstream "get a written estimate / book online" promise resolve; QA the page at mobile widths with a persistent "Book online / Call" bar; add conversion tracking (tel_click, book_start, form_submit) so OSWA can tell whether the cost pages assist booking.

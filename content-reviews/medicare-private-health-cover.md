@@ -180,8 +180,10 @@ Rename the cost H2 to:
 
 Why it matters: The page should address “gastric sleeve payment plan Perth” neutrally while keeping early-release super separate from third-party finance and avoiding any endorsement or inducement.
 
-**Writer edit:** replace the financing section with:
+**Writer edit:** replace the financing section with (give the section a stable `Financing & payment options` heading so the two cost pages can deep-link to `#financing-payment-options`):
 
+> ### Financing & payment options
+>
 > If you are searching for a gastric sleeve payment plan in Perth, OSWA does not offer in-house payment plans. Third-party finance may be available from independent providers on their own terms; OSWA does not recommend, arrange or approve it.
 >
 > Some people investigate early release of superannuation through the ATO compassionate-release process. It has strict eligibility criteria and is not automatic; see the superannuation page for general information and speak with the financial coordinator about questions to raise.
@@ -248,3 +250,19 @@ Additions: canonical eligibility, MBS and Medicare wording (~170); assessment- a
 6. Do agreed hospital rates apply to my fund?
 7. What out-of-pocket costs should I still expect?
 8. How much does Medicare rebate for a gastric sleeve?
+
+---
+
+## Additional recommendations — SEO/CRO pass (2026-07-20)
+
+*Layered on the review above after a skilled multi-lens debate. Compliance holds unchanged.*
+
+**A1. Restore a concrete Medicare answer via the government MBS fact.** The page's primary keyword ("medicare weight loss surgery australia") is near-zero volume, but the PAA shows "how much does Medicare rebate for a gastric sleeve?" — answer it with the public schedule figure, not an abstract sentence:
+
+> For MBS item 31575 (sleeve gastrectomy), the current listed schedule fee is **$1,016.90** and the 75% Medicare benefit is **$762.70** (MBS Online, effective 1 July 2026). Bariatric surgery also involves separate anaesthetist, assistant and consultation items; each has its own schedule fee and benefit. These are the Medicare-side figures only — hospital and theatre charges are separate and covered by private hospital insurance, not Medicare.
+
+**A2. Tighten the Medicare-vs-private explanation** (keep the distinction, drop the qualifier pile-up):
+
+> Medicare and private hospital cover do different jobs. Medicare may rebate eligible professional services; it does not pay private-hospital accommodation or theatre charges. Private hospital benefits depend on whether your policy includes the procedure, its waiting period, exclusions, excess and co-payment. Ask your fund to confirm those in writing, then compare against your itemised estimate.
+
+**A3. Internal-link hub.** This page is the funding hub — cross-link to `/fees/`, the super-access page, the GP-referral page, eligibility and booking, with descriptive anchors. Ensure the `#financing-payment-options` anchor exists so the two cost pages' deep-links resolve.

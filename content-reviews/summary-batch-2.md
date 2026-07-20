@@ -35,3 +35,15 @@ Each page ends with one net word budget (current − cuts + additions = target, 
 2. **Cost framing:** approve the definitions and ranges ("from $X" / range style, insured out-of-pocket vs self-funded total) before any figure is published on the cost pages.
 3. **Super brief corrections:** the super brief's worked dollar example and flat tax-percentage band need replacing with the factor-based wording in the review.
 4. **Booking URL:** supply the approved online-booking link for the Book a Consultation CTA.
+
+## SEO/CRO enhancement pass (2026-07-20)
+
+After the core review, the five pages went through a multi-lens debate (SEO, conversion-copy, and full-journey perspectives) to check whether compliance-tightening had left anything on the table. It had — the reviews were compliant but could be more useful and findable. Each affected review now has an "Additional recommendations — SEO/CRO pass" section adding:
+
+- **A concrete cost model** on both cost pages (fee components + insured-out-of-pocket vs self-funded definitions) so a cost-researcher gets a real answer while the clinic dollar figures stay held for your decision.
+- **The government Medicare schedule fact** (MBS item 31575: $1,016.90 schedule fee, $762.70 benefit) — a public figure, not clinic pricing — on the sleeve and Medicare pages.
+- **A `/fees/` intent map**: OSWA's existing fees page already ranks and appears in Google's AI answer, so the three cost URLs now have clear, non-competing roles + cross-links.
+- **A GLP-1-vs-surgery FAQ** answering a question people actually search (class-level, no brand names).
+- **De-hedged, warmer copy** where stacked qualifiers had made the clinic sound evasive, plus a second reassurance and a trust strip on the booking page.
+
+**Launch/implementation follow-ups (not copy — for when the pages are built for live SEO):** flip `noindex`→`index`, supply the online-booking URL, mobile/form/confirmation QA, conversion tracking, and add BreadcrumbList/surgeon/clinic schema once locations are verified.

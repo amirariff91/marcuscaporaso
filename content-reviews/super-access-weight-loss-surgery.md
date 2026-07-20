@@ -236,3 +236,15 @@ The page can retain its core explanation, eligibility bullets, tax information a
 6. Should I speak to a financial adviser first?
 7. Can I use super if I also have private health insurance?
 8. What happens if my application is declined?
+
+---
+
+## Additional recommendations — SEO/CRO pass (2026-07-20)
+
+*Layered on the review above after a skilled multi-lens debate. The strict ATO framing, the no-approval-guarantee and the "not financial advice" boundary are unchanged.*
+
+**A1. Acknowledge the reader's situation before the compliance framing.** The revised opening reads like a compliance warning; it can be human first, then strict — without any inducement:
+
+> If you're exploring early release of super to help meet a documented surgery expense, this page explains the process, the evidence required and the questions to ask. Compassionate release is decided by the ATO under strict criteria and is not automatic — surgery is not pre-approved. Early release reduces your retirement savings and may have tax consequences. OSWA's financial coordinator can explain the clinic estimate and supporting documents; a licensed financial adviser can help you weigh the personal impact.
+
+**A2. Internal links.** Cross-link to the cost hub, the Medicare & private-cover page and booking so a visitor who rules super in or out has a clear next step. Keep the ATO compassionate-release link current.

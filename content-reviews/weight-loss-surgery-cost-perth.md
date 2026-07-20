@@ -213,7 +213,7 @@ Replace step 4 with:
 
 Replace the payment-plan FAQ answer with:
 
-> OSWA does not offer in-house payment plans. Independent third-party finance may be available, subject to the provider’s terms, eligibility and suitability; see the [Medicare & Private Health Cover financing section](/osw/content/medicare-private-health-cover#financing).
+> OSWA does not offer in-house payment plans. Independent third-party finance may be available, subject to the provider’s terms, eligibility and suitability; see the [Medicare & Private Health Cover financing section](/osw/content/medicare-private-health-cover#financing-payment-options).
 
 Replace any remaining payment-plan sentence in the summary with:
 
@@ -321,3 +321,19 @@ Arithmetic: **2,000 − 770 + 220 = approximately 1,450 words**.
 5. Are payment plans available?
 6. Why are there several separate fees rather than one price?
 7. How do I get an estimate specific to my situation?
+
+---
+
+## Additional recommendations — SEO/CRO pass (2026-07-20)
+
+*Layered on the review above after a skilled multi-lens debate. Compliance holds unchanged; figures still wait on the cost-framing decision.*
+
+**A1. Give the cost-researcher a real model, not just "it depends."** This hub should teach how procedure costs compare structurally, with figures held:
+
+> Weight loss surgery has no single Perth price, and the honest comparison is structural, not a headline number. Every procedure carries surgeon, anaesthetist, assistant (if applicable), hospital and theatre, tests, dietitian and follow-up fees. What changes your actual figure most is whether you have suitable private cover: an **insured out-of-pocket** amount is a different thing from a **self-funded total**. Compare like with like — the itemised written estimate for your situation is the number to plan from.
+
+**A2. Resolve the THREE-way cost hierarchy (not two).** OSWA's live `/fees/` page ranks #6 + sits in the AI Overview. Assign roles and cross-link: `/fees/` = current itemised schedule; this page = all-procedure comparison + cost components; `/gastric-sleeve-cost-perth` = sleeve-specific. Add a one-line pointer to `/fees/` for visitors who want the actual current numbers.
+
+**A3. Message-match the CTA to the journey.** Upstream this hub promises "get a written cost estimate"; the booking page is currently phone-only (pending the booking URL). Until that URL exists, this page's CTA should say "talk through your estimate with the team" rather than implying an online-booking/written-estimate flow that dead-ends. (Revert to the stronger promise once the booking URL is supplied — see follow-ups.)
+
+**A4. Title/canonical.** SERP cost pages use concrete modifiers. Suggested: title `Weight Loss Surgery Cost Perth | Fees, Cover & Rebates | OSWA`, self-referencing canonical, and a distinct title from the sleeve page to avoid the shared-parent-topic overlap.
