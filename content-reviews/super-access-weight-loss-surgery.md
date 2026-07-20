@@ -80,9 +80,7 @@ Also present in the extraction: the document header metadata block —
 
 — and two extraction-only image tags:
 
-> <img src="media/image1.png" style="width:6.26772in;height:0.48611in" />
->
-> <img src="media/image2.png" style="width:6.26772in;height:1.75in" />
+> *[draft image placeholder — remove from final page]*
 
 Why it matters: Word-count metadata, header metadata, keyword-planning tables, image placeholders and unresolved alternate CTA text are not publishable and weaken trust on a financial and medical page.
 
@@ -153,12 +151,7 @@ The steps below outline the process at a high level. The ATO assesses every appl
 
 > - FRACS certified bariatric surgeons - Three partner hospitals in Perth - In-house aftercare team
 
-> With funding in place, we schedule your pre-operative assessment and surgery at [<u>Mount Private  
-> Hospital</u>](https://mountprivatehospital.com.au), [<u>The Park  
-> Private Hospital</u>](https://www.tpph.com.au/), or [<u>Waikiki  
-> Private Hospital</u>](https://waikikiprivate.com.au/), followed by  
-> our Perth-based dietitian and aftercare program to support your  
-> long-term results.
+> With funding in place, we schedule your pre-operative assessment and surgery at [Mount Private Hospital](https://mountprivatehospital.com.au), [The Park Private Hospital](https://www.tpph.com.au/), or [Waikiki Private Hospital](https://waikikiprivate.com.au/), followed by our Perth-based dietitian and aftercare program to support your long-term results.
 
 Why it matters: Named hospital affiliations must be verified, and “support your long-term results” can read as an outcome promise.
 
@@ -241,7 +234,7 @@ The page can retain its core explanation, eligibility bullets, tax information a
 
 ## Additional recommendations — SEO/CRO pass (2026-07-20)
 
-*Layered on the review above after a skilled multi-lens debate. The strict ATO framing, the no-approval-guarantee and the "not financial advice" boundary are unchanged.*
+*These recommendations build on the review above. The strict ATO framing, the no-guarantee-of-approval wording and the "not financial advice" boundary are unchanged.*
 
 **A1. Acknowledge the reader's situation before the compliance framing.** The revised opening reads like a compliance warning; it can be human first, then strict — without any inducement:
 

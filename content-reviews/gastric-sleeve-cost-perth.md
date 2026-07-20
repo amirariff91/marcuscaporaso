@@ -133,37 +133,36 @@ Why it matters: These instructions are not publishable copy and the required sur
 
 7. **Severity: Blocking — Extraction metadata and production scaffolding must be removed**
 
-> **<span class="mark">01_Gastric Sleeve Cost Perth</span>**
+> **01_Gastric Sleeve Cost Perth**
 >
-> <span class="mark">**URL:** /gastric-sleeve-cost-perth</span>
+> **URL:** /gastric-sleeve-cost-perth
 >
-> <span class="mark">**Primary keyword:** gastric sleeve cost perth</span>
+> **Primary keyword:** gastric sleeve cost perth
 >
-> ### <span class="mark">Secondary Keywords (target naturally in body copy)</span>
+> ### Secondary Keywords (target naturally in body copy)
 >
-> | <span class="mark">Keyword</span> | <span class="mark">AU Vol/mo</span> | <span class="mark">KD</span> |
+> | Keyword | AU Vol/mo | KD |
+> |---|---|---|
 >
-> ### <span class="mark">Semantic Terms to Include</span>
+> ### Semantic Terms to Include
 >
-> ### 
+> \###
 >
-> <span class="mark">~1800 words incl. FAQ**</span>
+> ~1800 words incl. FAQ
 >
-> <img src="media/image2.png" style="width:6.26772in;height:1.73611in" />
+> *[draft image placeholder — remove from final page]*
 >
-> <img src="media/image1.png" style="width:6.26772in;height:0.69444in" />
+> \###
 >
-> ### <span class="mark"> </span>
->
-> **<span class="mark">Get your personalised gastric sleeve surgery cost estimate  
+> **Get your personalised gastric sleeve surgery cost estimate
 > Alt  
-> Get a clear, itemised gastric sleeve cost estimate</span>**
+> Get a clear, itemised gastric sleeve cost estimate**
 >
-> <span class="mark">Short, factual introduction — this is a cost page, not a surgeon bio page, so keep these concise.</span>
+> Short, factual introduction — this is a cost page, not a surgeon bio page, so keep these concise.
 >
-> <span class="mark">**Dr Harsha Chandraratna — MBBS, FRACS, Bariatric Surgeon** Lead bariatric surgeon, Notre Dame lecturer, personal experience of bariatric surgery. Two sentences.</span>
+> **Dr Harsha Chandraratna — MBBS, FRACS, Bariatric Surgeon** Lead bariatric surgeon, Notre Dame lecturer, personal experience of bariatric surgery. Two sentences.
 >
-> <span class="mark">**Dr Stephen Watson — MBBS, FRACS, Bariatric Surgeon** Bariatric surgeon focused on laparoscopic weight loss surgery and long-term patient outcomes. Two sentences.</span>
+> **Dr Stephen Watson — MBBS, FRACS, Bariatric Surgeon** Bariatric surgeon focused on laparoscopic weight loss surgery and long-term patient outcomes. Two sentences.
 
 Why it matters: These are extraction-only metadata, image placeholders, empty headings, word-count and instruction annotations, and duplicate CTA/profile scaffolding rather than publishable page content.
 
@@ -197,7 +196,7 @@ Replace the final cost sentence with:
 
 1. **Severity: Should-fix — The page is over length and contains an internal word-count note**
 
-> ~1800 words incl. FAQ**
+> ~1800 words incl. FAQ
 
 Why it matters: The body is materially above the 900–1,200-word target, and the word-count annotation must not appear on the page.
 
@@ -378,9 +377,9 @@ Do not add new sections or expand the FAQ answers beyond this target.
 
 ## Additional recommendations — SEO/CRO pass (2026-07-20)
 
-*Layered on top of the review above after a skilled multi-lens debate (SEO, conversion-copy, journey). These make the page more useful and findable within the same compliance guardrails. The cost-figure hold and the hospital hold are unchanged — every clinic dollar range still waits on the cost-framing decision.*
+*These recommendations cover SEO, conversion copy and the user journey while preserving the same compliance guardrails. The cost-figure hold and the hospital hold are unchanged — every clinic dollar range still waits on the cost-framing decision.*
 
-**A1. Answer the cost question concretely without publishing a clinic price.** A cost-searcher who gets only "there is no single price" leaves. Give them a real model instead — the fee components and the two definitions — with the numbers still held:
+**A1. Answer the cost question concretely without publishing a clinic price.** A cost-searcher who sees only “there is no single price” may leave. Give them a real model instead — the fee components and the two definitions — with the numbers still held:
 
 > A gastric sleeve isn't one price — it's several separate fees. A useful estimate lists them and labels the total correctly:
 >
@@ -396,14 +395,14 @@ Do not add new sections or expand the FAQ answers beyond this target.
 
 **A2. Add the government MBS fact (verified, not clinic pricing).** The Medicare schedule fee is a public government figure, not an AHPRA-sensitive clinic price — it answers "does Medicare cover it / how much" concretely:
 
-> For MBS item 31575 (sleeve gastrectomy), the current listed schedule fee is **$1,016.90** and the 75% Medicare benefit is **$762.70** (MBS Online, effective 1 July 2026). This applies to that surgical item only — anaesthetist, assistant and consultation items are separate. Confirm the items and benefits that apply to you.
+> For MBS item 31575 (sleeve gastrectomy), the currently listed schedule fee is **$1,016.90** and the 75% Medicare benefit is **$762.70** (MBS Online, effective 1 July 2026). This applies to that surgical item only — anaesthetist, assistant and consultation items are separate. Confirm the items and benefits that apply to you.
 
 **A3. Add the demanded comparison FAQ** (the SERP shows a GLP-1-medication-vs-surgery People-Also-Ask question; a class-level answer is permitted, with no brand or active-ingredient names):
 
 > **Are GLP-1 medicines better than gastric sleeve surgery?**
 > They're different pathways and neither is universally better. GLP-1 medical weight management is non-surgical; gastric sleeve surgery has operative risks and recovery requirements. Which is appropriate depends on your health, BMI, previous treatment and clinical assessment — your team can discuss the options. *(Add to the FAQ list; keep the page's net word budget by trimming a duplicated cost explanation.)*
 
-**A4. Fix the cost-page hierarchy — there are THREE cost URLs, not two.** OSWA's live `/fees/` page already ranks #6 and is cited in Google's AI Overview. The review only distinguished this page from the hub; it must also sit clearly against `/fees/`. Recommended intent map + cross-links:
+**A4. Fix the cost-page hierarchy — there are THREE cost URLs, not two.** OSWA's live `/fees/` page already ranks #6 and is cited in Google's search overview. The review only distinguished this page from the hub; it must also sit clearly against `/fees/`. Recommended intent map + cross-links:
 - `/fees/` = the current itemised OSWA fee schedule (the "what it costs here" page)
 - this page = sleeve-specific cost explanation, definitions and FAQs
 - `/weight-loss-surgery-cost-perth` = all-procedure comparison

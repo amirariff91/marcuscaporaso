@@ -80,36 +80,32 @@ Hold any replacement cost figures until the Q3 cost-framing decision; the Writer
 
 > **03_Medicare & Private Health Cover**
 >
-> <span class="mark">**URL:** /medicare-private-health-cover  
+> **URL:** /medicare-private-health-cover  
 > **Primary keyword:** medicare weight loss surgery australia  
 > **Search intent:** Informational (trying to understand a confusing
 > system before making a financial decision)  
-> **Target word count:** 1,100–1,400 words</span>
+> **Target word count:** 1,100–1,400 words
 
-> ### <span class="mark">Secondary Keywords (target naturally in body copy)</span>
+> ### Secondary Keywords (target naturally in body copy)
 >
-> | <span class="mark">Keyword</span> | <span class="mark">AU Vol/mo</span> | <span class="mark">KD</span> |
+> | Keyword | AU Vol/mo | KD |
+> |---|---|---|
 
-> ### 
+> `###`
 
-> ### <span class="mark">~2000 words incl. FAQ **Medicare and private health insurance for weight loss surgery in Australia**</span>
+> ### ~2000 words incl. FAQ **Medicare and private health insurance for weight loss surgery in Australia**
 
-> <img src="media/image3.png" style="width:6.26772in;height:0.33333in" />
+> *[draft image placeholder — remove from final page]*
 
-> <span class="mark">  
-> </span><img src="media/image1.png" style="width:1.44271in;height:0.35901in" />
+> `###`
 
-> <img src="media/image2.png" style="width:6.26772in;height:0.65278in" />
+> *[draft image placeholder — remove from final page]*
 
-> ### 
-
-> <img src="media/image4.png" style="width:6.26772in;height:3.56944in" />
-
-> ### <span class="mark">Conversion CTA headline</span>
+> ### Conversion CTA headline
 >
-> **<span class="mark">Let's check your cover, together  
+> **Let's check your cover, together  
 > Alt  
-> Find out exactly how you’re covered</span>**
+> Find out exactly how you’re covered**
 
 Why it matters: Page metadata, keyword research, word-count and instruction annotations, empty headings, image placeholders and alternate CTA copy are extraction-only scaffolding. No sentence-count instruction appears in the supplied extraction; any such instruction must also stay out of page copy.
 
@@ -180,7 +176,7 @@ Rename the cost H2 to:
 
 Why it matters: The page should address “gastric sleeve payment plan Perth” neutrally while keeping early-release super separate from third-party finance and avoiding any endorsement or inducement.
 
-**Writer edit:** replace the financing section with (give the section a stable `Financing & payment options` heading so the two cost pages can deep-link to `#financing-payment-options`):
+**Writer edit:** replace the financing section with (give the section a stable `Financing & payment options` heading so the two cost pages can deep-link to `/osw/content/medicare-private-health-cover#financing-payment-options`):
 
 > ### Financing & payment options
 >
@@ -255,7 +251,7 @@ Additions: canonical eligibility, MBS and Medicare wording (~170); assessment- a
 
 ## Additional recommendations — SEO/CRO pass (2026-07-20)
 
-*Layered on the review above after a skilled multi-lens debate. Compliance holds unchanged.*
+*The compliance position is unchanged.*
 
 **A1. Restore a concrete Medicare answer via the government MBS fact.** The page's primary keyword ("medicare weight loss surgery australia") is near-zero volume, but the PAA shows "how much does Medicare rebate for a gastric sleeve?" — answer it with the public schedule figure, not an abstract sentence:
 
@@ -265,4 +261,4 @@ Additions: canonical eligibility, MBS and Medicare wording (~170); assessment- a
 
 > Medicare and private hospital cover do different jobs. Medicare may rebate eligible professional services; it does not pay private-hospital accommodation or theatre charges. Private hospital benefits depend on whether your policy includes the procedure, its waiting period, exclusions, excess and co-payment. Ask your fund to confirm those in writing, then compare against your itemised estimate.
 
-**A3. Internal-link hub.** This page is the funding hub — cross-link to `/fees/`, the super-access page, the GP-referral page, eligibility and booking, with descriptive anchors. Ensure the `#financing-payment-options` anchor exists so the two cost pages' deep-links resolve.
+**A3. Internal-link hub.** This page is the funding hub — cross-link to `/fees/`, the super-access page, the GP-referral page, eligibility and booking, with descriptive anchors. Ensure the `/osw/content/medicare-private-health-cover#financing-payment-options` anchor exists so the two cost pages' deep-links resolve.

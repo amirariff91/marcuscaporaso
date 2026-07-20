@@ -87,7 +87,7 @@ Why it matters: Leaving alternate labels in the page makes the copy feel unfinis
 
 5. **Hospital names conflict with the brief**
 
-> Surgeries are performed at [<u>Mount Private Hospital</u>](https://mountprivatehospital.com.au), [<u>The Park Private Hospital</u>](https://www.tpph.com.au/), and [<u>Waikiki Private Hospital</u>](https://waikikiprivate.com.au/).
+> Surgeries are performed at [Mount Private Hospital](https://mountprivatehospital.com.au), [The Park Private Hospital](https://www.tpph.com.au/), and [Waikiki Private Hospital](https://waikikiprivate.com.au/).
 
 > Procedures are performed at the Perth hospital locations confirmed by your surgeon, and your team will explain where your procedure and follow-up care would take place during assessment.
 
@@ -223,7 +223,7 @@ Why it matters: A referral should not be presented as guaranteed rebate access o
 6. **The FAQ contains a secondary GLP-1 reference**
 
 > **7. What if I find out surgery is not right for me?  **
-> You will not leave without options. If surgery is not the right fit — due to timing, preference, or for clinical reasons — we can discuss medical weight management pathways including GLP-1 medications and dietitian-led programs. Some patients start there and revisit surgery later; others find it is sufficient on its own. The goal is the right outcome for you, whatever form that takes.</span>
+> You will not leave without options. If surgery is not the right fit — due to timing, preference, or for clinical reasons — we can discuss medical weight management pathways including GLP-1 medications and dietitian-led programs. Some patients start there and revisit surgery later; others find it is sufficient on its own. The goal is the right outcome for you, whatever form that takes.
 
 > Use the canonical replacement in the G3 “Paste-ready FAQ replacement” below; do not add a second replacement for this source block.
 

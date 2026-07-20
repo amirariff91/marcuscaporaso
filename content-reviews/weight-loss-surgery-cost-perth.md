@@ -87,46 +87,44 @@ Replace the Medicare FAQ answer with:
 **Severity: Blocking**
 
 > **02_Weight Loss Surgery Cost Perth  
-> <span class="mark">URL:</span>**  
-> <span class="mark">/weight-loss-surgery-cost-perth  
+> URL:**  
+> /weight-loss-surgery-cost-perth  
 > **Primary keyword:** weight loss surgery perth cost
 
-> ### <span class="mark">Secondary Keywords (target naturally in body copy)</span>
+> ### Secondary Keywords (target naturally in body copy)
 
 > `###`
 
 > `###`
 
-> ### <span class="mark">~2000 words incl. FAQ  **What weight loss surgery actually costs in Perth** </span>
+> ### ~2000 words incl. FAQ  **What weight loss surgery actually costs in Perth**
 
-> <img src="media/image2.png" style="width:6.26772in;height:1.93056in" />
+> *[draft image placeholder — remove from final page]*
 
-> <img src="media/image1.png" style="width:1.80729in;height:0.65792in" />
-
-> **<span class="mark">What you gain from knowing the real numbers  
+> **What you gain from knowing the real numbers  
 > Alt  
-> What clarity on costs actually gets you</span>**
+> What clarity on costs actually gets you**
 
-> ### <span class="mark">**Cost factors and common pitfalls Alt Where cost surprises usually come from**
+> ### **Cost factors and common pitfalls Alt Where cost surprises usually come from**
 
-> ### **<span class="mark">What you'll actually pay, in real terms Alt Weight loss surgery costs, in summary</span>**
+> ### **What you'll actually pay, in real terms Alt Weight loss surgery costs, in summary**
 
 > ### 
 
-> ### <span class="mark">Surgeon profiles (2 profiles)</span>
+> ### Surgeon profiles (2 profiles)
 
-> <span class="mark">Keep these concise on this cost-focused page — they establish credibility without dominating.</span>
+> Keep these concise on this cost-focused page — they establish credibility without dominating.
 
-> <span class="mark">**Dr Harsha Chandraratna — MBBS, FRACS, Bariatric & Upper GI Surgeon** Perth bariatric surgeon, Fellow of the Royal Australasian College of Surgeons, senior Notre Dame lecturer, underwent bariatric surgery himself — this informs his approach to every consultation. Operates at St John of God Murdoch and Subiaco. Three sentences maximum.</span>
+> **Dr Harsha Chandraratna — MBBS, FRACS, Bariatric & Upper GI Surgeon** Perth bariatric surgeon, Fellow of the Royal Australasian College of Surgeons, senior Notre Dame lecturer, underwent bariatric surgery himself — this informs his approach to every consultation. Operates at St John of God Murdoch and Subiaco. Three sentences maximum.
 
-> <span class="mark">**Dr Stephen Watson — MBBS, FRACS, Bariatric Surgeon** Accredited bariatric surgeon performing gastric sleeve, bypass and band procedures at St John of God Murdoch and Subiaco. Takes time to explain costs and options clearly so patients understand exactly what they are committing to. Two to three sentences.</span>
+> **Dr Stephen Watson — MBBS, FRACS, Bariatric Surgeon** Accredited bariatric surgeon performing gastric sleeve, bypass and band procedures at St John of God Murdoch and Subiaco. Takes time to explain costs and options clearly so patients understand exactly what they are committing to. Two to three sentences.
 
-> ### **<span class="mark">Conversion CTA headline</span>**
+> ### **Conversion CTA headline**
 
-> **<span class="mark">  
+> **  
 > Get your personalised estimate, no commitment required  
 > Alt  
-> Get your written cost estimate before you decide</span>**
+> Get your written cost estimate before you decide**
 
 Why it matters: The extracted header metadata, image placeholders, empty headings, word-count annotation, keyword-planning material, internal instructions, alternate-copy labels, sentence-count instructions and unfinished surgeon-profile block must not appear in published content.
 
@@ -326,13 +324,13 @@ Arithmetic: **2,000 − 770 + 220 = approximately 1,450 words**.
 
 ## Additional recommendations — SEO/CRO pass (2026-07-20)
 
-*Layered on the review above after a skilled multi-lens debate. Compliance holds unchanged; figures still wait on the cost-framing decision.*
+*Additional recommendations based on the review above. Compliance holds unchanged; figures still wait on the cost-framing decision.*
 
 **A1. Give the cost-researcher a real model, not just "it depends."** This hub should teach how procedure costs compare structurally, with figures held:
 
 > Weight loss surgery has no single Perth price, and the honest comparison is structural, not a headline number. Every procedure carries surgeon, anaesthetist, assistant (if applicable), hospital and theatre, tests, dietitian and follow-up fees. What changes your actual figure most is whether you have suitable private cover: an **insured out-of-pocket** amount is a different thing from a **self-funded total**. Compare like with like — the itemised written estimate for your situation is the number to plan from.
 
-**A2. Resolve the THREE-way cost hierarchy (not two).** OSWA's live `/fees/` page ranks #6 + sits in the AI Overview. Assign roles and cross-link: `/fees/` = current itemised schedule; this page = all-procedure comparison + cost components; `/gastric-sleeve-cost-perth` = sleeve-specific. Add a one-line pointer to `/fees/` for visitors who want the actual current numbers.
+**A2. Resolve the THREE-way cost hierarchy (not two).** OSWA's live `/fees/` page ranks #6 in search and appears in a prominent search summary. Assign roles and cross-link: `/fees/` = current itemised schedule; this page = all-procedure comparison + cost components; `/gastric-sleeve-cost-perth` = sleeve-specific. Add a one-line pointer to `/fees/` for visitors who want the actual current numbers.
 
 **A3. Message-match the CTA to the journey.** Upstream this hub promises "get a written cost estimate"; the booking page is currently phone-only (pending the booking URL). Until that URL exists, this page's CTA should say "talk through your estimate with the team" rather than implying an online-booking/written-estimate flow that dead-ends. (Revert to the stronger promise once the booking URL is supplied — see follow-ups.)
 

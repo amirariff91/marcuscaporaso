@@ -22,13 +22,13 @@ Why it matters: The `05_` prefix would make the published H1 look unfinished.
 
 > - FRACS certified bariatric surgeons - Three partner hospitals in Perth - In-house aftercare team
 
-Why it matters: The copy asserts credential, hospital-affiliation and hospital-count claims that have not been confirmed for publication.
+Why it matters: The copy asserts claims about credentials, hospital affiliation and hospital count that have not been confirmed for publication.
 
 **Writer edit:** Replace with:
 
 > FRACS-qualified bariatric surgeons, with consultations in Booragoon and Mandurah.
 
-(The surgeons' FRACS credential is established in the practice's approved surgeon profiles; only the hospital-count and affiliation claims are held for verification.)
+(The surgeons' FRACS credentials are established in the practice's approved surgeon profiles; only the hospital-count and affiliation claims are held for verification.)
 
 3. **Blocking — The cost section blurs Medicare with surgical costs and promises certainty**
 
@@ -90,13 +90,7 @@ Why it matters: The approved consultation locations are Booragoon and Mandurah; 
 
 7. **Blocking — Extraction metadata and image placeholders remain in the copy**
 
-> <img src="media/image2.png" style="width:6.26772in;height:2.77778in" />
-
-> <img src="media/image1.png" style="width:6.26772in;height:0.375in" />
-
-> <img src="media/image3.png" style="width:6.26772in;height:2.09722in" />
-
-> <img src="media/image4.png" style="width:5.96354in;height:2.87499in" />
+> *[draft image placeholder — remove from final page]*
 
 Why it matters: Four extraction-only image tags, plus the document header block (page number, URL, primary-keyword line and keyword table), are authoring metadata and placeholders, not publishable page content.
 
@@ -267,9 +261,9 @@ Why it matters: The section is specifically about booking, so the heading should
 
 ## Additional recommendations — SEO/CRO pass (2026-07-20)
 
-*Layered on the review above after a skilled multi-lens debate. No urgency, no testimonials, no outcome claims — these stay removed.*
+*These recommendations preserve the review's compliance position: no urgency, testimonials or outcome claims — these stay removed.*
 
-**A1. Reassurance belongs in TWO places, not one.** For an anxious, high-consideration decision, one risk-reversal isn't enough — repeating it at the hero and the final CTA each removes a different moment of hesitation (this is regret-aversion used ethically, not urgency). Net word budget still lands because each instance is short:
+**A1. Reassurance belongs in TWO places, not one.** For an anxious, high-consideration decision, one form of risk reversal isn't enough — repeating it in the hero and the final CTA each removes a different moment of hesitation (this is regret aversion used ethically, not urgency). The net word budget still lands because each instance is short:
 
 > **Hero:** Booking a consultation is not a commitment to surgery. It's a 30–60 minute conversation about your questions, options and likely costs — you decide what to do next in your own time.
 >
@@ -280,12 +274,12 @@ Why it matters: The section is specifically about booking, so the heading should
 > ### Book a bariatric consultation in Perth
 > Have questions about procedure options, recovery or cost? Call **(08) 9332 0066** to book a 30–60 minute consultation. It's a conversation, not a commitment to surgery.
 
-**A3. Add a compliant trust strip near the CTA — using only already-approved elements.** Cost/booking is a high-stakes decision; visitors want to know who they'd see. Use the surgeons' names + FRACS credentials (already approved) and a "Meet the surgeons" link. Do NOT add hospital counts, addresses, testimonials or outcomes (those stay held under the hospital-verification hold):
+**A3. Add a compliant trust strip near the CTA — using only already-approved elements.** Cost and booking are high-stakes considerations; visitors want to know who they would see. Use the surgeons' names and FRACS credentials (already approved) and a "Meet the surgeons" link. Do not add hospital counts, addresses, testimonials or outcomes; those remain subject to hospital verification:
 
 > Consultations with FRACS-qualified bariatric surgeons — [meet the surgeons](/osw/content/surgeons). Perth consultations in Booragoon and Mandurah.
 
-**A4. De-hedge the referral answer — lead with the simple truth:**
+**A4. Make the referral answer more direct — lead with the simple truth:**
 
 > You do not need a GP referral to book. If you have a valid referral, it may allow a Medicare rebate for an eligible specialist consultation. Booking without one is fine — ask the practice or Medicare what applies to your appointment.
 
-**A5. Journey follow-ups (implementation, not copy):** supply the approved online-booking URL so the CTA and every upstream "get a written estimate / book online" promise resolve; QA the page at mobile widths with a persistent "Book online / Call" bar; add conversion tracking (tel_click, book_start, form_submit) so OSWA can tell whether the cost pages assist booking.
+**A5. Journey follow-ups:** Supply the approved online-booking URL so the CTA and every upstream "get a written estimate / book online" promise resolve; QA the page at mobile widths with a persistent "Book online / Call" bar; add conversion tracking (tel_click, book_start, form_submit) so OSWA can tell whether the cost pages assist booking.

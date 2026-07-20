@@ -257,7 +257,7 @@ Why it matters: The brief requires this quick factual orientation and it helps r
 
 6. **Hospital names must be verified with the client before changing either direction**
 
-> After your bypass you'll spend 2-3 nights recuperating at [<u>Mount Private Hospital</u>](https://mountprivatehospital.com.au), [<u>The Park Private Hospital</u>](https://www.tpph.com.au/), or [<u>Waikiki Private Hospital</u>](https://waikikiprivate.com.au/) in Perth.
+> After your bypass you'll spend 2-3 nights recuperating at [Mount Private Hospital](https://mountprivatehospital.com.au), [The Park Private Hospital](https://www.tpph.com.au/), or [Waikiki Private Hospital](https://waikikiprivate.com.au/) in Perth.
 
 > After your bypass, your hospital stay will take place at [hospital identity to be verified]. Length of stay and recovery timing depend on clinical needs and will be confirmed by your surgeon.
 
@@ -390,7 +390,7 @@ Why it matters: The draft's risk list matches the brief, but internal hernia is 
 
 22. **The surgery-location FAQ repeats an unverified hospital list [to be verified]**
 
-> The Obesity Surgery WA surgical team performs gastric bypass surgery in Perth at three locations: [<u>Mount Private Hospital</u>](https://mountprivatehospital.com.au), [<u>The Park Private Hospital</u>](https://www.tpph.com.au/), and [<u>Waikiki Private Hospital</u>](https://waikikiprivate.com.au/). Pre- and post-operative (once you’ve been discharged from hospital) consultations take place at Garden City Specialist Centre, Booragoon, and WA Cardiology Centre in Greenfields.
+> The Obesity Surgery WA surgical team performs gastric bypass surgery in Perth at three locations: [Mount Private Hospital](https://mountprivatehospital.com.au), [The Park Private Hospital](https://www.tpph.com.au/), and [Waikiki Private Hospital](https://waikikiprivate.com.au/). Pre- and post-operative (once you’ve been discharged from hospital) consultations take place at Garden City Specialist Centre, Booragoon, and WA Cardiology Centre in Greenfields.
 
 > The Obesity Surgery WA surgical team performs gastric bypass surgery in Perth at [hospital identity to be verified]. Pre- and post-operative consultations take place at Garden City Specialist Centre in Booragoon and WA Cardiology Centre in Greenfields.
 

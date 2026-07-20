@@ -29,7 +29,7 @@ Why it matters: The draft's BMI 30-35 framing may be a broader clinical eligibil
 
 3. **Hospital names must be verified with the client before changing either direction**
 
-> You'll spend 1-2 nights recuperating at [<u>Mount Private Hospital</u>](https://mountprivatehospital.com.au), [<u>The Park Private Hospital</u>](https://www.tpph.com.au/), or [<u>Waikiki Private Hospital</u>](https://waikikiprivate.com.au/) in Perth.
+> You'll spend 1-2 nights recuperating at [Mount Private Hospital](https://mountprivatehospital.com.au), [The Park Private Hospital](https://www.tpph.com.au/), or [Waikiki Private Hospital](https://waikikiprivate.com.au/) in Perth.
 
 > Hospital location: [hospital identity to be verified]. Discharge timing depends on recovery and clinical advice.
 
@@ -124,7 +124,7 @@ Why it matters: These phrases imply guaranteed benefit, minimise risk, or make c
 
 1. **Primary keyword placement is weak in the H1 and first 100 words**
 
-> If you are one of the [<u>75% of West Australians</u>](https://www.health.wa.gov.au/~/media/Corp/Documents/Health-for/Nutrition-monitoring-survey-series/2022/Weight-and-Health_FINAL.pdf) living with overweight or obesity and are exploring different types of bariatric surgery, you may be considering a sleeve gastrectomy (gastric sleeve surgery).
+> If you are one of the [75% of West Australians](https://www.health.wa.gov.au/~/media/Corp/Documents/Health-for/Nutrition-monitoring-survey-series/2022/Weight-and-Health_FINAL.pdf) living with overweight or obesity and are exploring different types of bariatric surgery, you may be considering a sleeve gastrectomy (gastric sleeve surgery).
 
 > If you are researching gastric sleeve Perth options after years of weight loss and regain, this guide explains the procedure, costs, Medicare considerations, risks, recovery and how OSWA assesses whether surgery is suitable for you.
 

@@ -245,7 +245,7 @@ a. **Consulting-room naming**
 
 b. **Hospital list**
 
-> We have consulting rooms in Booragoon and Greenfields, keeping appointments accessible for patients across Perth and the south-west. Surgeries are performed at [<u>Mount Private Hospital</u>](https://mountprivatehospital.com.au), [<u>The Park Private Hospital</u>](https://www.tpph.com.au/), and [<u>Waikiki Private Hospital</u>](https://waikikiprivate.com.au/). Once your surgery is planned, our team will walk you through exactly what to expect, where to go, and who will be involved at every stage, so there are no surprises on the day.
+> We have consulting rooms in Booragoon and Greenfields, keeping appointments accessible for patients across Perth and the south-west. Surgeries are performed at [Mount Private Hospital](https://mountprivatehospital.com.au), [The Park Private Hospital](https://www.tpph.com.au/), and [Waikiki Private Hospital](https://waikikiprivate.com.au/). Once your surgery is planned, our team will walk you through exactly what to expect, where to go, and who will be involved at every stage, so there are no surprises on the day.
 
 > We have consulting rooms in Booragoon and Mandurah, keeping appointments accessible for patients across Perth and the south-west. Surgeries are performed at [hospital identity to be verified]. Once your surgery is planned, our team will walk you through exactly what to expect, where to go, and who will be involved at every stage.
 
