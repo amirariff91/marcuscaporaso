@@ -28,7 +28,7 @@ type EvidenceRecord = {
 const headlineEvidence: EvidenceRecord[] = [
   {
     id: "6a.7",
-    claim: "Real leads, last 30 days",
+    claim: "Recorded lead events, last 30 days",
     value: "17 total: 4 form enquiries + 13 phone calls.",
     source: "Google Ads account 9258098368",
     date: "25 July 2026",
