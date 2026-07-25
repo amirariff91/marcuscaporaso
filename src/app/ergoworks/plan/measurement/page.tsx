@@ -339,7 +339,7 @@ export default function MeasurementPage() {
         <div className={styles.prose}>
           <h3>The qualified-call path is mandatory</h3>
           <p>
-            <strong>[Verified]</strong> <EvidenceLink id="6a.7">13 of the 17 real leads in the latest 30-day window are phone calls</EvidenceLink>.
+            <strong>[Verified]</strong> <EvidenceLink id="6a.7">13 of the 17 recorded lead events in the latest 30-day window are phone calls</EvidenceLink>.
             A form-only design would miss most of the current pipeline. Every call record therefore
             needs a call id, connected duration and CRM disposition. The connected-duration screen is
             not proof of qualification: the CRM disposition is authoritative. Dedupe the call against

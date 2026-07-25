@@ -127,7 +127,7 @@ export default function PlanPage() {
         <SectionHeading
           label="Why this wedge"
           title="Start where paid Search has a credible corporate entry."
-          copy="The assessment cluster is the only near-term paid-Search wedge I would fund. It has real demand, a local Sydney opportunity and a service message that can be matched to one page."
+          copy="The assessment cluster is the only near-term paid-Search wedge I would test, subject to the qualification and unit-economics gates. It has real demand, a local Sydney opportunity and a service message that can be matched to one page."
         />
         <div className={styles.roadmap}>
           <article>
@@ -180,7 +180,7 @@ export default function PlanPage() {
           <li>
             <span>02</span>
             <p>
-              <strong>Certificate-intent burn.</strong> <strong>[Verified]</strong> The broad <code>+manual +handling +certificate</code> line used <EvidenceLink id="6a.10">A$846.56</EvidenceLink> across <EvidenceLink id="6a.10">125 clicks</EvidenceLink> for <EvidenceLink id="6a.10">two reported conversions</EvidenceLink> in the latest month — <EvidenceLink id="6a.10">18%</EvidenceLink> of campaign spend — while reaching a commodity certificate market rather than a corporate consultancy buyer.
+              <strong>Certificate-intent burn.</strong> <strong>[Verified]</strong> The broad <code>+manual +handling +certificate</code> line used <EvidenceLink id="6a.10">A$846.56</EvidenceLink> across <EvidenceLink id="6a.10">125 clicks</EvidenceLink> for <EvidenceLink id="6a.10">two reported conversions</EvidenceLink> in the latest month — <EvidenceLink id="6a.10">18%</EvidenceLink> of campaign spend — while being exposed to a commodity certificate market. The two reported conversions have not been CRM-validated as qualified corporate enquiries — enough for a reversible quarantine, not enough to conclude every matched query is unsuitable.
             </p>
           </li>
           <li>
@@ -201,7 +201,7 @@ export default function PlanPage() {
         <div className={styles.roadmap}>
           <article>
             <div className={styles.phaseHead}><span><Search size={18} /></span><b>Search</b></div>
-            <h3>Baseline to protect</h3>
+            <h3>Baseline to measure against</h3>
             <p className={styles.hubCardCopy}>
               <strong>[Verified]</strong> The trailing Search baseline is <EvidenceLink id="6a.3">A$42,285.61 per year</EvidenceLink>. The live campaign budget is <EvidenceLink id="6a.2">A$154.81 per day</EvidenceLink>; the latest monthly spend was <EvidenceLink id="6a.6">A$4,652.53</EvidenceLink>. I would protect the assessment cluster from broad certificate intent while the goals are repaired.
             </p>
@@ -210,8 +210,7 @@ export default function PlanPage() {
             <div className={styles.phaseHead}><span><Target size={18} /></span><b>Meta</b></div>
             <h3>Capped test only</h3>
             <p className={styles.hubCardCopy}>
-              <strong>[Assumption]</strong> I would cap the first Meta test at <EvidenceLink id="6a.3">20% of the chosen Search envelope</EvidenceLink>: approximately <EvidenceLink id="6a.3">A$700 per month / A$23 per day</EvidenceLink> on the trailing baseline, or approximately <EvidenceLink id="6a.6">A$930 per month / A$31 per day</EvidenceLink> if the current <EvidenceLink id="6a.2">A$154.81-per-day</EvidenceLink> pace governs. One Sydney prospecting test, one offer, no automatic scale.
-            </p>
+              <strong>[Assumption] No Meta budget is approved.</strong> A$700 per month and A$930 per month are arithmetic illustrations of 20% of two candidate envelopes — the trailing year and the current run rate — not evidence that either is a viable test budget. Once access, consent, qualified-event tracking and an agreed maximum learning loss are in place, I would approve or reject one capped Sydney test. There is no automatic scale.</p>
           </article>
           <article>
             <div className={styles.phaseHead}><span><CircleDollarSign size={18} /></span><b>Fee</b></div>

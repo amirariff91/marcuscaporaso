@@ -33,18 +33,18 @@ const headlineEvidence: EvidenceRecord[] = [
     source: "Google Ads account 9258098368",
     date: "25 July 2026",
     status: "Verified",
-    establishes: "The current strict lead mix is phone-led: 13 of 17 real leads are calls.",
+    establishes: "In this one 30-day window the recorded mix is phone-led: 13 of 17 events are call conversions. One month is not a stable channel proportion.",
     doesNotEstablish:
-      "It does not establish lead qualification, revenue, or that every platform conversion is a real lead.",
+      "It does not establish lead qualification, revenue, a stable future call mix, or that every platform conversion is a genuine enquiry.",
   },
   {
     id: "6a.8",
-    claim: "Cost per real lead",
+    claim: "Media cost per recorded lead event",
     value: "A$273.68 strict (A$4,652.53 ÷ 17).",
     source: "Google Ads account 9258098368; derived from 6a.6 and 6a.7",
     date: "25 July 2026",
     status: "Verified",
-    establishes: "The current strict media cost per real lead for the stated 30-day window.",
+    establishes: "Descriptive media-cost arithmetic for the stated 30-day window: spend divided by recorded lead events. It is not qualified-lead cost, acquisition cost or a target cost per lead.",
     doesNotEstablish:
       "It does not establish qualified CAC, unit economics, profitability, or a sustainable target CPA.",
   },

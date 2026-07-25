@@ -93,12 +93,12 @@ const gates: Record<string, Gate> = {
     owner: "Marcus",
     status: "Open",
     question:
-      "I need the unit economics per service: average contract value, close rate, gross margin, delivery cost, sales-cycle length and acceptable payback. The current observed acquisition cost is A$274 on the strict real-lead count or A$222 on the looser count; both are raw-lead sensitivities, not qualified-lead performance or a target CPA.",
+      "I need the unit economics per service: average contract value, close rate, gross margin, delivery cost, sales-cycle length and acceptable payback. The observed 30-day media cost is A$274 per strict recorded lead event, or A$222 under the looser event definition; neither is acquisition cost; both are raw-lead sensitivities, not qualified-lead performance or a target CPA.",
     blocks: "The investment case, scaling, affordable qualified-lead cost and bid strategy.",
     evidence: [
       { id: "6a.6", label: "recent spend" },
-      { id: "6a.7", label: "real leads" },
-      { id: "6a.8", label: "cost per real lead" },
+      { id: "6a.7", label: "recorded lead events" },
+      { id: "6a.8", label: "media cost per recorded lead" },
     ],
   },
   B2: {
@@ -266,7 +266,7 @@ const gates: Record<string, Gate> = {
     owner: "Client (via Greg)",
     status: "Open",
     question:
-      "Which spend envelope governs? Twenty per cent of the trailing A$42,286 annual pace is approximately A$700 per month; twenty per cent of the current approximately A$155 daily pace is approximately A$930 per month. One planning number is needed.",
+      "What maximum total media envelope, and what maximum Meta learning loss, is approved? The account spent A$42,286 over the trailing year and currently carries an approximately A$155 daily budget. Neither figure establishes acceptable future spend, and A$700 and A$930 per month are only 20% arithmetic illustrations \u2014 a test-loss cap is a separate decision from a target cost per lead.",
     blocks: "The 70/20/10 allocation and all activation pacing.",
     evidence: [
       { id: "6a.2", label: "current daily budget" },
