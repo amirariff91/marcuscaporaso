@@ -49,7 +49,7 @@ const gates: Record<string, Gate> = {
     status: "Open",
     question:
       "Can each of the six services pass a delivery-capacity and readiness matrix covering owner, scope, geography, weekly capacity, response SLA, quality control, delivery cost, dependencies and escalation? A service that fails stays out of acquisition messaging.",
-    blocks: "Which services we can honestly promise and use in acquisition messaging.",
+    blocks: "Which services we can honestly promise; paid acquisition must not point at a service that has not passed the readiness matrix.",
   },
   A2: {
     id: "A2",
@@ -132,6 +132,42 @@ const gates: Record<string, Gate> = {
       "I need to know where equipment gross margin lives. Current evidence shows 531 published products with none carrying a populated non-zero cost-of-goods value, so no equipment contribution or lifetime-value figure can yet be produced.",
     blocks: "The margin claim, equipment contribution and any lifetime-value-to-acquisition-cost work.",
     evidence: [{ id: "6c.7", label: "gross-margin evidence" }],
+  },
+  B12: {
+    id: "B12",
+    priority: "Critical",
+    owner: "Marcus — instrumentation; client input on phone routing",
+    status: "Open",
+    question:
+      "The account records 13 connected-call conversions, but it cannot show a call that rang out. I need the unconnected-call count and the current phone-routing path from the client; this is the cheapest unknown with the highest option value before I interpret the call funnel.",
+    blocks: "The real call-funnel baseline, missed-call recovery and any trustworthy assessment of call-led demand.",
+    evidence: [{ id: "6a.7", label: "recorded call conversions" }],
+  },
+  B13: {
+    id: "B13",
+    priority: "High",
+    owner: "Marcus",
+    status: "Open",
+    question:
+      "Observed baseline check: the latest 30-day spend is A$4,652.53, versus A$42,285.61 over the trailing 12 months (about A$3,524 per month), so the latest month is about 32% above the trailing average. Is that month representative enough for me to anchor plan ratios to it? These figures are observations, not a target, acquisition cost or proven result.",
+    blocks: "Whether the plan's ratios, pacing comparisons and budget interpretation rest on a representative baseline.",
+    evidence: [
+      { id: "6a.3", label: "trailing annual spend" },
+      { id: "6a.6", label: "last-30-day account activity" },
+    ],
+  },
+  B14: {
+    id: "B14",
+    priority: "High",
+    owner: "Marcus",
+    status: "Open",
+    question:
+      "Observed click-to-session gap: 385 ad clicks in 30 days annualise to about 1,155 over 90 days, versus 830 paid-search sessions in first-party analytics — sessions are roughly 28% below clicks. I need to assess whether this represents uncounted leads, attribution or session loss, or a tracking defect; it is not itself a proven result.",
+    blocks: "The click-to-session reconciliation, lead-capture completeness and any trustworthy interpretation of paid-search ratios.",
+    evidence: [
+      { id: "6g.8", label: "click-to-session comparison" },
+      { id: "6a.6", label: "last-30-day account activity" },
+    ],
   },
   B4: {
     id: "B4",
@@ -331,6 +367,43 @@ const gates: Record<string, Gate> = {
       "Who approves the six messaging pillars? They are proposed copy, not approved copy, and four describe services that must first pass the A1 readiness matrix.",
     blocks: "Messaging publication after delivery readiness is proven.",
   },
+  C12: {
+    id: "C12",
+    priority: "Critical",
+    owner: "Client (via Greg)",
+    status: "Open",
+    question:
+      "Standing one-line approval ask: may I pause the broad “+manual +handling +certificate” keyword and narrow the campaign-scoped goal set to the approved consulting lead actions? It has spent A$846.56 across 125 clicks for 2 reported conversions in 30 days — 18% of campaign spend, about A$28/day or roughly A$197/week. Every week it stays open carries that observed spend rate. Both changes are reversible and separate from the broader budget-approval decision.",
+    blocks: "The ongoing observed spend on one quarantine candidate and any further bidding towards an unapproved goal set.",
+    evidence: [
+      { id: "6a.10", label: "broad certificate-intent line" },
+      { id: "6a.2", label: "campaign settings" },
+      { id: "6a.6", label: "last-30-day account activity" },
+    ],
+  },
+  C13: {
+    id: "C13",
+    priority: "Critical",
+    owner: "Client (via Greg)",
+    status: "Open",
+    question:
+      "The contamination runs both ways: all 16 conversion actions are primary at account level, so the enabled physiotherapy campaign can also bid towards consulting conversions, not only the reverse. What separation and campaign-scoped goal set does the client approve before either campaign continues to optimise across the other campaign's conversions?",
+    blocks: "Safe conversion-goal cleanup, campaign separation and any performance reading from this account.",
+    evidence: [
+      { id: "6a.9", label: "conversion-action state" },
+      { id: "6a.12", label: "mixed-account evidence" },
+    ],
+  },
+  C14: {
+    id: "C14",
+    priority: "High",
+    owner: "Client (via Greg)",
+    status: "Open",
+    question:
+      "What maximum absolute amount is the client willing to lose in a controlled test before it stops or revises the test? A maximum test-loss cap is a separate decision from a target cost per lead, and percentage envelope splits are not a substitute. Neither a test-loss cap nor a target cost per lead currently exists.",
+    blocks: "The test authorisation, stop or rollback rule and any spend pacing.",
+    evidence: [{ id: "6a.3", label: "trailing annual spend" }],
+  },
 };
 
 const bundles: readonly Bundle[] = [
@@ -340,7 +413,7 @@ const bundles: readonly Bundle[] = [
     question: "Can the economics and account evidence justify investment and the proposed allocation?",
     owners: ["Marcus", "Client (via Greg)"],
     unlocks: "A defensible budget envelope, an investment go/no-go and the cross-population thesis.",
-    gateIds: ["B1", "B2", "B11", "C3", "C9"],
+    gateIds: ["B1", "B2", "B11", "B13", "C3", "C9", "C14"],
   },
   {
     number: "02",
@@ -364,15 +437,15 @@ const bundles: readonly Bundle[] = [
     question: "Can the data join, consent, privacy and account separation support safe measurement?",
     owners: ["Marcus", "Client (via Greg)"],
     unlocks: "A privacy-safe, separated measurement plan with a valid organisation-level join.",
-    gateIds: ["B3", "B8", "C5", "C6b", "C7"],
+    gateIds: ["B3", "B12", "B8", "B14", "C13", "C5", "C6b", "C7"],
   },
   {
     number: "05",
     title: "What can be activated now?",
     question: "Which lower-risk activation prerequisites can we close now?",
     owners: ["Client (via Greg)", "Marcus"],
-    unlocks: "The paid-social test, competitor claims, landing-page route and local-profile work that can be activated without waiting on every other gate.",
-    gateIds: ["C2", "B9", "B10", "C8"],
+    unlocks: "The reversible paid-search containment, paid-social test, competitor claims, landing-page route and local-profile work that can be activated without waiting on every other gate.",
+    gateIds: ["C12", "C2", "B9", "B10", "C8"],
   },
 ];
 
@@ -387,11 +460,11 @@ const mustBeTrue = [
   },
   {
     text: "Measurement connects origin to downstream value without mixing accounts or health data.",
-    links: ["B3", "C5"],
+    links: ["B3", "C5", "C13"],
   },
   {
     text: "The channel base survives qualification: Sydney assessment Search still yields corporate pipeline after manual-handling waste and individuals are removed.",
-    links: ["B1", "B6"],
+    links: ["B1", "B6", "C12"],
   },
   {
     text: "The operating model is real: owners, capacity, buyer and procurement maps, privacy and vendor-neutral equipment.",
@@ -418,7 +491,7 @@ export default function DecisionsPage() {
         <div className={styles.heroGrid}>
           <div>
             <p className={styles.kicker}>Routed decision register · Revised plan v2 · 25 July 2026</p>
-            <h1>Five decisions. Twenty-eight gates.</h1>
+            <h1>Five decisions. Thirty-four gates.</h1>
             <p className={styles.heroCopy}>
               You see five questions first. Each one holds the underlying gates,
               with their owner, priority, status, blocking consequence and any cited evidence kept
@@ -427,7 +500,7 @@ export default function DecisionsPage() {
           </div>
           <aside className={styles.summary}>
             <p>Register status</p>
-            <h2>All 28 gates are open pending evidence or approval.</h2>
+            <h2>All 34 gates are open pending evidence or approval.</h2>
             <ul>
               <li><Check size={17} /> Five sponsor-facing decision bundles</li>
               <li><Check size={17} /> Stable anchors for every gate</li>
@@ -516,7 +589,7 @@ export default function DecisionsPage() {
 
       <section className={`${styles.docSection} ${styles.alt}`} id="gate-register">
         <SectionHeading
-          label="Progressive disclosure · 28 gates"
+          label="Progressive disclosure · 34 gates"
           title="Open a gate when you need the decision detail."
           copy="Every gate keeps its original reference. Priority, owner and status are text labels; evidence links point to the traceable evidence register wherever a verified item is cited."
         />

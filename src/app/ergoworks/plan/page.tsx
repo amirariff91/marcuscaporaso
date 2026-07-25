@@ -234,35 +234,42 @@ export default function PlanPage() {
         />
         <div className={styles.roadmap}>
           <article>
-            <div className={styles.phaseHead}><span><ClipboardCheck size={18} /></span><b>01</b></div>
+            <div className={styles.phaseHead}><span><CircleAlert size={18} /></span><b>01</b></div>
+            <h3>Contain certificate-intent spend</h3>
+            <p className={styles.hubCardCopy}>
+              <strong>[Verified]</strong> The broad <code>+manual +handling +certificate</code> keyword spent <EvidenceLink id="6a.10">A$846.56 across 125 clicks for two reported conversions</EvidenceLink> in the latest 30 days. At that observed pace, each week of delay leaves roughly A$197 of observed spend exposed (A$846.56 ÷ 30 × 7) — an observation, not a target cost per lead, acquisition cost or proven result. <strong>[Interpretation]</strong> I recommend one-line approval to quarantine the keyword immediately while the credential decision is answered at <a href="/ergoworks/plan/decisions#gate-C12">gate C12</a>. This is reversible and deliberately separate from the broader approval bundle: the containment is worth days, not weeks. The two reported conversions have never been CRM-validated as qualified corporate enquiries, so this does not conclude that the spend is wasted or that all certificate intent is unsuitable.
+            </p>
+          </article>
+          <article>
+            <div className={styles.phaseHead}><span><ClipboardCheck size={18} /></span><b>02</b></div>
             <h3>Answer the approval bundle</h3>
             <p className={styles.hubCardCopy}>
               <strong>[Assumption]</strong> Resolve the offer and routing GO/NO-GO, the corporate-versus-individual flow, fulfilment capacity, service geography, proof permissions and the spend envelope. The proposed free 15-minute Workplace Ergonomics Risk Snapshot remains pending client GO/NO-GO — Preliminary guidance only—not a compliance assessment, compliance certification, medical assessment or diagnosis.
             </p>
           </article>
           <article>
-            <div className={styles.phaseHead}><span><ShieldCheck size={18} /></span><b>02</b></div>
+            <div className={styles.phaseHead}><span><ShieldCheck size={18} /></span><b>03</b></div>
             <h3>Repair the conversion goals</h3>
             <p className={styles.hubCardCopy}>
               <strong>Recommended sequence.</strong> Demote newsletter, email-click and soft local actions; separate other-service activity; deduplicate forms and calls; capture click IDs, consent and organisation stages in the CRM; keep Maximize Conversions without a target CPA until clean qualified data exists.
             </p>
           </article>
           <article>
-            <div className={styles.phaseHead}><span><PhoneCall size={18} /></span><b>03</b></div>
+            <div className={styles.phaseHead}><span><PhoneCall size={18} /></span><b>04</b></div>
             <h3>Make the qualified-call path real</h3>
             <p className={styles.hubCardCopy}>
               Because <EvidenceLink id="6a.7">13 of the 17 recorded leads are calls</EvidenceLink> [Verified], call tracking is not optional: capture the call ID and connected duration, apply the hours-and-disposition rule once approved at gate B6, disposition rule, deduplicate against a form from the same organisation, and import <code>qualified_call</code> as the only primary call signal once reliable.
             </p>
           </article>
           <article>
-            <div className={styles.phaseHead}><span><ArrowRight size={18} /></span><b>04</b></div>
+            <div className={styles.phaseHead}><span><ArrowRight size={18} /></span><b>05</b></div>
             <h3>Build one Sydney page</h3>
             <p className={styles.hubCardCopy}>
               <strong>[Interpretation]</strong> Only the corporate flow carries a conversion action. Individuals receive a short route-out with useful self-setup guidance, no consult offer, no lead event and no marketing opt-in. Keep the page message-matched to assessment intent and place the caveat beside every Snapshot call to action: Preliminary guidance only—not a compliance assessment, compliance certification, medical assessment or diagnosis.
             </p>
           </article>
           <article>
-            <div className={styles.phaseHead}><span><TimerReset size={18} /></span><b>05</b></div>
+            <div className={styles.phaseHead}><span><TimerReset size={18} /></span><b>06</b></div>
             <h3>Reassess after clean cycles</h3>
             <p className={styles.hubCardCopy}>
               <strong>[Interpretation]</strong> Judge Search on qualified corporate pipeline and the call path first. Only after conversion goals are clean and stable should the capped Meta test run; judge it on corporate CPQL and pipeline, not cheap early platform results.

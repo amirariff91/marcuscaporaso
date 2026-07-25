@@ -28,6 +28,11 @@ const spineRows = [
     "CRM is the system of record, not the ad platform.",
   ],
   [
+    "Call attempt",
+    <><code>call_id</code>; attempt timestamp; connection status; connected duration; missed reason (ring-out, abandoned, out-of-hours or voicemail); answer timestamp; callback requested, completed and timestamp; callback SLA result; and CRM disposition.</>,
+    "I retain connected and unconnected attempts together so answer rate, missed-call recovery and callback performance can be reconciled with the connected-call conversion count.",
+  ],
+  [
     "Opportunity / stage",
     "Service line; enquiry, qualified and won stages; contract value; start date and end date.",
     "A won consulting engagement is the outcome returned through the offline loop.",
@@ -54,6 +59,11 @@ const platformRows = [
     <><code>qualified_call</code></>,
     "The only primary call signal. Call id, connected duration and CRM disposition are required; the CRM disposition is authoritative and calls are deduplicated against form submissions from the same organisation.",
     <>Import through the qualified-call path in Appendix C §7 and §12. The rule itself is the client’s to set and is still open at <a href="/ergoworks/plan/decisions#gate-B6">gate B6</a>.</>,
+  ],
+  [
+    "Unconnected and missed call attempts",
+    "I capture every attempted call, not only calls that connect: ring-out, abandoned, out-of-hours and voicemail, with timestamp, outcome, callback request, callback completion and callback SLA. These are diagnostic and recovery records, not primary conversions.",
+    <>Reconcile attempt count, answer rate and missed-call recovery against connected-call conversions and CRM disposition before any call signal is promoted at <a href="/ergoworks/plan/decisions#gate-B6">gate B6</a>.</>,
   ],
   [
     "Won consulting engagement",
@@ -348,6 +358,12 @@ export default function MeasurementPage() {
             <a href="/ergoworks/plan/decisions#gate-B6"> gate B6</a>.
           </p>
           <p>
+            <strong>[Interpretation]</strong> I treat the connected-call conversion count as only one slice of the call funnel. I will capture every unconnected attempt — ring-out, abandoned, out-of-hours and voicemail — with its call id, timestamp, outcome, callback request, callback completion and callback SLA result. I will report answer rate and missed-call recovery, then reconcile those figures against connected-call conversions and CRM disposition. I treat the current <EvidenceLink id="6a.7">13 recorded lead events attributed to calls</EvidenceLink> as a floor, not a total: the recorded call funnel may be materially smaller than the demand that reached the phone. I will keep these attempts diagnostic until the recovery and callback rule is approved at <a href="/ergoworks/plan/decisions#gate-B6">gate B6</a>.
+          </p>
+          <p>
+            <strong>[Verified]</strong> <EvidenceLink id="6a.9">All 16 enabled conversion actions remain primary account-wide</EvidenceLink>, and the account includes <EvidenceLink id="6a.12">an enabled physiotherapy campaign</EvidenceLink>. <strong>[Interpretation]</strong> I therefore treat contamination as running in both directions: the consulting campaign can bid towards physiotherapy conversions, and the enabled physiotherapy campaign is also bidding towards consulting conversions — not merely the reverse. I will not treat conversion repair as complete until the separation boundary is approved at <a href="/ergoworks/plan/decisions#gate-C7">gate C7</a>.
+          </p>
+          <p>
             The won-engagement import is the only offline outcome this page proposes. Retain the
             applicable click identifier and consent evidence, deduplicate client and server delivery,
             and import only after the Appendix C §7 tests pass. The equipment order remains in its own
@@ -478,7 +494,9 @@ export default function MeasurementPage() {
           <ul>
             <li>The Consulting conversion goal <strong>must no longer include</strong> newsletter, raw soft actions, physiotherapy or other-business actions. This is an acceptance condition, not a completed step — the current mixed state is linked at <a href="/ergoworks/plan/evidence#evidence-6a.9">evidence 6a.9</a>.</li>
             <li><strong>[Interpretation]</strong> The CRM stores <code>organisation_account_id</code>, click identifiers, call id, connected duration, CRM disposition, service stages, values and consent records.</li>
+            <li><strong>[Interpretation]</strong> The CRM stores connected and unconnected call attempts, including ring-out, abandoned, out-of-hours and voicemail outcomes, answer status, callback recovery and callback SLA; reporting reconciles these with connected-call conversions and CRM disposition. The current <EvidenceLink id="6a.7">13 recorded lead events attributed to calls</EvidenceLink> are a floor, not a total.</li>
             <li><strong>[Interpretation]</strong> <code>qualified_call</code> is the only primary call signal, with CRM disposition authoritative and form deduplication tested.</li>
+            <li><strong>[Interpretation]</strong> Conversion repair accounts for both directions of account-wide contamination: the enabled physiotherapy campaign can bid towards consulting conversions while consulting activity can bid towards physiotherapy conversions. The separation decision remains at <a href="/ergoworks/plan/decisions#gate-C7">gate C7</a>.</li>
             <li><strong>[Interpretation]</strong> Won consulting imports pass the Appendix C §7 offline loop; equipment revenue, worker health data and individual route-out events are rejected by the allowlist.</li>
             <li><strong>[Interpretation]</strong> The internal account view uses manually validated <code>organisation_account_id</code>, is labelled associated cross-sell value, and is kept separate from platform ROAS.</li>
             <li><strong>GATE</strong> Gross-margin-derived reporting remains disabled until <a href="/ergoworks/plan/decisions#gate-B11">gate B11</a> supplies a finance source or approved store cost data.</li>
