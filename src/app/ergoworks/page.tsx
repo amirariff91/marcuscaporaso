@@ -30,8 +30,7 @@ export default function ErgoWorksEntryPage() {
                 A private consulting engagement.
               </h1>
               <p className="mt-7 max-w-[70ch] text-lg leading-relaxed text-muted sm:text-xl">
-                A private consulting engagement. The working material is not published here,
-                act on and measure.
+                The working material for this engagement is private and is not published here.
               </p>
             </div>
 

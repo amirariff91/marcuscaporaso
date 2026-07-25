@@ -103,13 +103,13 @@ export default function PlanPage() {
             </span>
           </div>
           <div>
-            <strong>Real leads</strong>
+            <strong>Recorded leads (strict)</strong>
             <span>
-              <strong>[Verified]</strong> <EvidenceLink id="6a.7">17 real leads</EvidenceLink>: four enquiry-form submissions and <EvidenceLink id="6a.7">13 connected calls</EvidenceLink> in the latest month.
+              <strong>[Verified]</strong> <EvidenceLink id="6a.7">17 platform-recorded leads</EvidenceLink> — four enquiry-form submissions and 13 call conversions — in the latest month, before deduplication and CRM qualification.
             </span>
           </div>
           <div>
-            <strong>Cost per real lead</strong>
+            <strong>Cost per recorded lead</strong>
             <span>
               <strong>[Verified]</strong> <EvidenceLink id="6a.8">A$273.68</EvidenceLink> on the strict definition. This is raw-lead cost, not qualified-lead performance and not a target CPA.
             </span>
@@ -117,7 +117,7 @@ export default function PlanPage() {
           <div>
             <strong>Where leads arrive</strong>
             <span>
-              <strong>[Verified]</strong> <EvidenceLink id="6a.7">13 of 17 real leads are phone calls</EvidenceLink>. A form-only landing-page plan would miss most of the current lead path.
+              <strong>[Verified]</strong> <EvidenceLink id="6a.7">13 of the 17 recorded leads are call conversions</EvidenceLink>. A form-only landing-page plan would miss most of the current lead path.
             </span>
           </div>
         </div>
@@ -196,7 +196,7 @@ export default function PlanPage() {
         <SectionHeading
           label="What it costs"
           title="Protect the base, cap the experiment, price the work."
-          copy="I would keep the proven Search base intact while making every expansion cost visible before approval. The shape is 70% Search, 20% a capped Meta test that has to earn its place, and 10% held in reserve rather than committed to a channel now. Two things are still yours to settle: whether Meta money is incremental or reallocated, and which envelope governs \u2014 the trailing year or the current run rate."
+          copy="I would keep the existing Search base running while the signal is repaired — a continuity decision, not a verdict that the channel is proven — while making every expansion cost visible before approval. The shape is 70% Search, 20% a capped Meta test that has to earn its place, and 10% held in reserve rather than committed to a channel now. Two things are still yours to settle: whether Meta money is incremental or reallocated, and which envelope governs \u2014 the trailing year or the current run rate."
         />
         <div className={styles.roadmap}>
           <article>
@@ -252,14 +252,14 @@ export default function PlanPage() {
             <div className={styles.phaseHead}><span><PhoneCall size={18} /></span><b>03</b></div>
             <h3>Make the qualified-call path real</h3>
             <p className={styles.hubCardCopy}>
-              Because <EvidenceLink id="6a.7">13 of 17 real leads are calls</EvidenceLink> [Verified], call tracking is not optional: capture the call ID and connected duration, apply the hours-and-disposition rule once approved at gate B6, disposition rule, deduplicate against a form from the same organisation, and import <code>qualified_call</code> as the only primary call signal once reliable.
+              Because <EvidenceLink id="6a.7">13 of the 17 recorded leads are calls</EvidenceLink> [Verified], call tracking is not optional: capture the call ID and connected duration, apply the hours-and-disposition rule once approved at gate B6, disposition rule, deduplicate against a form from the same organisation, and import <code>qualified_call</code> as the only primary call signal once reliable.
             </p>
           </article>
           <article>
             <div className={styles.phaseHead}><span><ArrowRight size={18} /></span><b>04</b></div>
             <h3>Build one Sydney page</h3>
             <p className={styles.hubCardCopy}>
-              <strong>[Interpretation]</strong> The corporate flow converts. Individuals receive a short route-out with useful self-setup guidance, no consult offer, no lead event and no marketing opt-in. Keep the page message-matched to assessment intent and place the caveat beside every Snapshot call to action: Preliminary guidance only—not a compliance assessment, compliance certification, medical assessment or diagnosis.
+              <strong>[Interpretation]</strong> Only the corporate flow carries a conversion action. Individuals receive a short route-out with useful self-setup guidance, no consult offer, no lead event and no marketing opt-in. Keep the page message-matched to assessment intent and place the caveat beside every Snapshot call to action: Preliminary guidance only—not a compliance assessment, compliance certification, medical assessment or diagnosis.
             </p>
           </article>
           <article>
@@ -301,7 +301,7 @@ export default function PlanPage() {
           </li>
           <li>
             <span>04</span>
-            <p><strong>[Interpretation]</strong> The channel base survives qualification: Sydney assessment Search still produces corporate pipeline after manual-handling waste and individual traffic are removed, with calls included.</p>
+            <p><strong>[Assumption]</strong> The channel base survives qualification: Sydney assessment Search still produces corporate pipeline after manual-handling waste and individual traffic are removed, with calls included.</p>
           </li>
           <li>
             <span>05</span>
