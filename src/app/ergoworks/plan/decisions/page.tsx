@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import {
   ArrowDown,
+  ArrowRight,
   Check,
   CircleAlert,
   LockKeyhole,
@@ -10,345 +11,581 @@ import styles from "../plan.module.css";
 
 export const metadata: Metadata = {
   title: "ErgoWorks Consulting — Decisions",
-  description: "Private decision record for the ErgoWorks Consulting campaign review pack.",
+  description: "Private decision register for the ErgoWorks Consulting campaign review pack.",
   robots: { index: false, follow: false },
 };
 
-type Question = {
-  priority: "Critical" | "High" | "Medium";
-  question: string;
-  why: string;
-  blocks: string;
-  redacted?: boolean;
+type Priority = "Critical" | "High" | "Medium";
+
+type EvidenceRef = {
+  id: string;
+  label: string;
 };
 
-type DecisionRecord = {
+type Gate = {
+  id: string;
+  priority: Priority;
+  owner: string;
+  status: string;
   question: string;
-  answer: string;
-  why: string;
   blocks: string;
-  redacted?: boolean;
+  evidence?: readonly EvidenceRef[];
 };
 
-const questions: Question[] = [
-  {
+type Bundle = {
+  number: string;
+  title: string;
+  question: string;
+  owners: readonly string[];
+  unlocks: string;
+  gateIds: readonly string[];
+};
+
+const gates: Record<string, Gate> = {
+  A1: {
+    id: "A1",
     priority: "Critical",
+    owner: "Oz and Ruth — senior ergonomics leads",
+    status: "Open",
     question:
-      "Is Meta’s minimum 30-day funding requirement added on top of the existing Search budget, or reallocated from it?",
-    why:
-      "Search has a mature five-figure annual history and an observed current monthly range. Reallocation reduces proven demand capture; incremental funding produces a cleaner Meta baseline.",
-    blocks: "Final choice between the lower and preferred 30-day budget scenarios.",
-    redacted: true,
+      "Can each of the six services pass a delivery-capacity and readiness matrix covering owner, scope, geography, weekly capacity, response SLA, quality control, delivery cost, dependencies and escalation? A service that fails stays out of acquisition messaging.",
+    blocks: "Which services we can honestly promise and use in acquisition messaging.",
   },
-  {
-    priority: "Critical",
-    question:
-      "Can PMax receive its required viable daily floor without destabilising Search?",
-    why:
-      "A 5–10% test slice at the current run-rate does not meet the required floor. PMax must be funded properly or parked.",
-    blocks: "PMax relaunch planning and the final channel allocation.",
-    redacted: true,
-  },
-  {
-    priority: "Critical",
-    question:
-      "GO/NO-GO: Does the client approve the free 15-minute Workplace Ergonomics Risk Snapshot as the launch-default offer and dominant CTA, with the adjacent “preliminary guidance only — not a compliance assessment, compliance certification, medical assessment or diagnosis” caveat in every placement?",
-    why:
-      "The offer and caveat govern all baseline Search, Meta and landing-page variants.",
-    blocks: "Campaign copy, creative, form and landing-page launch.",
-  },
-  {
-    priority: "Critical",
-    question:
-      "GO/NO-GO: Does the client approve the complete ErgoStart → ErgoScale / ErgoCoach → ErgoControl offer ladder, including the eligibility and caveats in the canonical offer registry?",
-    why:
-      "The ladder names and packages are proposed, not yet approved commercial products.",
-    blocks: "Offer naming, routing, creative and sales handoff.",
-  },
-  {
-    priority: "Critical",
-    question:
-      "What exact Snapshot fulfilment promise is approved: consultant owner, eligibility, weekly capacity, 15-minute format, written three-point-summary template, turnaround, booking flow and response SLA? The Snapshot is preliminary guidance only — not a compliance assessment, compliance certification, medical assessment or diagnosis.",
-    why: "Copy must promise only what operations can consistently deliver.",
-    blocks: "Final Snapshot wording, availability, pacing and follow-up workflow.",
-  },
-  {
-    priority: "Critical",
-    question:
-      "What exact service geography is approved for the Snapshot and each paid offer, including remote versus onsite limits? The Snapshot is preliminary guidance only — not a compliance assessment, compliance certification, medical assessment or diagnosis.",
-    why:
-      "“Australia-wide” and location-specific messaging cannot be published without confirmed coverage — and the live evidence has sharpened this into a launch blocker: the live site commits to Sydney and Melbourne only, while the account itself is city-targeted to nine cities with per-city bid modifiers (Sydney, Canberra and Brisbane already boosted), not national. A recent search-terms pull shows Fyshwick/Canberra as the strongest converting geo term, with Sydney and Melbourne geo terms converting occasionally. The LP cannot claim broader coverage than the live site until verified; if coverage is Sydney/Melbourne-only, the Canberra spend needs a geo decision (keep, geo-modify or exclude), not just copy.",
-    blocks:
-      "Geo targeting, exclusions, landing-page copy, the geo-dynamic Canberra treatment, the Canberra candidate ad group and lead routing.",
-    redacted: true,
-  },
-  {
-    priority: "Critical",
-    question:
-      "What does ErgoWorks actually issue after training: an accredited certificate, a statement of attainment, participant attendance records, participant training-completion records, or another output?",
-    why:
-      "Certificate/course buyer type is UNCLASSIFIED, and programme action-status records are not participant credentials. Accreditation and participant-record claims require direct evidence and client sign-off.",
-    blocks:
-      "Certificate Search test, certificate LP block and FAQ, organisational qualification, final ad copy and publication.",
-  },
-  {
-    priority: "Critical",
-    question:
-      "Are care-sector, online and refresher services actually supported; if so, in what onsite/remote format and approved service geography?",
-    why:
-      "Keyword demand verifies interest, not delivery capability. The live aged-care/disability/healthcare negatives also conflict with the proposed care build.",
-    blocks:
-      "Care/online/refresher LP modules, care-sector negative reconciliation, geo labels and targeting, Search creative and publication.",
-  },
-  {
-    priority: "Critical",
-    question:
-      "GO/NO-GO: What exact qualified-call rule does the client approve, including minimum connected duration, operating-hours treatment, disposition criteria and exclusions?",
-    why:
-      "The native proxy remains Secondary; the deduplicated qualified import is the only Primary call signal.",
-    blocks: "Call tracking, CRM disposition, offline import and bidding.",
-  },
-  {
-    priority: "Critical",
-    question:
-      "Do we have admin access to the correct Meta Business Manager, ad account and Dataset/Pixel, plus authority to verify the approved campaign domain and configure domain verification/AEM?",
-    why:
-      "Ownership and access are required before an isolated Meta build can be verified or launched.",
-    blocks: "Meta setup, Pixel/CAPI, domain verification, AEM and launch QA.",
-  },
-  {
-    priority: "Critical",
-    question:
-      "What are average contract value, contribution/delivery margin, qualified-lead-to-won rate and acceptable payback?",
-    why:
-      "These determine an affordable CAC, target CPQL and real target CPA. Raw revenue alone is insufficient.",
-    blocks: "Commercial target CPA, 3× Kill Rule, budget scaling, tCPA/tROAS assessment and ROI planning.",
-  },
-  {
-    priority: "Critical",
-    question:
-      "Which CRM is in use, and can it store click IDs, consent records, lead stages and values?",
-    why:
-      "Google and Meta need reliable offline quality signals so optimisation can move from raw forms toward qualified leads, proposals and won work.",
-    blocks: "Offline conversion imports, Google Data Manager, Meta CAPI feedback, CPQL reporting and closed-loop attribution.",
-  },
-  {
-    priority: "Critical",
-    question:
-      "What level of separation is approved for Consulting versus Physiotherapy? Options include campaign-specific goals within the existing Ads account, a dedicated GA4 data stream/property, separate GTM scope, and a separate Meta Pixel/Dataset.",
-    why:
-      "The Google Ads account mixes Consulting and Physiotherapy. Health-adjacent data increases privacy and optimisation risk. Separation must not damage the Physiotherapy campaign through account-wide controls.",
-    blocks: "Conversion cleanup, audience creation, GTM/GA4 architecture, Meta launch, remarketing and reliable reporting.",
-    redacted: true,
-  },
-  {
+  A2: {
+    id: "A2",
     priority: "High",
+    owner: "Oz and Ruth — senior ergonomics leads",
+    status: "Open",
     question:
-      "Should paid remarketing receive a separate viable budget after audience creation, or remain parked?",
-    why:
-      "Remarketing should not share or dilute PMax’s floor. Its value depends on isolated audience size, privacy approval, frequency control and incremental contribution.",
-    blocks: "Display/Meta retargeting activation, creative volume and audience architecture.",
+      "Is the competitor field complete, and do we genuinely out-deliver the competitors we differentiate against? Confirm the shortlist and any panel or incumbent competitors that could displace us.",
+    blocks: "The accuracy of the competitor shortlist and any differentiation claim.",
   },
-  {
+  A3: {
+    id: "A3",
     priority: "High",
+    owner: "Oz and Ruth — senior ergonomics leads",
+    status: "Open",
     question:
-      "How many free 15-minute Workplace Ergonomics Risk Snapshots can ErgoWorks deliver each week, and who owns response and follow-up? The Snapshot is preliminary guidance only — not a compliance assessment, compliance certification, medical assessment or diagnosis.",
-    why:
-      "Meta may generate uneven lead flow. Slow response or insufficient delivery capacity would damage prospect experience and make channel results difficult to interpret.",
-    blocks: "Meta pacing, form scheduling, service-area limits, follow-up SLA and scale decisions.",
+      "What do we issue after training: an accredited certificate, a statement of attainment, an attendance record or another approved record?",
+    blocks: "Manual-handling positioning, training copy and publication.",
   },
-  {
+  A4: {
+    id: "A4",
     priority: "High",
+    owner: "Oz and Ruth — senior ergonomics leads",
+    status: "Open",
     question:
-      "Which proof assets are substantiated and approved in writing for paid-media use? Specifically: reviews and rating, client logos, awards, a global FMCG client, and ASX-listed enterprise client claims.",
-    why:
-      "These items remain client sign-off required and cannot be treated as usable evidence until their accuracy, wording and permissions are confirmed.",
-    blocks: "Final ad copy, landing-page proof sections, creative production and approval.",
+      "Which services are actually delivered where and how, including floor-walk staffing, home-visit geography, office-move capability and onboarding or support? Are care-sector, online and refresher services supported?",
+    blocks: "The first-touch model, geography, care/online/refresher modules and targeting.",
   },
-  {
-    priority: "High",
-    question:
-      "Is the designated landing-page developer confirmed, what is the delivery window, and where will the page be hosted?",
-    why:
-      "The dedicated page is a dependency for message match, form design, consent controls, event tracking and paid-traffic routing.",
-    blocks: "Build schedule, technical specification, launch date, QA ownership and Search/Meta destination mapping.",
-  },
-  {
+  A5: {
+    id: "A5",
     priority: "Medium",
+    owner: "Oz and Ruth — senior ergonomics leads",
+    status: "Open",
     question:
-      "What route or future subdomain should host the private shareable campaign page?",
-    why:
-      "A stable location is needed for client review and future handoff without mixing the Consulting project with other client workstreams or unrelated site routes.",
-    blocks: "Shareable-page implementation, access model, URL mapping and future maintenance.",
+      "What competitor quotes have you observed for assessment, sweep, training and retainer work? These are needed to sanity-check the currently directional pricing bands.",
+    blocks: "Pricing bands and the commercial comparison.",
+  },
+  B1: {
+    id: "B1",
+    priority: "Critical",
+    owner: "Marcus",
+    status: "Open",
+    question:
+      "I need the unit economics per service: average contract value, close rate, gross margin, delivery cost, sales-cycle length and acceptable payback. The current observed acquisition cost is A$274 on the strict real-lead count or A$222 on the looser count; both are raw-lead sensitivities, not qualified-lead performance or a target CPA.",
+    blocks: "The investment case, scaling, affordable qualified-lead cost and bid strategy.",
+    evidence: [
+      { id: "6a.6", label: "recent spend" },
+      { id: "6a.7", label: "real leads" },
+      { id: "6a.8", label: "cost per real lead" },
+    ],
+  },
+  B2: {
+    id: "B2",
+    priority: "Critical",
+    owner: "Marcus",
+    status: "Open",
+    question:
+      "I need the attach-rate backfill by organisation: originating problem, first service, employee population, subsequent services, revenue, margin, sales cycle and retention. I will set the minimum expansion rate and account value that justify acquisition. Aggregate equipment-order evidence shows 209 orders, 133 raw organisation strings and 19 repeat organisations, accounting for 53 of 167 company-attributed orders; it does not show that a consulting engagement caused any order.",
+    blocks: "Whether the ecosystem thesis is real and whether cross-population acquisition is justified.",
+    evidence: [
+      { id: "6c.4", label: "aggregate repeat-order counts" },
+      { id: "6c.8", label: "equipment-order scope caveat" },
+    ],
+  },
+  B3: {
+    id: "B3",
+    priority: "Critical",
+    owner: "Marcus",
+    status: "Open",
+    question:
+      "I need to know which lead-management system is in use and whether it can store click attribution, consent, an organisation account, service stages and values.",
+    blocks: "The measurement spine, offline value feedback and qualified-pipeline reporting.",
+  },
+  B11: {
+    id: "B11",
+    priority: "Critical",
+    owner: "Marcus",
+    status: "Open — partial evidence",
+    question:
+      "I need to know where equipment gross margin lives. Current evidence shows 531 published products with none carrying a populated non-zero cost-of-goods value, so no equipment contribution or lifetime-value figure can yet be produced.",
+    blocks: "The margin claim, equipment contribution and any lifetime-value-to-acquisition-cost work.",
+    evidence: [{ id: "6c.7", label: "gross-margin evidence" }],
+  },
+  B4: {
+    id: "B4",
+    priority: "High",
+    owner: "Marcus",
+    status: "Open",
+    question:
+      "Which proof assets are substantiated in writing: client names, logos, named enterprise references and outcomes? No unverifiable outcome claim ships.",
+    blocks: "Proof modules, landing-page sections, creative and publication.",
+  },
+  B5: {
+    id: "B5",
+    priority: "High",
+    owner: "Marcus",
+    status: "Open",
+    question:
+      "What exact fulfilment promise can I make for the free 15-minute Workplace Ergonomics Risk Snapshot (proposed, pending the GO/NO-GO at C1): owner, weekly capacity, format, turnaround and response SLA? Copy must promise only what delivery can sustain, and every placement carries the caveat adjacent to the call to action: “Preliminary guidance only—not a compliance assessment, compliance certification, medical assessment or diagnosis.”",
+    blocks: "Snapshot wording, availability, pacing and the follow-up workflow.",
+  },
+  B6: {
+    id: "B6",
+    priority: "High",
+    owner: "Marcus",
+    status: "Open",
+    question:
+      "I need the qualified-corporate-lead rule: organisation, role, workforce or site-size band, problem, location and timeframe. A company email alone is insufficient; corporate buyers must not be rejected because they use a personal email.",
+    blocks: "The lead definition, qualification feedback and optimisation target.",
+  },
+  B7: {
+    id: "B7",
+    priority: "High",
+    owner: "Marcus",
+    status: "Open",
+    question:
+      "I need a vendor-neutral equipment policy. Is supply optional, is any relationship disclosed, is advice documented independently of the product and are client panels accommodated?",
+    blocks: "The trust guardrail for equipment advice and cross-sell.",
+  },
+  B8: {
+    id: "B8",
+    priority: "High",
+    owner: "Marcus",
+    status: "Open",
+    question:
+      "I need to confirm whether the consulting and equipment businesses share a legal entity, customer records or referral fees, and whether an organisation-level join is permissible. Feasibility is not the blocker: 167 of 209 orders carry a billing-company name, while the same organisation appears under variant spellings, so any join must be manually validated rather than automatic.",
+    blocks: "Whether organisation-level records may be joined and used in a cross-sell ledger.",
+    evidence: [
+      { id: "6c.2", label: "organisation attribution" },
+      { id: "6c.6", label: "variant-spelling evidence" },
+    ],
+  },
+  B9: {
+    id: "B9",
+    priority: "High",
+    owner: "Marcus",
+    status: "Open",
+    question:
+      "I will not put a competitor paid-ad claim in a client-facing deliverable until the footprint has been verified.",
+    blocks: "Client-facing competitor advertising claims.",
+  },
+  B10: {
+    id: "B10",
+    priority: "Medium",
+    owner: "Marcus",
+    status: "Open",
+    question:
+      "I need the landing-page developer, delivery window, hosting decision and private route for the shareable page.",
+    blocks: "The landing-page build schedule, route, hosting, QA and destination mapping.",
+  },
+  C1: {
+    id: "C1",
+    priority: "Critical",
+    owner: "Client (via Greg)",
+    status: "Open",
+    question:
+      "GO/NO-GO on the offer and routing: approve the free 15-minute Workplace Ergonomics Risk Snapshot as the launch offer, the corporate-gated two-flow and the route for individuals with no lead event. Every placement must carry this caveat adjacent to the call to action: “Preliminary guidance only—not a compliance assessment, compliance certification, medical assessment or diagnosis.”",
+    blocks: "The landing-page build, form flow, creative and any launch publication.",
+  },
+  C2: {
+    id: "C2",
+    priority: "High",
+    owner: "Client (via Greg)",
+    status: "Open",
+    question:
+      "Should paid-social funding be incremental or reallocated, and is access to the correct advertising account and domain-verification controls available? The 20% test cannot proceed without that access decision.",
+    blocks: "The paid-social test and its 20% allocation.",
+    evidence: [{ id: "6e.1", label: "accessible-account check" }],
+  },
+  C3: {
+    id: "C3",
+    priority: "High",
+    owner: "Client (via Greg)",
+    status: "Open",
+    question:
+      "What is the buying-centre and procurement reality for target accounts: who owns assessment, hybrid work, moves and furniture, and what panel or incumbent status applies? Repeat purchasing does not evidence that one buyer or one buying centre was involved.",
+    blocks: "The cross-sell playbook, target-account maps and service routing.",
+  },
+  C4: {
+    id: "C4",
+    priority: "High",
+    owner: "Client (via Greg)",
+    status: "Open",
+    question:
+      "What service-geography wording is approved for the Sydney-first launch and for everywhere else? The current public page names Sydney and Melbourne only, so any broader page or ad claim needs an explicit decision.",
+    blocks: "Geography targeting, exclusions, landing-page copy, the Canberra treatment and lead routing.",
+    evidence: [{ id: "6d.6", label: "current geography commitment" }],
+  },
+  C5: {
+    id: "C5",
+    priority: "High",
+    owner: "Client (via Greg)",
+    status: "Open",
+    question:
+      "Will the client sign off Australian privacy boundaries before any organisation-level audience or cross-brand data use? Only organisation-level business signals may be recirculated; employee health details must stay out.",
+    blocks: "Organisation-level audience recirculation, cross-brand data use and measurement approval.",
+  },
+  C8: {
+    id: "C8",
+    priority: "High",
+    owner: "Client (via Greg)",
+    status: "Open",
+    question:
+      "Who owns and administers the local business profile, including claiming, verifying, correcting and maintaining it? It is currently the strongest top-five asset on the beachhead term, but no owner is named.",
+    blocks: "The organic beachhead and its ownership and maintenance plan.",
+    evidence: [
+      { id: "6b.1", label: "local-profile search evidence" },
+      { id: "6b.2", label: "local-profile attribution caveat" },
+    ],
+  },
+  C9: {
+    id: "C9",
+    priority: "High",
+    owner: "Client (via Greg)",
+    status: "Open",
+    question:
+      "Which spend envelope governs? Twenty per cent of the trailing A$42,286 annual pace is approximately A$700 per month; twenty per cent of the current approximately A$155 daily pace is approximately A$930 per month. One planning number is needed.",
+    blocks: "The 70/20/10 allocation and all activation pacing.",
+    evidence: [
+      { id: "6a.2", label: "current daily budget" },
+      { id: "6a.3", label: "trailing annual spend" },
+    ],
+  },
+  C10: {
+    id: "C10",
+    priority: "High",
+    owner: "Client (via Greg)",
+    status: "Open",
+    question:
+      "Keep or drop Canberra/Fyshwick? It is the only converting geo-specific term in the current evidence, while the public page does not mention Canberra.",
+    blocks: "Geo targeting and the Canberra decision.",
+    evidence: [
+      { id: "6a.11", label: "Canberra/Fyshwick conversion evidence" },
+      { id: "6d.6", label: "current geography commitment" },
+    ],
+  },
+  C6b: {
+    id: "C6b",
+    priority: "High",
+    owner: "Client (via Greg) and Marcus",
+    status: "Open — verification required",
+    question:
+      "Which tracking-stack facts must be confirmed before measurement work starts: the tag container and its administrator, removal of legacy analytics, the presence of a consent-management platform in the browser, and the analytics and advertising tags that it governs?",
+    blocks: "All measurement work until the tagging, analytics and consent sequence are verified.",
+    evidence: [
+      { id: "6d.1", label: "tag-container evidence" },
+      { id: "6d.2", label: "legacy-analytics evidence" },
+      { id: "6d.5", label: "consent-platform evidence" },
+    ],
+  },
+  C6: {
+    id: "C6",
+    priority: "Medium",
+    owner: "Client (via Greg)",
+    status: "Open",
+    question:
+      "What is the office-moves scope: the ergonomics workstream for workplace relocation, with what blueprint, liability, pricing and partner model? No generic-relocation acquisition spend should proceed until this is validated.",
+    blocks: "Whether office-moves enters any plan or acquisition message.",
+  },
+  C7: {
+    id: "C7",
+    priority: "Medium",
+    owner: "Client (via Greg)",
+    status: "Open",
+    question:
+      "What level of separation is approved between Consulting and Physiotherapy in the existing advertising and measurement accounts? The current account mixes the two, so isolation is an intended state rather than the present state.",
+    blocks: "Conversion cleanup, audience creation, reporting and safe separation.",
+    evidence: [
+      { id: "6a.9", label: "conversion-action state" },
+      { id: "6a.12", label: "mixed-account evidence" },
+    ],
+  },
+  C11: {
+    id: "C11",
+    priority: "Medium",
+    owner: "Client (via Greg)",
+    status: "Open",
+    question:
+      "Who approves the six messaging pillars? They are proposed copy, not approved copy, and four describe services that must first pass the A1 readiness matrix.",
+    blocks: "Messaging publication after delivery readiness is proven.",
+  },
+};
+
+const bundles: readonly Bundle[] = [
+  {
+    number: "01",
+    title: "Is this worth funding?",
+    question: "Can the economics and account evidence justify investment and the proposed allocation?",
+    owners: ["Marcus", "Client (via Greg)"],
+    unlocks: "A defensible budget envelope, an investment go/no-go and the cross-population thesis.",
+    gateIds: ["B1", "B2", "B11", "C3", "C9"],
+  },
+  {
+    number: "02",
+    title: "What exactly launches?",
+    question: "What offer, service boundaries, geography and message can be approved for launch?",
+    owners: ["Client (via Greg)", "Oz and Ruth — senior ergonomics leads"],
+    unlocks: "A decided Snapshot route (approved or rejected at C1), service geography, training and office-move scope, and publishable messaging.",
+    gateIds: ["C1", "A3", "A4", "C4", "C10", "C6", "C11"],
+  },
+  {
+    number: "03",
+    title: "Can we deliver it?",
+    question: "Do delivery capacity, proof, qualification and vendor-neutral operations support the promise?",
+    owners: ["Oz and Ruth — senior ergonomics leads", "Marcus"],
+    unlocks: "A fulfilable offer, substantiated proof, a qualified-lead definition and a vendor-neutral delivery plan.",
+    gateIds: ["A1", "A2", "A5", "B4", "B5", "B6", "B7"],
+  },
+  {
+    number: "04",
+    title: "Can we measure it safely?",
+    question: "Can the data join, consent, privacy and account separation support safe measurement?",
+    owners: ["Marcus", "Client (via Greg)"],
+    unlocks: "A privacy-safe, separated measurement plan with a valid organisation-level join.",
+    gateIds: ["B3", "B8", "C5", "C6b", "C7"],
+  },
+  {
+    number: "05",
+    title: "What can be activated now?",
+    question: "Which lower-risk activation prerequisites can we close now?",
+    owners: ["Client (via Greg)", "Marcus"],
+    unlocks: "The paid-social test, competitor claims, landing-page route and local-profile work that can be activated without waiting on every other gate.",
+    gateIds: ["C2", "B9", "B10", "C8"],
   },
 ];
 
-const decisionRecord: DecisionRecord[] = [
+const mustBeTrue = [
   {
-    question: "Approved 30-day media envelope",
-    answer: "Lower scenario / preferred scenario / higher scenario / other",
-    why: "The funding envelope determines how much proven Search demand capture can be protected while expansion is tested.",
-    blocks: "Final budget scenario and channel allocation.",
-    redacted: true,
+    text: "The assessment wedge originates organisational accounts, not isolated employee cases, with credible adjacent needs.",
+    links: ["B2"],
   },
   {
-    question: "Meta funding",
-    answer: "On top / reallocated / deferred",
-    why: "Reallocation reduces proven demand capture; incremental funding produces a cleaner Meta baseline.",
-    blocks: "Meta launch funding and final channel allocation.",
+    text: "The economics justify acquisition: average contract value, margin, close rate, capacity and payback set the qualified-lead and acquisition thresholds.",
+    links: ["B1"],
   },
   {
-    question: "PMax",
-    answer: "Fund to the viable daily floor after gates / park",
-    why: "A 5–10% test slice at the current run-rate does not meet the required floor. PMax must be funded properly or parked.",
-    blocks: "PMax relaunch planning and the final channel allocation.",
-    redacted: true,
+    text: "Measurement connects origin to downstream value without mixing accounts or health data.",
+    links: ["B3", "C5"],
   },
   {
-    question: "Snapshot launch offer",
-    answer: "Approve / reject / revise; approved caveat. The Snapshot is preliminary guidance only — not a compliance assessment, compliance certification, medical assessment or diagnosis.",
-    why: "The offer and caveat govern all baseline Search, Meta and landing-page variants.",
-    blocks: "Campaign copy, creative, form and landing-page launch.",
+    text: "The channel base survives qualification: Sydney assessment Search still yields corporate pipeline after manual-handling waste and individuals are removed.",
+    links: ["B1", "B6"],
   },
   {
-    question: "Offer ladder",
-    answer: "Approve / reject / revise names, eligibility and caveats",
-    why: "The ladder names and packages are proposed, not yet approved commercial products.",
-    blocks: "Offer naming, routing, creative and sales handoff.",
+    text: "The operating model is real: owners, capacity, buyer and procurement maps, privacy and vendor-neutral equipment.",
+    links: ["A1", "C3", "B7", "C5"],
   },
-  {
-    question: "Snapshot fulfilment",
-    answer: "The Snapshot is preliminary guidance only — not a compliance assessment, compliance certification, medical assessment or diagnosis. Record owner, eligibility, weekly capacity, format, written summary, turnaround, booking flow and SLA.",
-    why: "Copy must promise only what operations can consistently deliver.",
-    blocks: "Final Snapshot wording, availability, pacing and follow-up workflow.",
-  },
-  {
-    question: "Service geography",
-    answer: "Approved onsite and remote coverage by offer",
-    why: "Coverage determines which geo claims, targeting rules, exclusions and lead routes can be published.",
-    blocks: "Geo targeting, exclusions, landing-page copy, the Canberra treatment and lead routing.",
-  },
-  {
-    question: "Training credential / records",
-    answer: "Accredited certificate / statement of attainment / participant attendance record / participant training-completion record / other; approved wording and evidence",
-    why: "Accreditation and participant-record claims require direct evidence and client sign-off.",
-    blocks: "Certificate Search test, certificate LP block and FAQ, organisational qualification, final ad copy and publication.",
-  },
-  {
-    question: "Care, online and refresher scope",
-    answer: "Supported services, delivery formats and approved geography; negative-reconciliation approval",
-    why: "Keyword demand verifies interest, not delivery capability.",
-    blocks: "Care/online/refresher LP modules, negative reconciliation, geo labels, targeting and publication.",
-  },
-  {
-    question: "Qualified-call rule",
-    answer: "Approved duration, hours, disposition and exclusions",
-    why: "The deduplicated qualified import is the only Primary call signal.",
-    blocks: "Call tracking, CRM disposition, offline import and bidding.",
-  },
-  {
-    question: "Meta access",
-    answer: "Business Manager, ad account, Dataset/Pixel, domain verification and AEM access confirmed / missing",
-    why: "Ownership and access are required before an isolated Meta build can be verified or launched.",
-    blocks: "Meta setup, Pixel/CAPI, domain verification, AEM and launch QA.",
-  },
-  {
-    question: "Paid remarketing",
-    answer: "Separately fund after gates / park",
-    why: "Remarketing depends on isolated audience size, privacy approval, frequency control and incremental contribution.",
-    blocks: "Display/Meta retargeting activation, creative volume and audience architecture.",
-  },
-  {
-    question: "Commercial target",
-    answer: "Approved CAC, target CPQL and payback period",
-    why: "Contract value, margin, close rate and payback determine affordable acquisition targets.",
-    blocks: "Target CPA, Kill Rule, budget scaling, tCPA/tROAS assessment and ROI planning.",
-  },
-  {
-    question: "CRM",
-    answer: "Platform, owner and integration capability",
-    why: "Reliable CRM fields are required to return qualified-lead and won outcomes to media platforms.",
-    blocks: "Offline conversion imports, Meta CAPI feedback, CPQL reporting and closed-loop attribution.",
-  },
-  {
-    question: "Consulting / Physiotherapy separation",
-    answer: "Approved Ads, GA4, GTM and Meta scope",
-    why: "Health-adjacent data increases privacy and optimisation risk; separation must not damage Physiotherapy through account-wide controls.",
-    blocks: "Conversion cleanup, audience creation, GTM/GA4 architecture, Meta launch, remarketing and reliable reporting.",
-  },
-  {
-    question: "Snapshot capacity",
-    answer: "The Snapshot is preliminary guidance only — not a compliance assessment, compliance certification, medical assessment or diagnosis. Record requests per week, service geography and response SLA.",
-    why: "Slow response or insufficient delivery capacity would damage prospect experience and make channel results difficult to interpret.",
-    blocks: "Meta launch volume, pacing, service-area limits, follow-up SLA and scale decisions.",
-  },
-  {
-    question: "Proof",
-    answer: "Approved assets and prohibited/unsubstantiated assets",
-    why: "Reviews, logos, awards and client references require source evidence, permissions and client sign-off required before use.",
-    blocks: "Final ad copy, landing-page proof sections, creative production and approval.",
-  },
-  {
-    question: "Landing-page delivery",
-    answer: "Designated developer, host, route and target date",
-    why: "The dedicated page is a dependency for message match, form design, consent controls, event tracking and paid-traffic routing.",
-    blocks: "Build schedule, technical specification, launch date, QA ownership and destination mapping.",
-  },
-  {
-    question: "Shareable page",
-    answer: "Approved subdomain or path",
-    why: "A stable location is needed for client review and future handoff.",
-    blocks: "Private campaign-page implementation, access model, URL mapping and future maintenance.",
-  },
-];
-
-const dataRequired = [
-  [
-    "Commercial economics",
-    "Average contract value, contribution/delivery margin, qualification rate, close rate and acceptable payback",
-    "CAC ceiling, target CPQL, target CPA and value-based bidding",
-  ],
-  [
-    "CRM capability",
-    "CRM name, field schema, API/integration options, data owner and consent storage",
-    "Offline conversion loop and CPQL reporting",
-  ],
-  [
-    "Separation architecture",
-    "Client decision plus current GA4 stream, GTM container and Meta Dataset inventory",
-    "Consulting/Physiotherapy de-mixing",
-  ],
-  [
-    "PMax viability",
-    "Approved incremental/reallocated budget and full historical PMax configuration",
-    "Fund-to-floor versus park",
-  ],
-  [
-    "Remarketing viability",
-    "Audience sizes, approved funding, consent status and historical campaign configuration",
-    "Rebuild versus park",
-  ],
-  [
-    "Snapshot operations",
-    "The Snapshot is preliminary guidance only — not a compliance assessment, compliance certification, medical assessment or diagnosis. Weekly delivery capacity, booking availability, follow-up owner and SLA",
-    "Meta launch volume and pacing",
-  ],
-  [
-    "Proof permissions",
-    "Source evidence and written usage approval for reviews, logos, awards, a global FMCG client and ASX-listed enterprise client claims",
-    "Reviews, logos, awards and client-proof usage",
-  ],
-  [
-    "Landing-page delivery",
-    "Designated developer confirmation, hosting decision, implementation estimate and QA owner",
-    "LP build and channel launch",
-  ],
-  [
-    "Shareable-page mapping",
-    "Approved future subdomain or path and access requirements",
-    "Private campaign-plan page",
-  ],
 ] as const;
+
+const bundleLabelStyle = {
+  color: "var(--green)",
+  fontSize: ".76rem",
+  fontWeight: 700,
+  letterSpacing: ".04em",
+  textTransform: "uppercase" as const,
+};
+
+export default function DecisionsPage() {
+  return (
+    <main className={styles.page}>
+      <header className={styles.hero}>
+        <nav className={styles.nav} aria-label="Document information">
+          <div className={styles.wordmark}><span>EW</span> Campaign decisions</div>
+          <div className={styles.private}><LockKeyhole size={14} /> Private decision register</div>
+        </nav>
+        <div className={styles.heroGrid}>
+          <div>
+            <p className={styles.kicker}>Routed decision register · Revised plan v2 · 25 July 2026</p>
+            <h1>Five decisions. Twenty-eight gates.</h1>
+            <p className={styles.heroCopy}>
+              You see five questions first. Each one holds the underlying gates,
+              with their owner, priority, status, blocking consequence and any cited evidence kept
+              visible when the gate is opened.
+            </p>
+          </div>
+          <aside className={styles.summary}>
+            <p>Register status</p>
+            <h2>All 28 gates are open pending evidence or approval.</h2>
+            <ul>
+              <li><Check size={17} /> Five sponsor-facing decision bundles</li>
+              <li><Check size={17} /> Stable anchors for every gate</li>
+              <li><Check size={17} /> Evidence links wherever a gate cites a verified item</li>
+              <li><Check size={17} /> Each gate expands in place; nothing is hidden behind a control that can fail</li>
+            </ul>
+          </aside>
+        </div>
+        <a className={styles.scrollCue} href="#bundles"><ArrowDown size={17} /> Start with the five decisions</a>
+      </header>
+
+      <section className={styles.idea} id="bundles">
+        <SectionHeading
+          label="Sponsor view"
+          title="Five questions carry the whole register."
+          copy="The bundle is the decision to make. The linked gate IDs are the evidence and owner questions that must be resolved underneath it; they remain in their original priority order within each owner group."
+        />
+        <div className={styles.roadmap} style={{ gridTemplateColumns: "repeat(auto-fit, minmax(17rem, 1fr))" }}>
+          {bundles.map((bundle) => (
+            <article key={bundle.number} className={styles.hubCard}>
+              <div className={styles.phaseHead}>
+                <span>{bundle.number}</span>
+                <b aria-hidden="true">{bundle.gateIds.length}</b>
+              </div>
+              <h3>{bundle.title}</h3>
+              <dl style={{ display: "grid", gap: ".8rem", margin: 0 }}>
+                <div>
+                  <dt style={bundleLabelStyle}>Question answered</dt>
+                  <dd className={styles.hubCardCopy} style={{ margin: ".25rem 0 0" }}>{bundle.question}</dd>
+                </div>
+                <div>
+                  <dt style={bundleLabelStyle}>Owner(s)</dt>
+                  <dd className={styles.hubCardCopy} style={{ margin: ".25rem 0 0" }}>{bundle.owners.join(" · ")}</dd>
+                </div>
+                <div>
+                  <dt style={bundleLabelStyle}>Unlocks</dt>
+                  <dd className={styles.hubCardCopy} style={{ margin: ".25rem 0 0" }}>{bundle.unlocks}</dd>
+                </div>
+              </dl>
+              <div style={{ marginTop: "1.25rem" }}>
+                <p style={{ color: "var(--green)", fontSize: ".76rem", fontWeight: 700, letterSpacing: ".04em", margin: "0 0 .45rem", textTransform: "uppercase" }}>
+                  Constituent gates
+                </p>
+                <div style={{ display: "flex", flexWrap: "wrap", gap: ".35rem .55rem" }}>
+                  {bundle.gateIds.map((gateId) => (
+                    <a key={gateId} className={styles.hubCardGo} href={`#gate-${gateId}`} style={{ marginTop: 0 }}>
+                      {gateId} <ArrowRight size={13} />
+                    </a>
+                  ))}
+                </div>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className={styles.questionsSection} id="must-be-true">
+        <div>
+          <SectionHeading
+            label="The decision test"
+            title="Five things must be true before the plan earns a go."
+            copy="These are the cross-cutting conditions from the independent adversarial review. They are not extra gates; each points back to the gates that prove or disprove it."
+          />
+          <p className={styles.planningOnly}>
+            This register authorises planning and client review only. It does not authorise changes to
+            live advertising, website, lead-management or measurement systems.
+          </p>
+        </div>
+        <ol className={styles.questions}>
+          {mustBeTrue.map((item, index) => (
+            <li key={item.text}>
+              <span>{String(index + 1).padStart(2, "0")}</span>
+              <p>
+                {item.text}{" "}
+                {item.links.map((gateId, linkIndex) => (
+                  <span key={gateId}>
+                    <a href={`#gate-${gateId}`} style={{ color: "var(--accent)", fontWeight: 700 }}>{gateId}</a>
+                    {linkIndex < item.links.length - 1 ? ", " : ""}
+                  </span>
+                ))}
+              </p>
+            </li>
+          ))}
+        </ol>
+      </section>
+
+      <section className={`${styles.docSection} ${styles.alt}`} id="gate-register">
+        <SectionHeading
+          label="Progressive disclosure · 28 gates"
+          title="Open a gate when you need the decision detail."
+          copy="Every gate keeps its original reference. Priority, owner and status are text labels; evidence links point to the traceable evidence register wherever a verified item is cited."
+        />
+        <div className={styles.calloutRow} style={{ marginLeft: "auto", marginRight: "auto", maxWidth: "1200px" }}>
+          <ShieldCheck size={20} />
+          <p><strong>Boundary:</strong> the register records decisions and dependencies. It contains no credentials, account identifiers, repository paths, named third-party organisations, or implementation instructions.</p>
+        </div>
+
+        {bundles.map((bundle) => (
+          <section key={bundle.number} id={`bundle-${bundle.number}`} style={{ scrollMarginTop: "5.5rem", marginTop: "3.5rem" }}>
+            <div className={styles.sectionHeading}>
+              <p>{bundle.number} · {bundle.title}</p>
+              <h2>{bundle.question}</h2>
+              <span>{bundle.gateIds.length} constituent gates · {bundle.owners.join(" · ")}</span>
+            </div>
+            <div className={styles.stateList} style={{ marginTop: "2rem" }}>
+              {bundle.gateIds.map((gateId) => {
+                const gate = gates[gateId];
+                return <GateDetails key={gate.id} gate={gate} />;
+              })}
+            </div>
+          </section>
+        ))}
+      </section>
+
+      <footer className={styles.footer}>
+        <div className={styles.wordmark}><span>EW</span> ErgoWorks Consulting</div>
+        <p><CircleAlert size={13} style={{ verticalAlign: "-2px", marginRight: ".4rem" }} />Confidential · For client review only · Planning authorisation only</p>
+      </footer>
+    </main>
+  );
+}
+
+function GateDetails({ gate }: { gate: Gate }) {
+  return (
+    <div id={`gate-${gate.id}`} style={{ scrollMarginTop: "5.5rem" }}>
+      <div>
+        <strong>{gate.id}</strong>
+        <span style={{ display: "block", marginTop: ".55rem" }}>
+          <strong>Priority:</strong> {gate.priority}<br />
+          <strong>Owner:</strong> {gate.owner}<br />
+          <strong>Status:</strong> {gate.status}
+        </span>
+      </div>
+      <details>
+        <summary style={{ cursor: "pointer", lineHeight: 1.5 }}>{gate.question}</summary>
+        <div className={styles.prose} style={{ maxWidth: "none", paddingTop: ".85rem" }}>
+          <p><strong>Question:</strong> {gate.question}</p>
+          <p><strong>What it blocks:</strong> {gate.blocks}</p>
+          <EvidenceLinks evidence={gate.evidence} />
+        </div>
+      </details>
+    </div>
+  );
+}
+
+function EvidenceLinks({ evidence }: { evidence?: readonly EvidenceRef[] }) {
+  return (
+    <p>
+      <strong>Evidence:</strong>{" "}
+      {evidence?.length ? evidence.map((item, index) => (
+        <span key={item.id}>
+          <a href={`/ergoworks/plan/evidence#evidence-${item.id}`}>Evidence {item.id} — {item.label}</a>
+          {index < evidence.length - 1 ? ", " : ""}
+        </span>
+      )) : "No verified evidence is cited for this gate; owner confirmation is required."}
+    </p>
+  );
+}
 
 function SectionHeading({ label, title, copy }: { label: string; title: string; copy?: string }) {
   return (
@@ -357,150 +594,5 @@ function SectionHeading({ label, title, copy }: { label: string; title: string; 
       <h2>{title}</h2>
       {copy ? <span>{copy}</span> : null}
     </div>
-  );
-}
-
-export default function DecisionsPage() {
-  return (
-    <main className={styles.page}>
-      <header className={styles.hero}>
-        <nav className={styles.nav} aria-label="Document information">
-          <div className={styles.wordmark}><span>EW</span> Campaign decisions</div>
-          <div className={styles.private}><LockKeyhole size={14} /> Private decision record</div>
-        </nav>
-        <div className={styles.heroGrid}>
-          <div>
-            <p className={styles.kicker}>Decision gate · Before implementation</p>
-            <h1>The decisions only you can make.</h1>
-            <p className={styles.heroCopy}>
-              The plan is directional until the open questions below are answered. Resolve the critical gates first, record the approved boundaries, and keep any unassessed input visible before implementation begins.
-            </p>
-          </div>
-          <aside className={styles.summary}>
-            <p>A private decision record</p>
-            <h2>Turn recommendations into a launch brief the business can stand behind.</h2>
-            <ul>
-              <li><Check size={17} /> Resolve Critical gates first</li>
-              <li><Check size={17} /> Record caveats, proof and geography</li>
-              <li><Check size={17} /> Keep missing inputs explicit</li>
-              <li><Check size={17} /> Authorise planning before implementation</li>
-            </ul>
-          </aside>
-        </div>
-        <a className={styles.scrollCue} href="#open-questions"><ArrowDown size={17} /> Start with the gates</a>
-      </header>
-
-      <section className={styles.questionsSection} id="open-questions">
-        <div>
-          <SectionHeading
-            label="Critical → High → Medium"
-            title="Resolve the gates in order."
-            copy="These are the questions that turn a directional plan into a defensible launch brief. The priority is the order in which the decision record should be completed."
-          />
-          <p className={styles.planningOnly}>
-            This plan authorises planning only. It does not authorise changes to live advertising, website, CRM or tracking systems.
-          </p>
-        </div>
-        <ol className={styles.questions}>
-          {questions.map((item, index) => (
-            <li key={item.question}>
-              <span>{String(index + 1).padStart(2, "0")}</span>
-              <p>
-                <strong>{item.priority}</strong> {item.question}
-                {item.redacted ? <>{" "}{/* redacted: exact value in private pack */}</> : null}
-              </p>
-            </li>
-          ))}
-        </ol>
-      </section>
-
-      <section className={styles.docSection} id="decision-record">
-        <SectionHeading
-          label="Decision record to complete"
-          title="Write down the answer, the reason and the dependency."
-          copy="Use this record in the review conversation. The required answer is kept with each question so an approval is specific enough to hand into implementation."
-        />
-        <div className={styles.tableScroll}>
-          <table>
-            <caption>Question · Why it matters · What it blocks</caption>
-            <thead>
-              <tr>
-                <th scope="col">Question</th>
-                <th scope="col">Why it matters</th>
-                <th scope="col">What it blocks</th>
-              </tr>
-            </thead>
-            <tbody>
-              {decisionRecord.map((row) => (
-                <tr key={row.question}>
-                  <td>
-                    <strong>{row.question}</strong>
-                    <br />
-                    <span>Required answer: {row.answer}</span>
-                    {row.redacted ? <>{" "}{/* redacted: exact value in private pack */}</> : null}
-                  </td>
-                  <td>{row.why}</td>
-                  <td>{row.blocks}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      </section>
-
-      <section className={`${styles.docSection} ${styles.alt}`} id="data-required">
-        <SectionHeading
-          label="Not assessed / data required before implementation"
-          title="Keep the unknowns visible."
-          copy="These inputs are not safe to infer from platform data or keyword demand. They remain explicit work items before the affected build, launch or optimisation decision."
-        />
-        <div className={styles.tableScroll}>
-          <table>
-            <caption>Not assessed / data required before implementation</caption>
-            <thead>
-              <tr>
-                <th scope="col">Area not assessed</th>
-                <th scope="col">Required input</th>
-                <th scope="col">Decision or work blocked</th>
-              </tr>
-            </thead>
-            <tbody>
-              {dataRequired.map(([area, input, blocked]) => (
-                <tr key={area}>
-                  <td><strong>{area}</strong></td>
-                  <td>{input}</td>
-                  <td>{blocked}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      </section>
-
-      <section className={styles.docSection} id="compliance">
-        <SectionHeading
-          label="Compliance and evidence gates"
-          title="Keep the guardrails attached to the decision."
-          copy="The page, form, creative and measurement choices stay inside these boundaries until the required evidence and approvals are recorded."
-        />
-        <div className={styles.calloutRow}>
-          <ShieldCheck size={20} />
-          <p>
-            <strong>Snapshot scope:</strong> preliminary guidance only — not a compliance assessment, compliance certification, medical assessment or diagnosis. No claims of guaranteed injury prevention, WHS compliance or claims reduction. OAIC APP 3: no injury, symptom, diagnosis, treatment, claim or other health fields in advertising forms. Consent Mode v2, default denied, with no client- or server-side analytics/advertising transmission before consent. Meta must not imply a viewer or their staff has a health condition.
-          </p>
-        </div>
-        <div className={styles.calloutRow}>
-          <CircleAlert size={20} />
-          <p>
-            <strong>Proof and operations:</strong> Use reviews, logos, awards and client references only after substantiation and written approval. These items remain client sign-off required and cannot be treated as usable evidence until their accuracy, wording and permissions are confirmed. The offer must promise only what operations can consistently deliver.
-          </p>
-        </div>
-      </section>
-
-      <footer className={styles.footer}>
-        <div className={styles.wordmark}><span>EW</span> ErgoWorks Consulting</div>
-        <p>Confidential · For client review only</p>
-      </footer>
-    </main>
   );
 }

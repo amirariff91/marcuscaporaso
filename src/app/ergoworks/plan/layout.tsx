@@ -2,18 +2,14 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { LockKeyhole, FileDown } from "lucide-react";
+import { LockKeyhole } from "lucide-react";
 import styles from "./plan.module.css";
 
 const SECTIONS = [
   ["/ergoworks/plan", "Overview"],
-  ["/ergoworks/plan/strategy", "Strategy"],
   ["/ergoworks/plan/decisions", "Decisions"],
-  ["/ergoworks/plan/audit", "Account audit"],
-  ["/ergoworks/plan/media", "Media plan"],
-  ["/ergoworks/plan/landing-page", "Landing page"],
-  ["/ergoworks/plan/offer", "Offer & creative"],
   ["/ergoworks/plan/measurement", "Measurement"],
+  ["/ergoworks/plan/evidence", "Evidence"],
 ] as const;
 
 export default function PlanLayout({ children }: { children: React.ReactNode }) {
@@ -46,10 +42,7 @@ export default function PlanLayout({ children }: { children: React.ReactNode }) 
               );
             })}
           </nav>
-          {/* Gated asset — served behind the same /ergoworks/plan/* proxy matcher, never a public URL */}
-          <a className={styles.pdfLink} href="/ergoworks/plan/pack.pdf" download>
-            <FileDown size={14} /> PDF pack
-          </a>
+          {/* Deliberately no PDF download: the private-bucket pack predates these pages and is stale. */}
         </div>
       </div>
       {children}

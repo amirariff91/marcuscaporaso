@@ -12,6 +12,21 @@ const SUBDOMAIN_ROOTS: Record<string, string> = {
 const PLAN_PREFIX = "/ergoworks/plan";
 const PLAN_REALM = 'Basic realm="ErgoWorks Plan", charset="UTF-8"';
 
+const RETIRED_PLAN_REDIRECTS: Record<string, string> = {
+  "/ergoworks/plan/strategy": "/ergoworks/plan",
+  "/ergoworks/plan/audit": "/ergoworks/plan/evidence",
+  "/ergoworks/plan/landing-page": "/ergoworks/plan",
+  "/ergoworks/plan/offer": "/ergoworks/plan",
+  "/ergoworks/plan/media": "/ergoworks/plan",
+  "/ergoworks/plan/market": "/ergoworks/plan",
+  "/ergoworks/plan/launch": "/ergoworks/plan",
+  "/ergoworks/plan/review": "/ergoworks/plan",
+  // The v1 PDF in the private bucket predates these pages and contradicts them.
+  // The client already holds this URL from the old shell, so redirect rather than
+  // serve a superseded document. Restore only when a v2 pack exists in the bucket.
+  "/ergoworks/plan/pack.pdf": "/ergoworks/plan",
+};
+
 function unauthorized() {
   return new NextResponse("Authentication required.", {
     status: 401,
@@ -86,6 +101,19 @@ export function proxy(request: NextRequest) {
   if (gated) {
     const denied = authenticate(request);
     if (denied) return denied;
+
+    // Next config redirects run before Proxy in Next 16. Keep these redirects here
+    // so a retired private URL authenticates before it is permanently redirected.
+    const retiredPath = request.nextUrl.pathname.replace(/\/$/, "");
+    const destination = RETIRED_PLAN_REDIRECTS[retiredPath];
+    if (destination) {
+      const url = request.nextUrl.clone();
+      url.pathname = destination;
+      const response = NextResponse.redirect(url, 308);
+      response.headers.set("Cache-Control", "private, no-store");
+      response.headers.set("Vary", "Authorization");
+      return response;
+    }
   }
 
   const host = request.headers.get("host")?.split(":")[0].toLowerCase() ?? "";
