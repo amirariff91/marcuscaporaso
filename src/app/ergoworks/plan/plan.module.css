@@ -92,6 +92,10 @@
 .pdfLink { flex:none; display:flex; gap:.4rem; align-items:center; color:#d9f45b; border:1px solid #3b5a51; font-size:.78rem; font-weight:700; text-decoration:none; padding:.35rem .75rem; border-radius:999px; transition:color .2s,background .2s,border-color .2s; }
 .pdfLink:hover { color:var(--ink); background:#d9f45b; border-color:#d9f45b; }
 .pdfLink:focus-visible { outline:2px solid #d9f45b; outline-offset:2px; }
+/* pdfLink was designed for the dark shell; on light doc sections the lime text is unreadable. */
+.docSection .pdfLink { color:var(--green); border-color:var(--green); }
+.docSection .pdfLink:hover { color:white; background:var(--green); border-color:var(--green); }
+.docSection .pdfLink:focus-visible { outline-color:var(--green); }
 
 /* Hub reading-order cards (built on the .roadmap grid) */
 .hubCard { background:white; padding:clamp(1.5rem,3vw,2.2rem); text-decoration:none; color:var(--ink); display:flex; flex-direction:column; transition:background .2s cubic-bezier(.19,1,.22,1); }

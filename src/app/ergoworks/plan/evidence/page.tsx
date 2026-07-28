@@ -125,7 +125,7 @@ const trailGroups: { id: string; label: string; source: string; records: Evidenc
       {
         id: "6a.5",
         claim: "Ad-group split, trailing 12 months",
-        value: "Ergonomic Office Consulting A$8,249.25; Ergonomics Assessments A$7,258.22; DSA A$7,407.69; Workplace Ergonomics A$2,117.56; School Ergonomics A$15.02.",
+        value: "Ergonomic Office Consulting A$8,249.25; Ergonomics Assessments A$7,258.22; DSA A$7,407.69; Workplace Ergonomics A$2,117.56; School Ergonomics A$15.02. The Manual Handling Training group (A$17,237.87) is recorded at 6a.4; together the groups equal the campaign total at 6a.3.",
         source: "Google Ads",
         date: "Trailing 12 months to 24 July 2026",
         status: "Verified",
