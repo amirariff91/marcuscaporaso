@@ -324,7 +324,7 @@ export default function PlanPage() {
         />
         <div className={styles.prose}>
           <p>
-            <strong>[Verified]</strong> Equipment margin is not available as a decision input: the store contains <EvidenceLink id="6c.7">531 published products with no populated cost-of-goods data</EvidenceLink>. Until a finance source exists, I will report associated cross-sell value separately from advertising performance, not margin, LTV or causal revenue.
+            <strong>[Verified]</strong> Equipment margin is not available as a decision input: the store contains <EvidenceLink id="6c.7">531 published catalogue entries with no populated cost-of-goods data</EvidenceLink>. Until a finance source exists, I will report associated cross-sell value separately from advertising performance, not margin, LTV or causal revenue.
           </p>
           <div className={styles.calloutRow}>
             <ShieldCheck size={20} />

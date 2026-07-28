@@ -313,7 +313,7 @@ export default function MeasurementPage() {
           <CircleAlert size={20} />
           <p>
             <strong>GATE — gross margin is unavailable.</strong> <strong>[Verified]</strong> The store has
-            <EvidenceLink id="6c.7">531 published products and zero with a populated non-zero cost-of-goods value</EvidenceLink>.
+            <EvidenceLink id="6c.7">531 published catalogue entries and none with a populated non-zero cost-of-goods value</EvidenceLink>.
             Margin must come from a finance source or remain empty. All contribution, margin-derived
             LTV and margin-based cross-sell reporting stays blocked until <a href="/ergoworks/plan/decisions#gate-B11">gate B11</a> is
             resolved. This is a release gate, not a footnote.

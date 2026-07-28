@@ -86,9 +86,9 @@ const headlineEvidence: EvidenceRecord[] = [
   {
     id: "6c.7",
     claim: "Equipment-margin finding",
-    value: "531 published products; zero with a populated non-zero cost-of-goods value.",
+    value: "531 published catalogue entries (64 products plus 467 variations); none carries a populated non-zero cost-of-goods value.",
     source: "ErgoEquip WooCommerce store",
-    date: "25 July 2026 pull; trailing 12-month store review",
+    date: "25 July 2026 pull; re-verified on the store server 29 July 2026",
     status: "Verified",
     establishes: "A usable equipment gross-margin dataset is not currently available.",
     doesNotEstablish:
