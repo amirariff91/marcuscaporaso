@@ -131,7 +131,7 @@ const gates: Record<string, Gate> = {
     owner: "Marcus",
     status: "Open — partial evidence",
     question:
-      "I need to know where equipment gross margin lives. Current evidence shows 531 published products with none carrying a populated non-zero cost-of-goods value, so no equipment contribution or lifetime-value figure can yet be produced.",
+      "I need to know where equipment gross margin lives. Current evidence shows 531 published catalogue entries with none carrying a populated non-zero cost-of-goods value, so no equipment contribution or lifetime-value figure can yet be produced.",
     blocks: "The margin claim, equipment contribution and any lifetime-value-to-acquisition-cost work.",
     evidence: [{ id: "6c.7", label: "gross-margin evidence" }],
   },
