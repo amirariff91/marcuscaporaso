@@ -34,6 +34,13 @@ const RETIRED_PLAN_REDIRECTS: Record<string, string> = {
 function isPrefetch(request: NextRequest): boolean {
   const h = request.headers;
   return (
+    // Best-effort: Next 16 strips its internal prefetch signals (the
+    // next-router-prefetch/rsc headers AND the ?_rsc= param) before the proxy
+    // runs, so router prefetches cannot be reliably detected here. The
+    // guaranteed fix is that public pages link into the gate with plain
+    // anchors, never next/link. These checks still silence browser-level
+    // speculation (purpose/sec-purpose) and any signal that does survive.
+    new URL(request.url).searchParams.has("_rsc") ||
     h.get("next-router-prefetch") === "1" ||
     (h.get("purpose") ?? "").includes("prefetch") ||
     (h.get("sec-purpose") ?? "").includes("prefetch")

@@ -10,6 +10,7 @@ const SECTIONS = [
   ["/ergoworks/plan/decisions", "Decisions"],
   ["/ergoworks/plan/measurement", "Measurement"],
   ["/ergoworks/plan/evidence", "Evidence"],
+  ["/ergoworks/plan/dashboard", "Dashboard"],
 ] as const;
 
 export default function PlanLayout({ children }: { children: React.ReactNode }) {
