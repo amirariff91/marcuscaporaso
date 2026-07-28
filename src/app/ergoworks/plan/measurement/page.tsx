@@ -63,7 +63,7 @@ const platformRows = [
   [
     "Unconnected and missed call attempts",
     "I capture every attempted call, not only calls that connect: ring-out, abandoned, out-of-hours and voicemail, with timestamp, outcome, callback request, callback completion and callback SLA. These are diagnostic and recovery records, not primary conversions.",
-    <>Reconcile attempt count, answer rate and missed-call recovery against connected-call conversions and CRM disposition before any call signal is promoted at <a href="/ergoworks/plan/decisions#gate-B6">gate B6</a>.</>,
+    <>Reconcile attempt count, answer rate and missed-call recovery against connected-call conversions and CRM disposition under the call-funnel and recovery rule at <a href="/ergoworks/plan/decisions#gate-B12">gate B12</a>, before any call signal is promoted under the qualification rule at <a href="/ergoworks/plan/decisions#gate-B6">gate B6</a>.</>,
   ],
   [
     "Won consulting engagement",
@@ -118,7 +118,7 @@ const sequenceRows = [
   ],
   [
     "1 · Conversion action repair",
-    <>Set one qualified corporate enquiry as primary, add the qualified-call path, demote newsletter and soft actions, and remove physiotherapy actions from the Consulting goal set. The current mixed state is documented at <a href="/ergoworks/plan/evidence#evidence-6a.9">evidence 6a.9</a>.</>,
+    <>Set one qualified corporate enquiry as primary, add the qualified-call path, demote newsletter and soft actions account-wide, and exclude physiotherapy actions from the Consulting campaign with campaign-specific goals — the physiotherapy campaign's goal set is defined in the same step, so neither campaign optimises towards the other's actions. The current mixed state is documented at <a href="/ergoworks/plan/evidence#evidence-6a.9">evidence 6a.9</a>.</>,
   ],
   [
     "2 · CRM spine",
@@ -179,7 +179,7 @@ export default function MeasurementPage() {
               <li><Check size={17} /> Qualified corporate enquiries and qualified calls are the commercial signals.</li>
               <li><Check size={17} /> Equipment value is reported internally, never blended into platform ROAS.</li>
               <li><Check size={17} /> Privacy and tracking-stack gates come before CRM or cross-brand work.</li>
-              <li><Check size={17} /> Gross margin is unavailable, so every margin-derived report is blocked.</li>
+              <li><Check size={17} /> Gross margin is unavailable (<EvidenceLink id="6c.7">evidence 6c.7</EvidenceLink>), so every margin-derived report is blocked.</li>
             </ul>
           </aside>
         </div>
@@ -212,7 +212,7 @@ export default function MeasurementPage() {
         <div className={styles.calloutRow}>
           <ShieldCheck size={20} />
           <p>
-            <strong>[Verified] Privacy boundary:</strong> individual workers&rsquo; assessment and health
+            <strong>Privacy boundary — a design rule:</strong> individual workers&rsquo; assessment and health
             information stays separate from the employer account and is not used for marketing. The
             cross-population view can only use permitted organisation-level business records.
           </p>
@@ -265,9 +265,9 @@ export default function MeasurementPage() {
         <div className={styles.calloutRow}>
           <CircleAlert size={20} />
           <p>
-            <strong>Gate 0 is a hard stop.</strong> The live markup records tag-manager container
+            <strong>Step 0 is a hard stop.</strong> The live markup records tag-manager container
             <EvidenceLink id="6d.1">GTM-KXGD4GM</EvidenceLink>, a legacy analytics tag <EvidenceLink id="6d.2">UA-530267-5</EvidenceLink>,
-            and no consent-management platform in the initial markup <EvidenceLink id="6d.5">(evidence 6d.5)</EvidenceLink>.
+            and <strong>[Interpretation]</strong> no consent-management platform found in the initial markup <EvidenceLink id="6d.5">(evidence 6d.5 — in-browser confirmation pending)</EvidenceLink>.
             Confirm the active consent path and remove the legacy tag under the approved tracking-stack
             decision before any CRM audience, cross-brand join or offline upload.
           </p>
@@ -350,18 +350,21 @@ export default function MeasurementPage() {
           <h3>The qualified-call path is mandatory</h3>
           <p>
             <strong>[Verified]</strong> <EvidenceLink id="6a.7">13 of the 17 recorded lead events in the latest 30-day window are phone calls</EvidenceLink>.
-            A form-only design would miss most of the current pipeline. Every call record therefore
+            A form-only design would miss most of the current recorded lead path. Every call record therefore
             needs a call id, connected duration and CRM disposition. The connected-duration screen is
             not proof of qualification: the CRM disposition is authoritative. Dedupe the call against
-            any form submission from the same organisation, and import <code>qualified_call</code> as the
+            any form submission from the same organisation: when the same organisation both calls and
+            submits a form inside the agreed lookback window, the CRM-confirmed disposition wins and a
+            superseded web conversion is corrected by retraction, not left double-counted. The window
+            and precedence are part of the gate B6 definition. Import <code>qualified_call</code> as the
             only primary call signal. The definition is the client’s to approve and remains open at
             <a href="/ergoworks/plan/decisions#gate-B6"> gate B6</a>.
           </p>
           <p>
-            <strong>[Interpretation]</strong> I treat the connected-call conversion count as only one slice of the call funnel. I will capture every unconnected attempt — ring-out, abandoned, out-of-hours and voicemail — with its call id, timestamp, outcome, callback request, callback completion and callback SLA result. I will report answer rate and missed-call recovery, then reconcile those figures against connected-call conversions and CRM disposition. I treat the current <EvidenceLink id="6a.7">13 recorded lead events attributed to calls</EvidenceLink> as a floor, not a total: the recorded call funnel may be materially smaller than the demand that reached the phone. I will keep these attempts diagnostic until the recovery and callback rule is approved at <a href="/ergoworks/plan/decisions#gate-B6">gate B6</a>.
+            <strong>[Interpretation]</strong> I treat the connected-call conversion count as only one slice of the call funnel. I will capture every unconnected attempt — ring-out, abandoned, out-of-hours and voicemail — with its call id, timestamp, outcome, callback request, callback completion and callback SLA result. I will report answer rate and missed-call recovery, then reconcile those figures against connected-call conversions and CRM disposition. The current <EvidenceLink id="6a.7">13 recorded lead events attributed to calls</EvidenceLink> are a count of recorded call conversions, not a verified count of genuine phone enquiries: genuine demand may be higher (untracked attempts) or lower (sub-threshold or junk calls — both consulting call conversion actions currently count calls from one second, <EvidenceLink id="6a.14">evidence 6a.14</EvidenceLink>) until call thresholds and CRM dispositions exist. The phone-click and email-click actions already in the account are the existing attempt-signal baseline; the 17-lead denominator deliberately excludes them. I will keep these attempts diagnostic until the recovery and callback rule is approved at <a href="/ergoworks/plan/decisions#gate-B12">gate B12</a>.
           </p>
           <p>
-            <strong>[Verified]</strong> <EvidenceLink id="6a.9">All 16 enabled conversion actions remain primary account-wide</EvidenceLink>, and the account includes <EvidenceLink id="6a.12">an enabled physiotherapy campaign</EvidenceLink>. <strong>[Interpretation]</strong> I therefore treat contamination as running in both directions: the consulting campaign can bid towards physiotherapy conversions, and the enabled physiotherapy campaign is also bidding towards consulting conversions — not merely the reverse. I will not treat conversion repair as complete until the separation boundary is approved at <a href="/ergoworks/plan/decisions#gate-C7">gate C7</a>.
+            <strong>[Verified]</strong> <EvidenceLink id="6a.9">All 16 enabled conversion actions remain primary account-wide</EvidenceLink>, and the account includes <EvidenceLink id="6a.12">an enabled physiotherapy campaign</EvidenceLink>. <strong>[Verified]</strong> Both campaigns run Maximise Conversions and neither excludes the other’s actions from its goal set (<EvidenceLink id="6a.14">evidence 6a.14</EvidenceLink>). <strong>[Interpretation]</strong> I therefore treat contamination as eligible in both directions: the consulting campaign can chase the account’s cheap non-lead actions on its own site, and each campaign is eligible to optimise towards the other’s conversions. No cross-campaign conversions were observed in the latest window, but the goal configuration permits them. I will not treat conversion repair as complete until the separation boundary is approved at <a href="/ergoworks/plan/decisions#gate-C7">gate C7</a>.
           </p>
           <p>
             The won-engagement import is the only offline outcome this page proposes. Retain the
@@ -468,10 +471,20 @@ export default function MeasurementPage() {
 
         <div className={styles.prose}>
           <h3>Consent sequence</h3>
+          <p>
+            <strong>[Assumption — proposed posture, decided at gate C5]</strong> Australian law does not
+            currently require opt-in consent for ordinary analytics or ad-measurement storage, so a
+            default-denied posture is a deliberate conservative choice, not a mandate. Its cost is real:
+            every non-interacting visitor goes unobserved, which would widen the measured
+            <EvidenceLink id="6g.8"> click-to-session gap (evidence 6g.8)</EvidenceLink>. Whether Consent
+            Mode cookieless pings are permitted before consent is a decision to make explicitly, not to
+            inherit. The health-data and audience restrictions on this page are separate: those carry
+            Australian privacy obligations regardless of the analytics posture chosen.
+          </p>
           <ul>
             <li>The consent-management platform establishes the default consent state before measurement transmission.</li>
             <li>Consent Mode uses default denied states for analytics storage, ad storage, ad-user-data and ad-personalisation until the required consent is recorded.</li>
-            <li>No analytics, advertising, server-side, audience or call-tracking transmission occurs before the required consent evidence is available.</li>
+            <li>No analytics, advertising, server-side, audience or call-tracking transmission occurs before the required consent evidence is available — unless the gate C5 decision explicitly permits Consent Mode cookieless pings, in which case only those pings are exempt.</li>
             <li>Consent updates propagate to the web and server tagging layers; the server layer rejects advertising events without the required evidence.</li>
             <li>Withdrawal stops future processing and triggers the approved deletion or suppression workflow.</li>
           </ul>
@@ -494,13 +507,13 @@ export default function MeasurementPage() {
           <ul>
             <li>The Consulting conversion goal <strong>must no longer include</strong> newsletter, raw soft actions, physiotherapy or other-business actions. This is an acceptance condition, not a completed step — the current mixed state is linked at <a href="/ergoworks/plan/evidence#evidence-6a.9">evidence 6a.9</a>.</li>
             <li><strong>[Interpretation]</strong> The CRM stores <code>organisation_account_id</code>, click identifiers, call id, connected duration, CRM disposition, service stages, values and consent records.</li>
-            <li><strong>[Interpretation]</strong> The CRM stores connected and unconnected call attempts, including ring-out, abandoned, out-of-hours and voicemail outcomes, answer status, callback recovery and callback SLA; reporting reconciles these with connected-call conversions and CRM disposition. The current <EvidenceLink id="6a.7">13 recorded lead events attributed to calls</EvidenceLink> are a floor, not a total.</li>
+            <li><strong>[Interpretation]</strong> The CRM stores connected and unconnected call attempts, including ring-out, abandoned, out-of-hours and voicemail outcomes, answer status, callback recovery and callback SLA; reporting reconciles these with connected-call conversions and CRM disposition. Call-length thresholds are configured per conversion action, CRM disposition is captured on a defined share of recorded calls, and the <EvidenceLink id="6a.7">13 recorded lead events attributed to calls</EvidenceLink> are treated as a count of recorded call conversions, not verified genuine enquiries.</li>
             <li><strong>[Interpretation]</strong> <code>qualified_call</code> is the only primary call signal, with CRM disposition authoritative and form deduplication tested.</li>
-            <li><strong>[Interpretation]</strong> Conversion repair accounts for both directions of account-wide contamination: the enabled physiotherapy campaign can bid towards consulting conversions while consulting activity can bid towards physiotherapy conversions. The separation decision remains at <a href="/ergoworks/plan/decisions#gate-C7">gate C7</a>.</li>
+            <li><strong>[Interpretation]</strong> Conversion repair accounts for both directions of account-wide contamination: each campaign’s goal set is eligible to optimise towards the other’s conversions (<EvidenceLink id="6a.14">evidence 6a.14</EvidenceLink>). The separation decision remains at <a href="/ergoworks/plan/decisions#gate-C7">gate C7</a>. Both campaigns’ effective conversion goals are re-pulled and quoted after the repair.</li>
             <li><strong>[Interpretation]</strong> Won consulting imports pass the Appendix C §7 offline loop; equipment revenue, worker health data and individual route-out events are rejected by the allowlist.</li>
             <li><strong>[Interpretation]</strong> The internal account view uses manually validated <code>organisation_account_id</code>, is labelled associated cross-sell value, and is kept separate from platform ROAS.</li>
             <li><strong>GATE</strong> Gross-margin-derived reporting remains disabled until <a href="/ergoworks/plan/decisions#gate-B11">gate B11</a> supplies a finance source or approved store cost data.</li>
-            <li><strong>GATE</strong> Australian privacy approval and tracking-stack confirmation are recorded before CRM audiences, cross-brand joins or offline imports begin.</li>
+            <li><strong>GATE</strong> Australian privacy approval and tracking-stack confirmation are recorded before CRM audiences, cross-brand joins or offline imports begin. These are behavioural checks, not only approval records: in-browser verification that default consent states are set before any tag fires, no network request carrying the legacy UA-530267-5 identifier observed in a tag-debugging session (DOM absence alone is not sufficient, since the tag manager could inject it), and the GA4 tag observed firing in the expected consent state.</li>
           </ul>
 
           <h3>Reporting vocabulary</h3>

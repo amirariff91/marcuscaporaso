@@ -29,9 +29,9 @@ const headlineEvidence: EvidenceRecord[] = [
   {
     id: "6a.7",
     claim: "Recorded lead events, last 30 days",
-    value: "17 total: 4 form enquiries + 13 phone calls.",
+    value: "17 total: 4 form enquiries + 13 phone calls. Counting the phone-click (3) and email-click (1) actions as well gives 21.",
     source: "Google Ads account 9258098368",
-    date: "25 July 2026",
+    date: "25 July 2026 pull; 30-day window ending 24 July 2026",
     status: "Verified",
     establishes: "In this one 30-day window the recorded mix is phone-led: 13 of 17 events are call conversions. One month is not a stable channel proportion.",
     doesNotEstablish:
@@ -40,9 +40,9 @@ const headlineEvidence: EvidenceRecord[] = [
   {
     id: "6a.8",
     claim: "Media cost per recorded lead event",
-    value: "A$273.68 strict (A$4,652.53 ÷ 17).",
+    value: "A$273.68 strict (A$4,652.53 ÷ 17); A$221.55 loose (÷ 21, including the phone-click and email-click actions).",
     source: "Google Ads account 9258098368; derived from 6a.6 and 6a.7",
-    date: "25 July 2026",
+    date: "25 July 2026 pull; 30-day window ending 24 July 2026",
     status: "Verified",
     establishes: "Descriptive media-cost arithmetic for the stated 30-day window: spend divided by recorded lead events. It is not qualified-lead cost, acquisition cost or a target cost per lead.",
     doesNotEstablish:
@@ -137,7 +137,7 @@ const trailGroups: { id: string; label: string; source: string; records: Evidenc
         claim: "Last-30-day account activity",
         value: "A$4,652.53 spend; 385 clicks; 22 conversions, or 24 all-conversions.",
         source: "Google Ads",
-        date: "30 days to 25 July 2026",
+        date: "25 July 2026 pull; 30-day window ending 24 July 2026",
         status: "Verified",
         establishes: "The spend and platform-reported activity used for the strict cost-per-real-lead calculation.",
         doesNotEstablish: "It does not establish that the 22 conversions are all leads or that clicks became qualified opportunities.",
@@ -147,7 +147,7 @@ const trailGroups: { id: string; label: string; source: string; records: Evidenc
         claim: "Conversion-action state",
         value: "All 16 enabled actions remain primary for the goal, including legacy and irrelevant actions; cleanup is still undone.",
         source: "Google Ads",
-        date: "25 July 2026",
+        date: "25 July 2026; re-confirmed unchanged 28 July 2026",
         status: "Verified",
         establishes: "The account still has a conversion-goal hygiene problem that can distort optimisation.",
         doesNotEstablish: "It does not quantify how much each action distorts bidding or reporting.",
@@ -157,7 +157,7 @@ const trailGroups: { id: string; label: string; source: string; records: Evidenc
         claim: "Largest single line item",
         value: "Broad “+manual +handling +certificate”: A$846.56, 125 clicks and 2 conversions in 30 days; 18% of campaign spend.",
         source: "Google Ads",
-        date: "30 days to 25 July 2026",
+        date: "25 July 2026 pull; 30-day window ending 24 July 2026",
         status: "Verified",
         establishes: "One certificate-intent line absorbed a material share of current spend and is a quarantine candidate.",
         doesNotEstablish: "It does not establish that the line can never convert or that all certificate intent is unsuitable.",
@@ -167,7 +167,7 @@ const trailGroups: { id: string; label: string; source: string; records: Evidenc
         claim: "Canberra/Fyshwick conversion signal",
         value: "“ergonomic office fyshwick” phrase match: 18 clicks, 3 conversions and A$310.29 in the last 30 days.",
         source: "Google Ads",
-        date: "30 days to 25 July 2026",
+        date: "25 July 2026 pull; 30-day window ending 24 July 2026",
         status: "Verified",
         establishes: "There is a recent converting geo-specific search signal outside the proposed Sydney-first focus.",
         doesNotEstablish: "It does not establish service capacity, lead quality, or whether the geo should be expanded.",
@@ -185,12 +185,25 @@ const trailGroups: { id: string; label: string; source: string; records: Evidenc
       {
         id: "6a.13",
         claim: "Separate equipment advertising account",
-        value: "A separate AUD Australia/Sydney equipment advertising account exists.",
+        value: "A separate AUD Australia/Sydney equipment advertising account (8253602680) exists.",
         source: "Google Ads account inventory",
         date: "25 July 2026",
         status: "Verified",
         establishes: "The equipment advertising activity has a separate account context.",
         doesNotEstablish: "It does not establish current activity, profitability, or any consulting-to-equipment attribution.",
+      },
+      {
+        id: "6a.14",
+        claim: "Campaign goal configuration and call thresholds",
+        value:
+          "Both campaigns run Maximise Conversions. The physiotherapy campaign uses the account-default goal set, so every primary action is biddable for it, including the consulting actions; the consulting campaign's biddable goal categories include the physiotherapy web actions. No physiotherapy-action conversions accrued to the consulting campaign in the latest 30-day window. Both consulting call conversion actions count calls from one second.",
+        source: "Google Ads account 9258098368; campaign goal and conversion-action pulls",
+        date: "28 July 2026",
+        status: "Verified",
+        establishes:
+          "Conversion contamination is mechanically eligible in both directions at goal level; no cross-campaign accrual was observed in the latest window; the recorded call count includes calls as short as one second.",
+        doesNotEstablish:
+          "It does not establish that cross-campaign conversions have occurred, that either campaign's traffic converts on the other's site, or that recorded calls are genuine enquiries.",
       },
     ],
   },
@@ -233,7 +246,7 @@ const trailGroups: { id: string; label: string; source: string; records: Evidenc
   },
   {
     id: "6c",
-    label: "6c · ErgoEquip equipment store",
+    label: "6c · ErgoEquip equipment store (related entity)",
     source: "WooCommerce store; read-only review",
     records: [
       {
@@ -279,7 +292,7 @@ const trailGroups: { id: string; label: string; source: string; records: Evidenc
       {
         id: "6c.5",
         claim: "Repeat-buyer aggregate",
-        value: "The repeat set is characterised as large employers and government bodies; 209 orders, 133 distinct organisations, 19 reordering (~14%), and 53 of 167 company-attributed orders (~32%).",
+        value: "Repeat buyers include large employers and government bodies; the full repeat set is not identified here. 209 orders, 133 distinct organisations, 19 reordering (~14%), and 53 of 167 company-attributed orders (~32%).",
         source: "WooCommerce store",
         date: "25 July 2026 pull; trailing 12 months",
         status: "Verified",
@@ -326,7 +339,7 @@ const trailGroups: { id: string; label: string; source: string; records: Evidenc
       {
         id: "6d.2",
         claim: "Legacy analytics",
-        value: "UA-530267-5, a Universal Analytics tag, is still present as dead code.",
+        value: "UA-530267-5, a Universal Analytics tag, is still present in the initial HTML; whether it executes was not verified.",
         source: "Live site markup",
         date: "25 July 2026",
         status: "Verified",
@@ -394,7 +407,7 @@ const trailGroups: { id: string; label: string; source: string; records: Evidenc
   },
   {
     id: "6f",
-    label: "6f · Could not verify this pass",
+    label: "6f · Verification record — access checks",
     source: "Verification record",
     records: [
       {
@@ -410,7 +423,7 @@ const trailGroups: { id: string; label: string; source: string; records: Evidenc
       {
         id: "6f.2",
         claim: "Microsoft Clarity",
-        value: "No usable ErgoWorks Clarity project was available in this pass.",
+        value: "No usable ErgoWorks Clarity project was available at the 25 July 2026 evidence cut-off.",
         source: "Microsoft Clarity access check",
         date: "25 July 2026",
         status: "Unverified",
@@ -420,7 +433,7 @@ const trailGroups: { id: string; label: string; source: string; records: Evidenc
       {
         id: "6f.3",
         claim: "Competitor paid-advertising footprint",
-        value: "Unchecked in this pass; the Google Ads Transparency Center and Meta Ad Library review remains open.",
+        value: "Unchecked at the 25 July 2026 evidence cut-off; the Google Ads Transparency Center and Meta Ad Library review remains open.",
         source: "Verification record",
         date: "25 July 2026",
         status: "Unverified",
@@ -591,7 +604,7 @@ export default function EvidencePage() {
           <CircleAlert size={20} />
           <p>
             <strong>Competitor paid advertising is unchecked.</strong> The paid-advertising footprint
-            was not verified in this pass, so no claim that a named competitor is or is not advertising
+            was not verified at the evidence cut-off, so no claim that a named competitor is or is not advertising
             on a named platform belongs in the plan yet. GA4 access was restored and its figures are
             pulled directly. That is not evidence of competitor activity.
           </p>
@@ -600,7 +613,7 @@ export default function EvidencePage() {
           <h3><a href="#evidence-6f.1">6f.1 · GA4 access</a></h3>
           <p>Resolved for this evidence cut-off. The figures are pulled directly and recorded under §6g.</p>
           <h3><a href="#evidence-6f.2">6f.2 · Microsoft Clarity</a></h3>
-          <p>No usable project was available in this pass, so it is not a verified source.</p>
+          <p>No usable project was available at the evidence cut-off, so it is not a verified source.</p>
           <h3><a href="#evidence-6f.3">6f.3 · Competitor paid-advertising footprint</a></h3>
           <p>Unchecked. The advertising libraries remain an open follow-up; no competitor paid-ad claim ships from this record.</p>
         </div>
@@ -610,15 +623,15 @@ export default function EvidencePage() {
         <SectionHeading
           label="The verification record"
           title="The plan was adversarially stress-tested."
-          copy="An independent adversarial review checked the revised set against the live evidence, disclosure boundaries and internal consistency."
+          copy="I stress-tested this plan against the live evidence, the disclosure boundaries and its own internal consistency before circulating it. On 28 July 2026 I re-pulled the account figures and goal configuration: nothing had moved."
         />
         <div className={styles.calloutRow}>
           <ShieldCheck size={20} />
           <p>
             <strong>Verdict: SHIP-WITH-FIXES.</strong> The liability and citation layers hold, while
             residual items are routed as decisions or follow-up work: competitor paid advertising,
-            Business Profile confirmation, legacy baseline corrections and the substantive commercial
-            gates. The live account work was read-only throughout.
+            Business Profile confirmation and the substantive commercial gates. The live account
+            work was read-only throughout.
           </p>
         </div>
       </section>

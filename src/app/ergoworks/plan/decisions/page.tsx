@@ -110,6 +110,8 @@ const gates: Record<string, Gate> = {
       "I need the attach-rate backfill by organisation: originating problem, first service, employee population, subsequent services, revenue, margin, sales cycle and retention. I will set the minimum expansion rate and account value that justify acquisition. Aggregate equipment-order evidence shows 209 orders, 133 raw organisation strings and 19 repeat organisations, accounting for 53 of 167 company-attributed orders; it does not show that a consulting engagement caused any order.",
     blocks: "Whether the ecosystem thesis is real and whether cross-population acquisition is justified.",
     evidence: [
+      { id: "6c.1", label: "order volume" },
+      { id: "6c.3", label: "raw organisation strings" },
       { id: "6c.4", label: "aggregate repeat-order counts" },
       { id: "6c.8", label: "equipment-order scope caveat" },
     ],
@@ -139,7 +141,7 @@ const gates: Record<string, Gate> = {
     owner: "Marcus — instrumentation; client input on phone routing",
     status: "Open",
     question:
-      "The account records 13 connected-call conversions, but it cannot show a call that rang out. I need the unconnected-call count and the current phone-routing path from the client; this is the cheapest unknown with the highest option value before I interpret the call funnel.",
+      "The account records 13 connected-call conversions, but the platform view shows no call that rang out. I need the unconnected-call count and the current phone-routing path from the client; this is the cheapest unknown with the highest option value before I interpret the call funnel.",
     blocks: "The real call-funnel baseline, missed-call recovery and any trustworthy assessment of call-led demand.",
     evidence: [{ id: "6a.7", label: "recorded call conversions" }],
   },
@@ -149,7 +151,7 @@ const gates: Record<string, Gate> = {
     owner: "Marcus",
     status: "Open",
     question:
-      "Observed baseline check: the latest 30-day spend is A$4,652.53, versus A$42,285.61 over the trailing 12 months (about A$3,524 per month), so the latest month is about 32% above the trailing average. Is that month representative enough for me to anchor plan ratios to it? These figures are observations, not a target, acquisition cost or proven result.",
+      "Observed baseline check: the latest 30-day spend is A$4,652.53, versus A$42,285.61 over the trailing 12 months (about A$3,524 per month), so the latest 30-day window is about 32% above the trailing average. Is that window representative enough for me to anchor plan ratios to it? These figures are observations, not a target, acquisition cost or proven result.",
     blocks: "Whether the plan's ratios, pacing comparisons and budget interpretation rest on a representative baseline.",
     evidence: [
       { id: "6a.3", label: "trailing annual spend" },
@@ -315,7 +317,7 @@ const gates: Record<string, Gate> = {
     owner: "Client (via Greg)",
     status: "Open",
     question:
-      "Keep or drop Canberra/Fyshwick? It is the only converting geo-specific term in the current evidence, while the public page does not mention Canberra.",
+      "Keep or drop Canberra/Fyshwick? It is the clearest converting geo-specific signal in the current evidence, while the public page does not mention Canberra.",
     blocks: "Geo targeting and the Canberra decision.",
     evidence: [
       { id: "6a.11", label: "Canberra/Fyshwick conversion evidence" },
@@ -387,11 +389,12 @@ const gates: Record<string, Gate> = {
     owner: "Client (via Greg)",
     status: "Open",
     question:
-      "The contamination runs both ways: all 16 conversion actions are primary at account level, so the enabled physiotherapy campaign can also bid towards consulting conversions, not only the reverse. What separation and campaign-scoped goal set does the client approve before either campaign continues to optimise across the other campaign's conversions?",
+      "The contamination is eligible in both directions: all 16 conversion actions are primary at account level and both campaigns run Maximise Conversions, so the enabled physiotherapy campaign is eligible to optimise towards consulting conversions, not only the reverse. What separation and campaign-scoped goal set does the client approve before either campaign continues to optimise across the other campaign's conversions?",
     blocks: "Safe conversion-goal cleanup, campaign separation and any performance reading from this account.",
     evidence: [
       { id: "6a.9", label: "conversion-action state" },
       { id: "6a.12", label: "mixed-account evidence" },
+      { id: "6a.14", label: "goal configuration" },
     ],
   },
   C14: {
@@ -464,7 +467,7 @@ const mustBeTrue = [
   },
   {
     text: "The channel base survives qualification: Sydney assessment Search still yields corporate pipeline after manual-handling waste and individuals are removed.",
-    links: ["B1", "B6", "C12"],
+    links: ["B1", "B6", "B12", "C12"],
   },
   {
     text: "The operating model is real: owners, capacity, buyer and procurement maps, privacy and vendor-neutral equipment.",
@@ -493,7 +496,7 @@ export default function DecisionsPage() {
             <p className={styles.kicker}>Routed decision register · Revised plan v2 · 25 July 2026</p>
             <h1>Five decisions. Thirty-four gates.</h1>
             <p className={styles.heroCopy}>
-              You see five questions first. Each one holds the underlying gates,
+              I have put five questions first. Each one holds the underlying gates,
               with their owner, priority, status, blocking consequence and any cited evidence kept
               visible when the gate is opened.
             </p>
@@ -562,7 +565,7 @@ export default function DecisionsPage() {
           <SectionHeading
             label="The decision test"
             title="Five things must be true before the plan earns a go."
-            copy="These are the cross-cutting conditions from the independent adversarial review. They are not extra gates; each points back to the gates that prove or disprove it."
+            copy="These are the cross-cutting conditions the recommendation was stress-tested against. They are not extra gates; each points back to the gates that prove or disprove it."
           />
           <p className={styles.planningOnly}>
             This register authorises planning and client review only. It does not authorise changes to

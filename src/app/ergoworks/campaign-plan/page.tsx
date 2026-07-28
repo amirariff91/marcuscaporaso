@@ -23,7 +23,8 @@ export default function CampaignPlanNoticePage() {
               </h1>
               <div className="mt-7 max-w-[70ch] space-y-5 text-lg leading-relaxed text-muted sm:text-xl">
                 <p>
-                  This plan has been superseded by a revised version dated 2026-07-24/25.
+                  This plan has been superseded by a revised version dated 2026-07-24/25,
+                  with figures and goal configuration re-verified on 2026-07-28.
                 </p>
                 <p>
                   The current pack is private. Contact Marcus for access.

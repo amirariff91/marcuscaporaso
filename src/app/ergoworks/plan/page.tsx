@@ -99,13 +99,13 @@ export default function PlanPage() {
           <div>
             <strong>Trailing Search spend</strong>
             <span>
-              <strong>[Verified]</strong> <EvidenceLink id="6a.3">A$42,285.61</EvidenceLink> over the trailing twelve months to 24 July 2026. The latest monthly pull shows <EvidenceLink id="6a.6">A$4,652.53</EvidenceLink> of spend.
+              <strong>[Verified]</strong> <EvidenceLink id="6a.3">A$42,285.61</EvidenceLink> over the trailing twelve months to 24 July 2026. The latest 30-day pull shows <EvidenceLink id="6a.6">A$4,652.53</EvidenceLink> of spend.
             </span>
           </div>
           <div>
             <strong>Recorded leads (strict)</strong>
             <span>
-              <strong>[Verified]</strong> <EvidenceLink id="6a.7">17 platform-recorded leads</EvidenceLink> — four enquiry-form submissions and 13 call conversions — in the latest month, before deduplication and CRM qualification.
+              <strong>[Verified]</strong> <EvidenceLink id="6a.7">17 platform-recorded leads</EvidenceLink> — four enquiry-form submissions and 13 call conversions — in the latest 30-day window, before deduplication and CRM qualification.
             </span>
           </div>
           <div>
@@ -127,7 +127,7 @@ export default function PlanPage() {
         <SectionHeading
           label="Why this wedge"
           title="Start where paid Search has a credible corporate entry."
-          copy="The assessment cluster is the only near-term paid-Search wedge I would test, subject to the qualification and unit-economics gates. It has real demand, a local Sydney opportunity and a service message that can be matched to one page."
+          copy="[Interpretation] The assessment cluster is the only near-term paid-Search wedge I would test, subject to the qualification and unit-economics gates. It has real demand, a local Sydney opportunity and a service message that can be matched to one page."
         />
         <div className={styles.roadmap}>
           <article>
@@ -154,7 +154,7 @@ export default function PlanPage() {
         </div>
         <div className={styles.prose} style={{ marginTop: "2rem" }}>
           <p>
-            <strong>[Verified]</strong> The equipment store shows <EvidenceLink id="6c.4">19 of 133 organisations reordered, accounting for about 32% of company-attributed orders — large employers and government bodies</EvidenceLink>. This is evidence that organisations repeat-buy equipment; it does not prove that a consulting engagement caused those orders. I would measure it as associated cross-sell value, not causal revenue.
+            <strong>[Verified]</strong> The equipment store shows <EvidenceLink id="6c.4">19 of 133 organisations reordered, accounting for about 32% of company-attributed orders</EvidenceLink>; <EvidenceLink id="6c.5">repeat buyers include large employers and government bodies</EvidenceLink>. This is evidence that organisations repeat-buy equipment; it does not prove that a consulting engagement caused those orders. I would measure it as associated cross-sell value, not causal revenue.
           </p>
         </div>
       </section>
@@ -174,19 +174,19 @@ export default function PlanPage() {
           <li>
             <span>01</span>
             <p>
-              <strong>Manual-handling concentration.</strong> <strong>[Verified]</strong> In the trailing twelve months ending 24 July 2026, the manual-handling ad group spent <EvidenceLink id="6a.4">A$17,237.87</EvidenceLink> from <EvidenceLink id="6a.4">A$42,285.61</EvidenceLink> campaign spend: <EvidenceLink id="6a.4">40.8%</EvidenceLink> of campaign spend. The narrower <EvidenceLink id="6a.4">49.4%</EvidenceLink> is only the share of keyword-targeted ad-group spend after the dynamic-search group is excluded; it is not a whole-campaign percentage and not one keyword.
+              <strong>Manual-handling concentration.</strong> <strong>[Verified]</strong> In the trailing twelve months ending 24 July 2026, the manual-handling ad group spent <EvidenceLink id="6a.4">A$17,237.87</EvidenceLink> from <EvidenceLink id="6a.3">A$42,285.61</EvidenceLink> campaign spend: <EvidenceLink id="6a.4">40.8%</EvidenceLink> of campaign spend. The narrower <EvidenceLink id="6a.4">49.4%</EvidenceLink> is only the share of keyword-targeted ad-group spend after the dynamic-search group is excluded; it is not a whole-campaign percentage and not one keyword.
             </p>
           </li>
           <li>
             <span>02</span>
             <p>
-              <strong>Certificate-intent burn.</strong> <strong>[Verified]</strong> The broad <code>+manual +handling +certificate</code> line used <EvidenceLink id="6a.10">A$846.56</EvidenceLink> across <EvidenceLink id="6a.10">125 clicks</EvidenceLink> for <EvidenceLink id="6a.10">two reported conversions</EvidenceLink> in the latest month — <EvidenceLink id="6a.10">18%</EvidenceLink> of campaign spend — while being exposed to a commodity certificate market. The two reported conversions have not been CRM-validated as qualified corporate enquiries — enough for a reversible quarantine, not enough to conclude every matched query is unsuitable.
+              <strong>Certificate-intent burn.</strong> <strong>[Verified]</strong> The broad <code>+manual +handling +certificate</code> line used <EvidenceLink id="6a.10">A$846.56</EvidenceLink> across <EvidenceLink id="6a.10">125 clicks</EvidenceLink> for <EvidenceLink id="6a.10">two reported conversions</EvidenceLink> in the latest 30-day window — <EvidenceLink id="6a.10">18%</EvidenceLink> of campaign spend. <strong>[Interpretation]</strong> It sits in a commodity certificate market. The two reported conversions cannot be confirmed as qualified corporate enquiries from the platform data — enough for a reversible quarantine, not enough to conclude every matched query is unsuitable.
             </p>
           </li>
           <li>
             <span>03</span>
             <p>
-              <strong>Conversion contamination.</strong> <strong>[Verified]</strong> <EvidenceLink id="6a.9">All 16 enabled conversion actions remain primary</EvidenceLink>, including soft actions and activity from another service line. The platform total therefore cannot be treated as clean corporate pipeline.
+              <strong>Conversion contamination.</strong> <strong>[Verified]</strong> <EvidenceLink id="6a.9">All 16 enabled conversion actions remain primary</EvidenceLink>, including soft actions and <EvidenceLink id="6a.12">activity from another service line</EvidenceLink>. <strong>[Interpretation]</strong> The platform total therefore cannot be treated as clean corporate pipeline.
             </p>
           </li>
         </ol>
@@ -203,7 +203,7 @@ export default function PlanPage() {
             <div className={styles.phaseHead}><span><Search size={18} /></span><b>Search</b></div>
             <h3>Baseline to measure against</h3>
             <p className={styles.hubCardCopy}>
-              <strong>[Verified]</strong> The trailing Search baseline is <EvidenceLink id="6a.3">A$42,285.61 per year</EvidenceLink>. The live campaign budget is <EvidenceLink id="6a.2">A$154.81 per day</EvidenceLink>; the latest monthly spend was <EvidenceLink id="6a.6">A$4,652.53</EvidenceLink>. I would protect the assessment cluster from broad certificate intent while the goals are repaired.
+              <strong>[Verified]</strong> The trailing Search baseline is <EvidenceLink id="6a.3">A$42,285.61 per year</EvidenceLink>. The live campaign budget is <EvidenceLink id="6a.2">A$154.81 per day</EvidenceLink>; the latest 30-day spend was <EvidenceLink id="6a.6">A$4,652.53</EvidenceLink>. I would protect the assessment cluster from broad certificate intent while the goals are repaired.
             </p>
           </article>
           <article>
@@ -237,7 +237,7 @@ export default function PlanPage() {
             <div className={styles.phaseHead}><span><CircleAlert size={18} /></span><b>01</b></div>
             <h3>Contain certificate-intent spend</h3>
             <p className={styles.hubCardCopy}>
-              <strong>[Verified]</strong> The broad <code>+manual +handling +certificate</code> keyword spent <EvidenceLink id="6a.10">A$846.56 across 125 clicks for two reported conversions</EvidenceLink> in the latest 30 days. At that observed pace, each week of delay leaves roughly A$197 of observed spend exposed (A$846.56 ÷ 30 × 7) — an observation, not a target cost per lead, acquisition cost or proven result. <strong>[Interpretation]</strong> I recommend one-line approval to quarantine the keyword immediately while the credential decision is answered at <a href="/ergoworks/plan/decisions#gate-C12">gate C12</a>. This is reversible and deliberately separate from the broader approval bundle: the containment is worth days, not weeks. The two reported conversions have never been CRM-validated as qualified corporate enquiries, so this does not conclude that the spend is wasted or that all certificate intent is unsuitable.
+              <strong>[Verified]</strong> The broad <code>+manual +handling +certificate</code> keyword spent <EvidenceLink id="6a.10">A$846.56 across 125 clicks for two reported conversions</EvidenceLink> in the latest 30-day window. At that observed pace, each week of delay leaves roughly A$197 of observed spend exposed (A$846.56 ÷ 30 × 7) — an observation, not a target cost per lead, acquisition cost or proven result. <strong>[Interpretation]</strong> I recommend one-line approval to quarantine the keyword immediately at <a href="/ergoworks/plan/decisions#gate-C12">gate C12</a> while the credential question is answered at <a href="/ergoworks/plan/decisions#gate-A3">gate A3</a>. This is reversible and deliberately separate from the broader approval bundle: the containment is worth days, not weeks. The two reported conversions cannot be confirmed as qualified corporate enquiries from the platform data, so this does not conclude that the spend is wasted or that all certificate intent is unsuitable.
             </p>
           </article>
           <article>
@@ -251,14 +251,14 @@ export default function PlanPage() {
             <div className={styles.phaseHead}><span><ShieldCheck size={18} /></span><b>03</b></div>
             <h3>Repair the conversion goals</h3>
             <p className={styles.hubCardCopy}>
-              <strong>Recommended sequence.</strong> Demote newsletter, email-click and soft local actions; separate other-service activity; deduplicate forms and calls; capture click IDs, consent and organisation stages in the CRM; keep Maximize Conversions without a target CPA until clean qualified data exists.
+              <strong>Recommended sequence.</strong> Demote newsletter, email-click and soft local actions; separate other-service activity; deduplicate forms and calls; capture click IDs, consent and organisation stages in the CRM; keep Maximise Conversions without a target CPA until clean qualified data exists.
             </p>
           </article>
           <article>
             <div className={styles.phaseHead}><span><PhoneCall size={18} /></span><b>04</b></div>
             <h3>Make the qualified-call path real</h3>
             <p className={styles.hubCardCopy}>
-              Because <EvidenceLink id="6a.7">13 of the 17 recorded leads are calls</EvidenceLink> [Verified], call tracking is not optional: capture the call ID and connected duration, apply the hours-and-disposition rule once approved at gate B6, disposition rule, deduplicate against a form from the same organisation, and import <code>qualified_call</code> as the only primary call signal once reliable.
+              Because <EvidenceLink id="6a.7">13 of the 17 recorded leads are calls</EvidenceLink> [Verified], call tracking is not optional: capture the call ID and connected duration, apply the hours-and-disposition rule once approved at <a href="/ergoworks/plan/decisions#gate-B6">gate B6</a>, deduplicate against a form from the same organisation, and import <code>qualified_call</code> as the only primary call signal once reliable.
             </p>
           </article>
           <article>
