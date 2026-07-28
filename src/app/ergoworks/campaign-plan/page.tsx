@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
-import Link from "next/link";
 import {
   ArrowDown,
   ArrowRight,
@@ -25,9 +24,12 @@ export const metadata: Metadata = {
   robots: { index: false, follow: false },
 };
 
+// Plain anchors, deliberately not next/link: these point into the Basic-auth
+// gated pack, and Link's viewport prefetch would 401 on every scroll. A plain
+// anchor authenticates once, on an actual click.
 function EvidenceLink({ id, children, light }: { id: string; children: ReactNode; light?: boolean }) {
   return (
-    <Link
+    <a
       href={`/ergoworks/plan/evidence#evidence-${id}`}
       style={{
         color: light ? "#d9f45b" : "var(--green)",
@@ -37,7 +39,7 @@ function EvidenceLink({ id, children, light }: { id: string; children: ReactNode
       }}
     >
       {children}
-    </Link>
+    </a>
   );
 }
 
@@ -491,12 +493,12 @@ export default function CampaignPlanPage() {
           </p>
         </div>
         <div style={{ display: "flex", flexWrap: "wrap", gap: ".75rem", marginTop: "2rem" }}>
-          <Link className={styles.pdfLink} href="/ergoworks/plan">
+          <a className={styles.pdfLink} href="/ergoworks/plan">
             Open the full decision memo <ArrowRight size={15} />
-          </Link>
-          <Link className={styles.pdfLink} href="/ergoworks/plan/evidence">
+          </a>
+          <a className={styles.pdfLink} href="/ergoworks/plan/evidence">
             Open the evidence register <ArrowRight size={15} />
-          </Link>
+          </a>
         </div>
       </section>
 

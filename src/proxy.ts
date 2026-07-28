@@ -27,15 +27,26 @@ const RETIRED_PLAN_REDIRECTS: Record<string, string> = {
   "/ergoworks/plan/pack.pdf": "/ergoworks/plan",
 };
 
-function unauthorized() {
-  return new NextResponse("Authentication required.", {
-    status: 401,
-    headers: {
-      "WWW-Authenticate": PLAN_REALM,
-      "Cache-Control": "no-store",
-      "Content-Type": "text/plain; charset=utf-8",
-    },
-  });
+// Speculative loads (Next Link prefetch, browser prefetch/prerender) must be
+// denied WITHOUT WWW-Authenticate: offering the challenge on a prefetch makes
+// the browser pop its native login dialog while the user merely scrolls a
+// public page that links into the gate. Real navigations still get the prompt.
+function isPrefetch(request: NextRequest): boolean {
+  const h = request.headers;
+  return (
+    h.get("next-router-prefetch") === "1" ||
+    (h.get("purpose") ?? "").includes("prefetch") ||
+    (h.get("sec-purpose") ?? "").includes("prefetch")
+  );
+}
+
+function unauthorized(request: NextRequest) {
+  const headers: Record<string, string> = {
+    "Cache-Control": "no-store",
+    "Content-Type": "text/plain; charset=utf-8",
+  };
+  if (!isPrefetch(request)) headers["WWW-Authenticate"] = PLAN_REALM;
+  return new NextResponse("Authentication required.", { status: 401, headers });
 }
 
 // Full-string constant-time comparison (no early-exit, no per-field branching).
@@ -80,16 +91,16 @@ function decodeBasic(token: string): string | null {
 function authenticate(request: NextRequest): NextResponse | null {
   const user = process.env.ERGOWORKS_PLAN_USER;
   const pass = process.env.ERGOWORKS_PLAN_PASSWORD;
-  if (!user || !pass) return unauthorized(); // fail closed if unconfigured
+  if (!user || !pass) return unauthorized(request); // fail closed if unconfigured
 
   const header = request.headers.get("authorization") ?? "";
-  if (!header.startsWith("Basic ")) return unauthorized();
+  if (!header.startsWith("Basic ")) return unauthorized(request);
 
   const decoded = decodeBasic(header.slice(6));
-  if (decoded === null || decoded.indexOf(":") === -1) return unauthorized();
+  if (decoded === null || decoded.indexOf(":") === -1) return unauthorized(request);
 
   // Single compare of the whole "user:pass" pair — no field-specific branching.
-  if (!safeEqual(decoded, `${user}:${pass}`)) return unauthorized();
+  if (!safeEqual(decoded, `${user}:${pass}`)) return unauthorized(request);
 
   return null; // authenticated
 }
