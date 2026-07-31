@@ -7,13 +7,46 @@ import { marked } from "marked";
 const REVIEWS_DIR = path.join(process.cwd(), "content-reviews");
 
 export const metadata: Metadata = {
-  title: "OSWA Content Review — Batches 1 & 2",
+  title: "OSWA Content Review — Batches 1–3",
   description:
     "Editorial and compliance review of the OSWA content drafts, by batch.",
   robots: { index: false, follow: false },
 };
 
 type ReviewPage = { slug: string; title: string; verdict: string; note: string };
+
+const BATCH3_PAGES: ReviewPage[] = [
+  {
+    slug: "gastric-sleeve-cost-perth-round-2",
+    title: "Gastric Sleeve Cost Perth",
+    verdict: "Rework",
+    note: "Cost handling now right; hospitals, surgeon bios and scaffolding remain",
+  },
+  {
+    slug: "weight-loss-surgery-cost-perth-round-2",
+    title: "Weight Loss Surgery Cost Perth (hub)",
+    verdict: "Rework",
+    note: "Cost ranges hard-coded under one undefined label; scaffolding heading shipped",
+  },
+  {
+    slug: "medicare-private-health-cover-round-2",
+    title: "Medicare & Private Health Cover",
+    verdict: "Rework",
+    note: "Blanket MBS item range stated as fact; hospital count and named funds unverified",
+  },
+  {
+    slug: "super-access-weight-loss-surgery-round-2",
+    title: "Super Access for Weight Loss Surgery",
+    verdict: "Rework",
+    note: "Strongest page of the set — coordinator routing and scaffolding to finish",
+  },
+  {
+    slug: "book-consultation-round-2",
+    title: "Book a Consultation",
+    verdict: "Rework",
+    note: "Three contradictory clinic locations in one document; booking URL still open",
+  },
+];
 
 const BATCH2_PAGES: ReviewPage[] = [
   {
@@ -107,24 +140,40 @@ function ReviewGrid({ pages }: { pages: ReviewPage[] }) {
 }
 
 export default async function ContentReviewIndexPage() {
-  const [batch1Md, batch2Md] = await Promise.all([
+  const [batch1Md, batch2Md, batch3Md] = await Promise.all([
     readFile(path.join(REVIEWS_DIR, "summary.md"), "utf8"),
     readFile(path.join(REVIEWS_DIR, "summary-batch-2.md"), "utf8"),
+    readFile(path.join(REVIEWS_DIR, "summary-batch-3.md"), "utf8"),
   ]);
-  const [batch1Html, batch2Html] = await Promise.all([
+  const [batch1Html, batch2Html, batch3Html] = await Promise.all([
     marked.parse(batch1Md),
     marked.parse(batch2Md),
+    marked.parse(batch3Md),
   ]);
 
   return (
     <main className="min-h-screen bg-[#071112] text-white">
       <div className="mx-auto max-w-3xl px-5 py-12 md:px-8">
         <p className="mb-2 text-sm text-emerald-300">
-          OSWA · Content review · Batch 2 · 20 July 2026
+          OSWA · Content review · Batch 3 · 31 July 2026
         </p>
         <h1 className="mb-6 text-3xl font-bold text-white md:text-4xl">
-          Batch 2 review — Costs &amp; Funding pages
+          Batch 3 review — reworked Costs &amp; Funding pages
         </h1>
+
+        <ReviewGrid pages={BATCH3_PAGES} />
+
+        <article
+          className="brief-prose mb-16 max-w-3xl rounded-2xl bg-white p-8 text-slate-900 shadow-2xl md:p-10"
+          dangerouslySetInnerHTML={{ __html: batch3Html }}
+        />
+
+        <p className="mb-2 text-sm text-emerald-300">
+          OSWA · Content review · Batch 2 · 20 July 2026
+        </p>
+        <h2 className="mb-6 text-2xl font-bold text-white md:text-3xl">
+          Batch 2 review — Costs &amp; Funding pages
+        </h2>
 
         <ReviewGrid pages={BATCH2_PAGES} />
 
