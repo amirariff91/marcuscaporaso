@@ -20,8 +20,10 @@ This is the first review of this page. It does something the other two don't —
 
    **Writer edit:** `A valid referral means a Medicare rebate applies to your specialist consultation at the referred rate. Without one you can still be seen, but a lower rebate applies. Separately, most bariatric procedures have a Medicare item number — Medicare rebates and private hospital cover are separate systems, and the team can explain what applies to your circumstances.` Apply the same correction to FAQ 1.
 
-   The same error appears in **four more places** on this page. All of them need correcting, or the page still tells patients the wrong thing about money:
+   This wording, or a version of it, appears **nine times** across the page. Six more need the same correction here (a seventh is finding 12 below), or the page still tells patients the wrong thing about money:
+   - Hero: `having a GP referral will enable Medicare rebates to apply to the specialist fee for your first appointment` → `with a GP referral, a higher Medicare rebate applies to your first specialist appointment`
    - Stats bar: `GP referral required to claim Medicare rebate on specialist fee` → `GP referral gives the higher Medicare rebate on the specialist consultation`
+   - Step 1: `This is what enables access to Medicare rebates, and it also lets our team review your relevant history before your first appointment.` → `This gives you the higher Medicare rebate on your consultation, and lets our team review your relevant history beforehand.`
    - Bullet: `A referral unlocks Medicare rebates on consultations and the procedure, usually reducing what you pay out of pocket.` → `A referral gives you the higher Medicare rebate on your specialist consultation.`
    - FAQ 4: `only a referral from your GP allows you to access Medicare rebates on your specialist consultations and any surgery` → `a referral from your GP gives you the higher Medicare rebate on your specialist consultations`
    - FAQ 9: `What the referral does is unlock Medicare rebates on your specialist appointments and procedure.` → `What the referral does is give you the higher Medicare rebate on your specialist appointments.`
