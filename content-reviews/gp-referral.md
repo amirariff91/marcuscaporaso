@@ -20,6 +20,12 @@ This is the first review of this page. It does something the other two don't —
 
    **Writer edit:** `A valid referral means a Medicare rebate applies to your specialist consultation at the referred rate. Without one you can still be seen, but a lower rebate applies. Separately, most bariatric procedures have a Medicare item number — Medicare rebates and private hospital cover are separate systems, and the team can explain what applies to your circumstances.` Apply the same correction to FAQ 1.
 
+   The same error appears in **four more places** on this page. All of them need correcting, or the page still tells patients the wrong thing about money:
+   - Stats bar: `GP referral required to claim Medicare rebate on specialist fee` → `GP referral gives the higher Medicare rebate on the specialist consultation`
+   - Bullet: `A referral unlocks Medicare rebates on consultations and the procedure, usually reducing what you pay out of pocket.` → `A referral gives you the higher Medicare rebate on your specialist consultation.`
+   - FAQ 4: `only a referral from your GP allows you to access Medicare rebates on your specialist consultations and any surgery` → `a referral from your GP gives you the higher Medicare rebate on your specialist consultations`
+   - FAQ 9: `What the referral does is unlock Medicare rebates on your specialist appointments and procedure.` → `What the referral does is give you the higher Medicare rebate on your specialist appointments.`
+
 4. **Blocking** — `Consulting room locations:** Booragoon (Garden City Specialist Centre, 537 Marmion Street, Booragoon) and Subiaco/West Leederville (Surgeons House, 162 Cambridge Street, West Leederville)` and, in FAQ 8, `Consultations take place at our Booragoon and Subiaco/West Leederville rooms.` — the second consulting clinic is Mandurah, confirmed by OSWA on 20 July. This page is where a GP looks up where to send their patient, so a wrong address here has practical consequences.
 
    **Writer edit:** `**Consulting room locations:** Booragoon (Garden City Specialist Centre, 537 Marmion Street) and Mandurah (WA Cardiology Centre, 30 Minilya Parkway, Greenfields 6210).` In FAQ 8: `Consultations take place at our Booragoon and Mandurah rooms.`
@@ -36,9 +42,9 @@ This is the first review of this page. It does something the other two don't —
 
 7. **Blocking** — `one of the most experienced bariatric surgeons in Australia`, `He was one of the first surgeons in the country to perform sleeve gastrectomy, in 2004`, `has since trained many Australian surgeons in the technique`, `makes him a strong fit for the long-term patient care model at Obesity Surgery WA`, `This long-term support is part of what sets us apart from other surgical groups` — comparative claims about a named clinician and about the practice, none substantiated on the page.
 
-   **Writer edit:** For the surgeon profile: `Dr Leon Cohen, MBBS, FRACS, has practised in bariatric surgery since 1999 and performs gastric sleeve, gastric bypass and revisional procedures.` For the support line: `Obesity Surgery WA's dietitians and physicians stay involved in your care well beyond surgery.`
+   **Writer edit:** For the surgeon profile: `Dr Leon Cohen, MBBS, FRACS, performs sleeve gastrectomy, revisional bariatric surgery and SASI-S bypass.` Use exactly that list — the draft does not attribute conventional gastric bypass to him, and the Surgeons page must say the same thing. The year "since 1999" is deliberately left out pending the confirmation below. For the support line: `Obesity Surgery WA's dietitians and physicians stay involved in your care well beyond surgery.`
 
-   **Brief-owner note (OSWA, not the writer):** The same experience claims appear on all three pages in this batch. One decision on what can be substantiated clears every instance. Please also confirm the current surgeon roster — this page names Dr Leon Cohen while our briefs name Dr Stephen Watson, and the live site supports the draft. See the note on the Surgeons page review.
+   **Brief-owner note (OSWA, not the writer):** The same experience claims appear on all three pages in this batch. One decision on what can be substantiated clears every instance. Please also confirm the current surgeon roster — this page names Dr Leon Cohen while our briefs name Dr Stephen Watson, and the live site does not settle it — its team section names Dr Cohen while its booking form lists Dr Watson. See the note on the Surgeons page review.
 
 8. **Blocking** — `Please note that some costs we can't advise on, such` — the cost section stops mid-sentence.
 
