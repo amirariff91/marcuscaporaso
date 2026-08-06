@@ -10,7 +10,7 @@ Marcus Caporaso's **GrowthOS** consulting monorepo: one Next.js app serving
 marcuscaporaso.com plus client-deliverable pages on subpaths, alongside untracked
 per-client working files in `docs/` (gitignored — memos, audits, deliverables).
 
-## The 4 workstreams
+## The 5 workstreams
 
 | Workstream | App code | Working files |
 |---|---|---|
@@ -18,6 +18,7 @@ per-client working files in `docs/` (gitignored — memos, audits, deliverables)
 | OSW / OSWA (Obesity Surgery WA rebuild) | `src/app/osw/**` + `content-briefs/` | `docs/oswa/` (incl. product brief) |
 | Biosymm (physio/occupational health) | `src/app/biosymm/**` | `docs/biosymm/` |
 | ErgoEquip (WooCommerce store, Ads/GA4/GTM) | **none** — managed externally via MCP/APIs | `docs/ergoequip/` |
+| ErgoWorks Consulting (ergonomics consultancy — **not** ErgoEquip) | `src/app/ergoworks/**` (gated plan pack, campaign plan, LP mockup) + `src/proxy.ts` gate | `docs/ergoworks-consulting/` |
 
 Before working on a client, read `docs/<client>/CONTEXT.md` — it has current status,
 account IDs, and the folder map. Index: `docs/README.md`.

@@ -1,0 +1,390 @@
+/* ── ErgoWorks LP mockup ───────────────────────────────────────────────────
+   Navy workwear ground + signal-orange marking, drawn from the WHS/hi-vis
+   world the buyer works in daily. Barlow (industrial grotesque) for structure,
+   Figtree for reading. Deliberately not the plan pages' mint/lime palette:
+   this represents the client's page, not Marcus's deliverable. */
+
+.page {
+  --navy: #0b2136;
+  --navy-deep: #061523;
+  --navy-lift: #12324f;
+  --line: #1d456b;
+  --signal: #ff6a13;
+  --signal-soft: #ffb381;
+  --paper: #f4f7fa;
+  --ink: #0b2136;
+  --text: #dfe9f2;
+  --text-dim: #9db4ca;
+  --text-mute: #7794ae;
+  background: var(--navy);
+  color: var(--text);
+  font-family: var(--font-figtree), system-ui, sans-serif;
+  overflow-x: clip;
+}
+.page h1, .page h2, .page h3, .page p { text-wrap: pretty; }
+.page h1, .page h2, .page h3, .kicker, .stat, .btn, .navLink {
+  font-family: var(--font-barlow), system-ui, sans-serif;
+}
+
+/* ── mockup chrome (not part of the design) ── */
+.mockBar {
+  position: sticky; top: 0; z-index: 60;
+  display: flex; flex-wrap: wrap; gap: .75rem 1.25rem; align-items: center;
+  background: #1b1005; border-bottom: 1px solid #4a2a0c;
+  padding: .45rem clamp(.85rem, 4vw, 2.5rem);
+  font-size: .76rem; color: #ffd7b5;
+}
+@media (max-width: 46rem) {
+  /* Sticky costs ~16% of a 390px viewport on every scroll — let it scroll away. */
+  .mockBar { position: static; gap: .4rem .6rem; font-size: .7rem; padding-block: .4rem; }
+  .mockSpacer { margin-left: 0; }
+}
+.mockTag {
+  font-family: var(--font-barlow), sans-serif; font-weight: 800;
+  letter-spacing: .1em; text-transform: uppercase;
+  background: var(--signal); color: #1b1005;
+  padding: .18rem .5rem; border-radius: 3px; font-size: .68rem;
+}
+.mockBar select, .mockToggle {
+  font: inherit; font-size: .78rem;
+  background: #2b1a08; color: #ffd7b5;
+  border: 1px solid #5c3510; border-radius: 5px;
+  padding: .3rem .55rem; cursor: pointer;
+}
+.mockBar label { display: flex; align-items: center; gap: .45rem; }
+.mockSpacer { margin-left: auto; }
+
+.note {
+  border: 1px dashed #6b4a1f; background: #1b1005cc;
+  color: #ffcfa6; font-size: .8rem; line-height: 1.55;
+  padding: .7rem .85rem; border-radius: 6px; margin: 1rem 0 0;
+  max-width: 62ch;
+}
+.note b { color: var(--signal-soft); font-weight: 700; }
+
+/* ── shell ── */
+.shell { width: min(1180px, 100%); margin-inline: auto; padding-inline: clamp(1.25rem, 5vw, 4rem); }
+.section { padding-block: clamp(3.5rem, 7vw, 6.5rem); }
+/* The dead-end follows the hero directly, so it does not need a full section
+   gap on top of the hero's own bottom padding. */
+.sectionTight { padding-top: clamp(1rem, 2vw, 2rem); }
+.inlineLink {
+  font: inherit; background: none; border: 0; padding: 0; cursor: pointer;
+  color: var(--signal); font-weight: 600;
+  text-decoration: underline; text-underline-offset: .18em; text-decoration-thickness: 1px;
+}
+.inlineLink:hover { color: #fff; }
+.inlineLink:focus-visible { outline: 2px solid var(--signal); outline-offset: 2px; border-radius: 2px; }
+.sectionPaper { background: var(--paper); color: var(--ink); }
+.sectionPaper .lead, .sectionPaper .body { color: #3d5568; }
+/* #ff6a13 on #f4f7fa is ~2.6:1 — too low for small text. Darken for paper. */
+.sectionPaper .kicker { color: #a33c00; }
+.sectionPaper .detailList li::before { color: #a33c00; }
+.sectionLift { background: var(--navy-lift); position: relative; }
+.sectionLift::before { content:""; position:absolute; inset:0; background: repeating-linear-gradient(135deg, #ffffff06 0 10px, transparent 10px 30px); pointer-events:none; }
+.sectionLift > * { position: relative; }
+
+.kicker {
+  font-size: .74rem; font-weight: 800; letter-spacing: .14em;
+  text-transform: uppercase; color: var(--signal);
+  display: flex; align-items: center; gap: .6rem; margin-bottom: 1.25rem;
+}
+.kicker::after { content: ""; height: 1px; flex: 1; max-width: 4rem; background: currentColor; opacity: .5; }
+
+.h2 { font-size: clamp(1.9rem, 3.6vw, 3rem); line-height: 1.06; letter-spacing: -.03em; text-wrap: balance; margin-bottom: 1.1rem; }
+.lead { font-size: clamp(1.02rem, 1.4vw, 1.18rem); line-height: 1.65; color: var(--text-dim); max-width: 68ch; }
+.body { font-size: 1rem; line-height: 1.7; color: var(--text-dim); max-width: 70ch; }
+
+/* ── header ── */
+.header {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 1rem; padding-block: 1.15rem;
+  border-bottom: 1px solid var(--line);
+}
+.brand { display: flex; align-items: baseline; gap: .55rem; font-family: var(--font-barlow), sans-serif; }
+.brandMark { font-weight: 800; font-size: 1.12rem; letter-spacing: -.02em; color: #fff; }
+.brandSub { font-size: .72rem; letter-spacing: .16em; text-transform: uppercase; color: var(--text-mute); }
+.headerRight { display: flex; align-items: center; gap: 1.25rem; }
+.forOrgs { font-size: .74rem; letter-spacing: .1em; text-transform: uppercase; color: var(--signal); white-space: nowrap; }
+.phone { font-family: var(--font-barlow), sans-serif; font-weight: 700; color: #fff; text-decoration: none; font-size: 1rem; white-space: nowrap; }
+.phone:hover { color: var(--signal); }
+/* Below ~34rem the wordmark and a full phone number are all the bar can hold
+   without either of them wrapping mid-token. */
+@media (max-width: 34rem) {
+  .forOrgs { display: none; }
+  .brandSub { font-size: .64rem; }
+}
+
+/* ── hero ── */
+.hero { padding-block: clamp(3rem, 7vw, 5.5rem) clamp(2.5rem, 5vw, 4rem); position: relative; }
+.hero::before {
+  content: ""; position: absolute; inset: 0;
+  background:
+    repeating-linear-gradient(135deg, #ffffff09 0 10px, transparent 10px 30px);
+  pointer-events: none;
+}
+.heroInner { position: relative; }
+.h1 {
+  font-size: clamp(2.1rem, 5.4vw, 4.3rem); line-height: 1.03; letter-spacing: -.035em;
+  max-width: 22ch; text-wrap: balance; color: #fff; margin-bottom: 1.5rem;
+}
+/* The promise gets its own line at every width — never a dangling fragment. */
+.h1 em { display: block; font-style: normal; color: var(--signal); }
+.heroLead { font-size: clamp(1.05rem, 1.6vw, 1.28rem); line-height: 1.6; color: var(--text-dim); max-width: 58ch; }
+
+/* ── the fork ── */
+.fork { margin-top: clamp(2rem, 4vw, 3rem); }
+.forkQ { font-family: var(--font-barlow), sans-serif; font-weight: 700; font-size: 1.05rem; color: #fff; margin-bottom: .9rem; }
+.forkRow { display: flex; flex-wrap: wrap; gap: .75rem; }
+.forkBtn {
+  font-family: var(--font-barlow), sans-serif; font-weight: 700; font-size: clamp(1rem, 1.5vw, 1.2rem);
+  padding: clamp(1rem, 1.8vw, 1.3rem) clamp(1.5rem, 3vw, 2.4rem); border-radius: 7px; cursor: pointer;
+  border: 1px solid var(--line); background: transparent; color: var(--text);
+  transition: background .2s cubic-bezier(.19,1,.22,1), color .2s cubic-bezier(.19,1,.22,1), border-color .2s;
+}
+.forkBtn:hover { border-color: var(--signal); color: #fff; }
+.forkBtn:focus-visible { outline: 2px solid var(--signal); outline-offset: 3px; }
+
+/* ── proof strip ── */
+.proofStrip {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 1rem 2.5rem;
+  border-block: 1px solid var(--line); padding-block: 1.25rem;
+  color: var(--text-mute); font-size: .85rem;
+}
+.proofStrip { gap: .75rem 1.5rem; }
+.proofSlot {
+  border: 1px dashed var(--line); border-radius: 5px;
+  padding: .5rem .9rem; font-size: .72rem; letter-spacing: .08em;
+  color: #9db4ca;
+}
+.proofPending { font-size: .76rem; font-style: italic; color: #b9cddf; }
+
+/* ── benefit blocks ── */
+.benefits { display: grid; gap: clamp(1.5rem, 3vw, 2.5rem); grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); margin-top: 2.5rem; }
+.benefit { padding-top: 1.15rem; border-top: 2px solid var(--signal); }
+.benefitN { font-family: var(--font-barlow), sans-serif; font-weight: 800; font-size: .78rem; letter-spacing: .12em; color: var(--signal); }
+.benefit h3 { font-size: 1.25rem; line-height: 1.25; letter-spacing: -.02em; margin: .55rem 0 .6rem; color: #fff; }
+.sectionPaper .benefit h3 { color: var(--ink); }
+.benefit p { font-size: .95rem; line-height: 1.65; color: var(--text-dim); }
+.sectionPaper .benefit p { color: #3d5568; }
+
+/* ── how it works ── */
+.steps { display: grid; gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 4px; overflow: hidden; margin-top: 2.5rem; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); }
+.step { background: var(--navy); padding: 1.6rem 1.4rem; }
+.stepN { font-family: var(--font-barlow), sans-serif; font-weight: 800; font-size: 2rem; line-height: 1; color: var(--signal); opacity: .85; }
+.step h3 { font-size: 1.05rem; margin: .7rem 0 .5rem; color: #fff; letter-spacing: -.01em; }
+.step p { font-size: .9rem; line-height: 1.6; color: var(--text-dim); }
+
+/* ── engine strip ── */
+.engineRail { display: flex; gap: .6rem; flex-wrap: wrap; margin-top: 1.75rem; }
+.engineItem {
+  font-family: var(--font-barlow), sans-serif; font-weight: 700; font-size: .92rem;
+  padding: .7rem 1rem; border-radius: 6px;
+  background: #ffffff0a; border: 1px solid var(--line); color: var(--text);
+}
+.engineItem[data-entry="true"] { background: var(--signal); color: #1b1005; border-color: var(--signal); }
+.engineCaption { margin-top: 1.1rem; font-size: .88rem; color: var(--text-mute); max-width: 60ch; }
+
+/* ── offer ── */
+/* Radii kept minimal and fills flat: the world is rules and hairlines, so a
+   container reads as a ruled enclosure rather than a card. */
+.offer {
+  border: 1px solid var(--line); border-radius: 4px;
+  border-top: 2px solid var(--signal);
+  padding: clamp(1.6rem, 3.5vw, 2.75rem); margin-top: 2rem;
+}
+.offer h3 { font-size: clamp(1.4rem, 2.4vw, 2rem); line-height: 1.15; letter-spacing: -.025em; color: #fff; margin-bottom: .85rem; }
+.offerBody { font-size: 1rem; line-height: 1.7; color: var(--text-dim); max-width: 62ch; }
+.offerList { list-style: none; display: grid; gap: .5rem; margin: 1.25rem 0 0; }
+.offerList li { display: flex; gap: .6rem; font-size: .94rem; color: var(--text-dim); line-height: 1.55; }
+.offerList li::before { content: "—"; color: var(--signal); flex: none; }
+.caveat {
+  margin-top: 1.25rem; padding: .8rem .95rem;
+  border: 1px solid var(--line); border-radius: 6px;
+  background: #ffffff08; color: var(--text-dim);
+  font-size: .84rem; line-height: 1.55; max-width: 62ch;
+}
+.btnRow { display: flex; flex-wrap: wrap; gap: .8rem; align-items: center; margin-top: 1.5rem; }
+.btn {
+  display: inline-flex; align-items: center; gap: .5rem;
+  font-weight: 700; font-size: 1.02rem; padding: .95rem 1.6rem;
+  border-radius: 7px; border: 1px solid var(--signal); cursor: pointer;
+  background: var(--signal); color: #1b1005; text-decoration: none;
+  transition: transform .2s cubic-bezier(.19,1,.22,1), box-shadow .2s cubic-bezier(.19,1,.22,1);
+  box-shadow: 0 2px 0 #b8480c, 0 10px 24px -12px #ff6a1399;
+}
+.btn:hover { transform: translateY(-1px); box-shadow: 0 3px 0 #b8480c, 0 16px 30px -14px #ff6a13aa; }
+.btn:focus-visible { outline: 2px solid #fff; outline-offset: 3px; }
+.btnGhost { background: transparent; color: var(--text); border-color: var(--line); box-shadow: none; }
+.btnGhost:hover { border-color: var(--signal); color: #fff; box-shadow: none; }
+
+/* ── service detail ── */
+.detailGrid { display: grid; gap: clamp(1.5rem, 4vw, 3rem); grid-template-columns: minmax(0, 1fr); margin-top: 2.5rem; }
+@media (min-width: 62rem) { .detailGrid { grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); } }
+.detailList { list-style: none; display: grid; gap: .8rem; }
+.detailList li { display: flex; gap: .7rem; line-height: 1.6; font-size: .97rem; }
+.detailList li::before { content: "\2713"; color: var(--signal); font-weight: 700; flex: none; }
+.detailAside { border: 1px solid #d3dee8; border-radius: 4px; border-top: 2px solid var(--signal); padding: 1.5rem; background: #fff; }
+.detailAside h3 { font-size: 1.05rem; margin-bottom: .8rem; color: var(--ink); }
+.detailAside p { font-size: .92rem; line-height: 1.65; color: #3d5568; }
+
+/* ── FAQ ── */
+.faq { margin-top: 2.25rem; display: grid; gap: 0; border-top: 1px solid var(--line); }
+.faqItem { border-bottom: 1px solid var(--line); }
+.faqQ {
+  width: 100%; text-align: left; background: none; border: 0; cursor: pointer;
+  font-family: var(--font-barlow), sans-serif; font-weight: 700; font-size: 1.05rem;
+  color: #fff; padding: 1.15rem 2.5rem 1.15rem 0; position: relative;
+}
+.faqQ:focus-visible { outline: 2px solid var(--signal); outline-offset: 2px; }
+.faqQ::after { content: "+"; position: absolute; right: .5rem; top: 50%; translate: 0 -50%; color: var(--signal); font-size: 1.4rem; line-height: 1; }
+.faqQ[aria-expanded="true"]::after { content: "\2212"; }
+.faqA { padding: 0 0 1.25rem; font-size: .96rem; line-height: 1.7; color: var(--text-dim); max-width: 68ch; }
+
+/* ── form ── */
+.formWrap { display: grid; gap: clamp(1.75rem, 4vw, 3.5rem); grid-template-columns: minmax(0, 1fr); }
+@media (min-width: 62rem) { .formWrap { grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr); align-items: start; } }
+.form { border: 1px solid var(--line); border-radius: 4px; padding: clamp(1.4rem, 3vw, 2rem); background: #ffffff08; }
+.formSteps { display: flex; gap: .5rem; align-items: center; font-size: .76rem; letter-spacing: .1em; text-transform: uppercase; color: var(--text-mute); margin-bottom: 1.25rem; font-family: var(--font-barlow), sans-serif; font-weight: 700; }
+.formSteps span[data-on="true"] { color: var(--signal); }
+.field { display: grid; gap: .35rem; margin-bottom: 1rem; }
+.field label { font-size: .84rem; font-weight: 600; color: var(--text); }
+.field input, .field select, .field textarea {
+  font: inherit; font-size: .95rem;
+  background: #06192a; border: 1px solid var(--line); border-radius: 6px;
+  padding: .7rem .8rem; color: #fff; width: 100%;
+}
+.field input::placeholder, .field textarea::placeholder { color: #6b8aa5; }
+.field input:focus-visible, .field select:focus-visible, .field textarea:focus-visible { outline: 2px solid var(--signal); outline-offset: 1px; border-color: var(--signal); }
+.fieldRow { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr)); }
+.consent { display: flex; gap: .6rem; align-items: flex-start; font-size: .85rem; color: var(--text-dim); line-height: 1.5; margin-top: .25rem; }
+.consent input { width: auto; margin-top: .2rem; accent-color: var(--signal); }
+.formNote { font-size: .82rem; color: var(--text-mute); margin-top: 1rem; line-height: 1.55; }
+
+/* ── individual dead-end ── */
+.deadEnd { border: 1px solid var(--line); border-radius: 4px; padding: clamp(1.6rem, 4vw, 2.75rem); background: var(--navy-lift); margin-top: 2rem; max-width: 60rem; }
+.deadEnd h2 { font-size: clamp(1.5rem, 2.8vw, 2.1rem); line-height: 1.15; letter-spacing: -.025em; color: #fff; margin-bottom: 1rem; }
+.deadEnd ul { list-style: none; display: grid; gap: .7rem; margin: 1.35rem 0; }
+.deadEnd li { display: flex; gap: .65rem; font-size: .97rem; line-height: 1.6; color: var(--text-dim); }
+.deadEnd li::before { content: "\2192"; color: var(--signal); flex: none; }
+
+/* ── footer ── */
+.footer { border-top: 1px solid var(--line); padding-block: 2.25rem; color: var(--text-mute); font-size: .86rem; display: flex; flex-wrap: wrap; gap: .75rem 2rem; align-items: center; }
+
+@media (prefers-reduced-motion: no-preference) {
+  /* forwards-from-visible: content is never hidden if the animation is skipped */
+  .heroInner > * { animation: rise .8s cubic-bezier(.19,1,.22,1) both; }
+  .heroInner > *:nth-child(2) { animation-delay: .09s; }
+  .heroInner > *:nth-child(3) { animation-delay: .18s; }
+}
+@keyframes rise { from { opacity: 0; transform: translateY(1rem); } to { opacity: 1; transform: none; } }
+
+/* ── module 8: the sample report ─────────────────────────────────────────── */
+.reportBlock { margin-top: clamp(2.5rem, 5vw, 3.5rem); }
+.reportHead { display: flex; flex-wrap: wrap; align-items: baseline; gap: .75rem 1rem; margin-bottom: 1rem; }
+.reportHead h3 { font-size: 1.25rem; letter-spacing: -.02em; color: var(--ink); }
+.sampleTag {
+  font-family: var(--font-barlow), sans-serif; font-weight: 700;
+  font-size: .68rem; letter-spacing: .1em; text-transform: uppercase;
+  color: #7a3200; background: #ffe4d1; border: 1px solid #ffc9a6;
+  padding: .22rem .5rem; border-radius: 3px;
+}
+.reportTable { width: 100%; border-collapse: collapse; background: #fff; border: 1px solid #d3dee8; font-size: .92rem; }
+.reportTable th {
+  text-align: left; font-family: var(--font-barlow), sans-serif; font-weight: 800;
+  font-size: .7rem; letter-spacing: .1em; text-transform: uppercase; color: #4a6076;
+  padding: .7rem .85rem; border-bottom: 1px solid #d3dee8; background: #eef3f8;
+}
+.reportTable td { padding: .8rem .85rem; border-bottom: 1px solid #e4ecf3; color: #2d4358; line-height: 1.5; vertical-align: top; }
+.reportTable tr:last-child td { border-bottom: 0; }
+.pri {
+  font-family: var(--font-barlow), sans-serif; font-weight: 800;
+  font-size: .7rem; letter-spacing: .06em; text-transform: uppercase;
+  padding: .2rem .45rem; border-radius: 3px; white-space: nowrap;
+}
+.pri[data-p="high"] { background: #7a3200; color: #fff; }
+.pri[data-p="med"] { background: #e4ecf3; color: #3d5568; }
+.reportFoot { margin-top: .9rem; font-size: .92rem; line-height: 1.6; color: #3d5568; max-width: 66ch; }
+@media (max-width: 46rem) {
+  .reportTable { display: block; overflow-x: auto; white-space: nowrap; }
+}
+
+/* ── state machine ─────────────────────────────────────────────────────────
+   Every interaction is native input state read through :has(). No client JS
+   runs on this page, which is what keeps the annotation text out of a public
+   _next/static chunk. See the note at the top of page.tsx. */
+
+.vh { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap; border: 0; }
+
+/* flow fork */
+.individualOnly { display: none; }
+.page:has(:global(#f-me:checked)) .individualOnly { display: block; }
+.page:has(:global(#f-me:checked)) .corporateOnly { display: none; }
+.forkBtn { display: inline-block; user-select: none; }
+/* Corporate is the intended path, so it carries primary weight by default and
+   yields the accent only once the individual branch is actively chosen. */
+.page:has(:global(#f-team:checked)) .forkBtn[data-fork="team"],
+.page:has(:global(#f-me:checked)) .forkBtn[data-fork="me"] {
+  background: var(--signal); border-color: var(--signal); color: #1b1005; box-shadow: 0 2px 0 #b8480c;
+}
+.page:has(:global(#f-me:checked)) .forkBtn[data-fork="team"] { background: transparent; color: var(--text); border-color: var(--line); box-shadow: none; }
+.page:has(:global(#f-team:focus-visible)) .forkBtn[data-fork="team"],
+.page:has(:global(#f-me:focus-visible)) .forkBtn[data-fork="me"] { outline: 2px solid var(--signal); outline-offset: 3px; }
+
+/* offer variants */
+.page [data-offer] { display: none; }
+.page:has(:global(#o-review:checked)) [data-offer="review"],
+.page:has(:global(#o-snapshot:checked)) [data-offer="snapshot"],
+.page:has(:global(#o-download:checked)) [data-offer="download"],
+.page:has(:global(#o-quiz:checked)) [data-offer="quiz"] { display: block; }
+.page:has(:global(#o-review:checked)) .btnRow [data-offer="review"],
+.page:has(:global(#o-snapshot:checked)) .btnRow [data-offer="snapshot"] { display: inline-flex; }
+/* A and B share the two-step qualification form. */
+.page:has(:global(#o-review:checked)) [data-offer="qualify"],
+.page:has(:global(#o-snapshot:checked)) [data-offer="qualify"] { display: block; }
+
+.offerSwitch { display: flex; align-items: center; gap: .35rem; flex-wrap: wrap; }
+.switchLabel { opacity: .8; margin-right: .15rem; }
+.offerPill {
+  font-family: var(--font-barlow), sans-serif; font-weight: 700; font-size: .72rem;
+  padding: .28rem .55rem; border-radius: 4px; cursor: pointer; user-select: none;
+  background: #2b1a08; border: 1px solid #5c3510; color: #ffd7b5;
+}
+.offerPill:hover { border-color: var(--signal); }
+.page:has(:global(#o-review:checked)) .offerPill[data-offer-pill="review"],
+.page:has(:global(#o-snapshot:checked)) .offerPill[data-offer-pill="snapshot"],
+.page:has(:global(#o-download:checked)) .offerPill[data-offer-pill="download"],
+.page:has(:global(#o-quiz:checked)) .offerPill[data-offer-pill="quiz"] {
+  background: var(--signal); border-color: var(--signal); color: #1b1005;
+}
+
+/* annotation layer */
+.noteWrap { display: none; }
+.page:has(:global(#notes:checked)) .noteWrap { display: block; }
+.notesToggle {
+  font-family: inherit; font-size: .78rem; cursor: pointer; user-select: none;
+  background: #2b1a08; color: #ffd7b5; border: 1px solid #5c3510;
+  border-radius: 5px; padding: .3rem .55rem;
+}
+.notesToggle [data-when="on"] { display: none; }
+.page:has(:global(#notes:checked)) .notesToggle { background: var(--signal); color: #1b1005; border-color: var(--signal); }
+.page:has(:global(#notes:checked)) .notesToggle [data-when="on"] { display: inline; }
+.page:has(:global(#notes:checked)) .notesToggle [data-when="off"] { display: none; }
+
+/* two-step form */
+.stepPanel { display: none; }
+.page:has(:global(#s-1:checked)) .stepPanel[data-step="1"],
+.page:has(:global(#s-2:checked)) .stepPanel[data-step="2"] { display: block; }
+.formSteps span[data-step] { color: var(--text-mute); }
+.page:has(:global(#s-1:checked)) .formSteps span[data-step="1"],
+.page:has(:global(#s-2:checked)) .formSteps span[data-step="2"],
+.formSteps span[data-step="on"] { color: var(--signal); }
+
+/* native disclosure FAQ — no JS needed */
+.faqQ { list-style: none; }
+.faqQ::-webkit-details-marker { display: none; }
+.faqItem[open] .faqQ::after { content: "\2212"; }
+
+.engineWrap { margin-top: clamp(2.5rem, 5vw, 4rem); }
+.h2Small { font-size: clamp(1.5rem, 2.6vw, 2.1rem); }
+.footNote { margin-left: auto; }

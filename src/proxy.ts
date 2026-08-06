@@ -6,10 +6,15 @@ const SUBDOMAIN_ROOTS: Record<string, string> = {
   "biosymm.marcuscaporaso.com": "/biosymm",
 };
 
-// ── Access gate for the private ErgoWorks review pack (/ergoworks/plan/*) ──
+// ── Access gate for the private ErgoWorks material (/ergoworks/plan/* and
+//    /ergoworks/lp-mockup) ──
 // HTTP Basic Auth, credentials from server-only env vars. Fail-closed.
 // Edge runtime: use atob(), not Buffer.
 const PLAN_PREFIX = "/ergoworks/plan";
+// The LP mockup lives outside /plan but carries the same class of content: its
+// annotation layer names client personnel, unapproved spend figures and internal
+// gate IDs. Same gate, same credentials.
+const GATED_PREFIXES = [PLAN_PREFIX, "/ergoworks/lp-mockup"];
 const PLAN_REALM = 'Basic realm="ErgoWorks Plan", charset="UTF-8"';
 
 const RETIRED_PLAN_REDIRECTS: Record<string, string> = {
@@ -78,8 +83,8 @@ function isGatedPath(pathname: string): boolean {
   } catch {
     /* malformed escapes — Next will reject; raw check still applies */
   }
-  return candidates.some(
-    (p) => p === PLAN_PREFIX || p.startsWith(`${PLAN_PREFIX}/`),
+  return candidates.some((p) =>
+    GATED_PREFIXES.some((prefix) => p === prefix || p.startsWith(`${prefix}/`)),
   );
 }
 
