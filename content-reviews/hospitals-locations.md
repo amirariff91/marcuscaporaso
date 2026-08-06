@@ -12,7 +12,7 @@ This is the first review of this page. The structure is right: separating consul
 
 2. **Blocking** — `1.  **Surgical hospitals / 2** --- St John of God Murdoch and St John of God Subiaco`, `All Obesity Surgery WA surgeries are performed at one of two accredited private hospitals in Perth: Mount Private Hospital or Waikiki Private Hospital.`, `operates at St John of God Murdoch and Subiaco` — the stats bar, the body copy and the surgeon profile each name a different pair of hospitals. A patient reading this page cannot tell where their operation would take place.
 
-   **Writer edit:** Until OSWA confirms the list, remove all hospital names and use: `Surgery takes place at an accredited private hospital in Perth. Which hospital is used depends on your surgeon's operating list and your circumstances, and is confirmed with you before the day.` Change the stat to `Hospital type / Private — accredited private hospitals`.
+   **Writer edit:** The page carries two competing blocks here — the numbered "Stats bar" list (which names St John of God) and the grid table beneath it (which names Mount Private and Waikiki). **Delete the grid table entirely and keep the stats bar**, then, until OSWA confirms the list, remove the hospital names from it and use: `Surgery takes place at an accredited private hospital in Perth. Which hospital is used depends on your surgeon's operating list and your circumstances, and is confirmed with you before the day.` Change the stat itself to `Hospital type / Private — accredited private hospitals`.
 
    **Brief-owner note (OSWA, not the writer):** This page cannot be finished without the confirmed hospital list, count and addresses. Note that Mount Private and Waikiki Private appear in no brief, on no page already built, and not on the live OSWA site — which names St John of God Murdoch and Subiaco. The writer should not be choosing between these.
 
@@ -26,7 +26,9 @@ This is the first review of this page. The structure is right: separating consul
 
 5. **Blocking** — `We also offer Telehealth consulting for regional and rural patients who can't easily get to Perth.` — Telehealth is not mentioned in the brief for this page.
 
-   **Brief-owner note (OSWA, not the writer):** Please confirm whether Telehealth consultations are offered and how they should be described. If confirmed, the writer can reinstate the reference; if not, it comes out.
+   **Writer edit:** Remove the sentence for now. Do not replace it with anything — hold until OSWA confirms, then reinstate with their approved wording.
+
+   **Brief-owner note (OSWA, not the writer):** Please confirm whether Telehealth consultations are offered and how they should be described.
 
 6. **Blocking** — `Choosing an accredited private hospital with a full theatre and ICU backup on-site means your surgery will be performed as safely as possible.` and `so an individual assessment is the best way to know where to start` — the first is an absolute safety assurance, the second an unsupported "best" claim, and both sit in the section whose job is to communicate risk honestly.
 
@@ -44,9 +46,11 @@ This is the first review of this page. The structure is right: separating consul
 
    **Writer edit:** `Tell us which location suits you, and we'll help you find a time.` Delete the alternative.
 
-10. **Should-fix** — `Physicians, ADP dietitians, exercise physiologist and nursing staff` — "ADP" should be "APD" (Accredited Practising Dietitian).
+10. **Should-fix** — `Physicians, ADP dietitians, exercise physiologist and nursing staff` — two credential problems in one line: "ADP" should be "APD" (Accredited Practising Dietitian), and "exercise physiologist" appears to be the wrong title. OSWA's live site calls this role "Exercise Therapist" and describes a Personal Fitness Coach with a BA in Human Movement Science; "exercise physiologist" is generally read as an ESSA-accredited role, so it overstates the credential.
 
-    **Writer edit:** `Physicians, APD dietitians, an exercise physiologist and nursing staff`
+    **Writer edit:** `Physicians, APD dietitians, an exercise therapist and nursing staff`
+
+    **Brief-owner note (OSWA, not the writer):** Please confirm this role's correct title and whether ESSA accreditation applies. Same question as on the Surgeons page — one answer settles both.
 
 11. **Should-fix** — `Your FRACS certified surgeon performs the keyhole (laparoscopic) procedure` — FRACS is a fellowship, not a certification.
 

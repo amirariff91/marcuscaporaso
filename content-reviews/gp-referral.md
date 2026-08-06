@@ -48,9 +48,11 @@ This is the first review of this page. It does something the other two don't —
 
    **Writer edit:** Use the CTA `Referral in hand, or just starting out — we're here to help.` and the heading `Understanding typical outcomes`. Delete the alternatives.
 
-10. **Should-fix** — `Physicians, ADP dietitians, exercise physiologist and nursing staff` — "ADP" should be "APD" (Accredited Practising Dietitian).
+10. **Should-fix** — `Physicians, ADP dietitians, exercise physiologist and nursing staff` — two credential problems in one line: "ADP" should be "APD" (Accredited Practising Dietitian), and "exercise physiologist" appears to be the wrong title. OSWA's live site calls this role "Exercise Therapist" and describes a Personal Fitness Coach with a BA in Human Movement Science; "exercise physiologist" is generally read as an ESSA-accredited role, so it overstates the credential on a page GPs rely on.
 
-    **Writer edit:** `Physicians, APD dietitians, an exercise physiologist and nursing staff`
+    **Writer edit:** `Physicians, APD dietitians, an exercise therapist and nursing staff`
+
+    **Brief-owner note (OSWA, not the writer):** Please confirm this role's title and whether ESSA accreditation applies — same question as on the Surgeons and Locations pages.
 
 11. **Should-fix** — `All bariatric procedures require lifelong post-operative vitamin and nutrient monitoring; which our team is committed to supports you with` — overstates the clinical position and the sentence is grammatically broken.
 

@@ -274,7 +274,7 @@ export default function LpMockupPage() {
         {/* module 3: proof strip */}
         <div className={styles.shell}>
           <div className={styles.proofStrip}>
-            <span>Working with Australian employers since 2005</span>
+            <span className={styles.proofSlot}>ESTABLISHED — year to confirm</span>
             <span className={styles.proofSlot}>CLIENT LOGO</span>
             <span className={styles.proofSlot}>CLIENT LOGO</span>
             <span className={styles.proofSlot}>CLIENT LOGO</span>
@@ -284,8 +284,10 @@ export default function LpMockupPage() {
             <Note>
               <b>Module 3 — blocked on gate B4.</b> No proof asset is substantiated in writing yet,
               so no client name, logo, rating or award can ship. The slots stay visibly empty rather
-              than being filled with something we cannot stand behind. The &ldquo;since 2005&rdquo;
-              line also needs confirming.
+              than being filled with something we cannot stand behind. The &ldquo;since 2005&rdquo; line that was here has been
+              removed — that year appears nowhere on the live ErgoWorks site and had no source. It
+              goes back only if the client confirms it. Note their site does carry a public Google
+              rating (63 reviews), which is a real, verifiable proof asset worth asking about.
             </Note>
           </div>
         </div>
