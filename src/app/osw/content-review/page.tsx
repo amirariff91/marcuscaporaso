@@ -7,13 +7,34 @@ import { marked } from "marked";
 const REVIEWS_DIR = path.join(process.cwd(), "content-reviews");
 
 export const metadata: Metadata = {
-  title: "OSWA Content Review — Batches 1–3",
+  title: "OSWA Content Review — Batches 1–4",
   description:
     "Editorial and compliance review of the OSWA content drafts, by batch.",
   robots: { index: false, follow: false },
 };
 
 type ReviewPage = { slug: string; title: string; verdict: string; note: string };
+
+const BATCH4_PAGES: ReviewPage[] = [
+  {
+    slug: "surgeons",
+    title: "Our Bariatric Surgeons Perth",
+    verdict: "Rework",
+    note: "Surgeon roster needs confirming; misspelled name, unsubstantiated experience claims, unwritten sections",
+  },
+  {
+    slug: "hospitals-locations",
+    title: "Hospitals & Clinic Locations",
+    verdict: "Rework",
+    note: "Three different hospital pairs in one document; wrong second clinic",
+  },
+  {
+    slug: "gp-referral",
+    title: "GP Referral Information",
+    verdict: "Rework",
+    note: "Invented fax and email, incorrect Medicare position, wrong clinic and hospitals",
+  },
+];
 
 const BATCH3_PAGES: ReviewPage[] = [
   {
@@ -140,26 +161,42 @@ function ReviewGrid({ pages }: { pages: ReviewPage[] }) {
 }
 
 export default async function ContentReviewIndexPage() {
-  const [batch1Md, batch2Md, batch3Md] = await Promise.all([
+  const [batch1Md, batch2Md, batch3Md, batch4Md] = await Promise.all([
     readFile(path.join(REVIEWS_DIR, "summary.md"), "utf8"),
     readFile(path.join(REVIEWS_DIR, "summary-batch-2.md"), "utf8"),
     readFile(path.join(REVIEWS_DIR, "summary-batch-3.md"), "utf8"),
+    readFile(path.join(REVIEWS_DIR, "summary-batch-4.md"), "utf8"),
   ]);
-  const [batch1Html, batch2Html, batch3Html] = await Promise.all([
+  const [batch1Html, batch2Html, batch3Html, batch4Html] = await Promise.all([
     marked.parse(batch1Md),
     marked.parse(batch2Md),
     marked.parse(batch3Md),
+    marked.parse(batch4Md),
   ]);
 
   return (
     <main className="min-h-screen bg-[#071112] text-white">
       <div className="mx-auto max-w-3xl px-5 py-12 md:px-8">
         <p className="mb-2 text-sm text-emerald-300">
-          OSWA · Content review · Batch 3 · 31 July 2026
+          OSWA · Content review · Batch 4 · 6 August 2026
         </p>
         <h1 className="mb-6 text-3xl font-bold text-white md:text-4xl">
-          Batch 3 review — reworked Costs &amp; Funding pages
+          Batch 4 review — Trust &amp; E-E-A-T pages
         </h1>
+
+        <ReviewGrid pages={BATCH4_PAGES} />
+
+        <article
+          className="brief-prose mb-16 max-w-3xl rounded-2xl bg-white p-8 text-slate-900 shadow-2xl md:p-10"
+          dangerouslySetInnerHTML={{ __html: batch4Html }}
+        />
+
+        <p className="mb-2 text-sm text-emerald-300">
+          OSWA · Content review · Batch 3 · 31 July 2026
+        </p>
+        <h2 className="mb-6 text-2xl font-bold text-white md:text-3xl">
+          Batch 3 review — reworked Costs &amp; Funding pages
+        </h2>
 
         <ReviewGrid pages={BATCH3_PAGES} />
 
