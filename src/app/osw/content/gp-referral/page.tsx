@@ -20,7 +20,7 @@ const pageData: OswPageData = {
     "A GP referral is the normal first step toward weight loss surgery. With one, a higher Medicare rebate applies to your first specialist appointment. Whether you are a patient wondering how to get started or a GP looking to refer someone, this page explains exactly how a referral works and what to do next.",
   stats: [
     { label: "Medicare access", value: "Rebates", note: "A GP referral gives the higher Medicare rebate on the specialist consultation" },
-    { label: "Referral validity", value: "12 months", note: "A standard GP referral to a specialist lasts 12 months" },
+    { label: "Referral validity", value: "12 months", note: "A standard referral lasts 12 months, counted from your first specialist appointment" },
     { label: "Hospitals", value: "2", note: "St John of God Murdoch & Subiaco" },
     { label: "Care team", value: "10+", note: "Surgeons, physicians and dietitians" },
   ],
@@ -31,12 +31,12 @@ const pageData: OswPageData = {
     "A referral also means your surgeon receives your relevant medical history before you meet. That lets the team understand your background, weight and health conditions in advance, so your first consultation is more useful and you are not starting from scratch. Getting a referral is routine for your GP and is the normal, expected pathway, not a hurdle.",
   ],
   comparisonNote:
-    "A useful referral should include your current weight and height (or BMI), relevant medical history, any weight-related health conditions such as type 2 diabetes, sleep apnoea or high blood pressure, current medications, and previous weight loss attempts. A standard GP referral to a specialist is valid for 12 months from the date it is written. You can self-refer and be seen; without a GP referral, a lower Medicare rebate applies to the consultation.",
+    "A useful referral should include your current weight and height (or BMI), relevant medical history, any weight-related health conditions such as type 2 diabetes, sleep apnoea or high blood pressure, current medications, and previous weight loss attempts. A standard GP referral to a specialist is valid for 12 months, and that period starts at your first appointment with the specialist rather than the day your GP writes it. You can self-refer and be seen; without a GP referral, a lower Medicare rebate applies to the consultation.",
   eligibilityBmi:
     "Bariatric surgery is generally considered for patients with a BMI of 35+ or BMI 30+ with related health conditions. These are starting points only. Your surgeon confirms what is appropriate at your consultation.",
   eligibilityNotes: [
     "For patients: ask your GP for a referral to Obesity Surgery WA. Your GP can address it to the practice and we will arrange your consultation.",
-    "A standard GP referral to a specialist is valid for 12 months from the date it is written; your GP can renew it if needed.",
+    "A standard GP referral to a specialist is valid for 12 months, counted from your first appointment with the specialist, not from the date it is written.",
     "For GPs: a referral should note current BMI, relevant medical and weight history, comorbidities, current medications, and previous weight loss attempts.",
     "Consultations are available at our Booragoon rooms (Garden City Specialist Centre, 537 Marmion Street) and in Mandurah (WA Cardiology Centre, 30 Minilya Pkwy).",
     "To arrange a referral or ask how to send one, please phone our team on (08) 9332 0066.",
@@ -122,7 +122,7 @@ const pageData: OswPageData = {
     {
       question: "How long is a GP referral valid?",
       answer:
-        "A standard referral from a GP to a specialist is valid for 12 months from the date it is written. If your referral lapses before you have been seen, your GP can simply write a new one. There is no need to worry if some time passes between getting the referral and your consultation.",
+        "A standard referral from a GP to a specialist is valid for 12 months, and that 12 months is counted from your first appointment with the specialist, not from the date your GP wrote it. So if some time passes between getting your referral and your consultation, the referral has not run out and you do not need a new one. Once you have been seen, the 12 months runs from that first appointment, and your GP can write a new one when it expires.",
     },
     {
       question: "Can I refer myself, or does it have to come from a GP?",

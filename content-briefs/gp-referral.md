@@ -54,7 +54,7 @@ Opportunity 1: Almost no Perth competitor gives the referral process a dedicated
 ### Stats bar (4 stats)
 Factual anchors, not marketing claims:
 1. **Medicare access / Rebates** — a GP referral gives the higher Medicare rebate on the specialist consultation (without one a lower rebate still applies)
-2. **Referral validity / 12 months** — a standard GP referral to a specialist is valid 12 months from the date written (general MBS knowledge, state factually)
+2. **Referral validity / 12 months** — a standard GP referral to a specialist is valid 12 months, counted from the FIRST specialist appointment, not from the date written (MBS Note GN.6.16 — the referral period commences on the date of the first service covered by the referral; state factually)
 3. **Hospitals / 2** — St John of God Murdoch and St John of God Subiaco
 4. **Care team / 10+** — surgeons, physicians and dietitians
 
@@ -75,7 +75,7 @@ Practical, dual-purpose guidance: what a good referral should contain (current w
 ### Eligibility / Who is suitable? (reframed as "what patients and GPs need to know")
 Cover, as clear bullet points:
 - For patients: ask your GP for a referral to Obesity Surgery WA; the practice arranges the consultation
-- Referral validity: 12 months from the date written; GP can renew
+- Referral validity: 12 months, counted from the first specialist appointment (NOT the date written); GP can write a new one when it expires
 - For GPs: what a referral should note (BMI, medical and weight history, comorbidities, medications, previous attempts)
 - Consulting locations: Booragoon (Garden City Specialist Centre, 537 Marmion Street) and Mandurah (WA Cardiology Centre, 30 Minilya Pkwy)
 - To arrange a referral or ask how to send one, phone (08) 9332 0066 — do NOT invent fax numbers or email addresses
@@ -134,7 +134,7 @@ Answer all of the following in plain, direct language:
 
 1. Do I need a referral for bariatric surgery? (Needed to claim Medicare rebates; can be seen without one but referral is the normal pathway)
 2. How do I get a referral for weight loss surgery? (Book a GP appointment, ask for a referral to Obesity Surgery WA; can call (08) 9332 0066 for help knowing what to ask)
-3. How long is a GP referral valid? (12 months from the date written; GP can re-issue if it lapses)
+3. How long is a GP referral valid? (12 months, counted from the first specialist appointment, not the date written — so a referral does not lapse while the patient is waiting to be seen; GP can write a new one once it expires)
 4. Can I refer myself, or does it have to come from a GP? (Can contact directly; a lower Medicare rebate applies without a GP referral)
 5. What should my GP include in the referral? (Weight/height or BMI, medical history, comorbidities, medications, previous attempts; brief referral is enough to start)
 6. I am a GP. How do I refer a patient to Obesity Surgery WA? (Address referral to the practice; patient books, or phone (08) 9332 0066 to arrange — no invented fax/email)
