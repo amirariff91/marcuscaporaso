@@ -51,3 +51,11 @@ next-env.d.ts
 
 # local MCP config (contains API tokens / SA paths)
 .mcp.json
+
+# local MCP config backups (same token/credential-path exposure as .mcp.json)
+.mcp.json.*
+.mcp.json.bak
+
+# local agent/tooling state
+.codex/
+.wrangler/
