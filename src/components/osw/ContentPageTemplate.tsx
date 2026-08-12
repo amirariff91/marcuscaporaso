@@ -192,7 +192,7 @@ export function OswContentPage({ data }: { data: OswPageData }) {
           <div className="mt-9 flex flex-wrap items-center gap-5 text-xs text-slate-500">
             <span className="flex items-center gap-2">
               <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
-              FRACS fellowship-trained bariatric surgeons
+              FRACS-qualified bariatric surgeons
             </span>
             <span className="flex items-center gap-2">
               <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />

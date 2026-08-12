@@ -144,7 +144,7 @@ const pageData: OswPageData = {
     {
       question: "Where is the surgery performed, and do I need a GP referral?",
       answer:
-        "Hiatus hernia repairs are performed at St John of God Murdoch or St John of God Subiaco, both well-equipped private hospitals in Perth. You will need a referral from your GP, which allows you to claim Medicare rebates on your consultations and is the starting point for seeing one of our surgeons. If you are unsure how to arrange the referral, our team can talk you through it when you call.",
+        "Hiatus hernia repairs are performed at St John of God Murdoch or St John of God Subiaco, both well-equipped private hospitals in Perth. You will usually start with a referral from your GP, which gives you the higher referred Medicare rebate on your consultations — a lower rebate applies without one — and is the starting point for seeing one of our surgeons. If you are unsure how to arrange the referral, our team can talk you through it when you call.",
     },
   ],
   conversionHeadline:

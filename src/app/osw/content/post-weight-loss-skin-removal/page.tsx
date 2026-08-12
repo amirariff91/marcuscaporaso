@@ -47,7 +47,7 @@ const pageData: OswPageData = {
     {
       title: "GP Referral",
       description:
-        "Ask your GP for a referral to our practice, ideally noting the skin problems you have been experiencing such as recurrent infections or rashes. A referral allows you to claim Medicare rebates on your consultations and is the first step to being assessed.",
+        "Ask your GP for a referral to our practice, ideally noting the skin problems you have been experiencing such as recurrent infections or rashes. A referral gives you the higher referred Medicare rebate on your consultations — a lower rebate applies without one — and is the first step to being assessed.",
     },
     {
       title: "Medical Assessment",
@@ -147,7 +147,7 @@ const pageData: OswPageData = {
     {
       question: "Where is the procedure performed, and do I need a GP referral?",
       answer:
-        "The procedure is performed at St John of God Murdoch or St John of God Subiaco, both well-equipped private hospitals. You will need a referral from your GP, ideally noting the skin problems you have experienced, which allows you to claim Medicare rebates on your consultations and is the starting point for being assessed. If you are unsure how to arrange the referral, our team can talk you through it.",
+        "The procedure is performed at St John of God Murdoch or St John of God Subiaco, both well-equipped private hospitals. You will need a referral from your GP, ideally noting the skin problems you have experienced, which gives you the higher referred Medicare rebate on your consultations — a lower rebate applies without one — and is the starting point for being assessed. If you are unsure how to arrange the referral, our team can talk you through it.",
     },
   ],
   conversionHeadline:

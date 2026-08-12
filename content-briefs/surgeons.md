@@ -87,7 +87,7 @@ Frame this as a straightforward clinical guide. Cover:
 - Patients see a FRACS-credentialled surgeon for assessment and for the operation itself (not a trainee)
 - Both surgeons operate at accredited private hospitals
 - Consulting locations: Booragoon (Garden City Specialist Centre, 537 Marmion Street) and Mandurah (WA Cardiology Centre, 30 Minilya Pkwy)
-- A GP referral is the normal first step and gives access to Medicare rebates
+- A GP referral is the normal first step and gives the higher referred Medicare rebate on the consultation (a lower rebate applies without one)
 
 Do not promise suitability. The surgeon confirms appropriateness at consultation.
 

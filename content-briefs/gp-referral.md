@@ -132,7 +132,7 @@ Warm, low-pressure, action-oriented, and inclusive of both states: the reader wh
 ### FAQs
 Answer all of the following in plain, direct language:
 
-1. Do I need a referral for bariatric surgery? (Needed to claim Medicare rebates; can be seen without one but referral is the normal pathway)
+1. Do I need a referral for bariatric surgery? (Gives the higher referred Medicare rebate; can be seen without one, and a lower rebate still applies, but referral is the normal pathway)
 2. How do I get a referral for weight loss surgery? (Book a GP appointment, ask for a referral to Obesity Surgery WA; can call (08) 9332 0066 for help knowing what to ask)
 3. How long is a GP referral valid? (12 months, counted from the first specialist appointment, not the date written — so a referral does not lapse while the patient is waiting to be seen; GP can write a new one once it expires)
 4. Can I refer myself, or does it have to come from a GP? (Can contact directly; a lower Medicare rebate applies without a GP referral)

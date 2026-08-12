@@ -33,7 +33,7 @@ const pageData: OswPageData = {
   comparisonNote:
     "When you are weighing up where to have surgery, the things that matter most are whether it is an accredited private hospital, whether there is a full operating theatre and intensive-care backup on the same site, and how easily you can get to your follow-up appointments. Murdoch and Subiaco are both accredited private hospitals with that backup; consulting in Booragoon or Mandurah keeps your routine visits close to home.",
   eligibilityNotes: [
-    "A GP referral is the usual first step and gives you access to Medicare rebates before you meet the team.",
+    "A GP referral is the usual first step and gives you the higher referred Medicare rebate on your consultation before you meet the team.",
     "Consultations are held in Booragoon (Garden City Specialist Centre, 537 Marmion Street) and Mandurah (WA Cardiology Centre, 30 Minilya Pkwy), not at the hospital.",
     "Surgery and your in-hospital recovery take place at St John of God Murdoch or St John of God Subiaco, both accredited private hospitals.",
     "Both hospitals are private, so appropriate private hospital cover (or a self-funded arrangement) is relevant; our team explains your options before anything is booked.",
@@ -43,7 +43,7 @@ const pageData: OswPageData = {
     {
       title: "GP Referral",
       description:
-        "Ask your GP for a referral to Obesity Surgery WA. This gives you access to Medicare rebates and lets us review your history before we meet.",
+        "Ask your GP for a referral to Obesity Surgery WA. This gives you the higher referred Medicare rebate on your consultation and lets us review your history before we meet.",
     },
     {
       title: "Orientation Consultation",
@@ -150,7 +150,7 @@ const pageData: OswPageData = {
     {
       question: "Do I need a referral before I come to either location?",
       answer:
-        "A GP referral is the usual first step. It gives you access to Medicare rebates and lets us review your history before your first appointment. Once you have your referral, our team books you into whichever consulting location, Booragoon or Mandurah, suits you best.",
+        "A GP referral is the usual first step. It gives you the higher referred Medicare rebate on your consultation and lets us review your history before your first appointment. Once you have your referral, our team books you into whichever consulting location, Booragoon or Mandurah, suits you best.",
     },
   ],
   conversionHeadline:

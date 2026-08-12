@@ -44,7 +44,7 @@ const pageData: OswPageData = {
     {
       title: "GP Referral",
       description:
-        "Ask your GP for a referral to Obesity Surgery WA. This gives you access to Medicare rebates and lets us review your history before we meet.",
+        "Ask your GP for a referral to Obesity Surgery WA. This gives you the higher referred Medicare rebate on your consultation and lets us review your history before we meet.",
     },
     {
       title: "Orientation Consultation",

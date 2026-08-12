@@ -140,7 +140,7 @@ const pageData: OswPageData = {
     {
       question: "Do I need a GP referral?",
       answer:
-        "Yes. A referral from your GP allows you to claim Medicare rebates on your consultations and is the starting point for seeing one of our surgeons. If you are unsure how to arrange this, our team can talk you through it when you call.",
+        "Yes. A referral from your GP gives you the higher referred Medicare rebate on your consultations — a lower rebate applies without one — and is the starting point for seeing one of our surgeons. If you are unsure how to arrange this, our team can talk you through it when you call.",
     },
     {
       question: "Where is the surgery performed?",

@@ -39,13 +39,13 @@ const pageData: OswPageData = {
     "Weight-related conditions such as type 2 diabetes, high blood pressure, obstructive sleep apnoea, severe reflux, PCOS or fatty liver disease can strengthen the case for surgery.",
     "A long history of diets that did not hold is expected, not a mark against you. It often helps confirm that surgery may be appropriate.",
     "Mental health history is part of the assessment and is never on its own a reason to be turned away. The review is there to set you up for success.",
-    "A GP referral is the usual first step and gives you access to Medicare rebates, though you can also contact us directly to get started.",
+    "A GP referral is the usual first step and gives you the higher referred Medicare rebate on your consultation, though you can also contact us directly to get started.",
   ],
   howItWorksSteps: [
     {
       title: "GP Referral",
       description:
-        "Ask your GP for a referral to Obesity Surgery WA. This gives you access to Medicare rebates and lets us review your history before we meet. You can also contact us directly if you would rather start that way.",
+        "Ask your GP for a referral to Obesity Surgery WA. This gives you the higher referred Medicare rebate on your consultation and lets us review your history before we meet. You can also contact us directly if you would rather start that way.",
     },
     {
       title: "Orientation Consultation",

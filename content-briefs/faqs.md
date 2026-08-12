@@ -92,7 +92,7 @@ Standard BMI-threshold-as-starting-point framing:
 - Weight-related conditions that strengthen the case: type 2 diabetes, high blood pressure, obstructive sleep apnoea, severe reflux, PCOS, fatty liver disease.
 - A history of diets that did not hold is expected, not a mark against the reader.
 - Mental health history is part of the assessment and never on its own a reason to be turned away.
-- GP referral is the usual first step and gives access to Medicare rebates; direct contact also possible.
+- GP referral is the usual first step and gives the higher referred Medicare rebate on the consultation; direct contact also possible (a lower rebate applies without one).
 
 ### How it works (6 steps)
 The established OSWA journey. Two to three sentences each:
