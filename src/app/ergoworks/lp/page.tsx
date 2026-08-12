@@ -51,11 +51,26 @@ export default async function SplitLandingPage({
   searchParams: SearchParams;
 }) {
   const sp = await searchParams;
-  const seed = firstParam(sp.id);
-  const hasSeed = seed !== undefined;
   const heroMode: HeroMode = firstParam(sp.hero) === "trigger" ? "trigger" : "promise";
   const paidPath = sp.gclid !== undefined || sp.utm_source !== undefined;
-  const selected = hasSeed ? variantFromSeed(seed) : { variant: "biosymm_led" as const, bitSet: false };
+
+  /*
+   * Allocate on the click identifier, not just an explicit ?id=. Hashing only ?id=
+   * meant every real visit — including the paid GCLID traffic this test exists to
+   * split — fell through to the Biosymm default, i.e. a 100/0 allocation that looks
+   * like a working experiment. Production should hash the GCLID; ?id= stays so the
+   * mechanic can be demonstrated with an arbitrary seed in a review session.
+   */
+  const seed =
+    firstParam(sp.id) ??
+    firstParam(sp.gclid) ??
+    firstParam(sp.gbraid) ??
+    firstParam(sp.wbraid) ??
+    firstParam(sp.msclkid);
+  const hasSeed = seed !== undefined;
+  const selected = hasSeed
+    ? variantFromSeed(seed)
+    : { variant: "biosymm_led" as const, bitSet: false };
   const side =
     selected.variant === "biosymm_led"
       ? SPLIT_DEMO_COPY.biosymmSide

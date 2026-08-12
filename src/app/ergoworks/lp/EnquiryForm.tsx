@@ -95,13 +95,25 @@ export default function EnquiryForm({ variant }: EnquiryFormProps) {
     if (validateVisibleStep(1)) setStep(2);
   }
 
-  function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
-    event.preventDefault();
+  function handleSubmit(event?: React.FormEvent<HTMLFormElement>) {
+    event?.preventDefault();
     if (step === 1) {
       handleContinue();
       return;
     }
     if (!validateVisibleStep(2)) return;
+
+    // An individual must never produce a lead event. The CSS fork hides this form
+    // for them, but :has() is unavailable in older in-app webviews, where the
+    // employer form stays visible — so the block is enforced here too.
+    if (formRef.current?.ownerDocument.getElementById("flow-me") instanceof
+      HTMLInputElement &&
+      (formRef.current.ownerDocument.getElementById("flow-me") as HTMLInputElement)
+        .checked) {
+      setError(FORM_COPY.individualBlocked);
+      return;
+    }
+
     setSubmitted(true);
     setCallActivated(false);
     setError("");
@@ -365,7 +377,15 @@ export default function EnquiryForm({ variant }: EnquiryFormProps) {
           <p className={styles.priorityLine}>{COMPETING_PRIORITIES_LINE}</p>
 
           <div className={styles.btnRow}>
-            <button type="submit" className={styles.btn}>
+            {/*
+              type="button", NOT type="submit". Without a submit control the browser
+              performs no implicit submission, so before React hydrates (or if the
+              island fails to load) pressing Enter cannot fire a native GET that puts
+              the organisation name and Sydney locations into the URL query string,
+              where they would land in browser history, server and CDN logs. The
+              form has no action/method, so that navigation was previously possible.
+            */}
+            <button type="button" onClick={() => handleSubmit()} className={styles.btn}>
               {FORM_COPY.submit}
             </button>
             <button

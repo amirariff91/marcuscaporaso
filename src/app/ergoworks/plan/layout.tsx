@@ -15,7 +15,16 @@ const SECTIONS = [
 ] as const;
 
 export default function PlanLayout({ children }: { children: React.ReactNode }) {
-  const pathname = usePathname();
+  /*
+   * On ergoworks.marcuscaporaso.com the proxy rewrites `/plan/...` to
+   * `/ergoworks/plan/...`, so the browser's path — which is what usePathname()
+   * reports — has no `/ergoworks` prefix and matched none of these entries,
+   * silently dropping the active crumb and aria-current. Normalise both forms.
+   */
+  const rawPathname = usePathname();
+  const pathname = rawPathname.startsWith("/ergoworks")
+    ? rawPathname
+    : `/ergoworks${rawPathname}`;
   return (
     <>
       <div className={styles.shell}>

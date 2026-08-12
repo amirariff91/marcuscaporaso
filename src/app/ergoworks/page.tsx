@@ -21,8 +21,25 @@ import { APEX_URL } from "@/lib/site";
 export const metadata: Metadata = {
   title: "ErgoWorks Consulting — Private engagement",
   description: "A private consulting engagement for ErgoWorks Consulting stakeholders.",
-  alternates: { canonical: "https://ergoworks.marcuscaporaso.com/ergoworks" },
+  alternates: { canonical: "https://ergoworks.marcuscaporaso.com/" },
   robots: { index: false, follow: false },
+  /*
+   * Both blocks are required. The root layout pins OpenGraph and Twitter to
+   * GrowthOS, so without these an ErgoWorks link shared into WhatsApp or Slack
+   * unfurls as a GrowthOS page.
+   */
+  openGraph: {
+    type: "website",
+    url: "https://ergoworks.marcuscaporaso.com/",
+    title: "ErgoWorks Consulting — Private engagement",
+    description: "A private consulting engagement for ErgoWorks Consulting stakeholders.",
+    siteName: "ErgoWorks Consulting",
+  },
+  twitter: {
+    card: "summary",
+    title: "ErgoWorks Consulting — Private engagement",
+    description: "A private consulting engagement for ErgoWorks Consulting stakeholders.",
+  },
 };
 
 type Row = {

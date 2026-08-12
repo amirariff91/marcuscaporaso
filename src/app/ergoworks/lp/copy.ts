@@ -207,15 +207,21 @@ export const HOW_IT_WORKS = [
     heading: "Tell us what prompted it",
     body: "Choose the workplace trigger that best describes the request.",
   },
+  /*
+   * Discovery precedes the written scope. Rev B 3.5 sequences this as contact →
+   * discovery → written scope → conditional proposal → follow-up; the earlier order
+   * promised a scope in writing before anyone had asked what the work involved,
+   * and then step 4 restated the correct sequence, contradicting itself.
+   */
   {
     number: "2",
-    heading: "We scope it in writing",
-    body: PENDING_APPROVAL.writtenScopePromise,
+    heading: "We talk through the detail",
+    body: "Discovery clarifies the people, locations and practical scope involved.",
   },
   {
     number: "3",
-    heading: "We talk through the detail",
-    body: "Discovery clarifies the people, locations and practical scope involved.",
+    heading: "We scope it in writing",
+    body: PENDING_APPROVAL.writtenScopePromise,
   },
   {
     number: "4",
@@ -231,15 +237,23 @@ export const HOW_IT_WORKS = [
  * here, and never the internal account-value ladder.
  */
 export const ECOSYSTEM_ITEMS = [
+  /*
+   * Softened from Oz's verbatim wording on two points, because the page is public
+   * and the ad-copy addendum forbids injury and outcome claims: "before discomfort
+   * becomes injury" asserted a prevented outcome, and ErgoAssess "correctly" +
+   * "automatically identifying those who require specialist support" claimed a
+   * clinical determination. The service description is unchanged. Flag to Marcus —
+   * if the client wants his exact phrasing back, that is a claims decision.
+   */
   {
     name: "Floor walking",
     body:
-      "Our consultant walks through your workplace, proactively identifying workstation risks and making immediate adjustments before discomfort becomes injury.",
+      "Our consultant walks through your workplace, identifying workstation risks and making immediate adjustments on the spot.",
   },
   {
     name: "ErgoAssess",
     body:
-      "An online ergonomic self-assessment that allows employees to correctly set up their workstation while automatically identifying those who require specialist support.",
+      "An online ergonomic self-assessment that guides employees through setting up their own workstation, and flags those the team may want to follow up with directly.",
   },
   {
     name: "Train-the-trainer",
@@ -294,6 +308,8 @@ export const FORM_COPY = {
   back: "Back",
   submit: CTA,
   validation: "Please complete the fields marked below.",
+  individualBlocked:
+    "This form is for employer enquiries. Choose “For my team” above, or contact the clinic directly for an individual assessment.",
   requiredNote: "Fields marked * are required.",
   whatNext: "What happens next",
   submitted:

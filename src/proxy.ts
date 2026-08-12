@@ -89,6 +89,19 @@ function isGatedPath(pathname: string): boolean {
   );
 }
 
+// Files served straight out of /public. The matcher only excludes _next/static and
+// favicon.ico, so without this every subdomain rewrites `/logos/x.png` to
+// `/<root>/logos/x.png` and 404s its own images — biosymm and osw have this today,
+// it simply went unnoticed until a page depended on a public asset.
+// Deliberately NOT listing .pdf: /ergoworks/plan/pack.pdf must keep going through
+// the gate rather than being treated as a public file.
+const PUBLIC_ASSET_EXT =
+  /\.(png|jpe?g|gif|svg|webp|avif|ico|css|js|mjs|map|txt|xml|json|woff2?|ttf|otf|eot|mp4|webm)$/i;
+
+function isPublicAsset(pathname: string): boolean {
+  return PUBLIC_ASSET_EXT.test(pathname);
+}
+
 // Correct UTF-8 decode of a base64 Basic-auth token (atob yields raw bytes).
 function decodeBasic(token: string): string | null {
   try {
@@ -128,7 +141,8 @@ export function proxy(request: NextRequest) {
   // incoming pathname would let `ergoworks.marcuscaporaso.com/plan` walk straight
   // into the private pack unauthenticated — and skip the retired-URL redirects and
   // the private cache headers with it. On the apex, resolved === incoming.
-  const needsRewrite = Boolean(root) && !pathname.startsWith(root!);
+  const needsRewrite =
+    Boolean(root) && !pathname.startsWith(root!) && !isPublicAsset(pathname);
   const resolvedPath = needsRewrite
     ? `${root}${pathname === "/" ? "" : pathname}`
     : pathname;

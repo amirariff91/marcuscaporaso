@@ -6,14 +6,23 @@ export const metadata: Metadata = {
   description: "Workplace ergonomic assessments for employer teams in Sydney.",
   robots: { index: false, follow: false },
   alternates: {
-    canonical: "https://ergoworks.marcuscaporaso.com/ergoworks/lp/ergoworks",
+    canonical: "https://ergoworks.marcuscaporaso.com/lp/ergoworks",
   },
   openGraph: {
     type: "website",
-    url: "https://ergoworks.marcuscaporaso.com/ergoworks/lp/ergoworks",
+    url: "https://ergoworks.marcuscaporaso.com/lp/ergoworks",
     title: "ErgoWorks | Workplace ergonomics in Sydney",
     description: "Workplace ergonomic assessments for employer teams in Sydney.",
     siteName: "ErgoWorks",
+  },
+  /*
+   * Set explicitly. Without it the page inherits the root layout's GrowthOS
+   * Twitter card, so a shared client link previews someone else's brand.
+   */
+  twitter: {
+    card: "summary_large_image",
+    title: "ErgoWorks | Workplace ergonomics in Sydney",
+    description: "Workplace ergonomic assessments for employer teams in Sydney.",
   },
 };
 
