@@ -75,7 +75,7 @@ const pageData: OswPageData = {
     "A clear, personalised answer about whether surgery is right for you, rather than guessing or comparing yourself to others online.",
     "A pathway that may include medication and dietitian support if surgery is not the best starting point, so you are never left without options.",
     "For many people, surgery can support meaningful improvement in weight-related conditions such as type 2 diabetes, sleep apnoea and high blood pressure, though individual results vary.",
-    "Access to FRACS-certified bariatric surgeons operating at St John of God Murdoch and Subiaco.",
+    "Access to FRACS fellowship-trained bariatric surgeons operating at St John of God Murdoch and Subiaco.",
     "A team that takes your past attempts seriously and builds a plan around your life, not a one-size-fits-all template.",
   ],
 

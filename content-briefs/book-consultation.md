@@ -98,7 +98,7 @@ Use these values exactly. The phone number is a key conversion element — make 
 - **Para 2:** Explain what the reader gets from the appointment: time to ask anything, explanation of different procedures, walkthrough of what recovery looks like, open discussion of costs and funding, and a chance to meet the team who would support them — before they make any decision at all.
 - **Para 3:** Reinforce that booking is not a commitment to surgery. Many people attend simply to learn more, and leave with the information they needed regardless of whether surgery turns out to be the right path. The reader stays in control throughout.
 
-The comparison note to weave in naturally: A GP referral is recommended but not required to book. A referral may unlock a Medicare rebate on the consultation and keeps the GP involved in care. If the reader does not have one yet, they can still book — the team can talk them through it at the appointment.
+The comparison note to weave in naturally: A GP referral is recommended but not required to book. A referral gives the higher Medicare rebate on the consultation — without one a lower rebate still applies — and keeps the GP involved in care. If the reader does not have one yet, they can still book — the team can talk them through it at the appointment.
 
 ---
 
@@ -143,7 +143,7 @@ Write each benefit as a practical, honest statement. Cover:
 
 - **Intro paragraph tone:** Reassuring — nothing is required to attend, and the reader will not be turned away. But a few things make the consultation more useful by allowing the team to give tailored rather than general information.
 - **Items to address (framed as helpful, not compulsory):**
-  - GP referral letter (recommended, not required — may unlock a Medicare rebate)
+  - GP referral letter (recommended, not required — gives the higher referred Medicare rebate; a lower rebate applies without one)
   - List of current medications including doses
   - Any prior test results or relevant medical reports already on hand (blood tests, scans)
   - A written list of their own questions (easy to forget in the moment)

@@ -83,7 +83,7 @@ A short, practical paragraph for readers weighing where to have surgery. Tell th
 
 ### Eligibility / What to know before your visit
 Frame as "what to know before your visit", not BMI eligibility (omit the BMI callout for this page). Cover:
-- A GP referral is the usual first step and unlocks Medicare rebates
+- A GP referral is the usual first step, and gives the higher (referred) Medicare rebate on the consultation; without one a lower rebate still applies
 - Consultations are in Booragoon and Mandurah, not at the hospital
 - Surgery and in-hospital recovery are at St John of God Murdoch or Subiaco (accredited private hospitals)
 - Both hospitals are private, so appropriate private hospital cover (or self-funding) is relevant; the team explains options before booking
@@ -149,7 +149,7 @@ The page should answer all of the following in plain, direct language:
 6. Is parking available at the consulting rooms and hospitals? (On-site patient parking at both hospital campuses and the specialist centres; mention access needs when booking)
 7. Are these public or private hospitals? (Both private and accredited; private cover or self-funding relevant; most procedures attract a Medicare item number)
 8. How do I get to the Booragoon rooms? (Garden City Specialist Centre, 537 Marmion Street; team confirms directions; one number for all locations)
-9. Do I need a referral before I come to either location? (GP referral is the usual first step; unlocks Medicare rebates; then booked into preferred location)
+9. Do I need a referral before I come to either location? (GP referral is the usual first step; gives the higher referred Medicare rebate, and a lower rebate applies without one; then booked into preferred location)
 
 ---
 

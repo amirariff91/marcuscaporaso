@@ -104,7 +104,7 @@ Each bullet should convey one of these ideas — write them as patient-facing ou
 1. A clear, personalised answer about whether surgery is right for them — ends the guessing
 2. Alternative pathways may be discussed if surgery is not the right starting point (non-surgical medical weight management, dietitian support) — do not imply that every reader is suitable for a particular pathway
 3. For many patients, surgery supports meaningful improvement in weight-related conditions like type 2 diabetes and sleep apnoea — but individual results vary, use measured language
-4. Access to FRACS-certified surgeons at SJOG Murdoch and Subiaco (hospital identity to be verified — open question: drafts name different facilities)
+4. Access to FRACS fellowship-trained surgeons at SJOG Murdoch and Subiaco (hospital identity to be verified — open question: drafts name different facilities)
 5. A team that takes prior attempts seriously and builds a plan around the individual — not a one-size-fits-all template
 
 ### Risks — honest section
