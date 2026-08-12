@@ -1,5 +1,7 @@
 # Hospitals & Clinic Locations — first-round review
 
+> **Correction — 12 August 2026.** After this review was written, OSWA (via Marcus, 10 Aug) confirmed the hospitals as **Mount Private Hospital and Waikiki Private Hospital** and the clinics as **Booragoon and Subiaco/West Leederville** — exactly what this draft's body copy said. Findings 2–4 below are therefore **amended or withdrawn**: the draft's hospital and clinic facts were right, and the contradiction sits in the stats bar / surgeon profile (which repeat the live site's stale SJOG + Mandurah details), not in the writer's copy. The Subiaco/West Leederville clinic (Surgeons House, 162 Cambridge Street) also appears on OSWA's live contact page, so "appears in no OSWA source" was wrong. The remaining findings stand. Final addresses/NAP still await OSWA's written confirmation.
+
 **Verdict: Rework** · 9 blocking · 8 should-fix · 1 minor
 
 This is the first review of this page. The structure is right: separating consulting rooms from hospitals is exactly the distinction patients need, and the outcomes paragraph leads with the caveat as it should. The problem is that the page gives **three different answers to "where does surgery happen"** within a single document, and names the wrong second consulting clinic. Those have to be settled before anything else matters. The BMI framing is correct and is not a finding.
@@ -12,17 +14,15 @@ This is the first review of this page. The structure is right: separating consul
 
 2. **Blocking** — `1.  **Surgical hospitals / 2** --- St John of God Murdoch and St John of God Subiaco`, `All Obesity Surgery WA surgeries are performed at one of two accredited private hospitals in Perth: Mount Private Hospital or Waikiki Private Hospital.`, `operates at St John of God Murdoch and Subiaco` — the stats bar, the body copy and the surgeon profile each name a different pair of hospitals. A patient reading this page cannot tell where their operation would take place.
 
-   **Writer edit:** The page carries two competing blocks here — the numbered "Stats bar" list (which names St John of God) and the grid table beneath it (which names Mount Private and Waikiki). **Delete the grid table entirely and keep the stats bar**, then, until OSWA confirms the list, remove the hospital names from it and use: `Surgery takes place at an accredited private hospital in Perth. Which hospital is used depends on your surgeon's operating list and your circumstances, and is confirmed with you before the day.` Change the stat itself to `Hospital type / Private — accredited private hospitals`.
+   **Writer edit (amended 12 Aug):** Keep the body copy's hospitals — OSWA has confirmed **Mount Private and Waikiki Private** are correct. Fix the two blocks that disagree with it: the stats bar and the surgeon profile should both say Mount Private + Waikiki instead of St John of God. The internal-contradiction finding stands; the resolution direction in the original edit (delete Mount/Waikiki, keep SJOG) was wrong and is withdrawn.
 
-   **Brief-owner note (OSWA, not the writer):** This page cannot be finished without the confirmed hospital list, count and addresses. Note that Mount Private and Waikiki Private appear in no brief, on no page already built, and not on the live OSWA site — which names St John of God Murdoch and Subiaco. The writer should not be choosing between these.
+   **Brief-owner note (OSWA, not the writer):** Confirmed 10 Aug by Marcus. Still needed in writing: the hospitals' final addresses/links and facility claims (theatres, ICU backup), and an update to the live OSWA site, which still names St John of God.
 
 3. **Blocking** — `Obesity Surgery WA performs surgeries at Mount Private Hospital (150 Mounts Bay Road, Perth WA 6000) and Waikiki Private Hospital (221 Willmott Drive, Waikiki WA 6169). Both are accredited private hospitals equipped with full operating theatres, recovery wards, and intensive-care backup on site.` — specific addresses, links and facility claims are attached to hospitals that are not confirmed as OSWA's.
 
-   **Writer edit:** Remove the addresses, the links and the theatre/ICU claim along with the names, per finding 2. Reinstate them only once OSWA confirms both the hospitals and their facilities.
+   **Writer edit (amended 12 Aug):** The hospital names stay (confirmed 10 Aug). Keep the addresses and facility claims flagged for OSWA's written confirmation before publication — verify, don't delete.
 
-4. **Blocking** — `Pre- and post-op consultations take place at either one of our two clinics, in Booragoon or Subiaco/West Leederville.`, `with a second location at Subiaco/West Leederville (Surgeons House, 162 Cambridge Street)`, `Consultations are held at Booragoon (Garden City Specialist Centre, 537 Marmion Street, Booragoon) or Subiaco/West Leederville (Surgeons House, 162 Cambridge Street, West Leederville).` — the second consulting clinic is Mandurah. OSWA confirmed this on 20 July and it matches the live site. The Surgeons House address appears in no OSWA source. "Subiaco" is the name of a *hospital*, which is the likely source of the confusion.
-
-   **Writer edit:** Everywhere a consulting location appears: `Booragoon (Garden City Specialist Centre, 537 Marmion Street) and Mandurah (WA Cardiology Centre, 30 Minilya Parkway, Greenfields 6210).` Note the stats bar already has this right — `Consulting locations / Perth + Mandurah` — so the rest of the page should follow it.
+4. **WITHDRAWN (12 Aug)** — this finding said the second consulting clinic was Mandurah and that Surgeons House "appears in no OSWA source". Both parts were wrong: OSWA confirmed the clinics as **Booragoon and Subiaco/West Leederville** on 10 Aug, and Surgeons House (162 Cambridge Street, West Leederville) is listed on OSWA's own live contact page. The draft's clinic copy stands as written. Open question for OSWA: whether Mandurah is retired as a consulting location (it was confirmed on 20 July and remains on the live site) — the stats bar's `Perth + Mandurah` needs that answer.
 
 5. **Blocking** — `We also offer Telehealth consulting for regional and rural patients who can't easily get to Perth.` — Telehealth is not mentioned in the brief for this page.
 
@@ -46,11 +46,11 @@ This is the first review of this page. The structure is right: separating consul
 
    **Writer edit:** `Tell us which location suits you, and we'll help you find a time.` Delete the alternative.
 
-10. **Should-fix** — `Physicians, ADP dietitians, exercise physiologist and nursing staff` — two credential problems in one line: "ADP" should be "APD" (Accredited Practising Dietitian), and "exercise physiologist" appears to be the wrong title. OSWA's live site calls this role "Exercise Therapist" and describes a Personal Fitness Coach with a BA in Human Movement Science; "exercise physiologist" is generally read as an ESSA-accredited role, so it overstates the credential.
+10. **Should-fix (amended 12 Aug)** — `Physicians, ADP dietitians, exercise physiologist and nursing staff` — "ADP" should be "APD" (Accredited Practising Dietitian); that part stands. On "exercise physiologist": the writer reports Wendy uses that title, and the earlier claim that the live site says "Exercise Therapist" could not be re-verified — so this is an open credential question, not a writer error. In Australia "exercise physiologist" reads as ESSA-accredited (AEP), so it should be confirmed before it appears on credibility pages.
 
-    **Writer edit:** `Physicians, APD dietitians, an exercise therapist and nursing staff`
+    **Writer edit:** `Physicians, APD dietitians` fix only; leave the exercise role title as drafted pending confirmation.
 
-    **Brief-owner note (OSWA, not the writer):** Please confirm this role's correct title and whether ESSA accreditation applies. Same question as on the Surgeons page — one answer settles both.
+    **Brief-owner note (OSWA, not the writer):** Please confirm the role's correct title and whether ESSA/AEP accreditation applies. Same question as on the Surgeons page — one answer settles both.
 
 11. **Should-fix** — `Your FRACS certified surgeon performs the keyhole (laparoscopic) procedure` — FRACS is a fellowship, not a certification.
 
@@ -66,7 +66,7 @@ This is the first review of this page. The structure is right: separating consul
 
 14. **Should-fix** — `**3. Can I be seen at a location other than the hospital?**` — the FAQ set never answers the question this page exists to answer for southern patients, which is whether they can avoid travelling to Perth.
 
-    **Writer edit:** Replace with: `**3. Can I be seen in Mandurah instead of travelling to Perth?** Yes. Consultations, pre-operative assessments and follow-up appointments can all take place at our Mandurah rooms. Only your surgery and hospital recovery happen elsewhere.`
+    **Writer edit (amended 12 Aug):** Hold this one until OSWA confirms whether Mandurah remains a consulting location. If it does, add: `**3. Can I be seen in Mandurah instead of travelling to Perth?** Yes. Consultations, pre-operative assessments and follow-up appointments can all take place at our Mandurah rooms. Only your surgery and hospital recovery happen elsewhere.` If Mandurah is retired, the southern-patients question falls away.
 
 15. **Should-fix** — `This means appropriate private hospital cover (or self-funding) is required.` — categorical, and it blurs Medicare rebates with hospital cover.
 

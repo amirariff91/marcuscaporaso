@@ -1,8 +1,10 @@
 # GP Referral Information — first-round review
 
+> **Correction — 12 August 2026.** Three findings below are amended or withdrawn. **Finding 2 (fax/email) is withdrawn**: fax 08 9312 1619 is published on OSWA's live doctors page as the referral route and reception@oswa.com.au on the live contact page — the writer took them from the site, and it's the *brief's* phone-only instruction that conflicts with OSWA's own published details. **Finding 4 (clinics) is withdrawn**: OSWA confirmed Booragoon + Subiaco/West Leederville on 10 Aug. **Finding 5 (hospitals) is amended**: Mount Private + Waikiki are confirmed correct; the internal contradiction stands but resolves the other way (the surgeon profile's St John of God line is the stale one). The Medicare correction (finding 3) stands — official MBS guidance supports the lower-unreferred-rate position — with final wording to be confirmed by OSWA.
+
 **Verdict: Rework** · 9 blocking · 7 should-fix · 1 minor
 
-This is the first review of this page. It does something the other two don't — it speaks to referring GPs as well as patients, and the "being honest about what a referral does and does not mean" section is a genuinely good instinct. Three things hold it back: the page publishes a fax number and email address that the brief explicitly said not to invent, it gets the Medicare position wrong in a way that could mislead patients about money, and it repeats the wrong clinic and hospital details found on the other two pages. The BMI starting point is correct and is not a finding.
+This is the first review of this page. It does something the other two don't — it speaks to referring GPs as well as patients, and the "being honest about what a referral does and does not mean" section is a genuinely good instinct. The main thing holding it back is the Medicare position, which is wrong in a way that could mislead patients about money. (This review originally also faulted the fax/email and the clinic and hospital details — those findings are withdrawn or amended per the 12 Aug correction above; the draft had them right.) The BMI starting point is correct and is not a finding.
 
 **Findings**
 
@@ -10,11 +12,9 @@ This is the first review of this page. It does something the other two don't —
 
    **Writer edit:** Delete everything above the H1. The page starts at "GP Referrals for Bariatric Surgery in Perth".
 
-2. **Blocking** — `fax 08 9312 1619, or email reception@oswa.com.au`, `Referrals can also be faxed to 08 9312 1619 or emailed to reception@oswa.com.au` — the brief for this page says, twice, not to invent fax numbers or email addresses and to direct GPs to phone (08) 9332 0066. These contact details are published here as fact, on the page GPs would rely on to send patient information.
+2. **WITHDRAWN (12 Aug)** — this finding called the fax and email invented. They are not: fax 08 9312 1619 is published on OSWA's live doctors page as the way GPs send referrals, and reception@oswa.com.au is on the live contact page. The draft's contact details stand. The brief's "phone-only, do not invent fax/email" instruction conflicts with OSWA's own site and will be corrected.
 
-   **Writer edit:** Remove the fax number and email address entirely. In the contact bullet: `**To arrange or send a referral:** phone (08) 9332 0066.` In FAQ 6: `Address your referral to Obesity Surgery WA. Your patient can call (08) 9332 0066 to arrange the next step, or you can call us directly to discuss.`
-
-   **Brief-owner note (OSWA, not the writer):** If OSWA does have a referral fax line or referrals inbox, please supply the correct details and we will add them. Nothing should be published until then.
+   **Brief-owner note (OSWA, not the writer):** Please confirm the fax line and referrals inbox are current before publication — the details are live on your site today, so this is a currency check, not a sourcing problem.
 
 3. **Blocking** — `A valid referral is what allows a patient to claim Medicare rebates on specialist consultations and on the procedure itself. Without one, a patient can still be seen but they won't be able to access those rebates` and, in FAQ 1, `a GP referral is the normal first step and allows you to claim Medicare rebates on specialist consultations and the procedure itself (if you go ahead with surgery). Without one, you can still book an appointment, but you'll miss out on those rebates.` — both halves of this are wrong. The referral requirement applies to specialist *consultations*; a patient without a referral can still claim a Medicare benefit, at the lower unreferred rate. And the rebate on the surgical item is not gated on the GP referral in the way this implies. As written, this could put a patient off proceeding for the wrong financial reason.
 
@@ -28,15 +28,13 @@ This is the first review of this page. It does something the other two don't —
    - FAQ 4: `only a referral from your GP allows you to access Medicare rebates on your specialist consultations and any surgery` → `a referral from your GP gives you the higher Medicare rebate on your specialist consultations`
    - FAQ 9: `What the referral does is unlock Medicare rebates on your specialist appointments and procedure.` → `What the referral does is give you the higher Medicare rebate on your specialist appointments.`
 
-4. **Blocking** — `Consulting room locations:** Booragoon (Garden City Specialist Centre, 537 Marmion Street, Booragoon) and Subiaco/West Leederville (Surgeons House, 162 Cambridge Street, West Leederville)` and, in FAQ 8, `Consultations take place at our Booragoon and Subiaco/West Leederville rooms.` — the second consulting clinic is Mandurah, confirmed by OSWA on 20 July. This page is where a GP looks up where to send their patient, so a wrong address here has practical consequences.
+4. **WITHDRAWN (12 Aug)** — this finding said the second clinic was Mandurah. OSWA confirmed **Booragoon + Subiaco/West Leederville** on 10 Aug, and the Surgeons House address is on OSWA's live contact page. The draft's clinic copy stands. Open question for OSWA: whether Mandurah is retired as a consulting location.
 
-   **Writer edit:** `**Consulting room locations:** Booragoon (Garden City Specialist Centre, 537 Marmion Street) and Mandurah (WA Cardiology Centre, 30 Minilya Parkway, Greenfields 6210).` In FAQ 8: `Consultations take place at our Booragoon and Mandurah rooms.`
+5. **Blocking (amended 12 Aug)** — `Surgeries at **2 hospitals**`, `Mount Private Hospital and Waikiki Private Hospital`, `Your FRACS-credentialled surgeon will perform your keyhole (laparoscopic) procedure at Mount Private Hospital or Waikiki Private Hospital`, `operates at St John of God Murdoch and Subiaco` — the internal contradiction is real: the page names two different hospital pairs. OSWA has since confirmed (10 Aug) that **Mount Private + Waikiki are correct**, so the fix runs the other way from this review's original edit.
 
-5. **Blocking** — `Surgeries at **2 hospitals**`, `Mount Private Hospital and Waikiki Private Hospital`, `Your FRACS-credentialled surgeon will perform your keyhole (laparoscopic) procedure at Mount Private Hospital or Waikiki Private Hospital`, `operates at St John of God Murdoch and Subiaco` — the page names one pair of hospitals in the stats bar and body, and a different pair in the surgeon profile. Neither Mount Private nor Waikiki appears in any OSWA brief, on any page already built, or on the live OSWA site.
+   **Writer edit:** Keep the stats bar and body copy as drafted (Mount Private + Waikiki). Change the surgeon profile's `operates at St John of God Murdoch and Subiaco` to match: `operates at Mount Private Hospital and Waikiki Private Hospital`.
 
-   **Writer edit:** Remove the hospital names and the "2 hospitals" stat. Use: `Your FRACS-qualified surgeon performs the keyhole (laparoscopic) procedure at the accredited private hospital confirmed for your care. The team explains the hospital and admission arrangements before surgery is scheduled.` Remove the hospital affiliation from the surgeon profile.
-
-   **Brief-owner note (OSWA, not the writer):** The surgery hospital list and count still need confirming — outstanding since June and now blocking three pages.
+   **Brief-owner note (OSWA, not the writer):** Please confirm the hospitals' addresses/links in writing, and update the live site, which still names St John of God.
 
 6. **Blocking** — `This ensures you're properly prepared and that surgery is safe for your individual circumstances.` — presents safety as an assurance rather than something assessed.
 
@@ -56,11 +54,11 @@ This is the first review of this page. It does something the other two don't —
 
    **Writer edit:** Use the CTA `Referral in hand, or just starting out — we're here to help.` and the heading `Understanding typical outcomes`. Delete the alternatives.
 
-10. **Should-fix** — `Physicians, ADP dietitians, exercise physiologist and nursing staff` — two credential problems in one line: "ADP" should be "APD" (Accredited Practising Dietitian), and "exercise physiologist" appears to be the wrong title. OSWA's live site calls this role "Exercise Therapist" and describes a Personal Fitness Coach with a BA in Human Movement Science; "exercise physiologist" is generally read as an ESSA-accredited role, so it overstates the credential on a page GPs rely on.
+10. **Should-fix (amended 12 Aug)** — `Physicians, ADP dietitians, exercise physiologist and nursing staff` — "ADP" should be "APD" (Accredited Practising Dietitian); that stands. The "exercise physiologist" title is an open credential question, not a writer error — the writer reports Wendy uses it, and the earlier live-site "Exercise Therapist" evidence is retracted as unverified.
 
-    **Writer edit:** `Physicians, APD dietitians, an exercise therapist and nursing staff`
+    **Writer edit:** `Physicians, APD dietitians` fix only; leave the exercise role title as drafted pending confirmation.
 
-    **Brief-owner note (OSWA, not the writer):** Please confirm this role's title and whether ESSA accreditation applies — same question as on the Surgeons and Locations pages.
+    **Brief-owner note (OSWA, not the writer):** Please confirm this role's title and whether ESSA/AEP accreditation applies — same question as on the Surgeons and Locations pages.
 
 11. **Should-fix** — `All bariatric procedures require lifelong post-operative vitamin and nutrient monitoring; which our team is committed to supports you with` — overstates the clinical position and the sentence is grammatically broken.
 
