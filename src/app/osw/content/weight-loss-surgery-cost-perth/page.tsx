@@ -37,7 +37,7 @@ const pageData: OswPageData = {
     "A note on language: every range on this page uses approximately or around on purpose. Costs move with the procedure, your surgeon's assessment, your insurer's policy and the hospital. We do not ask you to make a decision on a ballpark. We give you a written estimate first.",
 
   eligibilityBmi:
-    "Medicare rebates for bariatric surgery generally apply where surgery is clinically indicated, which usually means a BMI of 35 or above, or 30 and above with an obesity related health condition. Your eligibility for funding is assessed alongside your clinical eligibility.",
+    "Two different tests are at work here. Medicare's bariatric surgery items apply to clinically severe obesity, which the MBS describes as a BMI of 40 or above, or 35 or above with a major obesity-related condition. Whether surgery is right for you is a separate, clinical judgement your surgeon makes, and we assess suitability from a BMI of 35, or 30 with a weight-related health condition. It is therefore possible to be clinically suitable here and still sit outside the Medicare threshold, so we check both and tell you where you stand.",
   eligibilityNotes: [
     "Private health insurance is the main path most patients use to fund surgery. You generally need gold tier hospital cover, or a top level of cover that explicitly includes the obesity surgery item numbers.",
     "The relevant Medicare item numbers for bariatric procedures include 31575 (sleeve) and 31572 (bypass). Check that your hospital policy covers these specific numbers, not just a general weight management category.",

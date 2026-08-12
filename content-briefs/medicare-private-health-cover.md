@@ -109,7 +109,7 @@ Write ~3 paragraphs. The goal is to give the reader a mental model of the two sy
 Six steps. Keep each to 2–3 sentences. The reader should be able to visualise what they need to do and in what order.
 
 1. **Check Your Cover** — Call the fund and ask specifically about bariatric item numbers including 31575 and 31572, whether bariatric surgery is on your policy, your waiting period status, and any excess or copayment.
-2. **GP Referral** — Obtain a valid GP referral to OSWA. This allows Medicare to contribute toward eligible specialist consultation and surgical fees.
+2. **GP Referral** — Obtain a valid GP referral to OSWA. This gives the higher referred Medicare rebate on specialist consultations. Rebates on the surgery itself depend on the procedure meeting the relevant Medicare item criteria — keep the two separate.
 3. **Consultation** — Clinical suitability is assessed; Medicare contributions, fund cover and the likely gap for the patient's specific situation are discussed openly.
 4. **Financial Coordinator Review** — The financial coordinator navigates item numbers, fund requirements, pre-approval and waiting periods with the patient and puts figures in writing.
 5. **Confirm and Schedule** — Once cover is confirmed, any pre-approval is in place and pre-op checks are done, surgery is booked at SJOG Murdoch or Subiaco.

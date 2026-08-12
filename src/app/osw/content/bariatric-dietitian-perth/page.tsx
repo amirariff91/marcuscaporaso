@@ -90,7 +90,7 @@ const pageData: OswPageData = {
     "Dehydration in the early weeks, when getting enough fluids takes real planning around your smaller stomach.",
   ],
   costParagraph:
-    "Cost is a fair thing to ask about early. Many bariatric dietitian consultations attract a Medicare rebate when you have a valid GP referral, and a chronic disease management plan may cover a number of allied health visits each year. Private health funds with the right level of cover often contribute as well, and some patients access early release of superannuation to help with the wider cost of their surgery and care. Rather than quote a single figure that may not apply to you, we give every patient clear information about fees and likely out-of-pocket costs before you commit to anything.",
+    "Cost is a fair thing to ask about early. A Medicare rebate for dietitian visits comes through a GP chronic condition management plan rather than an ordinary specialist referral. If your GP prepares one, Medicare subsidises up to five allied health visits per calendar year across all providers, and the plan needs to have been prepared or reviewed within the last 18 months. Private health funds with the right level of cover often contribute as well, and some patients access early release of superannuation to help with the wider cost of their surgery and care. Rather than quote a single figure that may not apply to you, we give every patient clear information about fees and likely out-of-pocket costs before you commit to anything.",
   surgeons: [
     {
       name: "Dr Harsha Chandraratna",
@@ -171,7 +171,7 @@ const pageData: OswPageData = {
     {
       question: "Does Medicare or private health cover dietitian visits?",
       answer:
-        "Many consultations attract a Medicare rebate with a valid GP referral, and a chronic disease management plan may cover several allied health visits a year. Private health funds with appropriate cover often contribute too. We will give you clear information about fees and likely out-of-pocket costs before you commit.",
+        "A Medicare rebate for dietitian visits comes through a GP chronic condition management plan, not an ordinary referral; it covers up to five allied health visits per calendar year across all providers. Private health funds with appropriate cover often contribute too. We will give you clear information about fees and likely out-of-pocket costs before you commit.",
     },
     {
       question: "Where will I see the dietitian?",

@@ -143,7 +143,7 @@ const pageData: OswPageData = {
     {
       question: "Does Medicare cover weight loss surgery?",
       answer:
-        "When you meet the clinical criteria and have a GP referral, Medicare contributes a rebate toward eligible surgical, anaesthetist and specialist consultation fees. Medicare does not cover the full cost, and it does not cover the hospital stay or theatre fees, which is the role of private hospital cover. A private contribution, or gap, typically remains. Our team can explain what applies in your situation before you commit.",
+        "When your procedure meets the relevant Medicare item criteria, Medicare contributes a rebate toward the eligible surgical and anaesthetist fees; a valid GP referral separately gives you the higher referred rate on your specialist consultations. Medicare does not cover the full cost, and it does not cover the hospital stay or theatre fees, which is the role of private hospital cover. A private contribution, or gap, typically remains. Our team can explain what applies in your situation before you commit.",
     },
     {
       question: "Do I need private health insurance, and can I use my super?",

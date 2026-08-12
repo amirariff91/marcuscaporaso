@@ -120,7 +120,7 @@ const pageData: OswPageData = {
     {
       question: "Does Medicare cover gastric sleeve surgery?",
       answer:
-        "When you meet the clinical eligibility criteria and have a valid GP referral, a Medicare item number generally applies, which provides a rebate on the surgeon's and anaesthetist's fees. Medicare does not cover the full cost, so a private contribution and an out-of-pocket gap usually remain.",
+        "When you meet the clinical eligibility criteria, a Medicare item number generally applies, which provides a rebate on the surgeon's and anaesthetist's fees; a valid GP referral separately gives you the higher referred rate on your consultations. Medicare does not cover the full cost, so a private contribution and an out-of-pocket gap usually remain.",
     },
     {
       question: "Will my private health insurance pay for it?",

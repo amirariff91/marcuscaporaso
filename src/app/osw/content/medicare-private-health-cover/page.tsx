@@ -21,19 +21,19 @@ const pageData: OswPageData = {
   stats: [
     { label: "Medicare rebate", value: "Yes", note: "Applies to MBS items 31569-31581 (bariatric surgery family)" },
     { label: "Hospital and theatre", value: "Not Medicare", note: "Funded through your private hospital cover, not Medicare" },
-    { label: "Waiting period", value: "12 months", note: "Applies to new members or those upgrading to bariatric cover" },
+    { label: "Waiting period", value: "Up to 12 months", note: "The 12-month maximum applies where your fund assesses obesity as pre-existing" },
     { label: "SJOG agreed rates", value: "Most funds", note: "Medibank, Bupa, HCF, NIB, CBHS and others" },
   ],
   whatIsTitle: "How Medicare and private health work together for bariatric surgery",
   whatIsParagraphs: [
     "Funding weight loss surgery in Australia usually involves two separate systems working side by side: Medicare and your private health insurance. Medicare pays a set rebate toward eligible medical services, including the surgical item numbers commonly used for bariatric procedures, such as 31575 (sleeve gastrectomy), 31572 (Roux-en-Y bypass) and other items in the MBS bariatric surgery family (31569-31581), as well as the anaesthetist, physician and dietitian consultations attached to your care. Medicare does not, however, pay for your hospital stay, theatre fees or accommodation.",
     "That hospital side is where private health insurance comes in. To have your hospital and theatre costs covered, you generally need a gold tier policy, or an equivalent level that specifically includes bariatric or weight loss surgery and lists the relevant item numbers, including 31575 and 31572 among others. Not every gold policy includes bariatric surgery, and not every fund treats it the same way, which is exactly why checking your individual policy matters so much.",
-    "A 12-month waiting period applies if you are a new member or you have upgraded your cover to include bariatric surgery. Some funds also require pre-approval before they will confirm cover, and most policies carry an excess or copayment that sits on top of everything else. Because each of these pieces interacts differently for each person, the most reliable way to understand your real position is to have our financial coordinator review it with you.",
+    "Hospital waiting periods are capped by law: up to 12 months for a pre-existing condition, and two months in most other circumstances. Because funds commonly treat obesity as a pre-existing condition, 12 months is the wait most bariatric patients serve, and it is your fund, not us, that decides how your circumstances are classified. If you upgrade, you generally serve a waiting period only on the new or higher benefits. Some funds also require pre-approval before they will confirm cover, and most policies carry an excess or copayment that sits on top of everything else. Because each of these pieces interacts differently for each person, the most reliable way to understand your real position is to have our financial coordinator review it with you.",
   ],
   comparisonNote:
     "Think of it this way: Medicare contributes to the doctors' fees, your private hospital cover handles the hospital and theatre, and the gap, excess or copayment is the part you fund yourself.",
   eligibilityBmi:
-    "Cover is generally relevant for patients with a BMI of 35 or above, or 30 or above with related health conditions, who are clinically suitable for surgery. Your fund may have its own criteria in addition to the clinical ones.",
+    "Cover is generally relevant for patients with a BMI of 35 or above, or 30 or above with related health conditions, who are clinically suitable for surgery. Your fund may have its own criteria in addition to the clinical ones, and Medicare applies a higher threshold again for its own surgical items — a BMI of 40 or above, or 35 or above with a major obesity-related condition.",
   eligibilityNotes: [
     "Medicare rebates apply to eligible surgical item numbers including 31575 (sleeve gastrectomy), 31572 (Roux-en-Y bypass) and other items in the MBS bariatric surgery family (31569-31581), plus the anaesthetist, physician and dietitian consultations connected to your surgery.",
     "Medicare does not cover hospital theatre fees or accommodation; that is the role of your private hospital cover.",
@@ -44,7 +44,7 @@ const pageData: OswPageData = {
   ],
   howItWorksSteps: [
     { title: "Check Your Cover", description: "Call your fund and ask specifically about bariatric surgery item numbers including 31575 and 31572, whether bariatric surgery is included, and your waiting period status. Note any excess or copayment." },
-    { title: "GP Referral", description: "Ask your GP for a referral to OSWA. A valid referral allows Medicare to contribute toward eligible specialist consultation and surgical fees." },
+    { title: "GP Referral", description: "Ask your GP for a referral to OSWA. A valid referral gives you the higher referred Medicare rebate on your specialist consultations. Rebates on the surgery itself depend on the procedure meeting the relevant Medicare item criteria." },
     { title: "Consultation", description: "We assess your clinical suitability and talk openly about how Medicare, your fund and any gap will apply to your specific situation." },
     { title: "Financial Coordinator Review", description: "Our financial coordinator helps you navigate item numbers, fund requirements, pre-approval and waiting periods, then puts the figures in writing." },
     { title: "Confirm and Schedule", description: "Once your cover is confirmed, any pre-approval is in place and pre-operative checks are complete, we book your surgery at SJOG Murdoch or Subiaco." },
@@ -100,7 +100,7 @@ const pageData: OswPageData = {
     {
       question: "Is there a waiting period for weight loss surgery on private health?",
       answer:
-        "Yes. A 12-month waiting period applies if you are a new member or you have upgraded your cover to include bariatric surgery. If you have held appropriate cover for longer than that, you may have already served the waiting period. We recommend confirming your exact status directly with your fund.",
+        "Yes. Hospital waiting periods are capped by law: up to 12 months for a pre-existing condition, and two months in most other circumstances. Because funds commonly treat obesity as a pre-existing condition, 12 months is the wait most bariatric patients serve, and it is your fund, not us, that decides how your circumstances are classified. If you upgrade, you generally serve a waiting period only on the new or higher benefits. If you have held appropriate cover for longer than that, you may have already served the waiting period. We recommend confirming your exact status directly with your fund.",
     },
     {
       question: "What should I ask my health fund when I call?",

@@ -148,7 +148,7 @@ Write each answer in plain, direct language. These are the questions a cost-focu
 
 1. How much does a gastric sleeve cost in Perth? (Range: $2,000–$8,000 OOP for well-insured patients; $15,000–$30,000+ self-funded; written estimate provided; MBS item 31575 applies)
 2. Why are there so many separate fees? (Surgeon, anaesthetist, hospital each bill independently; dietitian and physician assessment also billed separately; the practice brings these together in one estimate)
-3. Does Medicare cover gastric sleeve surgery? (When clinical criteria met and GP referral provided, a rebate applies on surgical and anaesthetist fees; Medicare does not cover the full cost; a private contribution typically remains)
+3. Does Medicare cover gastric sleeve surgery? (When the procedure meets the Medicare item criteria, a rebate applies on surgical and anaesthetist fees; the GP referral separately sets the higher referred rate on consultations; Medicare does not cover the full cost; a private contribution typically remains)
 4. Will my private health insurance pay for it? (Requires appropriate hospital cover including bariatric surgery item numbers; most funds apply a 12-month waiting period; the practice helps confirm what the fund will contribute before the patient commits)
 5. Can I use my superannuation to pay? (Some patients apply on compassionate/medical grounds; assessed by ATO and super fund, not the practice; the practice can explain the process and provide supporting clinical information)
 6. Are there payment plans available? (Some patients use third-party medical payment plans; terms and interest are between patient and provider; the practice can point to available options)
