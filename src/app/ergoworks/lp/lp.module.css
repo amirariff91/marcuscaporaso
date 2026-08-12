@@ -1,0 +1,1275 @@
+/*
+  Derived from the gated mockup: Barlow for structure, Figtree for reading,
+  ruled enclosures, a restrained radius, and a clear paper / ink split. The
+  live prototype keeps the same system while exposing only the approved page
+  flow.
+*/
+
+.page {
+  --paper: #f4f7fa;
+  --surface: #ffffff;
+  --surface-alt: #eef3f8;
+  --ink: #0b2136;
+  --text: #1a1a1a;
+  --line: #cdd9e4;
+  --accent: #4179c0;
+  --accentAction: #35659f;
+  --accentRule: var(--accentAction);
+  min-height: 100%;
+  /*
+   * Reserve exactly what the pinned call bar occupies. The 72px fallback holds
+   * until the bar reports its measured height; without that, a label that wraps
+   * at narrow widths or under zoom grows the bar over the submit button.
+   */
+  padding-bottom: var(--callbar-height, calc(72px + env(safe-area-inset-bottom)));
+  overflow-x: clip;
+  background: var(--paper);
+  color: var(--text);
+  font-family: var(--font-figtree), system-ui, sans-serif;
+}
+
+/*
+ * Headings balance, body text prettifies. These were combined, and because
+ * `.page h1` outranks the `.h1` class, every heading silently inherited
+ * `pretty` — the balancing the display type was written for never applied.
+ */
+.page p {
+  text-wrap: pretty;
+}
+
+.page :is(h1, h2, h3, h4) {
+  text-wrap: balance;
+}
+
+.page h1,
+.page h2,
+.page h3,
+.page h4,
+.kicker,
+.btn,
+.forkBtn,
+.formSteps,
+.stepN,
+.wordmarkType {
+  font-family: var(--font-barlow), system-ui, sans-serif;
+}
+
+.page h1,
+.page h2,
+.page h3,
+.page h4 {
+  color: var(--ink);
+}
+
+.shell {
+  width: min(1180px, 100%);
+  margin-inline: auto;
+  padding-inline: clamp(20px, 5vw, 64px);
+}
+
+.ribbon {
+  position: relative;
+  z-index: 1;
+  border-bottom: 1px solid var(--ink);
+  background: var(--ink);
+  color: #ffffff;
+  padding: 0.55rem clamp(20px, 5vw, 64px);
+  font-size: 0.76rem;
+  line-height: 1.45;
+  text-align: center;
+}
+
+/* ── header and frozen brand slots ─────────────────────────────────────── */
+.header {
+  display: flex;
+  min-height: 64px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  border-bottom: 1px solid var(--line);
+  padding-block: 1rem;
+}
+
+.brandCluster {
+  min-width: 0;
+  flex: 1 1 auto;
+}
+
+.brandLine {
+  display: flex;
+  min-width: 0;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.wordmarkSlot {
+  display: block;
+  flex: 0 1 auto;
+  width: auto;
+  max-width: 200px;
+  height: 28px;
+}
+
+.wordmark {
+  display: block;
+  width: auto;
+  max-width: 200px;
+  height: 28px;
+  overflow: visible;
+}
+
+.wordmarkMark {
+  fill: var(--accent);
+}
+
+.wordmarkPlate {
+  fill: var(--ink);
+}
+
+.wordmarkType {
+  fill: var(--text);
+  font-size: 10.7px;
+  font-weight: 800;
+  letter-spacing: -0.2px;
+}
+
+.descriptorSlot {
+  display: flex;
+  min-height: 1rem;
+  align-items: center;
+  color: var(--text);
+  font-size: 0.76rem;
+  line-height: 1.3;
+  opacity: 0.72;
+}
+
+.endorsement {
+  min-height: 2.8rem;
+  max-width: 38ch;
+  margin: 0.35rem 0 0;
+  color: var(--text);
+  font-size: 0.78rem;
+  line-height: 1.4;
+  opacity: 0.78;
+}
+
+.headerMeta {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 1rem;
+}
+
+.headerAudience {
+  max-width: 18ch;
+  color: var(--text);
+  font-size: 0.76rem;
+  line-height: 1.4;
+  text-align: end;
+  opacity: 0.78;
+}
+
+/*
+ * Reserved, not drawn. The Google rating renders in NEITHER skin (the 63 reviews are
+ * ErgoWorks', so showing them in the Biosymm-led skin misattributes them and showing
+ * them in one skin only contaminates the brand test). The slot still occupies its
+ * space so both skins keep identical header geometry when the rating is approved.
+ * It must be invisible: a dashed placeholder box reads as an unfinished page to a
+ * client looking at this in a review session.
+ */
+.ratingSlot {
+  display: block;
+  min-width: 7rem;
+  min-height: 1.2rem;
+}
+
+/* ── shared type and sections ───────────────────────────────────────────── */
+.section {
+  padding-block: clamp(56px, 9vw, 96px);
+}
+
+.sectionTight {
+  padding-block: 1.5rem 2.5rem;
+}
+
+.sectionPaper {
+  background: var(--surface-alt);
+}
+
+.sectionLift {
+  position: relative;
+  background: #ffffff;
+}
+
+.sectionLift::before,
+.hero::before {
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    135deg,
+    var(--accentRule) 0 1px,
+    transparent 1px 30px
+  );
+  content: "";
+  opacity: 0.055;
+  pointer-events: none;
+}
+
+.sectionLift > .shell,
+.hero > .shell {
+  position: relative;
+}
+
+.kicker {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin: 0 0 1.25rem;
+  color: var(--text);
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+
+.kicker::after {
+  width: 4rem;
+  height: 2px;
+  background: var(--accentRule);
+  content: "";
+  opacity: 0.85;
+}
+
+.h2 {
+  max-width: 24ch;
+  margin: 0 0 1.1rem;
+  font-size: clamp(1.9rem, 3.6vw, 3rem);
+  line-height: 1.06;
+  letter-spacing: -0.03em;
+  text-wrap: balance;
+}
+
+.lead,
+.body,
+.heroLead,
+.formPromise,
+.reportFoot {
+  max-width: 68ch;
+  color: var(--text);
+}
+
+.lead {
+  margin: 0;
+  font-size: clamp(1.02rem, 1.4vw, 1.18rem);
+  line-height: 1.65;
+  opacity: 0.82;
+}
+
+.body {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.6;
+  opacity: 0.82;
+}
+
+.subheading {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.25;
+}
+
+.page :is(a, button, input, select, label):focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 2px;
+}
+
+/* ── hero ───────────────────────────────────────────────────────────────── */
+.hero {
+  position: relative;
+  background: var(--surface);
+  padding-block: clamp(56px, 9vw, 96px);
+}
+
+.heroInner {
+  position: relative;
+}
+
+.h1 {
+  max-width: 20ch;
+  margin: 0 0 1.5rem;
+  font-size: clamp(30px, 7.2vw, 56px);
+  line-height: 1.03;
+  letter-spacing: -0.035em;
+  text-wrap: balance;
+}
+
+.heroLead {
+  margin: 0;
+  font-size: clamp(1.05rem, 1.6vw, 1.28rem);
+  line-height: 1.6;
+  opacity: 0.82;
+}
+
+.ctaRow,
+.btnRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.ctaRow {
+  margin-top: 1.75rem;
+}
+
+.forkSection {
+  margin-top: clamp(2rem, 4vw, 3rem);
+}
+
+.audienceChip {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  border: 1px solid var(--accentRule);
+  padding: 0.7rem 0.85rem;
+  color: var(--text);
+  font-size: 0.82rem;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.btn {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--accentAction);
+  border-radius: 4px;
+  background: var(--accentAction);
+  padding: 0.85rem 1.35rem;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
+}
+
+.btn:hover {
+  filter: brightness(0.92);
+}
+
+.btnGhost {
+  border-color: var(--line);
+  background: transparent;
+  color: var(--text);
+}
+
+.btnGhost:hover {
+  border-color: var(--ink);
+  filter: none;
+}
+
+/* ── employer fork and individual dead-end ─────────────────────────────── */
+.forkFieldset {
+  min-width: 0;
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+/*
+ * The fork's radios are clipped, so the group carries their focus ring. Prefer
+ * :focus-visible — plain :focus-within also fires on mouse click, which drew a
+ * heavy box around the whole fork every time someone simply clicked an option.
+ * The :focus-within fallback stays for browsers without :has(), where it is the
+ * only way this group shows focus at all.
+ */
+.forkFieldset:has(input:focus-visible) {
+  outline: 2px solid var(--ink);
+  outline-offset: 2px;
+}
+
+@supports not selector(:has(*)) {
+  .forkFieldset:focus-within {
+    outline: 2px solid var(--ink);
+    outline-offset: 2px;
+  }
+}
+
+.forkQuestion {
+  margin: 0 0 0.9rem;
+  color: var(--text);
+  font-family: var(--font-barlow), system-ui, sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.forkRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.forkBtn {
+  display: inline-flex;
+  min-height: 52px;
+  align-items: center;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: var(--surface);
+  padding: 1rem 1.5rem;
+  color: var(--text);
+  cursor: pointer;
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.forkBtn:hover {
+  border-color: var(--accentRule);
+}
+
+.paidFork {
+  min-height: 1.4rem;
+  margin: 0;
+}
+
+.inlineLink {
+  border: 0;
+  background: none;
+  padding: 0;
+  color: var(--text);
+  cursor: pointer;
+  font: inherit;
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
+
+.inlineLink:hover {
+  text-decoration-thickness: 2px;
+}
+
+.deadEnd {
+  max-width: 60rem;
+  border: 1px solid var(--line);
+  border-top: 2px solid var(--accentRule);
+  border-radius: 4px;
+  background: var(--surface);
+  padding: clamp(1.6rem, 4vw, 2.75rem);
+}
+
+.deadEnd h2 {
+  margin: 0 0 1rem;
+  font-size: clamp(1.5rem, 2.8vw, 2.1rem);
+  line-height: 1.15;
+  letter-spacing: -0.025em;
+}
+
+.deadEnd .body + .body {
+  margin-top: 1rem;
+}
+
+.vh {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.individualOnly {
+  display: none;
+}
+
+.corporateOnly {
+  display: block;
+}
+
+/* :has() is progressive enhancement: without it, corporate content remains visible. */
+@supports selector(:has(*)) {
+  .page:has(:global(#flow-me:checked)) .individualOnly {
+    display: block;
+  }
+
+  .page:has(:global(#flow-me:checked)) .corporateOnly {
+    display: none;
+  }
+
+  .page:has(:global(#flow-me:checked)) .hero .ctaRow {
+    display: none;
+  }
+
+  .page:has(:global(#flow-team:checked)) .forkBtn[data-fork="team"],
+  .page:has(:global(#flow-me:checked)) .forkBtn[data-fork="me"] {
+    border-color: var(--accentAction);
+    background: var(--accentAction);
+    color: #ffffff;
+  }
+
+  .page:has(:global(#flow-me:checked)) .forkBtn[data-fork="team"] {
+    border-color: var(--line);
+    background: var(--surface);
+    color: var(--text);
+  }
+
+  .page:has(:global(#flow-team:focus-visible)) .forkBtn[data-fork="team"],
+  .page:has(:global(#flow-me:focus-visible)) .forkBtn[data-fork="me"] {
+    outline: 2px solid var(--ink);
+    outline-offset: 2px;
+  }
+}
+
+@supports not selector(:has(*)) {
+  .page :global(#flow-team:checked) ~ .forkRow .forkBtn[data-fork="team"],
+  .page :global(#flow-me:checked) ~ .forkRow .forkBtn[data-fork="me"] {
+    border-color: var(--accentAction);
+    background: var(--accentAction);
+    color: #ffffff;
+  }
+
+  .page :global(#flow-me:checked) ~ .forkRow .forkBtn[data-fork="team"] {
+    border-color: var(--line);
+    background: var(--surface);
+    color: var(--text);
+  }
+}
+
+/* ── problem and triggers ───────────────────────────────────────────────── */
+.triggerPanel {
+  margin-top: clamp(2rem, 4vw, 3rem);
+  border: 1px solid var(--line);
+  border-top: 2px solid var(--accentRule);
+  border-radius: 4px;
+  background: var(--surface);
+  padding: clamp(1.25rem, 3vw, 1.75rem);
+}
+
+.triggerList {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem 1.5rem;
+  margin: 1.25rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.triggerList li {
+  display: flex;
+  gap: 0.65rem;
+  color: var(--text);
+  font-size: 0.96rem;
+  line-height: 1.55;
+  opacity: 0.86;
+}
+
+.triggerList li::before {
+  flex: 0 0 0.55rem;
+  width: 0.55rem;
+  height: 0.55rem;
+  margin-top: 0.45rem;
+  background: var(--accentRule);
+  content: "";
+}
+
+.objectionBlock {
+  margin-top: clamp(2.5rem, 5vw, 4rem);
+}
+
+.objectionGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(1.25rem, 3vw, 2.5rem);
+  margin-top: 1.5rem;
+}
+
+.objection {
+  border-top: 2px solid var(--accentRule);
+  padding-top: 1rem;
+}
+
+.objectionLetter {
+  display: inline-flex;
+  width: 2rem;
+  height: 2rem;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--accentRule);
+  color: var(--text);
+  font-family: var(--font-barlow), system-ui, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+/* Sits under the section's h3 (1.05rem), so it must not out-size its parent. */
+.objection h4 {
+  margin: 0.7rem 0 0.55rem;
+  font-size: 1rem;
+  line-height: 1.3;
+}
+
+/* ── sample report ──────────────────────────────────────────────────────── */
+.reportBlock {
+  margin-top: 0.25rem;
+}
+
+.reportHead {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.75rem 1rem;
+  margin-bottom: 1rem;
+}
+
+.reportHead .h2 {
+  margin: 0;
+  font-size: clamp(1.7rem, 3.1vw, 2.5rem);
+}
+
+.sampleTag {
+  border: 1px solid var(--accentRule);
+  border-radius: 3px;
+  background: var(--surface);
+  padding: 0.22rem 0.5rem;
+  color: var(--text);
+  font-family: var(--font-barlow), system-ui, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+
+.reportTable {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-collapse: collapse;
+  background: var(--surface);
+  color: var(--text);
+  font-size: 0.92rem;
+}
+
+.reportTable th {
+  border-bottom: 1px solid var(--line);
+  background: #e4ecf3;
+  padding: 0.7rem 0.85rem;
+  color: var(--text);
+  font-family: var(--font-barlow), system-ui, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-align: start;
+  text-transform: uppercase;
+}
+
+.reportTable td {
+  border-bottom: 1px solid #e4ecf3;
+  padding: 0.8rem 0.85rem;
+  color: var(--text);
+  line-height: 1.5;
+  vertical-align: top;
+}
+
+.reportTable tr:last-child td {
+  border-bottom: 0;
+}
+
+.pri {
+  display: inline-block;
+  border-radius: 3px;
+  padding: 0.2rem 0.45rem;
+  color: var(--text);
+  font-family: var(--font-barlow), system-ui, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  line-height: 1.2;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.pri[data-p="high"] {
+  background: var(--accentAction);
+  color: #ffffff;
+}
+
+.pri[data-p="med"] {
+  background: #e4ecf3;
+}
+
+.reportDefinition {
+  display: none;
+}
+
+.reportFoot {
+  margin: 0.9rem 0 0;
+  font-size: 0.92rem;
+  line-height: 1.6;
+  opacity: 0.82;
+}
+
+.reportCta {
+  margin-top: 1.5rem;
+}
+
+.btnSecondary {
+  font-size: 0.95rem;
+}
+
+/* ── how it works and ecosystem ────────────────────────────────────────── */
+.steps {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1px;
+  margin-top: 2.5rem;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: var(--line);
+}
+
+.step {
+  min-width: 0;
+  background: var(--surface);
+  padding: 1.6rem 1.4rem;
+}
+
+.stepN {
+  display: block;
+  border-bottom: 2px solid var(--accentRule);
+  padding-bottom: 0.45rem;
+  color: var(--text);
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.step h3 {
+  margin: 0.8rem 0 0.5rem;
+  font-size: 1.05rem;
+  letter-spacing: -0.01em;
+}
+
+.step .body {
+  font-size: 0.9rem;
+}
+
+/*
+ * The expansion story carries the client's own descriptions, so these are cards
+ * with copy, not bare pills. Auto-fit rather than a fixed column count: the four
+ * descriptions differ in length and the row should reflow on its own width.
+ */
+.engineRail {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.engineItem {
+  min-width: 0;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: var(--surface);
+  padding: 1.15rem 1.2rem;
+}
+
+.engineName {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin: 0 0 0.5rem;
+  color: var(--text);
+  font-family: var(--font-barlow), system-ui, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.engineName::before {
+  flex: 0 0 0.5rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  background: var(--accentRule);
+  content: "";
+}
+
+.engineBody {
+  margin: 0;
+  color: var(--text);
+  font-size: 0.92rem;
+  line-height: 1.6;
+  opacity: 0.82;
+}
+
+
+/* ── form ───────────────────────────────────────────────────────────────── */
+.formWrap {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+  gap: clamp(1.75rem, 4vw, 3.5rem);
+  align-items: start;
+}
+
+.formIntro .h2 {
+  max-width: 16ch;
+}
+
+.formPromise {
+  margin: 1.25rem 0 0;
+  border-left: 2px solid var(--accentRule);
+  padding-left: 0.85rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  opacity: 0.82;
+}
+
+.form {
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: var(--surface);
+  padding: clamp(1.4rem, 3vw, 2rem);
+}
+
+.formElement {
+  min-width: 0;
+}
+
+.formSteps {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.35rem 1rem;
+  margin-bottom: 1.25rem;
+  color: var(--text);
+  /* Tabular figures: "Step 1 of 2" → "Step 2 of 2" must not shift width mid-form. */
+  font-variant-numeric: tabular-nums;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.requiredNote {
+  font-family: var(--font-figtree), system-ui, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1.4;
+  text-transform: none;
+}
+
+.formStepHeading {
+  margin: 0 0 1.25rem;
+  font-size: 1.35rem;
+  line-height: 1.15;
+}
+
+.stepPanel[hidden] {
+  display: none;
+}
+
+.field {
+  display: grid;
+  gap: 0.35rem;
+  margin-bottom: 1rem;
+}
+
+.field label {
+  color: var(--text);
+  font-size: 0.84rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.field input,
+.field select {
+  width: 100%;
+  border: 1px solid #60788d;
+  border-radius: 4px;
+  background: var(--surface);
+  padding: 0.7rem 0.8rem;
+  color: var(--text);
+  font: inherit;
+  font-size: 1rem;
+  line-height: 1.35;
+}
+
+.field input::placeholder {
+  color: #5f5f5f;
+  opacity: 1;
+}
+
+.field input[aria-invalid="true"],
+.field select[aria-invalid="true"],
+.consent input[aria-invalid="true"] {
+  border-color: var(--ink);
+}
+
+.field input:focus-visible,
+.field select:focus-visible {
+  border-color: var(--ink);
+}
+
+/*
+ * Let the form's own width decide when to go two-up, rather than the viewport.
+ * At 737-992px the form is already in its two-column layout, so a hard two-up
+ * field row leaves the email and location inputs visibly cramped.
+ */
+.fieldRow {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 13rem), 1fr));
+  gap: 1rem;
+}
+
+.consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  margin-top: 0.25rem;
+  color: var(--text);
+  font-size: 0.85rem;
+  line-height: 1.5;
+  opacity: 0.84;
+}
+
+.consent input {
+  width: auto;
+  flex: 0 0 auto;
+  margin-top: 0.2rem;
+  accent-color: var(--accentAction);
+}
+
+.priorityLine {
+  margin: 1.35rem 0 1.1rem;
+  border-left: 2px solid var(--accentRule);
+  padding-left: 0.85rem;
+  color: var(--text);
+  font-size: 0.86rem;
+  line-height: 1.5;
+  opacity: 0.85;
+}
+
+.formError {
+  margin: 0 0 1rem;
+  border: 1px solid var(--ink);
+  background: var(--surface-alt);
+  padding: 0.7rem 0.8rem;
+  color: var(--text);
+  font-size: 0.86rem;
+  line-height: 1.45;
+}
+
+.fieldError {
+  margin: 0;
+  color: var(--ink);
+  font-size: 0.82rem;
+  line-height: 1.4;
+}
+
+.nextCard {
+  margin-top: 1.25rem;
+  border: 1px solid var(--line);
+  border-top: 2px solid var(--accentRule);
+  border-radius: 4px;
+  background: var(--surface-alt);
+  padding: 1rem;
+}
+
+.nextCard:empty {
+  display: none;
+}
+
+.nextCard h3 {
+  margin: 0 0 0.45rem;
+  font-size: 1.1rem;
+}
+
+.nextCard p {
+  margin: 0;
+  color: var(--text);
+  font-size: 0.9rem;
+  line-height: 1.55;
+  opacity: 0.85;
+}
+
+.nextCard p + p {
+  margin-top: 0.65rem;
+}
+
+.debugChip {
+  display: inline-block;
+  margin-top: 0.85rem;
+  max-width: 100%;
+  overflow-wrap: break-word;
+  border-radius: 3px;
+  background: var(--ink);
+  padding: 0.35rem 0.5rem;
+  color: #ffffff;
+  font-family: var(--font-barlow), system-ui, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.callBar {
+  position: fixed;
+  z-index: 50;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  border-top: 1px solid var(--accentAction);
+  border-radius: 0;
+  background: var(--accentAction);
+  /*
+   * Right padding takes the RIGHT inset, left takes the LEFT. These were swapped,
+   * which in landscape on a notched device can push the label under the cutout,
+   * because the two insets are asymmetric.
+   */
+  padding: 0.75rem max(20px, env(safe-area-inset-right)) max(12px, env(safe-area-inset-bottom)) max(20px, env(safe-area-inset-left));
+  color: #ffffff;
+  cursor: pointer;
+  font-family: var(--font-barlow), system-ui, sans-serif;
+  font-size: 0.98rem;
+  font-weight: 700;
+  line-height: 1.25;
+  text-align: center;
+}
+
+.callBar:hover {
+  filter: brightness(0.92);
+}
+
+/* ── footer and split-demo chrome ───────────────────────────────────────── */
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 2rem;
+  border-top: 1px solid var(--line);
+  padding-block: 2.25rem;
+  color: var(--text);
+  font-size: 0.86rem;
+  opacity: 0.78;
+}
+
+.footNote {
+  margin-inline-start: auto;
+}
+
+.demoBar {
+  border-bottom: 1px solid var(--ink);
+  background: var(--ink);
+  padding: 1rem 20px;
+  color: #ffffff;
+}
+
+.demoInner {
+  display: flex;
+  width: min(1180px, 100%);
+  margin-inline: auto;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1rem;
+}
+
+.demoState {
+  flex: 1 1 18rem;
+  font-size: 0.84rem;
+  line-height: 1.5;
+}
+
+.demoLinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+}
+
+.demoLink {
+  display: inline-flex;
+  min-height: 40px;
+  align-items: center;
+  border: 1px solid #ffffff;
+  border-radius: 3px;
+  padding: 0.55rem 0.7rem;
+  color: #ffffff;
+  font-size: 0.78rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+.demoLink:hover {
+  background: #ffffff;
+  color: var(--text);
+}
+
+/* ── responsive report definition list ─────────────────────────────────── */
+@media (max-width: 640px) {
+  .reportTable {
+    display: none;
+  }
+
+  .reportDefinition {
+    display: grid;
+    gap: 1rem;
+    margin: 0;
+  }
+
+  .reportDefinitionRow {
+    display: grid;
+    gap: 0.8rem;
+    border: 1px solid var(--line);
+    background: var(--surface);
+    padding: 1rem;
+  }
+
+  .reportDefinitionRow > div {
+    display: grid;
+    gap: 0.25rem;
+  }
+
+  .reportDefinition dt {
+    color: var(--text);
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+
+  .reportDefinition dd {
+    margin: 0;
+    color: var(--text);
+    font-size: 15px;
+    line-height: 1.45;
+  }
+}
+
+@media (max-width: 62rem) {
+  .formWrap,
+  .steps {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .formWrap {
+    align-items: start;
+  }
+}
+
+@media (max-width: 46rem) {
+  .header {
+    align-items: flex-start;
+  }
+
+  .headerMeta {
+    align-items: flex-end;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .headerAudience {
+    display: none;
+  }
+
+  .ratingSlot {
+    min-width: 5rem;
+  }
+
+  .triggerList,
+  .objectionGrid,
+  .formWrap,
+  .steps {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .fieldRow {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .footNote {
+    margin-inline-start: 0;
+  }
+}
+
+@media (max-width: 34rem) {
+  /*
+   * The H1 runs to four lines at this width, where 1.03 leading closes up too
+   * far. Opened, but only to 1.12/1.15 — these are still display sizes, and the
+   * body-copy leading the rubric implies would read as slack at 30-40px.
+   */
+  .h1 {
+    line-height: 1.12;
+  }
+
+  .h2 {
+    line-height: 1.15;
+  }
+
+  .brandLine {
+    align-items: flex-start;
+    column-gap: 0.7rem;
+    row-gap: 0.25rem;
+  }
+
+  .descriptorSlot {
+    min-height: 0.9rem;
+    font-size: 0.75rem;
+  }
+
+  .endorsement {
+    min-height: 2.55rem;
+    font-size: 0.75rem;
+  }
+
+  .wordmarkSlot,
+  .wordmark {
+    max-width: 200px;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .heroInner > * {
+    animation: rise 0.8s cubic-bezier(0.19, 1, 0.22, 1) both;
+  }
+
+  .heroInner > *:nth-child(2) {
+    animation-delay: 0.09s;
+  }
+
+  .heroInner > *:nth-child(3) {
+    animation-delay: 0.18s;
+  }
+
+  .heroInner > *:nth-child(4) {
+    animation-delay: 0.27s;
+  }
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}

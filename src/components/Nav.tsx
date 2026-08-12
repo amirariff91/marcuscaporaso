@@ -4,7 +4,12 @@ import { useState, useEffect } from "react";
 import { ArrowRight } from "lucide-react";
 import { DIAGNOSTIC_URL, NAV_LINKS } from "@/lib/site";
 
-export default function Nav() {
+/**
+ * `baseHref` absolutises the GrowthOS links for pages served on a client
+ * subdomain, where a root-relative "/#how-it-works" would land on that client's
+ * own root instead of the homepage. Empty (the apex default) keeps them relative.
+ */
+export default function Nav({ baseHref = "" }: { baseHref?: string }) {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -24,7 +29,7 @@ export default function Nav() {
     >
       <div className="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
         <a
-          href="/"
+          href={baseHref || "/"}
           className="group flex items-center gap-2 text-fg"
           style={{ fontFamily: "var(--font-barlow)" }}
         >
@@ -39,7 +44,7 @@ export default function Nav() {
           {NAV_LINKS.map((link) => (
             <a
               key={link.href}
-              href={link.href}
+              href={`${baseHref}${link.href}`}
               className="hidden md:inline-block text-sm text-muted-2 hover:text-fg transition-colors duration-200"
             >
               {link.label}

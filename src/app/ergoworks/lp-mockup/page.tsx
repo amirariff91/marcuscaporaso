@@ -156,8 +156,16 @@ export default function LpMockupPage() {
 
       {/* ── mockup chrome: not part of the design ── */}
       <div className={styles.mockBar}>
-        <span className={styles.mockTag}>Draft mockup</span>
-        <span>ErgoWorks Consulting · not live · nothing here is published</span>
+        <span className={styles.mockTag}>Superseded</span>
+        <span>
+          Superseded by the two-skin phase-one prototype —{" "}
+          <a href="/ergoworks/lp" style={{ color: "inherit" }}>
+            /ergoworks/lp
+          </a>
+          . This page predates the 12 Aug scope pivot: it still carries the four-offer
+          switcher, sub-100 employee bands and non-Sydney geography, all of which the
+          approved direction removes. Kept for reference only.
+        </span>
         <span className={styles.offerSwitch}>
           <span className={styles.switchLabel}>Offer</span>
           {OFFERS.map((o) => (

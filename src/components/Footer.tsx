@@ -1,7 +1,8 @@
 import { DIAGNOSTIC_URL, NAV_LINKS } from "@/lib/site";
 import CurrentYear from "@/components/CurrentYear";
 
-export default function Footer() {
+/** `baseHref`: see Nav — absolutises the GrowthOS links on client subdomains. */
+export default function Footer({ baseHref = "" }: { baseHref?: string }) {
   return (
     <footer className="border-t border-border-subtle py-12">
       <div className="max-w-5xl mx-auto px-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
@@ -16,7 +17,7 @@ export default function Footer() {
           {NAV_LINKS.map((link) => (
             <a
               key={link.href}
-              href={link.href}
+              href={`${baseHref}${link.href}`}
               className="hover:text-muted transition-colors duration-200"
             >
               {link.label}

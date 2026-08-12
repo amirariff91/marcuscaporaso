@@ -4,6 +4,7 @@ import type { NextRequest } from "next/server";
 const SUBDOMAIN_ROOTS: Record<string, string> = {
   "osw.marcuscaporaso.com": "/osw",
   "biosymm.marcuscaporaso.com": "/biosymm",
+  "ergoworks.marcuscaporaso.com": "/ergoworks",
 };
 
 // ── Access gate for the private ErgoWorks material (/ergoworks/plan/* and
@@ -118,7 +119,21 @@ function authenticate(request: NextRequest): NextResponse | null {
 }
 
 export function proxy(request: NextRequest) {
-  const gated = isGatedPath(request.nextUrl.pathname);
+  const host = request.headers.get("host")?.split(":")[0].toLowerCase() ?? "";
+  const root = SUBDOMAIN_ROOTS[host];
+  const { pathname } = request.nextUrl;
+
+  // Resolve the pathname the app will actually serve BEFORE deciding anything
+  // else. A subdomain rewrite maps `/plan` to `/ergoworks/plan`, so gating on the
+  // incoming pathname would let `ergoworks.marcuscaporaso.com/plan` walk straight
+  // into the private pack unauthenticated — and skip the retired-URL redirects and
+  // the private cache headers with it. On the apex, resolved === incoming.
+  const needsRewrite = Boolean(root) && !pathname.startsWith(root!);
+  const resolvedPath = needsRewrite
+    ? `${root}${pathname === "/" ? "" : pathname}`
+    : pathname;
+
+  const gated = isGatedPath(resolvedPath);
 
   // Gate the private review pack before any other routing.
   if (gated) {
@@ -127,11 +142,14 @@ export function proxy(request: NextRequest) {
 
     // Next config redirects run before Proxy in Next 16. Keep these redirects here
     // so a retired private URL authenticates before it is permanently redirected.
-    const retiredPath = request.nextUrl.pathname.replace(/\/$/, "");
+    const retiredPath = resolvedPath.replace(/\/$/, "");
     const destination = RETIRED_PLAN_REDIRECTS[retiredPath];
     if (destination) {
       const url = request.nextUrl.clone();
-      url.pathname = destination;
+      // Redirect to the address the visitor is actually using: on a subdomain the
+      // canonical /ergoworks prefix is stripped back off, so the Location header
+      // never bounces them onto the apex path.
+      url.pathname = needsRewrite ? destination.slice(root!.length) || "/" : destination;
       const response = NextResponse.redirect(url, 308);
       response.headers.set("Cache-Control", "private, no-store");
       response.headers.set("Vary", "Authorization");
@@ -139,19 +157,11 @@ export function proxy(request: NextRequest) {
     }
   }
 
-  const host = request.headers.get("host")?.split(":")[0].toLowerCase() ?? "";
-  const root = SUBDOMAIN_ROOTS[host];
-
   let response: NextResponse;
-  if (root) {
-    const { pathname } = request.nextUrl;
-    if (!pathname.startsWith(root)) {
-      const url = request.nextUrl.clone();
-      url.pathname = `${root}${pathname === "/" ? "" : pathname}`;
-      response = NextResponse.rewrite(url);
-    } else {
-      response = NextResponse.next();
-    }
+  if (needsRewrite) {
+    const url = request.nextUrl.clone();
+    url.pathname = resolvedPath;
+    response = NextResponse.rewrite(url);
   } else {
     response = NextResponse.next();
   }
