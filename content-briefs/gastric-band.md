@@ -91,7 +91,7 @@ Include a short bridging paragraph (not a full section) acknowledging the band g
 ### How it works (6 steps)
 Write each step as a short heading and 2–3 sentences of explanation. Tone is reassuring, process-forward.
 
-1. **GP Referral** — What a referral is for, how it enables Medicare rebates, why it's the starting point.
+1. **GP Referral** — What a referral is for, how it gives the higher referred Medicare rebate, why it's the starting point.
 2. **Orientation Consultation** — Meeting the surgeon, discussing health and goals, understanding if the band is the right fit. Note: no pressure to decide on the day.
 3. **Pre-operative Assessment** — Seeing dietitians and physicians, preparing the body, possible short pre-surgery eating plan.
 4. **Surgery** — Keyhole procedure under general anaesthetic at SJOG Murdoch or Subiaco; the band is placed around the upper stomach and the port is positioned under the skin.

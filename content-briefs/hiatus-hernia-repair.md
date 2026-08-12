@@ -80,7 +80,7 @@ Short bridging paragraph: hiatus hernia and reflux often overlap with bariatric 
 ### How it works (6 steps)
 Write each step as a heading and 2–3 sentences. Tone is measured and reassuring.
 
-1. **GP Referral** — What a referral is for, how it enables Medicare rebates, why it is the starting point for seeing an upper GI surgeon.
+1. **GP Referral** — What a referral is for, how it gives the higher referred Medicare rebate, why it is the starting point for seeing an upper GI surgeon.
 2. **Assessment & Investigations** — Surgeon reviews symptoms; gastroscopy and sometimes pH/oesophageal pressure studies confirm the hernia and its impact.
 3. **Honest Consultation** — Patient meets surgeon to discuss whether repair is right, weighing surgery vs continued medication, with likely benefits and risks for their case.
 4. **Preparing for Surgery** — Pre-operative instructions including fasting and medication adjustments; surgeon and anaesthetist cover anything specific.

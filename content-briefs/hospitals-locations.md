@@ -83,7 +83,7 @@ A short, practical paragraph for readers weighing where to have surgery. Tell th
 
 ### Eligibility / What to know before your visit
 Frame as "what to know before your visit", not BMI eligibility (omit the BMI callout for this page). Cover:
-- A GP referral is the usual first step, and gives the higher (referred) Medicare rebate on the consultation; without one a lower rebate still applies
+- A GP referral is the usual first step, and gives the higher referred Medicare rebate on the consultation; without one a lower rebate still applies
 - Consultations are in Booragoon and Mandurah, not at the hospital
 - Surgery and in-hospital recovery are at St John of God Murdoch or Subiaco (accredited private hospitals)
 - Both hospitals are private, so appropriate private hospital cover (or self-funding) is relevant; the team explains options before booking
@@ -92,7 +92,7 @@ Frame as "what to know before your visit", not BMI eligibility (omit the BMI cal
 ### How it works (6 steps)
 Reuse the established journey, lightly adapted to surface the locations at the consult and follow-up steps. Two to three sentences each.
 
-1. **GP Referral** — Ask the GP for a referral; enables Medicare rebates and lets the practice review history before the first meeting
+1. **GP Referral** — Ask the GP for a referral; gives the higher referred Medicare rebate and lets the practice review history before the first meeting
 2. **Orientation Consultation** — Meet the surgeon at the Booragoon or Mandurah rooms; options explained in plain language, no pressure to decide on the day
 3. **Pre-operative Assessment** — Physicians and dietitians assess overall health, screen for reflux/sleep apnoea, prepare for surgery safely
 4. **Surgery** — FRACS surgeon performs the keyhole (laparoscopic) procedure at St John of God Murdoch or Subiaco

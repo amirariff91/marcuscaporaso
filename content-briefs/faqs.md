@@ -96,7 +96,7 @@ Standard BMI-threshold-as-starting-point framing:
 
 ### How it works (6 steps)
 The established OSWA journey. Two to three sentences each:
-1. **GP Referral** — referral to OSWA enables Medicare rebates and lets the team review history; direct contact also possible
+1. **GP Referral** — referral to OSWA gives the higher referred Medicare rebate and lets the team review history; direct contact also possible
 2. **Orientation Consultation** — meet the surgeon, talk through history, options explained in plain language, no pressure to decide on the day
 3. **Pre-operative Assessment** — physicians and dietitians assess health, screen for reflux/sleep apnoea, prepare for surgery safely
 4. **Surgery** — FRACS surgeon performs the keyhole (laparoscopic) procedure at SJOG Murdoch or Subiaco

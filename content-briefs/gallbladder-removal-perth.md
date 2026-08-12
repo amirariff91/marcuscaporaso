@@ -79,7 +79,7 @@ A short paragraph explaining why this upper GI procedure sits alongside the prac
   - Whether to operate is a clinical decision made with the patient, weighing impact against risk
 
 ### How it works (6 steps)
-1. **GP Referral** — what it is for, how it enables Medicare rebates, first step to seeing a surgeon.
+1. **GP Referral** — what it is for, how it gives the higher referred Medicare rebate, first step to seeing a surgeon.
 2. **Assessment and Imaging** — review symptoms, arrange ultrasound to confirm stones and check bile ducts before planning surgery.
 3. **Consultation** — meet the surgeon, discuss whether removal is right, what it involves, the risks; for mild symptoms this may include whether surgery is needed at all.
 4. **Keyhole Surgery** — gallbladder removed through small cuts with camera and instruments under general anaesthetic; roughly an hour, varies by case.

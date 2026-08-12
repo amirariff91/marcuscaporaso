@@ -98,7 +98,7 @@ Use these values exactly. The phone number is a key conversion element — make 
 - **Para 2:** Explain what the reader gets from the appointment: time to ask anything, explanation of different procedures, walkthrough of what recovery looks like, open discussion of costs and funding, and a chance to meet the team who would support them — before they make any decision at all.
 - **Para 3:** Reinforce that booking is not a commitment to surgery. Many people attend simply to learn more, and leave with the information they needed regardless of whether surgery turns out to be the right path. The reader stays in control throughout.
 
-The comparison note to weave in naturally: A GP referral is recommended but not required to book. A referral gives the higher Medicare rebate on the consultation — without one a lower rebate still applies — and keeps the GP involved in care. If the reader does not have one yet, they can still book — the team can talk them through it at the appointment.
+The comparison note to weave in naturally: A GP referral is recommended but not required to book. A referral gives the higher referred Medicare rebate on the consultation, a lower rebate still applies without one, and it keeps the GP involved in care. If the reader does not have one yet, they can still book — the team can talk them through it at the appointment.
 
 ---
 

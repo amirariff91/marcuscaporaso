@@ -94,7 +94,7 @@ Do not promise suitability. The surgeon confirms appropriateness at consultation
 ### How it works (6 steps)
 Write each step as a clear, numbered action. Keep each description to two to three sentences — informative, not padded.
 
-1. **GP Referral** — Patient asks their GP for a referral to Obesity Surgery WA; explain this enables Medicare rebates and lets the practice review history ahead of the first meeting
+1. **GP Referral** — Patient asks their GP for a referral to Obesity Surgery WA; explain this gives the higher referred Medicare rebate and lets the practice review history ahead of the first meeting
 2. **Orientation Consultation** — Patient meets their surgeon, discusses weight and health history, options explained in plain language with no pressure to decide on the day
 3. **Pre-operative Assessment** — Physicians and dietitians assess overall health, screen for relevant conditions (reflux, sleep apnoea), prepare the patient for surgery safely
 4. **Surgery** — FRACS surgeon performs the keyhole (laparoscopic) procedure at St John of God Murdoch or Subiaco

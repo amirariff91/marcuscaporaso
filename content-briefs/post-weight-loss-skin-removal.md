@@ -106,7 +106,7 @@ Short bridging paragraph on weight stability: only considered once weight stable
   - If not medically indicated or not in the patient's best interest, the surgeon will say so honestly
 
 ### How it works (6 steps)
-1. **GP Referral** — referral to the practice, ideally noting the skin problems; enables Medicare rebates on consultations; first step to assessment.
+1. **GP Referral** — referral to the practice, ideally noting the skin problems; gives the higher referred Medicare rebate on consultations; first step to assessment.
 2. **Medical Assessment** — surgeon examines redundant skin, reviews history of infections/rashes/breakdown and prior treatment; establishes whether there is a genuine documented functional problem.
 3. **Confirming Weight Stability** — confirm weight stable for a sustained period (~6–12 months) before recommending surgery.
 4. **Eligibility and Funding Review** — review whether the case meets the medical criteria allowing Medicare/private fund support (relevant MBS panniculectomy criteria); assessed individually, never assumed. (No finance/super inducement language.)

@@ -92,7 +92,7 @@ Include a short bridging paragraph: unlike a first procedure, revision surgery a
 ### How it works (6 steps)
 Write each step as a heading and 2–3 sentences. Tone is measured and thorough — this is a more complex process than a first procedure and the content should reflect that.
 
-1. **GP Referral** — What a referral is for, how it enables Medicare rebates, why it is the starting point for seeing a surgeon about revision.
+1. **GP Referral** — What a referral is for, how it gives the higher referred Medicare rebate, why it is the starting point for seeing a surgeon about revision.
 2. **Reviewing Your First Operation** — The practice gathers details of the original surgery including operation reports and imaging. Knowing exactly what was done is essential before planning a revision.
 3. **Working Out What Went Wrong** — Through consultation and investigations (imaging, endoscopy), the surgeon establishes why the first procedure did not last. This step shapes everything that follows.
 4. **Honest Consultation** — The patient meets the surgeon to discuss realistic options and expectations. Revision is harder and carries more risk; the patient needs to understand this fully before any decision is made.

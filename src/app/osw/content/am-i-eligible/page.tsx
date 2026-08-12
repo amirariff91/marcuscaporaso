@@ -130,7 +130,7 @@ const pageData: OswPageData = {
     {
       question: "Do I need a GP referral, or can I refer myself?",
       answer:
-        "Both work. You are welcome to contact us directly and arrange an appointment yourself. A GP referral is helpful because it can allow Medicare rebates on your consultations, so it is worth asking your GP for one, but the lack of a referral will not stop you from getting started. If you would like to go the GP route, our GP referral page has the details your doctor needs.",
+        "Both work. You are welcome to contact us directly and arrange an appointment yourself. A GP referral is helpful because it gives you the higher referred Medicare rebate on your consultations — without one a lower rebate still applies — so it is worth asking your GP for one, but the lack of a referral will not stop you from getting started. If you would like to go the GP route, our GP referral page has the details your doctor needs.",
     },
     {
       question: "What actually happens at the first appointment?",

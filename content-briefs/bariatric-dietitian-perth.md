@@ -113,7 +113,7 @@ Avoid making this feel like a gatekeeping checklist. The message is: everyone be
 
 One to two sentences per step, written practically and with warmth. Show continuity across the full patient journey.
 
-1. **GP Referral** — The patient asks their GP for a referral to the practice. This enables Medicare rebates on eligible consultations and is the first step toward seeing the team.
+1. **GP Referral** — The patient asks their GP for a referral to the practice. This gives the higher referred Medicare rebate on eligible consultations and is the first step toward seeing the team.
 2. **Orientation Consultation** — The patient meets their surgeon and learns how dietitian care fits into the overall plan. No pressure to decide anything on the day.
 3. **Pre-operative Assessment** — The patient meets one of the dietitians to review current eating, set goals, and begin a pre-surgery eating plan that prepares the body and makes the operation safer.
 4. **Surgery** — The procedure is performed at St John of God Murdoch or Subiaco. By this point, the dietitian has already prepared the patient for the dietary stages that follow.

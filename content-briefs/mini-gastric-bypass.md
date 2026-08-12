@@ -99,7 +99,7 @@ Use these verbatim. Do not round or editorialise.
 ### How it works (6 steps)
 Each step gets a short heading and 1–2 sentences of content direction.
 
-1. **GP referral** — The reader's GP sends a referral. This links care back to the regular doctor and enables Medicare rebates on consultations.
+1. **GP referral** — The reader's GP sends a referral. This links care back to the regular doctor and gives the higher referred Medicare rebate on consultations.
 2. **Orientation consultation** — The reader meets their surgeon to discuss health, weight history and goals. The surgeon explains whether a mini gastric bypass suits them and answers questions honestly. No pressure to decide on the day.
 3. **Pre-operative assessment** — The patient sees dietitians and, where needed, physicians. A pre-surgery diet to shrink the liver may be required to make the operation safer.
 4. **Surgery** — General anaesthetic, keyhole incisions, at St John of God Murdoch or Subiaco. Usually around one hour.
