@@ -156,7 +156,7 @@ Write each benefit as a practical, honest statement. Cover:
 One clear paragraph covering:
 - Cost is one of the biggest unknowns, and the team discusses it openly at the consultation — no guessing required
 - The total depends on procedure, private health cover, and individual circumstances
-- With a GP referral, the patient may be eligible for a Medicare rebate on the consultation itself
+- With a GP referral, the higher referred Medicare rebate applies to the consultation itself; without one, a lower rebate still applies
 - The team walks through how private health insurance, Medicare, and other funding options fit together
 - The reader can make an informed decision without surprises — because everything is laid out clearly
 

@@ -75,7 +75,7 @@ const pageData: OswPageData = {
   ],
   benefitsTitle: "Why patients choose Obesity Surgery WA",
   benefits: [
-    "A lead surgeon who is FRACS-credentialled, lectures at the University of Notre Dame, and has personal experience of bariatric surgery.",
+    "A lead surgeon who is a Fellow of the Royal Australasian College of Surgeons (FRACS), lectures at the University of Notre Dame, and has personal experience of bariatric surgery.",
     "Two experienced bariatric surgeons, so you are matched to the right procedure rather than the only one on offer.",
     "Operating privileges at St John of God Murdoch and Subiaco, accredited private hospitals with full theatre and recovery facilities.",
     "An in-house team of physicians and dietitians who support you before surgery and for the long haul afterwards.",

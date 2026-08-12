@@ -33,7 +33,7 @@ const pageData: OswPageData = {
     "Booking a consultation does not mean you are going ahead with surgery. Many people come in simply to learn more and leave with the information they needed, whether or not surgery turns out to be the right path for them. You stay in control throughout, at every step.",
   ],
   comparisonNote:
-    "A GP referral is recommended but not required to book. Having a referral means you may be eligible for a Medicare rebate on the consultation, and it helps your GP stay involved in your care. If you do not have one yet, that is completely fine: you can still book, and we can talk you through referrals at your appointment or point you to our GP referral page.",
+    "A GP referral is recommended but not required to book. Having a referral means the higher referred Medicare rebate applies to the consultation — without one a lower rebate still applies — and it helps your GP stay involved in your care. If you do not have one yet, that is completely fine: you can still book, and we can talk you through referrals at your appointment or point you to our GP referral page.",
 
   eligibilityBmi:
     "There is no minimum or maximum you need to meet before booking. A consultation is the right starting point for anyone considering weight loss surgery, even if you are not sure it is for you yet.",
@@ -81,7 +81,7 @@ const pageData: OswPageData = {
   risksParagraph:
     "There is nothing you must bring to book or attend, and you will not be turned away if you arrive without paperwork. That said, a few things make the consultation more useful, because they help us give you accurate, tailored information rather than general answers.",
   risksList: [
-    "Your GP referral letter, if you have one. This is recommended but not required, and may make you eligible for a Medicare rebate on the consultation.",
+    "Your GP referral letter, if you have one. This is recommended but not required; with one, the higher referred Medicare rebate applies to the consultation, and a lower rebate applies without one.",
     "A list of any medications you currently take, including doses where you know them.",
     "Any prior test results or relevant medical reports you already have on hand, such as recent blood tests or scans.",
     "A list of your own questions. It is easy to forget things in the moment, so jotting them down beforehand helps.",
@@ -89,7 +89,7 @@ const pageData: OswPageData = {
   ],
 
   costParagraph:
-    "We know cost is one of the biggest unknowns, and we will discuss it openly with you during your consultation rather than leaving you guessing. The total depends on the procedure, your private health cover, and your individual circumstances. If you have a GP referral, you may be eligible for a Medicare rebate on the consultation itself. We will walk you through the full picture, including how private health insurance, Medicare, and other funding options fit together, so you can make an informed decision without surprises.",
+    "We know cost is one of the biggest unknowns, and we will discuss it openly with you during your consultation rather than leaving you guessing. The total depends on the procedure, your private health cover, and your individual circumstances. If you have a GP referral, the higher referred Medicare rebate applies to the consultation itself, and a lower rebate applies without one. We will walk you through the full picture, including how private health insurance, Medicare, and other funding options fit together, so you can make an informed decision without surprises.",
 
   surgeons: [
     {
@@ -118,7 +118,7 @@ const pageData: OswPageData = {
     {
       question: "Do I need a GP referral before I can book?",
       answer:
-        "A referral is recommended but not required to book a consultation. If you have one, you may be eligible for a Medicare rebate on the appointment, and it helps keep your GP involved in your care. If you do not have a referral yet, you can still book, and we can talk you through how to get one. Our GP referral page has more detail if you would like it.",
+        "A referral is recommended but not required to book a consultation. If you have one, the higher referred Medicare rebate applies to the appointment — a lower rebate applies without one — and it helps keep your GP involved in your care. If you do not have a referral yet, you can still book, and we can talk you through how to get one. Our GP referral page has more detail if you would like it.",
     },
     {
       question: "Where are your clinics and how do I get there?",

@@ -84,7 +84,7 @@ A short, practical paragraph guiding readers who are comparing surgeons. Tell th
 ### Eligibility / Who is suitable?
 Frame this as a straightforward clinical guide. Cover:
 - General BMI thresholds (35+, or 30+ with related health conditions) — note these are starting points, not guarantees
-- Patients see a FRACS-credentialled surgeon for assessment and for the operation itself (not a trainee)
+- Patients see a FRACS-qualified surgeon for assessment and for the operation itself (not a trainee)
 - Both surgeons operate at accredited private hospitals
 - Consulting locations: Booragoon (Garden City Specialist Centre, 537 Marmion Street) and Mandurah (WA Cardiology Centre, 30 Minilya Pkwy)
 - A GP referral is the normal first step and gives the higher referred Medicare rebate on the consultation (a lower rebate applies without one)
@@ -148,7 +148,7 @@ The page should answer all of the following questions. Write each answer in plai
 3. Is Dr Chandraratna fully qualified and a member of RACS? (Yes — MBBS, FRACS, Notre Dame lecturer; confirm factually)
 4. Will I see the surgeon, or someone else? (FRACS surgeon assesses and operates; physicians and dietitians form the wider team)
 5. Which hospitals do the surgeons operate at? (St John of God Murdoch and Subiaco; consulting at Booragoon and Mandurah)
-6. How do I choose between the two surgeons? (The team arranges the consultation; both are FRACS-credentialled with the same approach)
+6. How do I choose between the two surgeons? (The team arranges the consultation; both are FRACS-qualified with the same approach)
 7. Can I eat normally again after surgery? (Eating changes, especially early; dietitian guides reintroduction; most patients eat a wide range in smaller amounts; goal is a healthier relationship with food)
 8. What if the surgery does not work for me? (Results vary; if weight returns, the team investigates why; revisional surgery is sometimes an option; this is why long-term support matters)
 9. How long will I need off work after surgery? (Typically two to four weeks; depends on procedure and job type; surgeon advises based on individual situation)

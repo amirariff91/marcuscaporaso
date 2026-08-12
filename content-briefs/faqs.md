@@ -105,7 +105,7 @@ The established OSWA journey. Two to three sentences each:
 
 ### Why patients choose Obesity Surgery WA (benefits, 5 bullets)
 Concrete and factual, no superlatives:
-- FRACS-credentialled lead surgeon, Notre Dame lecturer, personal bariatric surgery experience
+- FRACS-qualified lead surgeon, Notre Dame lecturer, personal bariatric surgery experience
 - Two experienced surgeons so procedure matching is possible, not one-size-fits-all
 - Operating privileges at SJOG Murdoch and Subiaco (accredited hospitals)
 - In-house physicians and dietitians supporting pre- and post-operative care

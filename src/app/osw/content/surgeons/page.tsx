@@ -35,7 +35,7 @@ const pageData: OswPageData = {
   eligibilityBmi:
     "Generally suitable for patients with a BMI of 35+ or BMI 30+ with related health conditions. Your surgeon will confirm what is right for you.",
   eligibilityNotes: [
-    "You will see a fully qualified, FRACS-credentialled bariatric surgeon, not a trainee, for your assessment and your operation.",
+    "You will see a fully qualified FRACS bariatric surgeon, not a trainee, for your assessment and your operation.",
     "Both surgeons hold operating privileges at St John of God Murdoch and St John of God Subiaco, accredited private hospitals.",
     "Consultations are available at our Booragoon rooms (Garden City Specialist Centre, 537 Marmion Street) and in Mandurah (WA Cardiology Centre, 30 Minilya Pkwy).",
     "A GP referral lets you access Medicare rebates and is the usual first step before meeting the team.",
@@ -74,7 +74,7 @@ const pageData: OswPageData = {
   ],
   benefitsTitle: "Why patients choose this team",
   benefits: [
-    "A lead surgeon who is FRACS-credentialled, lectures at the University of Notre Dame, and has personal experience of bariatric surgery.",
+    "A lead surgeon who is a Fellow of the Royal Australasian College of Surgeons (FRACS), lectures at the University of Notre Dame, and has personal experience of bariatric surgery.",
     "Two experienced bariatric surgeons, so you are matched to the right procedure rather than the only one on offer.",
     "Operating privileges at St John of God Murdoch and Subiaco, with full hospital theatre and intensive-care backup if it is ever needed.",
     "An in-house team of physicians and dietitians who support you before surgery and for the long haul afterwards.",
@@ -136,7 +136,7 @@ const pageData: OswPageData = {
     {
       question: "How do I choose between the two surgeons?",
       answer:
-        "You do not have to. When you book, our team will arrange your consultation, and your surgeon will recommend the procedure best suited to your body, your health history and your goals. Both surgeons are FRACS-credentialled and follow the same careful, patient-first approach.",
+        "You do not have to. When you book, our team will arrange your consultation, and your surgeon will recommend the procedure best suited to your body, your health history and your goals. Both surgeons are FRACS-qualified and follow the same careful, patient-first approach.",
     },
     {
       question: "Can I eat normally again after seeing a bariatric surgeon and having surgery?",
