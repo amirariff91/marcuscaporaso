@@ -44,7 +44,7 @@ const pageData: OswPageData = {
     {
       title: "GP Referral",
       description:
-        "Ask your GP for a referral to our practice. A referral lets you claim Medicare rebates on your consultations and is the first step to seeing a surgeon.",
+        "Ask your GP for a referral to our practice. A referral gives you the higher referred Medicare rebate on your consultations, with a lower rebate applying without one, and is the first step to seeing a surgeon.",
     },
     {
       title: "Orientation Consultation",
@@ -144,7 +144,7 @@ const pageData: OswPageData = {
     {
       question: "Do I need a GP referral?",
       answer:
-        "Yes. A referral from your GP gives you the higher referred Medicare rebate on your consultations — a lower rebate applies without one — and is the starting point for seeing one of our surgeons. If you are unsure how to arrange this, our team can talk you through it when you call.",
+        "A referral is recommended, though not required to be seen. One from your GP gives you the higher referred Medicare rebate on your consultations — a lower rebate applies without one — and is the starting point for seeing one of our surgeons. If you are unsure how to arrange this, our team can talk you through it when you call.",
     },
   ],
   conversionHeadline:

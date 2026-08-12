@@ -46,7 +46,7 @@ const pageData: OswPageData = {
     {
       title: "GP Referral",
       description:
-        "Ask your GP for a referral to our practice. A referral lets you claim Medicare rebates on your consultations and is the first step to seeing a surgeon about your gallstones.",
+        "Ask your GP for a referral to our practice. A referral gives you the higher referred Medicare rebate on your consultations, with a lower rebate applying without one, and is the first step to seeing a surgeon about your gallstones.",
     },
     {
       title: "Assessment and Imaging",

@@ -44,7 +44,7 @@ const pageData: OswPageData = {
     {
       title: "GP Referral",
       description:
-        "Your GP sends us a referral. This lets you claim Medicare rebates on your consultations and links your care back to your regular doctor.",
+        "Your GP sends us a referral. This gives you the higher referred Medicare rebate on your consultations, with a lower rebate applying without one, and links your care back to your regular doctor.",
     },
     {
       title: "Orientation Consultation",

@@ -142,7 +142,7 @@ const pageData: OswPageData = {
     {
       question: "Does a referral guarantee I will have surgery?",
       answer:
-        "No. A referral starts the process; it does not mean surgery will definitely go ahead. Your surgeon assesses whether a procedure is clinically appropriate for you at your consultation, taking into account your health, your history and your goals. The referral simply starts the assessment pathway, with the higher Medicare rebate applying along the way.",
+        "No. A referral starts the process; it does not mean surgery will definitely go ahead. Your surgeon assesses whether a procedure is clinically appropriate for you at your consultation, taking into account your health, your history and your goals. The referral simply starts the assessment pathway, with the higher referred Medicare rebate applying to your specialist consultations along the way.",
     },
     {
       question: "Where will my consultation be, and which hospitals are used?",
@@ -152,7 +152,7 @@ const pageData: OswPageData = {
     {
       question: "How much does a referral cost?",
       answer:
-        "That depends on your GP and whether your appointment is bulk billed. Writing a referral is a routine part of a GP consultation. The referral itself is what gives you the higher Medicare rebate on the specialist care that follows. We provide a clear written estimate of surgical costs before you commit to anything.",
+        "That depends on your GP and whether your appointment is bulk billed. Writing a referral is a routine part of a GP consultation. The referral itself is what gives you the higher referred Medicare rebate on the specialist consultations that follow. We provide a clear written estimate of surgical costs before you commit to anything.",
     },
   ],
   conversionHeadline:

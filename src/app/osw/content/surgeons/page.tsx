@@ -38,7 +38,7 @@ const pageData: OswPageData = {
     "You will see a fully qualified FRACS bariatric surgeon, not a trainee, for your assessment and your operation.",
     "Both surgeons hold operating privileges at St John of God Murdoch and St John of God Subiaco, accredited private hospitals.",
     "Consultations are available at our Booragoon rooms (Garden City Specialist Centre, 537 Marmion Street) and in Mandurah (WA Cardiology Centre, 30 Minilya Pkwy).",
-    "A GP referral lets you access Medicare rebates and is the usual first step before meeting the team.",
+    "A GP referral gives you the higher referred Medicare rebate on your consultation — a lower rebate applies without one — and is the usual first step before meeting the team.",
   ],
   howItWorksSteps: [
     {
@@ -121,7 +121,7 @@ const pageData: OswPageData = {
     {
       question: "Is Dr Chandraratna fully qualified and a member of RACS?",
       answer:
-        "Yes. Dr Harsha Chandraratna holds an MBBS and is a Fellow of the Royal Australasian College of Surgeons (FRACS), the body that credentials surgeons across Australia and New Zealand. He also lectures at the University of Notre Dame and operates at St John of God Murdoch and Subiaco.",
+        "Yes. Dr Harsha Chandraratna holds an MBBS and is a Fellow of the Royal Australasian College of Surgeons (FRACS), the body that awards surgical fellowships across Australia and New Zealand. He also lectures at the University of Notre Dame and operates at St John of God Murdoch and Subiaco.",
     },
     {
       question: "Will I see the surgeon, or someone else?",

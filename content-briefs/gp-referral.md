@@ -140,7 +140,7 @@ Answer all of the following in plain, direct language:
 6. I am a GP. How do I refer a patient to Obesity Surgery WA? (Address referral to the practice; patient books, or phone (08) 9332 0066 to arrange — no invented fax/email)
 7. Does a referral guarantee I will have surgery? (No; surgeon assesses clinical appropriateness at consultation)
 8. Where will my consultation be, and which hospitals are used? (Booragoon and Mandurah rooms; surgery at St John of God Murdoch and Subiaco)
-9. How much does a referral cost? (Depends on the GP and whether bulk billed; the referral gives the higher referred Medicare rebate on specialist care; written estimate provided for surgery)
+9. How much does a referral cost? (Depends on the GP and whether bulk billed; the referral gives the higher referred Medicare rebate on specialist consultations (not on the surgery itself); written estimate provided for surgery)
 
 ---
 

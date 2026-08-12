@@ -158,7 +158,7 @@ const pageData: OswPageData = {
     {
       question: "What qualifications do your surgeons have?",
       answer:
-        "Both of our surgeons hold an MBBS and are Fellows of the Royal Australasian College of Surgeons (FRACS), the body that credentials surgeons across Australia and New Zealand. Dr Harsha Chandraratna also lectures at the University of Notre Dame and has personally been through bariatric surgery himself. Both operate at St John of God Murdoch and Subiaco.",
+        "Both of our surgeons hold an MBBS and are Fellows of the Royal Australasian College of Surgeons (FRACS), the body that awards surgical fellowships across Australia and New Zealand. Dr Harsha Chandraratna also lectures at the University of Notre Dame and has personally been through bariatric surgery himself. Both operate at St John of God Murdoch and Subiaco.",
     },
     {
       question: "How long is the recovery, and how soon can I go back to work?",

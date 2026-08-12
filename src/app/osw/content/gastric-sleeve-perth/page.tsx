@@ -177,7 +177,7 @@ const pageData: OswPageData = {
     {
       question: "Do I need a GP referral to be seen?",
       answer:
-        "A GP referral helps us understand your medical history and is usually needed to access Medicare rebates and private health benefits, so we do recommend one. If you do not yet have a referral, that is fine; you can still reach out to us and we will explain the steps. We also have dedicated information for GPs and health professionals who are referring a patient.",
+        "A GP referral helps us understand your medical history and gives the higher referred Medicare rebate on your consultations, with a lower rebate applying without one, so we do recommend one. If you do not yet have a referral, that is fine; you can still reach out to us and we will explain the steps. We also have dedicated information for GPs and health professionals who are referring a patient.",
     },
   ],
 
