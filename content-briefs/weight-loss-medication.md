@@ -158,7 +158,7 @@ Do not downplay these. Honest acknowledgement of risk builds trust.
 
 Cover these points in one clear, confident paragraph (no dot points):
 - Costs depend on which medication is prescribed, the dose, and treatment duration — so a specific figure is discussed openly at consultation, not quoted as a single number
-- Physician consultations may attract a Medicare rebate with a valid GP referral
+- Physician consultations attract the higher referred Medicare rebate with a valid GP referral; a lower rebate applies without one
 - Most GLP-1 weight loss medications are currently an out-of-pocket cost (not PBS-subsidised for weight loss specifically) and pharmacy prices can change
 - Private health cover does not usually pay for the medication itself, though it may contribute to related care
 - The team will always give a clear picture of expected costs before the patient commits to anything

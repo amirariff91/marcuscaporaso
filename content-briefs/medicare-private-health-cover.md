@@ -99,7 +99,7 @@ Write ~3 paragraphs. The goal is to give the reader a mental model of the two sy
   1. Medicare rebates apply to eligible surgical item numbers including 31575, 31572, and others in the MBS bariatric surgery family (31569–31581), as well as anaesthetist, physician and dietitian consultations.
   2. Medicare does not cover hospital theatre fees or accommodation — that is the role of private hospital cover.
   3. Private hospital cover generally needs to be gold tier or equivalent and must specifically include bariatric surgery item numbers.
-  4. A 12-month waiting period applies to new members and to those who upgrade their policy.
+  4. Hospital waits are capped at 12 months for a pre-existing condition and two months otherwise; on upgrade, a wait applies only to new or higher benefits. Funds commonly treat obesity as pre-existing, so 12 months is usually the relevant one.
   5. Some funds require pre-approval before surgery; skipping this step can affect what the fund pays.
   6. St John of God Murdoch and Subiaco have agreed rates with most major funds (Medibank, Bupa, HCF, NIB, CBHS), which can reduce out-of-pocket costs.
 
@@ -132,7 +132,7 @@ Write each as a short, factual statement (1–2 sentences). The reader should fe
 - **Intro tone:** Matter-of-fact and protective. The reader should feel the clinic is flagging traps so they don't fall into them — not adding paperwork for its own sake.
 - **Risk items to cover:**
   1. A gold or top tier policy does not automatically include bariatric surgery — the specific item numbers must be confirmed.
-  2. The 12-month waiting period applies to new members and upgrades, so timing cover correctly matters.
+  2. Where the fund treats obesity as pre-existing, the 12-month maximum applies, so timing cover correctly matters.
   3. Some funds require pre-approval; missing this step can affect what they pay.
   4. Excess and copayment amounts sit on top of any gap and vary between policies — total out-of-pocket depends on the individual's cover.
   5. Medicare rebates are fixed schedule amounts and do not cover hospital or theatre — without suitable private cover, hospital costs become a major liability.

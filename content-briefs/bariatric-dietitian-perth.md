@@ -149,7 +149,7 @@ Each benefit should be an honest, practical statement — not a marketing claim.
 
 One clear paragraph covering:
 - Cost is reasonable to ask about early — address it directly
-- Many bariatric dietitian consultations attract a Medicare rebate with a valid GP referral
+- Dietitian rebates come via a GP chronic condition management plan (MBS 10954, up to five allied health visits per calendar year across all providers), not an ordinary referral
 - A chronic disease management plan may cover a number of allied health visits per year
 - Private health funds with appropriate cover often contribute as well
 - Some patients access early release of superannuation to help with the wider costs of surgery and care

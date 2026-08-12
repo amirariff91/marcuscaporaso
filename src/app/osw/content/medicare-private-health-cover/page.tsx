@@ -38,7 +38,7 @@ const pageData: OswPageData = {
     "Medicare rebates apply to eligible surgical item numbers including 31575 (sleeve gastrectomy), 31572 (Roux-en-Y bypass) and other items in the MBS bariatric surgery family (31569-31581), plus the anaesthetist, physician and dietitian consultations connected to your surgery.",
     "Medicare does not cover hospital theatre fees or accommodation; that is the role of your private hospital cover.",
     "Private hospital cover generally needs to be gold tier or equivalent and must specifically include bariatric surgery item numbers including 31575 (sleeve gastrectomy) and 31572 (Roux-en-Y bypass).",
-    "A 12-month waiting period applies to new members and to those who upgrade their policy to include bariatric cover.",
+    "Hospital waiting periods are capped by law at 12 months for a pre-existing condition and two months in most other cases; on an upgrade you serve a wait only on the new or higher benefits. Funds commonly treat obesity as pre-existing, so 12 months is the one most bariatric patients serve.",
     "Some funds require pre-approval, and most policies carry an excess or copayment in addition to any gap.",
     "St John of God Murdoch and Subiaco have agreed rates with most major funds, including Medibank, Bupa, HCF, NIB and CBHS, which can reduce your out-of-pocket costs.",
   ],
@@ -63,7 +63,7 @@ const pageData: OswPageData = {
     "The cover system has a few traps that catch people who assume rather than confirm. Medicare and private health are separate systems, and a gold policy does not automatically include bariatric surgery. We would rather you go in with clear eyes, so we encourage you to confirm every detail with your fund in writing and to ask us anything that is unclear.",
   risksList: [
     "A gold or top tier policy does not always include bariatric surgery; you must confirm the specific item numbers are covered.",
-    "The 12-month waiting period applies to new members and upgrades, so timing your cover matters if you have recently joined or changed funds.",
+    "Where your fund treats obesity as a pre-existing condition, the 12-month maximum applies, so timing your cover matters if you have recently joined or changed funds.",
     "Some funds require pre-approval before surgery, and skipping that step can affect what they pay.",
     "Excess and copayment amounts sit on top of any gap and vary between policies, so your total out-of-pocket cost depends on your individual cover.",
     "Medicare rebates are set amounts and do not cover hospital theatre or accommodation, which can be a significant cost without suitable hospital cover.",

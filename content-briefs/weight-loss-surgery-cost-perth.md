@@ -93,7 +93,7 @@ Short, honest note: every range on this page uses "approximately" or "around" de
 
 ### Eligibility and funding suitability
 This section must be thorough because it covers several interacting factors. Write it as a checklist-style guide covering:
-- **Medicare eligibility:** Rebates generally apply where surgery is clinically indicated — typically BMI 35+ or 30+ with an obesity-related health condition. Eligibility is assessed by the surgeon, not assumed.
+- **Medicare eligibility:** the MBS bariatric items apply to clinically severe obesity — BMI 40+, or 35+ with a major obesity-related condition. State this SEPARATELY from the practice's own clinical criterion of BMI 35+ or 30+ with an obesity-related health condition. Eligibility is assessed by the surgeon, not assumed.
 - **Private health cover — what to check:** Patients generally need gold-tier or equivalent hospital cover that explicitly includes the obesity surgery item numbers. Identify the key Medicare item numbers: 31575 (sleeve) and 31572 (bypass). Stress the difference between a general "weight management" category and the specific item numbers — check the specific items.
 - **The 12-month waiting period:** Most funds apply this for obesity surgery as a pre-existing condition. If the patient does not yet have cover, planning around the waiting period is often the most cost-effective single decision they can make.
 - **Medicare and the hospital admission:** Medicare provides a rebate on surgical and consultation fees for eligible patients but does NOT cover the hospital admission for elective bariatric surgery. That cost is either covered by private health or paid out-of-pocket.
@@ -164,7 +164,7 @@ Write each answer in plain, direct language. Readers here may not have chosen a 
 
 1. How much does weight loss surgery cost in Perth? (Approximate ranges: sleeve $12k–$20k, bypass $15k–$25k, banding lower; varies heavily with cover level and procedure; written estimate provided)
 2. What does private health insurance cover, and what waiting period applies? (Gold-tier or equivalent cover including item numbers 31575/31572; most funds apply 12-month waiting period; check specific item numbers, not just "weight management")
-3. Does Medicare cover weight loss surgery? (Rebate on surgical and consultation fees for eligible patients; does NOT cover hospital admission; eligibility generally requires BMI 35+ or 30+ with comorbidity)
+3. Does Medicare cover weight loss surgery? (Rebate on surgical and consultation fees where the MBS item criteria are met — clinically severe obesity, i.e. BMI 40+ or 35+ with a major obesity-related condition; does NOT cover hospital admission. Keep this distinct from the practice's own clinical criterion of BMI 35+/30+.)
 4. Can I use my superannuation to pay for surgery? (Early release on compassionate grounds may apply where obesity causes serious medical condition; assessed individually by ATO/fund; not automatic; practice can explain process and provide supporting documentation)
 5. Are payment plans available? (Some providers offer plans to spread out-of-pocket costs; terms and availability vary; the practice walks through options after full cost is established)
 6. Why are there several separate fees rather than one price? (Surgeon, anaesthetist, assistant surgeon and hospital each bill independently; dietitian and pre-op tests may also be separate; written estimate lists every component)
