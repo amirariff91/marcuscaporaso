@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     title: "ErgoWorks | Workplace ergonomics in Sydney",
     description: "Workplace ergonomic assessments for employer teams in Sydney.",
     siteName: "ErgoWorks",
+    images: [{ url: "https://ergoworks.marcuscaporaso.com/logos/ergoworks/og-ergoworks.jpg", width: 1200, height: 630, alt: "ErgoWorks — workplace ergonomic assessments in Sydney" }],
   },
   /*
    * Set explicitly. Without it the page inherits the root layout's GrowthOS
@@ -23,6 +24,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "ErgoWorks | Workplace ergonomics in Sydney",
     description: "Workplace ergonomic assessments for employer teams in Sydney.",
+    images: ["https://ergoworks.marcuscaporaso.com/logos/ergoworks/og-ergoworks.jpg"],
   },
 };
 

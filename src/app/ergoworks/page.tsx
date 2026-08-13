@@ -34,11 +34,14 @@ export const metadata: Metadata = {
     title: "ErgoWorks Consulting — Private engagement",
     description: "A private consulting engagement for ErgoWorks Consulting stakeholders.",
     siteName: "ErgoWorks Consulting",
+    images: [{ url: "https://ergoworks.marcuscaporaso.com/logos/ergoworks/og-biosymm.jpg", width: 1200, height: 630, alt: "ErgoWorks Consulting engagement" }],
   },
   twitter: {
-    card: "summary",
+    // large_image, not summary: the card now carries a 1200x630 asset.
+    card: "summary_large_image",
     title: "ErgoWorks Consulting — Private engagement",
     description: "A private consulting engagement for ErgoWorks Consulting stakeholders.",
+    images: ["https://ergoworks.marcuscaporaso.com/logos/ergoworks/og-biosymm.jpg"],
   },
 };
 
