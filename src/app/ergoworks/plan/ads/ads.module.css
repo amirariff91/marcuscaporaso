@@ -1,0 +1,193 @@
+/* ── Search-ad (SERP) preview primitives ───────────────────────────────────
+   Self-contained Google-result look. Deliberately NOT the site tokens: the
+   cards must read as a Google preview, not a GrowthOS page. The plan shell
+   (plan.module.css) supplies the page chrome; these classes style the cards,
+   the QA chips and the preview layout only. */
+
+/* Group headings/keyword lines sit inside plan .docSection */
+.groupTitle {
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  letter-spacing: -0.02em;
+  color: #10211d;
+}
+.groupBlurb {
+  max-width: 68ch;
+  margin-top: 0.6rem;
+  color: #40534b;
+  line-height: 1.7;
+}
+.kwLine {
+  margin-top: 1rem;
+  font-family: var(--font-mono, ui-monospace, SFMono-Regular, Menlo, monospace);
+  font-size: 0.82rem;
+  line-height: 1.7;
+  color: #40534b;
+  overflow-wrap: anywhere;
+}
+.kwLine strong {
+  color: #075d45;
+}
+.illustrative {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin: 1.5rem 0 1rem;
+  padding: 0.6rem 0.85rem;
+  background: #fff7e6;
+  border: 1px solid #f0dca8;
+  border-radius: 0.4rem;
+  color: #6b5312;
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+.illustrative svg {
+  flex: none;
+  color: #b5851f;
+}
+
+/* Card layout */
+.cardRow {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr));
+  gap: 1.5rem;
+  align-items: start;
+  margin: 1.25rem 0 2rem;
+}
+.beforeAfter {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 24rem), 1fr));
+  gap: 1.5rem;
+  align-items: start;
+  margin-top: 2rem;
+}
+.cardFig {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.cardFig figcaption {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #6b7a73;
+}
+
+/* The Google result card. Reset inherited Barlow headings + pretty wrapping so
+   the plan page CSS never bleeds into the preview. */
+.serp {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  background: #fff;
+  border: 1px solid #dadce0;
+  border-radius: 0.5rem;
+  padding: 1rem 1.15rem 1.15rem;
+  max-width: 40rem;
+  box-shadow: 0 1px 3px rgba(16, 33, 29, 0.06);
+}
+.serp,
+.serp * {
+  text-wrap: initial;
+  letter-spacing: normal;
+}
+.serpMobile {
+  max-width: 24rem;
+}
+.serpTop {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.35rem;
+}
+.sponsored {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #202124;
+}
+.serpBiz {
+  font-size: 0.82rem;
+  color: #202124;
+}
+.serpUrl {
+  font-size: 0.82rem;
+  color: #4d5156;
+  margin-bottom: 0.15rem;
+  overflow-wrap: anywhere;
+}
+.serpTitle {
+  font-size: 1.25rem;
+  line-height: 1.3;
+  color: #1a0dab;
+  margin: 0.1rem 0 0.3rem;
+}
+.serpMobile .serpTitle {
+  font-size: 1.05rem;
+}
+.serpDesc {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #4d5156;
+}
+.serpSnippet {
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: #4d5156;
+  margin-top: 0.55rem;
+}
+.serpSnippet strong {
+  color: #202124;
+}
+.serpSitelinks {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.35rem 1.5rem;
+  margin: 0.75rem 0 0;
+  padding: 0;
+}
+.serpMobile .serpSitelinks {
+  grid-template-columns: 1fr;
+}
+.serpSitelinks li {
+  font-size: 0.9rem;
+  color: #1a0dab;
+}
+.serpCallouts {
+  font-size: 0.85rem;
+  color: #4d5156;
+  margin-top: 0.6rem;
+}
+.pendingTag {
+  color: #b5851f;
+  font-style: italic;
+}
+
+/* QA chips */
+.chipOk,
+.chipWarn,
+.chipCond,
+.chipMuted {
+  display: inline-block;
+  font-family: var(--font-mono, ui-monospace, SFMono-Regular, Menlo, monospace);
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.05rem 0.4rem;
+  border-radius: 0.3rem;
+  white-space: nowrap;
+}
+.chipOk {
+  background: #dff4e9;
+  color: #075d45;
+}
+.chipWarn {
+  background: #fde2e0;
+  color: #a3271b;
+}
+.chipCond {
+  background: #fff2d6;
+  color: #8a6412;
+}
+.chipMuted {
+  background: #eef3f0;
+  color: #6b7a73;
+}

@@ -9,6 +9,7 @@ const SECTIONS = [
   ["/ergoworks/plan", "Overview"],
   ["/ergoworks/plan/decisions", "Decisions"],
   ["/ergoworks/plan/direction", "Direction"],
+  ["/ergoworks/plan/ads", "Ads"],
   ["/ergoworks/plan/measurement", "Measurement"],
   ["/ergoworks/plan/evidence", "Evidence"],
   ["/ergoworks/plan/dashboard", "Dashboard"],

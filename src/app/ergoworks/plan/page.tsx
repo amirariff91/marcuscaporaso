@@ -342,6 +342,9 @@ export default function PlanPage() {
             <Link className={styles.pdfLink} href="/ergoworks/plan/decisions">
               Open decisions <ArrowRight size={15} />
             </Link>
+            <Link className={styles.pdfLink} href="/ergoworks/plan/ads">
+              Open ad preview <ArrowRight size={15} />
+            </Link>
           </div>
         </div>
       </section>

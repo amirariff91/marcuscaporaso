@@ -590,6 +590,85 @@ export default function DecisionsPage() {
         </ol>
       </section>
 
+      <section className={styles.idea} id="recommendation" style={{ scrollMarginTop: "5.5rem" }}>
+        <SectionHeading
+          label="Decision resolution · Sydney paid-Search proof test"
+          title="Recommendation — run it as a diagnostic-only pilot."
+          copy="I recommend NOT green-lighting it 'as currently scoped, before economics, as a proof test'; instead, run a diagnostic-only pilot. A budget cap bounds media spend, not downside; the cheap enabling work can start now, while any media spend waits on a pre-agreed decision rule."
+        />
+
+        <div className={styles.roadmap} style={{ gridTemplateColumns: "repeat(auto-fit, minmax(17rem, 1fr))" }}>
+          <article className={styles.hubCard}>
+            <div className={styles.phaseHead}>
+              <span>01</span>
+              <b aria-hidden="true">3</b>
+            </div>
+            <h3>Build now, no spend gate.</h3>
+            <ul>
+              <li>I will build a dedicated Sydney landing page now, without authorising media spend.</li>
+              <li>I will carve the test terms out of campaign 700072710 to isolate the test.</li>
+              <li>I will demote soft conversions and separate paid / organic / local and brand / non-brand reporting.</li>
+            </ul>
+            <div style={{ marginTop: "1.25rem" }}>
+              <p style={{ color: "var(--green)", fontSize: ".76rem", fontWeight: 700, letterSpacing: ".04em", margin: "0 0 .45rem", textTransform: "uppercase" }}>
+                Relevant gates
+              </p>
+              <div style={{ display: "flex", flexWrap: "wrap", gap: ".35rem .55rem" }}>
+                <a className={styles.hubCardGo} href="#gate-B10" style={{ marginTop: 0 }}>B10 <ArrowRight size={13} /></a>
+                <a className={styles.hubCardGo} href="#gate-C1" style={{ marginTop: 0 }}>C1 <ArrowRight size={13} /></a>
+                <a className={styles.hubCardGo} href="#gate-C12" style={{ marginTop: 0 }}>C12 <ArrowRight size={13} /></a>
+                <a className={styles.hubCardGo} href="#gate-C13" style={{ marginTop: 0 }}>C13 <ArrowRight size={13} /></a>
+                <a className={styles.hubCardGo} href="#gate-C7" style={{ marginTop: 0 }}>C7 <ArrowRight size={13} /></a>
+              </div>
+            </div>
+          </article>
+
+          <article className={styles.hubCard}>
+            <div className={styles.phaseHead}>
+              <span>02</span>
+              <b aria-hidden="true">4</b>
+            </div>
+            <h3>Gate spend on cheap preconditions.</h3>
+            <ul>
+              <li>I will agree ACV, margin, close-rate and payback ranges before any media spend.</li>
+              <li>I will set a maximum test-loss cap in dollars.</li>
+              <li>I will pre-register pass, kill and inconclusive rules.</li>
+              <li>I will set the pass bar as an information threshold: beat the current ~A$514 per strict conversion on the same service line.</li>
+            </ul>
+            <div style={{ marginTop: "1.25rem" }}>
+              <p style={{ color: "var(--green)", fontSize: ".76rem", fontWeight: 700, letterSpacing: ".04em", margin: "0 0 .45rem", textTransform: "uppercase" }}>
+                Relevant gates
+              </p>
+              <div style={{ display: "flex", flexWrap: "wrap", gap: ".35rem .55rem" }}>
+                <a className={styles.hubCardGo} href="#gate-B1" style={{ marginTop: 0 }}>B1 <ArrowRight size={13} /></a>
+                <a className={styles.hubCardGo} href="#gate-C14" style={{ marginTop: 0 }}>C14 <ArrowRight size={13} /></a>
+              </div>
+            </div>
+          </article>
+
+          <article className={styles.hubCard}>
+            <div className={styles.phaseHead}>
+              <span>03</span>
+              <b aria-hidden="true">2</b>
+            </div>
+            <h3>Run diagnostic-only; no auto-scale.</h3>
+            <ul>
+              <li>I will treat the result as directional, not causal, because ErgoWorks already ranks about #3 organically for the beachhead term.</li>
+              <li>I will use a geo or time holdout if feasible, and I will not auto-scale from this pilot.</li>
+            </ul>
+          </article>
+        </div>
+
+        <div className={styles.calloutRow} style={{ maxWidth: "1200px", marginLeft: "auto", marginRight: "auto" }}>
+          <ShieldCheck size={20} />
+          <p><strong>Honest boundary:</strong> a budget cap bounds media spend, not downside — cannibalisation, false confidence from a thin search pool, and the cost of scaling a wrong result all sit outside it. Without a pre-agreed decision rule, any result gets declared promising after the fact.</p>
+        </div>
+
+        <p style={{ maxWidth: "1200px", margin: "1.5rem auto 0", color: "var(--muted)", fontSize: ".78rem", lineHeight: 1.6 }}>
+          Provenance: stress-tested via an adversarial affirmative/negative debate (two models, two rounds), 17 August 2026.
+        </p>
+      </section>
+
       <section className={`${styles.docSection} ${styles.alt}`} id="gate-register">
         <SectionHeading
           label="Progressive disclosure · 34 gates"
