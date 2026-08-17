@@ -626,14 +626,15 @@ export default function DecisionsPage() {
           <article className={styles.hubCard}>
             <div className={styles.phaseHead}>
               <span>02</span>
-              <b aria-hidden="true">4</b>
+              <b aria-hidden="true">5</b>
             </div>
             <h3>Gate spend on cheap preconditions.</h3>
             <ul>
-              <li>I will agree ACV, margin, close-rate and payback ranges before any media spend.</li>
-              <li>I will set a maximum test-loss cap in dollars.</li>
-              <li>I will pre-register pass, kill and inconclusive rules.</li>
-              <li>I will set the pass bar as an information threshold: beat the current ~A$514 per strict conversion on the same service line.</li>
+              <li>I will agree ACV, margin, close-rate and payback ranges before any media spend, and cap the test loss in dollars.</li>
+              <li>I will report the primary readout as cost per qualified employer enquiry — a Sydney-based, 100+ employee lead with a real workplace need and a valid contact.</li>
+              <li>I will read downstream secondaries only: cost per booked assessment, per opportunity and per won-project gross profit.</li>
+              <li>I will derive the economic target CPA from ACV, margin and close-rate ranges — not from platform CPCs or the raw ~A$514 per-conversion figure.</li>
+              <li>I will add impression-share guardrails so a poor result is distinguishable from underexposure, and pre-register a minimum sample where insufficient volume is a valid outcome, not a failure.</li>
             </ul>
             <div style={{ marginTop: "1.25rem" }}>
               <p style={{ color: "var(--green)", fontSize: ".76rem", fontWeight: 700, letterSpacing: ".04em", margin: "0 0 .45rem", textTransform: "uppercase" }}>
@@ -649,19 +650,20 @@ export default function DecisionsPage() {
           <article className={styles.hubCard}>
             <div className={styles.phaseHead}>
               <span>03</span>
-              <b aria-hidden="true">2</b>
+              <b aria-hidden="true">3</b>
             </div>
             <h3>Run diagnostic-only; no auto-scale.</h3>
             <ul>
               <li>I will treat the result as directional, not causal, because ErgoWorks already ranks about #3 organically for the beachhead term.</li>
-              <li>I will use a geo or time holdout if feasible, and I will not auto-scale from this pilot.</li>
+              <li>I will run a geo or time holdout as a requirement wherever incrementality is the question; if no credible holdout exists, I will label this demand capture, not proof of paid-Search ROI.</li>
+              <li>I will not auto-scale from this pilot.</li>
             </ul>
           </article>
         </div>
 
         <div className={styles.calloutRow} style={{ maxWidth: "1200px", marginLeft: "auto", marginRight: "auto" }}>
           <ShieldCheck size={20} />
-          <p><strong>Honest boundary:</strong> a budget cap bounds media spend, not downside — cannibalisation, false confidence from a thin search pool, and the cost of scaling a wrong result all sit outside it. Without a pre-agreed decision rule, any result gets declared promising after the fact.</p>
+          <p><strong>Honest boundary:</strong> a budget cap bounds media spend, not downside — cannibalisation, false confidence from a thin search pool, and the cost of scaling a wrong result all sit outside it. Without a pre-agreed decision rule, any result gets declared promising after the fact. The ~A$514 per-conversion figure stands only as a provisional, noisy comparator — a national, contaminated platform-conversion benchmark, not a target.</p>
         </div>
 
         <p style={{ maxWidth: "1200px", margin: "1.5rem auto 0", color: "var(--muted)", fontSize: ".78rem", lineHeight: 1.6 }}>

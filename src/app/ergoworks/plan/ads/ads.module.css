@@ -96,6 +96,7 @@
 .serpTop {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 0.5rem;
   margin-bottom: 0.35rem;
 }
@@ -158,7 +159,7 @@
   margin-top: 0.6rem;
 }
 .pendingTag {
-  color: #b5851f;
+  color: #8a6412;
   font-style: italic;
 }
 
@@ -189,5 +190,5 @@
 }
 .chipMuted {
   background: #eef3f0;
-  color: #6b7a73;
+  color: #4d5b54;
 }

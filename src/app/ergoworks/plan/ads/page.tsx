@@ -191,14 +191,11 @@ function SerpCard({
     <div className={`${styles.serp} ${variant === "mobile" ? styles.serpMobile : ""}`}>
       <div className={styles.serpTop}>
         <span className={styles.sponsored}>Sponsored</span>
-        <span className={styles.serpBiz}>
-          {business}
-          {pendingIdentity ? <em className={styles.pendingTag}> · identity pending</em> : null}
-        </span>
+        <span className={styles.serpBiz}>{business}</span>
       </div>
       <div className={styles.serpUrl}>
         {displayUrl}
-        {pendingIdentity ? <span className={styles.pendingTag}> (placeholder)</span> : null}
+        {pendingIdentity ? <span className={styles.pendingTag}> · destination pending</span> : null}
       </div>
       <div className={styles.serpTitle}>{headlines.join(" | ")}</div>
       <div className={styles.serpDesc}>{descriptions.join(" ")}</div>
@@ -246,10 +243,10 @@ function AssetTable({ group }: { group: AdGroup }) {
         </caption>
         <thead>
           <tr>
-            <th>Type</th>
-            <th>Asset text</th>
-            <th>Chars</th>
-            <th>Status</th>
+            <th scope="col">Type</th>
+            <th scope="col">Asset text</th>
+            <th scope="col">Chars</th>
+            <th scope="col">Status</th>
           </tr>
         </thead>
         <tbody>
@@ -291,11 +288,13 @@ function AssetTable({ group }: { group: AdGroup }) {
   );
 }
 
-const CALLOUTS = ["Consultant-led", "Desk & hybrid teams", "Prioritised reporting", "For organisations", "Sydney-based"];
-// "Home-office assessments" dropped: it reintroduces the held-out Remote/Hybrid intent.
+// "Prioritised reporting" dropped: it promises the Decision-1 deliverable, which is unconfirmed.
+const CALLOUTS = ["Consultant-led", "Desk & hybrid teams", "For organisations", "Sydney-based"];
+// "Home-office assessments" dropped (reintroduces held-out Remote intent); "Implementation
+// planning" / "Programme reviews" dropped (deliverable claims conditional on Decision 1).
 const SNIPPET = {
   header: "Service catalog",
-  values: ["Workstation assessments", "Office assessments", "Implementation planning", "Programme reviews"],
+  values: ["Workstation assessments", "Office assessments", "Site-wide reviews"],
 };
 const SITELINKS = ["How it works", "What an assessment covers", "Who we work with", "Request a review"];
 
@@ -316,13 +315,14 @@ function GroupSection({ group, blurb }: { group: AdGroup; blurb: ReactNode }) {
       <p className={styles.illustrative}>
         <Sparkles size={14} /> Illustrative possible combinations — a real RSA assembles headlines
         and descriptions dynamically; not every asset (or extension) shows on any given query.
+        Sitelinks are proposed labels only, with no final URLs yet.
       </p>
 
       <div className={styles.cardRow}>
         <figure className={styles.cardFig}>
           <figcaption>Asset-rich (desktop)</figcaption>
           <SerpCard
-            business="ErgoWorks / Biosymm"
+            business="Business name pending"
             displayUrl="ergonomics.example.com.au/sydney"
             headlines={richH}
             descriptions={richD}
@@ -335,7 +335,7 @@ function GroupSection({ group, blurb }: { group: AdGroup; blurb: ReactNode }) {
         <figure className={styles.cardFig}>
           <figcaption>Asset-rich (mobile)</figcaption>
           <SerpCard
-            business="ErgoWorks / Biosymm"
+            business="Business name pending"
             displayUrl="ergonomics.example.com.au/sydney"
             headlines={richH}
             descriptions={richD}
@@ -349,7 +349,7 @@ function GroupSection({ group, blurb }: { group: AdGroup; blurb: ReactNode }) {
         <figure className={styles.cardFig}>
           <figcaption>Minimal (no extensions)</figcaption>
           <SerpCard
-            business="ErgoWorks / Biosymm"
+            business="Business name pending"
             displayUrl="ergonomics.example.com.au/sydney"
             headlines={minH}
             descriptions={minD}
@@ -387,7 +387,7 @@ export default function AdsPage() {
           </div>
           <aside className={plan.summary}>
             <p>Status</p>
-            <h2>Draft — pending Decisions 1–4 and 10.</h2>
+            <h2>Draft — pending the open client decisions.</h2>
             <ul>
               <li>
                 <ShieldCheck size={17} /> No live-account changes
@@ -416,9 +416,15 @@ export default function AdsPage() {
             proposed test speaks to Sydney employer teams and points at a dedicated page. One
             caveat: every proposed term already runs in the live campaign (700072710) on the same
             domain, so a clean, isolated test needs those terms carved out of the baseline
-            (Decision 10) — otherwise Google decides which campaign serves each query.
+            (the cannibalisation gate in the decision register) — otherwise Google decides which
+            campaign serves each query.
           </span>
         </div>
+        <p className={styles.illustrative}>
+          <Sparkles size={14} /> Both cards are illustrative RSA compositions. The live ad is real,
+          but the combination of headlines and descriptions shown is one of many Google may
+          assemble — neither card should be read as the exact ad that will serve.
+        </p>
         <div className={styles.beforeAfter}>
           <figure className={styles.cardFig}>
             <figcaption>Live today (national)</figcaption>
@@ -432,7 +438,7 @@ export default function AdsPage() {
           <figure className={styles.cardFig}>
             <figcaption>Proposed (Sydney, this test)</figcaption>
             <SerpCard
-              business="ErgoWorks / Biosymm"
+              business="Business name pending"
               displayUrl="ergonomics.example.com.au/sydney"
               headlines={CORE.headlines.slice(0, 3).map((a) => a.text)}
               descriptions={CORE.descriptions.slice(0, 2).map((a) => a.text)}
@@ -460,19 +466,21 @@ export default function AdsPage() {
           <span>
             Volumes are estimates (Ahrefs AU database; Google figures are account-level and banded
             because the account is low-spend) — not an auction forecast. Live account CPC is
-            A$13.18, so A$1.5–2k/mo buys roughly 115–152 clicks, not the 300–450 the earlier note
-            assumed. Expect single-digit to low-teens qualified enquiries a month.
+            A$13.18, so A$1.5–2k/mo buys roughly 114–152 clicks, not the 300–450 the earlier note
+            assumed. This click range is a rough planning expectation, not a forecast: how many
+            become qualified enquiries depends on an enquiry rate we have not yet measured, so treat
+            any monthly-enquiry figure as indicative only.
           </span>
         </div>
         <div className={plan.tableScroll}>
           <table>
-            <caption>AU search demand for the test terms — verified 2026-08-17</caption>
+            <caption>AU search demand for the test terms — verified 2026-08-17. Google account volumes are banded and low-fidelity (the account is low-spend), so all Google figures should be read as approximate.</caption>
             <thead>
               <tr>
-                <th>Keyword</th>
-                <th>Ahrefs vol/mo</th>
-                <th>Google vol/mo</th>
-                <th>Notes</th>
+                <th scope="col">Keyword</th>
+                <th scope="col">Ahrefs vol/mo</th>
+                <th scope="col">Google vol/mo</th>
+                <th scope="col">Notes</th>
               </tr>
             </thead>
             <tbody>
