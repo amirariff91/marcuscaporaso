@@ -59,3 +59,4 @@ next-env.d.ts
 # local agent/tooling state
 .codex/
 .wrangler/
+data/ergoworks-enquiries.json
