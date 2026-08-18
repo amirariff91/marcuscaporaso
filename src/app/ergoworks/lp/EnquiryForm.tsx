@@ -1,31 +1,34 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, type FormEvent } from "react";
 import styles from "./lp.module.css";
 import {
+  CTA,
   COMPETING_PRIORITIES_LINE,
   FORM_COPY,
+  GEO_OPTIONS,
   ROLE_OPTIONS,
-  TRIGGER_GROUPS,
-  type BrandVariant,
+  SERVICE_OPTIONS,
+  TIMING_OPTIONS,
   WORKFORCE_OPTIONS,
+  WORKING_MODEL_OPTIONS,
 } from "./copy";
 
 type Step = 1 | 2;
 type FieldErrors = Record<string, string>;
 
-type EnquiryFormProps = {
-  variant: BrandVariant;
-};
+const SUCCESS_MESSAGE =
+  "Thank you. One of our health professional consultants will review your organisation's needs and recommend the most appropriate next step.";
 
-export default function EnquiryForm({ variant }: EnquiryFormProps) {
+export default function EnquiryForm() {
   const formRef = useRef<HTMLFormElement>(null);
   const [step, setStep] = useState<Step>(1);
   const [error, setError] = useState("");
   const [fieldErrors, setFieldErrors] = useState<FieldErrors>({});
   const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [callActivated, setCallActivated] = useState(false);
-  const callBarRef = useRef<HTMLButtonElement>(null);
+  const callBarRef = useRef<HTMLAnchorElement>(null);
   const stepOneHeadingRef = useRef<HTMLHeadingElement>(null);
   const stepTwoHeadingRef = useRef<HTMLHeadingElement>(null);
   const previousStepRef = useRef<Step>(step);
@@ -43,7 +46,7 @@ export default function EnquiryForm({ variant }: EnquiryFormProps) {
     if (!page) return;
 
     const apply = () => {
-      page.style.setProperty("--callbar-height", `${Math.ceil(bar.offsetHeight)}px`);
+      page.style.setProperty("--callbar-height", Math.ceil(bar.offsetHeight) + "px");
     };
     apply();
 
@@ -67,7 +70,7 @@ export default function EnquiryForm({ variant }: EnquiryFormProps) {
 
     const fields = Array.from(
       form.querySelectorAll<HTMLInputElement | HTMLSelectElement>(
-        `[data-form-step="${stepToValidate}"] [required]`,
+        "[data-form-step=\"" + stepToValidate + "\"] [required]",
       ),
     );
     const nextFieldErrors: FieldErrors = {};
@@ -95,7 +98,7 @@ export default function EnquiryForm({ variant }: EnquiryFormProps) {
     if (validateVisibleStep(1)) setStep(2);
   }
 
-  function handleSubmit(event?: React.FormEvent<HTMLFormElement>) {
+  async function handleSubmit(event?: FormEvent<HTMLFormElement>) {
     event?.preventDefault();
     if (step === 1) {
       handleContinue();
@@ -103,20 +106,75 @@ export default function EnquiryForm({ variant }: EnquiryFormProps) {
     }
     if (!validateVisibleStep(2)) return;
 
-    // An individual must never produce a lead event. The CSS fork hides this form
-    // for them, but :has() is unavailable in older in-app webviews, where the
-    // employer form stays visible — so the block is enforced here too.
-    if (formRef.current?.ownerDocument.getElementById("flow-me") instanceof
-      HTMLInputElement &&
-      (formRef.current.ownerDocument.getElementById("flow-me") as HTMLInputElement)
-        .checked) {
-      setError(FORM_COPY.individualBlocked);
-      return;
-    }
+    const form = formRef.current;
+    if (!form) return;
 
-    setSubmitted(true);
-    setCallActivated(false);
+    const formData = new FormData(form);
+    const value = (name: string) => {
+      const fieldValue = formData.get(name);
+      return typeof fieldValue === "string" ? fieldValue.trim() : "";
+    };
+    const processingConsent =
+      formData.get("processing_consent") === "true" ||
+      formData.get("processing_consent") === "on";
+    const searchParams = new URLSearchParams(window.location.search);
+    const timestamp = new Date().toISOString();
+
+    const payload = {
+      service: value("service"),
+      workforce_size: value("workforce_size"),
+      geographic_distribution: value("geographic_distribution"),
+      working_model: value("working_model"),
+      timing: value("timing"),
+      organisation: value("organisation"),
+      role: value("role"),
+      email: value("email"),
+      phone: value("phone"),
+      processing_consent: processingConsent,
+      consent: processingConsent,
+      gclid: searchParams.get("gclid") ?? "",
+      utm_source: searchParams.get("utm_source") ?? "",
+      utm_medium: searchParams.get("utm_medium") ?? "",
+      utm_campaign: searchParams.get("utm_campaign") ?? "",
+      timestamp,
+    };
+
+    setIsSubmitting(true);
     setError("");
+
+    try {
+      const response = await fetch("/api/ergoworks-enquiry", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+      let result: { success?: boolean; error?: string } = {};
+      try {
+        result = await response.json();
+      } catch {
+        // The error below gives the user a useful message for a non-JSON response.
+      }
+
+      if (!response.ok || result.success !== true) {
+        throw new Error(result.error || "We couldn't send your enquiry. Please try again.");
+      }
+
+      setSubmitted(true);
+      setCallActivated(false);
+    } catch (submissionError) {
+      setError(
+        submissionError instanceof Error
+          ? submissionError.message
+          : "We couldn't send your enquiry. Please try again.",
+      );
+    } finally {
+      setIsSubmitting(false);
+    }
+  }
+
+  function handleCallClick() {
+    setCallActivated(true);
+    // Add the GA4 call-click event here when analytics wiring is available.
   }
 
   return (
@@ -124,7 +182,6 @@ export default function EnquiryForm({ variant }: EnquiryFormProps) {
       <form
         ref={formRef}
         className={styles.formElement}
-        data-brand-variant={variant}
         noValidate
         onSubmit={handleSubmit}
       >
@@ -157,37 +214,33 @@ export default function EnquiryForm({ variant }: EnquiryFormProps) {
             className={styles.formStepHeading}
             tabIndex={-1}
           >
-            {FORM_COPY.stepOne}
+            How can we help?
           </h3>
 
           <div className={styles.field}>
-            <label htmlFor="driver">
-              {FORM_COPY.driverLabel} <span aria-hidden="true">*</span>
+            <label htmlFor="service">
+              Service <span aria-hidden="true">*</span>
             </label>
             <select
-              id="driver"
-              name="driver"
+              id="service"
+              name="service"
               defaultValue=""
               required={step === 1}
-              aria-invalid={Boolean(fieldErrors.driver)}
-              aria-describedby={fieldErrors.driver ? "driver-error" : undefined}
+              aria-invalid={Boolean(fieldErrors.service)}
+              aria-describedby={fieldErrors.service ? "service-error" : undefined}
             >
               <option value="" disabled>
-                {FORM_COPY.driverPlaceholder}
+                Select one
               </option>
-              {TRIGGER_GROUPS.map((group) => (
-                <optgroup label={group.label} key={group.label}>
-                  {group.values.map((trigger) => (
-                    <option value={trigger} key={trigger}>
-                      {trigger}
-                    </option>
-                  ))}
-                </optgroup>
+              {SERVICE_OPTIONS.map((option: string) => (
+                <option value={option} key={option}>
+                  {option}
+                </option>
               ))}
             </select>
-            {fieldErrors.driver ? (
-              <p className={styles.fieldError} id="driver-error">
-                {fieldErrors.driver}
+            {fieldErrors.service ? (
+              <p className={styles.fieldError} id="service-error">
+                {fieldErrors.service}
               </p>
             ) : null}
           </div>
@@ -195,7 +248,7 @@ export default function EnquiryForm({ variant }: EnquiryFormProps) {
           <div className={styles.fieldRow}>
             <div className={styles.field}>
               <label htmlFor="workforce-size">
-                {FORM_COPY.workforceLabel} <span aria-hidden="true">*</span>
+                Workforce size <span aria-hidden="true">*</span>
               </label>
               <select
                 id="workforce-size"
@@ -208,7 +261,7 @@ export default function EnquiryForm({ variant }: EnquiryFormProps) {
                 }
               >
                 <option value="" disabled>
-                  {FORM_COPY.workforcePlaceholder}
+                  Select one
                 </option>
                 {WORKFORCE_OPTIONS.map((option) => (
                   <option value={option} key={option}>
@@ -222,44 +275,98 @@ export default function EnquiryForm({ variant }: EnquiryFormProps) {
                 </p>
               ) : null}
             </div>
+
             <div className={styles.field}>
-              <label htmlFor="locations">
-                {FORM_COPY.locationLabel} <span aria-hidden="true">*</span>
+              <label htmlFor="geographic-distribution">
+                Geographic distribution <span aria-hidden="true">*</span>
               </label>
-              <input
-                id="locations"
-                name="sydney_locations"
-                placeholder={FORM_COPY.locationPlaceholder}
+              <select
+                id="geographic-distribution"
+                name="geographic_distribution"
+                defaultValue=""
                 required={step === 1}
-                aria-invalid={Boolean(fieldErrors.locations)}
-                aria-describedby={fieldErrors.locations ? "locations-error" : undefined}
-              />
-              {fieldErrors.locations ? (
-                <p className={styles.fieldError} id="locations-error">
-                  {fieldErrors.locations}
+                aria-invalid={Boolean(fieldErrors["geographic-distribution"])}
+                aria-describedby={
+                  fieldErrors["geographic-distribution"]
+                    ? "geographic-distribution-error"
+                    : undefined
+                }
+              >
+                <option value="" disabled>
+                  Select one
+                </option>
+                {GEO_OPTIONS.map((option: string) => (
+                  <option value={option} key={option}>
+                    {option}
+                  </option>
+                ))}
+              </select>
+              {fieldErrors["geographic-distribution"] ? (
+                <p className={styles.fieldError} id="geographic-distribution-error">
+                  {fieldErrors["geographic-distribution"]}
                 </p>
               ) : null}
             </div>
           </div>
 
-          <div className={styles.field}>
-            <label htmlFor="organisation">
-              {FORM_COPY.organisationLabel} <span aria-hidden="true">*</span>
-            </label>
-            <input
-              id="organisation"
-              name="organisation"
-              autoComplete="organization"
-              placeholder={FORM_COPY.organisationPlaceholder}
-              required={step === 1}
-              aria-invalid={Boolean(fieldErrors.organisation)}
-              aria-describedby={fieldErrors.organisation ? "organisation-error" : undefined}
-            />
-            {fieldErrors.organisation ? (
-              <p className={styles.fieldError} id="organisation-error">
-                {fieldErrors.organisation}
-              </p>
-            ) : null}
+          <div className={styles.fieldRow}>
+            <div className={styles.field}>
+              <label htmlFor="working-model">
+                Working model <span aria-hidden="true">*</span>
+              </label>
+              <select
+                id="working-model"
+                name="working_model"
+                defaultValue=""
+                required={step === 1}
+                aria-invalid={Boolean(fieldErrors["working-model"])}
+                aria-describedby={
+                  fieldErrors["working-model"] ? "working-model-error" : undefined
+                }
+              >
+                <option value="" disabled>
+                  Select one
+                </option>
+                {WORKING_MODEL_OPTIONS.map((option: string) => (
+                  <option value={option} key={option}>
+                    {option}
+                  </option>
+                ))}
+              </select>
+              {fieldErrors["working-model"] ? (
+                <p className={styles.fieldError} id="working-model-error">
+                  {fieldErrors["working-model"]}
+                </p>
+              ) : null}
+            </div>
+
+            <div className={styles.field}>
+              <label htmlFor="timing">
+                Timing <span aria-hidden="true">*</span>
+              </label>
+              <select
+                id="timing"
+                name="timing"
+                defaultValue=""
+                required={step === 1}
+                aria-invalid={Boolean(fieldErrors.timing)}
+                aria-describedby={fieldErrors.timing ? "timing-error" : undefined}
+              >
+                <option value="" disabled>
+                  Select one
+                </option>
+                {TIMING_OPTIONS.map((option: string) => (
+                  <option value={option} key={option}>
+                    {option}
+                  </option>
+                ))}
+              </select>
+              {fieldErrors.timing ? (
+                <p className={styles.fieldError} id="timing-error">
+                  {fieldErrors.timing}
+                </p>
+              ) : null}
+            </div>
           </div>
 
           <div className={styles.btnRow}>
@@ -281,12 +388,32 @@ export default function EnquiryForm({ variant }: EnquiryFormProps) {
             className={styles.formStepHeading}
             tabIndex={-1}
           >
-            {FORM_COPY.stepTwo}
+            How we reach you
           </h3>
 
           <div className={styles.field}>
+            <label htmlFor="organisation">
+              Organisation name <span aria-hidden="true">*</span>
+            </label>
+            <input
+              id="organisation"
+              name="organisation"
+              autoComplete="organization"
+              placeholder="Company name"
+              required={step === 2}
+              aria-invalid={Boolean(fieldErrors.organisation)}
+              aria-describedby={fieldErrors.organisation ? "organisation-error" : undefined}
+            />
+            {fieldErrors.organisation ? (
+              <p className={styles.fieldError} id="organisation-error">
+                {fieldErrors.organisation}
+              </p>
+            ) : null}
+          </div>
+
+          <div className={styles.field}>
             <label htmlFor="role">
-              {FORM_COPY.roleLabel} <span aria-hidden="true">*</span>
+              Your role <span aria-hidden="true">*</span>
             </label>
             <select
               id="role"
@@ -298,7 +425,7 @@ export default function EnquiryForm({ variant }: EnquiryFormProps) {
               aria-describedby={fieldErrors.role ? "role-error" : undefined}
             >
               <option value="" disabled>
-                {FORM_COPY.rolePlaceholder}
+                Select one
               </option>
               {ROLE_OPTIONS.map((role) => (
                 <option value={role} key={role}>
@@ -316,7 +443,7 @@ export default function EnquiryForm({ variant }: EnquiryFormProps) {
           <div className={styles.fieldRow}>
             <div className={styles.field}>
               <label htmlFor="work-email">
-                {FORM_COPY.emailLabel} <span aria-hidden="true">*</span>
+                Work email <span aria-hidden="true">*</span>
               </label>
               <input
                 id="work-email"
@@ -324,7 +451,7 @@ export default function EnquiryForm({ variant }: EnquiryFormProps) {
                 type="email"
                 inputMode="email"
                 autoComplete="email"
-                placeholder={FORM_COPY.emailPlaceholder}
+                placeholder="you@company.com.au"
                 required={step === 2}
                 spellCheck={false}
                 aria-invalid={Boolean(fieldErrors["work-email"])}
@@ -336,15 +463,16 @@ export default function EnquiryForm({ variant }: EnquiryFormProps) {
                 </p>
               ) : null}
             </div>
+
             <div className={styles.field}>
-              <label htmlFor="phone">{FORM_COPY.phoneLabel}</label>
+              <label htmlFor="phone">Phone (optional)</label>
               <input
                 id="phone"
                 name="phone"
                 type="tel"
                 inputMode="tel"
                 autoComplete="tel"
-                placeholder={FORM_COPY.phonePlaceholder}
+                placeholder="Optional"
               />
             </div>
           </div>
@@ -354,6 +482,7 @@ export default function EnquiryForm({ variant }: EnquiryFormProps) {
               id="processing-consent"
               type="checkbox"
               name="processing_consent"
+              value="true"
               required={step === 2}
               aria-invalid={Boolean(fieldErrors["processing-consent"])}
               aria-describedby={
@@ -361,7 +490,8 @@ export default function EnquiryForm({ variant }: EnquiryFormProps) {
               }
             />
             <span>
-              {FORM_COPY.processingConsent} <span aria-hidden="true">*</span>
+              I agree that this enquiry can be processed so the team can respond.{" "}
+              <span aria-hidden="true">*</span>
             </span>
           </label>
           {fieldErrors["processing-consent"] ? (
@@ -369,33 +499,28 @@ export default function EnquiryForm({ variant }: EnquiryFormProps) {
               {fieldErrors["processing-consent"]}
             </p>
           ) : null}
-          <label className={styles.consent}>
-            <input type="checkbox" name="marketing_consent" />
-            <span>{FORM_COPY.marketingConsent}</span>
-          </label>
 
           <p className={styles.priorityLine}>{COMPETING_PRIORITIES_LINE}</p>
 
           <div className={styles.btnRow}>
-            {/*
-              type="button", NOT type="submit". Without a submit control the browser
-              performs no implicit submission, so before React hydrates (or if the
-              island fails to load) pressing Enter cannot fire a native GET that puts
-              the organisation name and Sydney locations into the URL query string,
-              where they would land in browser history, server and CDN logs. The
-              form has no action/method, so that navigation was previously possible.
-            */}
-            <button type="button" onClick={() => handleSubmit()} className={styles.btn}>
-              {FORM_COPY.submit}
+            {/* Keep this as a button so the form cannot submit before React hydrates. */}
+            <button
+              type="button"
+              onClick={() => void handleSubmit()}
+              className={styles.btn}
+              disabled={isSubmitting}
+            >
+              {CTA}
             </button>
             <button
               type="button"
-              className={`${styles.btn} ${styles.btnGhost}`}
+              className={styles.btn + " " + styles.btnGhost}
               onClick={() => {
                 setStep(1);
                 setError("");
                 setFieldErrors({});
               }}
+              disabled={isSubmitting}
             >
               {FORM_COPY.back}
             </button>
@@ -412,29 +537,25 @@ export default function EnquiryForm({ variant }: EnquiryFormProps) {
       >
         {submitted || callActivated ? (
           <>
-            <h3>{FORM_COPY.whatNext}</h3>
-            <p>{submitted ? FORM_COPY.submitted : FORM_COPY.callNext}</p>
+            <h3>What happens next</h3>
+            <p>{submitted ? SUCCESS_MESSAGE : FORM_COPY.callNext}</p>
             {submitted && callActivated ? <p>{FORM_COPY.callNext}</p> : null}
-            {submitted ? (
-              <span className={styles.debugChip}>
-                {FORM_COPY.brandVariantLabel}: {variant} · {FORM_COPY.eventLabel}: {FORM_COPY.debugEvent}
-              </span>
-            ) : null}
           </>
         ) : null}
       </div>
 
-      <button
+      <a
         ref={callBarRef}
-        type="button"
+        href="tel:1300374696"
         className={styles.callBar}
+        style={{ textDecoration: "none" }}
         data-callbar="true"
         aria-controls="enquiry-next"
         aria-expanded={submitted || callActivated}
-        onClick={() => setCallActivated(true)}
+        onClick={handleCallClick}
       >
-        {FORM_COPY.callBar}
-      </button>
+        You can chat with our health professional consultant
+      </a>
     </>
   );
 }
