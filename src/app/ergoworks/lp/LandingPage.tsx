@@ -84,10 +84,10 @@ export default function LandingPage({ paidPath = false }: LandingPageProps) {
               <a className={styles.btn} href="#enquire">
                 {CTA}
               </a>
+              <a className={styles.btnGhost} href="tel:1300374696">
+                Call 1300 374 696
+              </a>
             </div>
-            <span className={styles.audienceChip}>
-              {PAGE_COPY.headerAudience}
-            </span>
           </div>
         </div>
       </section>
@@ -99,11 +99,11 @@ export default function LandingPage({ paidPath = false }: LandingPageProps) {
           <h2 className={styles.h2}>{PAGE_COPY.servicesHeading}</h2>
           <div className={styles.serviceGrid}>
             {SERVICES.map((service) => (
-              <details className={styles.serviceCard} key={service.number} open={service.number === "01"}>
-                <summary>
+              <article className={styles.serviceCard} key={service.number}>
+                <h3 className={styles.serviceName}>
                   {service.name}
                   <span className={styles.serviceCardBenefit}>{service.benefit}</span>
-                </summary>
+                </h3>
                 <div className={styles.serviceCardBody}>
                   {service.body ? (
                     <p className={styles.body}>{service.body}</p>
@@ -116,7 +116,7 @@ export default function LandingPage({ paidPath = false }: LandingPageProps) {
                     </ul>
                   ) : null}
                 </div>
-              </details>
+              </article>
             ))}
           </div>
         </div>

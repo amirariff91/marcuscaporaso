@@ -6,12 +6,12 @@
 */
 
 .page {
-  --paper: #f4f7fa;
+  --paper: #f6f4ee;
   --surface: #ffffff;
-  --surface-alt: #eef3f8;
-  --ink: #0b2136;
-  --text: #1a1a1a;
-  --line: #cdd9e4;
+  --surface-alt: #efece2;
+  --ink: #211f16;
+  --text: #2a2a24;
+  --line: #ddd7c8;
   --accent: #4179c0;
   --accentAction: #35659f;
   --accentRule: var(--accentAction);
@@ -345,6 +345,10 @@
 /* ── sample report ──────────────────────────────────────────────────────── */
 .reportBlock {
   margin-top: 0.25rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  padding: clamp(1.25rem, 3vw, 2rem);
+  box-shadow: 0.5rem 0.5rem 0 var(--surface-alt);
 }
 
 .reportHead {
@@ -385,7 +389,7 @@
 
 .reportTable th {
   border-bottom: 1px solid var(--line);
-  background: #e4ecf3;
+  background: var(--surface-alt);
   padding: 0.7rem 0.85rem;
   color: var(--text);
   font-family: var(--font-barlow), system-ui, sans-serif;
@@ -397,7 +401,7 @@
 }
 
 .reportTable td {
-  border-bottom: 1px solid #e4ecf3;
+  border-bottom: 1px solid var(--line);
   padding: 0.8rem 0.85rem;
   color: var(--text);
   line-height: 1.5;
@@ -428,7 +432,7 @@
 }
 
 .pri[data-p="med"] {
-  background: #e4ecf3;
+  background: var(--surface-alt);
 }
 
 .reportDefinition {
@@ -467,24 +471,19 @@
   counter-increment: service-counter;
 }
 
-.serviceCard summary {
+.serviceName {
   display: flex;
   align-items: center;
   gap: 0.75rem;
   padding: 1.15rem 1.2rem;
-  cursor: pointer;
   font-family: var(--font-barlow), system-ui, sans-serif;
   font-size: 1.05rem;
   font-weight: 700;
   line-height: 1.25;
-  list-style: none;
+  margin: 0;
 }
 
-.serviceCard summary::-webkit-details-marker {
-  display: none;
-}
-
-.serviceCard summary::before {
+.serviceName::before {
   content: counter(service-counter, decimal-leading-zero);
   flex: 0 0 auto;
   display: flex;
@@ -496,24 +495,6 @@
   color: var(--text);
   font-size: 0.8rem;
   font-weight: 800;
-}
-
-.serviceCard summary::after {
-  content: "+";
-  margin-left: auto;
-  font-size: 1.2rem;
-  font-weight: 300;
-  color: var(--text);
-  opacity: 0.5;
-  transition: transform 0.2s ease;
-}
-
-.serviceCard[open] summary::after {
-  content: "−";
-}
-
-.serviceCard[open] summary {
-  border-bottom: 1px solid var(--line);
 }
 
 .serviceCardBody {
@@ -551,14 +532,19 @@
 /* ── differentiators ──────────────────────────────────────────────────── */
 .diffGrid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: clamp(1.25rem, 3vw, 2rem);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0;
   margin-top: 2rem;
 }
 
 .diffCard {
-  border-top: 2px solid var(--accentRule);
-  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+  padding: 1.5rem 2rem 1.5rem 0;
+}
+
+.diffCard:nth-child(even) {
+  border-inline-start: 1px solid var(--line);
+  padding-inline-start: 2rem;
 }
 
 .diffCard h3 {
@@ -596,6 +582,11 @@
 
 .valueList li:last-child {
   border-bottom: 0;
+}
+
+.valueColumn + .valueColumn {
+  border-inline-start: 1px solid var(--line);
+  padding-inline-start: clamp(1.5rem, 4vw, 3rem);
 }
 
 /* ── social proof strip ───────────────────────────────────────────────── */
@@ -717,7 +708,7 @@
 .field input,
 .field select {
   width: 100%;
-  border: 1px solid #60788d;
+  border: 1px solid #8a8677;
   border-radius: 4px;
   background: var(--surface);
   padding: 0.7rem 0.8rem;
@@ -927,8 +918,7 @@
 
 @media (max-width: 62rem) {
   .formWrap,
-  .steps,
-  .diffGrid {
+  .steps {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -969,6 +959,19 @@
 
   .valueGrid {
     grid-template-columns: minmax(0, 1fr);
+  }
+
+  .valueColumn + .valueColumn {
+    border-inline-start: 0;
+    border-top: 1px solid var(--line);
+    padding-inline-start: 0;
+    padding-top: 1.5rem;
+    margin-top: 1.5rem;
+  }
+
+  .diffCard:nth-child(even) {
+    border-inline-start: 0;
+    padding-inline-start: 0;
   }
 
   .fieldRow {
