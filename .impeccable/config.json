@@ -1,7 +1,9 @@
 {
   "detector": {
     "ignoreRules": [],
-    "ignoreFiles": [],
+    "ignoreFiles": [
+      "/private/tmp/claude-501/-Users-amirariff-projects-growthos-marcuscaporaso/23fd5389-45a6-4978-ad2c-64ab3c1dec07/scratchpad/ergoworks-cleanup-prep.html"
+    ],
     "ignoreValues": [
       {
         "rule": "overused-font",
@@ -11,6 +13,15 @@
         ],
         "createdAt": "2026-08-16T17:16:48.214Z",
         "reason": "SERP replica must use Google's system sans; intentional"
+      },
+      {
+        "rule": "side-tab",
+        "value": "*",
+        "files": [
+          "/private/tmp/claude-501/-Users-amirariff-projects-growthos-marcuscaporaso/23fd5389-45a6-4978-ad2c-64ab3c1dec07/scratchpad/ergoworks-review-report.html"
+        ],
+        "createdAt": "2026-08-18T17:07:56.275Z",
+        "reason": "Timeline connector border-left, not a card accent pattern"
       }
     ]
   }
