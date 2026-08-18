@@ -47,10 +47,8 @@
 .page h4,
 .kicker,
 .btn,
-.forkBtn,
 .formSteps,
-.stepN,
-.wordmarkType {
+.stepN {
   font-family: var(--font-barlow), system-ui, sans-serif;
 }
 
@@ -67,19 +65,7 @@
   padding-inline: clamp(20px, 5vw, 64px);
 }
 
-.ribbon {
-  position: relative;
-  z-index: 1;
-  border-bottom: 1px solid var(--ink);
-  background: var(--ink);
-  color: #ffffff;
-  padding: 0.55rem clamp(20px, 5vw, 64px);
-  font-size: 0.76rem;
-  line-height: 1.45;
-  text-align: center;
-}
-
-/* ── header and frozen brand slots ─────────────────────────────────────── */
+/* ── header ────────────────────────────────────────────────────────────── */
 .header {
   display: flex;
   min-height: 64px;
@@ -119,21 +105,6 @@
   overflow: visible;
 }
 
-.wordmarkMark {
-  fill: var(--accent);
-}
-
-.wordmarkPlate {
-  fill: var(--ink);
-}
-
-.wordmarkType {
-  fill: var(--text);
-  font-size: 10.7px;
-  font-weight: 800;
-  letter-spacing: -0.2px;
-}
-
 .descriptorSlot {
   display: flex;
   min-height: 1rem;
@@ -142,16 +113,6 @@
   font-size: 0.76rem;
   line-height: 1.3;
   opacity: 0.72;
-}
-
-.endorsement {
-  min-height: 2.8rem;
-  max-width: 38ch;
-  margin: 0.35rem 0 0;
-  color: var(--text);
-  font-size: 0.78rem;
-  line-height: 1.4;
-  opacity: 0.78;
 }
 
 .headerMeta {
@@ -170,18 +131,17 @@
   opacity: 0.78;
 }
 
-/*
- * Reserved, not drawn. The Google rating renders in NEITHER skin (the 63 reviews are
- * ErgoWorks', so showing them in the Biosymm-led skin misattributes them and showing
- * them in one skin only contaminates the brand test). The slot still occupies its
- * space so both skins keep identical header geometry when the rating is approved.
- * It must be invisible: a dashed placeholder box reads as an unfinished page to a
- * client looking at this in a review session.
- */
-.ratingSlot {
-  display: block;
-  min-width: 7rem;
-  min-height: 1.2rem;
+.headerPhone {
+  font-family: var(--font-barlow), system-ui, sans-serif;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--accentAction);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.headerPhone:hover {
+  text-decoration: underline;
 }
 
 /* ── shared type and sections ───────────────────────────────────────────── */
@@ -254,7 +214,6 @@
 .lead,
 .body,
 .heroLead,
-.formPromise,
 .reportFoot {
   max-width: 68ch;
   color: var(--text);
@@ -324,10 +283,6 @@
   margin-top: 1.75rem;
 }
 
-.forkSection {
-  margin-top: clamp(2rem, 4vw, 3rem);
-}
-
 .audienceChip {
   display: inline-flex;
   min-height: 44px;
@@ -373,108 +328,6 @@
   filter: none;
 }
 
-/* ── employer fork and individual dead-end ─────────────────────────────── */
-.forkFieldset {
-  min-width: 0;
-  margin: 0;
-  border: 0;
-  padding: 0;
-}
-
-/*
- * The fork's radios are clipped, so the group carries their focus ring. Prefer
- * :focus-visible — plain :focus-within also fires on mouse click, which drew a
- * heavy box around the whole fork every time someone simply clicked an option.
- * The :focus-within fallback stays for browsers without :has(), where it is the
- * only way this group shows focus at all.
- */
-.forkFieldset:has(input:focus-visible) {
-  outline: 2px solid var(--ink);
-  outline-offset: 2px;
-}
-
-@supports not selector(:has(*)) {
-  .forkFieldset:focus-within {
-    outline: 2px solid var(--ink);
-    outline-offset: 2px;
-  }
-}
-
-.forkQuestion {
-  margin: 0 0 0.9rem;
-  color: var(--text);
-  font-family: var(--font-barlow), system-ui, sans-serif;
-  font-size: 1.05rem;
-  font-weight: 700;
-}
-
-.forkRow {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-}
-
-.forkBtn {
-  display: inline-flex;
-  min-height: 52px;
-  align-items: center;
-  border: 1px solid var(--line);
-  border-radius: 4px;
-  background: var(--surface);
-  padding: 1rem 1.5rem;
-  color: var(--text);
-  cursor: pointer;
-  font-size: clamp(1rem, 1.5vw, 1.2rem);
-  font-weight: 700;
-  line-height: 1.1;
-}
-
-.forkBtn:hover {
-  border-color: var(--accentRule);
-}
-
-.paidFork {
-  min-height: 1.4rem;
-  margin: 0;
-}
-
-.inlineLink {
-  border: 0;
-  background: none;
-  padding: 0;
-  color: var(--text);
-  cursor: pointer;
-  font: inherit;
-  font-weight: 700;
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 0.18em;
-}
-
-.inlineLink:hover {
-  text-decoration-thickness: 2px;
-}
-
-.deadEnd {
-  max-width: 60rem;
-  border: 1px solid var(--line);
-  border-top: 2px solid var(--accentRule);
-  border-radius: 4px;
-  background: var(--surface);
-  padding: clamp(1.6rem, 4vw, 2.75rem);
-}
-
-.deadEnd h2 {
-  margin: 0 0 1rem;
-  font-size: clamp(1.5rem, 2.8vw, 2.1rem);
-  line-height: 1.15;
-  letter-spacing: -0.025em;
-}
-
-.deadEnd .body + .body {
-  margin-top: 1rem;
-}
-
 .vh {
   position: absolute;
   width: 1px;
@@ -488,136 +341,7 @@
   white-space: nowrap;
 }
 
-.individualOnly {
-  display: none;
-}
-
-.corporateOnly {
-  display: block;
-}
-
-/* :has() is progressive enhancement: without it, corporate content remains visible. */
-@supports selector(:has(*)) {
-  .page:has(:global(#flow-me:checked)) .individualOnly {
-    display: block;
-  }
-
-  .page:has(:global(#flow-me:checked)) .corporateOnly {
-    display: none;
-  }
-
-  .page:has(:global(#flow-me:checked)) .hero .ctaRow {
-    display: none;
-  }
-
-  .page:has(:global(#flow-team:checked)) .forkBtn[data-fork="team"],
-  .page:has(:global(#flow-me:checked)) .forkBtn[data-fork="me"] {
-    border-color: var(--accentAction);
-    background: var(--accentAction);
-    color: #ffffff;
-  }
-
-  .page:has(:global(#flow-me:checked)) .forkBtn[data-fork="team"] {
-    border-color: var(--line);
-    background: var(--surface);
-    color: var(--text);
-  }
-
-  .page:has(:global(#flow-team:focus-visible)) .forkBtn[data-fork="team"],
-  .page:has(:global(#flow-me:focus-visible)) .forkBtn[data-fork="me"] {
-    outline: 2px solid var(--ink);
-    outline-offset: 2px;
-  }
-}
-
-@supports not selector(:has(*)) {
-  .page :global(#flow-team:checked) ~ .forkRow .forkBtn[data-fork="team"],
-  .page :global(#flow-me:checked) ~ .forkRow .forkBtn[data-fork="me"] {
-    border-color: var(--accentAction);
-    background: var(--accentAction);
-    color: #ffffff;
-  }
-
-  .page :global(#flow-me:checked) ~ .forkRow .forkBtn[data-fork="team"] {
-    border-color: var(--line);
-    background: var(--surface);
-    color: var(--text);
-  }
-}
-
-/* ── problem and triggers ───────────────────────────────────────────────── */
-.triggerPanel {
-  margin-top: clamp(2rem, 4vw, 3rem);
-  border: 1px solid var(--line);
-  border-top: 2px solid var(--accentRule);
-  border-radius: 4px;
-  background: var(--surface);
-  padding: clamp(1.25rem, 3vw, 1.75rem);
-}
-
-.triggerList {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0.75rem 1.5rem;
-  margin: 1.25rem 0 0;
-  padding: 0;
-  list-style: none;
-}
-
-.triggerList li {
-  display: flex;
-  gap: 0.65rem;
-  color: var(--text);
-  font-size: 0.96rem;
-  line-height: 1.55;
-  opacity: 0.86;
-}
-
-.triggerList li::before {
-  flex: 0 0 0.55rem;
-  width: 0.55rem;
-  height: 0.55rem;
-  margin-top: 0.45rem;
-  background: var(--accentRule);
-  content: "";
-}
-
-.objectionBlock {
-  margin-top: clamp(2.5rem, 5vw, 4rem);
-}
-
-.objectionGrid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: clamp(1.25rem, 3vw, 2.5rem);
-  margin-top: 1.5rem;
-}
-
-.objection {
-  border-top: 2px solid var(--accentRule);
-  padding-top: 1rem;
-}
-
-.objectionLetter {
-  display: inline-flex;
-  width: 2rem;
-  height: 2rem;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid var(--accentRule);
-  color: var(--text);
-  font-family: var(--font-barlow), system-ui, sans-serif;
-  font-size: 0.9rem;
-  font-weight: 800;
-}
-
-/* Sits under the section's h3 (1.05rem), so it must not out-size its parent. */
-.objection h4 {
-  margin: 0.7rem 0 0.55rem;
-  font-size: 1rem;
-  line-height: 1.3;
-}
-
+/* ── problem and triggers (removed — replaced by services) ─────────────── */
 /* ── sample report ──────────────────────────────────────────────────────── */
 .reportBlock {
   margin-top: 0.25rem;
@@ -726,7 +450,156 @@
   font-size: 0.95rem;
 }
 
-/* ── how it works and ecosystem ────────────────────────────────────────── */
+/* ── services (expandable cards) ───────────────────────────────────────── */
+.serviceGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+  counter-reset: service-counter;
+}
+
+.serviceCard {
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: var(--surface);
+  overflow: hidden;
+  counter-increment: service-counter;
+}
+
+.serviceCard summary {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1.15rem 1.2rem;
+  cursor: pointer;
+  font-family: var(--font-barlow), system-ui, sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.25;
+  list-style: none;
+}
+
+.serviceCard summary::-webkit-details-marker {
+  display: none;
+}
+
+.serviceCard summary::before {
+  content: counter(service-counter, decimal-leading-zero);
+  flex: 0 0 auto;
+  display: flex;
+  width: 2rem;
+  height: 2rem;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--accentRule);
+  color: var(--text);
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+
+.serviceCard summary::after {
+  content: "+";
+  margin-left: auto;
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: var(--text);
+  opacity: 0.5;
+  transition: transform 0.2s ease;
+}
+
+.serviceCard[open] summary::after {
+  content: "−";
+}
+
+.serviceCard[open] summary {
+  border-bottom: 1px solid var(--line);
+}
+
+.serviceCardBody {
+  padding: 1.15rem 1.2rem;
+}
+
+.serviceCardBody .body {
+  margin: 0;
+}
+
+.serviceCardBenefit {
+  margin: 0.75rem 0 0;
+  font-size: 0.88rem;
+  font-style: italic;
+  opacity: 0.82;
+}
+
+.serviceSubList {
+  margin: 0.75rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.serviceSubList li {
+  padding: 0.5rem 0;
+  font-size: 0.92rem;
+  line-height: 1.55;
+  border-bottom: 1px solid var(--line);
+}
+
+.serviceSubList li:last-child {
+  border-bottom: 0;
+}
+
+/* ── differentiators ──────────────────────────────────────────────────── */
+.diffGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: clamp(1.25rem, 3vw, 2rem);
+  margin-top: 2rem;
+}
+
+.diffCard {
+  border-top: 2px solid var(--accentRule);
+  padding-top: 1rem;
+}
+
+.diffCard h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+  line-height: 1.3;
+}
+
+/* ── value proposition ────────────────────────────────────────────────── */
+.valueGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(1.5rem, 4vw, 3rem);
+  margin-top: 2rem;
+}
+
+.valueColumn h3 {
+  margin: 0 0 1rem;
+  font-size: 1.25rem;
+  line-height: 1.2;
+}
+
+.valueList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.valueList li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--line);
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
+.valueList li:last-child {
+  border-bottom: 0;
+}
+
+/* ── social proof strip ───────────────────────────────────────────────── */
+/* ── how it works ─────────────────────────────────────────────────────── */
 .steps {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -769,50 +642,6 @@
  * with copy, not bare pills. Auto-fit rather than a fixed column count: the four
  * descriptions differ in length and the row should reflow on its own width.
  */
-.engineRail {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
-  gap: 1rem;
-  margin-top: 2rem;
-}
-
-.engineItem {
-  min-width: 0;
-  border: 1px solid var(--line);
-  border-radius: 4px;
-  background: var(--surface);
-  padding: 1.15rem 1.2rem;
-}
-
-.engineName {
-  display: flex;
-  align-items: center;
-  gap: 0.55rem;
-  margin: 0 0 0.5rem;
-  color: var(--text);
-  font-family: var(--font-barlow), system-ui, sans-serif;
-  font-size: 1rem;
-  font-weight: 700;
-  line-height: 1.25;
-}
-
-.engineName::before {
-  flex: 0 0 0.5rem;
-  width: 0.5rem;
-  height: 0.5rem;
-  background: var(--accentRule);
-  content: "";
-}
-
-.engineBody {
-  margin: 0;
-  color: var(--text);
-  font-size: 0.92rem;
-  line-height: 1.6;
-  opacity: 0.82;
-}
-
-
 /* ── form ───────────────────────────────────────────────────────────────── */
 .formWrap {
   display: grid;
@@ -823,15 +652,6 @@
 
 .formIntro .h2 {
   max-width: 16ch;
-}
-
-.formPromise {
-  margin: 1.25rem 0 0;
-  border-left: 2px solid var(--accentRule);
-  padding-left: 0.85rem;
-  font-size: 0.95rem;
-  line-height: 1.6;
-  opacity: 0.82;
 }
 
 .form {
@@ -1009,21 +829,6 @@
   margin-top: 0.65rem;
 }
 
-.debugChip {
-  display: inline-block;
-  margin-top: 0.85rem;
-  max-width: 100%;
-  overflow-wrap: break-word;
-  border-radius: 3px;
-  background: var(--ink);
-  padding: 0.35rem 0.5rem;
-  color: #ffffff;
-  font-family: var(--font-barlow), system-ui, sans-serif;
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.02em;
-}
-
 .callBar {
   position: fixed;
   z-index: 50;
@@ -1058,7 +863,12 @@
   filter: brightness(0.92);
 }
 
-/* ── footer and split-demo chrome ───────────────────────────────────────── */
+@media (min-width: 46.01rem) {
+  .callBar {
+    display: none;
+  }
+}
+
 .footer {
   display: flex;
   flex-wrap: wrap;
@@ -1073,53 +883,6 @@
 
 .footNote {
   margin-inline-start: auto;
-}
-
-.demoBar {
-  border-bottom: 1px solid var(--ink);
-  background: var(--ink);
-  padding: 1rem 20px;
-  color: #ffffff;
-}
-
-.demoInner {
-  display: flex;
-  width: min(1180px, 100%);
-  margin-inline: auto;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0.75rem 1rem;
-}
-
-.demoState {
-  flex: 1 1 18rem;
-  font-size: 0.84rem;
-  line-height: 1.5;
-}
-
-.demoLinks {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.55rem;
-}
-
-.demoLink {
-  display: inline-flex;
-  min-height: 40px;
-  align-items: center;
-  border: 1px solid #ffffff;
-  border-radius: 3px;
-  padding: 0.55rem 0.7rem;
-  color: #ffffff;
-  font-size: 0.78rem;
-  font-weight: 700;
-  line-height: 1.2;
-  text-decoration: none;
-}
-
-.demoLink:hover {
-  background: #ffffff;
-  color: var(--text);
 }
 
 /* ── responsive report definition list ─────────────────────────────────── */
@@ -1164,7 +927,8 @@
 
 @media (max-width: 62rem) {
   .formWrap,
-  .steps {
+  .steps,
+  .diffGrid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -1188,14 +952,22 @@
     display: none;
   }
 
+  .headerPhone {
+    display: none;
+  }
+
   .ratingSlot {
     min-width: 5rem;
   }
 
-  .triggerList,
-  .objectionGrid,
+  .serviceGrid,
+  .diffGrid,
   .formWrap,
   .steps {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .valueGrid {
     grid-template-columns: minmax(0, 1fr);
   }
 
