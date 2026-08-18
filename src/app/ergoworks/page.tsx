@@ -54,9 +54,9 @@ type Row = {
 
 const ROWS: Row[] = [
   {
-    label: "Phase-one landing page",
+    label: "Landing page",
     href: "/ergoworks/lp",
-    body: "The working prototype of the Sydney campaign landing page, in both brand treatments — Biosymm-led and ErgoWorks-led. Structure, copy, offer and form are identical; only the brand layer differs. This is the reference the production build is copied from.",
+    body: "The working prototype of the campaign landing page. This is the reference the production build is copied from.",
     status: "open",
   },
   {
