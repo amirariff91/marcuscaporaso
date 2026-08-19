@@ -28,7 +28,14 @@ export default function EnquiryForm() {
   const callBarRef = useRef<HTMLAnchorElement>(null);
   const stepOneHeadingRef = useRef<HTMLHeadingElement>(null);
   const stepTwoHeadingRef = useRef<HTMLHeadingElement>(null);
+  const successHeadingRef = useRef<HTMLHeadingElement>(null);
   const previousStepRef = useRef<Step>(step);
+
+  useEffect(() => {
+    if (submitted) {
+      successHeadingRef.current?.focus();
+    }
+  }, [submitted]);
 
   /*
    * The page reserves space for the pinned call bar with a --callbar-height custom
@@ -291,14 +298,23 @@ export default function EnquiryForm() {
 
           <div className={styles.field}>
             <label htmlFor="organisation">
-              {FORM_COPY.organisationLabel} <span aria-hidden="true">*</span>
+              {FORM_COPY.organisationLabel}{" "}
+              {enquiryType === "Individual or home-based" ? (
+                <span className={styles.optionalLabel}>(optional)</span>
+              ) : (
+                <span aria-hidden="true">*</span>
+              )}
             </label>
             <input
               id="organisation"
               name="organisation"
               autoComplete="organization"
-              placeholder={FORM_COPY.organisationPlaceholder}
-              required={step === 2}
+              placeholder={
+                enquiryType === "Individual or home-based"
+                  ? "Company or trading name (optional)"
+                  : FORM_COPY.organisationPlaceholder
+              }
+              required={step === 2 && enquiryType !== "Individual or home-based"}
               aria-invalid={Boolean(fieldErrors.organisation)}
               aria-describedby={fieldErrors.organisation ? "organisation-error" : undefined}
             />
@@ -467,7 +483,9 @@ export default function EnquiryForm() {
       >
         {submitted ? (
           <>
-            <h3>{FORM_COPY.whatNext}</h3>
+            <h3 ref={successHeadingRef} tabIndex={-1}>
+              {FORM_COPY.whatNext}
+            </h3>
             <p>
               Thank you. One of our health professional consultants will review
               your organisation&rsquo;s needs and recommend the most appropriate
