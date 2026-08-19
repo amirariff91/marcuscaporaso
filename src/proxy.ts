@@ -142,7 +142,10 @@ export function proxy(request: NextRequest) {
   // into the private pack unauthenticated — and skip the retired-URL redirects and
   // the private cache headers with it. On the apex, resolved === incoming.
   const needsRewrite =
-    Boolean(root) && !pathname.startsWith(root!) && !isPublicAsset(pathname);
+    Boolean(root) &&
+    !pathname.startsWith(root!) &&
+    !pathname.startsWith("/api/") &&
+    !isPublicAsset(pathname);
   const resolvedPath = needsRewrite
     ? `${root}${pathname === "/" ? "" : pathname}`
     : pathname;
