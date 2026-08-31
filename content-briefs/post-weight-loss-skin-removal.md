@@ -59,13 +59,13 @@ This page serves Perth adults who, after major weight loss, are left with an ove
 ### Semantic Terms to Include
 LSI/semantic terms to weave in naturally (signals of topical depth, not stuffing targets):
 
-pannus, overhanging fold of redundant skin, redundant / excess skin, intertrigo, recurrent skin infections, rashes, skin breakdown / ulceration, hygiene difficulty, impaired mobility, weight stability (~6–12 months), reconstructive surgery, panniculectomy, abdominoplasty (reconstructive sense, once or twice only), seroma, wound healing, scarring, GP referral, Medicare rebate / MBS criteria (panniculectomy item 30177-type), St John of God Murdoch and Subiaco, individual assessment.
+pannus, overhanging fold of redundant skin, redundant / excess skin, intertrigo, recurrent skin infections, rashes, skin breakdown / ulceration, hygiene difficulty, impaired mobility, weight stability (~6–12 months), reconstructive surgery, panniculectomy, abdominoplasty (reconstructive sense, once or twice only), seroma, wound healing, scarring, GP referral, Medicare rebate / MBS criteria (panniculectomy item 30177-type), Mount Private Hospital and Waikiki Private Hospital, individual assessment.
 
 ### SERP / positioning note
 The high-volume head terms in this space are cosmetic ("tummy tuck", "abdominoplasty"). We are intentionally not competing on those. The page targets the medically-motivated long tail (excess skin removal, panniculectomy, skin removal after weight loss) where intent aligns with a reconstructive, criteria-based offering. This is both the compliant choice and the honest one: the practice offers this procedure on medical grounds only.
 
 ### Content Gap Opportunity
-(1) Medical-framing gap — most competitor pages for skin removal lead with appearance and "tummy tuck" language; a clearly reconstructive, criteria-based Perth page fills genuine whitespace and is more trustworthy. (2) Geographic gap — naming SJOG Murdoch & Subiaco and Perth. (3) Funding-honesty gap — clearly explaining that Medicare/MBS support is criteria-based and individually assessed, never automatic, rather than implying easy cover. (4) Risk transparency — being unusually direct about scarring, seroma and wound-healing problems where commercial cosmetic pages soft-pedal.
+(1) Medical-framing gap — most competitor pages for skin removal lead with appearance and "tummy tuck" language; a clearly reconstructive, criteria-based Perth page fills genuine whitespace and is more trustworthy. (2) Geographic gap — naming Mount Private Hospital & Waikiki Private Hospital and Perth. (3) Funding-honesty gap — clearly explaining that Medicare/MBS support is criteria-based and individually assessed, never automatic, rather than implying easy cover. (4) Risk transparency — being unusually direct about scarring, seroma and wound-healing problems where commercial cosmetic pages soft-pedal.
 
 ---
 
@@ -83,7 +83,7 @@ Use verbatim:
 | Procedure | Panniculectomy | Surgical removal of an overhanging fold of redundant skin (the pannus) |
 | Basis | Medical | Considered for documented functional and skin problems, not appearance |
 | Timing | Weight stable | Generally considered once weight has been stable, often around 6 to 12 months |
-| Where | SJOG Murdoch & Subiaco | Performed at St John of God private hospitals |
+| Where | Mount Private Hospital and Waikiki Private Hospital | Performed at accredited private hospitals |
 
 ### What is excess skin removal after weight loss?
 - ~3 paragraphs.
@@ -110,7 +110,7 @@ Short bridging paragraph on weight stability: only considered once weight stable
 2. **Medical Assessment** — surgeon examines redundant skin, reviews history of infections/rashes/breakdown and prior treatment; establishes whether there is a genuine documented functional problem.
 3. **Confirming Weight Stability** — confirm weight stable for a sustained period (~6–12 months) before recommending surgery.
 4. **Eligibility and Funding Review** — review whether the case meets the medical criteria allowing Medicare/private fund support (relevant MBS panniculectomy criteria); assessed individually, never assumed. (No finance/super inducement language.)
-5. **Surgery** — if medically indicated, performed at SJOG Murdoch or Subiaco; major operation; surgeon explains approach, expected scarring, hospital stay.
+5. **Surgery** — if medically indicated, performed at Mount Private Hospital or Waikiki Private Hospital; major operation; surgeon explains approach, expected scarring, hospital stay.
 6. **Recovery and Follow-Up** — recovery takes time and careful wound care; follow-up to monitor healing, manage drains, watch for seroma/wound-healing problems.
 
 ### Benefits (5 bullets) — framed as what the procedure AIMS to address

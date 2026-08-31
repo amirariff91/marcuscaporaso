@@ -36,7 +36,7 @@ All metrics below are reasonable estimates aligned with the sibling briefs in th
 ### Semantic Terms to Include
 Comma-separated list of LSI/semantic terms the writer must naturally weave into the copy. These are not keyword-stuff targets — they are terms that signal topical depth to Google.
 
-bariatric surgery, gastric sleeve, sleeve gastrectomy, gastric bypass, mini gastric bypass, adjustable gastric band, revision surgery, weight-loss medication, BMI, comorbidities, type 2 diabetes, obstructive sleep apnoea, FRACS, Royal Australasian College of Surgeons, laparoscopic, keyhole surgery, St John of God Murdoch, Subiaco, Medicare item number, private health cover, 12-month waiting period, superannuation early release, out-of-pocket gap, GP referral, dietitian, excess weight loss, recovery, loose skin, weight regain
+bariatric surgery, gastric sleeve, sleeve gastrectomy, gastric bypass, mini gastric bypass, adjustable gastric band, revision surgery, weight-loss medication, BMI, comorbidities, type 2 diabetes, obstructive sleep apnoea, FRACS, Royal Australasian College of Surgeons, laparoscopic, keyhole surgery, Mount Private Hospital, Waikiki Private Hospital, Medicare item number, private health cover, 12-month waiting period, superannuation early release, out-of-pocket gap, GP referral, dietitian, excess weight loss, recovery, loose skin, weight regain
 
 ### SERP Landscape (AU)
 A dedicated "weight loss surgery FAQs" page sits in informational territory where the competition is mixed: high-authority reference explainers (Healthdirect, Mayo Clinic) that answer individual questions, and a long tail of low-DR Perth/Australian bariatric clinic FAQ pages that bundle questions into accordions. No single Perth competitor owns a comprehensive, schema-rich FAQ hub that spans eligibility, every procedure, funding, safety, recovery and after-surgery life in one place. Google surfaces a strong People Also Ask cluster across this topic — "Is weight loss surgery safe?", "How much does weight loss surgery cost in Perth?", "Is weight loss surgery covered by Medicare in Australia?", "How much do I need to weigh to qualify?", "How long is recovery after gastric sleeve?" — and these are the snippets a well-structured FAQ-schema page is built to win. Because this page aggregates intent the single-topic pages already serve, it is best treated as a PAA-capture and internal-linking asset rather than a standalone ranking play for one head term.
@@ -51,7 +51,7 @@ Top 5 reference / competing page types (illustrative):
 | 5 | PAA / featured snippet | Google People Also Ask cluster |
 
 ### Content Gap Opportunity
-1. **No Perth FAQ hub.** No ranking Perth competitor consolidates the full journey into one schema-eligible FAQ page that names local hospitals (SJOG Murdoch/Subiaco), local consulting rooms (Booragoon, Mandurah) and FRACS credentials. Owning the comprehensive local FAQ hub is a clean opening.
+1. **No Perth FAQ hub.** No ranking Perth competitor consolidates the full journey into one schema-eligible FAQ page that names local hospitals (Mount Private Hospital/Waikiki Private Hospital), local consulting rooms (Booragoon, Subiaco/West Leederville) and FRACS credentials. Owning the comprehensive local FAQ hub is a clean opening.
 2. **Procedure breadth.** Most clinic FAQ pages are single-surgeon and answer only the procedures that surgeon performs. OSWA can answer across sleeve, bypass, mini bypass, band, revision and non-surgical/medication options in one place.
 3. **Funding clarity.** The PAA shows persistent demand for cost, Medicare and super questions, which clinic FAQ pages cover thinly. Answering these factually (Medicare items, private cover gap, super on medical grounds) without dollar figures fills the gap and feeds the money pages.
 4. **Internal-linking equity.** As the hub, this page can pass equity to am-i-eligible, gastric-sleeve-cost-perth, medicare-private-health-cover, surgeons and weight-loss-surgery-perth — a structural win the competing single pages cannot replicate.
@@ -73,9 +73,9 @@ This page uses the shared OswContentPage template, so every section field must b
 ### Stats bar (4 stats)
 Orientation anchors, not marketing claims:
 1. **Procedures offered / 6** — sleeve, bypass, mini bypass, band, revision and medication/non-surgical options
-2. **Hospitals / 2** — St John of God Murdoch and Subiaco
+2. **Hospitals / 2** — Mount Private Hospital and Waikiki Private Hospital
 3. **Care team / 10+** — surgeons, physicians and dietitians
-4. **Clinic locations / Perth + Mandurah** — Booragoon and Mandurah consulting rooms
+4. **Clinic locations / Perth** — Booragoon and Subiaco/West Leederville consulting rooms
 
 ### Your questions about weight loss surgery in Perth, answered (3 paragraphs)
 - **Paragraph 1 — what this page is:** Explain that most people arrive with the same questions, and this page brings them together so the reader can get straight answers before calling. Frame it as orientation, not the final word — the answer that matters is the surgeon's, about the reader's own situation.
@@ -99,17 +99,17 @@ The established OSWA journey. Two to three sentences each:
 1. **GP Referral** — referral to OSWA gives the higher referred Medicare rebate and lets the team review history; direct contact also possible
 2. **Orientation Consultation** — meet the surgeon, talk through history, options explained in plain language, no pressure to decide on the day
 3. **Pre-operative Assessment** — physicians and dietitians assess health, screen for reflux/sleep apnoea, prepare for surgery safely
-4. **Surgery** — FRACS surgeon performs the keyhole (laparoscopic) procedure at SJOG Murdoch or Subiaco
+4. **Surgery** — FRACS surgeon performs the keyhole (laparoscopic) procedure at Mount Private Hospital or Waikiki Private Hospital
 5. **Hospital Recovery** — recovery in hospital, usually a few nights, with nursing and dietitian support before discharge
 6. **Ongoing Support** — dietitians and physicians stay involved long term to protect results
 
 ### Why patients choose Obesity Surgery WA (benefits, 5 bullets)
 Concrete and factual, no superlatives:
-- FRACS-qualified lead surgeon, Notre Dame lecturer, personal bariatric surgery experience
+- FRACS-qualified operating surgeon (Dr Cohen) and a founding Clinical Program Director (A/Prof Chandraratna, Notre Dame lecturer) <!-- GATED: 'personal bariatric surgery experience' claim unverified against current roster — confirm with Wendy -->
 - Two experienced surgeons so procedure matching is possible, not one-size-fits-all
-- Operating privileges at SJOG Murdoch and Subiaco (accredited hospitals)
+- Operating privileges at Mount Private Hospital and Waikiki Private Hospital (accredited hospitals)
 - In-house physicians and dietitians supporting pre- and post-operative care
-- Two clinic locations (Perth and Mandurah) for accessibility
+- Two clinic locations (Perth) for accessibility
 
 Avoid: "best", "leading", "world-class", and any language implying superior outcomes.
 
@@ -128,11 +128,11 @@ No dollar figures. Cover: cost depends on procedure, private cover and individua
 ### Surgeon profiles (2 profiles)
 Copy from the surgeons page — full credentials in every reference.
 
-**Dr Harsha Chandraratna — MBBS, FRACS, Bariatric Surgeon**
-Lead surgeon and founder, FRACS, Notre Dame lecturer, operates at SJOG Murdoch and Subiaco, personal experience of bariatric surgery shaping his patient-centred approach.
+**Dr Leon Cohen — MBBS, FRACS, Bariatric Surgeon**
+Lead operating bariatric surgeon; FRACS (and FRCS); practising bariatric surgery since 1999 and among the first in Australia to perform sleeve gastrectomy (2004); performs gastric sleeve, revisional and reflux-after-sleeve procedures; operates at Mount Private Hospital.
 
-**Dr Stephen Watson — MBBS, FRACS, Bariatric Surgeon**
-Experienced bariatric surgeon performing sleeve, bypass and revisional procedures; thorough, unhurried, procedure-matching approach.
+**A/Prof Harsha Chandraratna — MBBS, FRACS (founder & Clinical Program Director)**
+Practice founder and Clinical Program Director; senior Notre Dame lecturer; oversees the clinical program, triage and multidisciplinary team. <!-- STOP-SHIP GATED: active AHPRA undertaking (19 Mar 2025) restricts A/Prof Chandraratna from bariatric surgery as primary operator — do not describe him operating; confirm wording with Wendy -->
 
 ### Outcomes note
 Clinical averages with caveat. Published averages typically show 60–80% of excess weight lost in the first one to two years depending on procedure. Lead with the caveat: averages only, not individual promises. Results vary with starting health, procedure and adherence; no specific outcome can be promised.
@@ -147,16 +147,16 @@ This is the most important section on the page. Aggregate and lightly adapt the 
 2. My BMI is around 30 — am I too low? (May qualify with a weight-related condition; type 2 diabetes can change it; otherwise medication/dietitian support; no one turned away without options)
 3. What weight loss surgery procedures do you offer? (Sleeve, bypass, mini bypass, band, revision, plus medication/non-surgical; surgeon helps match)
 4. What is the difference between a gastric sleeve, a gastric bypass and a gastric band? (Plain-language description of each; mini bypass as a bypass variation; right choice decided with surgeon)
-5. Is weight loss surgery safe? (Well-established, keyhole/laparoscopic at accredited SJOG hospitals; but all surgery carries risk — bleeding, infection, clots, leaks, anaesthetic; risk not minimised; surgeon reviews individual profile)
+5. Is weight loss surgery safe? (Well-established, keyhole/laparoscopic at accredited private hospitals; but all surgery carries risk — bleeding, infection, clots, leaks, anaesthetic; risk not minimised; surgeon reviews individual profile)
 6. How much does weight loss surgery cost in Perth? (No single price — separate fees; depends on procedure, cover, circumstances; Medicare item applies; gap rather than full fee with appropriate cover; written estimate)
 7. Does Medicare cover weight loss surgery? (Rebate toward eligible surgical/anaesthetist fees when the procedure meets the Medicare item criteria; the GP referral separately sets the higher referred rate on consultations; not the full cost; not hospital/theatre; gap typically remains)
 8. Do I need private health insurance, and can I use my super? (Hospital cover including bariatric item numbers; 12-month waiting period and higher tier common; confirm item numbers with fund; super early release on medical grounds assessed by ATO/fund not the practice; payment plans sometimes used)
 9. Will I see the surgeon, or someone else? (FRACS surgeon assesses and operates, not a trainee; physicians and dietitians form the wider team)
-10. What qualifications do your surgeons have? (Both MBBS, FRACS; Dr Chandraratna lectures at Notre Dame and has personal bariatric surgery experience; both operate at SJOG Murdoch and Subiaco)
+10. What qualifications do your surgeons have? (Both MBBS, FRACS; Dr Cohen is the operating bariatric surgeon, practising since 1999; A/Prof Chandraratna, the founder, lectures at Notre Dame and leads the clinical program) <!-- STOP-SHIP GATED: do not imply A/Prof Chandraratna operates; 'personal bariatric surgery experience' unverified — confirm both with Wendy -->
 11. How long is the recovery, and how soon can I go back to work? (Usually a few nights in hospital; two to four weeks off work depending on procedure and job; office work often sooner; surgeon advises)
 12. Can I eat normally again after surgery? (Eating changes early while healing; most return to a wide range of foods in smaller amounts; dietitian guides reintroduction; goal is a healthier relationship with food)
 13. How much weight will I lose? (Averages 60–80% excess weight in one to two years depending on procedure; averages not promises; depends on starting health, procedure, adherence; results vary, no guarantee)
-14. Where are your clinics, and where is surgery performed? (Booragoon — Garden City Specialist Centre, 537 Marmion Street; Mandurah — WA Cardiology Centre, 30 Minilya Pkwy; surgery at SJOG Murdoch and Subiaco)
+14. Where are your clinics, and where is surgery performed? (Booragoon — Garden City Specialist Centre, 537 Marmion Street; Subiaco / West Leederville — <!-- GATED: confirm West Leederville street address -->; surgery at Mount Private Hospital and Waikiki Private Hospital)
 15. What if the surgery does not work for me? (Results vary; some regain weight if habits drift; team investigates why; revision surgery sometimes an option; this is why long-term support matters)
 16. Do I have to have surgery, or are there other options? (No — obesity is a medical condition not a willpower failure; medication, dietitian support and non-surgical options exist, alone or alongside surgery over time; many start with medical management; first consultation is the place to start)
 

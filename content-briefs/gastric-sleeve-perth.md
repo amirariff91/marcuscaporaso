@@ -32,7 +32,7 @@ This is the primary procedure page for the most commonly performed weight loss s
 ### Semantic Terms to Include
 Weave the following LSI/semantic terms naturally into the copy. These are not keyword-stuff targets — they are terms that signal topical depth to Google:
 
-sleeve gastrectomy, laparoscopic surgery, keyhole surgery, ghrelin (hunger hormone), staple line, gastric bypass, excess weight loss, BMI 35–39.9, type 2 diabetes, sleep apnoea, Medicare item 31575, vitamin B12 and iron deficiency, staple line leak, St John of God Murdoch (hospital identity to be verified — open question), pre-op liver-shrinking diet, dietitian follow-up
+sleeve gastrectomy, laparoscopic surgery, keyhole surgery, ghrelin (hunger hormone), staple line, gastric bypass, excess weight loss, BMI 35–39.9, type 2 diabetes, sleep apnoea, Medicare item 31575, vitamin B12 and iron deficiency, staple line leak, Mount Private Hospital, pre-op liver-shrinking diet, dietitian follow-up
 
 ### SERP Landscape (AU)
 SERP is dominated by Perth bariatric clinic/surgeon pages — a mix of homepages (perthbariatricsurgery, aurorabariatrics, perthsurgicalbariatrics, advancesurgical) and dedicated gastric-sleeve procedure pages (obesitysurgerywa at p2, completesurgical at p9, aurorabariatrics surgery page at p10). Domain Rating is low across the board (DR 3-26), so this is a winnable, low-authority local SERP — KD 7 confirms. Notably, a People Also Ask block sits at position 3 with four commercial/informational questions: "How much does a gastric sleeve cost in Perth?", "Is a gastric sleeve covered by Medicare?", "How do GLP-1 medicines compare with gastric sleeve surgery?", and "What is the minimum weight for gastric sleeve surgery?" — signalling strong cost, Medicare, GLP-1 comparison and eligibility intent. Cost-focused pages rank well (drkevindolan "Gastric Sleeve Costs Perth" p5, newme cost blog p11), confirming price is a primary user concern.
@@ -69,7 +69,7 @@ Use qualitative wording in paste-ready copy. Any strategically useful statistic 
 |---|---|---|
 | Weight-loss outcome | Outcomes vary between individuals | No specific result or timeline is guaranteed. |
 | Procedure | Laparoscopic/keyhole technique where clinically appropriate | Procedure details are explained individually. |
-| Hospital recovery | Hospital stay and discharge timing vary | [hospital identity to be verified] (SJOG Murdoch or Subiaco — hospital identity to be verified — open question). |
+| Hospital recovery | Hospital stay and discharge timing vary | Mount Private Hospital or Waikiki Private Hospital. |
 | Returning to work | Timing varies with recovery and role | Surgeon advice is tailored to the individual. |
 
 verify: requires a cited clinical source + practice sign-off before publication
@@ -103,7 +103,7 @@ Each step gets a short heading and 1–2 sentences of content direction.
 1. **Initial consultation and assessment** — The reader meets their surgeon, talks through medical history and goals, and gets an honest view of whether the sleeve suits them. This is also where they can ask the questions that feel awkward to raise.
 2. **Pre-surgery preparation** — The patient may be prescribed a pre-op diet to reduce liver size; the purpose and risks should be explained individually. Emphasise that the team supports them through this — not just a handout.
 3. **The procedure** — General anaesthetic and keyhole technique where clinically appropriate. The surgeon removes part of the stomach and seals the new sleeve with a staple line. Keep it clinical but accessible.
-4. **Hospital recovery** — At [hospital identity to be verified] (the existing SJOG Murdoch or Subiaco reference is a hospital identity to be verified — open question). Patient starts on fluids and progresses under guidance from nursing and dietetic staff.
+4. **Hospital recovery** — At Mount Private Hospital or Waikiki Private Hospital. Patient starts on fluids and progresses under guidance from nursing and dietetic staff.
 5. **Returning to daily life** — Timing for desk-based, physical or manual work depends on recovery and surgeon advice.
 6. **Long-term follow-up** — Staged eating progression (fluids → soft → regular textures) with dietitian support. Ongoing reviews and blood tests help monitor nutrition and identify issues over time.
 
@@ -168,4 +168,4 @@ The page should answer all of the following. Writer to draft each answer in plai
 - **AHPRA/TGA:** No testimonials, no before/after claims, no guaranteed outcomes, no exaggerated claims about effectiveness. GLP-1 / medical-weight-management advertising policy is OPEN — pending TGA/legal decision; interim copy may use only active-ingredient or class names such as semaglutide, liraglutide and GLP-1, with no brand names, guarantees or comparative claims.
 - **Voice:** Plain-language, empathetic, direct. No hype. No "life-changing" or "transformative" without qualification. Write for a real person who is anxious and doing research — not for a brochure.
 - **Reader:** A Perth adult, likely 35–55, who has tried to lose weight many times before and is seriously but nervously considering surgery. They are sceptical of promises and respond to honesty.
-- **Surgeon credentials to include:** Dr Harsha Chandraratna (MBBS, FRACS, Bariatric & Upper GI Surgeon; personal bariatric surgery experience; senior lecturer Notre Dame University; operates at SJOG Murdoch and Subiaco — hospital identity to be verified — open question) and Dr Stephen Watson (MBBS, FRACS, Bariatric Surgeon; accredited bariatric surgeon at SJOG Murdoch and Subiaco — hospital identity to be verified — open question).
+- **Surgeon credentials to include:** Dr Leon Cohen (MBBS, FRACS, Bariatric Surgeon; lead operating surgeon; practising since 1999, among the first in Australia to perform sleeve gastrectomy in 2004; operates at Mount Private Hospital) and A/Prof Harsha Chandraratna (MBBS, FRACS, Bariatric & Upper GI background; practice founder & Clinical Program Director; senior lecturer Notre Dame University). Dr Cohen is the operating surgeon; A/Prof Chandraratna leads the clinical program. <!-- STOP-SHIP GATED: active AHPRA undertaking (19 Mar 2025) restricts A/Prof Chandraratna from bariatric surgery as primary operator — do not imply he operates; confirm wording with Wendy -->

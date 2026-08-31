@@ -32,7 +32,7 @@ This page serves two jobs, and organic traffic is not the main one. Perth search
 ### Semantic Terms to Include
 LSI / semantic terms to weave naturally into the copy as signals of topical depth — not keyword-stuff targets:
 
-bile, bile duct, liver, biliary colic, gallstones, keyhole / laparoscopic surgery, day surgery / short stay, general anaesthetic, ultrasound, fatty meals, nausea, inflammation of the gallbladder (cholecystitis), blocked bile duct, conversion to open surgery, bile duct injury, rapid weight loss, bariatric surgery, Medicare rebate, GP referral, St John of God Murdoch and Subiaco, upper gastrointestinal surgery.
+bile, bile duct, liver, biliary colic, gallstones, keyhole / laparoscopic surgery, day surgery / short stay, general anaesthetic, ultrasound, fatty meals, nausea, inflammation of the gallbladder (cholecystitis), blocked bile duct, conversion to open surgery, bile duct injury, rapid weight loss, bariatric surgery, Medicare rebate, GP referral, Mount Private Hospital and Waikiki Private Hospital, upper gastrointestinal surgery.
 
 ### SERP / competitive context
 The procedure is widely covered by large authority sites (Healthdirect, Better Health Channel, Cleveland Clinic, Mayo Clinic) and by general and upper-GI surgeon clinic pages across Australia. For a thin-volume Perth term, the realistic goal is **not** to outrank national authority sites but to provide a credible, locally-relevant, compliant explainer that supports site-wide E-E-A-T and answers the questions of patients already in the practice's orbit. The genuine angle is that this is an upper GI procedure performed by upper GI surgeons, and that gallstones are a recognised consequence of rapid weight loss — which makes the topic legitimately on-brand for a bariatric practice rather than a stretch.
@@ -57,7 +57,7 @@ The honest, on-topic differentiator is the **rapid-weight-loss / post-bariatric 
 | Procedure | Keyhole | Laparoscopic cholecystectomy through small cuts, not a large open wound |
 | Hospital stay | Day or short | Often a day procedure or a single overnight stay |
 | Common cause | Gallstones | Including stones that form after rapid weight loss |
-| Where | SJOG Murdoch & Subiaco | Performed at St John of God private hospitals |
+| Where | Mount Private Hospital and Waikiki Private Hospital | Performed at accredited private hospitals |
 
 ### What is gallbladder removal?
 - ~3 paragraphs.

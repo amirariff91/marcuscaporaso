@@ -34,7 +34,7 @@ This page answers the single most common question a research-stage patient asks 
 ### Semantic Terms to Include
 These are LSI/semantic terms the writer must naturally weave into the copy. They are not keyword-stuff targets — they are terms that signal topical depth to Google:
 
-bariatric surgery, gastric sleeve, sleeve gastrectomy, gastric bypass, BMI (body mass index), class 2 obesity, class 3 obesity, comorbidities, type 2 diabetes, obstructive sleep apnoea, high blood pressure, PCOS, fatty liver disease (NAFLD), FRACS surgeon, GP referral, Medicare rebate, private health insurance, superannuation early release, dietitian, psychological assessment, orientation consultation, St John of God Murdoch, Subiaco, metabolic surgery
+bariatric surgery, gastric sleeve, sleeve gastrectomy, gastric bypass, BMI (body mass index), class 2 obesity, class 3 obesity, comorbidities, type 2 diabetes, obstructive sleep apnoea, high blood pressure, PCOS, fatty liver disease (NAFLD), FRACS surgeon, GP referral, Medicare rebate, private health insurance, superannuation early release, dietitian, psychological assessment, orientation consultation, Mount Private Hospital, Waikiki Private Hospital, metabolic surgery
 
 ### SERP Landscape (AU)
 SERP is dominated by two content types. (1) High-authority informational reference pages — Healthdirect (#1, DR 87), Mayo Clinic (#6, DR 92), plus Cleveland Clinic, NIDDK and NHS deeper down — these are generic "is it an option for you / requirements" guides that capture most of the visible traffic. (2) A large long tail of bariatric clinic 'Am I a Candidate / Am I Eligible' pages (obesity.com.au, Keyhole Surgery Centre, O Clinic Sydney, Mercy Bariatrics, Brisbane Obesity Clinic, plus Perth players Perth Surgical Bariatrics, Perth Obesity Solutions, Evolve Bariatrics) — almost all low DR (0–31) and pulling negligible traffic. Google also surfaces a People Also Ask cluster (minimum weight, how to get approved, do I qualify in Australia, who is NOT eligible). Note this is a very low-volume head term (10/mo AU, KD effectively 0), so ranking is achievable but the real value is intent quality and feeding the conversion funnel, not raw volume.
@@ -49,7 +49,7 @@ Top 5 ranking pages:
 | 6 | mayoclinic.org | Weight-loss surgery: Is it an option for you? |
 
 ### Content Gap Opportunity
-Clear opportunity for a Perth-specific, reassurance-led eligibility page. Gaps: (1) The clinic pages that rank are generic BMI tick-box checklists; almost none address the emotional barrier (shame, fear of being turned away, failed diets) — the brief's empathetic angle is genuinely differentiated. (2) No top result clearly explains Australian Medicare/MBS rebates, private health cover, or superannuation early release in plain language tied to eligibility — own the 'GP referral vs self-referral' and funding angle. (3) PAA shows strong demand for 'who is NOT eligible' and 'minimum weight / BMI around 30' — directly answer the low-BMI (30–34 with comorbidity) and mental-health questions the competitors gloss over. (4) Almost no AU competitor names a specific Perth hospital/surgeon credential (SJOG Murdoch/Subiaco, FRACS) — local trust signals are a fast win. (5) Healthdirect/Mayo win on authority but are non-local and offer no booking path — capture the bottom-funnel 'now what do I do in Perth' intent they cannot serve. Match the PAA questions in FAQ schema to compete for those featured-snippet slots.
+Clear opportunity for a Perth-specific, reassurance-led eligibility page. Gaps: (1) The clinic pages that rank are generic BMI tick-box checklists; almost none address the emotional barrier (shame, fear of being turned away, failed diets) — the brief's empathetic angle is genuinely differentiated. (2) No top result clearly explains Australian Medicare/MBS rebates, private health cover, or superannuation early release in plain language tied to eligibility — own the 'GP referral vs self-referral' and funding angle. (3) PAA shows strong demand for 'who is NOT eligible' and 'minimum weight / BMI around 30' — directly answer the low-BMI (30–34 with comorbidity) and mental-health questions the competitors gloss over. (4) Almost no AU competitor names a specific Perth hospital/surgeon credential (Mount Private Hospital/Waikiki Private Hospital, FRACS) — local trust signals are a fast win. (5) Healthdirect/Mayo win on authority but are non-local and offer no booking path — capture the bottom-funnel 'now what do I do in Perth' intent they cannot serve. Match the PAA questions in FAQ schema to compete for those featured-snippet slots.
 
 ### Recommended Word Count
 1,000–1,300 words (matches brief target; sufficient to beat thin Australian clinic candidate pages which run 600–1,100w, while staying focused for an informational intent that does not reward long comparison-style depth)
@@ -104,7 +104,7 @@ Each bullet should convey one of these ideas — write them as patient-facing ou
 1. A clear, personalised answer about whether surgery is right for them — ends the guessing
 2. Alternative pathways may be discussed if surgery is not the right starting point (non-surgical medical weight management, dietitian support) — do not imply that every reader is suitable for a particular pathway
 3. For many patients, surgery supports meaningful improvement in weight-related conditions like type 2 diabetes and sleep apnoea — but individual results vary, use measured language
-4. Access to FRACS-qualified surgeons at SJOG Murdoch and Subiaco (hospital identity to be verified — open question: drafts name different facilities)
+4. Access to FRACS-qualified surgeons at Mount Private Hospital and Waikiki Private Hospital
 5. A team that takes prior attempts seriously and builds a plan around the individual — not a one-size-fits-all template
 
 ### Risks — honest section
@@ -143,7 +143,7 @@ The page must answer each of the following:
 ---
 
 ## Tone and compliance notes
-- **Hospitals (OPEN):** hospital identity is unverified (drafts name different facilities). Treat every hospital name as [to be verified] pending client confirmation.
+- **Hospitals (CONFIRMED):** Mount Private Hospital and Waikiki Private Hospital (client-confirmed 10 Aug 2026). Use these names in public copy.
 - Medical advertising: no guarantees, use phrases like "clinical averages", "results vary", "your surgeon will advise"
 - AHPRA/TGA: no testimonials, no before/after claims, no guaranteed outcomes
 - **AHPRA s133 (eligibility-specific):** State all eligibility criteria as GENERAL INDICATORS subject to individual surgeon assessment — never "if your BMI is X you qualify" or any self-qualifying language. Do NOT pair eligibility with guaranteed outcomes or specific weight-loss / comorbidity-resolution figures (e.g. no "resolve your diabetes", no "lose X kg"). Reference non-surgical options and multidisciplinary (MDT) assessment as part of the pathway — do not push surgery as the default. Include a clear "general information, not medical advice — individual assessment required" line on the page.

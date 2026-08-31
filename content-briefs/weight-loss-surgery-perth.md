@@ -30,7 +30,7 @@ This is the broadest, highest-traffic page on the site — it captures people wh
 ### Semantic Terms to Include
 Comma-separated list of LSI/semantic terms the writer must naturally weave into the copy. These are not keyword-stuff targets — they are terms that signal topical depth to Google.
 
-bariatric surgery, gastric sleeve, sleeve gastrectomy, gastric bypass, adjustable gastric band, lap band, obesity as a medical condition, BMI, GLP-1 medication, very low calorie diet, dietitian support, type 2 diabetes, Medicare rebate, private health cover, endoscopic option, weight regain, Booragoon, Mandurah
+bariatric surgery, gastric sleeve, sleeve gastrectomy, gastric bypass, adjustable gastric band, lap band, obesity as a medical condition, BMI, GLP-1 medication, very low calorie diet, dietitian support, type 2 diabetes, Medicare rebate, private health cover, endoscopic option, weight regain, Booragoon, Subiaco/West Leederville
 
 ### SERP Landscape (AU)
 The SERP is almost entirely commercial: individual Perth bariatric surgeon and clinic homepages (Dr Siva Gounder / perthweightlosssurgery.com.au, perthbariatricsurgery.com.au / Dr Andrew Kiyingi, Advance Surgical / Jon Armstrong, Aurora Bariatrics / Dr Ruth Blackham, Dr Kevin Dolan, Perth Surgical & Bariatrics, Evolve Bariatrics). Domain ratings are low across the board (DR 1-26), so this is a winnable, weakly-defended SERP. Almost every result is a surgeon-led homepage selling a procedure menu — not informational guides. People Also Ask boxes surface clear informational intent: "How much does weight loss surgery cost in Perth?", "Is weight loss surgery covered by Medicare in Australia?", and "What BMI is used to assess weight loss surgery?". Intent is mixed commercial + informational, which fits the brief's positioning of this as the broad top-of-funnel page.
@@ -62,7 +62,7 @@ Use these factual anchors. Keep the BMI stat explicitly assessment-only; it is n
 | Label | Value | Note |
 |---|---|---|
 | Dietitians on the team | APD | Accredited Practising Dietitians; ongoing support is part of the plan, not an afterthought |
-| Perth clinics | 2 | Booragoon and Mandurah |
+| Perth clinics | 2 | Booragoon and Subiaco/West Leederville |
 | Decades of experience | 20+ | Bariatric surgery in Perth |
 | Medical-team assessment from | BMI 27+ | Individual assessment; not a surgical MBS threshold |
 
@@ -101,7 +101,7 @@ Keep steps in this order — 1–2 sentences covering the content described:
   2. Dedicated dietitians mean nutritional support is consistent and central to the care plan and long-term follow-up
   3. Physicians can manage related conditions such as type 2 diabetes and high blood pressure alongside weight
   4. If the patient starts with medical management and later decides surgery is right, the transition happens within the same team that already knows their history
-  5. Both Perth clinic locations (Booragoon and Mandurah) keep appointments and aftercare close to home
+  5. Both Perth clinic locations (Booragoon and Subiaco/West Leederville) keep appointments and aftercare close to home
   6. Many people experience improvements in weight-related conditions and day-to-day quality of life — individual results vary and no specific outcome can be promised
 
 ### Risks — honest section

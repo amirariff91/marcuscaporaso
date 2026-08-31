@@ -30,7 +30,7 @@ This is a high-intent landing page for people who already know the term "bariatr
 ### Semantic Terms to Include
 Comma-separated list of LSI/semantic terms the writer must naturally weave into the copy. These are not keyword-stuff targets — they are terms that signal topical depth to Google.
 
-sleeve gastrectomy, Roux-en-Y gastric bypass, one anastomosis (mini) gastric bypass, adjustable gastric band, laparoscopic keyhole surgery, excess weight loss, BMI eligibility, type 2 diabetes management, ghrelin / hunger hormones, Medicare and private health cover, revision bariatric surgery, medical weight management, dietitian-led aftercare, St John of God Murdoch and Subiaco (hospital identity to be verified — open question), FRACS bariatric surgeon. Any GLP-1 or active-ingredient reference is OPEN — pending TGA/legal decision; interim wording, if used, is limited to class/ingredient names and never brands.
+sleeve gastrectomy, Roux-en-Y gastric bypass, one anastomosis (mini) gastric bypass, adjustable gastric band, laparoscopic keyhole surgery, excess weight loss, BMI eligibility, type 2 diabetes management, ghrelin / hunger hormones, Medicare and private health cover, revision bariatric surgery, medical weight management, dietitian-led aftercare, Mount Private Hospital and Waikiki Private Hospital, FRACS bariatric surgeon. Any GLP-1 or active-ingredient reference is OPEN — pending TGA/legal decision; interim wording, if used, is limited to class/ingredient names and never brands.
 
 ### SERP Landscape (AU)
 SERP is almost entirely commercial Perth bariatric clinic/surgeon homepages and service landing pages — Perth Surgical & Bariatrics (#1/#6), Obesity Surgery WA (#2, the target site, already ranking), Aurora Bariatrics (#3, named-surgeon angle), Perth Weight Loss Surgery / Dr Siva Gounder (#5), Mercy Bariatrics (#7, highest authority at DR 31), Advance Surgical, Evolve, Veritas, WA Weight Loss. Domain authority is low across the board (DR 1–31), so this is a content-quality and relevance battle, not a backlink arms race. Google also surfaces a People Also Ask block (cost, Medicare coverage, disqualifiers, the "30/30 rule") signalling strong informational sub-intent layered under the commercial query. Winning pages combine provider credentials + clear procedure menu + cost/Medicare answers.
@@ -54,7 +54,7 @@ Competitors lead with either a single named surgeon or a generic procedure list;
 
 ### Hero
 - Headline direction: Lead with a team-based promise, not just a procedure list. The headline should signal Perth-specific care with continuity of support — this is what differentiates a dedicated bariatric team from a general surgical practice.
-- Subheadline: 2–3 sentences. Acknowledge the reader's experience of having already tried other things. Name the procedures offered (gastric sleeve, gastric bypass, mini bypass, gastric band, revision surgery, medical weight management). Mention both hospital locations (SJOG Murdoch and Subiaco; hospital identity to be verified — open question). Keep it grounding and specific.
+- Subheadline: 2–3 sentences. Acknowledge the reader's experience of having already tried other things. Name the procedures offered (gastric sleeve, gastric bypass, mini bypass, gastric band, revision surgery, medical weight management). Mention both hospital locations (Mount Private Hospital and Waikiki Private Hospital). Keep it grounding and specific.
 
 ### Stats bar (4 stats)
 Use these verbatim — they are factual anchors the writer must not alter:
@@ -62,7 +62,7 @@ Use these verbatim — they are factual anchors the writer must not alter:
 | Label | Value | Note |
 |---|---|---|
 | Surgery | 20+ yrs | Perth bariatric experience across our surgical team |
-| Locations | 2 | SJOG Murdoch and Subiaco (hospital identity to be verified — open question) |
+| Locations | 2 | Mount Private Hospital and Waikiki Private Hospital |
 | Dietitians | APD | Accredited Practising Dietitians supporting follow-up and nutrition care |
 | Procedures | 4+ | Sleeve, bypass, mini bypass, band and revision |
 
@@ -90,7 +90,7 @@ Keep steps in this order — 1–2 sentences covering the content described:
 2. **Consultation with your surgeon** — discuss history, goals and health; the surgeon explains which procedure or medical pathway may be clinically appropriate, including limits, risks and follow-up
 3. **Assessment with the wider team** — may include physician, dietitian and other clinicians who assess suitability, risks and preparation needs
 4. **Pre-surgery preparation** — may include a pre-operative diet; its purpose, risks and instructions are explained individually alongside practical guidance on the planned procedure and early recovery
-5. **Your procedure at SJOG Murdoch or Subiaco (hospital identity to be verified — open question)** — laparoscopic in most cases; hospital stay and recovery guidance are tailored to the procedure
+5. **Your procedure at Mount Private Hospital or Waikiki Private Hospital** — laparoscopic in most cases; hospital stay and recovery guidance are tailored to the procedure
 6. **Long-term aftercare** — patient stays connected to the dietitian team and clinical staff over months and years; regular reviews, nutritional monitoring and support continue as the body and habits adjust
 
 ### Procedures section (written as benefit bullets)
@@ -123,7 +123,7 @@ Reference tone: "You have carried this long enough. Let's talk about what is act
 ### FAQs
 The page must answer each of the following:
 
-Include concise, answer-first responses to these questions: how much bariatric surgery costs in Perth (no dollar figures; any range is discussed at consultation); Medicare and private-health coverage; how to choose a procedure; sleeve versus bypass; surgical and non-surgical options; the 30/30 eating rule; who may not meet MBS or clinical suitability requirements; aftercare and what can vary over 10 years; where appointments and surgery take place (hospital identity to be verified); whether revision is possible; and how to assess a bariatric surgeon in Perth. Any GLP-1 or active-ingredient wording is OPEN — pending TGA/legal decision; if retained, use class/ingredient names only and never brands.
+Include concise, answer-first responses to these questions: how much bariatric surgery costs in Perth (no dollar figures; any range is discussed at consultation); Medicare and private-health coverage; how to choose a procedure; sleeve versus bypass; surgical and non-surgical options; the 30/30 eating rule; who may not meet MBS or clinical suitability requirements; aftercare and what can vary over 10 years; where appointments and surgery take place (Mount Private Hospital and Waikiki Private Hospital); whether revision is possible; and how to assess a bariatric surgeon in Perth. Any GLP-1 or active-ingredient wording is OPEN — pending TGA/legal decision; if retained, use class/ingredient names only and never brands.
 
 ---
 
@@ -131,5 +131,5 @@ Include concise, answer-first responses to these questions: how much bariatric s
 - Medical advertising: no guarantees; use individually-assessed wording such as "results vary" and "your surgeon will advise"; keep quantified outcome claims out of paste-ready copy
 - AHPRA/TGA: no testimonials, no before/after claims, no guaranteed outcomes; keep quantified outcome claims out of paste-ready copy. If a statistic is strategically wanted, add "verify: requires a cited clinical source + practice sign-off before publication" and do not publish it until verified
 - Voice: plain-language, confident, honest; avoid hype; the reader has likely done significant research — do not talk down to them
-- Reader: a Perth adult who already knows what bariatric surgery is; they are comparing providers and want to trust this team with something significant; credentialism (FRACS, SJOG hospitals — hospital identity to be verified — open question, 20+ years) matters here
+- Reader: a Perth adult who already knows what bariatric surgery is; they are comparing providers and want to trust this team with something significant; credentialism (FRACS, Mount Private Hospital and Waikiki Private Hospital, 20+ years) matters here
 - The page should answer "why OSWA" without ever asking the question

@@ -15,7 +15,7 @@ This page serves Australian adults living with reflux, GORD or a diagnosed hiatu
 - Keyword: hiatus hernia surgery cost
 - AU Monthly Volume: 150
 - Keyword Difficulty: 0/100
-- Note: National-demand topic. Do NOT force "perth" into the H1 or title tag — write national-first with a dedicated Perth section. The page can still rank locally via the SJOG Murdoch & Subiaco / Perth mentions in body copy.
+- Note: National-demand topic. Do NOT force "perth" into the H1 or title tag — write national-first with a dedicated Perth section. The page can still rank locally via the Mount Private Hospital and Waikiki Private Hospital / Perth mentions in body copy.
 
 ### Secondary Keywords (target naturally in body copy)
 | Keyword | AU Vol/mo | KD |
@@ -29,7 +29,7 @@ This page serves Australian adults living with reflux, GORD or a diagnosed hiatu
 ### Semantic Terms to Include
 These are LSI/semantic terms the writer must weave naturally into the copy. They are signals of topical depth to Google, not keyword-stuff targets:
 
-diaphragm and the hiatus, oesophagus, gastro-oesophageal reflux disease (GORD), acid reflux and heartburn, regurgitation, fundoplication (stomach wrap / anti-reflux valve), keyhole / laparoscopic surgery, gastroscopy / endoscopy, proton pump inhibitors (PPIs), pH and oesophageal pressure (manometry) studies, gastric sleeve and reflux, dysphagia (difficulty swallowing), gas-bloat, hernia recurrence, Medicare rebate and MBS item, private health fund hospital cover, St John of God Murdoch and Subiaco, GP referral
+diaphragm and the hiatus, oesophagus, gastro-oesophageal reflux disease (GORD), acid reflux and heartburn, regurgitation, fundoplication (stomach wrap / anti-reflux valve), keyhole / laparoscopic surgery, gastroscopy / endoscopy, proton pump inhibitors (PPIs), pH and oesophageal pressure (manometry) studies, gastric sleeve and reflux, dysphagia (difficulty swallowing), gas-bloat, hernia recurrence, Medicare rebate and MBS item, private health fund hospital cover, Mount Private Hospital and Waikiki Private Hospital, GP referral
 
 ### SERP Landscape (AU)
 The AU SERP for hiatus hernia terms mixes large informational/authority pages (Healthdirect, Better Health Channel, Mayo Clinic, Cleveland Clinic) on the head and definitional terms with surgeon- and clinic-owned procedure pages (upper GI and general surgery practices) on the commercial "surgery / repair / cost" terms. Cost-modified queries skew commercial: searchers want a number and want to know what drives it. Pages are typically structured around what a hiatus hernia is, symptoms, when surgery is needed, the laparoscopic/fundoplication procedure, recovery and risks, and a cost/funding section.
@@ -56,7 +56,7 @@ Use these verbatim — they are factual anchors:
 | Common cause | Reflux | A hiatus hernia is a frequent driver of acid reflux and GORD |
 | Approach | Laparoscopic | Usually keyhole surgery, often with a fundoplication wrap |
 | Hospital stay | 1 to 2 nights | Most patients go home within a day or two; recovery varies |
-| Where | SJOG Murdoch & Subiaco | Performed at St John of God private hospitals in Perth |
+| Where | Mount Private Hospital and Waikiki Private Hospital | Performed at accredited private hospitals <!-- GATED: confirm region wording — Waikiki is Rockingham/south-coastal, not Perth metro --> |
 
 ### What is a hiatus hernia, and what does repair involve?
 - ~3 paragraphs
@@ -84,7 +84,7 @@ Write each step as a heading and 2–3 sentences. Tone is measured and reassurin
 2. **Assessment & Investigations** — Surgeon reviews symptoms; gastroscopy and sometimes pH/oesophageal pressure studies confirm the hernia and its impact.
 3. **Honest Consultation** — Patient meets surgeon to discuss whether repair is right, weighing surgery vs continued medication, with likely benefits and risks for their case.
 4. **Preparing for Surgery** — Pre-operative instructions including fasting and medication adjustments; surgeon and anaesthetist cover anything specific.
-5. **Laparoscopic Repair** — Keyhole repair, usually with fundoplication, under general anaesthetic at SJOG Murdoch or Subiaco.
+5. **Laparoscopic Repair** — Keyhole repair, usually with fundoplication, under general anaesthetic at Mount Private Hospital or Waikiki Private Hospital.
 6. **Recovery & Follow-up** — One to two nights typical; soft/liquid diet for a few weeks while the wrap settles; follow-up reviews.
 
 ### Benefits (5 bullets)
