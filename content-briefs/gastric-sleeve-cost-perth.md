@@ -32,7 +32,7 @@ This page answers the most common financial question a prospective sleeve patien
 ### Semantic Terms to Include
 Comma-separated list of LSI/semantic terms the writer must naturally weave into the copy. These are not keyword-stuff targets — they are terms that signal topical depth to Google.
 
-sleeve gastrectomy, laparoscopic surgery, keyhole surgery, bariatric surgery, out-of-pocket gap, Medicare rebate, MBS item 31575, private health insurance, hospital cover tier, 12-month waiting period, anaesthetist fee, surgeon's fee, hospital facility fee, BMI eligibility, comorbidities, super release, St John of God Murdoch, excess weight loss, dietitian follow-up, GP referral
+sleeve gastrectomy, laparoscopic surgery, keyhole surgery, bariatric surgery, out-of-pocket gap, Medicare rebate, MBS item 31575, private health insurance, hospital cover tier, 12-month waiting period, anaesthetist fee, surgeon's fee, hospital facility fee, BMI eligibility, comorbidities, super release, Mount Private Hospital, Waikiki Private Hospital, excess weight loss, dietitian follow-up, GP referral
 
 ### SERP Landscape (AU)
 The SERP is dominated by Perth/Australian bariatric clinic and surgeon cost pages — commercial-informational fee-breakdown pages rather than blog articles. Top ranked URLs: Dr Kevin Dolan (program-costs/gastric-sleeve-costs), Obesity Surgery WA (/fees and the gastric-sleeve-surgery-murdoch-perth service page), Mercy Bariatrics (costs-finance), plus informational guide content from Healthy Weight Australia ("Your 2025 Guide") and NewMe ("Understanding Gastric Sleeve Surgery Costs in Perth"). Notably weak domains rank (DRs of 7–31, traffic 18–457), so authority bar is low and KD is 0 — this is a winnable SERP on content quality alone. Google is also surfacing a YouTube video on super-release for weight-loss surgery and two Reddit threads (r/gastricsleeve "Experience in costs Australia", r/wls payment guide), signalling real informational intent around how to actually pay/fund the surgery.
@@ -47,7 +47,7 @@ Top 5 ranking pages:
 | 5 | newme.com.au | Understanding Gastric Sleeve Surgery Costs in Perth |
 
 ### Content Gap Opportunity
-Strong opportunity. (1) The two ranking Reddit threads and the YouTube super-release video reveal the dominant unmet intent is funding mechanics — how to actually pay (super release, payment plans, gap after rebates) — which most clinic fee pages cover thinly; the brief's dedicated super-release and payment-plan sections directly fill this and should be made prominent. (2) Competitor pages quote headline figures but rarely explain WHY two patients pay different amounts or break down the 4+ separate billing parties clearly — the brief's "no single price tag" + itemised written-estimate angle is a genuine differentiator. (3) Few competitors give honest, explicit out-of-pocket ranges split by insured ($2,000–$8,000) vs self-funded ($15,000–$30,000+); doing so transparently captures the cost-anxious searcher the Reddit threads represent. (4) Gap for like-for-like sleeve-vs-bypass fee/Medicare-item clarity (MBS 31575) — searchers conflate procedures; the comparison callout addresses this. (5) Ranking domains are low-DR (mostly 7–14), so a well-structured, FAQ-rich, schema-eligible page from a credible St John of God-affiliated practice can realistically out-rank them. Weave in the secondary "payment plan perth" (KD 0) and "surgery perth wa" terms which competitors underserve.
+Strong opportunity. (1) The two ranking Reddit threads and the YouTube super-release video reveal the dominant unmet intent is funding mechanics — how to actually pay (super release, payment plans, gap after rebates) — which most clinic fee pages cover thinly; the brief's dedicated super-release and payment-plan sections directly fill this and should be made prominent. (2) Competitor pages quote headline figures but rarely explain WHY two patients pay different amounts or break down the 4+ separate billing parties clearly — the brief's "no single price tag" + itemised written-estimate angle is a genuine differentiator. (3) Few competitors give honest, explicit out-of-pocket ranges split by insured ($2,000–$8,000) vs self-funded ($15,000–$30,000+); doing so transparently captures the cost-anxious searcher the Reddit threads represent. (4) Gap for like-for-like sleeve-vs-bypass fee/Medicare-item clarity (MBS 31575) — searchers conflate procedures; the comparison callout addresses this. (5) Ranking domains are low-DR (mostly 7–14), so a well-structured, FAQ-rich, schema-eligible page from a credible private-hospital-affiliated practice can realistically out-rank them. Weave in the secondary "payment plan perth" (KD 0) and "surgery perth wa" terms which competitors underserve.
 
 ### Recommended Word Count
 900–1,200 words (matches brief; aligns with the clinic/surgeon cost pages that dominate the SERP — Mercy Bariatrics, Dr Kevin Dolan, Obesity Surgery WA all run ~800–1,300w itemised fee pages. Going to the upper 1,100–1,200 range allows full Medicare/private-cover/super coverage without bloat.)
@@ -94,14 +94,14 @@ Write each step as a clear numbered action covering both the clinical pathway an
 1. **GP Referral** — Patient is referred to the practice; referral supports Medicare eligibility and allows the team to review history before the first meeting
 2. **Orientation Consultation** — Patient meets the team, discusses whether a sleeve is appropriate; receives a written, itemised cost estimate covering surgeon, anaesthetist and hospital fees at this stage
 3. **Pre-operative Assessment** — Physicians and dietitians assess health; team confirms private health cover, waiting period status and whether super release may be an option
-4. **Surgery** — Keyhole procedure performed at St John of God Murdoch or Subiaco; surgeon and anaesthetist fees relate to this stage
+4. **Surgery** — Keyhole procedure performed at Mount Private Hospital or Waikiki Private Hospital; surgeon and anaesthetist fees relate to this stage
 5. **Hospital Recovery** — Typically around two nights; hospital facility fee covers room, theatre and nursing during admission
 6. **Ongoing Support** — Dietitian and physician follow-up is part of long-term care; some reviews attract Medicare rebates; the team explains what to expect
 
 ### What you get for the cost (benefits)
 Write as a bulleted list, five points. These should describe the actual value of the care model, not make outcome promises.
 - A coordinated care team — specialist bariatric surgeons, physicians and specialist dietitians — not surgery as a standalone event
-- Keyhole (laparoscopic) surgery at accredited private hospitals (St John of God Murdoch and Subiaco)
+- Keyhole (laparoscopic) surgery at accredited private hospitals (Mount Private Hospital and Waikiki Private Hospital)
 - A clear, itemised written estimate provided upfront so the patient can plan and compare with confidence
 - Structured pre-operative assessment and long-term follow-up built into the care pathway, not billed as unexpected extras
 - Clinical averages show patients lose approximately 60–70% of excess weight in the first one to two years — include a clear caveat that results vary between individuals and this is not a promise
@@ -131,11 +131,11 @@ Do not present these figures as quotes. Always frame as approximate planning ran
 ### Surgeon profiles (2 profiles)
 Short, factual introduction — this is a cost page, not a surgeon bio page, so keep these concise.
 
-**Dr Harsha Chandraratna — MBBS, FRACS, Bariatric Surgeon**
-Lead bariatric surgeon, Notre Dame lecturer, personal experience of bariatric surgery. Two sentences.
+**Dr Leon Cohen — MBBS, FRACS, Bariatric Surgeon**
+Lead operating bariatric surgeon; practising since 1999, among the first in Australia to perform sleeve gastrectomy (2004); operates at Mount Private Hospital. Two sentences.
 
-**Dr Stephen Watson — MBBS, FRACS, Bariatric Surgeon**
-Bariatric surgeon focused on laparoscopic weight loss surgery and long-term patient outcomes. Two sentences.
+**A/Prof Harsha Chandraratna — MBBS, FRACS (founder & Clinical Program Director)**
+Practice founder and Clinical Program Director; senior Notre Dame lecturer; oversees the clinical program and patient pathway. Two sentences. <!-- STOP-SHIP GATED: active AHPRA undertaking (19 Mar 2025) restricts A/Prof Chandraratna from bariatric surgery as primary operator — do not describe him operating; confirm wording with Wendy -->
 
 ### Outcomes note
 Clinical averages, not promises. Patients commonly lose around 60–70% of excess weight in the first one to two years following a gastric sleeve; many see improvement in associated conditions (type 2 diabetes, sleep apnoea, high blood pressure). Lead with the caveat: these are averages, not guarantees. Individual outcomes depend on starting health, dietary and lifestyle commitment, and follow-up. The long-term value of surgery comes from ongoing support, not the operation alone.

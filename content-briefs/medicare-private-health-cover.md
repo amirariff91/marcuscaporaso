@@ -36,7 +36,7 @@ This page demystifies the two-system funding structure (Medicare + private healt
 ### Semantic Terms to Include
 Weave these LSI/semantic terms naturally into the copy. These are not keyword-stuff targets — they are terms that signal topical depth to Google:
 
-MBS item 31575, item 31572, sleeve gastrectomy, Roux-en-Y gastric bypass, gold tier hospital cover, 12-month waiting period, out-of-pocket gap, excess and copayment, Medicare Benefits Schedule, anaesthetist and assistant fees, GP referral, BMI 35, clinically severe obesity, pre-approval / fund approval, St John of God agreed rates, schedule fee rebate.
+MBS item 31575, item 31572, sleeve gastrectomy, Roux-en-Y gastric bypass, gold tier hospital cover, 12-month waiting period, out-of-pocket gap, excess and copayment, Medicare Benefits Schedule, anaesthetist and assistant fees, GP referral, BMI 35, clinically severe obesity, pre-approval / fund approval, agreed or negotiated hospital rates with major funds (confirm hospital-specific arrangements), schedule fee rebate. <!-- RESEARCH-RESOLVED (R3, Australian Government hospital-agreement data dated 1 Aug 2026): Mount Private + Waikiki Private ARE participating/agreement hospitals for Medibank, Bupa, HCF, nib, HBF and CBHS. Safe wording = "listed as participating hospitals for [funds]"; do NOT promise unqualified "no gap"/"agreed rates" — out-of-pocket still depends on policy, treatment and excess. Client tick optional. -->
 
 ### SERP Landscape (AU)
 Informational intent dominated by surgeon and bariatric-clinic info/FAQ pages (drphillockie.com.au, sydneybariatricclinic.com, melbournegastrosurgery.com.au, drlepage.com.au, medicalweightloss.com.au) — typically titled as a question ("Does Medicare cover weight loss surgery in Australia?", "Will Medicare cover my gastric sleeve?"). These are mostly low-DR clinic pages (DR 3–21) that win on topical relevance and exact-match question titles rather than authority. Interspersed are high-authority government/reference sources: Queensland Health bariatric surgery service (DR 82), the MBS item 31575 page on health.gov.au (DR 90), and US sources (Healthline, Medicare.gov, Aetna) that leak in because the phrase is generic. No cost calculators rank; the format that wins is a plain-language Q&A explainer that names item numbers and walks through Medicare vs private health.
@@ -53,7 +53,7 @@ Top 5 ranking pages:
 
 ### Content Gap Opportunity
 Clear opening for OSWA:
-1. **Geo gap.** No ranking page is Perth/WA-specific — every AU clinic result is Sydney, Melbourne, Adelaide or Brisbane, and none mention St John of God Murdoch/Subiaco or WA-specific agreed-rate arrangements. A Perth-focused page can own this geo.
+1. **Geo gap.** No ranking page is Perth/WA-specific — every AU clinic result is Sydney, Melbourne, Adelaide or Brisbane, and none name the WA private hospitals or WA-specific fund arrangements. A Perth-focused page (naming Mount Private + Waikiki Private and their fund participation) can own this geo.
 2. **Two-system mental model.** Most competitors explain Medicare OR cost in isolation; few cleanly model the two-system interaction (Medicare for doctors, private cover for hospital, patient pays the gap) in one mental model — the brief's core angle.
 3. **Human financial coordinator.** None offer a human "financial coordinator" service that translates item numbers and puts figures in writing — a genuine differentiator and a trust/E-E-A-T signal absent from the SERP.
 4. **Weak AU competition.** US sources (Healthline, Medicare.gov, Aetna) ranking on an Australian query signal weak AU-specific competition — strong Australian grounding (MBS items 31569–31581, AU 12-month waiting period, gold-tier rules) will out-relevance them.
@@ -80,7 +80,7 @@ Use these four anchors verbatim in the stats block.
 | Medicare rebate | Yes | Applies to MBS items 31569–31581 (bariatric surgery family) |
 | Hospital and theatre | Not Medicare | Funded through your private hospital cover, not Medicare |
 | Waiting period | 12 months | Applies to new members or those upgrading to bariatric cover |
-| SJOG agreed rates | Most funds | Medibank, Bupa, HCF, NIB, CBHS and others |
+| Hospital fund arrangements | Confirm first | Ask your fund whether agreed or negotiated rates apply at Mount Private Hospital or Waikiki Private Hospital | <!-- RESEARCH-RESOLVED (R3, Australian Government hospital-agreement data dated 1 Aug 2026): Mount Private + Waikiki Private ARE participating/agreement hospitals for Medibank, Bupa, HCF, nib, HBF and CBHS. Safe wording = "listed as participating hospitals for [funds]"; do NOT promise unqualified "no gap"/"agreed rates" — out-of-pocket still depends on policy, treatment and excess. Client tick optional. -->
 
 ---
 
@@ -101,7 +101,7 @@ Write ~3 paragraphs. The goal is to give the reader a mental model of the two sy
   3. Private hospital cover generally needs to be gold tier or equivalent and must specifically include bariatric surgery item numbers.
   4. Hospital waits are capped at 12 months for a pre-existing condition and two months otherwise; on upgrade, a wait applies only to new or higher benefits. Funds commonly treat obesity as pre-existing, so 12 months is usually the relevant one.
   5. Some funds require pre-approval before surgery; skipping this step can affect what the fund pays.
-  6. St John of God Murdoch and Subiaco have agreed rates with most major funds (Medibank, Bupa, HCF, NIB, CBHS), which can reduce out-of-pocket costs.
+  6. Many private hospitals have agreed or negotiated rates with major funds (Medibank, Bupa, HCF, NIB, CBHS), which can reduce out-of-pocket costs; confirm your hospital's arrangements with your fund. <!-- RESEARCH-RESOLVED (R3, Australian Government hospital-agreement data dated 1 Aug 2026): Mount Private + Waikiki Private ARE participating/agreement hospitals for Medibank, Bupa, HCF, nib, HBF and CBHS. Safe wording = "listed as participating hospitals for [funds]"; do NOT promise unqualified "no gap"/"agreed rates" — out-of-pocket still depends on policy, treatment and excess. Client tick optional. -->
 
 ---
 
@@ -112,7 +112,7 @@ Six steps. Keep each to 2–3 sentences. The reader should be able to visualise 
 2. **GP Referral** — Obtain a valid GP referral to OSWA. This gives the higher referred Medicare rebate on specialist consultations. Rebates on the surgery itself depend on the procedure meeting the relevant Medicare item criteria — keep the two separate.
 3. **Consultation** — Clinical suitability is assessed; Medicare contributions, fund cover and the likely gap for the patient's specific situation are discussed openly.
 4. **Financial Coordinator Review** — The financial coordinator navigates item numbers, fund requirements, pre-approval and waiting periods with the patient and puts figures in writing.
-5. **Confirm and Schedule** — Once cover is confirmed, any pre-approval is in place and pre-op checks are done, surgery is booked at SJOG Murdoch or Subiaco.
+5. **Confirm and Schedule** — Once cover is confirmed, any pre-approval is in place and pre-op checks are done, surgery is booked at Mount Private Hospital or Waikiki Private Hospital.
 6. **Ongoing Support** — Follow-up appointments and dietitian support are part of the program; eligible consultations continue to attract Medicare rebates post-surgery.
 
 ---
@@ -123,7 +123,7 @@ Write each as a short, factual statement (1–2 sentences). The reader should fe
 1. Knowing what Medicare does and does not cover means fewer surprises when accounts arrive.
 2. Confirming your policy includes bariatric item numbers (31575, 31572) before committing protects against finding gaps too late.
 3. Checking waiting period status early allows realistic timing rather than a last-minute catch.
-4. SJOG's agreed rates with most major funds can meaningfully reduce out-of-pocket costs compared to a hospital without such arrangements.
+4. Many private hospitals have agreed or negotiated rates with major funds, which can meaningfully reduce out-of-pocket costs compared to a hospital without such arrangements; confirm your hospital's arrangements with your fund. <!-- RESEARCH-RESOLVED (R3, Australian Government hospital-agreement data dated 1 Aug 2026): Mount Private + Waikiki Private ARE participating/agreement hospitals for Medibank, Bupa, HCF, nib, HBF and CBHS. Safe wording = "listed as participating hospitals for [funds]"; do NOT promise unqualified "no gap"/"agreed rates" — out-of-pocket still depends on policy, treatment and excess. Client tick optional. -->
 5. Having the financial coordinator translate item numbers and fund jargon means the patient makes decisions with clear information, not guesswork.
 
 ---
@@ -143,7 +143,7 @@ Write each as a short, factual statement (1–2 sentences). The reader should fe
 Cover these topics in a single flowing paragraph:
 - Why no single online figure is published (procedure, cover, Medicare rebates and fund excess all interact differently for each patient).
 - What Medicare contributes (item numbers 31575, 31572 and others in the 31569–31581 family; plus anaesthetist, physician and dietitian consultations).
-- The hospital side and how SJOG's agreed rates with major funds reduce out-of-pocket costs for many patients.
+- The hospital side and how agreed or negotiated rates with major funds may reduce out-of-pocket costs for many patients; confirm your hospital's arrangements with your fund. <!-- RESEARCH-RESOLVED (R3, Australian Government hospital-agreement data dated 1 Aug 2026): Mount Private + Waikiki Private ARE participating/agreement hospitals for Medibank, Bupa, HCF, nib, HBF and CBHS. Safe wording = "listed as participating hospitals for [funds]"; do NOT promise unqualified "no gap"/"agreed rates" — out-of-pocket still depends on policy, treatment and excess. Client tick optional. -->
 - The financial coordinator review and written estimate as the only reliable way to understand the patient's real position.
 
 ---
@@ -172,7 +172,7 @@ Eight questions. Plain-language answers, 3–5 sentences each. Compliance guardr
 3. Is there a waiting period for weight loss surgery on private health?
 4. What should I ask my health fund when I call?
 5. Does OSWA help me understand my cover?
-6. Does St John of God have agreed rates with my fund?
+6. Does my hospital have agreed or negotiated rates with my fund? <!-- RESEARCH-RESOLVED (R3, Australian Government hospital-agreement data dated 1 Aug 2026): Mount Private + Waikiki Private ARE participating/agreement hospitals for Medibank, Bupa, HCF, nib, HBF and CBHS. Safe wording = "listed as participating hospitals for [funds]"; do NOT promise unqualified "no gap"/"agreed rates" — out-of-pocket still depends on policy, treatment and excess. Client tick optional. -->
 7. What out-of-pocket costs should I still expect?
 8. How much does Medicare rebate for weight loss surgery?
 

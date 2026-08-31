@@ -32,7 +32,7 @@ This page helps prospective patients evaluate the surgical team before they book
 ### Semantic Terms to Include
 Comma-separated list of LSI/semantic terms the writer must naturally weave into the copy. These are not keyword-stuff targets — they are terms that signal topical depth to Google.
 
-FRACS, Royal Australasian College of Surgeons, laparoscopic, keyhole surgery, gastric sleeve, sleeve gastrectomy, gastric bypass, revisional surgery, upper GI surgeon, St John of God, Bariatric Surgery Registry, Medicare item number, BMI, private health cover, GP referral, dietitian, accredited hospital, excess weight loss, MBBS, aftercare
+FRACS, Royal Australasian College of Surgeons, laparoscopic, keyhole surgery, gastric sleeve, sleeve gastrectomy, gastric bypass, revisional surgery, upper GI surgeon, Mount Private Hospital, Waikiki Private Hospital, Bariatric Surgery Registry, Medicare item number, BMI, private health cover, GP referral, dietitian, accredited hospital, excess weight loss, MBBS, aftercare
 
 ### SERP Landscape (AU)
 The entire top-10 is occupied by individual Perth bariatric surgeon practice/clinic homepages (Dr Kiyingi, Dr Rao, Dr Gounder, Dr Dolan, Dr Ruth Blackham/Aurora, Dr Teo/Evolve, Advance Surgical, Veritas, Complete Surgical). No editorial "best of" listicles or third-party comparison articles rank — this is a navigational/commercial cluster where Google rewards individual practice pages with strong local relevance and credibility signals. Domain ratings are low across the board (DR 2–26), so the field is winnable on relevance and on-page trust signals rather than backlink authority. Google also injects a People Also Ask block covering cost ('How much is bariatric surgery in Perth?'), success rate ('Which bariatric surgery has the best success rate?'), and 'who is best' framing — these should be answered in FAQ schema.
@@ -47,7 +47,7 @@ Top 5 ranking pages:
 | 4 | aurorabariatrics.com.au | Perth Bariatric Surgery \| Dr Ruth Blackham \| Aurora |
 
 ### Content Gap Opportunity
-Opportunity 1: No ranking competitor leads with a surgeon who has personally undergone bariatric surgery — Dr Chandraratna's lived experience is a genuine, AHPRA-compliant differentiator no other Perth result can claim. Opportunity 2: Most competitors are single-surgeon sites; OSWA can own the 'team and procedure-matching' angle (two FRACS surgeons + in-house physicians/dietitians = continuity of care) which the field largely ignores. Opportunity 3: The PAA shows clear demand for cost and 'how to choose' guidance, yet ranking pages are thin on neutral consumer guidance — the comparison-note section (what actually makes a good bariatric surgeon: FRACS, accredited hospital privileges, aftercare quality) fills a real gap and earns the PAA real estate. Opportunity 4: Few competitors address Medicare item numbers, private cover gap payments, or super access factually — covering these honestly without dollar figures builds trust competitors don't. Note: low overall DR across the SERP means strong on-page credibility (named surgeons, FRACS, named hospitals, Bariatric Surgery Registry) plus FAQ schema is likely enough to break into the top half.
+Opportunity 1: No ranking competitor leads with the depth of the OSWA team's credentials and continuity-of-care model — a genuine, AHPRA-compliant differentiator. <!-- GATED: the old "a surgeon who personally underwent bariatric surgery" differentiator was attributed to Dr Chandraratna; unverified against the current roster — confirm with Wendy before using --> Opportunity 2: Most competitors are single-surgeon sites; OSWA can own the 'team and procedure-matching' angle (a FRACS operating surgeon + a founding Clinical Program Director + in-house physicians/dietitians = continuity of care) which the field largely ignores. Opportunity 3: The PAA shows clear demand for cost and 'how to choose' guidance, yet ranking pages are thin on neutral consumer guidance — the comparison-note section (what actually makes a good bariatric surgeon: FRACS, accredited hospital privileges, aftercare quality) fills a real gap and earns the PAA real estate. Opportunity 4: Few competitors address Medicare item numbers, private cover gap payments, or super access factually — covering these honestly without dollar figures builds trust competitors don't. Note: low overall DR across the SERP means strong on-page credibility (named surgeons, FRACS, named hospitals, Bariatric Surgery Registry) plus FAQ schema is likely enough to break into the top half.
 
 ### Recommended Word Count
 1,000–1,300 words (matches brief target; SERP competitors are single-surgeon homepages with shallow body copy, so depth of credentials and team detail wins over raw length)
@@ -63,17 +63,17 @@ Opportunity 1: No ranking competitor leads with a surgeon who has personally und
 ### Stats bar (4 stats)
 These are factual anchors, not marketing claims. Write them exactly as structured:
 1. **Lead surgeon / FRACS** — Fellowship of the Royal Australasian College of Surgeons (spell it out in context)
-2. **Hospitals / 2** — St John of God Murdoch and St John of God Subiaco
+2. **Hospitals / 2** — Mount Private Hospital and Waikiki Private Hospital
 3. **Care team / 10+** — surgeons, physicians and dietitians
-4. **Clinic locations / Perth + Mandurah** — Booragoon and Mandurah consulting rooms
+4. **Clinic locations / Perth** — Booragoon and Subiaco / West Leederville consulting rooms
 
 ### Who are the surgeons at Obesity Surgery WA? (3 paragraphs)
 
-**Paragraph 1 — Dr Harsha Chandraratna**
-Introduce him fully: FRACS credential, University of Notre Dame lectureship, operating hospitals (St John of God Murdoch and Subiaco). Include the personal detail — he has been through bariatric surgery himself — and frame it as something that informs how he treats patients, not as a selling point. Keep this factual and grounded.
+**Paragraph 1 — Dr Leon Cohen (lead / operating surgeon)**
+Introduce him fully: MBBS (University of WA, 1985), FRACS (and FRCS). Lead consulting and operating bariatric surgeon — practising bariatric surgery since 1999 and among the first surgeons in Australia to perform sleeve gastrectomy (2004), having trained WA surgeons in the technique. Name the procedures he covers: gastric sleeve, revisional bariatric surgery, weight-regain and reflux-after-sleeve management, SASI-S bypass. Emphasise that patients are matched to the right procedure rather than offered a default option. Keep it factual and grounded.
 
-**Paragraph 2 — Dr Stephen Watson**
-Introduce him as an experienced bariatric surgeon with the same patient-first approach. Name the procedures he covers: gastric sleeve, gastric bypass and revisional surgery. Emphasise that patients are matched to the right procedure for their situation rather than offered a default option.
+**Paragraph 2 — A/Prof Harsha Chandraratna (founder & Clinical Program Director)**
+Introduce him as the practice founder and Clinical Program Director: MBBS (University of WA, 1993), FRACS (2001), senior clinical lecturer at the University of Notre Dame. He oversees the clinical program, triage, the multidisciplinary team and the patient pathway. <!-- STOP-SHIP GATED: A/Prof Chandraratna has an active AHPRA undertaking (19 Mar 2025) restricting him from performing bariatric surgery as primary operator — confirm exact compliant public wording with Wendy; do NOT describe him as performing/operating bariatric surgery -->
 
 **Paragraph 3 — The wider team**
 Explain that surgery alone does not produce long-term results — the team of physicians and dietitians is involved before and after the operation. The point is continuity: the patient is supported by the same team throughout, not handed off to different providers at different stages.
@@ -85,8 +85,8 @@ A short, practical paragraph guiding readers who are comparing surgeons. Tell th
 Frame this as a straightforward clinical guide. Cover:
 - General BMI thresholds (35+, or 30+ with related health conditions) — note these are starting points, not guarantees
 - Patients see a FRACS-qualified surgeon for assessment and for the operation itself (not a trainee)
-- Both surgeons operate at accredited private hospitals
-- Consulting locations: Booragoon (Garden City Specialist Centre, 537 Marmion Street) and Mandurah (WA Cardiology Centre, 30 Minilya Pkwy)
+- The operating surgeon (Dr Cohen) performs surgery at accredited private hospitals; A/Prof Chandraratna leads the clinical program and patient pathway <!-- STOP-SHIP GATED: do not imply A/Prof Chandraratna operates — active AHPRA undertaking, confirm wording with Wendy -->
+- Consulting locations: Booragoon (Garden City Specialist Centre, 537 Marmion Street) and Subiaco / West Leederville (<!-- GATED: confirm West Leederville street address -->)
 - A GP referral is the normal first step and gives the higher referred Medicare rebate on the consultation (a lower rebate applies without one)
 
 Do not promise suitability. The surgeon confirms appropriateness at consultation.
@@ -97,17 +97,17 @@ Write each step as a clear, numbered action. Keep each description to two to thr
 1. **GP Referral** — Patient asks their GP for a referral to Obesity Surgery WA; explain this gives the higher referred Medicare rebate and lets the practice review history ahead of the first meeting
 2. **Orientation Consultation** — Patient meets their surgeon, discusses weight and health history, options explained in plain language with no pressure to decide on the day
 3. **Pre-operative Assessment** — Physicians and dietitians assess overall health, screen for relevant conditions (reflux, sleep apnoea), prepare the patient for surgery safely
-4. **Surgery** — FRACS surgeon performs the keyhole (laparoscopic) procedure at St John of God Murdoch or Subiaco
+4. **Surgery** — FRACS surgeon performs the keyhole (laparoscopic) procedure at Mount Private Hospital or Waikiki Private Hospital
 5. **Hospital Recovery** — Recovery in hospital (typically a few nights) with nursing and dietitian support before discharge
 6. **Ongoing Support** — Dietitians and physicians remain involved long term, building the habits that protect results over time
 
 ### Why patients choose this team (benefits)
 Write as a bulleted list, five points. These should be concrete and factual, not vague superlatives. Cover:
-- Lead surgeon's FRACS credential, Notre Dame lectureship and personal bariatric surgery experience
-- Two surgeons so procedure matching is possible rather than one-size-fits-all
-- Operating at St John of God Murdoch and Subiaco (accredited hospitals with full theatre and ICU backup)
+- FRACS-qualified operating surgeon (Dr Cohen) plus a founding Clinical Program Director (A/Prof Chandraratna, senior lecturer at Notre Dame) <!-- GATED: 'personal bariatric surgery experience' claim unverified against current roster — confirm with Wendy -->
+- A dedicated operating surgeon plus a clinical director so procedure matching and oversight are built in, rather than one-size-fits-all
+- Operating at Mount Private Hospital and Waikiki Private Hospital (accredited hospitals with full theatre and ICU backup)
 - In-house physicians and dietitians providing pre- and post-operative support
-- Two clinic locations (Perth and Mandurah) for accessibility
+- Two clinic locations (Booragoon and Subiaco / West Leederville) for accessibility
 
 Avoid: "best in Perth", "world-class", "leading", and any language implying superior outcomes.
 
@@ -128,11 +128,11 @@ Explain that costs depend on the procedure chosen, private health cover level, a
 ### Surgeon profiles (2 profiles)
 Write a short bio for each surgeon. These should feel like a professional introduction, not a promotional blurb.
 
-**Dr Harsha Chandraratna — MBBS, FRACS, Bariatric Surgeon**
-Cover: lead surgeon and founder role, FRACS fellowship, Notre Dame lectureship, operating hospitals, and personal bariatric surgery experience and what it means for his patient approach. Three to four sentences.
+**Dr Leon Cohen — MBBS, FRACS, Bariatric Surgeon (lead / operating surgeon)**
+Cover: MBBS (UWA 1985), FRACS (and FRCS); lead operating bariatric surgeon; practising bariatric surgery since 1999, among the first in Australia to perform sleeve gastrectomy (2004); procedures — gastric sleeve, revisional surgery, weight regain, reflux after sleeve, SASI-S bypass; procedure-matching philosophy. Three to four sentences.
 
-**Dr Stephen Watson — MBBS, FRACS, Bariatric Surgeon**
-Cover: experienced bariatric surgeon, procedures performed (gastric sleeve, bypass, revisional), known for a thorough and unhurried approach, procedure-matching philosophy. Three to four sentences.
+**A/Prof Harsha Chandraratna — MBBS, FRACS (founder & Clinical Program Director)**
+Cover: MBBS (UWA 1993), FRACS (2001); practice founder and Clinical Program Director; senior lecturer at the University of Notre Dame; oversees the clinical program, triage and multidisciplinary team. Three to four sentences. <!-- STOP-SHIP GATED: active AHPRA undertaking (19 Mar 2025) restricts A/Prof Chandraratna from bariatric surgery as primary operator — do NOT describe him operating; confirm compliant wording with Wendy -->
 
 ### Outcomes note
 This section must include a clear compliance caveat. Write about clinical averages — published data typically shows 60–80% of excess weight lost in the first one to two years depending on procedure — but lead with the caveat that these are population averages, not individual promises. Results vary between individuals and depend on starting health, procedure chosen, and adherence to the dietary and lifestyle plan. No specific outcome can be promised.
@@ -147,8 +147,8 @@ The page should answer all of the following questions. Write each answer in plai
 2. What qualifications should I look for in a bariatric surgeon? (FRACS, specialist UGI/general surgery training, Bariatric Surgery Registry participation)
 3. Is Dr Chandraratna fully qualified and a member of RACS? (Yes — MBBS, FRACS, Notre Dame lecturer; confirm factually)
 4. Will I see the surgeon, or someone else? (FRACS surgeon assesses and operates; physicians and dietitians form the wider team)
-5. Which hospitals do the surgeons operate at? (St John of God Murdoch and Subiaco; consulting at Booragoon and Mandurah)
-6. How do I choose between the two surgeons? (The team arranges the consultation; both are FRACS-qualified with the same approach)
+5. Which hospitals do the surgeons operate at? (Mount Private Hospital and Waikiki Private Hospital; consulting at Booragoon and Subiaco / West Leederville)
+6. Who performs my surgery? (Dr Cohen is the operating bariatric surgeon; A/Prof Chandraratna, the founder, leads the clinical program and patient pathway; the team arranges your consultation) <!-- STOP-SHIP GATED: confirm surgeon-role wording with Wendy re AHPRA undertaking -->
 7. Can I eat normally again after surgery? (Eating changes, especially early; dietitian guides reintroduction; most patients eat a wide range in smaller amounts; goal is a healthier relationship with food)
 8. What if the surgery does not work for me? (Results vary; if weight returns, the team investigates why; revisional surgery is sometimes an option; this is why long-term support matters)
 9. How long will I need off work after surgery? (Typically two to four weeks; depends on procedure and job type; surgeon advises based on individual situation)

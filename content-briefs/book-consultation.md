@@ -43,7 +43,7 @@ Note the low-KD, high-intent opportunities: "gastric sleeve perth" (KD 7), "gast
 
 Naturally weave these LSI/semantic terms into the copy. These are not keyword-stuff targets — they signal topical depth to Google:
 
-orientation consultation, GP referral, Medicare rebate, private health insurance, no obligation, Booragoon clinic, Mandurah clinic, weight loss surgery options, gastric sleeve, gastric bypass, gastric band, BMI eligibility, recovery and time off work, out-of-pocket cost, bariatric team, first appointment
+orientation consultation, GP referral, Medicare rebate, private health insurance, no obligation, Booragoon clinic, Subiaco/West Leederville clinic, weight loss surgery options, gastric sleeve, gastric bypass, gastric band, BMI eligibility, recovery and time off work, out-of-pocket cost, bariatric team, first appointment
 
 ### SERP Landscape (AU)
 
@@ -61,7 +61,7 @@ Top 5 ranking pages:
 
 ### Content Gap Opportunity
 
-No competitor ranks a purpose-built "book a consultation" page — they all use generic surgeon/clinic homepages, so there is a clear gap for a dedicated, conversion-focused booking page that owns the "what happens at a consultation / is booking a commitment" intent. The PAA block proves searchers want cost and Medicare answers up front, yet most competing homepages bury or omit pricing; addressing "Medicare rebate via GP referral" and "no minimum BMI to book" directly is a differentiator. Biggest opportunities: (1) explicitly reassure that booking is not committing to surgery and a referral is recommended-but-not-required (no competitor leads with this), (2) Perth-specific dual-location convenience (Booragoon & Mandurah) plus a prominent phone number for high-intent callers, (3) an FAQ section capturing the PAA queries (cost, Medicare, what to bring, pressure on the day). Avoid testimonials/before-after/guaranteed-outcome language per AHPRA/TGA. The exact phrase "bariatric consultation perth" has no measurable Ahrefs volume, so the page should rank by capturing the broader "weight loss surgery perth / gastric sleeve perth / cost" cluster while serving the bottom-funnel booking intent.
+No competitor ranks a purpose-built "book a consultation" page — they all use generic surgeon/clinic homepages, so there is a clear gap for a dedicated, conversion-focused booking page that owns the "what happens at a consultation / is booking a commitment" intent. The PAA block proves searchers want cost and Medicare answers up front, yet most competing homepages bury or omit pricing; addressing "Medicare rebate via GP referral" and "no minimum BMI to book" directly is a differentiator. Biggest opportunities: (1) explicitly reassure that booking is not committing to surgery and a referral is recommended-but-not-required (no competitor leads with this), (2) Perth-specific dual-location convenience (Booragoon & Subiaco/West Leederville) plus a prominent phone number for high-intent callers, (3) an FAQ section capturing the PAA queries (cost, Medicare, what to bring, pressure on the day). Avoid testimonials/before-after/guaranteed-outcome language per AHPRA/TGA. The exact phrase "bariatric consultation perth" has no measurable Ahrefs volume, so the page should rank by capturing the broader "weight loss surgery perth / gastric sleeve perth / cost" cluster while serving the bottom-funnel booking intent.
 
 ### Recommended Word Count
 
@@ -84,7 +84,7 @@ No competitor ranks a purpose-built "book a consultation" page — they all use 
 |---|---|---|
 | Phone | (08) 9332 0066 | Speak to a real person, Perth-based team |
 | Consult length | 30–60 min | An unhurried orientation appointment |
-| Locations | Booragoon & Mandurah | Two Perth clinics to choose from |
+| Locations | Booragoon & Subiaco/West Leederville | Two Perth clinics to choose from |
 | Obligation | None | Booking is not committing to surgery |
 
 Use these values exactly. The phone number is a key conversion element — make sure it is prominent.
@@ -120,7 +120,7 @@ Keep this warm and inclusive. No one needs to have made up their mind to deserve
 
 One to two sentences of practical guidance per step. Make it feel easy.
 
-1. **Get in touch** — Call (08) 9332 0066 or book online. The Perth-based team will find an appointment time that suits, at either Booragoon or Mandurah. No pressure on the phone — just a friendly call to get booked in.
+1. **Get in touch** — Call (08) 9332 0066 or book online. The Perth-based team will find an appointment time that suits, at either Booragoon or Subiaco/West Leederville. No pressure on the phone — just a friendly call to get booked in.
 2. **Confirmation call** — After booking, the team calls to confirm appointment details, let the reader know what to bring, and answer any quick questions before the day. Easy to reschedule if plans change.
 3. **Your consultation** — The 30 to 60 minute appointment: talk through your situation, learn about the options, discuss costs openly, and meet the team. No obligation, no pressure to decide on the day.
 4. **Decide in your own time** — Take the information home and think it over. If you want to move forward, the team will guide the next steps. If it is not the right time, that is genuinely okay.

@@ -29,7 +29,7 @@ The homepage is the brand's front door and the single most-visited page on the c
 | weight loss clinic perth | 100 | 2 |
 
 ### Semantic Terms to Include
-bariatric surgery, weight loss surgery, gastric sleeve, gastric bypass, gastric band, medical weight management, GLP-1 medication, dietitian support, obesity as a medical condition, BMI, Medicare rebate, private health cover, FRACS surgeon, Booragoon, Mandurah, aftercare
+bariatric surgery, weight loss surgery, gastric sleeve, gastric bypass, gastric band, medical weight management, GLP-1 medication, dietitian support, obesity as a medical condition, BMI, Medicare rebate, private health cover, FRACS surgeon, Booragoon, Subiaco/West Leederville, aftercare
 
 ### SERP Landscape (AU) — brand context, not a ranking battle
 The homepage's competitors are the same Perth surgeon-led clinic homepages (Dr Siva Gounder, Dr Andrew Kiyingi, Advance Surgical, Aurora Bariatrics). Almost all funnel straight to surgery. OSWA's homepage differentiator is the **team + full-spectrum** framing (medical management through to surgery, dedicated APD dietitians, two clinics) and 20+ years of local experience. The homepage should signal that breadth in the first screen, then route deeper.
@@ -48,12 +48,12 @@ Every competing homepage is a single-surgeon shopfront that presents surgery as 
 - Primary CTA in hero: "Book a consultation" (persistent). Secondary: phone number (08) 9332 0066 — many patients prefer to call (a persistent phone number is also specified in the wireframe).
 
 ### Stats / trust bar (4 items)
-Use factual, verifiable anchors only (no outcome claims). Hospital identity is pending verification — keep neutral until confirmed.
+Use factual, verifiable anchors only (no outcome claims). Surgery hospital identity is now confirmed (Mount Private Hospital and Waikiki Private Hospital) — use the confirmed names.
 
 | Label | Value | Note |
 |---|---|---|
 | Years of bariatric experience in Perth | 20+ | Brand longevity |
-| Perth clinic locations | 2 | Booragoon and Mandurah |
+| Perth clinic locations | 2 | Booragoon and Subiaco/West Leederville |
 | Dietitian-led aftercare | APD | Accredited Practising Dietitians on the team |
 | Care pathways | Medical + surgical | Full spectrum, individually assessed |
 
@@ -77,7 +77,7 @@ A brief version of the patient journey — the homepage summarises, the [/gp-ref
 4. Treatment with dietitian-led aftercare and long-term follow-up
 
 ### Locations snippet
-Two Perth clinics — Booragoon and Mandurah — with a link to [/hospitals-locations](/hospitals-locations). Surgery hospital identity to be verified before publish; keep neutral until confirmed.
+Two Perth clinics — Booragoon and Subiaco/West Leederville — with a link to [/hospitals-locations](/hospitals-locations). Surgery hospital identity is now confirmed: Mount Private Hospital and Waikiki Private Hospital.<!-- GATED: confirm Mandurah retired --> No West Leederville street number has been confirmed — use "Subiaco/West Leederville" without a street address.
 
 ### Cost snapshot
 One short paragraph: cost depends on the pathway chosen (medical management vs surgery, and procedure type), with Medicare rebates, private health cover and in some cases superannuation access playing a part; an itemised estimate is provided at consultation. Link to [/medicare-private-health-cover](/medicare-private-health-cover). No dollar figures.
@@ -102,7 +102,7 @@ Link to the full [/faqs](/faqs) page below the homepage FAQ block.
 - AHPRA/TGA: no testimonials, no before/after, no guaranteed outcomes; balanced risk framing where treatment is described.
 - MBS surgical threshold, if referenced: BMI 40+, or BMI 35–39.9 with a major co-morbidity, assessment-only; BMI below 35 does not meet that MBS threshold.
 - GLP-1 / medical-weight-management advertising policy is pending: **retain GLP-1 only as a drug-class reference** (never brand names), and verify the final TGA/legal position before publication.
-- Hospital identity (Mount/Park/Waikiki vs St John of God) is **unconfirmed** — use neutral "our Perth hospital locations" wording until the client verifies.
+- Hospital identity is **confirmed** — Mount Private Hospital and Waikiki Private Hospital. Use the confirmed names; no West Leederville street number is confirmed yet.
 - **Migration note (critical):** the current homepage is the top-traffic page and holds commercial-term equity. On rebuild, preserve the URL (`/`), keep at least one strong internal link to each SEO hub, and 301 any consolidated old homepage variants to `/`. Do not strip the brand/commercial relevance so aggressively that ranking equity is lost — pass it downstream via internal links instead.
 - Voice: brand-confident, warm, plain-language; the homepage sets the "obesity is a medical condition, not a willpower failure" tone the rest of the site inherits.
 - Reader: a mix of brand searchers, referrals, and returning visitors — orient fast, don't make them read to find their path.

@@ -145,11 +145,11 @@ Repeat clearly: these are approximate planning ranges. The personalised written 
 ### Surgeon profiles (2 profiles)
 Keep these concise on this cost-focused page — they establish credibility without dominating.
 
-**Dr Harsha Chandraratna — MBBS, FRACS, Bariatric & Upper GI Surgeon**
-Perth bariatric surgeon, Fellow of the Royal Australasian College of Surgeons, senior Notre Dame lecturer, underwent bariatric surgery himself — this informs his approach to every consultation. Operates at St John of God Murdoch and Subiaco. Three sentences maximum.
+**Dr Leon Cohen — MBBS, FRACS, Bariatric Surgeon**
+Lead operating bariatric surgeon and Fellow of the Royal Australasian College of Surgeons; practising bariatric surgery since 1999 and among the first in Australia to perform sleeve gastrectomy (2004); performs gastric sleeve, revisional and related procedures at Mount Private Hospital. Takes time to explain costs and options clearly. Three sentences maximum.
 
-**Dr Stephen Watson — MBBS, FRACS, Bariatric Surgeon**
-Accredited bariatric surgeon performing gastric sleeve, bypass and band procedures at St John of God Murdoch and Subiaco. Takes time to explain costs and options clearly so patients understand exactly what they are committing to. Two to three sentences.
+**A/Prof Harsha Chandraratna — MBBS, FRACS (founder & Clinical Program Director)**
+Practice founder, Fellow of the Royal Australasian College of Surgeons and senior Notre Dame lecturer; as Clinical Program Director he oversees the clinical program, triage and patient pathway. Two to three sentences. <!-- STOP-SHIP GATED: active AHPRA undertaking (19 Mar 2025) restricts A/Prof Chandraratna from bariatric surgery as primary operator — do not describe him operating; confirm wording with Wendy -->
 
 ### Outcomes note
 Keep brief and compliant. Patients value knowing the full cost upfront — when every fee is laid out on one page before any decision is made, financial stress drops and people can focus on their health. Weight loss results themselves vary between individuals and depend on the procedure, individual health factors and commitment to dietary and lifestyle changes. What the practice commits to is cost transparency.

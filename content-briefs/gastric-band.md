@@ -32,7 +32,7 @@ This page helps Perth adults who are specifically curious about the gastric band
 ### Semantic Terms to Include
 These are not keyword-stuff targets — they are terms that signal topical depth to Google. Weave them in naturally where the copy is already discussing the relevant point:
 
-adjustable gastric band, laparoscopic adjustable gastric banding, lap band, silicone band, gastric pouch, access port, saline adjustment, band slippage, band erosion, keyhole surgery, reversible weight loss surgery, excess weight loss, BMI, Medicare item 31569, bariatric surgeon Perth, St John of God Murdoch, gastric sleeve, gastric bypass
+adjustable gastric band, laparoscopic adjustable gastric banding, lap band, silicone band, gastric pouch, access port, saline adjustment, band slippage, band erosion, keyhole surgery, reversible weight loss surgery, excess weight loss, BMI, Medicare item 31569, bariatric surgeon Perth, Mount Private Hospital, Waikiki Private Hospital, gastric sleeve, gastric bypass
 
 ### SERP Landscape (AU)
 The SERP is almost entirely commercial clinic and surgeon procedure pages (Advance Surgical #1, Obesity Surgery WA #2, Dr Kevin Dolan #3, Perth Weight Loss Surgery #4, Evolve Bariatrics #5, Aurora Bariatrics, Veritas, WA Weight Loss, Perth Surgical & Bariatrics). No informational hospital portals, no editorial comparison articles, no government health pages rank on page 1 — this is a transactional, local-intent SERP. Domain Ratings are low (DR 1–26), so the keyword is highly winnable on content quality and topical depth rather than authority. Google surfaces a People Also Ask cluster heavily weighted to cost and Medicare ("How much does bariatric surgery cost in Perth?", "How much does a gastric band cost in Australia?", "Is gastric band surgery covered by Medicare?") plus a procedure-vs-drug comparison ("Mounjaro or gastric sleeve?").
@@ -67,7 +67,7 @@ Use these verbatim — they are factual anchors for the page:
 |---|---|---|
 | Expected weight loss | 40–50% | Excess weight, clinical average, less than sleeve or bypass, and individual results vary |
 | Reversibility | Fully reversible | The band can be removed and your stomach returns to its normal shape |
-| Hospital stay | 1 night | At St John of God Murdoch or Subiaco |
+| Hospital stay | 1 night | At Mount Private Hospital or Waikiki Private Hospital |
 | Adjustments | Ongoing | Regular clinic visits to tighten or loosen the band as you go |
 
 ### What is a gastric band?
@@ -94,7 +94,7 @@ Write each step as a short heading and 2–3 sentences of explanation. Tone is r
 1. **GP Referral** — What a referral is for, how it gives the higher referred Medicare rebate, why it's the starting point.
 2. **Orientation Consultation** — Meeting the surgeon, discussing health and goals, understanding if the band is the right fit. Note: no pressure to decide on the day.
 3. **Pre-operative Assessment** — Seeing dietitians and physicians, preparing the body, possible short pre-surgery eating plan.
-4. **Surgery** — Keyhole procedure under general anaesthetic at SJOG Murdoch or Subiaco; the band is placed around the upper stomach and the port is positioned under the skin.
+4. **Surgery** — Keyhole procedure under general anaesthetic at Mount Private Hospital or Waikiki Private Hospital; the band is placed around the upper stomach and the port is positioned under the skin.
 5. **Hospital Recovery** — Typically one night in hospital; team manages comfort, starts fluids, checks recovery before discharge.
 6. **Adjustments and Ongoing Support** — Regular saline adjustment visits over following months, plus surgeon and dietitian follow-up to sustain results.
 

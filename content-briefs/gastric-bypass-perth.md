@@ -32,7 +32,7 @@ This page serves patients researching Roux-en-Y gastric bypass in Perth — ofte
 ### Semantic Terms to Include
 These are not keyword-stuff targets — they are terms that signal topical depth to Google. Weave them naturally into the copy:
 
-Roux-en-Y gastric bypass, bariatric surgery, laparoscopic / keyhole surgery, stomach pouch, small intestine rerouting, type 2 diabetes and blood sugar control, gut hormones, ghrelin, excess weight loss, acid reflux / GORD, dumping syndrome, vitamin and mineral supplements, BMI eligibility, Medicare rebate, private health cover, St John of God Murdoch, anastomotic leak, general anaesthetic, dietitian follow-up.
+Roux-en-Y gastric bypass, bariatric surgery, laparoscopic / keyhole surgery, stomach pouch, small intestine rerouting, type 2 diabetes and blood sugar control, gut hormones, ghrelin, excess weight loss, acid reflux / GORD, dumping syndrome, vitamin and mineral supplements, BMI eligibility, Medicare rebate, private health cover, Mount Private Hospital, anastomotic leak, general anaesthetic, dietitian follow-up.
 
 ### SERP Landscape (AU)
 The SERP is dominated by Perth bariatric clinic and surgeon procedure pages (perthweightlosssurgery.com.au, aurorabariatrics, perthsurgicalbariatrics, obesitysurgerywa, evolvebariatrics, drkevindolan) plus one high-authority hospital page (St John of God Murdoch, DR 70). Most ranking domains have low DR (7–26), so the niche is winnable on relevance and depth rather than backlink strength. Intent is mixed commercial/informational: searchers want to understand the procedure AND find a Perth surgeon to book. Google also surfaces a People Also Ask block (cost, the 30-30 rule, Medicare coverage, minimum weight) and dedicated Roux-en-Y bypass pages (evolvebariatrics, drkevindolan) — signalling that procedure-specific RYGB pages, not generic bariatric hubs, are what rank for this exact query.
@@ -51,7 +51,7 @@ Clear opportunities for OSWA to own:
 1. **Cost transparency** — PAA shows explicit demand for "How much does gastric bypass cost in Perth?" and "Can gastric bypass be covered by Medicare?" — most competitor pages dodge cost. The brief's transparent itemised-estimate plus measured explanation of how Medicare and private health cover may apply directly fills this gap.
 2. **Bypass vs sleeve comparison** — "gastric sleeve vs bypass" / "gastric bypass vs sleeve" carry strong AU volume (350+250) at near-zero difficulty, yet competitor bypass pages rarely tackle the comparison honestly. The brief's bypass-vs-sleeve note should explain procedure-specific trade-offs, including potential diabetes or reflux considerations, without implying a universal advantage.
 3. **Type 2 diabetes outcomes** — No top result leads with type 2 diabetes outcomes despite this being a clinically relevant evidence-based angle for the bypass. Owning the "bypass for type 2 diabetes in Perth" angle is open, provided all outcomes are qualified and individualised.
-4. **Plain-language clinical clarity + named surgeons** — AHPRA rules block competitors from using before/after and testimonials, so the page must win on plain-language clinical clarity and named, credentialled surgeons (Dr Chandraratna, Dr Watson) operating at the same DR-70 SJOG Murdoch facility that already ranks.
+4. **Plain-language clinical clarity + named surgeons** — AHPRA rules block competitors from using before/after and testimonials, so the page must win on plain-language clinical clarity and named, credentialled surgeons — Dr Leon Cohen (the operating surgeon) and A/Prof Harsha Chandraratna (founder & Clinical Program Director). <!-- STOP-SHIP GATED: do not imply A/Prof Chandraratna operates — active AHPRA undertaking, confirm wording with Wendy --> (Competitive note: the SJOG Health Care hospital-system pages are high-DR and already rank for these terms — we win on practice-specific relevance and clarity, not domain authority.)
 5. **Long-tail FAQ capture** — Recovery-time and "what you can never eat again" queries have meaningful volume and low KD — weave into FAQ for long-tail capture.
 
 ### Recommended Word Count
@@ -74,7 +74,7 @@ Keep these figures verbatim as strategic brief guidance; do not paste them into 
 |---|---|---|
 | Expected weight loss | 70–80% | Excess weight, clinical average. Results vary between individuals. |
 | Time in surgery | ~120 min | Performed under general anaesthetic, keyhole technique. |
-| Hospital stay | 2–3 nights | At St John of God Murdoch or Subiaco (hospital identity to be verified — open question). |
+| Hospital stay | 2–3 nights | At Mount Private Hospital or Waikiki Private Hospital. |
 | Return to most activity | 3–4 weeks | Light duties often sooner, heavy lifting later. |
 
 These four figures are strategic brief guidance, not paste-ready copy. Retain the 70–80% claim and the operation-time, hospital-stay and recovery-timing stats only with the note: **verify: requires a cited clinical source + practice sign-off before publication**.
@@ -107,7 +107,7 @@ Each step gets a short heading and 1–2 sentences of content direction.
 1. **GP referral** — The reader asks their GP for a referral to the practice. A referral may allow a Medicare rebate for an eligible consultation, subject to Medicare rules, and is the first formal step toward seeing a surgeon.
 2. **Orientation consultation** — The reader meets their surgeon to discuss health, goals and whether a bypass is the right fit. No pressure to decide on the day. Frame this as an open conversation, not a sales meeting.
 3. **Pre-operative assessment** — The patient sees dietitians and physicians to prepare for surgery and plan nutrition. A pre-surgery eating plan may be prescribed to reduce liver size; its purpose, duration and risks are explained individually. This is team-led support, not a handout.
-4. **Surgery** — Performed under general anaesthetic using a keyhole approach where appropriate, at St John of God Murdoch or Subiaco (hospital identity to be verified — open question). Keep language clinical and calm; timing varies by patient.
+4. **Surgery** — Performed under general anaesthetic using a keyhole approach where appropriate, at Mount Private Hospital or Waikiki Private Hospital. Keep language clinical and calm; timing varies by patient.
 5. **Hospital recovery** — The care team manages comfort, starts the patient on fluids, and monitors movement and recovery. Length of stay and recovery timing vary with clinical needs and are confirmed individually.
 6. **Ongoing support** — Regular follow-up with surgeon and dietitian well beyond the operation. Position this as a long-term relationship, not a transaction. If weight loss stalls, the team reviews and adjusts rather than leaving the patient on their own.
 
@@ -170,10 +170,10 @@ The page should answer all of the following. Writer to draft each answer in plai
 ---
 
 ## Tone and compliance notes
-- **Hospitals (OPEN):** hospital identity is unverified — briefs and drafts name different facilities. Treat every hospital name in public copy as [hospital identity to be verified] until the client confirms.
+- **Hospitals (CONFIRMED):** Mount Private Hospital and Waikiki Private Hospital.
 - **Medical advertising:** No guarantees. Use phrases like "clinical averages", "results vary", "individual results depend on", "outcomes vary between individuals", "your surgeon will advise", "after discussion with their doctor".
 - **AHPRA/TGA:** No testimonials, no before/after claims, no guaranteed outcomes. The diabetes claim ("some patients reduce medication") must be qualified with "after discussion with their doctor" and "outcomes vary between individuals".
 - **Voice:** Plain-language, empathetic, direct. Slightly more clinical than the sleeve page is appropriate given the procedure's complexity — but still written for a nervous patient doing research, not for a medical journal.
 - **Reader:** A Perth adult, likely with type 2 diabetes or significant reflux, who has been researching weight loss surgery and is now comparing procedures. They want to know whether bypass is right for them specifically, and they are sceptical of hype.
-- **Surgeon credentials to include:** Dr Harsha Chandraratna (MBBS, FRACS, Bariatric Surgeon; personal bariatric surgery experience; lecturer at University of Notre Dame) and Dr Stephen Watson (MBBS, FRACS, Bariatric Surgeon; keyhole bypass and other weight-loss procedures at SJOG Murdoch and Subiaco). Both operate at St John of God Murdoch and Subiaco (hospital identity to be verified — open question).
-- **Clinic locations to mention:** Consultations at Booragoon (Garden City Specialist Centre) and Mandurah (WA Cardiology Centre).
+- **Surgeon credentials to include:** Dr Leon Cohen (MBBS, FRACS, Bariatric Surgeon; lead operating surgeon; keyhole bypass and other weight-loss procedures; operates at Mount Private Hospital) and A/Prof Harsha Chandraratna (MBBS, FRACS; practice founder & Clinical Program Director; lecturer at University of Notre Dame). Dr Cohen is the operating surgeon; A/Prof Chandraratna leads the clinical program. <!-- STOP-SHIP GATED: active AHPRA undertaking (19 Mar 2025) restricts A/Prof Chandraratna from bariatric surgery as primary operator — do not imply he operates; confirm wording with Wendy -->
+- **Clinic locations to mention:** Consultations at Booragoon (Garden City Specialist Centre) and Subiaco / West Leederville <!-- GATED: confirm West Leederville street address -->.

@@ -88,7 +88,7 @@ Clear opportunities OSWA can own that competitors don't:
 | Average weight loss | 10–15% | Of body weight on GLP-1 medication, clinical average; results vary between individuals |
 | Treatment style | Non-surgical | Medication, diet and review, no operation required |
 | Reviewed by | Specialists | Physicians and dietitians, not a script-only service |
-| Locations | Booragoon & Mandurah | Plus telehealth review where appropriate |
+| Locations | Booragoon & Subiaco/West Leederville | Plus telehealth review where appropriate |
 
 Use these values exactly. Do not round, alter, or embellish.
 

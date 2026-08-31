@@ -5,7 +5,7 @@
 **Target word count:** 900–1,200 words (a location/logistics page; SERP competitors are thin clinic "contact" and "locations" pages, so clear, complete logistical detail plus an honest surgical-context block wins over length)
 
 ## Page purpose
-This page settles the practical question every prospective patient has before booking: where will my surgery actually happen, and where will I be seen before and after? It distinguishes the two surgical hospitals (St John of God Murdoch and Subiaco) from the two consulting locations (Booragoon and Mandurah), and gives accreditation, accessibility and referral context. It builds trust through clarity and accredited-hospital signals, not through promises about outcomes. The reader is deciding whether the locations work for their life before they pick up the phone.
+This page settles the practical question every prospective patient has before booking: where will my surgery actually happen, and where will I be seen before and after? It distinguishes the two surgical hospitals (Mount Private Hospital and Waikiki Private Hospital) from the two consulting locations (Booragoon and Subiaco / West Leederville), and gives accreditation, accessibility and referral context. It builds trust through clarity and accredited-hospital signals, not through promises about outcomes. The reader is deciding whether the locations work for their life before they pick up the phone.
 
 ---
 
@@ -32,7 +32,7 @@ This page settles the practical question every prospective patient has before bo
 ### Semantic Terms to Include
 Comma-separated list of LSI/semantic terms to weave in naturally for topical depth — not keyword-stuff targets.
 
-St John of God Murdoch, St John of God Subiaco, accredited private hospital, Garden City Specialist Centre, Booragoon, Marmion Street, WA Cardiology Centre, Mandurah, Minilya Pkwy, consulting rooms, operating theatre, intensive care, recovery ward, laparoscopic, keyhole surgery, FRACS, GP referral, Medicare item number, private health cover, parking, follow-up appointment, day of surgery
+Mount Private Hospital, Waikiki Private Hospital, accredited private hospital, Garden City Specialist Centre, Booragoon, Marmion Street, Subiaco / West Leederville, consulting rooms, operating theatre, intensive care, recovery ward, laparoscopic, keyhole surgery, FRACS, GP referral, Medicare item number, private health cover, parking, follow-up appointment, day of surgery
 
 ### SERP Landscape (AU)
 For "bariatric surgery hospital perth" and its variants, the top results split between hospital-system pages (St John of God Health Care's own service pages) and individual bariatric practice "contact" or "locations" pages (the same single-surgeon clinics that dominate the broader Perth bariatric cluster — Dr Kiyingi, Dr Rao, Dr Gounder, Dr Dolan, Aurora, Evolve, Advance Surgical). Most practice pages treat location as an afterthought: a map embed and an address, with little explanation of the difference between where you consult and where you have surgery. Hospital-system pages rank on domain authority but are generic and not practice-specific. Domain ratings across the practice field are low (DR 2–26), so the cluster is winnable on relevance and clear on-page logistics rather than backlinks. Expect a People Also Ask block covering "where is bariatric surgery done in Perth", "is bariatric surgery covered by Medicare", and hospital-name queries — these should be answered directly in FAQ schema.
@@ -47,7 +47,7 @@ Top 5 ranking pages (representative of the cluster):
 | 5 | aurorabariatrics.com.au | Contact \| Aurora Bariatrics |
 
 ### Content Gap Opportunity
-Opportunity 1: No ranking competitor clearly separates the two kinds of location — where you consult versus where you have surgery. Most patients are confused about whether the hospital and the rooms are the same place; a page that explains this plainly fills a real gap and earns the PAA real estate. Opportunity 2: The Mandurah consulting option is a genuine differentiator for patients south of Perth who otherwise assume they must travel into the city for every visit — few competitors surface a southern consulting location. Opportunity 3: Competitors rarely explain *why* an accredited private hospital with theatre and ICU backup matters; framing accreditation as a safety signal (not a boast) is useful consumer guidance the field ignores. Opportunity 4: Practical logistics — parking, one phone number across locations, referral before booking — are demanded by searchers but thinly covered. Note: low overall DR across the SERP means strong on-page specificity (named hospitals, named consulting addresses, accreditation, one contact number) plus FAQ schema is likely enough to break into the top half.
+Opportunity 1: No ranking competitor clearly separates the two kinds of location — where you consult versus where you have surgery. Most patients are confused about whether the hospital and the rooms are the same place; a page that explains this plainly fills a real gap and earns the PAA real estate. Opportunity 2: The Subiaco / West Leederville consulting option is a genuine differentiator for patients in the inner-west who otherwise assume they must travel for every visit — few competitors surface a second consulting location. <!-- GATED: confirm Mandurah retired --> Opportunity 3: Competitors rarely explain *why* an accredited private hospital with theatre and ICU backup matters; framing accreditation as a safety signal (not a boast) is useful consumer guidance the field ignores. Opportunity 4: Practical logistics — parking, one phone number across locations, referral before booking — are demanded by searchers but thinly covered. Note: low overall DR across the SERP means strong on-page specificity (named hospitals, named consulting addresses, accreditation, one contact number) plus FAQ schema is likely enough to break into the top half.
 
 ### Recommended Word Count
 900–1,200 words (a logistics page; depth of clear, accurate location detail plus an honest surgical-context block matters more than raw length)
@@ -58,22 +58,22 @@ Opportunity 1: No ranking competitor clearly separates the two kinds of location
 
 ### Hero
 - **Headline direction:** Anchor on "where" — where surgery happens and where the reader will be seen. The reader should immediately understand this page answers the location question.
-- **Subheadline:** Warm, direct, practical. Acknowledge that settling where surgery will happen and where they will be seen is a reasonable early concern. Name the two accredited private hospitals (St John of God Murdoch and Subiaco) and the two consulting locations (Booragoon and Mandurah). One to two sentences.
+- **Subheadline:** Warm, direct, practical. Acknowledge that settling where surgery will happen and where they will be seen is a reasonable early concern. Name the two accredited private hospitals (Mount Private Hospital and Waikiki Private Hospital) and the two consulting locations (Booragoon and Subiaco / West Leederville). One to two sentences.
 
 ### Stats bar (4 stats)
 Factual anchors, not marketing claims:
-1. **Surgical hospitals / 2** — St John of God Murdoch and St John of God Subiaco
-2. **Consulting locations / Perth + Mandurah** — Booragoon and Mandurah rooms
+1. **Surgical hospitals / 2** — Mount Private Hospital and Waikiki Private Hospital
+2. **Consulting locations / Perth** — Booragoon and Subiaco / West Leederville rooms
 3. **Hospital type / Private** — accredited private hospitals
 4. **Phone / 9332 0066** — one number for all locations
 
 ### Where Obesity Surgery WA operates and consults (3 paragraphs)
 
 **Paragraph 1 — The surgical hospitals**
-Describe St John of God Murdoch and St John of God Subiaco as accredited private hospitals in Perth with full theatres, recovery wards and intensive-care backup on site. Explain that which hospital is used depends on the surgeon's operating lists and the patient's circumstances, confirmed well before the day. Factual and grounded.
+Describe Mount Private Hospital and Waikiki Private Hospital as accredited private hospitals in Perth with full theatres, recovery wards and intensive-care backup on site. Explain that which hospital is used depends on the surgeon's operating lists and the patient's circumstances, confirmed well before the day. Factual and grounded.
 
 **Paragraph 2 — The consulting rooms**
-Explain that most appointments happen in the consulting rooms, not at the hospital. Name Booragoon (Garden City Specialist Centre, 537 Marmion Street) as the main Perth rooms and Mandurah (WA Cardiology Centre, 30 Minilya Pkwy) as the southern option so patients do not have to travel into Perth for every visit.
+Explain that most appointments happen in the consulting rooms, not at the hospital. Name Booragoon (Garden City Specialist Centre, 537 Marmion Street) as the main Perth rooms and Subiaco / West Leederville <!-- GATED: confirm West Leederville street address --> as the second option so patients do not have to travel across Perth for every visit.
 
 **Paragraph 3 — Two kinds of location**
 Clarify the distinction: consulting rooms are where you meet your surgeon, have assessment and return for follow-up; the hospitals are where the operation and in-hospital recovery happen. Note one phone number, (08) 9332 0066, covers all locations.
@@ -84,8 +84,8 @@ A short, practical paragraph for readers weighing where to have surgery. Tell th
 ### Eligibility / What to know before your visit
 Frame as "what to know before your visit", not BMI eligibility (omit the BMI callout for this page). Cover:
 - A GP referral is the usual first step, and gives the higher referred Medicare rebate on the consultation; without one a lower rebate still applies
-- Consultations are in Booragoon and Mandurah, not at the hospital
-- Surgery and in-hospital recovery are at St John of God Murdoch or Subiaco (accredited private hospitals)
+- Consultations are in Booragoon and Subiaco / West Leederville, not at the hospital
+- Surgery and in-hospital recovery are at Mount Private Hospital or Waikiki Private Hospital (accredited private hospitals)
 - Both hospitals are private, so appropriate private hospital cover (or self-funding) is relevant; the team explains options before booking
 - Patients can request whichever consulting location suits them via (08) 9332 0066
 
@@ -93,17 +93,17 @@ Frame as "what to know before your visit", not BMI eligibility (omit the BMI cal
 Reuse the established journey, lightly adapted to surface the locations at the consult and follow-up steps. Two to three sentences each.
 
 1. **GP Referral** — Ask the GP for a referral; gives the higher referred Medicare rebate and lets the practice review history before the first meeting
-2. **Orientation Consultation** — Meet the surgeon at the Booragoon or Mandurah rooms; options explained in plain language, no pressure to decide on the day
+2. **Orientation Consultation** — Meet the surgeon at the Booragoon or Subiaco / West Leederville rooms; options explained in plain language, no pressure to decide on the day
 3. **Pre-operative Assessment** — Physicians and dietitians assess overall health, screen for reflux/sleep apnoea, prepare for surgery safely
-4. **Surgery** — FRACS surgeon performs the keyhole (laparoscopic) procedure at St John of God Murdoch or Subiaco
+4. **Surgery** — FRACS surgeon performs the keyhole (laparoscopic) procedure at Mount Private Hospital or Waikiki Private Hospital
 5. **Hospital Recovery** — Recovery in hospital (usually a few nights) with nursing and dietitian support before discharge
-6. **Ongoing Support** — Return to the Booragoon or Mandurah rooms for long-term follow-up with dietitians and physicians
+6. **Ongoing Support** — Return to the Booragoon or Subiaco / West Leederville rooms for long-term follow-up with dietitians and physicians
 
 ### Why these locations work for patients (benefits)
 Bulleted list, five points. Concrete and factual, no superlatives:
-- Surgery at accredited private hospitals (Murdoch and Subiaco) with full theatre, recovery and ICU backup on site
-- Two consulting locations (Perth and Mandurah) for easier routine and follow-up appointments
-- Patients south of Perth can be seen in Mandurah rather than travelling into the city
+- Surgery at accredited private hospitals (Mount Private Hospital and Waikiki Private Hospital) with full theatre, recovery and ICU backup on site
+- Two consulting locations (Perth) for easier routine and follow-up appointments
+- Patients in the inner-west can be seen in Subiaco / West Leederville rather than travelling across the city <!-- GATED: confirm Mandurah retired -->
 - Booragoon rooms sit within a dedicated specialist building (Garden City Specialist Centre)
 - One phone number across every location
 
@@ -126,11 +126,11 @@ Explain that because surgery is at private hospitals, costs depend on the proced
 ### Surgeon profiles (2 profiles)
 Reuse the established bios verbatim from the surgeons page so credentials stay consistent across the site.
 
-**Dr Harsha Chandraratna — MBBS, FRACS, Bariatric Surgeon**
-Lead surgeon and founder; FRACS; Notre Dame lecturer; operates at St John of God Murdoch and Subiaco; personal bariatric surgery experience shaping his patient-centred approach.
+**Dr Leon Cohen — MBBS, FRACS, Bariatric Surgeon**
+Lead operating bariatric surgeon; FRACS (and FRCS); practising bariatric surgery since 1999 and among the first in Australia to perform sleeve gastrectomy (2004); performs gastric sleeve, revisional and reflux-after-sleeve procedures; operates at Mount Private Hospital.
 
-**Dr Stephen Watson — MBBS, FRACS, Bariatric Surgeon**
-Experienced bariatric surgeon; gastric sleeve, bypass, revisional; thorough, unhurried, procedure-matching approach.
+**A/Prof Harsha Chandraratna — MBBS, FRACS (founder & Clinical Program Director)**
+Practice founder and Clinical Program Director; senior Notre Dame lecturer; oversees the clinical program, triage and multidisciplinary team. <!-- STOP-SHIP GATED: active AHPRA undertaking (19 Mar 2025) restricts A/Prof Chandraratna from bariatric surgery as primary operator — do not describe him operating; confirm wording with Wendy -->
 
 ### Outcomes note
 Include the standard compliance caveat block. Population averages (60–80% excess weight lost in the first one to two years depending on procedure) framed as averages, not promises. Results vary by individual, starting health, procedure and adherence. No specific outcome can be promised.
@@ -141,11 +141,11 @@ Direction: Warm, low-pressure, location-oriented. Invite the reader to be seen a
 ### FAQs (location-focused)
 The page should answer all of the following in plain, direct language:
 
-1. Where is the surgery actually performed? (St John of God Murdoch or Subiaco; accredited private hospitals; confirmed before the day)
-2. Where are consultations held? (Booragoon — Garden City Specialist Centre, 537 Marmion Street; and Mandurah — WA Cardiology Centre, 30 Minilya Pkwy; not at the hospital)
-3. Can I be seen in Mandurah instead of travelling to Perth? (Yes for consults/follow-up; surgery still at Murdoch or Subiaco)
+1. Where is the surgery actually performed? (Mount Private Hospital or Waikiki Private Hospital; accredited private hospitals; confirmed before the day)
+2. Where are consultations held? (Booragoon — Garden City Specialist Centre, 537 Marmion Street; and Subiaco / West Leederville <!-- GATED: confirm West Leederville street address -->; not at the hospital)
+3. Can I be seen in Subiaco / West Leederville instead of travelling across Perth? (Yes for consults/follow-up; surgery still at Mount Private Hospital or Waikiki Private Hospital) <!-- GATED: confirm Mandurah retired -->
 4. What is the difference between the consulting rooms and the hospital? (Rooms = meet surgeon, assessment, follow-up; hospital = operation and recovery)
-5. Which hospital will my surgery be at, Murdoch or Subiaco? (Depends on operating lists and circumstances; both accredited private hospitals; confirmed beforehand)
+5. Which hospital will my surgery be at, Mount Private Hospital or Waikiki Private Hospital? (Depends on operating lists and circumstances; both accredited private hospitals; confirmed beforehand)
 6. Is parking available at the consulting rooms and hospitals? (On-site patient parking at both hospital campuses and the specialist centres; mention access needs when booking)
 7. Are these public or private hospitals? (Both private and accredited; private cover or self-funding relevant; most procedures attract a Medicare item number)
 8. How do I get to the Booragoon rooms? (Garden City Specialist Centre, 537 Marmion Street; team confirms directions; one number for all locations)
@@ -154,7 +154,7 @@ The page should answer all of the following in plain, direct language:
 ---
 
 ## Tone and compliance notes
-- Use only the confirmed hard facts: hospitals (SJOG Murdoch and Subiaco), consulting addresses (Booragoon — Garden City Specialist Centre, 537 Marmion Street; Mandurah — WA Cardiology Centre, 30 Minilya Pkwy), phone (08) 9332 0066. Do not invent additional addresses, suite numbers, opening hours or specifics.
+- Use only the confirmed hard facts: hospitals (Mount Private Hospital and Waikiki Private Hospital), consulting locations (Booragoon — Garden City Specialist Centre, 537 Marmion Street; Subiaco / West Leederville <!-- GATED: confirm West Leederville street address -->), phone (08) 9332 0066. Do not invent additional addresses, suite numbers, opening hours or specifics.
 - Recovery must be phrased as "usually a few nights" — never "3–4 nights" (that specific is unconfirmed).
 - No outcome guarantees, no "you will lose X kg", no "guaranteed results".
 - No patient testimonials or case studies — AHPRA prohibits testimonial-style claims for regulated health services.

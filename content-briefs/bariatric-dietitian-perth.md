@@ -57,7 +57,7 @@ Top 5 ranking pages:
 
 ### Content Gap Opportunity
 
-Clear opening for OSW. (1) **Geographic gap:** no result specifically owns "Perth" or "WA" for this term — the closest WA competitor (waweightloss.com.au) sits at position 8 with DR1 and a thin single-dietitian page, so a Perth-focused, locally-credible page can rank quickly. (2) **Team-depth gap:** nearly every competitor presents a single dietitian or a generic role description; OSW's named APDs across Booragoon and Mandurah are a genuine differentiator no top result matches. (3) **Continuity gap:** ranking pages frame the dietitian as a one-off service rather than pre-op-through-long-term care — the brief's "not a single rushed appointment" angle is unclaimed territory. (4) **PAA/cost gap:** top results barely address Medicare rebates, chronic disease management plans, or "do I need a dietitian after surgery" — answering these directly (and via the 9-question FAQ) captures the informational PAA layer. (5) **Reassurance gap:** competitor pages are clinical; the anxious-patient, "can I eat normally again" tone is an underserved emotional angle. Add FAQ schema to capture PAA real estate.
+Clear opening for OSW. (1) **Geographic gap:** no result specifically owns "Perth" or "WA" for this term — the closest WA competitor (waweightloss.com.au) sits at position 8 with DR1 and a thin single-dietitian page, so a Perth-focused, locally-credible page can rank quickly. (2) **Team-depth gap:** nearly every competitor presents a single dietitian or a generic role description; OSW's named APDs across Booragoon and Subiaco/West Leederville are a genuine differentiator no top result matches. (3) **Continuity gap:** ranking pages frame the dietitian as a one-off service rather than pre-op-through-long-term care — the brief's "not a single rushed appointment" angle is unclaimed territory. (4) **PAA/cost gap:** top results barely address Medicare rebates, chronic disease management plans, or "do I need a dietitian after surgery" — answering these directly (and via the 9-question FAQ) captures the informational PAA layer. (5) **Reassurance gap:** competitor pages are clinical; the anxious-patient, "can I eat normally again" tone is an underserved emotional angle. Add FAQ schema to capture PAA real estate.
 
 ### Recommended Word Count
 
@@ -81,7 +81,7 @@ Clear opening for OSW. (1) **Geographic gap:** no result specifically owns "Pert
 | Accreditation | APD | All Accredited Practising Dietitians, not a single rushed appointment |
 | Support begins | Pre-op | Often weeks before your surgery date |
 | Follow-up | Long-term | Structured reviews well past your first year |
-| Clinic locations | 2 | Booragoon and Mandurah |
+| Clinic locations | 2 | Booragoon and Subiaco/West Leederville |
 
 Use these values exactly. The dedicated APD team is a genuine differentiator — give it appropriate weight.
 
@@ -116,7 +116,7 @@ One to two sentences per step, written practically and with warmth. Show continu
 1. **GP Referral** — The patient asks their GP for a referral to the practice. This gives the higher referred Medicare rebate on eligible consultations and is the first step toward seeing the team.
 2. **Orientation Consultation** — The patient meets their surgeon and learns how dietitian care fits into the overall plan. No pressure to decide anything on the day.
 3. **Pre-operative Assessment** — The patient meets one of the dietitians to review current eating, set goals, and begin a pre-surgery eating plan that prepares the body and makes the operation safer.
-4. **Surgery** — The procedure is performed at St John of God Murdoch or Subiaco. By this point, the dietitian has already prepared the patient for the dietary stages that follow.
+4. **Surgery** — The procedure is performed at Mount Private Hospital or Waikiki Private Hospital. By this point, the dietitian has already prepared the patient for the dietary stages that follow.
 5. **Hospital Recovery** — The team begins the patient on fluids in hospital and provides clear written guidance on progressing the diet safely once home.
 6. **Ongoing Support** — Regular dietitian reviews to build lasting habits, protect nutrition, and maintain the results that matter to the patient. This is where the long-term work happens.
 
