@@ -5,18 +5,44 @@ const SUBDOMAIN_ROOTS: Record<string, string> = {
   "osw.marcuscaporaso.com": "/osw",
   "biosymm.marcuscaporaso.com": "/biosymm",
   "ergoworks.marcuscaporaso.com": "/ergoworks",
+  "ergoequip.marcuscaporaso.com": "/ergoequip",
 };
 
 // ── Access gate for the private ErgoWorks material (/ergoworks/plan/* and
-//    /ergoworks/lp-mockup) ──
+//    /ergoworks/lp-mockup), plus the ErgoEquip SEO review ──
 // HTTP Basic Auth, credentials from server-only env vars. Fail-closed.
 // Edge runtime: use atob(), not Buffer.
 const PLAN_PREFIX = "/ergoworks/plan";
-// The LP mockup lives outside /plan but carries the same class of content: its
-// annotation layer names client personnel, unapproved spend figures and internal
-// gate IDs. Same gate, same credentials.
-const GATED_PREFIXES = [PLAN_PREFIX, "/ergoworks/lp-mockup"];
-const PLAN_REALM = 'Basic realm="ErgoWorks Plan", charset="UTF-8"';
+
+// Each gated area has its OWN credentials and realm. ErgoEquip and ErgoWorks are
+// DIFFERENT clients: a shared credential pair would let either client's reviewer
+// walk into the other's private material (the ErgoWorks pack names client
+// personnel and unapproved spend), so the gates must stay isolated. Fail-closed:
+// a gate whose env vars are unset denies everything under it.
+type Gate = {
+  prefixes: string[];
+  userEnv: string;
+  passEnv: string;
+  realm: string;
+};
+const GATES: Gate[] = [
+  {
+    // The LP mockup lives outside /plan but carries the same class of content
+    // (client personnel, unapproved spend figures, internal gate IDs) — same
+    // ErgoWorks gate, same credentials.
+    prefixes: [PLAN_PREFIX, "/ergoworks/lp-mockup"],
+    userEnv: "ERGOWORKS_PLAN_USER",
+    passEnv: "ERGOWORKS_PLAN_PASSWORD",
+    realm: 'Basic realm="ErgoWorks Plan", charset="UTF-8"',
+  },
+  {
+    // ErgoEquip SEO review — a separate client, so a separate credential pair.
+    prefixes: ["/ergoequip/seo"],
+    userEnv: "ERGOEQUIP_REVIEW_USER",
+    passEnv: "ERGOEQUIP_REVIEW_PASSWORD",
+    realm: 'Basic realm="ErgoEquip Review", charset="UTF-8"',
+  },
+];
 
 const RETIRED_PLAN_REDIRECTS: Record<string, string> = {
   "/ergoworks/plan/strategy": "/ergoworks/plan",
@@ -53,12 +79,12 @@ function isPrefetch(request: NextRequest): boolean {
   );
 }
 
-function unauthorized(request: NextRequest) {
+function unauthorized(request: NextRequest, realm: string) {
   const headers: Record<string, string> = {
     "Cache-Control": "no-store",
     "Content-Type": "text/plain; charset=utf-8",
   };
-  if (!isPrefetch(request)) headers["WWW-Authenticate"] = PLAN_REALM;
+  if (!isPrefetch(request)) headers["WWW-Authenticate"] = realm;
   return new NextResponse("Authentication required.", { status: 401, headers });
 }
 
@@ -73,10 +99,12 @@ function safeEqual(a: string, b: string): boolean {
   return diff === 0;
 }
 
-// Does this path hit the gated tree? Test BOTH the raw pathname and its decoded
-// form, because Next decodes percent-escapes when it matches the app route — so
-// `/%65rgoworks/plan` and `/ergoworks%2Fplan` must be gated too (bypass fix).
-function isGatedPath(pathname: string): boolean {
+// Which gate (if any) governs this path? Test BOTH the raw pathname and its
+// decoded form, because Next decodes percent-escapes when it matches the app
+// route — so `/%65rgoworks/plan` and `/ergoworks%2Fplan` must be gated too
+// (bypass fix). Returns the matching Gate so the caller uses that gate's OWN
+// credentials + realm, keeping the two clients isolated.
+function gateForPath(pathname: string): Gate | null {
   const candidates = [pathname];
   try {
     const decoded = decodeURIComponent(pathname);
@@ -84,8 +112,12 @@ function isGatedPath(pathname: string): boolean {
   } catch {
     /* malformed escapes — Next will reject; raw check still applies */
   }
-  return candidates.some((p) =>
-    GATED_PREFIXES.some((prefix) => p === prefix || p.startsWith(`${prefix}/`)),
+  return (
+    GATES.find((gate) =>
+      gate.prefixes.some((prefix) =>
+        candidates.some((p) => p === prefix || p.startsWith(`${prefix}/`)),
+      ),
+    ) ?? null
   );
 }
 
@@ -113,20 +145,22 @@ function decodeBasic(token: string): string | null {
   }
 }
 
-// Returns a 401 response if the request must be denied, or null if it may proceed.
-function authenticate(request: NextRequest): NextResponse | null {
-  const user = process.env.ERGOWORKS_PLAN_USER;
-  const pass = process.env.ERGOWORKS_PLAN_PASSWORD;
-  if (!user || !pass) return unauthorized(request); // fail closed if unconfigured
+// Returns a 401 response if the request must be denied, or null if it may
+// proceed. Authenticates against THIS gate's own credentials, so ErgoWorks and
+// ErgoEquip reviewers never share access.
+function authenticate(request: NextRequest, gate: Gate): NextResponse | null {
+  const user = process.env[gate.userEnv];
+  const pass = process.env[gate.passEnv];
+  if (!user || !pass) return unauthorized(request, gate.realm); // fail closed if unconfigured
 
   const header = request.headers.get("authorization") ?? "";
-  if (!header.startsWith("Basic ")) return unauthorized(request);
+  if (!header.startsWith("Basic ")) return unauthorized(request, gate.realm);
 
   const decoded = decodeBasic(header.slice(6));
-  if (decoded === null || decoded.indexOf(":") === -1) return unauthorized(request);
+  if (decoded === null || decoded.indexOf(":") === -1) return unauthorized(request, gate.realm);
 
   // Single compare of the whole "user:pass" pair — no field-specific branching.
-  if (!safeEqual(decoded, `${user}:${pass}`)) return unauthorized(request);
+  if (!safeEqual(decoded, `${user}:${pass}`)) return unauthorized(request, gate.realm);
 
   return null; // authenticated
 }
@@ -150,11 +184,13 @@ export function proxy(request: NextRequest) {
     ? `${root}${pathname === "/" ? "" : pathname}`
     : pathname;
 
-  const gated = isGatedPath(resolvedPath);
+  const gate = gateForPath(resolvedPath);
+  const gated = gate !== null;
 
-  // Gate the private review pack before any other routing.
-  if (gated) {
-    const denied = authenticate(request);
+  // Gate the private review material before any other routing, using this gate's
+  // own credentials.
+  if (gate) {
+    const denied = authenticate(request, gate);
     if (denied) return denied;
 
     // Next config redirects run before Proxy in Next 16. Keep these redirects here

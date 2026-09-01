@@ -57,3 +57,4 @@ Brief slugs match content-page routes.
 - Secrets (keys, tokens, cookies) live only in `docs/secrets/`.
 - ErgoEquip work never touches `src/` — it happens in the client's WordPress/GTM/Ads
   accounts via MCP tools; its context lives entirely in `docs/ergoequip/`.
+- **Documented exception:** `src/app/ergoequip/` now exists solely as a gated client-review surface.
