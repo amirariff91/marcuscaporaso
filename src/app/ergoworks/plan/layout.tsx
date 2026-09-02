@@ -11,6 +11,8 @@ const SECTIONS = [
   ["/ergoworks/plan/direction", "Direction"],
   ["/ergoworks/plan/ads", "Ads"],
   ["/ergoworks/plan/measurement", "Measurement"],
+  ["/ergoworks/plan/seo", "SEO"],
+  ["/ergoworks/plan/weekly", "Weekly report"],
   ["/ergoworks/plan/evidence", "Evidence"],
   ["/ergoworks/plan/dashboard", "Dashboard"],
 ] as const;
