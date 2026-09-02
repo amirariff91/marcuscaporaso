@@ -17,7 +17,7 @@ per-client working files in `docs/` (gitignored — memos, audits, deliverables)
 | GrowthOS homepage (marcuscaporaso.com) | `src/app/page.tsx` + `src/components/` | `docs/growthos/` |
 | OSW / OSWA (Obesity Surgery WA rebuild) | `src/app/osw/**` + `content-briefs/` | `docs/oswa/` (incl. product brief) |
 | Biosymm (physio/occupational health) | `src/app/biosymm/**` | `docs/biosymm/` |
-| ErgoEquip (WooCommerce store, Ads/GA4/GTM) | **none** — managed externally via MCP/APIs | `docs/ergoequip/` |
+| ErgoEquip (WooCommerce store, Ads/GA4/GTM) | `src/app/ergoequip/` (gated review page only); store managed externally via MCP/APIs | `docs/ergoequip/` |
 | ErgoWorks Consulting (ergonomics consultancy — **not** ErgoEquip) | `src/app/ergoworks/**` (gated plan pack, campaign plan, LP mockup) + `src/proxy.ts` gate | `docs/ergoworks-consulting/` |
 
 Before working on a client, read `docs/<client>/CONTEXT.md` — it has current status,
@@ -55,6 +55,6 @@ Brief slugs match content-page routes.
 - **Never commit anything under `docs/`** — it holds client data, chat records, and
   credentials, and is gitignored for a reason (`git mv` into it will silently re-track files).
 - Secrets (keys, tokens, cookies) live only in `docs/secrets/`.
-- ErgoEquip work never touches `src/` — it happens in the client's WordPress/GTM/Ads
-  accounts via MCP tools; its context lives entirely in `docs/ergoequip/`.
-- **Documented exception:** `src/app/ergoequip/` now exists solely as a gated client-review surface.
+- ErgoEquip work happens in the client's WordPress/GTM/Ads accounts via MCP tools, with
+  context in `docs/ergoequip/`. The only ErgoEquip code in this repo is the gated
+  client-review surface under `src/app/ergoequip/`; nothing else about the store lives in `src/`.
