@@ -88,7 +88,7 @@ const healthRows: HealthRow[] = [
     weight: "23%",
     score: 45,
     basis:
-      "Large blog-heavy site; the site ranks for only about 15 local queries; commercial page gaps remain.",
+      "Large blog-heavy site; the site ranks for only about 15 Australian queries; commercial page gaps remain.",
   },
   {
     category: "On-page SEO",
@@ -178,7 +178,7 @@ const fixRows: FixRow[] = [
   },
   {
     n: 6,
-    fix: "Rewrite the workstation-assessments page with the exact workplace phrase, risk-assessment framing, process and deliverables.",
+    fix: "Rewrite the workstation-assessments page with the exact workstation phrase first and the workplace phrase second, risk-assessment framing, process and deliverables.",
     where: "Workstation-assessments page",
     owner: "Marcus + dev",
     effort: "M",
@@ -442,10 +442,10 @@ const briefs: Brief[] = [
   },
   {
     slug: "brief-workplace-ergonomic-assessment",
-    title: "Workplace ergonomic assessment — improve existing page /ergonomic-solutions/workstation-assessments",
-    targetTerm: "workplace ergonomic assessment (60/mo, difficulty 0) + required secondary: workstation assessment (50/mo)",
-    newTitle: "Workplace Ergonomic Assessment | ErgoWorks Consulting",
-    newH1: "Workplace Ergonomic Assessment and Workstation Assessment",
+    title: "Ergonomic workstation assessment — improve existing page /ergonomic-solutions/workstation-assessments",
+    targetTerm: "ergonomic workstation assessment (200/mo, difficulty 0) + secondary: workplace ergonomic assessment (60/mo; that result page is dominated by an AI summary and national providers)",
+    newTitle: "Ergonomic Workstation Assessment | ErgoWorks Consulting",
+    newH1: "Ergonomic Workstation Assessment and Workplace Ergonomic Assessment",
     sections: [
       "Hero and direct answer",
       "What is a workplace ergonomic assessment?",
@@ -706,7 +706,7 @@ export default function SeoReviewPage() {
             <h2>A clear repair order, not a traffic promise.</h2>
             <ul>
               <li><Check size={17} /> Weighted health estimate: 50/100.</li>
-              <li><Search size={17} /> The site ranks for about 15 local queries — the immediate task is to exist, not improve positions.</li>
+              <li><Search size={17} /> The site ranks for about 15 Australian queries — the immediate task is to exist, not improve positions.</li>
               <li><ShieldCheck size={17} /> The form fix comes before conclusions about page or lead impact.</li>
               <li><ArrowRight size={17} /> Three priority pages match clear demand before wider topic-cluster work.</li>
             </ul>
@@ -815,7 +815,7 @@ export default function SeoReviewPage() {
         <SectionHeading
           label="Demand map · [Verified] / [Interpretation]"
           title="The near-term opportunity is to exist with the right page."
-          copy="The site's entire local keyword footprint is about 15 queries. Domain strength is not the barrier — pages with none rank when intent matches. The demand values are directional search-data estimates, not outcome promises."
+          copy="The site's entire Australian keyword footprint is about 15 queries. Domain strength is not the barrier — pages with none rank when intent matches. The demand values are directional search-data estimates, not outcome promises."
         />
 
         <div className={styles.tableScroll}>

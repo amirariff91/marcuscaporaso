@@ -44,9 +44,9 @@ export const weeks: readonly Week[] = [
       {
         name: "Paid spend + cost per recorded lead",
         fields: "weekly spend · cost per recorded lead",
-        value: "~A$1,060 paid spend; no cost per recorded lead because the form is not reporting",
-        status: "Approximate",
-        sourceNote: "The spend is an approximate weekly paid snapshot; there is no reliable form denominator for the cost calculation.",
+        value: "A$1,033 paid spend across both consulting campaigns; no cost per recorded lead because the form is not reporting",
+        status: "Measured",
+        sourceNote: "Actual weekly paid spend for the reporting window; there is no reliable form denominator for the cost calculation.",
       },
       {
         name: "Share of searches won + biggest waste cut",
@@ -58,14 +58,14 @@ export const weeks: readonly Week[] = [
       {
         name: "Organic visits + direction",
         fields: "organic visits · week-on-week direction",
-        value: "~37 organic visits/week from search data; direction not yet verified",
-        status: "Approximate",
-        sourceNote: "Organic row from the search-data snapshot; the short window does not establish a direction.",
+        value: "31 organic clicks / 4,901 impressions this week (56 / 4,948 the week before); a floor after 27 August because search reporting still covers only the old address",
+        status: "Measured",
+        sourceNote: "Search-reporting weekly clicks and impressions for the old www address; the new address is not yet covered, so the figure understates from 27 August.",
       },
       {
         name: "Site health",
         fields: "form · calls · redirects/hosts · search-query reporting",
-        value: "Contact form not reporting since 27 August; staging copies still visible; search reporting covers old address only",
+        value: "Contact form not reporting since 27 August; calls still recorded; staging copies still visible; search reporting covers the old address only",
         status: "Not yet verified",
         sourceNote: "Manual checks and reporting-status review; the form, retained hosts and current search property still need repair or verification.",
       },
@@ -145,6 +145,6 @@ export const knownGaps = [
   "The main-site form has been invisible to reporting since the 27 August cutover.",
   "The phone-click import has an earlier gap.",
   "Non-production hosts have been sending analytics hits.",
-  "Search-query reporting access is not yet available.",
+  "Search-query reporting covers only the old www address until the new domain is verified.",
   "The landing-page action-level total can lag the campaign report.",
 ] as const;
