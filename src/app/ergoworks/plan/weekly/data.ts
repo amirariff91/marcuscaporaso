@@ -132,6 +132,85 @@ export const weeks: readonly Week[] = [
       },
     ],
   },
+  {
+    ending: "6 September 2026",
+    window: "Monday–Sunday · 31 August–6 September 2026",
+    generated: "8 September 2026",
+    accountState:
+      "Main campaign active; new Sydney campaign barely serving from 3 Sep (bidding target on our side, being reversed); main-site form still not reporting",
+    lines: [
+      {
+        name: "Leads",
+        fields: "enquiries / calls / landing-page leads",
+        value:
+          "1 recorded call (main campaign) + 1 landing-page enquiry on 2 Sep being confirmed with the client; main-site form enquiries not reported",
+        status: "Measured",
+        sourceNote:
+          "Recorded activity only; the main-site contact form has not reported since the 27 Aug site launch.",
+      },
+      {
+        name: "Paid spend + cost per recorded lead",
+        fields: "weekly spend · cost per recorded lead",
+        value:
+          "A$1,157 across both consulting campaigns (main A$1,109, Sydney A$48); no cost per recorded lead while the form is not reporting",
+        status: "Measured",
+        sourceNote:
+          "Actual weekly paid spend for the reporting window; there is no reliable form denominator for the cost calculation.",
+      },
+      {
+        name: "Share of searches won + biggest waste cut",
+        fields: "share of searches won · biggest waste cut",
+        value:
+          "Main campaign 26% (52% lost to rank, 22% lost to budget); Sydney campaign 68% on only 60 impressions. Biggest waste cut: ~12 further off-target search terms proposed, pending approval.",
+        status: "Measured",
+        sourceNote:
+          "Campaign search-share snapshot for the reporting window; waste is kept separate until the cut is measured.",
+      },
+      {
+        name: "Organic visits + direction",
+        fields: "organic visits · week-on-week direction",
+        value:
+          "19 organic clicks on the old www property (31 the week before); the property under-reports the new site until the domain property is verified",
+        status: "Approximate",
+        sourceNote:
+          "Search-reporting weekly clicks and impressions for the old www address; the new address is not yet covered, so the figure understates from 27 August.",
+      },
+      {
+        name: "Site health",
+        fields: "form · calls · redirects/hosts · search-query reporting",
+        value:
+          "Form: not reporting. Calls: reporting. Staging copies: still public. Search Console: www only, old sitemap.",
+        status: "Measured",
+        sourceNote:
+          "Manual checks and reporting-status review; the form, retained hosts and current search property still need repair or verification.",
+      },
+      {
+        name: "Next week's actions",
+        fields: "action — owner",
+        value: "See actions",
+        status: "Planned",
+        sourceNote: "Owners and dates in the plan pack.",
+        actions: [
+          {
+            item: "Deploy the contact-form tracking event and hide staging copies",
+            owner: "dev",
+          },
+          {
+            item: "Publish the tracking update and run one test enquiry with the client",
+            owner: "us",
+          },
+          {
+            item: "Remove the Sydney bidding target; add approved off-target search terms",
+            owner: "us",
+          },
+          {
+            item: "Verify the bare domain in Search Console and submit the current sitemap",
+            owner: "dev",
+          },
+        ],
+      },
+    ],
+  },
 ];
 
 export const leadDefinitions = [

@@ -82,6 +82,46 @@ type Sprint = {
   exit?: string;
 };
 
+type BuildPackageRow = {
+  page: string;
+  urlDecision: string;
+  primaryQuery: string;
+  status: string;
+};
+
+const buildPackageRows: readonly BuildPackageRow[] = [
+  {
+    page: "Ergonomic assessment Sydney",
+    urlDecision: "keep /ergonomic-consultants-in-sydney",
+    primaryQuery: '"ergonomic assessment sydney" (100/mo, position ~28 on the www property)',
+    status: "Copy drafted",
+  },
+  {
+    page: "Ergonomic workstation assessment",
+    urlDecision: "keep /ergonomic-solutions/workstation-assessments",
+    primaryQuery: '"ergonomic workstation assessment" (200/mo, position ~55)',
+    status: "Copy drafted",
+  },
+  {
+    page: "Manual handling training Sydney",
+    urlDecision: "new /manual-handling-training-sydney",
+    primaryQuery: '"manual handling training sydney" (200/mo, not in top 30)',
+    status: "Waiting on offer confirmation",
+  },
+];
+
+const templateBlocks = [
+  "Hero + intent line + CTA",
+  "Who it is for",
+  "4-step process",
+  "Deliverables boxes",
+  "Local coverage",
+  "Proof (client-approved only)",
+  "FAQ",
+  "Related services",
+  "Sticky CTA",
+] as const;
+
 const healthRows: HealthRow[] = [
   {
     category: "Content quality",
@@ -715,6 +755,47 @@ export default function SeoReviewPage() {
 
         <a className={styles.scrollCue} href="#health"><ArrowDown size={17} /> Read the health position</a>
       </header>
+
+      <section className={styles.docSection} id="build-package">
+        <SectionHeading
+          label="Priority pages · [Proposed]"
+          title="8 September build package"
+          copy="The three priority pages are being drafted this week; Joel builds in week 2 subject to capacity; Ads landing page stays unchanged during the two-week test; manual-handling Sydney page waits on the client confirming the corporate offer."
+        />
+
+        <div className={styles.tableScroll}>
+          <table>
+            <caption>Priority pages · 8 September build package</caption>
+            <thead>
+              <tr>
+                <th scope="col">Page</th>
+                <th scope="col">URL decision</th>
+                <th scope="col">Primary query</th>
+                <th scope="col">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              {buildPackageRows.map((row) => (
+                <tr key={row.page}>
+                  <th scope="row" data-label="Page">{row.page}</th>
+                  <td data-label="URL decision">{row.urlDecision}</td>
+                  <td data-label="Primary query">{row.primaryQuery}</td>
+                  <td data-label="Status">{row.status}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+
+        <div className={styles.prose}>
+          <h3>Template blocks</h3>
+          <ul>
+            {templateBlocks.map((block) => (
+              <li key={block}>{block}</li>
+            ))}
+          </ul>
+        </div>
+      </section>
 
       <section className={styles.docSection} id="health">
         <SectionHeading
