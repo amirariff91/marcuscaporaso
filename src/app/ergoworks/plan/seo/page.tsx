@@ -10,6 +10,13 @@ import {
   ShieldCheck,
 } from "lucide-react";
 import styles from "../plan.module.css";
+import {
+  buildSheets,
+  paidLandingRules,
+  replicaRules,
+  schemaPattern,
+  templateBlocks,
+} from "./buildPackage";
 
 export const metadata: Metadata = {
   title: "ErgoWorks Consulting — SEO plan",
@@ -19,10 +26,10 @@ export const metadata: Metadata = {
 };
 
 /*
- * This is intentionally a server component. Keep the review copy here so it
- * remains behind the plan gate; never move these constants into a client
- * module. Effort estimates are directional and do not guarantee rankings,
- * traffic or leads.
+ * This is intentionally a server component. Keep review copy in this
+ * server-only route tree so it remains behind the plan gate; never move these
+ * constants into a client module. Effort estimates are directional and do not
+ * guarantee rankings, traffic or leads.
  */
 
 type HealthRow = {
@@ -81,7 +88,6 @@ type Sprint = {
   items: readonly SprintItem[];
   exit?: string;
 };
-
 type BuildPackageRow = {
   page: string;
   urlDecision: string;
@@ -110,17 +116,6 @@ const buildPackageRows: readonly BuildPackageRow[] = [
   },
 ];
 
-const templateBlocks = [
-  "Hero + intent line + CTA",
-  "Who it is for",
-  "4-step process",
-  "Deliverables boxes",
-  "Local coverage",
-  "Proof (client-approved only)",
-  "FAQ",
-  "Related services",
-  "Sticky CTA",
-] as const;
 
 const healthRows: HealthRow[] = [
   {
@@ -760,7 +755,7 @@ export default function SeoReviewPage() {
         <SectionHeading
           label="Priority pages · [Proposed]"
           title="8 September build package"
-          copy="The three priority pages are being drafted this week; Joel builds in week 2 subject to capacity; Ads landing page stays unchanged during the two-week test; manual-handling Sydney page waits on the client confirming the corporate offer."
+          copy="Drafted 8 September; Joel builds in week 2 subject to capacity; the Ads landing page does not change during the two-week test."
         />
 
         <div className={styles.tableScroll}>
@@ -787,13 +782,159 @@ export default function SeoReviewPage() {
           </table>
         </div>
 
-        <div className={styles.prose}>
+        <div className={styles.prose} style={{ maxWidth: "none" }}>
           <h3>Template blocks</h3>
-          <ul>
-            {templateBlocks.map((block) => (
-              <li key={block}>{block}</li>
-            ))}
-          </ul>
+          {templateBlocks.map((block) => (
+            <details
+              className={styles.packageDetails}
+              id={`template-${block.name.replaceAll("_", "-")}`}
+              key={block.name}
+            >
+              <summary className={styles.packageSummary}>
+                <span><strong>{block.name}</strong> — {block.purpose}</span>
+                <span className={styles.packageBadge}>
+                  {block.sharedAcrossReplicas ? "Shared" : "Must be unique per brand or city"}
+                </span>
+              </summary>
+              <div className={styles.packageBody}>
+                <div className={styles.tableScroll}>
+                  <table>
+                    <caption>{block.name} fields</caption>
+                    <thead>
+                      <tr>
+                        <th scope="col">Field</th>
+                        <th scope="col">Type</th>
+                        <th scope="col">Required</th>
+                        <th scope="col">Guidance</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {block.fields.map((field) => (
+                        <tr key={field.name}>
+                          <th scope="row" data-label="Field">{field.name}</th>
+                          <td data-label="Type">{field.type}</td>
+                          <td data-label="Required">{field.required ? "Required" : "Optional"}</td>
+                          <td data-label="Guidance">{field.guidance}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </details>
+          ))}
+
+          <h3>Schema, paid-landing and replica rules</h3>
+          <div className={styles.packageRuleGrid}>
+            <article className={styles.packageRule} id="schema-pattern">
+              <h4>Schema</h4>
+              <p>{schemaPattern.summary}</p>
+              <p><strong>Organisation @id:</strong> {schemaPattern.organisationId}</p>
+              <p><strong>@graph rule:</strong> {schemaPattern.graphRule}</p>
+              <p><strong>FAQPage note:</strong> {schemaPattern.faqRichResultNote}</p>
+            </article>
+
+            <article className={styles.packageRule} id="paid-landing-rules">
+              <h4>Paid-landing rules</h4>
+              <ul>
+                {paidLandingRules.map((rule) => <li key={rule}>{rule}</li>)}
+              </ul>
+            </article>
+
+            <article className={styles.packageRule} id="replica-rules">
+              <h4>Replica rules</h4>
+              <ul>
+                {replicaRules.map((rule) => (
+                  <li key={rule.title}>
+                    <strong>{rule.scope}: {rule.title}.</strong> {rule.guidance}
+                  </li>
+                ))}
+              </ul>
+            </article>
+          </div>
+
+          <h3>Build sheets</h3>
+          {buildSheets.map((sheet) => (
+            <details
+              className={styles.packageDetails}
+              id={`build-sheet-${sheet.url.replaceAll("/", "-").replace(/^-/, "")}`}
+              key={sheet.url}
+            >
+              <summary className={styles.packageSummary}>
+                <span><strong>{sheet.page}</strong> — {sheet.url}</span>
+                <span className={styles.packageBadge}>{sheet.status}</span>
+              </summary>
+              <div className={styles.packageBody}>
+                <p><strong>URL decision:</strong> {sheet.urlDecision}</p>
+                <p><strong>Primary query:</strong> {sheet.primaryQuery}</p>
+
+                <h3>Secondary queries</h3>
+                <ul>
+                  {sheet.secondaryQueries.map((query) => <li key={query}>{query}</li>)}
+                </ul>
+
+                <h3>Metadata and heading structure</h3>
+                <ul>
+                  <li><strong>Title tag:</strong> {sheet.titleTag}</li>
+                  <li><strong>Meta description:</strong> {sheet.metaDescription}</li>
+                  <li><strong>H1:</strong> {sheet.h1}</li>
+                </ul>
+                <h3>H2 outline</h3>
+                <ol>
+                  {sheet.h2Outline.map((heading) => <li key={heading}>{heading}</li>)}
+                </ol>
+
+                <h3>FAQ list</h3>
+                <ul>
+                  {sheet.faqs.map((faq) => <li key={faq}>{faq}</li>)}
+                </ul>
+
+                <h3>Info boxes</h3>
+                <ul>
+                  {sheet.infoBoxes.map((box) => (
+                    <li key={box.title}><strong>{box.title}:</strong> {box.detail}</li>
+                  ))}
+                </ul>
+
+                <h3>Internal links in</h3>
+                <ul>
+                  {sheet.internalLinksIn.map((link) => (
+                    <li key={link.destination}>
+                      <strong>{link.destination}</strong>
+                      {link.anchor ? <> — anchor: {link.anchor}</> : null}
+                    </li>
+                  ))}
+                </ul>
+                <h3>Internal links out</h3>
+                <ul>
+                  {sheet.internalLinksOut.map((link) => (
+                    <li key={link.destination}>
+                      <strong>{link.destination}</strong>
+                      {link.anchor ? <> — anchor: {link.anchor}</> : null}
+                    </li>
+                  ))}
+                </ul>
+
+                <h3>Schema and call to action</h3>
+                <ul>
+                  <li><strong>Schema type:</strong> {sheet.schemaType}</li>
+                  <li><strong>Button:</strong> {sheet.cta.button}</li>
+                  <li><strong>Supporting text:</strong> {sheet.cta.supportingText}</li>
+                  <li><strong>Target:</strong> {sheet.cta.target}</li>
+                </ul>
+
+                <h3>Greg to confirm</h3>
+                <ul>
+                  {sheet.gregToConfirm.map((item) => <li key={item}>{item}</li>)}
+                </ul>
+
+                <h3>Done checklist</h3>
+                <ul>
+                  {sheet.doneChecklist.map((item) => <li key={item}>{item}</li>)}
+                </ul>
+              </div>
+            </details>
+          ))}
         </div>
       </section>
 
