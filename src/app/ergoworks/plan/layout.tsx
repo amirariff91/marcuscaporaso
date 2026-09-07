@@ -7,6 +7,7 @@ import styles from "./plan.module.css";
 
 const SECTIONS = [
   ["/ergoworks/plan", "Overview"],
+  ["/ergoworks/plan/week", "This week"],
   ["/ergoworks/plan/decisions", "Decisions"],
   ["/ergoworks/plan/direction", "Direction"],
   ["/ergoworks/plan/ads", "Ads"],
