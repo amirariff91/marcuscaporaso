@@ -1,0 +1,12 @@
+Adversarial security review of an HTTP Basic Auth gate. Read src/proxy.ts in full. It gates /ergoworks/plan/* only and must NOT affect other routes. Context: Next.js 16 "proxy" (renamed middleware), EDGE runtime (no Node Buffer; atob available). It EXTENDS an existing subdomain-rewrite proxy — verify the extension preserves the original osw/biosymm rewrite behaviour and the matcher still covers everything.
+
+Audit specifically and report PASS/FAIL with concrete reasoning for each:
+1. Fail-closed: if ERGOWORKS_PLAN_USER / ERGOWORKS_PLAN_PASSWORD are unset, is every /ergoworks/plan/* request denied (401)?
+2. Can any request reach a /ergoworks/plan/* page WITHOUT valid credentials? Consider: missing/empty Authorization header, non-Basic scheme, malformed base64 (atob throw), no colon, empty user or pass, trailing whitespace, case of "Basic ".
+3. Does the gate leak which of username/password was wrong (timing or response difference)? Assess the safeEqual constant-time comparison for correctness AND whether comparing decoded-vs-expected still early-exits anywhere.
+4. Scope: does the path check (pathname === PLAN_PREFIX || startsWith(PLAN_PREFIX + "/")) correctly avoid gating unrelated paths like /ergoworks/plan-something or /ergoworks/campaign-plan? Confirm it does NOT over-match.
+5. Are the existing subdomain rewrites and the broad matcher intact and unbroken by the added code path?
+6. Edge-runtime safety: any Node-only API (Buffer, process without guard) that would fail on Edge? (process.env is fine on Edge in Next.)
+7. Any header issues: is Cache-Control:no-store present so 401s/authenticated pages are not cached by shared caches?
+
+Do NOT modify files. Output a numbered findings list with severity (BLOCKING/MINOR/OK) and, for any BLOCKING/MINOR, the exact fix.

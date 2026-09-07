@@ -1,0 +1,7 @@
+Read feature-research/ergoworks-review-site/BUILD-SPEC.md IN FULL and follow every rule exactly, especially the REDACTION POLICY (mandatory) and the "preserve compliance copy verbatim" rules. Also read src/app/ergoworks/campaign-plan/page.tsx and src/app/ergoworks/plan/page.tsx to copy the exact JSX idiom, the SectionHeading helper, and how classes from src/app/ergoworks/plan/plan.module.css are used. This is a Next.js 16 server component (NO "use client"). Import styles from "../plan.module.css". Do NOT add a cross-page nav or .sectionNav (the layout provides them). Do NOT import or fs-read anything under docs/ — transcribe redacted content as hard-coded literals. Export metadata with robots:{index:false,follow:false}.
+
+TASK: Build the DECISIONS (open questions) page.
+Source: docs/ergoworks-consulting/open-questions.md
+Target: src/app/ergoworks/plan/decisions/page.tsx
+Render the decision-gate content: the prioritised open questions (Critical -> Medium) as an ordered list using the .questions pattern (dark .questionsSection), and the "Decision record to complete" as a .tableScroll table (Question | Why it matters | What it blocks — DROP any A$ figures and IDs; keep the fyshwick example only as "a single converting geo term" with NO dollar/click numbers). Include the "Not assessed / data required before implementation" matrix as a .tableScroll table. Preserve all compliance caveats verbatim. Lead with a hero titled around "The decisions only you can make."
+After writing, print a short list of every redaction substitution you made.

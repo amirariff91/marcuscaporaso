@@ -1,0 +1,74 @@
+$ next build
+▲ Next.js 16.2.4 (Turbopack)
+- Experiments (use with caution):
+  · serverActions
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 1623ms
+  Running TypeScript ...
+  Finished TypeScript in 1364ms ...
+  Collecting page data using 9 workers ...
+  Generating static pages using 9 workers (0/68) ...
+  Generating static pages using 9 workers (17/68) 
+  Generating static pages using 9 workers (34/68) 
+  Generating static pages using 9 workers (51/68) 
+✓ Generating static pages using 9 workers (68/68) in 269ms
+  Finalizing page optimization ...
+
+Route (app)
+┌ ○ /
+├ ○ /_not-found
+├ ƒ /api/subscribe
+├ ○ /biosymm
+├ ○ /biosymm/booking-tracking
+├ ○ /biosymm/execute
+├ ○ /biosymm/expansion
+├ ○ /ergoworks/campaign-plan
+├ ○ /osw
+├ ○ /osw/content
+├ ○ /osw/content-briefs
+├ ● /osw/content-briefs/[slug]
+│ ├ /osw/content-briefs/am-i-eligible
+│ ├ /osw/content-briefs/bariatric-dietitian-perth
+│ ├ /osw/content-briefs/bariatric-surgery-perth
+│ └ [+20 more paths]
+├ ○ /osw/content-review
+├ ● /osw/content-review/[slug]
+│ ├ /osw/content-review/am-i-eligible
+│ ├ /osw/content-review/bariatric-surgery-perth
+│ ├ /osw/content-review/gastric-bypass-perth
+│ └ [+2 more paths]
+├ ○ /osw/content/am-i-eligible
+├ ○ /osw/content/bariatric-dietitian-perth
+├ ○ /osw/content/bariatric-surgery-perth
+├ ○ /osw/content/book-consultation
+├ ○ /osw/content/faqs
+├ ○ /osw/content/gallbladder-removal-perth
+├ ○ /osw/content/gastric-band
+├ ○ /osw/content/gastric-bypass-perth
+├ ○ /osw/content/gastric-sleeve-cost-perth
+├ ○ /osw/content/gastric-sleeve-perth
+├ ○ /osw/content/gp-referral
+├ ○ /osw/content/hiatus-hernia-repair
+├ ○ /osw/content/hospitals-locations
+├ ○ /osw/content/medicare-private-health-cover
+├ ○ /osw/content/mini-gastric-bypass
+├ ○ /osw/content/non-surgical-weight-loss
+├ ○ /osw/content/post-weight-loss-skin-removal
+├ ○ /osw/content/preview
+├ ○ /osw/content/revision-bariatric-surgery
+├ ○ /osw/content/super-access-weight-loss-surgery
+├ ○ /osw/content/surgeons
+├ ○ /osw/content/weight-loss-medication
+├ ○ /osw/content/weight-loss-surgery-cost-perth
+├ ○ /osw/content/weight-loss-surgery-perth
+├ ○ /osw/sitemap
+└ ○ /osw/wireframes
+
+
+ƒ Proxy (Middleware)
+
+○  (Static)   prerendered as static content
+●  (SSG)      prerendered as static HTML (uses generateStaticParams)
+ƒ  (Dynamic)  server-rendered on demand
+
