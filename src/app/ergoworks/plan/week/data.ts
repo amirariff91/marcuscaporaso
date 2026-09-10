@@ -14,7 +14,7 @@ export type Ask = {
   text: string;
 };
 
-export type ApprovalStatus = "Awaiting OK" | "Later" | "Not this week";
+export type ApprovalStatus = "Awaiting OK" | "Later" | "Not this week" | "Applied 8 Sep";
 
 export type Approval = {
   id: number;
@@ -32,67 +32,73 @@ export type Judging = {
 };
 
 export const weekLabel = "Week of 8 September 2026";
-export const generated = "8 September 2026";
+export const generated = "10 September 2026";
 
 export const status: readonly StatusItem[] = [
   {
     label: "Form fix",
-    detail: "Not live. The main-site form still submits in-page and sends no tracking event.",
+    detail:
+      "Live since 9 Sep; the main-site form now sends the enquiry event on a successful submission, with duplicate and bot protection. Our tag-container update (version 25) is not yet published, so Google Analytics and Google Ads still record no main-site enquiries since 27 Aug. That publish is the next step and it is on us, not Joel.",
+  },
+  {
+    label: "Greg's 12 enquiries since 31 Aug",
+    detail:
+      "Real in his inbox, invisible to Google for the reason above; being reconciled by source (form, phone, landing page, physio) once Greg answers three questions. Not a demand verdict either way.",
   },
   {
     label: "Sydney campaign",
     detail:
-      "Barely serving since Wednesday 3 September. Most likely cause: an A$200 cost-per-lead target set from our login on 31 August on a campaign with no conversion history, plus the main campaign outbidding it on the same searches. Being reversed on approval.",
+      "Serving again after the A$200 cost-per-lead target was removed on 8 Sep: 18, 13 and 20 impressions and one click a day on 8, 9 and 10 Sep, A$33 for the week so far; no conversions yet.",
+  },
+  {
+    label: "Main campaign",
+    detail:
+      "A$75/day since 8 Sep as approved; 42–79 impressions and 6–8 clicks a day, 45–79% of eligible impressions now lost to budget; A$576 Monday to Thursday, with two call conversions this week (7 and 9 Sep) and three since 31 Aug; no form enquiries recorded.",
+  },
+  {
+    label: "Melbourne campaign",
+    detail: "Built and paused at A$50/day as approved; stays paused until the four conditions hold.",
   },
   {
     label: "2 September landing-page lead",
-    detail: "Leans real and still needs Greg's inbox check.",
-  },
-  {
-    label: "Main campaign spend",
-    detail: "Spent A$1,109 last week with only calls reporting.",
+    detail: "Unchanged. Leans real, still needs Greg's inbox check.",
   },
 ];
 
 export const plan: readonly PlanRow[] = [
   {
-    day: "Tue 8 Sep",
-    what: "Reply and re-date the Greg document; runbook ready; tracking container workspace staged.",
-    blockedOn: "Nothing",
-  },
-  {
-    day: "Wed 9 Sep",
-    what: "Apply approved Google Ads changes and start page copy.",
-    blockedOn: "Marcus's OK",
-  },
-  {
     day: "Thu 10 Sep",
-    what: "Cut over when Joel pushes; test one enquiry with Greg; swap the Search Console domain and sitemap; continue copy.",
-    blockedOn: "Joel's push and Greg's DNS",
+    what: "Publish tag container v25 keyed on the live event, create the main-site enquiry conversion action, mark the key event",
+    blockedOn: "Editor access for mjc.growth in Analytics and Tag Manager, or ten minutes with Marcus",
   },
   {
     day: "Fri 11 Sep",
-    what: "Send weekly report 1 to Greg; send copy drafts to Marcus; enable Melbourne only if the form is tracked.",
-    blockedOn: "Nothing",
+    what: "One test enquiry with Greg, weekly report 1 to Greg, reconcile the 12 enquiries by source",
+    blockedOn: "Greg's ten-minute slot and his answers",
+  },
+  {
+    day: "Mon 14 Sep",
+    what: "Restore the main campaign budget once one test enquiry is recorded",
+    blockedOn: "Approval 8",
   },
   {
     day: "Week 2",
-    what: "Greg facts, then Joel builds the template and three pages if capacity allows; keep the Ads landing page unchanged for the two-week test; write the reassessment memo.",
-    blockedOn: "Joel's capacity",
+    what: "Joel builds the template and three pages from the ticket; keep the Ads landing page unchanged for the two-week test; Melbourne decision against the four conditions; reassessment memo",
+    blockedOn: "Joel's capacity, Greg's facts",
   },
 ];
 
 export const asks: readonly Ask[] = [
-  { id: 1, text: "Joel's push date for the form fix." },
+  {
+    id: 1,
+    text: "Editor access for mjc.growth in Google Analytics and Tag Manager, or ten minutes in Admin with us today",
+  },
   {
     id: 2,
-    text: "Whether the 2 September landing-page lead was a test or a real enquiry.",
+    text: "A ten-minute slot with Greg for one test enquiry, plus his answers to: how many of the 12 came by form, phone, landing page or physio; any duplicates or tests; the exact window",
   },
-  {
-    id: 3,
-    text: "Ten minutes in Google Analytics Admin to set key events and three custom dimensions, or access for mjc.growth as Editor.",
-  },
-  { id: 4, text: "Approval for the Google Ads changes below." },
+  { id: 3, text: "Approval numbers for items 8 and 9 below" },
+  { id: 4, text: "Whether the 2 September landing-page lead was a test or real" },
 ];
 
 export const approvals: readonly Approval[] = [
@@ -102,7 +108,7 @@ export const approvals: readonly Approval[] = [
     why: "Restore delivery with a bounded recovery test after bidding was constrained on a campaign with no conversion history.",
     reversible: true,
     needsOk: true,
-    status: "Awaiting OK",
+    status: "Applied 8 Sep",
   },
   {
     id: 2,
@@ -110,15 +116,15 @@ export const approvals: readonly Approval[] = [
     why: "Remove demonstrated competitor, care-training and out-of-area waste without blocking relevant buying-intent terms.",
     reversible: true,
     needsOk: true,
-    status: "Awaiting OK",
+    status: "Applied 8 Sep",
   },
   {
     id: 3,
     change: "Your choice: reduce the main campaign budget to A$75/day while the form is untracked.",
-    why: "Limit unmeasured spend, knowing this also cuts impression share and call volume.",
+    why: "Limit unmeasured spend, knowing this also cuts impression share and call volume. Reversible on approval 8.",
     reversible: true,
     needsOk: true,
-    status: "Awaiting OK",
+    status: "Applied 8 Sep",
   },
   {
     id: 4,
@@ -126,7 +132,7 @@ export const approvals: readonly Approval[] = [
     why: "Test Melbourne demand without disrupting Sydney. Enable only after the form is tracked, Sydney delivery recovers, Greg confirms capacity, and you set a total spend ceiling.",
     reversible: true,
     needsOk: true,
-    status: "Awaiting OK",
+    status: "Applied 8 Sep",
   },
   {
     id: 5,
@@ -152,12 +158,28 @@ export const approvals: readonly Approval[] = [
     needsOk: true,
     status: "Not this week",
   },
+  {
+    id: 8,
+    change: "Restore the main campaign budget from A$75 to A$155/day once tag container v25 is published and one test enquiry is recorded.",
+    why: "The A$75 cap now loses 45–79% of eligible impressions to budget; restoring it after the enquiry signal is back lets bidding learn from real enquiries.",
+    reversible: true,
+    needsOk: true,
+    status: "Awaiting OK",
+  },
+  {
+    id: 9,
+    change: "Make the landing-page lead a primary conversion action so bidding can learn from it.",
+    why: "It has counted only as a secondary action, so the 2 September lead taught the bidding nothing. Changing the goal set can put both campaigns back into learning for a few days.",
+    reversible: true,
+    needsOk: true,
+    status: "Awaiting OK",
+  },
 ];
 
 export const cutover: readonly string[] = [
-  "Joel pushes the contact_enquiry event and hides staging copies.",
-  "We publish the tracking update and the new Google Ads action within the hour.",
-  "One test enquiry with Greg confirms the inbox and reporting.",
+  "Joel's form event is live (9 Sep).",
+  "We publish the tag-container update and the new main-site enquiry action, then mark the key event in Analytics.",
+  "One test enquiry with Greg confirms the inbox, Analytics and Google Ads each record it once.",
 ];
 
 export const judging: Judging = {

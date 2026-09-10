@@ -44,8 +44,8 @@ export default function WeekPage() {
             <h2>Approve by number, not by paragraph.</h2>
             <ul>
               <li><Check size={17} aria-hidden="true" /> Status first</li>
-              <li><Check size={17} aria-hidden="true" /> Approvals 1 to 7</li>
-              <li><Check size={17} aria-hidden="true" /> Reply: ok 1, 2, 4</li>
+              <li><Check size={17} aria-hidden="true" /> Approvals 1 to 9</li>
+              <li><Check size={17} aria-hidden="true" /> Reply: ok 8, 9</li>
             </ul>
           </aside>
         </div>
@@ -55,7 +55,7 @@ export default function WeekPage() {
 
       <section className={`${styles.docSection} ${styles.alt}`} id="status">
         <SectionHeading
-          label="Live status · 8 September 2026"
+          label="Live status · 10 September 2026"
           title="What is true this morning."
           copy="The important distinction is between something that happened, something that was received, and something we can safely use to judge demand."
         />
@@ -77,7 +77,7 @@ export default function WeekPage() {
 
       <section className={styles.docSection} id="this-week">
         <SectionHeading
-          label="Sequence · Tue 8 Sep to week 2"
+          label="Sequence · Thu 10 Sep to week 2"
           title="A controlled week, then a fortnight of proof."
           copy="The paid destination stays stable while we repair the enquiry path, remove demonstrated waste, and draft the next pages."
         />
@@ -118,13 +118,13 @@ export default function WeekPage() {
 
         <div className={styles.calloutRow}>
           <Check size={20} aria-hidden="true" />
-          <p><strong>Fastest reply:</strong> send the approval numbers on WhatsApp, for example, “ok 1, 2, 4”.</p>
+          <p><strong>Fastest reply:</strong> send the approval numbers on WhatsApp, for example, “ok 8, 9”.</p>
         </div>
       </section>
 
       <section className={styles.docSection} id="approvals">
         <SectionHeading
-          label="Approval list · staged 8 September 2026"
+          label="Approval list · updated 10 September 2026"
           title="Approve only what should move now."
           copy="Awaiting OK rows are the active choices. Later and Not this week rows stay visible so the fortnight has a clear boundary."
         />
@@ -166,8 +166,8 @@ export default function WeekPage() {
       <section className={`${styles.docSection} ${styles.alt}`} id="when-joel-pushes">
         <SectionHeading
           label="Cut-over sequence"
-          title="When Joel pushes."
-          copy="The hand-off is prepared in advance. This is what happens once the form fix lands."
+          title="Joel has pushed. Here is what happens next."
+          copy="The hand-off is prepared in advance. This is what happens now that the form fix is live."
         />
 
         <ol className={pageStyles.numberedList}>

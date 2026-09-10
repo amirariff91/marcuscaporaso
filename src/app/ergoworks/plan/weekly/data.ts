@@ -211,6 +211,88 @@ export const weeks: readonly Week[] = [
       },
     ],
   },
+  {
+    ending: "13 September 2026",
+    window: "Monday–Sunday · 7–13 September 2026",
+    generated: "10 September 2026 (partial week, Monday to Thursday)",
+    accountState:
+      "Main campaign at A$75/day; Sydney campaign serving again without a cost-per-lead target; Melbourne built and paused; main-site form event live from 9 Sep but not yet reaching reporting",
+    lines: [
+      {
+        name: "Leads",
+        fields: "enquiries / calls / landing-page leads",
+        value:
+          "2 recorded calls this week (7 and 9 Sep), 3 since 31 Aug; 0 recorded form enquiries; the client reports 12 inbox enquiries since 31 Aug, not yet reconciled by source",
+        status: "Approximate",
+        sourceNote:
+          "The form event is live but not yet reaching reporting; the client-reported inbox count is unverified pending source reconciliation.",
+      },
+      {
+        name: "Paid spend + cost per recorded lead",
+        fields: "weekly spend · cost per recorded lead",
+        value:
+          "A$609 Monday to Thursday (main A$576, Sydney A$33); no cost per recorded lead while form enquiries are not reported",
+        status: "Measured",
+        sourceNote:
+          "Recorded spend only; the form is not yet reaching reporting, so there is no reliable denominator for cost per recorded lead.",
+      },
+      {
+        name: "Share of searches won + biggest waste cut",
+        fields: "share of searches won · biggest waste cut",
+        value:
+          "Main campaign 16–22% (45–79% lost to budget after the A$75/day cap); Sydney 50–61% on 51 impressions. Biggest waste cut: nine off-target terms excluded on 8 Sep; one A$55 competitor-brand click on 8–10 Sep still to exclude",
+        status: "Measured",
+        sourceNote:
+          "Campaign search-share snapshot for Monday to Thursday; the excluded terms and competitor-brand click are the current waste notes.",
+      },
+      {
+        name: "Organic visits + direction",
+        fields: "organic visits · week-on-week direction",
+        value: "Not yet verified this week; search reporting still covers only the old www address",
+        status: "Not yet verified",
+        sourceNote:
+          "Search reporting still covers only the old www address, so this week's organic direction is not yet verified.",
+      },
+      {
+        name: "Site health",
+        fields: "form · calls · redirects/hosts · search-query reporting",
+        value:
+          "Form: event live since 9 Sep, not yet reaching reporting (tag container v25 pending). Calls: reporting. Staging copies and Search Console: unchanged from last week, not re-checked",
+        status: "Not yet verified",
+        sourceNote:
+          "The form event is live but the reporting tag container is pending publication; calls, staging copies and Search Console were not re-checked.",
+      },
+      {
+        name: "Next week's actions",
+        fields: "action — owner",
+        value: "See actions",
+        status: "Planned",
+        sourceNote: "Owners and sequencing are shown in the current plan.",
+        actions: [
+          {
+            item: "Publish tag container v25 and the main-site enquiry action",
+            owner: "us",
+          },
+          {
+            item: "Run one test enquiry with Greg and reconcile the 12",
+            owner: "us",
+          },
+          {
+            item: "Restore the main budget on approval 8",
+            owner: "us",
+          },
+          {
+            item: "Build the template and three pages from the ticket",
+            owner: "dev",
+          },
+          {
+            item: "Verify the bare domain in Search Console and submit the current sitemap",
+            owner: "dev",
+          },
+        ],
+      },
+    ],
+  },
 ];
 
 export const leadDefinitions = [
@@ -226,4 +308,5 @@ export const knownGaps = [
   "Non-production hosts have been sending analytics hits.",
   "Search-query reporting covers only the old www address until the new domain is verified.",
   "The landing-page action-level total can lag the campaign report.",
+  "The main-site form event has been live since 9 September but the tag container that reports it is not yet published.",
 ] as const;
