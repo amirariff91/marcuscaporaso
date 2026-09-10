@@ -160,8 +160,8 @@ export const approvals: readonly Approval[] = [
   },
   {
     id: 8,
-    change: "Restore the main campaign budget from A$75 to A$155/day once tag container v25 is published and one test enquiry is recorded.",
-    why: "The A$75 cap now loses 45–79% of eligible impressions to budget; restoring it after the enquiry signal is back lets bidding learn from real enquiries.",
+    change: "Restore the main campaign budget from A$75 to A$155/day once the test enquiry passes and the first genuine main-site enquiry is recorded end to end.",
+    why: "The A$75 cap now loses 45–79% of eligible impressions to budget. A test proves the pipe, a real enquiry proves the signal; restoring on the real one lets bidding learn from genuine enquiries.",
     reversible: true,
     needsOk: true,
     status: "Awaiting OK",
