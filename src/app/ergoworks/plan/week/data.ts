@@ -38,7 +38,7 @@ export const status: readonly StatusItem[] = [
   {
     label: "Form fix",
     detail:
-      "Live since 9 Sep; the main-site form now sends the enquiry event on a successful submission, with duplicate and bot protection. Our tag-container update (version 25) is not yet published, so Google Analytics and Google Ads still record no main-site enquiries since 27 Aug. That publish is the next step and it is on us, not Joel.",
+      "Joel's form event has been live since 9 Sep. Our tag-container update (version 25) was published on the evening of 10 Sep with a new Google Ads action, Main-site Enquiry. It has not yet been tested end to end and no form enquiry has been recorded through it, so Google Analytics and Google Ads still show no main-site enquiries since 27 Aug. Published and being proven, not yet fixed.",
   },
   {
     label: "Greg's 12 enquiries since 31 Aug",
@@ -68,8 +68,8 @@ export const status: readonly StatusItem[] = [
 export const plan: readonly PlanRow[] = [
   {
     day: "Thu 10 Sep",
-    what: "Publish tag container v25 keyed on the live event, create the main-site enquiry conversion action, mark the key event",
-    blockedOn: "Editor access for mjc.growth in Analytics and Tag Manager, or ten minutes with Marcus",
+    what: "Done: tag container v25 published and the main-site enquiry conversion action created. Remaining: mark the key event and register the custom dimensions in Analytics",
+    blockedOn: "Editor access for mjc.growth in Google Analytics, or ten minutes with Marcus",
   },
   {
     day: "Fri 11 Sep",
@@ -178,7 +178,7 @@ export const approvals: readonly Approval[] = [
 
 export const cutover: readonly string[] = [
   "Joel's form event is live (9 Sep).",
-  "We publish the tag-container update and the new main-site enquiry action, then mark the key event in Analytics.",
+  "Done 10 Sep: tag-container update (version 25) and the new main-site enquiry action are published. Still to do: mark the key event in Analytics.",
   "One test enquiry with Greg confirms the inbox, Analytics and Google Ads each record it once.",
 ];
 

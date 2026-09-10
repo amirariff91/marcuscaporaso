@@ -257,7 +257,7 @@ export const weeks: readonly Week[] = [
         name: "Site health",
         fields: "form · calls · redirects/hosts · search-query reporting",
         value:
-          "Form: event live since 9 Sep, not yet reaching reporting (tag container v25 pending). Calls: reporting. Staging copies and Search Console: unchanged from last week, not re-checked",
+          "Form: event live since 9 Sep; tag container v25 published 10 Sep, not yet tested end to end and no form enquiry recorded through it. Calls: reporting. Staging copies and Search Console: unchanged from last week, not re-checked",
         status: "Not yet verified",
         sourceNote:
           "The form event is live but the reporting tag container is pending publication; calls, staging copies and Search Console were not re-checked.",
@@ -270,7 +270,7 @@ export const weeks: readonly Week[] = [
         sourceNote: "Owners and sequencing are shown in the current plan.",
         actions: [
           {
-            item: "Publish tag container v25 and the main-site enquiry action",
+            item: "Mark the key event and custom dimensions in Analytics; run the test enquiry",
             owner: "us",
           },
           {
@@ -308,5 +308,5 @@ export const knownGaps = [
   "Non-production hosts have been sending analytics hits.",
   "Search-query reporting covers only the old www address until the new domain is verified.",
   "The landing-page action-level total can lag the campaign report.",
-  "The main-site form event has been live since 9 September but the tag container that reports it is not yet published.",
+  "The main-site form event has been live since 9 September; the tag container that reports it was published on 10 September and is not yet proven end to end.",
 ] as const;
