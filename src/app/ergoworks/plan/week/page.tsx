@@ -201,6 +201,9 @@ export default function WeekPage() {
             <Link href="/ergoworks/plan/seo">SEO plan <ArrowRight size={16} aria-hidden="true" /></Link>
           </li>
           <li>
+            <Link href="/ergoworks/build">Build ticket for Joel <ArrowRight size={16} aria-hidden="true" /></Link>
+          </li>
+          <li>
             <Link href="/ergoworks/plan/weekly">Weekly report <ArrowRight size={16} aria-hidden="true" /></Link>
           </li>
           <li>

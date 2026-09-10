@@ -30,7 +30,9 @@ const GATES: Gate[] = [
     // The LP mockup lives outside /plan but carries the same class of content
     // (client personnel, unapproved spend figures, internal gate IDs) — same
     // ErgoWorks gate, same credentials.
-    prefixes: [PLAN_PREFIX, "/ergoworks/lp-mockup"],
+    // /ergoworks/build is the developer ticket: outside /plan so it inherits no
+    // plan navigation, but behind the same gate until it gets its own pair.
+    prefixes: [PLAN_PREFIX, "/ergoworks/lp-mockup", "/ergoworks/build"],
     userEnv: "ERGOWORKS_PLAN_USER",
     passEnv: "ERGOWORKS_PLAN_PASSWORD",
     realm: 'Basic realm="ErgoWorks Plan", charset="UTF-8"',

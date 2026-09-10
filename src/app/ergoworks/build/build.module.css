@@ -1,0 +1,51 @@
+.compactHero { padding-bottom: 2rem; }
+.compactHero .heroGrid { padding: 3.5rem 0 2rem; gap: 3rem; }
+.compactHero h1 { max-width: none; }
+.compactHero .heroCopy { max-width: 48ch; margin-top: 1.25rem; }
+.compactHero .summary { max-width: 28rem; }
+
+.tableHint {
+  margin: 2rem 0 -.9rem;
+  color: var(--green);
+  font-size: .78rem;
+  font-weight: 700;
+  letter-spacing: .02em;
+}
+
+.linkList {
+  max-width: 50rem;
+  margin: 2rem 0 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid var(--line);
+}
+.linkList li { border-bottom: 1px solid var(--line); }
+.linkList a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 3.6rem;
+  color: var(--green);
+  font-weight: 700;
+  line-height: 1.45;
+  text-decoration: none;
+}
+.linkList a:hover { color: var(--ink); }
+.linkList a:focus-visible { outline: 2px solid var(--green); outline-offset: 4px; }
+
+@media (max-width: 40rem) {
+  .compactHero .heroGrid { padding: 3rem 0 1.5rem; }
+}
+
+.codeBlock {
+  margin: 1rem 0 0;
+  padding: 1rem 1.25rem;
+  overflow-x: auto;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  background: var(--paper-2, #f4f1ea);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+.codeBlock code { white-space: pre; }
