@@ -100,23 +100,22 @@ export default function LandingPage({ paidPath = false }: LandingPageProps) {
       </section>
 
       {/* ── 3. Client logos ────────────────────────────────────── */}
-      <section className={styles.clientStrip} aria-label="Clients">
-        <div className={`${styles.shell} ${styles.clientStripInner}`}>
-          <p className={styles.clientStripLabel}>Client partners</p>
-          <ul className={styles.clientLogoList}>
-            {CLIENT_LOGOS.map((logo) => (
-              <li className={styles.clientLogo} key={logo.name}>
-                {logo.src ? (
-                  // eslint-disable-next-line @next/next/no-img-element
+      {/* Rendered only once real logos exist; hidden while placeholders have empty src. */}
+      {CLIENT_LOGOS.some((logo) => logo.src) && (
+        <section className={styles.clientStrip} aria-label="Clients">
+          <div className={`${styles.shell} ${styles.clientStripInner}`}>
+            <p className={styles.clientStripLabel}>Client partners</p>
+            <ul className={styles.clientLogoList}>
+              {CLIENT_LOGOS.filter((logo) => logo.src).map((logo) => (
+                <li className={styles.clientLogo} key={logo.name}>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img className={styles.clientLogoImage} src={logo.src} alt={logo.name} />
-                ) : (
-                  <span>{logo.name}</span>
-                )}
-              </li>
-            ))}
-          </ul>
-        </div>
-      </section>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+      )}
 
       {/* ── 4. Services ────────────────────────────────────────── */}
       <section className={styles.section} id="services">
