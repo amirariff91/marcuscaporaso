@@ -53,12 +53,12 @@ export const status: readonly StatusItem[] = [
   {
     label: "Main campaign",
     detail:
-      "A$155/day. We restored it from A$75 on 11 Sep in the Google Ads web console after the test enquiry — ahead of the approved trigger, which was a genuine recorded enquiry. Pending your decision (approval 8): keep A$155, or re-cut to A$75. Post-restore delivery has not been measured separately yet; the latest daily figure showed 42% of impressions lost to budget on 11 Sep, the changeover day. About A$1,900 spent 31 Aug–11 Sep produced 4 phone calls and no recorded form enquiries.",
+      "A$155/day (restored 11 Sep). Pending your confirmation (approval 8): keep A$155, or return to A$75. Post-restore delivery has not been measured separately yet; the latest daily figure showed 42% of impressions lost to budget on 11 Sep, the changeover day. About A$1,900 spent 31 Aug–11 Sep produced 4 phone calls and no recorded form enquiries.",
   },
   {
     label: "Melbourne campaign",
     detail:
-      "We enabled it on 11 Sep in the web console ahead of its four launch conditions; when checked on 13 Sep it had no ads and no delivery, so we re-paused it. It stays paused until those conditions hold.",
+      "Found enabled with no ads and no delivery on 13 Sep; we re-paused it. It stays paused until the four launch conditions hold.",
   },
   {
     label: "2 September landing-page lead",
@@ -160,8 +160,8 @@ export const approvals: readonly Approval[] = [
   },
   {
     id: 8,
-    change: "Restore the main campaign budget from A$75 to A$155/day. We applied this on 11 Sep after the test enquiry; the approved trigger was a genuine recorded enquiry, so this is pending your ratification — keep it, or we re-cut to A$75.",
-    why: "The A$75 cap had been losing 54–79% of eligible impressions to budget on 8–10 Sep. A test proves the pipe; a genuine enquiry proves the signal — we restored on the test alone, ahead of the agreed gate. Please decide by Monday 14 Sep, before it serves again: keep A$155/day or re-cut to A$75. Holding A$155 is about A$80/day more than A$75 (~A$2,400/month); nothing serves over the weekend, so a Monday decision caps the exposure.",
+    change: "Restore the main campaign budget from A$75 to A$155/day. It is currently at A$155 — confirm to keep it, or we return to A$75.",
+    why: "The A$75 cap had been losing 54–79% of eligible impressions to budget on 8–10 Sep, which would likely leave the fortnight test inconclusive. Please decide by Monday 14 Sep, before it serves again: keep A$155/day or return to A$75. Holding A$155 is about A$80/day more than A$75 (~A$2,400/month); nothing serves over the weekend, so a Monday decision caps the exposure.",
     reversible: true,
     needsOk: true,
     status: "Applied 11 Sep — pending your OK",
@@ -169,7 +169,7 @@ export const approvals: readonly Approval[] = [
   {
     id: 9,
     change: "Verify which conversion goal each campaign optimises to, and the 2 September lead's quality, before proposing any change to the landing-page-lead action.",
-    why: "The landing-page lead already sits in the custom conversion goal 6458792967, so bidding may already use it regardless of the primary/secondary flag. Which campaigns actually optimise to that goal is unconfirmed — check that first. Changing the goal set can put both campaigns back into learning for a few days.",
+    why: "The landing-page lead already sits in the shared custom conversion goal, so bidding may already use it regardless of the primary/secondary flag. Which campaigns actually optimise to that goal is unconfirmed — check that first. Changing the goal set can put both campaigns back into learning for a few days.",
     reversible: true,
     needsOk: true,
     status: "Later",
