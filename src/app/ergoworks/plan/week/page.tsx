@@ -45,7 +45,7 @@ export default function WeekPage() {
             <ul>
               <li><Check size={17} aria-hidden="true" /> Status first</li>
               <li><Check size={17} aria-hidden="true" /> Approvals 1 to 9</li>
-              <li><Check size={17} aria-hidden="true" /> Reply: ok 8, 9</li>
+              <li><Check size={17} aria-hidden="true" /> Reply: keep 8 or cut 8</li>
             </ul>
           </aside>
         </div>
@@ -55,7 +55,7 @@ export default function WeekPage() {
 
       <section className={`${styles.docSection} ${styles.alt}`} id="status">
         <SectionHeading
-          label="Live status · 10 September 2026"
+          label="Live status · 13 September 2026"
           title="What is true this morning."
           copy="The important distinction is between something that happened, something that was received, and something we can safely use to judge demand."
         />
@@ -71,7 +71,7 @@ export default function WeekPage() {
 
         <div className={styles.calloutRow}>
           <CircleAlert size={20} aria-hidden="true" />
-          <p><strong>Decision point:</strong> no Google Ads changes are live until you approve them below.</p>
+          <p><strong>Decision point:</strong> approval 8 needs your decision even though the higher budget is already live — Applied dates record past actions, not necessarily the current setting. Approval 9 is on hold pending checks.</p>
         </div>
       </section>
 
@@ -107,7 +107,7 @@ export default function WeekPage() {
 
       <section className={`${styles.docSection} ${styles.alt}`} id="what-we-need">
         <SectionHeading
-          label="Four replies"
+          label="Three replies"
           title="What we need from you."
           copy="These are the only decisions that hold the next move. Everything else is already prepared or deliberately later."
         />
@@ -118,15 +118,15 @@ export default function WeekPage() {
 
         <div className={styles.calloutRow}>
           <Check size={20} aria-hidden="true" />
-          <p><strong>Fastest reply:</strong> send the approval numbers on WhatsApp, for example, “ok 8, 9”.</p>
+          <p><strong>Fastest reply:</strong> on WhatsApp — for approval 8, “keep 8” or “cut 8 to 75”.</p>
         </div>
       </section>
 
       <section className={styles.docSection} id="approvals">
         <SectionHeading
-          label="Approval list · updated 10 September 2026"
+          label="Approval list · updated 13 September 2026"
           title="Approve only what should move now."
-          copy="Awaiting OK rows are the active choices. Later and Not this week rows stay visible so the fortnight has a clear boundary."
+          copy="Approval 8 is the active decision — keep or reverse the 11 Sep restore. Applied, Later and Not this week rows stay visible so the fortnight has a clear boundary."
         />
 
         <p className={pageStyles.tableHint}>Swipe sideways to read the full approval table.</p>
@@ -144,15 +144,17 @@ export default function WeekPage() {
             </thead>
             <tbody>
               {approvals.map((approval) => {
-                const isAwaiting = approval.status === "Awaiting OK";
+                const isActive =
+                  approval.status === "Awaiting OK" ||
+                  approval.status === "Applied 11 Sep — pending your OK";
                 return (
-                  <tr key={approval.id} className={isAwaiting ? pageStyles.approvalPrimary : pageStyles.approvalQuiet}>
+                  <tr key={approval.id} className={isActive ? pageStyles.approvalPrimary : pageStyles.approvalQuiet}>
                     <th scope="row" data-label="#">{approval.id}</th>
                     <td data-label="Change"><strong>{approval.change}</strong></td>
                     <td data-label="Why">{approval.why}</td>
                     <td data-label="Reversible">{approval.reversible ? "Yes" : "No"}</td>
                     <td data-label="Status">
-                      <span className={isAwaiting ? pageStyles.statusPrimary : pageStyles.statusQuiet}>{approval.status}</span>
+                      <span className={isActive ? pageStyles.statusPrimary : pageStyles.statusQuiet}>{approval.status}</span>
                     </td>
                   </tr>
                 );
@@ -160,7 +162,7 @@ export default function WeekPage() {
             </tbody>
           </table>
         </div>
-        <p className={pageStyles.approvalReply}>Reply on WhatsApp with the numbers you approve.</p>
+        <p className={pageStyles.approvalReply}>Reply on WhatsApp — for approval 8, “keep 8” or “cut 8 to 75”.</p>
       </section>
 
       <section className={`${styles.docSection} ${styles.alt}`} id="when-joel-pushes">
