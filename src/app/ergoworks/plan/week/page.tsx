@@ -55,7 +55,7 @@ export default function WeekPage() {
 
       <section className={`${styles.docSection} ${styles.alt}`} id="status">
         <SectionHeading
-          label="Live status · 10 September 2026"
+          label="Live status · 13 September 2026"
           title="What is true this morning."
           copy="The important distinction is between something that happened, something that was received, and something we can safely use to judge demand."
         />
@@ -71,7 +71,7 @@ export default function WeekPage() {
 
         <div className={styles.calloutRow}>
           <CircleAlert size={20} aria-hidden="true" />
-          <p><strong>Decision point:</strong> no Google Ads changes are live until you approve them below.</p>
+          <p><strong>Decision point:</strong> the rows below marked Applied are already live in the account; the Awaiting-OK rows are your active choices.</p>
         </div>
       </section>
 
@@ -124,7 +124,7 @@ export default function WeekPage() {
 
       <section className={styles.docSection} id="approvals">
         <SectionHeading
-          label="Approval list · updated 10 September 2026"
+          label="Approval list · updated 13 September 2026"
           title="Approve only what should move now."
           copy="Awaiting OK rows are the active choices. Later and Not this week rows stay visible so the fortnight has a clear boundary."
         />

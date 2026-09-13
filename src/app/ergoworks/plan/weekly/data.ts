@@ -260,7 +260,7 @@ export const weeks: readonly Week[] = [
           "Form: event live since 9 Sep; tag container v25 published 10 Sep, not yet tested end to end and no form enquiry recorded through it. Calls: reporting. Staging copies and Search Console: unchanged from last week, not re-checked",
         status: "Not yet verified",
         sourceNote:
-          "The form event is live but the reporting tag container is pending publication; calls, staging copies and Search Console were not re-checked.",
+          "The form event is live (9 Sep) and tag container v25 was published 10 Sep; one test event reached Analytics on 11 Sep. Not yet signed off end to end. Calls, staging copies and Search Console were not re-checked.",
       },
       {
         name: "Next week's actions",

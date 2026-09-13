@@ -14,7 +14,7 @@ export type Ask = {
   text: string;
 };
 
-export type ApprovalStatus = "Awaiting OK" | "Later" | "Not this week" | "Applied 8 Sep";
+export type ApprovalStatus = "Awaiting OK" | "Later" | "Not this week" | "Applied 8 Sep" | "Applied 11 Sep — pending your OK";
 
 export type Approval = {
   id: number;
@@ -32,13 +32,13 @@ export type Judging = {
 };
 
 export const weekLabel = "Week of 8 September 2026";
-export const generated = "10 September 2026";
+export const generated = "13 September 2026";
 
 export const status: readonly StatusItem[] = [
   {
     label: "Form fix",
     detail:
-      "Joel's form event has been live since 9 Sep. Our tag-container update (version 25) was published on the evening of 10 Sep with a new Google Ads action, Main-site Enquiry. It has not yet been tested end to end and no form enquiry has been recorded through it, so Google Analytics and Google Ads still show no main-site enquiries since 27 Aug. Published and being proven, not yet fixed.",
+      "GTM tag container v25 is live and correct — both the Analytics tag and the Google Ads 'Main-site Enquiry' tag are being served. On 11 Sep one general_enquiry event reached Google Analytics (our own test), so the Analytics side is proven once. The Google Ads conversion has still recorded nothing — a test with no ad click cannot attribute to Ads — and no genuine enquiry has come through. Deployed and smoke-tested on the Analytics side; email delivery, the Ads conversion and a real enquiry are not yet signed off.",
   },
   {
     label: "Greg's 12 enquiries since 31 Aug",
@@ -48,16 +48,17 @@ export const status: readonly StatusItem[] = [
   {
     label: "Sydney campaign",
     detail:
-      "Serving again after the A$200 cost-per-lead target was removed on 8 Sep: 18, 13 and 20 impressions and one click a day on 8, 9 and 10 Sep, A$33 for the week so far; no conversions yet.",
+      "Serving again since the A$200 target came off on 8 Sep, but rank-limited: 3–29 impressions and 0–1 clicks a day across 8–11 Sep, about A$81 so far, no conversions. Its fifth post-change business day is Monday 14 Sep — review after that closes.",
   },
   {
     label: "Main campaign",
     detail:
-      "A$75/day since 8 Sep as approved; 42–79 impressions and 6–8 clicks a day, 45–79% of eligible impressions now lost to budget; A$576 Monday to Thursday, with two call conversions this week (7 and 9 Sep) and three since 31 Aug; no form enquiries recorded.",
+      "A$155/day. We restored it from A$75 on 11 Sep in the Google Ads web console after the test enquiry — ahead of the approved trigger, which was a genuine recorded enquiry. Pending your ratification (approval 8) or a re-cut to A$75. At A$155 it is no longer budget-limited; about A$1,900 spent 31 Aug–11 Sep produced 4 phone calls and no form enquiries.",
   },
   {
     label: "Melbourne campaign",
-    detail: "Built and paused at A$50/day as approved; stays paused until the four conditions hold.",
+    detail:
+      "Enabled on 11 Sep in the web console, but it has no ads, so it was not serving. We re-paused it on 13 Sep; it stays paused until the four launch conditions hold.",
   },
   {
     label: "2 September landing-page lead",
@@ -73,13 +74,13 @@ export const plan: readonly PlanRow[] = [
   },
   {
     day: "Fri 11 Sep",
-    what: "One test enquiry with Greg, weekly report 1 to Greg, reconcile the 12 enquiries by source",
-    blockedOn: "Greg's ten-minute slot and his answers",
+    what: "Test enquiry sent and recorded in Analytics. Still outstanding: confirm the test reached Greg's inbox, reconcile the 12 enquiries by source, and send weekly report 1 to Greg.",
+    blockedOn: "Confirm the Friday call happened or rebook; Greg's answers",
   },
   {
     day: "Mon 14 Sep",
-    what: "Restore the main campaign budget once one test enquiry is recorded",
-    blockedOn: "Approval 8",
+    what: "Ratify or reverse the 11 Sep budget restore (approval 8); Sydney fifth-business-day checkpoint",
+    blockedOn: "Your decision on approval 8",
   },
   {
     day: "Week 2",
@@ -97,7 +98,10 @@ export const asks: readonly Ask[] = [
     id: 2,
     text: "A ten-minute slot with Greg for one test enquiry, plus his answers to: how many of the 12 came by form, phone, landing page or physio; any duplicates or tests; the exact window",
   },
-  { id: 3, text: "Approval numbers for items 8 and 9 below" },
+  {
+    id: 3,
+    text: "Ratify or reverse the main-campaign budget we restored to A$155/day on 11 Sep (approval 8), and your call on the landing-page-lead action (approval 9)",
+  },
   { id: 4, text: "Whether the 2 September landing-page lead was a test or real" },
 ];
 
@@ -160,16 +164,16 @@ export const approvals: readonly Approval[] = [
   },
   {
     id: 8,
-    change: "Restore the main campaign budget from A$75 to A$155/day once the test enquiry passes and the first genuine main-site enquiry is recorded end to end.",
-    why: "The A$75 cap now loses 45–79% of eligible impressions to budget. A test proves the pipe, a real enquiry proves the signal; restoring on the real one lets bidding learn from genuine enquiries.",
+    change: "Restore the main campaign budget from A$75 to A$155/day. We applied this on 11 Sep after the test enquiry, but the approved trigger was a genuine recorded enquiry — so it is pending your ratification, or we re-cut to A$75.",
+    why: "The A$75 cap had been losing 45–79% of eligible impressions to budget. A test proves the pipe; a genuine enquiry proves the signal. We restored on the test alone, which is ahead of the agreed gate — hence pending your OK.",
     reversible: true,
     needsOk: true,
-    status: "Awaiting OK",
+    status: "Applied 11 Sep — pending your OK",
   },
   {
     id: 9,
     change: "Make the landing-page lead a primary conversion action so bidding can learn from it.",
-    why: "It has counted only as a secondary action, so the 2 September lead taught the bidding nothing. Changing the goal set can put both campaigns back into learning for a few days.",
+    why: "The landing-page lead already sits in the shared conversion goal, so bidding may use it regardless of the primary/secondary flag. The real question is which goal each campaign optimises to — confirm that before changing any flags. Changing the goal set can put both campaigns back into learning for a few days.",
     reversible: true,
     needsOk: true,
     status: "Awaiting OK",
@@ -178,7 +182,7 @@ export const approvals: readonly Approval[] = [
 
 export const cutover: readonly string[] = [
   "Joel's form event is live (9 Sep).",
-  "Done 10 Sep: tag-container update (version 25) and the new main-site enquiry action are published. Still to do: mark the key event in Analytics.",
+  "Done: tag container v25 published (10 Sep) and the Main-site Enquiry action created; on 11 Sep one test general_enquiry reached Analytics. Still to do: mark the key event in Analytics and prove the Ads conversion via a real ad-click enquiry.",
   "One test enquiry with Greg confirms the inbox, Analytics and Google Ads each record it once.",
 ];
 
