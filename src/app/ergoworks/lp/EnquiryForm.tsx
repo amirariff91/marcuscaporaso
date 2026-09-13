@@ -4,14 +4,14 @@ import { useEffect, useRef, useState } from "react";
 import styles from "./lp.module.css";
 import {
   CTA,
-  COMPETING_PRIORITIES_LINE,
+  ENQUIRY_TYPE_OPTIONS,
   FORM_COPY,
+  GEO_OPTIONS,
   ROLE_OPTIONS,
   SERVICE_OPTIONS,
-  GEO_OPTIONS,
-  WORKING_MODEL_OPTIONS,
   TIMING_OPTIONS,
   WORKFORCE_OPTIONS,
+  WORKING_MODEL_OPTIONS,
 } from "./copy";
 
 type Step = 1 | 2;
@@ -22,12 +22,20 @@ export default function EnquiryForm() {
   const [step, setStep] = useState<Step>(1);
   const [error, setError] = useState("");
   const [fieldErrors, setFieldErrors] = useState<FieldErrors>({});
+  const [enquiryType, setEnquiryType] = useState("");
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const callBarRef = useRef<HTMLAnchorElement>(null);
   const stepOneHeadingRef = useRef<HTMLHeadingElement>(null);
   const stepTwoHeadingRef = useRef<HTMLHeadingElement>(null);
+  const successHeadingRef = useRef<HTMLHeadingElement>(null);
   const previousStepRef = useRef<Step>(step);
+
+  useEffect(() => {
+    if (submitted) {
+      successHeadingRef.current?.focus();
+    }
+  }, [submitted]);
 
   /*
    * The page reserves space for the pinned call bar with a --callbar-height custom
@@ -114,6 +122,7 @@ export default function EnquiryForm() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           ...data,
+          enquiry_type: enquiryType,
           gclid: url.searchParams.get("gclid") || undefined,
           utm_source: url.searchParams.get("utm_source") || undefined,
           utm_medium: url.searchParams.get("utm_medium") || undefined,
@@ -176,7 +185,7 @@ export default function EnquiryForm() {
 
           <div className={styles.field}>
             <label htmlFor="service">
-              What can we help with? <span aria-hidden="true">*</span>
+              {FORM_COPY.serviceLabel} <span aria-hidden="true">*</span>
             </label>
             <select
               id="service"
@@ -187,7 +196,7 @@ export default function EnquiryForm() {
               aria-describedby={fieldErrors.service ? "service-error" : undefined}
             >
               <option value="" disabled>
-                Select one
+                {FORM_COPY.servicePlaceholder}
               </option>
               {SERVICE_OPTIONS.map((option) => (
                 <option value={option} key={option}>
@@ -202,34 +211,67 @@ export default function EnquiryForm() {
             ) : null}
           </div>
 
-          <div className={styles.field}>
-            <label htmlFor="workforce-size">
-              Workforce size <span aria-hidden="true">*</span>
-            </label>
-            <select
-              id="workforce-size"
-              name="workforce_size"
-              defaultValue=""
-              required={step === 1}
-              aria-invalid={Boolean(fieldErrors["workforce-size"])}
-              aria-describedby={
-                fieldErrors["workforce-size"] ? "workforce-size-error" : undefined
-              }
-            >
-              <option value="" disabled>
-                Select one
-              </option>
-              {WORKFORCE_OPTIONS.map((option) => (
-                <option value={option} key={option}>
-                  {option}
+          <div className={styles.fieldRow}>
+            <div className={styles.field}>
+              <label htmlFor="workforce-size">
+                {FORM_COPY.workforceLabel} <span aria-hidden="true">*</span>
+              </label>
+              <select
+                id="workforce-size"
+                name="workforce_size"
+                defaultValue=""
+                required={step === 1}
+                aria-invalid={Boolean(fieldErrors["workforce-size"])}
+                aria-describedby={
+                  fieldErrors["workforce-size"] ? "workforce-size-error" : undefined
+                }
+              >
+                <option value="" disabled>
+                  {FORM_COPY.workforcePlaceholder}
                 </option>
-              ))}
-            </select>
-            {fieldErrors["workforce-size"] ? (
-              <p className={styles.fieldError} id="workforce-size-error">
-                {fieldErrors["workforce-size"]}
-              </p>
-            ) : null}
+                {WORKFORCE_OPTIONS.map((option) => (
+                  <option value={option} key={option}>
+                    {option}
+                  </option>
+                ))}
+              </select>
+              {fieldErrors["workforce-size"] ? (
+                <p className={styles.fieldError} id="workforce-size-error">
+                  {fieldErrors["workforce-size"]}
+                </p>
+              ) : null}
+            </div>
+
+            <div className={styles.field}>
+              <label htmlFor="enquiry-type">
+                {FORM_COPY.enquiryTypeLabel} <span aria-hidden="true">*</span>
+              </label>
+              <select
+                id="enquiry-type"
+                name="enquiry_type"
+                value={enquiryType}
+                onChange={(event) => setEnquiryType(event.target.value)}
+                required={step === 1}
+                aria-invalid={Boolean(fieldErrors["enquiry-type"])}
+                aria-describedby={
+                  fieldErrors["enquiry-type"] ? "enquiry-type-error" : undefined
+                }
+              >
+                <option value="" disabled>
+                  {FORM_COPY.enquiryTypePlaceholder}
+                </option>
+                {ENQUIRY_TYPE_OPTIONS.map((option) => (
+                  <option value={option} key={option}>
+                    {option}
+                  </option>
+                ))}
+              </select>
+              {fieldErrors["enquiry-type"] ? (
+                <p className={styles.fieldError} id="enquiry-type-error">
+                  {fieldErrors["enquiry-type"]}
+                </p>
+              ) : null}
+            </div>
           </div>
 
           <div className={styles.btnRow}>
@@ -256,14 +298,23 @@ export default function EnquiryForm() {
 
           <div className={styles.field}>
             <label htmlFor="organisation">
-              {FORM_COPY.organisationLabel} <span aria-hidden="true">*</span>
+              {FORM_COPY.organisationLabel}{" "}
+              {enquiryType === "Individual or home-based" ? (
+                <span className={styles.optionalLabel}>(optional)</span>
+              ) : (
+                <span aria-hidden="true">*</span>
+              )}
             </label>
             <input
               id="organisation"
               name="organisation"
               autoComplete="organization"
-              placeholder={FORM_COPY.organisationPlaceholder}
-              required={step === 2}
+              placeholder={
+                enquiryType === "Individual or home-based"
+                  ? "Company or trading name (optional)"
+                  : FORM_COPY.organisationPlaceholder
+              }
+              required={step === 2 && enquiryType !== "Individual or home-based"}
               aria-invalid={Boolean(fieldErrors.organisation)}
               aria-describedby={fieldErrors.organisation ? "organisation-error" : undefined}
             />
@@ -392,8 +443,6 @@ export default function EnquiryForm() {
             </p>
           ) : null}
 
-          <p className={styles.priorityLine}>{COMPETING_PRIORITIES_LINE}</p>
-
           <div className={styles.btnRow}>
             {/*
               type="button", NOT type="submit". Without a submit control the browser
@@ -434,7 +483,9 @@ export default function EnquiryForm() {
       >
         {submitted ? (
           <>
-            <h3>{FORM_COPY.whatNext}</h3>
+            <h3 ref={successHeadingRef} tabIndex={-1}>
+              {FORM_COPY.whatNext}
+            </h3>
             <p>
               Thank you. One of our health professional consultants will review
               your organisation&rsquo;s needs and recommend the most appropriate

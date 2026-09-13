@@ -5,7 +5,11 @@ import { join } from "node:path";
 const DATA_DIR = join(process.cwd(), "data");
 const DATA_FILE = join(DATA_DIR, "ergoworks-enquiries.json");
 
-type Enquiry = Record<string, unknown> & { id: string; received_at: string };
+type EnquiryBody = Record<string, unknown> & {
+  enquiry_type?: string;
+};
+
+type Enquiry = EnquiryBody & { id: string; received_at: string };
 
 async function loadEnquiries(): Promise<Enquiry[]> {
   try {
@@ -24,7 +28,7 @@ async function saveEnquiry(enquiry: Enquiry): Promise<void> {
 }
 
 export async function POST(request: NextRequest) {
-  let body: Record<string, unknown>;
+  let body: EnquiryBody;
   try {
     body = await request.json();
   } catch {

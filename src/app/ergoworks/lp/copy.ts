@@ -1,7 +1,7 @@
 /* ── Single brand ─────────────────────────────────────────────────── */
 
 export const BRAND = {
-  name: "Ergoworks",
+  name: "ergoworks",
   descriptor: "Powered by Biosymm",
   accent: "#8CC63F",
   accentAction: "#4F7A16",
@@ -20,34 +20,41 @@ export const HERO_COPY = {
   kicker:
     "Physiotherapist-led · National delivery · Office + home + hybrid",
   headline: "Healthier ways of working, wherever work happens.",
-  lead: "Ergoworks helps organisations support their people across office, home and hybrid work. Every health professional consultant is a qualified physiotherapist.",
+  lead: "ergoworks is a national, proactive and empowering partner in workplace health. Our team helps organisations improve each staff member’s experience across office, home and hybrid work, with every health professional consultant qualified as a physiotherapist.",
 } as const;
+
+export type ClientLogo = {
+  name: string;
+  src: string;
+};
+
+// TODO: real client logos from Marcus
+export const CLIENT_LOGOS: readonly ClientLogo[] = [
+  { name: "Client logo 1", src: "" },
+  { name: "Client logo 2", src: "" },
+  { name: "Client logo 3", src: "" },
+  { name: "Client logo 4", src: "" },
+] as const;
 
 /* ── Section copy ─────────────────────────────────────────────────── */
 
 export const PAGE_COPY = {
-  headerAudience: "Workplace ergonomics for employer teams · Sydney and nationally",
   servicesKicker: "Our services",
   servicesHeading: "How we can support you",
-  diffKicker: "Why Ergoworks",
-  diffHeading: "We look at more than the workstation.",
+  servicesLead:
+    "Our team of experts provide a range of consulting services that enable your staff to work in a happy and healthy environment. We can support anywhere from preventing common workstation niggles to guiding the organisation through any pre and post office moves to promote the wellbeing of staff within the organisation.",
+  diffKicker: "Why ergoworks",
+  diffHeading: "A proactive, physio-led approach to workplace health.",
+  diffLead:
+    "The key difference our business provides is that our consultants are all physiotherapists — using a health-professional's lens to understand any musculoskeletal concerns raised, then an evidence-based, proactive approach to optimise and educate on the equipment in use, with tailored, physio-led tips, stretches and micro-breaks.",
   valueKicker: "The difference",
   valueHeadingPeople: "For your people",
   valueHeadingOrg: "For your organisation",
-  reportKicker: "What you can act on",
-  reportLabels: {
-    finding: "Finding",
-    priority: "Priority",
-    owner: "Owner",
-    status: "Status",
-  },
   howKicker: "How it works",
   howHeading: "A clear path from the first conversation to the next step",
   formKicker: "Get started",
-  formIntro:
-    "Not sure which service fits? That's exactly what the first conversation is for.",
-  footer:
-    "Physiotherapist-led ergonomic support for modern workplaces.",
+  formIntro: "You can chat with our health professional consultant.",
+  footer: "Proactive, physiotherapist-led support for healthier workplaces.",
 } as const;
 
 /* ── Services ─────────────────────────────────────────────────────── */
@@ -65,33 +72,31 @@ export const SERVICES: readonly ServiceItem[] = [
     number: "01",
     name: "Ergonomic Assessments",
     benefit:
-      "Give employees practical, personalised guidance they can apply",
+      "Practical, proactive support for every workstation and working environment",
+    body: "Choose the right level of assessment to proactively support staff in corporate and home settings.",
     subItems: [
-      "Individual assessments: Comprehensive 30-minute one-to-one assessments in corporate offices and home environments.",
-      "Brief assessments: Focused 15-minute assessments designed to proactively optimise workstation setup.",
-      "Floorwalking: Efficient workstation spot checks across larger teams.",
+      "Individual Ergonomic Assessments: 30-minute comprehensive 1-on-1 assessments in corporate offices and home environments.",
+      "Brief Assessments: 15-minute per-person brief ergonomic assessment, proactive in supporting staff to optimise their workstation in corporate or home settings.",
+      "Floorwalking Assessments: fine-tuning spot checks for large-scale organisations covering ergonomic posture-prevention tips.",
     ],
   },
   {
     number: "02",
-    name: "Office Moves & Fit-outs",
-    benefit:
-      "Create workplaces designed around the people using them",
-    body: "Specialist Ergonomist to review and support designs to align with Australian/New Zealand ISO standards for any pre-office move engagement.",
+    name: "Office Moves & Ergonomist Fit-Outs",
+    benefit: "Future-proofed environments that reduce long-term costs and maximise space utility",
+    body: "Specialist ergonomist to review and support designs to align with Australian/New Zealand ISO standards for any pre-office-move engagement. After the move, our consultants guide large-scale office moves proactively. The benefit: future-proofed environments that reduce long-term costs and maximise space utility.",
   },
   {
     number: "03",
-    name: "Presentations & Training",
-    benefit:
-      "Give employees and internal champions greater confidence",
-    body: "Delivering engaging seminars on Office Ergonomics, Hybrid Working, and Health & Wellbeing. Leading Manual Handling workshops and Train the Trainer programs.",
+    name: "Dynamic Corporate Presentations",
+    benefit: "Build confidence, autonomy and long-term wellbeing across your team",
+    body: "Engaging seminars on office ergonomics, hybrid working and health & wellbeing. Manual-handling workshops and \"Train the Trainer\" programs to empower internal champions. The benefit: a culture of self-awareness — your team gains the confidence to adjust their own environment, fostering autonomy and long-term wellbeing.",
   },
   {
     number: "04",
     name: "ErgoAssess Software",
-    benefit:
-      "Gain greater workforce-wide visibility and actionable insight",
-    body: "An award-winning online assessment tool that enables an organisation to fulfil their ergonomic requirements in a simple and cost-effective manner.",
+    benefit: "Give leadership total visibility with a cost-effective, automated tool",
+    body: "An award-winning online assessment tool that lets an organisation fulfil its ergonomic requirements simply and cost-effectively. The benefit: total visibility for leadership — actionable insight into your organisation's risk profile with a cost-effective, automated tool that supports your team regardless of location.",
   },
 ] as const;
 
@@ -100,19 +105,19 @@ export const SERVICES: readonly ServiceItem[] = [
 export const DIFFERENTIATORS = [
   {
     title: "Health-professional lens",
-    body: "Every consultant is a qualified physiotherapist, using clinical understanding to identify and address musculoskeletal concerns through an evidence-based approach.",
+    body: "Our consultants are physiotherapists who use clinical understanding to interpret musculoskeletal concerns and guide practical, evidence-based workplace health support.",
   },
   {
     title: "Practical, individual guidance",
-    body: "Tailored tips, stretches, and micro-break education adapted to each person's workstation and working habits.",
+    body: "Tailored tips, stretches and micro-break education help each staff member make confident adjustments to their workstation and working habits.",
   },
   {
-    title: "Proactive workplace support",
-    body: "We focus on supporting healthy, productive work — not waiting for problems to surface.",
+    title: "Empowered staff experience",
+    body: "We help people understand and improve their own working environment, building autonomy and long-term wellbeing rather than waiting for problems to surface.",
   },
   {
     title: "National capability",
-    body: "Consistent delivery across offices, home environments, and hybrid teams — wherever your people work.",
+    body: "Consistent delivery across offices, home environments and hybrid teams makes us a proactive partner wherever your people work.",
   },
 ] as const;
 
@@ -120,52 +125,19 @@ export const DIFFERENTIATORS = [
 
 export const VALUE_PROP = {
   forPeople: [
-    "Personalised workstation optimisation",
-    "Practical advice from a physiotherapist",
+    "More confident, comfortable ways of working",
+    "Practical, tailored advice from a physiotherapist",
     "Greater confidence adjusting their environment",
-    "Education around movement and healthier working habits",
+    "Education around movement, stretches and micro-breaks",
     "Support across office, home and hybrid environments",
   ],
   forOrg: [
-    "Consistent ergonomic support",
+    "An empowering partner in workplace health",
     "Scalable options for different workforce needs",
-    "Clearer understanding of where support may be required",
+    "Proactive visibility across your people and locations",
+    "Future-ready support for office moves and fit-outs",
     "Assessment, education and digital support in one ecosystem",
-    "An ongoing workplace-health partner as needs evolve",
   ],
-} as const;
-
-/* ── Sample report (keep exactly) ─────────────────────────────────── */
-
-export const SAMPLE_REPORT = {
-  heading: "What the report looks like",
-  badge: "Sample — illustrative, not a real client",
-  rows: [
-    {
-      finding:
-        "Monitors below seated eye height across 11 of 14 desks, level 3",
-      priority: "High",
-      priorityKey: "high",
-      owner: "Facilities",
-      status: "Implemented — risers fitted 12 Mar",
-    },
-    {
-      finding: "Two chairs beyond adjustment range; seat height locked",
-      priority: "High",
-      priorityKey: "high",
-      owner: "Procurement",
-      status: "Implemented — replaced 19 Mar",
-    },
-    {
-      finding:
-        "Home setups: no consistent guidance issued to hybrid staff",
-      priority: "Medium",
-      priorityKey: "med",
-      owner: "People & Culture",
-      status: "Guidance drafted, pending sign-off",
-    },
-  ],
-  foot: "Every finding carries a priority, an owner and a status — which is what makes it possible to answer, months later, what was actually done.",
 } as const;
 
 /* ── How it works ─────────────────────────────────────────────────── */
@@ -215,11 +187,16 @@ export const WORKFORCE_OPTIONS = [
   "500+",
 ] as const;
 
+export const ENQUIRY_TYPE_OPTIONS = [
+  "Organisation / employer team",
+  "Individual or home-based",
+] as const;
+
 export const SERVICE_OPTIONS = [
   "Ergonomic Assessments",
-  "Office Move & Fit-Out",
-  "Presentations & Training",
-  "ErgoAssess",
+  "Office Moves & Ergonomist Fit-Outs",
+  "Dynamic Corporate Presentations",
+  "ErgoAssess Software",
   "Not sure yet",
 ] as const;
 
@@ -251,7 +228,7 @@ export const FORM_COPY = {
   stepIndicator: (step: 1 | 2) => `Step ${step} of 2 — takes about 40 seconds`,
   stepOne: "How can we help?",
   stepTwo: "How we reach you",
-  serviceLabel: "Service you're interested in",
+  serviceLabel: "How can we help?",
   servicePlaceholder: "Select one",
   geoLabel: "Location coverage",
   geoPlaceholder: "Select one",
@@ -261,6 +238,8 @@ export const FORM_COPY = {
   timingPlaceholder: "Select one",
   workforceLabel: "Workforce size",
   workforcePlaceholder: "Select one",
+  enquiryTypeLabel: "Enquiry type",
+  enquiryTypePlaceholder: "Select one",
   organisationLabel: "Organisation name",
   organisationPlaceholder: "Company name",
   roleLabel: "Your role",
@@ -281,9 +260,3 @@ export const FORM_COPY = {
     "Thank you. One of our health professional consultants will review your organisation's needs and recommend the most appropriate next step.",
   callBar: "Call 1300 374 696 — talk to a health professional consultant",
 } as const;
-
-/* Competing priorities */
-
-export const COMPETING_PRIORITIES_LINE =
-  "Every finding gets an owner and a next step — so nothing falls through the cracks.";
-

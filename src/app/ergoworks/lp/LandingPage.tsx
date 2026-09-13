@@ -1,14 +1,15 @@
 import type { CSSProperties } from "react";
 import EnquiryForm from "./EnquiryForm";
+import HeroImage from "./HeroImage";
 import styles from "./lp.module.css";
 import {
   BRAND,
+  CLIENT_LOGOS,
   CTA,
   DIFFERENTIATORS,
   HERO_COPY,
   HOW_IT_WORKS,
   PAGE_COPY,
-  SAMPLE_REPORT,
   SERVICES,
   VALUE_PROP,
 } from "./copy";
@@ -16,10 +17,10 @@ import {
 export {
   CTA,
   BRAND,
+  CLIENT_LOGOS,
   HERO_COPY,
   HOW_IT_WORKS,
   PAGE_COPY,
-  SAMPLE_REPORT,
   SERVICES,
 } from "./copy";
 
@@ -63,10 +64,10 @@ export default function LandingPage({ paidPath = false }: LandingPageProps) {
             </div>
           </div>
           <div className={styles.headerMeta}>
-            <span className={styles.headerAudience}>
-              {PAGE_COPY.headerAudience}
-            </span>
-            <a href="tel:1300374696" className={styles.headerPhone}>
+            <a
+              href="tel:1300374696"
+              className={`${styles.btn} ${styles.btnGhost} ${styles.headerPhone}`}
+            >
               1300 374 696
             </a>
           </div>
@@ -76,34 +77,68 @@ export default function LandingPage({ paidPath = false }: LandingPageProps) {
       {/* ── 2. Hero ────────────────────────────────────────────── */}
       <section className={styles.hero}>
         <div className={styles.shell}>
-          <div className={styles.heroInner}>
-            <p className={styles.kicker}>{HERO_COPY.kicker}</p>
-            <h1 className={styles.h1}>{HERO_COPY.headline}</h1>
-            <p className={styles.heroLead}>{HERO_COPY.lead}</p>
-            <div className={styles.ctaRow}>
-              <a className={styles.btn} href="#enquire">
-                {CTA}
-              </a>
-              <a className={styles.btnGhost} href="tel:1300374696">
-                Call 1300 374 696
-              </a>
+          <div className={styles.heroLayout}>
+            <div className={styles.heroInner}>
+              <p className={styles.kicker}>{HERO_COPY.kicker}</p>
+              <h1 className={styles.h1}>{HERO_COPY.headline}</h1>
+              <p className={styles.heroLead}>{HERO_COPY.lead}</p>
+              <div className={styles.ctaRow}>
+                <a className={styles.btn} href="#enquire">
+                  {CTA}
+                </a>
+                <a
+                  className={`${styles.btn} ${styles.btnGhost}`}
+                  href="tel:1300374696"
+                >
+                  Call 1300 374 696
+                </a>
+              </div>
             </div>
+            <HeroImage />
           </div>
         </div>
       </section>
 
-      {/* ── 3. Services ────────────────────────────────────────── */}
+      {/* ── 3. Client logos ────────────────────────────────────── */}
+      <section className={styles.clientStrip} aria-label="Clients">
+        <div className={`${styles.shell} ${styles.clientStripInner}`}>
+          <p className={styles.clientStripLabel}>Client partners</p>
+          <ul className={styles.clientLogoList}>
+            {CLIENT_LOGOS.map((logo) => (
+              <li className={styles.clientLogo} key={logo.name}>
+                {logo.src ? (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img className={styles.clientLogoImage} src={logo.src} alt={logo.name} />
+                ) : (
+                  <span>{logo.name}</span>
+                )}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      {/* ── 4. Services ────────────────────────────────────────── */}
       <section className={styles.section} id="services">
         <div className={styles.shell}>
           <p className={styles.kicker}>{PAGE_COPY.servicesKicker}</p>
           <h2 className={styles.h2}>{PAGE_COPY.servicesHeading}</h2>
+          <p className={styles.lead}>{PAGE_COPY.servicesLead}</p>
           <div className={styles.serviceGrid}>
             {SERVICES.map((service) => (
-              <article className={styles.serviceCard} key={service.number}>
-                <h3 className={styles.serviceName}>
-                  {service.name}
-                  <span className={styles.serviceCardBenefit}>{service.benefit}</span>
-                </h3>
+              <details className={styles.serviceCard} key={service.number}>
+                <summary className={styles.serviceSummary}>
+                  <span className={styles.serviceNumber} aria-hidden="true">
+                    {service.number}
+                  </span>
+                  <span className={styles.serviceSummaryCopy}>
+                    <span className={styles.serviceName}>{service.name}</span>
+                    <span className={styles.serviceCardBenefit}>
+                      {service.benefit}
+                    </span>
+                  </span>
+                  <span className={styles.serviceToggle} aria-hidden="true" />
+                </summary>
                 <div className={styles.serviceCardBody}>
                   {service.body ? (
                     <p className={styles.body}>{service.body}</p>
@@ -116,17 +151,18 @@ export default function LandingPage({ paidPath = false }: LandingPageProps) {
                     </ul>
                   ) : null}
                 </div>
-              </article>
+              </details>
             ))}
           </div>
         </div>
       </section>
 
-      {/* ── 4. Differentiators ─────────────────────────────────── */}
+      {/* ── 5. Differentiators ─────────────────────────────────── */}
       <section className={`${styles.section} ${styles.sectionLift}`} id="differentiators">
         <div className={styles.shell}>
           <p className={styles.kicker}>{PAGE_COPY.diffKicker}</p>
           <h2 className={styles.h2}>{PAGE_COPY.diffHeading}</h2>
+          <p className={styles.lead}>{PAGE_COPY.diffLead}</p>
           <div className={styles.diffGrid}>
             {DIFFERENTIATORS.map((diff) => (
               <article className={styles.diffCard} key={diff.title}>
@@ -138,7 +174,7 @@ export default function LandingPage({ paidPath = false }: LandingPageProps) {
         </div>
       </section>
 
-      {/* ── 5. Value prop ──────────────────────────────────────── */}
+      {/* ── 6. Value prop ──────────────────────────────────────── */}
       <section className={styles.section} id="value">
         <div className={styles.shell}>
           <p className={styles.kicker}>{PAGE_COPY.valueKicker}</p>
@@ -158,81 +194,6 @@ export default function LandingPage({ paidPath = false }: LandingPageProps) {
                   <li key={item}>{item}</li>
                 ))}
               </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ── 6. Sample report (kept exactly as-is) ─────────────── */}
-      <section className={`${styles.section} ${styles.sectionPaper}`} id="report">
-        <div className={styles.shell}>
-          <p className={styles.kicker}>{PAGE_COPY.reportKicker}</p>
-          <div className={styles.reportBlock}>
-            <div className={styles.reportHead}>
-              <h2 className={styles.h2}>{SAMPLE_REPORT.heading}</h2>
-              <span className={styles.sampleTag}>{SAMPLE_REPORT.badge}</span>
-            </div>
-
-            <table className={styles.reportTable}>
-              <thead>
-                <tr>
-                  <th scope="col">{PAGE_COPY.reportLabels.finding}</th>
-                  <th scope="col">{PAGE_COPY.reportLabels.priority}</th>
-                  <th scope="col">{PAGE_COPY.reportLabels.owner}</th>
-                  <th scope="col">{PAGE_COPY.reportLabels.status}</th>
-                </tr>
-              </thead>
-              <tbody>
-                {SAMPLE_REPORT.rows.map((row) => (
-                  <tr key={row.finding}>
-                    <td>{row.finding}</td>
-                    <td>
-                      <span className={styles.pri} data-p={row.priorityKey}>
-                        {row.priority}
-                      </span>
-                    </td>
-                    <td>{row.owner}</td>
-                    <td>{row.status}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-
-            <dl className={styles.reportDefinition}>
-              {SAMPLE_REPORT.rows.map((row) => (
-                <div className={styles.reportDefinitionRow} key={row.finding}>
-                  <div>
-                    <dt>{PAGE_COPY.reportLabels.finding}</dt>
-                    <dd>{row.finding}</dd>
-                  </div>
-                  <div>
-                    <dt>{PAGE_COPY.reportLabels.priority}</dt>
-                    <dd>
-                      <span className={styles.pri} data-p={row.priorityKey}>
-                        {row.priority}
-                      </span>
-                    </dd>
-                  </div>
-                  <div>
-                    <dt>{PAGE_COPY.reportLabels.owner}</dt>
-                    <dd>{row.owner}</dd>
-                  </div>
-                  <div>
-                    <dt>{PAGE_COPY.reportLabels.status}</dt>
-                    <dd>{row.status}</dd>
-                  </div>
-                </div>
-              ))}
-            </dl>
-
-            <p className={styles.reportFoot}>{SAMPLE_REPORT.foot}</p>
-            <div className={styles.reportCta}>
-              <a
-                className={`${styles.btn} ${styles.btnSecondary}`}
-                href="#enquire"
-              >
-                {CTA}
-              </a>
             </div>
           </div>
         </div>

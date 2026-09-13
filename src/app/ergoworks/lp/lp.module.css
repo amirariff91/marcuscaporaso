@@ -122,26 +122,12 @@
   gap: 1rem;
 }
 
-.headerAudience {
-  max-width: 18ch;
-  color: var(--text);
-  font-size: 0.76rem;
-  line-height: 1.4;
-  text-align: end;
-  opacity: 0.78;
-}
-
 .headerPhone {
+  min-height: 40px;
+  padding: 0.55rem 0.85rem;
   font-family: var(--font-barlow), system-ui, sans-serif;
   font-size: 0.88rem;
-  font-weight: 700;
-  color: var(--accentAction);
-  text-decoration: none;
   white-space: nowrap;
-}
-
-.headerPhone:hover {
-  text-decoration: underline;
 }
 
 /* ── shared type and sections ───────────────────────────────────────────── */
@@ -151,10 +137,6 @@
 
 .sectionTight {
   padding-block: 1.5rem 2.5rem;
-}
-
-.sectionPaper {
-  background: var(--surface-alt);
 }
 
 .sectionLift {
@@ -213,8 +195,7 @@
 
 .lead,
 .body,
-.heroLead,
-.reportFoot {
+.heroLead {
   max-width: 68ch;
   color: var(--text);
 }
@@ -239,7 +220,7 @@
   line-height: 1.25;
 }
 
-.page :is(a, button, input, select, label):focus-visible {
+.page :is(a, button, input, select, label, summary):focus-visible {
   outline: 2px solid var(--ink);
   outline-offset: 2px;
 }
@@ -251,8 +232,32 @@
   padding-block: clamp(56px, 9vw, 96px);
 }
 
+.heroLayout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(18rem, 0.95fr);
+  gap: clamp(2rem, 6vw, 5rem);
+  align-items: center;
+}
+
 .heroInner {
   position: relative;
+}
+
+.heroMedia {
+  position: relative;
+  min-width: 0;
+  min-height: 18rem;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: var(--surface-alt);
+}
+
+.heroImage {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .h1 {
@@ -328,6 +333,11 @@
   filter: none;
 }
 
+.btn:disabled {
+  cursor: wait;
+  opacity: 0.65;
+}
+
 .vh {
   position: absolute;
   width: 1px;
@@ -341,126 +351,12 @@
   white-space: nowrap;
 }
 
-/* ── problem and triggers (removed — replaced by services) ─────────────── */
-/* ── sample report ──────────────────────────────────────────────────────── */
-.reportBlock {
-  margin-top: 0.25rem;
-  background: var(--surface);
-  border: 1px solid var(--line);
-  padding: clamp(1.25rem, 3vw, 2rem);
-  box-shadow: 0.5rem 0.5rem 0 var(--surface-alt);
-}
-
-.reportHead {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  gap: 0.75rem 1rem;
-  margin-bottom: 1rem;
-}
-
-.reportHead .h2 {
-  margin: 0;
-  font-size: clamp(1.7rem, 3.1vw, 2.5rem);
-}
-
-.sampleTag {
-  border: 1px solid var(--accentRule);
-  border-radius: 3px;
-  background: var(--surface);
-  padding: 0.22rem 0.5rem;
-  color: var(--text);
-  font-family: var(--font-barlow), system-ui, sans-serif;
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  line-height: 1.3;
-  text-transform: uppercase;
-}
-
-.reportTable {
-  width: 100%;
-  border: 1px solid var(--line);
-  border-collapse: collapse;
-  background: var(--surface);
-  color: var(--text);
-  font-size: 0.92rem;
-}
-
-.reportTable th {
-  border-bottom: 1px solid var(--line);
-  background: var(--surface-alt);
-  padding: 0.7rem 0.85rem;
-  color: var(--text);
-  font-family: var(--font-barlow), system-ui, sans-serif;
-  font-size: 0.75rem;
-  font-weight: 800;
-  letter-spacing: 0.1em;
-  text-align: start;
-  text-transform: uppercase;
-}
-
-.reportTable td {
-  border-bottom: 1px solid var(--line);
-  padding: 0.8rem 0.85rem;
-  color: var(--text);
-  line-height: 1.5;
-  vertical-align: top;
-}
-
-.reportTable tr:last-child td {
-  border-bottom: 0;
-}
-
-.pri {
-  display: inline-block;
-  border-radius: 3px;
-  padding: 0.2rem 0.45rem;
-  color: var(--text);
-  font-family: var(--font-barlow), system-ui, sans-serif;
-  font-size: 0.75rem;
-  font-weight: 800;
-  letter-spacing: 0.06em;
-  line-height: 1.2;
-  text-transform: uppercase;
-  white-space: nowrap;
-}
-
-.pri[data-p="high"] {
-  background: var(--accentAction);
-  color: #ffffff;
-}
-
-.pri[data-p="med"] {
-  background: var(--surface-alt);
-}
-
-.reportDefinition {
-  display: none;
-}
-
-.reportFoot {
-  margin: 0.9rem 0 0;
-  font-size: 0.92rem;
-  line-height: 1.6;
-  opacity: 0.82;
-}
-
-.reportCta {
-  margin-top: 1.5rem;
-}
-
-.btnSecondary {
-  font-size: 0.95rem;
-}
-
 /* ── services (expandable cards) ───────────────────────────────────────── */
 .serviceGrid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;
   margin-top: 2rem;
-  counter-reset: service-counter;
 }
 
 .serviceCard {
@@ -468,37 +364,64 @@
   border-radius: 4px;
   background: var(--surface);
   overflow: hidden;
-  counter-increment: service-counter;
 }
 
-.serviceName {
-  display: flex;
-  align-items: center;
+.serviceCard[open] {
+  border-color: var(--accentRule);
+}
+
+.serviceSummary {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: start;
   gap: 0.75rem;
+  cursor: pointer;
+  list-style: none;
   padding: 1.15rem 1.2rem;
-  font-family: var(--font-barlow), system-ui, sans-serif;
-  font-size: 1.05rem;
-  font-weight: 700;
-  line-height: 1.25;
-  margin: 0;
 }
 
-.serviceName::before {
-  content: counter(service-counter, decimal-leading-zero);
-  flex: 0 0 auto;
+.serviceSummary::-webkit-details-marker {
+  display: none;
+}
+
+.serviceSummary:hover,
+.serviceCard[open] .serviceSummary {
+  background: var(--surface-alt);
+}
+
+.serviceNumber {
   display: flex;
   width: 2rem;
   height: 2rem;
+  flex: 0 0 auto;
   align-items: center;
   justify-content: center;
   border: 1px solid var(--accentRule);
   color: var(--text);
+  font-family: var(--font-barlow), system-ui, sans-serif;
   font-size: 0.8rem;
   font-weight: 800;
+  line-height: 1;
+}
+
+.serviceSummaryCopy {
+  display: grid;
+  min-width: 0;
+  gap: 0.35rem;
+}
+
+.serviceName {
+  margin: 0;
+  color: var(--ink);
+  font-family: var(--font-barlow), system-ui, sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.25;
 }
 
 .serviceCardBody {
-  padding: 1.15rem 1.2rem;
+  border-top: 1px solid var(--line);
+  padding: 1.15rem 1.2rem 1.3rem;
 }
 
 .serviceCardBody .body {
@@ -506,10 +429,26 @@
 }
 
 .serviceCardBenefit {
-  margin: 0.75rem 0 0;
+  display: block;
+  color: var(--text);
   font-size: 0.88rem;
-  font-style: italic;
+  line-height: 1.45;
   opacity: 0.82;
+}
+
+.serviceToggle {
+  width: 0.7rem;
+  height: 0.7rem;
+  flex: 0 0 auto;
+  margin-top: 0.4rem;
+  border-inline-end: 2px solid var(--accentAction);
+  border-bottom: 2px solid var(--accentAction);
+  transform: rotate(45deg);
+  transition: transform 160ms ease;
+}
+
+.serviceCard[open] .serviceToggle {
+  transform: rotate(225deg);
 }
 
 .serviceSubList {
@@ -589,7 +528,68 @@
   padding-inline-start: clamp(1.5rem, 4vw, 3rem);
 }
 
-/* ── social proof strip ───────────────────────────────────────────────── */
+/* ── client logo strip ─────────────────────────────────────────────────── */
+.clientStrip {
+  border-block: 1px solid var(--line);
+  background: var(--surface-alt);
+}
+
+.clientStripInner {
+  display: grid;
+  grid-template-columns: minmax(8rem, 0.3fr) minmax(0, 1fr);
+  gap: clamp(1rem, 3vw, 2.5rem);
+  align-items: center;
+  padding-block: 1.25rem;
+}
+
+.clientStripLabel {
+  margin: 0;
+  color: var(--text);
+  font-family: var(--font-barlow), system-ui, sans-serif;
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+
+.clientLogoList {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.65rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.clientLogo {
+  display: flex;
+  min-width: 0;
+  min-height: 3.25rem;
+  align-items: center;
+  justify-content: center;
+  border: 1px dashed var(--line);
+  background: var(--surface);
+  padding: 0.65rem;
+  color: var(--text);
+  font-family: var(--font-barlow), system-ui, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  line-height: 1.2;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.clientLogoImage {
+  display: block;
+  max-width: 100%;
+  max-height: 1.8rem;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
 /* ── how it works ─────────────────────────────────────────────────────── */
 .steps {
   display: grid;
@@ -628,11 +628,6 @@
   font-size: 0.9rem;
 }
 
-/*
- * The expansion story carries the client's own descriptions, so these are cards
- * with copy, not bare pills. Auto-fit rather than a fixed column count: the four
- * descriptions differ in length and the row should reflow on its own width.
- */
 /* ── form ───────────────────────────────────────────────────────────────── */
 .formWrap {
   display: grid;
@@ -763,16 +758,6 @@
   accent-color: var(--accentAction);
 }
 
-.priorityLine {
-  margin: 1.35rem 0 1.1rem;
-  border-left: 2px solid var(--accentRule);
-  padding-left: 0.85rem;
-  color: var(--text);
-  font-size: 0.86rem;
-  line-height: 1.5;
-  opacity: 0.85;
-}
-
 .formError {
   margin: 0 0 1rem;
   border: 1px solid var(--ink);
@@ -876,46 +861,6 @@
   margin-inline-start: auto;
 }
 
-/* ── responsive report definition list ─────────────────────────────────── */
-@media (max-width: 640px) {
-  .reportTable {
-    display: none;
-  }
-
-  .reportDefinition {
-    display: grid;
-    gap: 1rem;
-    margin: 0;
-  }
-
-  .reportDefinitionRow {
-    display: grid;
-    gap: 0.8rem;
-    border: 1px solid var(--line);
-    background: var(--surface);
-    padding: 1rem;
-  }
-
-  .reportDefinitionRow > div {
-    display: grid;
-    gap: 0.25rem;
-  }
-
-  .reportDefinition dt {
-    color: var(--text);
-    font-size: 13px;
-    font-weight: 600;
-    line-height: 1.3;
-  }
-
-  .reportDefinition dd {
-    margin: 0;
-    color: var(--text);
-    font-size: 15px;
-    line-height: 1.45;
-  }
-}
-
 @media (max-width: 62rem) {
   .formWrap,
   .steps {
@@ -938,12 +883,25 @@
     gap: 0.5rem;
   }
 
-  .headerAudience {
+  .headerPhone {
     display: none;
   }
 
-  .headerPhone {
-    display: none;
+  .heroLayout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .heroMedia {
+    min-height: 14rem;
+  }
+
+  .clientStripInner {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.8rem;
+  }
+
+  .clientLogoList {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .ratingSlot {
