@@ -25,13 +25,10 @@ account IDs, and the folder map. Index: `docs/README.md`.
 
 ## Repo map
 
-- `src/app/` — routes (homepage, `/osw`, `/biosymm`, `/api/subscribe`)
 - `src/components/` — homepage sections; `src/components/osw/ContentPageTemplate.tsx` — OSW page template
-- `src/lib/site.ts` — site config
 - `content-briefs/` — 23 OSW content briefs, **read at runtime** via `process.cwd()`
   (`src/app/osw/content-briefs/[slug]/page.tsx`) — do not move or rename this folder
 - `data/subscribers.json` — runtime email-capture store — do not delete
-- `public/` — logos, portraits, svgs
 - `docs/` — untracked client working files (see table above); secrets only in `docs/secrets/`
 - `.impeccable.md` — homepage design context (brand, aesthetic) — read before visual changes
 
