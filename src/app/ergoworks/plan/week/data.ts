@@ -14,7 +14,7 @@ export type Ask = {
   text: string;
 };
 
-export type ApprovalStatus = "Awaiting OK" | "Later" | "Not this week" | "Applied 8 Sep" | "Applied 11 Sep — pending your OK";
+export type ApprovalStatus = "Awaiting OK" | "Later" | "Not this week" | "Applied 8 Sep" | "Kept A$155 — confirmed 14 Sep";
 
 export type Approval = {
   id: number;
@@ -31,8 +31,8 @@ export type Judging = {
   doesNotDecide: string;
 };
 
-export const weekLabel = "Week of 8 September 2026";
-export const generated = "13 September 2026";
+export const weekLabel = "Week of 14 September 2026";
+export const generated = "14 September 2026";
 
 export const status: readonly StatusItem[] = [
   {
@@ -53,7 +53,7 @@ export const status: readonly StatusItem[] = [
   {
     label: "Main campaign",
     detail:
-      "A$155/day (restored 11 Sep). Pending your confirmation (approval 8): keep A$155, or return to A$75. Post-restore delivery has not been measured separately yet; the latest daily figure showed 42% of impressions lost to budget on 11 Sep, the changeover day. About A$1,900 spent 31 Aug–11 Sep produced 4 phone calls and no recorded form enquiries.",
+      "Held at A$155/day for the fortnight test (approval 8 confirmed 14 Sep). Post-restore delivery has not been measured separately yet; the latest daily figure showed 42% of impressions lost to budget on 11 Sep, the changeover day. About A$1,900 spent 31 Aug–11 Sep produced 4 phone calls and no recorded form enquiries. Holding A$155 is about A$80/day above A$75 — roughly A$800 across the 14–25 Sep window; nothing serves at weekends and spend is watched daily.",
   },
   {
     label: "Melbourne campaign",
@@ -79,8 +79,8 @@ export const plan: readonly PlanRow[] = [
   },
   {
     day: "Mon 14 Sep",
-    what: "Decide approval 8 (keep A$155 or re-cut to A$75) before it serves again; Sydney fifth-business-day checkpoint",
-    blockedOn: "Your decision on approval 8",
+    what: "Approval 8 confirmed: main held at A$155 for the fortnight; Sydney fifth-business-day checkpoint after today closes",
+    blockedOn: "Nothing — the checkpoint is ours",
   },
   {
     day: "Week 2",
@@ -92,13 +92,9 @@ export const plan: readonly PlanRow[] = [
 export const asks: readonly Ask[] = [
   {
     id: 1,
-    text: "Keep or reverse the main-campaign budget we restored to A$155/day on 11 Sep (approval 8) — ideally before it serves again on Monday",
-  },
-  {
-    id: 2,
     text: "A ten-minute slot with Greg: confirm the 11 Sep test reached his inbox exactly once, and split the 12 enquiries by source (form, phone, landing page, physio), any duplicates or tests, and the exact window",
   },
-  { id: 3, text: "Whether the 2 September landing-page lead was a test or real" },
+  { id: 2, text: "Whether the 2 September landing-page lead was a test or real" },
 ];
 
 export const approvals: readonly Approval[] = [
@@ -160,11 +156,11 @@ export const approvals: readonly Approval[] = [
   },
   {
     id: 8,
-    change: "Restore the main campaign budget from A$75 to A$155/day. It is currently at A$155 — confirm to keep it, or we return to A$75.",
-    why: "The A$75 cap had been losing 54–79% of eligible impressions to budget on 8–10 Sep, which would likely leave the fortnight test inconclusive. Please decide by Monday 14 Sep, before it serves again: keep A$155/day or return to A$75. Holding A$155 is about A$80/day more than A$75 (~A$2,400/month); nothing serves over the weekend, so a Monday decision caps the exposure.",
+    change: "Hold the main campaign budget at A$155/day for the two-week test (14–25 Sep), rather than returning to A$75.",
+    why: "The A$75 cap had been losing 54–79% of eligible impressions to budget on 8–10 Sep, which would likely leave the fortnight test inconclusive. Confirmed on 14 Sep to hold A$155 for the window. Holding A$155 is about A$80/day more than A$75 — roughly A$800 across the 14–25 Sep window; nothing serves at weekends and spend is watched daily.",
     reversible: true,
     needsOk: true,
-    status: "Applied 11 Sep — pending your OK",
+    status: "Kept A$155 — confirmed 14 Sep",
   },
   {
     id: 9,

@@ -35,17 +35,17 @@ export default function WeekPage() {
             <p className={styles.kicker}>{weekLabel} · Generated {generated}</p>
             <h1>This week</h1>
             <p className={styles.heroCopy}>
-              The short operating view: what is true now, what happens next, and which Google Ads changes are waiting for your OK.
+              The short operating view: what is true now, what happens next, and the two things still waiting on you.
             </p>
           </div>
 
           <aside className={styles.summary}>
-            <p>Reply format</p>
-            <h2>Approve by number, not by paragraph.</h2>
+            <p>This week</p>
+            <h2>Approval 8 confirmed. Two follow-ups open.</h2>
             <ul>
               <li><Check size={17} aria-hidden="true" /> Status first</li>
-              <li><Check size={17} aria-hidden="true" /> Approvals 1 to 9</li>
-              <li><Check size={17} aria-hidden="true" /> Reply: keep 8 or cut 8</li>
+              <li><Check size={17} aria-hidden="true" /> Approvals 1 to 9 — all decided or later</li>
+              <li><Check size={17} aria-hidden="true" /> Two replies below</li>
             </ul>
           </aside>
         </div>
@@ -55,7 +55,7 @@ export default function WeekPage() {
 
       <section className={`${styles.docSection} ${styles.alt}`} id="status">
         <SectionHeading
-          label="Live status · 13 September 2026"
+          label="Live status · 14 September 2026"
           title="What is true this morning."
           copy="The important distinction is between something that happened, something that was received, and something we can safely use to judge demand."
         />
@@ -71,7 +71,7 @@ export default function WeekPage() {
 
         <div className={styles.calloutRow}>
           <CircleAlert size={20} aria-hidden="true" />
-          <p><strong>Decision point:</strong> approval 8 needs your decision even though the higher budget is already live — Applied dates record past actions, not necessarily the current setting. Approval 9 is on hold pending checks.</p>
+          <p><strong>Confirmed:</strong> approval 8 is decided — the main campaign holds at A$155/day for the fortnight test. No Ads approval is outstanding this week. Approval 9 stays on hold pending checks.</p>
         </div>
       </section>
 
@@ -107,9 +107,9 @@ export default function WeekPage() {
 
       <section className={`${styles.docSection} ${styles.alt}`} id="what-we-need">
         <SectionHeading
-          label="Three replies"
+          label="Two follow-ups"
           title="What we need from you."
-          copy="These are the only decisions that hold the next move. Everything else is already prepared or deliberately later."
+          copy="These are the only items that hold the next move. Everything else is already prepared or deliberately later."
         />
 
         <ol className={pageStyles.numberedList}>
@@ -118,15 +118,15 @@ export default function WeekPage() {
 
         <div className={styles.calloutRow}>
           <Check size={20} aria-hidden="true" />
-          <p><strong>Fastest reply:</strong> on WhatsApp — for approval 8, “keep 8” or “cut 8 to 75”.</p>
+          <p><strong>Fastest reply:</strong> on WhatsApp — a line each on the two items above.</p>
         </div>
       </section>
 
       <section className={styles.docSection} id="approvals">
         <SectionHeading
-          label="Approval list · updated 13 September 2026"
-          title="Approve only what should move now."
-          copy="Approval 8 is the active decision — keep or reverse the 11 Sep restore. Applied, Later and Not this week rows stay visible so the fortnight has a clear boundary."
+          label="Approval list · updated 14 September 2026"
+          title="The decisions, kept in view."
+          copy="Approval 8 is confirmed — the main campaign holds at A$155 for the fortnight. Applied, Later and Not this week rows stay visible so the fortnight has a clear boundary."
         />
 
         <p className={pageStyles.tableHint}>Swipe sideways to read the full approval table.</p>
@@ -144,9 +144,7 @@ export default function WeekPage() {
             </thead>
             <tbody>
               {approvals.map((approval) => {
-                const isActive =
-                  approval.status === "Awaiting OK" ||
-                  approval.status === "Applied 11 Sep — pending your OK";
+                const isActive = approval.status === "Awaiting OK";
                 return (
                   <tr key={approval.id} className={isActive ? pageStyles.approvalPrimary : pageStyles.approvalQuiet}>
                     <th scope="row" data-label="#">{approval.id}</th>
@@ -162,7 +160,7 @@ export default function WeekPage() {
             </tbody>
           </table>
         </div>
-        <p className={pageStyles.approvalReply}>Reply on WhatsApp — for approval 8, “keep 8” or “cut 8 to 75”.</p>
+        <p className={pageStyles.approvalReply}>No Ads approval is open this week — approval 8 is confirmed and held at A$155.</p>
       </section>
 
       <section className={`${styles.docSection} ${styles.alt}`} id="when-joel-pushes">
