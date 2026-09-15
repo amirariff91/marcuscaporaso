@@ -72,7 +72,7 @@ export const templateBlocks = [
         type: "text",
         required: true,
         guidance:
-          'Page title with primary keyword near the front (for example, "Ergonomic Assessment Sydney for Workplace Teams").',
+          'Page title with primary keyword near the front (for example, "Ergonomic Assessment for Workplace Teams").',
       },
       {
         name: "intent_summary",
@@ -381,38 +381,39 @@ export const replicaRules = [
 
 export const buildSheets = [
   {
-    page: "Ergonomic Assessment Sydney",
+    page: "Ergonomic Assessment",
     url: "/ergonomic-consultants-in-sydney",
     urlDecision:
-      "Keep existing URL. Preserves search equity and links. Sydney consultant queries collapse into assessment demand.",
-    primaryQuery: "ergonomic assessment sydney (100/mo, KD 0)",
+      "Keep the existing URL. It holds the page's search equity and links, and changing it would forfeit a position 3 ranking for no gain. The URL slug is not a ranking constraint on a national target — the on-page signals are what move. Client direction 14 Sep: drop the local framing and make the page national.",
+    primaryQuery: "ergonomic assessment (400/mo, KD 0)",
     secondaryQueries: [
-      "ergonomic workstation assessment (200/mo, KD 0)",
-      "workplace ergonomic assessment (60/mo, KD 0)",
       "office ergonomic assessment (70/mo, KD 0)",
+      "workplace ergonomic assessment (60/mo, KD 49)",
+      "corporate ergonomic assessment",
       "ergonomic assessment report (80/mo)",
+      "ergonomic assessment sydney (90/mo, KD 0) — retained as a supporting term only",
     ],
-    titleTag: "Ergonomic Assessment Sydney | ErgoWorks Consulting",
+    titleTag: "Ergonomic Assessment for Workplace Teams | ErgoWorks Consulting",
     metaDescription:
-      "Book an ergonomic assessment Sydney workplace teams can rely on. Practical workstation adjustments, prioritised risk reports, and expert advice. Enquire today.",
-    h1: "Ergonomic Assessment Sydney for Workplace Teams",
+      "Book an ergonomic assessment your workplace teams can rely on. Practical workstation adjustments, prioritised risk reports, and expert advice. Enquire today.",
+    h1: "Ergonomic Assessment for Workplace Teams",
     h2Outline: [
-      "What an Ergonomic Assessment in Sydney Covers",
+      "What an Ergonomic Assessment Covers",
       "Who Needs an On-Site Workplace Assessment?",
-      "Our 4-Step Sydney Assessment Process",
+      "Our 4-Step Assessment Process",
       "What You Receive: The Ergonomic Assessment Report",
-      "Sydney Service Areas and Workplace Settings Covered",
+      "Where We Deliver: Coverage Across Australia",
       "Office, Home, and Hybrid Workstation Options",
-      "Why Sydney Organisations Choose ErgoWorks",
+      "Why Organisations Choose ErgoWorks",
       "Transparent Scope and Pricing Variables",
       "Frequently Asked Questions",
     ],
     faqs: [
-      "What is included in a Sydney ergonomic assessment?",
-      "How quickly can an assessor visit our Sydney office?",
+      "What is included in an ergonomic assessment?",
+      "How quickly can an assessor visit our office?",
       "Can you assess both office and hybrid or home workstations?",
       "What does the final ergonomic assessment report look like?",
-      "Which Sydney suburbs and business precincts do you cover?",
+      "Which locations do you cover?",
       "How much does an ergonomic workplace assessment cost?",
     ],
     infoBoxes: [
@@ -425,15 +426,20 @@ export const buildSheets = [
         detail:
           "5-Point Scope (Posture Analysis, Adjustments, Measurements, Hardware Specs, Risk Matrix).",
       },
+      {
+        title: "Division of intent (avoids overlap with the workstation page)",
+        detail:
+          "This page is the service and booking page for assessments as an engagement: scope, process, report, coverage, pricing variables. The workstation assessments page stays the explainer for the assessment itself and keeps the 'ergonomic workstation assessment' target. Do not let either page target the other's primary phrase.",
+      },
     ],
     internalLinksIn: [
-      { destination: "Homepage", anchor: "ergonomic assessment in Sydney" },
+      { destination: "Homepage", anchor: "ergonomic assessment" },
       { destination: "/blog/workstation-tips-ergonomic-physiotherapist" },
     ],
     internalLinksOut: [
       {
         destination: "/ergonomic-solutions/workstation-assessments",
-        anchor: "workplace ergonomic assessment",
+        anchor: "ergonomic workstation assessment",
       },
       {
         destination: "/ergonomic-solutions/manual-handling-training",
@@ -443,14 +449,14 @@ export const buildSheets = [
     ],
     schemaType: "ProfessionalService + Service",
     cta: {
-      button: "Request a Sydney Assessment Quote",
+      button: "Request an Assessment Quote",
       supportingText:
         "Tell us your location and team size. We will confirm scope before quoting.",
       target: "/contact-us#contact-form",
     },
     gregToConfirm: [
-      "Approved Sydney delivery suburbs [Greg to confirm].",
-      "Names and registrations of Sydney assessors [Greg to confirm].",
+      "Approved national delivery coverage, and any regions served by partners rather than in-house [Greg to confirm].",
+      "Names and registrations of assessors available outside Sydney [Greg to confirm].",
       "Report turnaround business days [Greg to confirm].",
       "Approval of redacted sample report [Greg to confirm].",
     ],
@@ -459,9 +465,11 @@ export const buildSheets = [
       "Answer-first definition is 40 to 60 words.",
       "All 6 FAQ answers are 40 to 60 words.",
       "No injury-reduction or compliance guarantees.",
+      "No national coverage claim beyond what Greg has confirmed in writing.",
+      "Does not target 'ergonomic workstation assessment' — that phrase belongs to the workstation assessments page.",
       "Valid Schema.org JSON-LD linking to root organisation ID.",
     ],
-    status: "Copy drafted",
+    status: "Copy drafted — respec'd national 15 Sep (client direction)",
   },
   {
     page: "Manual Handling Training Sydney",
@@ -525,7 +533,7 @@ export const buildSheets = [
       },
       {
         destination: "/ergonomic-consultants-in-sydney",
-        anchor: "assessments Sydney",
+        anchor: "ergonomic assessment",
       },
       { destination: "/contact-us", anchor: "request proposal" },
     ],
@@ -555,7 +563,7 @@ export const buildSheets = [
     url: "/ergonomic-solutions/workstation-assessments",
     urlDecision:
       "Keep existing URL. Preserves indexation while updating copy for commercial assessment intent.",
-    primaryQuery: "ergonomic workstation assessment (200/mo, KD 0)",
+    primaryQuery: "ergonomic workstation assessment (150/mo, KD 0)",
     secondaryQueries: [
       "workplace ergonomic assessment (60/mo, KD 0)",
       "workstation assessment (50/mo)",
@@ -605,7 +613,7 @@ export const buildSheets = [
     internalLinksOut: [
       {
         destination: "/ergonomic-consultants-in-sydney",
-        anchor: "Sydney assessment",
+        anchor: "ergonomic assessment",
       },
       {
         destination: "/ergonomic-solutions/manual-handling-training",

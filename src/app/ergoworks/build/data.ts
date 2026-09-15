@@ -124,7 +124,7 @@ export type PageBuildStatus = {
 };
 
 export const pageBuildStatus = [
-  { page: 1, name: "Ergonomic Assessment Sydney", status: "Rebuild" },
+  { page: 1, name: "Ergonomic Assessment (national)", status: "Rebuild" },
   {
     page: 2,
     name: "Manual Handling Training Sydney",
@@ -238,8 +238,8 @@ export const crossCutting = [
 
 export const jsonLdExample = `{"@context":"https://schema.org","@graph":[
 {"@type":["LocalBusiness","ProfessionalService"],"@id":"https://ergoworksconsulting.com.au#organisation","name":"ErgoWorks Consulting","url":"https://ergoworksconsulting.com.au/"},
-{"@type":"Service","@id":"https://ergoworksconsulting.com.au/ergonomic-consultants-in-sydney#service","name":"Ergonomic Assessment Sydney","serviceType":"Ergonomic Assessment","areaServed":"Sydney, NSW","provider":{"@id":"https://ergoworksconsulting.com.au#organisation"}},
-{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is included in a Sydney ergonomic assessment?","acceptedAnswer":{"@type":"Answer","text":"[40 to 60 word visible answer]"}}]},
-{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://ergoworksconsulting.com.au/"},{"@type":"ListItem","position":2,"name":"Ergonomic Assessment Sydney"}]}]}`;
+{"@type":"Service","@id":"https://ergoworksconsulting.com.au/ergonomic-consultants-in-sydney#service","name":"Ergonomic Assessment","serviceType":"Ergonomic Assessment","areaServed":"AU","provider":{"@id":"https://ergoworksconsulting.com.au#organisation"}},
+{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is included in an ergonomic assessment?","acceptedAnswer":{"@type":"Answer","text":"[40 to 60 word visible answer]"}}]},
+{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://ergoworksconsulting.com.au/"},{"@type":"ListItem","position":2,"name":"Ergonomic Assessment"}]}]}`;
 
-export const generated = "10 September 2026";
+export const generated = "15 September 2026";
