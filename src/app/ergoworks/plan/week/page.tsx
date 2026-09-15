@@ -41,7 +41,7 @@ export default function WeekPage() {
 
           <aside className={styles.summary}>
             <p>This week</p>
-            <h2>Approval 8 confirmed. Two follow-ups open.</h2>
+            <h2>First enquiry recorded through the repaired path. One approval open.</h2>
             <ul>
               <li><Check size={17} aria-hidden="true" /> Status first</li>
               <li><Check size={17} aria-hidden="true" /> Approvals 1 to 9 — all decided or later</li>

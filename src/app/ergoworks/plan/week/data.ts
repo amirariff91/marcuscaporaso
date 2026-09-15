@@ -14,7 +14,13 @@ export type Ask = {
   text: string;
 };
 
-export type ApprovalStatus = "Awaiting OK" | "Later" | "Not this week" | "Applied 8 Sep" | "Kept A$155 — confirmed 14 Sep";
+export type ApprovalStatus =
+  | "Awaiting OK"
+  | "Later"
+  | "Not this week"
+  | "Applied 8 Sep"
+  | "Kept A$155 — confirmed 14 Sep"
+  | "Applied 15 Sep";
 
 export type Approval = {
   id: number;
@@ -32,37 +38,42 @@ export type Judging = {
 };
 
 export const weekLabel = "Week of 14 September 2026";
-export const generated = "14 September 2026";
+export const generated = "15 September 2026";
 
 export const status: readonly StatusItem[] = [
   {
-    label: "Form fix",
+    label: "Form tracking — first enquiry recorded through the repaired path",
     detail:
-      "GTM tag container v25 is live and contains both tags. Analytics received one general_enquiry event on 11 Sep, probably the reported test — that match is not yet confirmed. The Google Ads 'Main-site Enquiry' conversion has zero attributed conversions. No genuine main-site enquiry has yet been verified through the repaired path, and email receipt and the Ads-tag request remain unverified.",
+      "On the morning of 15 Sep the Google Ads 'Main-site Enquiry' conversion recorded its first enquiry, from a paid click on the manual handling ad group. That is the first time anything has been seen travelling from an ad click through to the ads account, and it is the step the fortnight has been waiting on. It is deliberately not being called a fix yet. All that can be seen from the reporting side is that the tag fired — not what the submission contained. It could be a genuine enquiry, an automated spam submission, or an internal test, and those are very different outcomes. The check that settles it is a look in the inbox for a submission received between about 10:00 and 10:30 that morning, or the equivalent entry in the form log. The matching analytics event has also not appeared, though that day's analytics data was still incomplete when this page was generated. Treat this as the plumbing firing for the first time, not as a signed-off result.",
   },
   {
-    label: "Greg's 12 enquiries since 31 Aug",
+    label: "The enquiry ledger, and the 18-day blind window",
     detail:
-      "Real in his inbox. Google already records calls and the landing-page lead, so the gap is not all form tracking; the channels (form, phone, landing page, physio), duplicates and any tests are not yet reconciled. Not a demand verdict either way.",
-  },
-  {
-    label: "Sydney campaign",
-    detail:
-      "Serving again since the A$200 target came off on 8 Sep, but rank-limited — losing impressions to rank, not budget: low volume, 0–1 clicks a day, no conversions. Its fifth post-change business day is Monday 14 Sep — review after that closes.",
+      "We rebuilt the enquiry history from analytics and the ads account. The main-site form was tracked until 24 Aug, then produced nothing at all until the repair went live on 11 Sep — an 18-day window in which an enquiry would reach the inbox but leave no trace in any report. The pre-break rate was about two form enquiries a week, so roughly four to six enquiries were likely received and never counted. That makes the reported twelve since 31 Aug consistent with normal volume rather than evidence of either a surge or a collapse. A dated ledger has been prepared for the ten-minute split by channel.",
   },
   {
     label: "Main campaign",
     detail:
-      "Held at A$155/day for the fortnight test (approval 8 confirmed 14 Sep). Post-restore delivery has not been measured separately yet; the latest daily figure showed 42% of impressions lost to budget on 11 Sep, the changeover day. About A$1,900 spent 31 Aug–11 Sep produced 4 phone calls and no recorded form enquiries. Holding A$155 is about A$80/day above A$75 — roughly A$800 across the 14–25 Sep window; nothing serves at weekends and spend is watched daily.",
+      "Held at A$155/day for the fortnight test (approval 8 confirmed 14 Sep). The restore did what it was meant to: on 8–11 Sep at the lower budget the campaign was losing between 42% and 79% of available impressions to budget, and on 14 Sep it lost none at all. The constraint has now moved from budget to ad rank, with about 73% of impressions lost there — which also means further budget would not buy more volume. Spend is being watched daily.",
+  },
+  {
+    label: "Sydney campaign — we found what is actually wrong",
+    detail:
+      "The earlier read that it was held back by ad rank no longer holds: it reached about 73% impression share on 14 Sep. We pulled the actual search queries it has been paying for, and the picture is clearer than a cost problem. Around four fifths of its traceable spend went to people searching competitors by name, or to individuals looking for a chair or a home-office setup — none of which can become the kind of employer enquiry this test is trying to measure. Every one of those arrived through a loose keyword match rather than the terms we chose. Meanwhile the deliberately chosen exact-match terms were shown and drew no clicks at all. So the fix was to exclude the wrong searches rather than cut the budget, which would only have slowed the waste without changing what it was being spent on. Those exclusions went on on 15 Sep — competitor names and chair-related searches — and the daily budget was deliberately left where it was. Searches about home or hybrid setups were left in, because an employer arranging support for remote staff would genuinely search that way.",
   },
   {
     label: "Melbourne campaign",
     detail:
-      "Found enabled with no ads and no delivery on 13 Sep; we re-paused it. It stays paused until the four launch conditions hold.",
+      "Correction to last week's note: the ads, ad groups and keywords did exist and were built — what was missing was that both the campaign and its ads were switched off, so nothing could serve. It was switched on on 15 Sep at the agreed daily ceiling, with its bidding left unchanged so it stays comparable to the rest of the test. One thing still needs saying plainly: its ads point at a different landing page from the main site, and that page records enquiries through a separate, older path that was not part of the repair and has not been tested the same way. The enquiry recorded on 15 Sep does not cover this campaign. Delivery and cost will be watched daily from here.",
+  },
+  {
+    label: "How the campaigns are set up to learn",
+    detail:
+      "We pulled the conversion settings that had been outstanding. The main-site enquiry already counted as a primary action, so the enquiry recorded on 15 Sep feeds bidding. The landing-page enquiry did not — it was set as secondary and sat outside the biddable set, which meant both landing-page campaigns were set to optimise towards an enquiry they could not see. That has now been corrected, so they can finally learn from the enquiries that page produces. It is a measurement correction rather than a spend change and it is fully reversible, but it does put those two campaigns into a short relearning period.",
   },
   {
     label: "2 September landing-page lead",
-    detail: "Unchanged. Leans real, still needs Greg's inbox check.",
+    detail: "Unchanged. Leans real, still needs the inbox check. Nothing has come through that form since.",
   },
 ];
 
@@ -164,11 +175,11 @@ export const approvals: readonly Approval[] = [
   },
   {
     id: 9,
-    change: "Verify which conversion goal each campaign optimises to, and the 2 September lead's quality, before proposing any change to the landing-page-lead action.",
-    why: "The landing-page lead already sits in the shared custom conversion goal, so bidding may already use it regardless of the primary/secondary flag. Which campaigns actually optimise to that goal is unconfirmed — check that first. Changing the goal set can put both campaigns back into learning for a few days.",
+    change: "Make the landing-page enquiry a primary, biddable action so the campaigns pointing at that page can actually learn from the enquiries it produces.",
+    why: "The check that was outstanding has now been done. The assumption behind holding this — that the landing-page enquiry might already feed bidding through the shared goal — turned out to be wrong: it is set as secondary and sits outside the biddable set, so bidding cannot see it. The campaigns pointing at that landing page are therefore optimising towards an enquiry they never receive, which is the most likely reason their click costs have been so erratic. Applied on 15 Sep, ahead of the Melbourne campaign going live the same day — switching that campaign on while it still could not see its own enquiries would have spent the budget for nothing. Reversible at any time; the cost of the change is a short relearning period for the two campaigns affected.",
     reversible: true,
     needsOk: true,
-    status: "Later",
+    status: "Applied 15 Sep",
   },
 ];
 

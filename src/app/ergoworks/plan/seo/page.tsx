@@ -97,15 +97,15 @@ type BuildPackageRow = {
 
 const buildPackageRows: readonly BuildPackageRow[] = [
   {
-    page: "Ergonomic assessment Sydney",
+    page: "Ergonomic assessment (national)",
     urlDecision: "keep /ergonomic-consultants-in-sydney",
-    primaryQuery: '"ergonomic assessment sydney" (100/mo, position ~28 on the www property)',
-    status: "Copy drafted",
+    primaryQuery: '"ergonomic assessment" (400/mo, difficulty 0)',
+    status: "Copy drafted — respec'd national 15 Sep (client direction)",
   },
   {
     page: "Ergonomic workstation assessment",
     urlDecision: "keep /ergonomic-solutions/workstation-assessments",
-    primaryQuery: '"ergonomic workstation assessment" (200/mo, position ~55)',
+    primaryQuery: '"ergonomic workstation assessment" (150/mo, position ~55)',
     status: "Copy drafted",
   },
   {
@@ -450,18 +450,18 @@ const opportunities: Opportunity[] = [
 
 const briefs: Brief[] = [
   {
-    slug: "brief-ergonomic-assessment-sydney",
-    title: "Ergonomic assessment Sydney — improve existing page /ergonomic-consultants-in-sydney",
-    targetTerm: "ergonomic assessment sydney (100/mo, difficulty 0; conservative reported position 33.4)",
-    newTitle: "Ergonomic Assessment Sydney | ErgoWorks Consulting",
-    newH1: "Ergonomic Assessment Sydney for Workplace Teams",
+    slug: "brief-ergonomic-assessment",
+    title: "Ergonomic assessment — improve existing page /ergonomic-consultants-in-sydney (national respec)",
+    targetTerm: "ergonomic assessment (400/mo, difficulty 0). The page currently ranks position 3 for 'ergonomic assessment sydney' (90/mo) — keep that phrase as a supporting term and do not change the URL, so the existing position is not thrown away while the national term is contested.",
+    newTitle: "Ergonomic Assessment for Workplace Teams | ErgoWorks Consulting",
+    newH1: "Ergonomic Assessment for Workplace Teams",
     sections: [
       "Hero and direct answer",
-      "What an ergonomic assessment in Sydney covers",
+      "What an ergonomic assessment covers",
       "Who should arrange one",
-      "How our Sydney assessment works",
+      "How our assessment works",
       "What you receive: report and action plan",
-      "Sydney areas and workplace settings we serve",
+      "Where we deliver: coverage across Australia",
       "Assessment options for office, home and hybrid teams",
       "Why ErgoWorks Consulting",
       "Pricing, timing and scope",
@@ -469,7 +469,7 @@ const briefs: Brief[] = [
       "Final CTA",
     ],
     proofNeeded: [
-      "Approved Sydney suburbs and service-area wording.",
+      "Approved national coverage wording, and any regions delivered by partners rather than in-house.",
       "Assessment scope, process, report and action-plan examples.",
       "Current credentials and permission to publish any workplace proof or case evidence.",
       "Approved pricing, timing and contact-form call to action.",
