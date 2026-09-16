@@ -38,13 +38,13 @@ export type Judging = {
 };
 
 export const weekLabel = "Week of 14 September 2026";
-export const generated = "15 September 2026";
+export const generated = "16 September 2026";
 
 export const status: readonly StatusItem[] = [
   {
-    label: "Form tracking — first enquiry recorded through the repaired path",
+    label: "Form tracking — confirmed working end to end",
     detail:
-      "On the morning of 15 Sep the Google Ads 'Main-site Enquiry' conversion recorded its first enquiry, from a paid click on the manual handling ad group. That is the first time anything has been seen travelling from an ad click through to the ads account, and it is the step the fortnight has been waiting on. It is deliberately not being called a fix yet. All that can be seen from the reporting side is that the tag fired — not what the submission contained. It could be a genuine enquiry, an automated spam submission, or an internal test, and those are very different outcomes. The check that settles it is a look in the inbox for a submission received between about 10:00 and 10:30 that morning, or the equivalent entry in the form log. The matching analytics event has also not appeared, though that day's analytics data was still incomplete when this page was generated. Treat this as the plumbing firing for the first time, not as a signed-off result.",
+      "An enquiry came through from a paid click on the morning of 15 Sep, and both systems have now recorded it. The ads account registered it against the manual handling ad group, and analytics recorded the matching enquiry on the manual handling page in the same campaign on the same day. The two agree exactly. When this page was first written the analytics side had not appeared, which turned out to be ordinary processing delay rather than a fault. This is the first clean result of its kind and it closes the measurement question the fortnight was built around. One thing is still open, and it is a different question: the reporting shows that an enquiry happened, not what it contained. Whether that particular submission was a genuine business enquiry, an automated one, or a test can only be settled by checking the inbox for a submission received between about 10:00 and 10:30 that morning.",
   },
   {
     label: "The enquiry ledger, and the 18-day blind window",
@@ -54,17 +54,17 @@ export const status: readonly StatusItem[] = [
   {
     label: "Main campaign",
     detail:
-      "Held at A$155/day for the fortnight test (approval 8 confirmed 14 Sep). The restore did what it was meant to: on 8–11 Sep at the lower budget the campaign was losing between 42% and 79% of available impressions to budget, and on 14 Sep it lost none at all. The constraint has now moved from budget to ad rank, with about 73% of impressions lost there — which also means further budget would not buy more volume. Spend is being watched daily.",
+      "Held at A$155/day for the fortnight test (approval 8 confirmed 14 Sep). The restore did what it was meant to: on 8–11 Sep at the lower budget the campaign was losing between 42% and 79% of available impressions to budget, and on 14 Sep it lost none at all. The constraint has now moved from budget to ad rank, with about 73% of impressions lost there — which also means further budget would not buy more volume. Click costs have also been falling across the first three days of the week. Spend is being watched daily.",
   },
   {
     label: "Sydney campaign — we found what is actually wrong",
     detail:
-      "The earlier read that it was held back by ad rank no longer holds: it reached about 73% impression share on 14 Sep. We pulled the actual search queries it has been paying for, and the picture is clearer than a cost problem. Around four fifths of its traceable spend went to people searching competitors by name, or to individuals looking for a chair or a home-office setup — none of which can become the kind of employer enquiry this test is trying to measure. Every one of those arrived through a loose keyword match rather than the terms we chose. Meanwhile the deliberately chosen exact-match terms were shown and drew no clicks at all. So the fix was to exclude the wrong searches rather than cut the budget, which would only have slowed the waste without changing what it was being spent on. Those exclusions went on on 15 Sep — competitor names and chair-related searches — and the daily budget was deliberately left where it was. Searches about home or hybrid setups were left in, because an employer arranging support for remote staff would genuinely search that way.",
+      "The earlier read that it was held back by ad rank no longer holds: it reached about 73% impression share on 14 Sep. We pulled the actual search queries it has been paying for, and the picture is clearer than a cost problem. Around four fifths of its traceable spend went to people searching competitors by name, or to individuals looking for a chair or a home-office setup — none of which can become the kind of employer enquiry this test is trying to measure. Every one of those arrived through a loose keyword match rather than the terms we chose. Meanwhile the deliberately chosen exact-match terms were shown and drew no clicks at all. So the fix was to exclude the wrong searches rather than cut the budget, which would only have slowed the waste without changing what it was being spent on. Those exclusions went on on 15 Sep — competitor names and chair-related searches — and the daily budget was deliberately left where it was. On the morning of 16 Sep the campaign had recorded no spend at all, which is the intended direction, though far too early to judge. Searches about home or hybrid setups were left in, because an employer arranging support for remote staff would genuinely search that way.",
   },
   {
     label: "Melbourne campaign",
     detail:
-      "Correction to last week's note: the ads, ad groups and keywords did exist and were built — what was missing was that both the campaign and its ads were switched off, so nothing could serve. It was switched on on 15 Sep at the agreed daily ceiling, with its bidding left unchanged so it stays comparable to the rest of the test. One thing still needs saying plainly: its ads point at a different landing page from the main site, and that page records enquiries through a separate, older path that was not part of the repair and has not been tested the same way. The enquiry recorded on 15 Sep does not cover this campaign. Delivery and cost will be watched daily from here.",
+      "Correction to last week's note: the ads, ad groups and keywords did exist and were built — what was missing was that both the campaign and its ads were switched off, so nothing could serve. It was switched on on 15 Sep at the agreed daily ceiling, with its bidding left unchanged so it stays comparable to the rest of the test. As of the morning of 16 Sep it is live but has barely begun to serve, which is normal while new ads are reviewed and delivery ramps up — it should not be read either way for several days. One thing still needs saying plainly: its ads point at a different landing page from the main site, and that page records enquiries through a separate, older path that was not part of the repair and has not been tested the same way. The enquiry recorded on 15 Sep does not cover this campaign. Delivery and cost will be watched daily from here.",
   },
   {
     label: "How the campaigns are set up to learn",
