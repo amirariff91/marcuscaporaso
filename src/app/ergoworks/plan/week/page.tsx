@@ -207,6 +207,9 @@ export default function WeekPage() {
             <Link href="/ergoworks/plan/weekly">Weekly report <ArrowRight size={16} aria-hidden="true" /></Link>
           </li>
           <li>
+            <a href="https://docs.google.com/document/d/1UjiyWIXX9VIOD_JXNVfs1CLoxuGCKNrn-bZKKvq0Z4M/edit" target="_blank" rel="noopener noreferrer">Enquiry check for Greg (Google Doc) <span>New — send this to settle the twelve</span></a>
+          </li>
+          <li>
             <a href="https://docs.google.com/document/d/1l04FC9-6X9_GJxiZUz7VKpPVETMRJwTfbP66hqeK-wo/edit" target="_blank" rel="noopener noreferrer">Greg update (Google Doc) <span>Edit and send in your voice</span></a>
           </li>
           <li>

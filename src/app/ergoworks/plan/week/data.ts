@@ -103,9 +103,17 @@ export const plan: readonly PlanRow[] = [
 export const asks: readonly Ask[] = [
   {
     id: 1,
-    text: "A ten-minute slot with Greg: confirm the 11 Sep test reached his inbox exactly once, and split the 12 enquiries by source (form, phone, landing page, physio), any duplicates or tests, and the exact window",
+    text: "Send Greg the enquiry check (linked under Pack links below). It is written for him to read directly, so it can be forwarded as it stands or sent in your own words. It asks him to mark each enquiry since 31 Aug by how it arrived, whether it was genuine or a test, business or individual, new or already in the pipeline, and anything still live",
   },
-  { id: 2, text: "Whether the 2 September landing-page lead was a test or real" },
+  {
+    id: 2,
+    text: "The one check that matters most, and it is in that document: did a form submission reach Greg's inbox on Monday 15 September between about 10:00 and 10:30? That is the enquiry the ads and analytics both recorded, and only the inbox can say what it actually was. A clear \u201cnothing there\u201d is just as useful as a yes",
+  },
+  {
+    id: 3,
+    text: "The manual handling training offer details. This is now the main thing blocking that page, and it is the campaign that produced the 15 September enquiry",
+  },
+  { id: 4, text: "Whether the 2 September landing-page lead was a test or real" },
 ];
 
 export const approvals: readonly Approval[] = [
