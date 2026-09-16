@@ -69,7 +69,7 @@ export const status: readonly StatusItem[] = [
   {
     label: "How the campaigns are set up to learn",
     detail:
-      "We pulled the conversion settings that had been outstanding. The main-site enquiry already counted as a primary action, so the enquiry recorded on 15 Sep feeds bidding. The landing-page enquiry did not — it was set as secondary and sat outside the biddable set, which meant both landing-page campaigns were set to optimise towards an enquiry they could not see. That has now been corrected, so they can finally learn from the enquiries that page produces. It is a measurement correction rather than a spend change and it is fully reversible, but it does put those two campaigns into a short relearning period.",
+      "This entry previously said the two landing-page campaigns were set to optimise towards an enquiry they could not see, and that a change on 15 September had fixed it. A fuller check of the settings shows that was wrong, and the correction matters more than the original claim. All three campaigns run against a shared custom goal that already included the landing-page enquiry, and a goal of that kind feeds bidding whether an action is marked primary or secondary. So the landing-page enquiry was never invisible to bidding, and the change made on 15 September was not the fix it was described as. What that change did do is make the action count in the headline conversions figure, which is a reporting change made in the middle of a period that was supposed to be held still — that is disclosed here rather than left in the background. One genuine issue did come out of the check: the goal still contains an older action that stopped recording anything on 24 August, which is worth tidying at the reassessment rather than now.",
   },
   {
     label: "2 September landing-page lead",
@@ -183,11 +183,11 @@ export const approvals: readonly Approval[] = [
   },
   {
     id: 9,
-    change: "Make the landing-page enquiry a primary, biddable action so the campaigns pointing at that page can actually learn from the enquiries it produces.",
-    why: "The check that was outstanding has now been done. The assumption behind holding this — that the landing-page enquiry might already feed bidding through the shared goal — turned out to be wrong: it is set as secondary and sits outside the biddable set, so bidding cannot see it. The campaigns pointing at that landing page are therefore optimising towards an enquiry they never receive, which is the most likely reason their click costs have been so erratic. Applied on 15 Sep, ahead of the Melbourne campaign going live the same day — switching that campaign on while it still could not see its own enquiries would have spent the budget for nothing. Reversible at any time; the cost of the change is a short relearning period for the two campaigns affected.",
+    change: "Reconsider the landing-page enquiry action, now that the goal settings have been checked properly.",
+    why: "This was raised on the basis that the landing-page enquiry sat outside what bidding could see. That turned out to be wrong: all three campaigns share a custom goal that already contained it, and a goal of that kind is used by bidding regardless of whether an action is marked primary. The flag was changed on 15 September anyway, before the fuller check was done. It is reversible and it did not change what bidding optimises towards, but it did change what appears in the headline conversions figure mid-period, which is recorded here rather than glossed over. Nothing further should move until the reassessment.",
     reversible: true,
     needsOk: true,
-    status: "Applied 15 Sep",
+    status: "Later",
   },
 ];
 
