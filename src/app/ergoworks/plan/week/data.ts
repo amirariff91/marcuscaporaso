@@ -44,7 +44,7 @@ export const status: readonly StatusItem[] = [
   {
     label: "Form tracking — confirmed working end to end",
     detail:
-      "An enquiry came through from a paid click on the morning of 15 Sep, and both systems have now recorded it. The ads account registered it against the manual handling ad group, and analytics recorded the matching enquiry on the manual handling page in the same campaign on the same day. The two agree exactly. When this page was first written the analytics side had not appeared, which turned out to be ordinary processing delay rather than a fault. This is the first clean result of its kind and it closes the measurement question the fortnight was built around. One thing is still open, and it is a different question: the reporting shows that an enquiry happened, not what it contained. Whether that particular submission was a genuine business enquiry, an automated one, or a test can only be settled by checking the inbox for a submission received between about 10:00 and 10:30 that morning.",
+      "An enquiry came through from a paid click on the morning of 15 Sep, and both systems have now recorded it. The ads account registered it against the manual handling ad group, and analytics recorded the matching enquiry on the manual handling page in the same campaign on the same day. The two agree exactly. When this page was first written the analytics side had not appeared, which turned out to be ordinary processing delay rather than a fault. This is the first clean result of its kind and it closes the measurement question the fortnight was built around. One thing is still open, and it is a different question: the reporting shows that an enquiry happened, not what it contained. Whether that particular submission was a genuine business enquiry, an automated one, or a test can only be settled by checking the inbox, or the form log, for a submission received at about 11:13 that morning. An earlier version of this page said 10:00 to 10:30 \u2014 that was the time of the ad click, not the submission. The form was opened at 11:10 and sent at 11:13, and a three-minute gap between opening and sending is more consistent with a person than with an automated submission.",
   },
   {
     label: "The enquiry ledger, and the 18-day blind window",
@@ -107,7 +107,7 @@ export const asks: readonly Ask[] = [
   },
   {
     id: 2,
-    text: "One check with Greg or Joel: did a form submission arrive on Monday 15 September between about 10:00 and 10:30? That is the enquiry the ads and analytics both recorded, and only the inbox or the form log can say whether it was a real business, an automated submission, or a test. A clear \u201cnothing there\u201d is as useful as a yes",
+    text: "One check with Greg or Joel: did a form submission arrive on Monday 15 September at about 11:13? That is the enquiry the ads and analytics both recorded, and only the inbox or the form log can say whether it was a real business, an automated submission, or a test. A clear \u201cnothing there\u201d is as useful as a yes",
   },
   {
     id: 3,
