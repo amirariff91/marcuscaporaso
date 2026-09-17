@@ -107,7 +107,7 @@ export const asks: readonly Ask[] = [
   },
   {
     id: 2,
-    text: "One check with Greg or Joel: did a form submission arrive on Monday 15 September at about 11:13? That is the enquiry the ads and analytics both recorded, and only the inbox or the form log can say whether it was a real business, an automated submission, or a test. A clear \u201cnothing there\u201d is as useful as a yes",
+    text: "One check with Greg or Joel: did a form submission arrive on Tuesday 15 September at about 11:13? That is the enquiry the ads and analytics both recorded, and only the inbox or the form log can say whether it was a real business, an automated submission, or a test. A clear \u201cnothing there\u201d is as useful as a yes",
   },
   {
     id: 3,

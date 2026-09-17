@@ -1,0 +1,193 @@
+/* ── Growth review ─────────────────────────────────────────────────────────
+   Dashboard surfaces for the fortnight demand test. Inherits the report
+   palette from plan.module.css (ink / green / mint / lime); everything here is
+   layout and the three chart series.
+
+   Series colours were validated against the report's paper surface (#f7f8f7)
+   for lightness band, chroma floor, CVD separation and contrast before use.
+   Do not substitute them by eye — re-run the check if they change. */
+
+.growth {
+  --s-main: #0f8a63;
+  --s-syd: #c2600f;
+  --s-mel: #4f63c9;
+  --unknown: #5f6e67;          /* 5.37:1 on white; #94a39c was 2.63:1 (review) */
+  --coverage-fill: #075d45;    /* white label reads 7.89:1 here vs 4.34:1 on --s-main */
+  --good: #075d45;
+  --good-bg: #dff4e9;
+  --warn: #8a5a00;
+  --warn-bg: #fbf0d9;
+  --crit: #9c2f2f;
+  --crit-bg: #f8e8e8;
+}
+
+.compactHero { padding-bottom: 2.5rem; }
+
+/* The plan layout renders a sticky .shell (top:0, z-index:30). A section nav
+   also pinned to top:0 slides underneath it and disappears, so offset by the
+   shell height the pack already publishes as --shell-offset. This is its own
+   class applied alongside styles.sectionNav — a `.growth .sectionNav` rule
+   here would hash .sectionNav into this module's scope and never match. */
+.navOffset { top: var(--shell-offset); z-index: 19; }
+
+/* ── reading confidence ─────────────────────────────────────────────────── */
+.confidence {
+  margin: 2rem 0 0;
+  border: 1px solid var(--line);
+  border-radius: .5rem;
+  background: var(--paper-white);
+  overflow: hidden;
+}
+.confidenceHead {
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid var(--line);
+  background: var(--paper-alt);
+  color: var(--ink);
+  font-size: .92rem;
+  line-height: 1.6;
+}
+.confidenceHead strong { font-weight: 700; }
+.confidenceRows { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.confidenceRow { padding: 1.15rem 1.25rem; border-right: 1px solid var(--line); }
+.confidenceRow:last-child { border-right: 0; }
+.confidenceRow h3 {
+  font-size: .98rem; line-height: 1.4; margin: .55rem 0 .5rem; color: var(--ink); font-weight: 700;
+}
+.confidenceRow p { margin: 0; color: var(--muted); font-size: .88rem; line-height: 1.6; }
+
+.verdict {
+  display: inline-flex; align-items: center; gap: .35rem;
+  font-size: .68rem; font-weight: 800; letter-spacing: .07em; text-transform: uppercase;
+  padding: .2rem .5rem; border-radius: .25rem;
+}
+.verdictNot { background: var(--crit-bg); color: var(--crit); }
+.verdictPending { background: var(--warn-bg); color: var(--warn); }
+.verdictAnswered { background: var(--good-bg); color: var(--good); }
+
+/* ── tiles ──────────────────────────────────────────────────────────────── */
+.tiles {
+  display: grid; grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: .85rem; margin-top: 1.5rem;
+}
+.tile {
+  background: var(--paper-white); border: 1px solid var(--line);
+  border-radius: .5rem; padding: 1.1rem 1.15rem;
+}
+.tile > p:first-child {
+  font-size: .7rem; font-weight: 800; letter-spacing: .07em; text-transform: uppercase;
+  color: var(--muted); margin: 0 0 .65rem; line-height: 1.4;
+}
+.tileValue {
+  font-size: 2rem; line-height: 1; letter-spacing: -.025em; font-weight: 600;
+  color: var(--ink); margin: 0 0 .5rem; font-variant-numeric: tabular-nums;
+}
+.tileValue span { font-size: .9rem; font-weight: 500; color: var(--muted); letter-spacing: 0; }
+.tileEmpty { font-size: 1.4rem; font-style: italic; color: var(--unknown); font-weight: 500; }
+.tileNote { margin: 0; color: var(--muted); font-size: .84rem; line-height: 1.55; }
+
+/* ── charts ─────────────────────────────────────────────────────────────── */
+.chartCard {
+  background: var(--paper-white); border: 1px solid var(--line);
+  border-radius: .5rem; padding: 1.25rem; margin-top: 1.5rem;
+}
+.chartCard h3 { font-size: .95rem; font-weight: 700; color: var(--ink); margin: 0 0 .85rem; }
+.legend {
+  display: flex; flex-wrap: wrap; gap: .25rem 1.1rem;
+  margin: 0 0 1rem; font-size: .84rem; color: var(--muted);
+}
+.legend span { display: inline-flex; align-items: center; gap: .4rem; }
+.swatch { width: .6rem; height: .6rem; border-radius: .15rem; flex: none; }
+.chartCard figure { margin: 0; }
+.dataDetails { margin-top: .9rem; border-top: 1px solid var(--line); padding-top: .75rem; }
+.dataDetails summary { cursor: pointer; font-size: .82rem; font-weight: 700; color: var(--green); }
+.dataDetails summary:focus-visible { outline: 2px solid var(--green); outline-offset: 2px; }
+.dataDetails table { width: 100%; border-collapse: collapse; font-size: .82rem; margin-top: .7rem; }
+.dataDetails th, .dataDetails td { padding: .35rem .5rem; border-bottom: 1px solid var(--line); text-align: right; }
+.dataDetails th:first-child, .dataDetails td:first-child { text-align: left; }
+.dataDetails thead th { color: var(--muted); font-weight: 700; }
+.chartCard svg { display: block; width: 100%; height: auto; }
+.caption { margin: .85rem 0 0; color: var(--muted); font-size: .84rem; line-height: 1.6; }
+
+/* ── funnels ────────────────────────────────────────────────────────────── */
+.funnelGrid { display: grid; grid-template-columns: 1fr 1fr; gap: .85rem; margin-top: 1.5rem; }
+.funnelHead { display: flex; align-items: center; gap: .55rem; margin-bottom: 1rem; flex-wrap: wrap; }
+.funnelHead h3 { margin: 0; }
+.funnel { display: grid; gap: .45rem; }
+.funnelRow {
+  display: grid; grid-template-columns: minmax(6.5rem, 1.2fr) minmax(0, 3fr) 3.4rem;
+  gap: .7rem; align-items: center;
+}
+.funnelLabel { font-size: .85rem; color: var(--muted); }
+.funnelTrack {
+  background: var(--paper-alt); border: 1px solid var(--line);
+  border-radius: .25rem; height: 1.45rem; overflow: hidden;
+}
+.funnelFill { height: 100%; border-radius: .18rem 0 0 .18rem; }
+.funnelValue {
+  text-align: right; font-size: .88rem; font-weight: 700;
+  font-variant-numeric: tabular-nums; color: var(--ink);
+}
+.funnelZero { color: var(--crit); }
+.funnelNa { font-size: .72rem; font-weight: 500; font-style: italic; color: var(--unknown); }
+
+/* ── pills ──────────────────────────────────────────────────────────────── */
+.pill {
+  display: inline-block; font-size: .68rem; font-weight: 800; letter-spacing: .05em;
+  text-transform: uppercase; padding: .2rem .45rem; border-radius: .25rem; white-space: nowrap;
+}
+.pillGood { background: var(--good-bg); color: var(--good); }
+.pillWarn { background: var(--warn-bg); color: var(--warn); }
+.pillCrit { background: var(--crit-bg); color: var(--crit); }
+.pillFlat { background: var(--paper-alt); color: var(--muted); border: 1px solid var(--line); }
+
+/* ── callouts ─────────────────────────────────────────────────────────────
+   Shaped after the pack's own .calloutRow (plan.module.css): a tinted block
+   with a leading icon and a soft radius. Deliberately NOT a coloured rail on
+   one edge — nothing else in this pack uses one, and the severity is already
+   carried by the tint plus the icon, so the rail would add a stylistic tell
+   without adding meaning. */
+.callout {
+  display: grid; grid-template-columns: auto minmax(0, 1fr);
+  column-gap: .9rem; align-items: start;
+  background: var(--warn-bg); color: var(--ink);
+  padding: 1.1rem 1.25rem; border-radius: .4rem; margin-top: 1.5rem;
+  max-width: 78ch; line-height: 1.6;
+}
+.callout > svg { grid-column: 1; grid-row: 1 / -1; margin-top: .2rem; color: var(--warn); }
+.callout > strong, .callout > p { grid-column: 2; }
+.calloutCrit { background: var(--crit-bg); }
+.calloutCrit > svg { color: var(--crit); }
+.calloutGood { background: var(--good-bg); }
+.calloutGood > svg { color: var(--good); }
+.callout strong { display: block; font-size: .8rem; font-weight: 800; margin-bottom: .35rem; color: var(--ink); }
+.callout p { margin: 0; font-size: .9rem; line-height: 1.65; color: var(--ink); }
+.callout p + p { margin-top: .6rem; }
+
+/* ── governance lists ───────────────────────────────────────────────────── */
+.listGrid { display: grid; grid-template-columns: 1fr 1fr; gap: .85rem; margin-top: 1.5rem; }
+.listCard {
+  background: var(--paper-white); border: 1px solid var(--line);
+  border-radius: .5rem; padding: 1.15rem 1.25rem;
+}
+.listCard h3 { font-size: .95rem; font-weight: 700; color: var(--ink); margin: 0 0 .7rem; }
+.listCard ul { margin: 0; padding-left: 1.1rem; }
+.listCard li { color: var(--muted); font-size: .88rem; line-height: 1.6; margin-bottom: .4rem; }
+
+/* Right-alignment is for the desktop column only; the stacked mobile layout
+   renders a ::before label in the same cell, which must stay left. */
+.numeric { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+@media (max-width: 40rem) { .numeric { text-align: left; } }
+.cellValue { display: inline-flex; align-items: baseline; gap: 0; }
+.rowSwatch { display: inline-block; width: .6rem; height: .6rem; border-radius: .15rem; margin-right: .5rem; }
+
+@media (max-width: 60rem) {
+  .confidenceRows { grid-template-columns: 1fr; }
+  .confidenceRow { border-right: 0; border-bottom: 1px solid var(--line); }
+  .confidenceRow:last-child { border-bottom: 0; }
+  .tiles { grid-template-columns: 1fr 1fr; }
+  .funnelGrid, .listGrid { grid-template-columns: 1fr; }
+}
+@media (max-width: 34rem) {
+  .tiles { grid-template-columns: 1fr; }
+  .funnelRow { grid-template-columns: minmax(5rem, 1.1fr) minmax(0, 2fr) 3rem; gap: .5rem; }
+}
